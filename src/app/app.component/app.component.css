@@ -1,0 +1,262 @@
+mat-sidenav-container.m2app-dark {
+    background: black;
+}
+
+.app-content {
+    padding: 20px;
+}
+
+.app-content mat-card {
+    margin: 20px;
+}
+
+.shadowCard {
+    z-index: 2;
+    margin-bottom: 1em;
+}
+
+.app-sidenav {
+    padding: 10px;
+    min-width: 100px;
+    border-right-style: inset;
+}
+
+.app-content mat-checkbox {
+    margin: 10px;
+}
+
+.app-toolbar-filler {
+    flex: 1 1 auto;
+}
+
+.app-toolbar-menu {
+    padding: 0 14px 0 14px;
+    color: white;
+}
+
+.app-icon-button {
+    box-shadow: none;
+    user-select: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    filter: none;
+    font-weight: normal;
+    height: auto;
+    line-height: inherit;
+    margin: 0;
+    min-width: 0;
+    padding: 0;
+    text-align: left;
+    text-decoration: none;
+}
+
+.app-action {
+    display: inline-block;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.app-spinner {
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+}
+
+.app-input-icon {
+    font-size: 16px;
+}
+
+.app-list {
+    border: 1px solid rgba(0,0,0,0.12);
+    width: 350px;
+    margin: 20px;
+}
+
+.app-progress {
+    margin: 20px;
+}
+
+/*.card img {
+    width: 100px;
+    height: 150px;
+}*/
+.mdCardImg {
+    width: 65px;
+    height: 78px;
+    margin: 1em;
+    margin-top: 0.75em;
+}
+.mdCardImgInline {
+    width: 100px;
+    height: 62px;
+    margin: 1em;
+    margin-top: 1.5em;
+}
+.mdCardSmallDialogImg {
+    width: 50px;
+    height: 60px;
+    margin: 1em;
+    margin-top: 1em;
+    margin-left: 3.5em;
+}
+mat-toolbar {
+    /*background-color: blue !important;*/
+}
+
+.textBottom {
+    position: relative;
+    bottom: -0.25em;
+}
+
+.smallTextBottom {
+    font-size: small;
+    position: relative;
+    bottom: -1em;
+}
+
+.iconBottom {
+    position: relative;
+    bottom: -0.25em;
+}
+
+.iconNearBottom {
+    position: relative;
+    padding-right: 0.25em;
+    bottom: -0.15em;
+    color: #ffcc00;
+}
+
+.iconWhite {
+    position: relative;
+    color: white;
+    bottom: 0em;
+    z-index: 5;
+}
+
+.buttonPositionTop {
+    position: fixed;
+    z-index: 5;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.cardPosition {
+    z-index: 2;
+}
+
+*::-ms-backdrop, .iconWhite {
+    position: relative;
+    color: white;
+    bottom: -0.25em;
+}
+
+.iconPositionHeader {
+    position: relative;
+    padding-right: 0.25em;
+    padding-left: 0.15em;
+    bottom: -0.15em;
+    color: #ffcc00;
+}
+
+.iconYellow {
+    color: #ffcc00;
+}
+
+.xxLargerFont {
+    font-size: xx-large;
+}
+
+.largeFont {
+    font-size: large;
+}
+
+.centerText {
+    position: relative;
+    left: 5em;
+}
+
+.bullet11 {
+    font-family: "Times New Roman";
+    font-size: 1.5em;
+    padding: 0.25em;
+}
+
+.bigPositionHeader {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.tdTabed {
+    margin-right: 2em;
+}
+
+.bullet11TopPadded {
+    font-family: "Times New Roman";
+    font-size: 1.5em;
+    padding: 0.25em;
+    padding-top: 1em;
+    /*padding-left: 2em;
+    text-indent: -2em;*/
+}
+
+ul {
+    text-align: left;
+}
+
+.h1Indigo {
+    color: indigo;
+}
+
+.h1Blue {
+    color:#3f51b5;
+}
+
+.h1Underlined {
+    width: 50em;
+    text-decoration: underline;
+}
+
+.h1Italics {
+    width: 35em;
+    font-style: italic;
+}
+
+.centerIt {
+    margin: auto;
+    /*width: 50%;
+    width: 5em;*/
+    padding: 10px;
+}
+
+.centerIt2 {
+    margin: auto;
+    margin-top: 2em;
+    width: 50%;
+    width: 5em;
+    padding: 10px;
+}
+
+.centerTopHeader {
+    width: 12em;
+    margin-left: -1.7em;
+    margin-top: -1.7em;
+}
+
+.blueSpan {
+    width: 17.5em;
+    border: 1px solid blue;
+    text-align: center;
+    color: white;
+    background-color: blue;
+}
+
+.inlineDiv {
+    display: inline-block;
+}
+
+#container{width:100%;}
+#left{float:left;width:100px;}
+#right{float:right;width:100px;}
+#center{margin:0 auto;width:100px;}

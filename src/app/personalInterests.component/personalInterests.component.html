@@ -1,0 +1,83 @@
+<mat-sidenav-container [class.m2app-dark]="isDarkTheme">
+
+    <mat-sidenav #sidenav mode="side" class="app-sidenav mat-elevation-z15" style="border-right-style: none;">
+        <table>
+            <tr>
+                <div *ngIf="_router.url == '/'"><td><span class="smallTextBottom"><a [routerLink]="['/1']" target="_top" style="color: blue"><i class="material-icons md-18 iconBottom">description</i>My Resume</a></span></td></div>
+                <div *ngIf="_router.url != '/'"><td><span class="smallTextBottom"><a [routerLink]="['/']" target="_top" style="color: blue"><i class="material-icons md-18 iconBottom">description</i>My Resume</a></span></td></div>
+            </tr>
+            <tr>
+                <div *ngIf="_router.url == '/personalInterests'"><td><span class="smallTextBottom"><a [routerLink]="['/2']" target="_top" style="color: blue"><i class="material-icons md-18 iconBottom">directions_bike</i>Personal Interests</a></span></td></div>
+                <div *ngIf="_router.url != '/personalInterests'"><td><span class="smallTextBottom"><a [routerLink]="['/personalInterests']" target="_top" style="color: blue"><i class="material-icons md-18 iconBottom">directions_bike</i>Personal Interests</a></span></td></div>
+            </tr>
+        </table>
+    </mat-sidenav>
+
+    <mat-toolbar color="primary" style="height: 4em;">
+        <button class="app-icon-button" (click)="sidenav.toggle()">
+            <i class="material-icons app-toolbar-menu">menu</i>
+        </button>
+
+        <img class="mdCardImg md-card-sm-image" src="./VinceBloiseTransparent.png">
+
+        <span class="textBottom xxLargerFont">&nbsp;Vincent Bloise</span>
+
+        <span class="app-toolbar-filler"></span>
+        <span class="smallTextBottom"><i class="material-icons md-18 iconBottom">home</i>&nbsp;261 Swedesford Rd., Malvern, PA 19355&nbsp;<a href="tel:484-433-3269" style="color: white"><i class="material-icons md-18 iconBottom">phone_iphone</i>484-433-3269</a>
+            &nbsp;<a href="mailto:vbloise3@gmail.com?Subject=Resume" target="_top" style="color: white"><i class="material-icons md-18 iconBottom">email</i>vbloise3@gmail.com</a></span>
+        <!--button md-button (click)="isDarkTheme = !isDarkTheme">TOGGLE DARK THEME</button-->
+    </mat-toolbar>
+
+    <div class="app-content">
+
+        <mat-card class="shadowCard">
+            <table>
+                <tr>
+                    <td><i class="material-icons md-18 iconNearBottom">import_contacts</i><span class="bigPositionHeader h1Blue">Reading &mdash; I really enjoy reading fiction and, of course, computer science books!</span></td>
+                </tr>
+            </table>
+            <mat-card class="shadowCard">
+                <ul>
+                    <li class="bullet11">Some of my favorite books</li>
+                    <li style="list-style: none;">
+                        <ul>
+                            <li style="padding-bottom: 1em;" class="bullet11"><a href="https://en.wikipedia.org/wiki/Gravity%27s_Rainbow"> <img class="mdCardImgInLineBottom md-card-sm-image" src="./GravitysRainbow.png">Gravity's Rainbow, Thomas Pynchon</a></li>
+                            <li style="padding-bottom: 1em;" class="bullet11"><a href="https://en.wikipedia.org/wiki/Underworld_(DeLillo_novel)"> <img class="mdCardImgInLineBottom md-card-sm-image" src="./Underworld.png">Underworld, Don DeLillo</a></li>
+                            <li style="padding-bottom: 1em;" class="bullet11"><a href="https://en.wikipedia.org/wiki/C_(novel)"> <img class="mdCardImgInLineBottom md-card-sm-image" src="./CTomMcCarthy.png">C, Tom McCarthy</a></li>
+                            <li style="padding-bottom: 1em;" class="bullet11"><a href="https://en.wikipedia.org/wiki/Against_the_Day"> <img class="mdCardImgInLineBottom md-card-sm-image" src="./AgainstTheDay.png">Against The Day, Thomas Pynchon</a></li>
+                            <li style="padding-bottom: 1em;" class="bullet11"><a href="https://en.wikipedia.org/wiki/White_Noise_(novel)"> <img class="mdCardImgInLineBottom md-card-sm-image" src="./WhiteNoise.png">White Noise, Don DeLillo</a></li>
+                        </ul>
+                    </li>
+                    <li class="bullet11"><a href="https://www.goodreads.com/user/show/36648383-vincent-bloise"><img class="mdCardImgInLineBottom md-card-sm-image" src="./GoodReads.png">goodreads</a> </li>
+                </ul>
+            </mat-card>
+        </mat-card>
+
+        <mat-card class="shadowCard">
+            <table>
+                <tr>
+                    <td><i class="material-icons md-18 iconNearBottom">directions_bike</i><span class="bigPositionHeader h1Blue">Sports &mdash; I love board sports and biking</span></td>
+                </tr>
+            </table>
+            <mat-card class="shadowCard">
+                <ul>
+                    <li class="bullet11">Some of my favorite activities</li>
+                    <li style="list-style: none;">
+                        <ul>
+                            <li style="padding-bottom: 1em;" class="bullet11"><a href="https://en.wikipedia.org/wiki/Longboarding"> <img style="width:275px;height:183px;" class="mdCardImgInLineBottom md-card-sm-image" src="./Longboarding.png">Longboarding</a></li>
+                            <li style="padding-bottom: 1em;" class="bullet11"><a href="https://en.wikipedia.org/wiki/Paddleboarding"> <img style="width:275px;height:183px;" class="mdCardImgInLineBottom md-card-sm-image" src="./Paddleboarding.png">Paddleboarding</a></li>
+                            <li style="padding-bottom: 1em;" class="bullet11"><a href="https://en.wikipedia.org/wiki/Snowboarding"> <img style="width:275px;height:183px;" class="mdCardImgInLineBottom md-card-sm-image" src="./Snowboarding.png">Riding my snowbaord</a></li>
+                            <li style="padding-bottom: 1em;" class="bullet11"><a href="https://en.wikipedia.org/wiki/Mountain_biking"> <img style="width:275px;height:183px;" class="mdCardImgInLineBottom md-card-sm-image" src="./MountainBiking.png">Mountain Biking</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </mat-card>
+        </mat-card>
+
+    </div>
+
+</mat-sidenav-container>
+
+<span class="app-action buttonPositionTop" [class.m2app-dark]="isDarkTheme">
+  <button mat-fab style="background-color:#ffcc00;" (click)="openDialog()"><mat-icon class="material-icons md-18 iconWhite">mail outline</mat-icon></button>
+</span>

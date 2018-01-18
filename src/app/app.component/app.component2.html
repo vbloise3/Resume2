@@ -1,0 +1,277 @@
+<mat-sidenav-container [class.m2app-dark]="isDarkTheme">
+
+
+    <mat-sidenav #sidenav mode="side" class="app-sidenav mat-elevation-z15" style="border-right-style: none;">
+        <table>
+            <tr>
+                <div *ngIf="_router.url == '/'"><td><span class="smallTextBottom"><a [routerLink]="['/1']" target="_top" style="color: blue"><i class="material-icons md-18 iconBottom">description</i>My Resume</a></span></td></div>
+                <div *ngIf="_router.url != '/'"><td><span class="smallTextBottom"><a [routerLink]="['/']" target="_top" style="color: blue"><i class="material-icons md-18 iconBottom">description</i>My Resume</a></span></td></div>
+            </tr>
+            <tr>
+                <div *ngIf="_router.url == '/personalInterests'"><td><span class="smallTextBottom"><a [routerLink]="['/2']" target="_top" style="color: blue"><i class="material-icons md-18 iconBottom">directions_bike</i>Personal Interests</a></span></td></div>
+                <div *ngIf="_router.url != '/personalInterests'"><td><span class="smallTextBottom"><a [routerLink]="['/personalInterests']" target="_top" style="color: blue"><i class="material-icons md-18 iconBottom">directions_bike</i>Personal Interests</a></span></td></div>
+            </tr>
+        </table>
+    </mat-sidenav>
+
+
+    <mat-toolbar color="primary" style="height: 4em;">
+        <button class="app-icon-button" (click)="sidenav.toggle()">
+            <i class="material-icons app-toolbar-menu">menu</i>
+        </button>
+
+        <img class="mdCardImg md-card-sm-image" src="public/images/VinceBloiseTransparent.png">
+
+        <span class="textBottom xxLargerFont">&nbsp;Vincent Bloise</span>
+
+        <span class="app-toolbar-filler"></span>
+        <span class="smallTextBottom"><i class="material-icons md-18 iconBottom">home</i>&nbsp;261 Swedesford Rd., Malvern, PA 19355&nbsp;<a href="tel:484-433-3269" style="color: white"><i class="material-icons md-18 iconBottom">phone_iphone</i>484-433-3269</a>
+            &nbsp;<a href="mailto:vbloise3@gmail.com?Subject=Resume" target="_top" style="color: white"><i class="material-icons md-18 iconBottom">email</i>vbloise3@gmail.com</a></span>
+        <!--button md-button (click)="isDarkTheme = !isDarkTheme">TOGGLE DARK THEME    </button-->
+    </mat-toolbar>
+
+    <div class="app-content">
+
+        <mat-card class="shadowCard">
+            <h1 class="h1Blue">Summary of Qualifications</h1>
+            <mat-card>
+                <ul>
+                    <li class="bullet11">Over 25 years in the Information Technology field including over 15 years in management roles</li>
+                    <li class="bullet11">Strong leadership and communication skills with experience managing distributed, international teams that include off-shore resources</li>
+                    <li class="bullet11">Leader of organizational improvement across IT and business units</li>
+                    <li class="bullet11">Collaborative leader with skills to engage contributors from multiple IT and business units to solve technical and business problems</li>
+                    <li class="bullet11">As a leader of technology professionals I have maintained strong coding skills in Java, JavaScript, TypeScript, NodeJs, Angular, and Material Design</li>
+                    <li class="bullet11">Proven developer and attracter of top talent through mentoring, coaching, and enthusiastic leadership</li>
+                </ul>
+            </mat-card>
+        </mat-card>
+
+        <mat-card class="shadowCard">
+            <h1 class="h1Blue">Experience</h1>
+            <mat-card class="shadowCard">
+                    <table>
+                        <tr>
+                            <td style="width: 800px;"><i class="material-icons md-18 iconNearBottom">date_range</i>&nbsp;<span class="bigPositionHeader">4/2000 - Present</span></td>
+                            <td style="width: 800px;"><i class="material-icons md-18 iconNearBottom">location_city</i>&nbsp;<span class="bigPositionHeader">Vanguard</span></td>
+                            <td style="width: 800px;"><i class="material-icons md-18 iconNearBottom">location_on</i>&nbsp;<span class="bigPositionHeader">Valley Forge, PA</span></td>
+                        </tr>
+                    </table>
+                <h2 class="h1Italics"><i class="material-icons md-18 iconPositionHeader">work</i>Senior Manager, Software Development</h2>
+                <ul>
+                        <li class="bullet11">
+                            Currently leader of leaders managing the teams that support Vanguard's Fund Financial Services business unit. I have responsibility for the systems teams that manage the Investment Book of Record (IBOR),
+                            Securities Lending, Collateral Management, Reconciliation, Investor Cash Management, and the Custodian Money Movement functions.
+                        </li>
+                        <li class="bullet11">
+                            Leading current development teams in moving our systems portfolio to the AWS cloud, where we are taking advantage of many of the AWS services, such as EC2, Elastic Beanstalk, Serverless Architecture using Lambda and Step Functions, S3, RDS, DynamoDB, CloudFormation templates, and SQS.
+                        </li>
+                        <li class="bullet11">
+                        Manager responsible for implementing Behavior Driven/Acceptance Test Driven Development across my entire IT subdivision.
+                        In this position, I have the responsibility to transform the entire development process from requirements elicitation to continuous delivery.
+                        </li>
+                    <li class="bullet11">
+                        Leading the introduction of the MEAN Stack at Vanguard. Thought leader introducing the concept of the full stack JavaScript development team.
+                    </li>
+                    <li class="bullet11">
+                        Manager responsible for the global implementation of mutual fund portfolio trade management system across the firm’s regional trading sites in Pennsylvania,
+                        London, and Melbourne. Managed the teams that built the software allowing the firm’s portfolio managers to trade their fund assets 24 hours/day, 6 days/week using the “follow the sun” global trading model.
+                    </li>
+                    <li class="bullet11">
+                        Managed the firm’s retail brokerage trade management system software and all relationships with global brokerage partners.
+                    </li>
+                    <li class="bullet11">
+                        Responsible for managing large software development teams; managing relationships with business clients at the officer level,
+                        including technology officers, managing directors, and the chief technology officer.
+                    </li>
+                    <li class="bullet11">
+                        Managed multiple vendor relationships, including contract negotiation.
+                    </li>
+                    <li class="bullet11">
+                        Led staff that plans, designs, and builds components for all the firm’s web sites.
+                        Enabled consistent web application experience across firm’s web site portfolio through work in this position.
+                    </li>
+                </ul>
+            </mat-card>
+
+            <mat-card class="shadowCard">
+                <table>
+                    <tr>
+                        <td style="width: 800px;"><i class="material-icons md-18 iconNearBottom">date_range</i>&nbsp;<span class="bigPositionHeader">8/1998 – 4/2000</span></td>
+                        <td style="width: 800px;"><i class="material-icons md-18 iconNearBottom">location_city</i>&nbsp;<span class="bigPositionHeader">Merrill Lynch</span></td>
+                        <td style="width: 800px;"><i class="material-icons md-18 iconNearBottom">location_on</i>&nbsp;<span class="bigPositionHeader">Princeton, NJ</span></td>
+                    </tr>
+                </table>
+                <h2 class="h1Italics"><i class="material-icons md-18 iconPositionHeader">work</i>IT Department Manager, Software Development</h2>
+                <ul>
+                    <li class="bullet11">
+                        Responsible for large program release planning and systems integration for retail brokerage client intelligence and trading systems.
+                    </li>
+                    <li class="bullet11">
+                        Manager of large team of technical and business resources ranging in responsibility from senior designers to software developers and architects.
+                    </li>
+                    <li class="bullet11">
+                        Led the development of a five-year software implementation plan to rewrite the retail client management, trading, record keeping, and statements systems for the Private Client group.
+                    </li>
+                </ul>
+            </mat-card>
+
+            <mat-card class="shadowCard">
+                <table>
+                    <tr>
+                        <td style="width: 800px;"><i class="material-icons md-18 iconNearBottom">date_range</i>&nbsp;<span class="bigPositionHeader">7/1987 – 8/1998</span></td>
+                        <td style="width: 800px;"><i class="material-icons md-18 iconNearBottom">location_city</i>&nbsp;<span class="bigPositionHeader">IBM</span></td>
+                        <td style="width: 800px;"><i class="material-icons md-18 iconNearBottom">location_on</i>&nbsp;<span class="bigPositionHeader">New York, NY</span></td>
+                    </tr>
+                </table>
+                <h2 class="h1Italics"><i class="material-icons md-18 iconPositionHeader">work</i>Systems Engineer, Software Consultant/Architect</h2>
+                <ul>
+                    <li class="bullet11">
+                        Responsible for technical marketing of mainframe hardware and software, software development consulting, system architecture consulting, and management of consulting resources.
+                    </li>
+                    <li class="bullet11">
+                        Managed various consulting efforts as part of IBM’s Global Services consulting practice.
+                    </li>
+                    <li class="bullet11">
+                        Led sales efforts to win large (> $100 Million) consulting efforts.
+                    </li>
+                    <li class="bullet11">
+                        Managed the production of complex proposals for consulting engagement efforts.
+                    </li>
+                    <li class="bullet11">
+                        Managed relationships with large New York metropolitan account base.
+                    </li>
+                    <li class="bullet11">
+                        Worked in the following industries: financial services, telephony, media, entertainment, and government.
+                    </li>
+                </ul>
+            </mat-card>
+        </mat-card>
+
+        <mat-card class="shadowCard">
+            <h1 class="h1Blue">Education</h1>
+            <mat-card class="shadowCard">
+                <table>
+                    <tr>
+                        <td style="width: 800px;"><i class="material-icons md-18 iconNearBottom">date_range</i>&nbsp;<span class="bigPositionHeader">1984 - 1987</span></td>
+                        <td style="width: 800px;"><i class="material-icons md-18 iconNearBottom">school</i>&nbsp;<span class="bigPositionHeader">Rutgers University</span></td>
+                        <td style="width: 800px;"><i class="material-icons md-18 iconNearBottom">location_on</i>&nbsp;<span class="bigPositionHeader">New Brunswick, NJ</span></td>
+                    </tr>
+                </table>
+                <h2 class="h1Italics"><i class="material-icons md-18 iconPositionHeader">work</i>B.A. Computer Science</h2>
+                <ul>
+                    <li class="bullet11">
+                        Dean’s list the final 4 semesters of my studies.
+                    </li>
+                </ul>
+            </mat-card>
+        </mat-card>
+
+        <!--md-card>
+            <md-radio-button name="symbol">Alpha</md-radio-button>
+            <md-radio-button name="symbol">Beta</md-radio-button>
+            <md-radio-button name="symbol" disabled>Gamma</md-radio-button>
+        </md-card>
+
+        <md-card class="app-input-section">
+            <md-input placeholder="First name"></md-input>
+
+            <md-input #nickname placeholder="Nickname" maxlength="50">
+                <md-hint align="end">
+                    {{nickname.characterCount}} / 50
+                </md-hint>
+            </md-input>
+
+            <md-input>
+                <md-placeholder>
+                    <i class="material-icons app-input-icon">android</i> Favorite phone
+                </md-placeholder>
+            </md-input>
+
+            <md-input placeholder="Motorcycle model">
+        <span md-prefix>
+          <i class="material-icons app-input-icon">motorcycle</i>
+          &nbsp;
+        </span>
+            </md-input>
+        </md-card>
+
+        <md-card>
+            <md-list class="app-list">
+                <md-list-item *ngFor="let food of foods">
+                    <h3 md-line>{{food.name}}</h3>
+                    <p md-line class="demo-secondary-text">{{food.rating}}</p>
+                </md-list-item>
+                <md-list-item *ngFor="let product of products | async">
+                    <h3 md-line>{{product.title}}</h3>
+                    <p md-line class="demo-secondary-text"><span *ngIf="productId">id: {{productId}}</span></p>
+                </md-list-item>
+            </md-list>
+        </md-card>
+
+        <md-card>
+            <md-spinner class="app-spinner"></md-spinner>
+            <md-spinner color="accent" class="app-spinner"></md-spinner>
+        </md-card>
+
+        <md-card>
+            <label>
+                Indeterminate progress-bar
+                <md-progress-bar
+                        class="app-progress"
+                        mode="indeterminate"
+                        aria-label="Indeterminate progress-bar example"></md-progress-bar>
+            </label>
+
+            <label>
+                Determinate progress bar - {{progress}}%
+                <md-progress-bar
+                        class="app-progress"
+                        color="accent"
+                        mode="determinate"
+                        [value]="progress"
+                        aria-label="Determinate progress-bar example"></md-progress-bar>
+            </label>
+        </md-card>
+
+        <md-card>
+            <md-tab-group>
+                <md-tab label="Earth">
+                    <p>EARTH</p>
+                </md-tab>
+                <md-tab label="Fire">
+                    <p>FIRE</p>
+                </md-tab>
+            </md-tab-group>
+        </md-card>
+
+        <md-card>
+            <md-icon>build</md-icon>
+        </md-card>
+
+        <md-card>
+            <button md-button [md-menu-trigger-for]="menu">
+                MENU
+            </button>
+        </md-card>
+
+        <md-menu #menu="mdMenu">
+            <button md-menu-item>Lemon</button>
+            <button md-menu-item>Lime</button>
+            <button md-menu-item>Banana</button>
+            <button md-menu-item  *ngFor="let product of products | async" (click)="select(product.title)" [disabled]="product.disabled">{{product.title}}</button>
+        </md-menu>
+
+        <md-card>
+            <p>Last dialog result: {{lastDialogResult}}</p>
+            <button md-raised-button (click)="openDialog()">DIALOG</button>
+            <button md-raised-button (click)="showSnackbar()">SNACKBAR</button>
+        </md-card-->
+
+    </div>
+
+    <span class="app-action buttonPositionTop" [class.m2app-dark]="isDarkTheme">
+        <button mat-fab style="background-color:#ffcc00;" (click)="openDialog()"><mat-icon class="material-icons md-18 iconWhite">mail outline</mat-icon></button>
+    </span>
+
+</mat-sidenav-container>
+
