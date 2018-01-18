@@ -31,17 +31,21 @@ const appRoutes: Routes = [
     path: '',
     component: HomeComponent
   },
-  /*{
+  {
     path: '',
-    redirectTo: 'posts',
+    redirectTo: '',
     pathMatch: 'full'
-  },*/
+  },
   { path: '**', component: PageNotFoundComponent }
 ];
 
 @NgModule({
   imports:      [ BrowserModule, ReactiveFormsModule, RouterModule,
-    HttpClientModule, routing, MatSidenavModule, MatDialogModule, MatSnackBarModule, MatIconModule, MatCardModule, MatToolbarModule, BrowserAnimationsModule, MatButtonModule],
+    HttpClientModule, routing, MatSidenavModule, MatDialogModule, MatSnackBarModule, MatIconModule, MatCardModule, MatToolbarModule, BrowserAnimationsModule, MatButtonModule,
+    RouterModule.forRoot(
+      appRoutes,
+      { enableTracing: false } // <-- debugging purposes only
+    )],
   declarations: [ AppComponent, HomeComponent, YoMoFoComponent, Material2AppAppComponent, DialogContent, PersonalInterestsComponent, DialogContent2, PageNotFoundComponent, TestComponent],
   entryComponents: [DialogContent, DialogContent2],
   providers:    [PostsService/*,
