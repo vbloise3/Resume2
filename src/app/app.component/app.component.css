@@ -252,6 +252,10 @@ ul {
     background-color: blue;
 }
 
+.transparentProfilePic {
+  content: url("../../../public/images/VinceBloiseTransparent.png");
+}
+
 .inlineDiv {
     display: inline-block;
 }

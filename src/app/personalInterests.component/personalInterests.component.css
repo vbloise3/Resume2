@@ -252,6 +252,50 @@ ul {
     background-color: blue;
 }
 
+.transparentProfilePic {
+  content: url("../../../public/images/VinceBloiseTransparent.png");
+}
+
+.gravitysRainbowPic {
+  content: url("./GravitysRainbow.png");
+}
+
+.underworldPic {
+  content: url("./Underworld.png");
+}
+
+.cTomMcCarthyPic {
+  content: url("./CTomMcCarthy.png");
+}
+
+.againstTheDayPic {
+  content: url("./AgainstTheDay.png");
+}
+
+.whiteNoisePic {
+  content: url("WhiteNoise.png");
+}
+
+.goodReadsPic {
+  content: url("GoodReads.png");
+}
+
+.longboardingPic {
+  content: url("Longboarding.png");
+}
+
+.paddleboardingPic {
+  content: url("Paddleboarding.png");
+}
+
+.snowboardingPic {
+  content: url("Snowboarding.png");
+}
+
+.mountainBikingPic {
+  content: url("MountainBiking.png");
+}
+
 .inlineDiv {
     display: inline-block;
 }
