@@ -6,13 +6,13 @@
                 {{product.title}} &emsp;&emsp; <span *ngIf="productId">id: {{productId}}</span>
             </li>
         </ul-->
-<div class="md-grid">
-    <div class="md-cell md-cell--12-col" *ngIf="!products" style="text-align: center;">
-        Loading
-    </div>
-        <material2-app-app>loading ...</material2-app-app>
+
+    <div fxLayout="row wrap"> <!--class="md-grid" -->
+        <!--div class="md-cell md-cell--12-col" *ngIf="!products" style="text-align: center;">
+            Loading
+        </div-->
+        <material2-app-app fxFlex>loading ...</material2-app-app>
         <!--yo-mo-fo></yo-mo-fo-->
-        <h2>{{errorMessage}}</h2>
-</div>
-    <!--/div>
-</div-->
+        <!--h2>{{errorMessage}}</h2-->
+    </div>
+

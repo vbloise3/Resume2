@@ -2,7 +2,7 @@
  * Created by vincebloise on 3/20/17.
  */
 
-import {Component, Optional, ViewEncapsulation} from '@angular/core';
+import {Component, Optional, ViewEncapsulation, ElementRef, AfterViewInit} from '@angular/core';
 import {MatDialog, MatDialogRef, MatSnackBar, MatSidenav} from '@angular/material';
 import { HttpClient } from '@angular/common/http';
 import 'rxjs/add/operator/map';
@@ -18,7 +18,7 @@ import { Router, Routes, RouterModule } from '@angular/router';
     styleUrls: ['./personalInterests.component.css'],
     encapsulation: ViewEncapsulation.None
 })
-export class PersonalInterestsComponent {
+export class PersonalInterestsComponent implements AfterViewInit {
     isDarkTheme: boolean = false;
     lastDialogResult: string;
     myEmail: string = 'vbloise3@gmail.com';
@@ -29,6 +29,7 @@ export class PersonalInterestsComponent {
     randomness: Number;
     selected = '';
     currentPath = '';
+    observer: MutationObserver;
 
     getRandomNumber(): number {
         return Math.random();
@@ -47,7 +48,7 @@ export class PersonalInterestsComponent {
 
     progress: number = 0;
 
-    constructor(private _dialog: MatDialog, /*private _mdsidenav: MdSidenav,*/ private _snackbar: MatSnackBar, private http: HttpClient, route: ActivatedRoute, private _router: Router ) {
+    constructor(private _dialog: MatDialog, private elRef: ElementRef, private _snackbar: MatSnackBar, private http: HttpClient, route: ActivatedRoute, private _router: Router ) {
         this.products = this.http.get('/products')  as Observable<Array<string>>;
             /*.map(res => res.json())
             .catch( err => {
@@ -90,6 +91,17 @@ export class PersonalInterestsComponent {
         this._router.navigate(["/"]);
         //this._mdsidenav.close();
     }
+
+  ngAfterViewInit() {
+    this.observer = new MutationObserver(mutations => {
+      mutations.forEach(function(mutation) {
+        console.log('personalInterests.component mutation: ' + mutation.type + ' old value: ' + mutation.oldValue);
+      });
+    });
+    const config = { attributes: true, childList: true, characterData: true };
+
+    this.observer.observe(this.elRef.nativeElement, config);
+  }
 }
 
 

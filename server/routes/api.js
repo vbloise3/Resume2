@@ -3,6 +3,7 @@ var parse = require('csv-parse/lib/sync');
 var path = require('path');
 var interface = require('../modules/interface').interface;
 var bodyParser = require('body-parser');
+var AWS = require('aws-sdk');
 const url = require('url');
 const querystring = require('querystring');
 // Interface = require('../modules/interfaceES6');
@@ -51,9 +52,94 @@ var Post     = require('../../src/app/models/post');
 // Element models lives here
 var Element     = require('../../src/app/models/element');
 // Npsclient models lives here
-var Npsclient     = require('../../src/app/models/npsclient');
+var Npsclient     = require('../../src/app/models/npsClient');
+var dynamodb;
 
 // END DATABASE SETUP
+
+// DynamoDB Setup
+
+function setUpDynamoDB() {
+  AWS.config.update({
+    region: "us-west-2",
+    endpoint: 'http://localhost:8000',
+    // accessKeyId default can be used while using the downloadable version of DynamoDB.
+    // For security reasons, do not store AWS Credentials in your files. Use Amazon Cognito instead.
+    accessKeyId: "fakeMyKeyId",
+    // secretAccessKey default can be used while using the downloadable version of DynamoDB.
+    // For security reasons, do not store AWS Credentials in your files. Use Amazon Cognito instead.
+    secretAccessKey: "fakeSecretAccessKey"
+  });
+  dynamodb = new AWS.DynamoDB();
+  // console.log("dynamaDB: " + dynamodb);
+}
+
+function createMovies() {
+  return new Promise(function(resolve, reject) {
+    var dynamoDBreturn = "what?";
+    var params = {
+      TableName: "Movies",
+      KeySchema: [
+        {AttributeName: "year", KeyType: "HASH"},
+        {AttributeName: "title", KeyType: "RANGE"}
+      ],
+      AttributeDefinitions: [
+        {AttributeName: "year", AttributeType: "N"},
+        {AttributeName: "title", AttributeType: "S"}
+      ],
+      ProvisionedThroughput: {
+        ReadCapacityUnits: 5,
+        WriteCapacityUnits: 5
+      }
+    };
+
+    dynamodb.createTable(params, function (err, data) {
+      console.log("in dynamoDB.createTable");
+      if (err) {
+        // document.getElementById('textarea').innerHTML = "Unable to create table: " + "\n" + JSON.stringify(err, undefined, 2);
+        dynamoDBreturn = JSON.stringify(err, undefined, 2);
+        // localdynamoDBreturn = err;
+        // console.log("dynamoDBreturn: " + dynamoDBreturn);
+        resolve(dynamoDBreturn);
+      } else {
+        // document.getElementById('textarea').innerHTML = "Created table: " + "\n" + JSON.stringify(data, undefined, 2);
+        dynamoDBreturn = JSON.stringify(data, undefined, 2);
+        // console.log("dynamoDBreturn: " + dynamoDBreturn);
+        resolve(dynamoDBreturn);
+      }
+    });
+  });
+}
+
+insertIt = new Promise(function(resolve, reject) {
+  resolve('done');
+});
+
+
+function executeCreateDynamoDBTable() {
+    var returnStuff;
+    setUpDynamoDB();
+    createMovies().then(function(successStuff){
+      // console.log("success stuff: " + successStuff);
+      returnStuff = successStuff;
+      return returnStuff;
+    });
+}
+
+// End DynamoDB Setup
+
+// DynamoDB simple test
+router.get('/dynamoDBtest', (req, res) => {
+    var returnStuff;
+    // console.log('in dynamoDBtest api route');
+    setUpDynamoDB();
+    createMovies().then(function(successStuff){
+      // console.log("success stuff: " + successStuff);
+      returnStuff = successStuff;
+        // console.log("result: " + returnStuff);
+        res.status(200).send(returnStuff);
+    });
+});
 
 /* GET api listing. */
 router.get('/', (req, res) => {

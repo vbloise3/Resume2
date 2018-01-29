@@ -17,6 +17,7 @@ app.use(bodyParser.json());
 // Point static path to dist
 app.use(express.static(path.join(__dirname, 'dist')));
 
+
 // Set our api routes
 app.use('/api', api);
 // app.use('/tableDataApi', tableDataApi);
@@ -29,7 +30,7 @@ app.get('*', (req, res) => {
 /**
  * Get port from environment and store in Express.
  */
-const port = process.env.PORT || '3070';
+const port = process.env.PORT || '8081';
 app.set('port', port);
 
 /**

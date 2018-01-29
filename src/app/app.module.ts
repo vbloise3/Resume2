@@ -19,6 +19,10 @@ import {PersonalInterestsComponent, DialogContent2} from './personalInterests.co
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { TestComponent } from './test/test.component';
 import { PostsService } from './services/posts.service';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { MoviesDynamoDbexampleComponent } from './movies-dynamo-dbexample/movies-dynamo-dbexample.component';
+import { DynamoDbserviceService } from './services/dynamo-dbservice';
+
 /*import {MyMaterialModule} from '../my-material.model';*/
 
 // Define the routes
@@ -28,8 +32,20 @@ const appRoutes: Routes = [
     component: TestComponent
   },
   {
+    path: 'movies',
+    component: MoviesDynamoDbexampleComponent
+  },
+  {
     path: '',
     component: HomeComponent
+  },
+  {
+    path: '1',
+    component: HomeComponent
+  },
+  {
+    path: '2',
+    component: PersonalInterestsComponent
   },
   {
     path: '',
@@ -42,13 +58,14 @@ const appRoutes: Routes = [
 @NgModule({
   imports:      [ BrowserModule, ReactiveFormsModule, RouterModule,
     HttpClientModule, routing, MatSidenavModule, MatDialogModule, MatSnackBarModule, MatIconModule, MatCardModule, MatToolbarModule, BrowserAnimationsModule, MatButtonModule,
+    FlexLayoutModule,
     RouterModule.forRoot(
       appRoutes,
       { enableTracing: false } // <-- debugging purposes only
     )],
-  declarations: [ AppComponent, HomeComponent, YoMoFoComponent, Material2AppAppComponent, DialogContent, PersonalInterestsComponent, DialogContent2, PageNotFoundComponent, TestComponent],
+  declarations: [ AppComponent, HomeComponent, YoMoFoComponent, Material2AppAppComponent, DialogContent, PersonalInterestsComponent, DialogContent2, PageNotFoundComponent, TestComponent, MoviesDynamoDbexampleComponent],
   entryComponents: [DialogContent, DialogContent2],
-  providers:    [PostsService/*,
+  providers:    [PostsService, DynamoDbserviceService/*,
     {provide: LocationStrategy, useClass: HashLocationStrategy}*/],
   bootstrap:    [ AppComponent ]
 })

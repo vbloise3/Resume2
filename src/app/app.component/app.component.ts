@@ -1,15 +1,16 @@
 /**
  * Created by vincebloise on 1/25/17.
  */
-import {Component, Optional, ViewEncapsulation} from '@angular/core';
+import {Component, ElementRef, Optional, ViewEncapsulation, AfterViewInit} from '@angular/core';
 import {MatDialog, MatDialogRef, MatSnackBar} from '@angular/material';
 import { HttpClient } from '@angular/common/http';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/catch';
 import 'rxjs/add/observable/empty';
-import { Observable} from "rxjs/Observable";
+import { Observable} from 'rxjs/Observable';
 import { ActivatedRoute } from '@angular/router';
 import { Router, Routes, RouterModule } from '@angular/router';
+import { trigger, state, style, transition, animate } from '@angular/animations';
 
 @Component({
     selector: 'material2-app-app',
@@ -19,12 +20,13 @@ import { Router, Routes, RouterModule } from '@angular/router';
     styleUrls: ['./app.component.css'],
     encapsulation: ViewEncapsulation.None
 })
-export class Material2AppAppComponent {
+export class Material2AppAppComponent implements AfterViewInit {
     isDarkTheme: boolean = false;
     lastDialogResult: string;
     myEmail: string = 'vbloise3@gmail.com';
 
     products: Observable<Array<string>>;
+    observer: MutationObserver;
     errorMessage: string;
     productId: Number;
     randomness: Number;
@@ -48,8 +50,8 @@ export class Material2AppAppComponent {
 
     progress: number = 0;
 
-    constructor(private _dialog: MatDialog, /*private _mdsidenav: MdSidenav,*/ private _snackbar: MatSnackBar, private http: HttpClient, route: ActivatedRoute, private _router: Router ) {
-        this.products = this.http.get('/products')  as Observable<Array<string>>;
+    constructor(private _dialog: MatDialog, private elRef: ElementRef, private _snackbar: MatSnackBar, private http: HttpClient, route: ActivatedRoute, private _router: Router ) {
+        this.products = this.http.get('/products') as Observable<Array<string>>;
             /*.map(res => res.json())
             .catch( err => {
                 this.errorMessage =`Can't get product details from ${err.url}, error ${err.status} `;
@@ -76,7 +78,7 @@ export class Material2AppAppComponent {
 
         dialogRef.afterClosed().subscribe(result => {
             this.lastDialogResult = result;
-        })
+        });
     }
 
     showSnackbar() {
@@ -89,28 +91,41 @@ export class Material2AppAppComponent {
 
     navigateToHome() {
         this._router.navigate(["/"]);
-        //this._mdsidenav.close();
+        // this._mdsidenav.close();
+    }
+
+    ngAfterViewInit() {
+      this.observer = new MutationObserver(mutations => {
+        mutations.forEach(function(mutation) {
+          console.log('app.component mutation: ' + mutation.type + ' old value: ' + mutation.oldValue);
+        });
+      });
+      const config = { attributes: true, childList: true, characterData: true };
+
+      this.observer.observe(this.elRef.nativeElement, config);
     }
 }
 
 
 @Component({
     template: `
-    <!--div id="container" class="centerIt"-->
-        <mat-toolbar color="primary" style="height: 3.15em; width: 114%; margin-left: -1em; margin-top: -1em;">            
-            <img class="mdCardSmallDialogImg transparentProfilePic">
-            <span id="center" class="textBottom largeFont" style="width: 50%; margin-left: -1em;">&nbsp;My Contact Info</span>            
-        </mat-toolbar>
-    <!--/div-->
-    <table>
-        <tr>
-          <td><a href="mailto:vbloise3@gmail.com?Subject=Resume" style="color: blue;"><i class="material-icons md-18 iconBottom">email</i>vbloise3@gmail.com</a></td>
-          <td><a href="tel:484-433-3269" style="color: blue"><i class="material-icons md-18 iconBottom">phone_iphone</i>484-433-3269</a></td>
-        </tr>
-    </table>
-    <div class="centerIt2">
-        <button mat-raised-button (click)="dialogRef.close('done')">Done</button>
-    </div>
+      <div fxLayout="row wrap">
+        <div fxFlex>
+          <mat-toolbar color="primary" style="height: 3.15em; width: 114%; margin-left: -1em; margin-top: -1em;">            
+              <img class="mdCardSmallDialogImg transparentProfilePic">
+              <span id="center" class="textBottom largeFont" style="width: 50%; margin-left: -1em;">&nbsp;My Contact Info</span>            
+          </mat-toolbar>
+          <table>
+              <tr>
+                <td><a href="mailto:vbloise3@gmail.com?Subject=Resume" style="color: blue;"><i class="material-icons md-18 iconBottom">email</i>vbloise3@gmail.com</a></td>
+                <td><a href="tel:484-433-3269" style="color: blue"><i class="material-icons md-18 iconBottom">phone_iphone</i>484-433-3269</a></td>
+              </tr>
+          </table>
+          <div class="centerIt2">
+              <button mat-raised-button (click)="dialogRef.close('done')">Done</button>
+          </div>
+        </div>
+      </div>
   `,
 })
 export class DialogContent {
