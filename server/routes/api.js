@@ -4,6 +4,8 @@ var path = require('path');
 var interface = require('../modules/interface').interface;
 var bodyParser = require('body-parser');
 var AWS = require('aws-sdk');
+var watchr = require('watchr');
+
 const url = require('url');
 const querystring = require('querystring');
 // Interface = require('../modules/interfaceES6');
@@ -11,6 +13,8 @@ const querystring = require('querystring');
 
 const express = require('express');
 const router = express.Router();
+
+let processPath = process.cwd();
 
 router.use(bodyParser.json());
 router.use(bodyParser.urlencoded({
@@ -111,6 +115,86 @@ function createMovies() {
   });
 }
 
+// functions needed for watchr
+function listener (changeType, fullPath, currentStat, previousStat) {
+  var returnStuff;
+  var fileContents;
+  switch ( changeType ) {
+    case 'update':
+      console.log('the file', fullPath, 'was updated', currentStat, previousStat);
+      returnStuff = 'the file ' + fullPath + ' was updated ' + currentStat + ' ' + previousStat;
+      break;
+    case 'create':
+      console.log('the file', fullPath, 'was created', currentStat);
+      returnStuff = 'the file ' + fullPath + ' was created ' + currentStat;
+      var docClient = new AWS.DynamoDB.DocumentClient();
+      var file = fullPath;
+      if (file) {
+        try {
+          var data = fs.readFileSync(file, 'utf8');
+          console.log("file data: " + data);
+          fileContents = data;
+        } catch(e) {
+          console.log("file data: " + data);
+          console.log('Error:', e.stack);
+        }
+        var allMovies = JSON.parse(fileContents);
+
+        allMovies.forEach(function (movie) {
+          // document.getElementById('textarea').innerHTML += "Processing: " + movie.title + "\n";
+          var params = {
+            TableName: "Movies",
+            Item: {
+              "year": movie.year,
+              "title": movie.title,
+              "info": movie.info
+            }
+          };
+          docClient.put(params, function (err, data) {
+            if (err) {
+              // document.getElementById('textarea').innerHTML += "Unable to add movie: " + count + movie.title + "\n";
+              console.log("Unable to add movie: " + count + movie.title);
+              // document.getElementById('textarea').innerHTML += "Error JSON: " + JSON.stringify(err) + "\n";
+              console.log("Error JSON: " + JSON.stringify(err));
+            } else {
+              // document.getElementById('textarea').innerHTML += "PutItem succeeded: " + movie.title + "\n";
+              console.log("PutItem succeeded: " + movie.title);
+              // textarea.scrollTop = textarea.scrollHeight;
+            }
+          });
+        });
+      }
+      break;
+    case 'delete':
+      console.log('the file', fullPath, 'was deleted', previousStat);
+      returnStuff = 'the file ' + fullPath + ' was deleted ' + previousStat;
+      break
+  }
+  return returnStuff;
+}
+function next (err) {
+  if ( err )  {
+    console.log('watch failed on', processPath, 'with error', err);
+    return 'watch failed on ' + processPath + 'with error ' +  err;
+  }
+  console.log('watch successful on', processPath);
+  return 'watch successful on ' + processPath;
+}
+
+function runWatcher() {
+  var stalker = watchr.open('public/json', listener, next);
+  // console.log("stalker: " + JSON.stringify(stalker));
+  return stalker;
+}
+// End functions needed for watchr
+
+function initialLoadMovies() {
+  var returnStuff;
+  var dynamoDBreturn = "what?";
+  returnStuff = runWatcher();
+  return returnStuff;
+}
+
 insertIt = new Promise(function(resolve, reject) {
   resolve('done');
 });
@@ -120,16 +204,18 @@ function executeCreateDynamoDBTable() {
     var returnStuff;
     setUpDynamoDB();
     createMovies().then(function(successStuff){
-      // console.log("success stuff: " + successStuff);
-      returnStuff = successStuff;
-      return returnStuff;
-    });
+    // console.log("success stuff: " + successStuff);
+    returnStuff = successStuff;
+    return returnStuff;
+  });
 }
 
 // End DynamoDB Setup
 
 // DynamoDB simple test
-router.get('/dynamoDBtest', (req, res) => {
+
+// Create table
+router.get('/dynamoDBcreate', (req, res) => {
     var returnStuff;
     // console.log('in dynamoDBtest api route');
     setUpDynamoDB();
@@ -140,6 +226,17 @@ router.get('/dynamoDBtest', (req, res) => {
         res.status(200).send(returnStuff);
     });
 });
+// End create table
+
+// Initial Data Load
+router.get('/dynamoDBinitialDataLoad', (req, res) => {
+  var returnStuff
+  setUpDynamoDB();
+  returnStuff = initialLoadMovies();
+  // console.log("result: " + returnStuff);
+  res.status(200).send({message: "listening for *.json"});
+});
+// End initial data load
 
 /* GET api listing. */
 router.get('/', (req, res) => {

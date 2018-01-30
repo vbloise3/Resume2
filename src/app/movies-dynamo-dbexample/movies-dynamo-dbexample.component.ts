@@ -28,4 +28,10 @@ export class MoviesDynamoDbexampleComponent implements OnInit {
     });
   }
 
+  initialDataLoad() {
+    this.dynamoDBservice.loadInitialData().subscribe( movies => {
+      this.movies = JSON.stringify(movies);
+    });
+  }
+
 }
