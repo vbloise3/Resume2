@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {HttpClientModule} from '@angular/common/http';
 import {RouterModule, Routes} from '@angular/router';
-import { ReactiveFormsModule} from '@angular/forms';
+import { FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {LocationStrategy, HashLocationStrategy} from '@angular/common';
 import 'rxjs/add/operator/map';
 import { YoMoFoComponent } from './yo-mo-fo/yo-mo-fo';
@@ -22,6 +22,8 @@ import { PostsService } from './services/posts.service';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MoviesDynamoDbexampleComponent } from './movies-dynamo-dbexample/movies-dynamo-dbexample.component';
 import { DynamoDbserviceService } from './services/dynamo-dbservice';
+import { MatFormFieldModule } from '@angular/material';
+import { MatInputModule } from '@angular/material';
 
 /*import {MyMaterialModule} from '../my-material.model';*/
 
@@ -59,6 +61,9 @@ const appRoutes: Routes = [
   imports:      [ BrowserModule, ReactiveFormsModule, RouterModule,
     HttpClientModule, routing, MatSidenavModule, MatDialogModule, MatSnackBarModule, MatIconModule, MatCardModule, MatToolbarModule, BrowserAnimationsModule, MatButtonModule,
     FlexLayoutModule,
+    MatFormFieldModule,
+    MatInputModule,
+    FormsModule,
     RouterModule.forRoot(
       appRoutes,
       { enableTracing: false } // <-- debugging purposes only

@@ -1,4 +1,49 @@
-<input id="createTableButton" type="button" value="Create Table" (click)="createMovies()" />
-<input id="createTableButton" type="button" value="Watch for data load JSON files" (click)="initialDataLoad()" />
-<br><br>
-<textarea readonly id= "textarea" style="width:400px; height:800px">{{movies}}</textarea>
+<div fxLayout="row wrap">
+  <mat-toolbar color="primary" style="height: 4em;">
+
+    <img class="mdCardImg md-card-sm-image transparentProfilePic">
+
+    <span class="textBottom xxLargerFont">&nbsp;AWS Certified Cloud Practitioner Pratice</span>
+
+    <span class="app-toolbar-filler"></span>
+    <!--span class="smallTextBottom"><i class="material-icons md-18 iconBottom">home</i>&nbsp;261 Swedesford Rd., Malvern, PA 19355&nbsp;<a href="tel:484-433-3269" style="color: white"><i class="material-icons md-18 iconBottom">phone_iphone</i>484-433-3269</a>
+                    &nbsp;<a href="mailto:vbloise3@gmail.com?Subject=Resume" target="_top" style="color: white"><i class="material-icons md-18 iconBottom">email</i>vbloise3@gmail.com</a></span-->
+  </mat-toolbar>
+  <div class="app-content">
+    <mat-card class="shadowCard">
+      <h1 class="h1Blue">Administrative Tasks</h1>
+      <mat-card>
+        <!--input id="createTableButton" type="button" value="Create Table" (click)="createMovies()" /-->
+        <button id="createTableButton" (click)="createMovies()"><i class="material-icons">build</i></button>
+        <!--input id="initialDataLoadButton" type="button" value="Watch for data load JSON files" (click)="initialDataLoad()" /-->
+        <span class="app-toolbar-filler"></span>
+        <button id="initialDataLoadButton" (click)="initialDataLoad()"><i class="material-icons">cloud_upload</i></button>
+      </mat-card>
+      <br><br>
+      <div id="textarea" style="padding: 0.5em;font-size: x-small;width: 50%;">{{movies}}</div>
+    </mat-card>
+  </div>
+  <span class="app-toolbar-filler" style="padding: 1em;"></span>
+  <mat-card class="shadowCard" style="float: right;">
+    <h1 class="h1Blue">Create A Movie</h1>
+    <mat-card>
+      <form #insertMovieForm="ngForm" (ngSubmit)="createItem(insertMovieForm)">
+        <mat-form-field>
+          <input id="year" name="year" matInput placeholder="Year" ngModel>
+        </mat-form-field>
+        <mat-form-field>
+          <input id="title" name="title" matInput placeholder="Title" ngModel>
+        </mat-form-field>
+        <mat-form-field>
+          <input id="plot" name="plot" matInput placeholder="Plot" ngModel>
+        </mat-form-field>
+        <mat-form-field>
+          <input id="rating" name="rating" matInput placeholder="Rating" ngModel>
+        </mat-form-field>
+        <div class="actions">
+          <button mat-button type="submit" color="primary">SAVE</button>
+        </div>
+      </form>
+    </mat-card>
+  </mat-card>
+</div>

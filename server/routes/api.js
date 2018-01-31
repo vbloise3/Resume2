@@ -78,6 +78,38 @@ function setUpDynamoDB() {
   // console.log("dynamaDB: " + dynamodb);
 }
 
+function insertNew(inMovie) {
+  return new Promise(function (resolve, reject) {
+    var docClient = new AWS.DynamoDB.DocumentClient();
+    var dynamoDBreturn = "what?";
+    var params = {
+      TableName: "Movies",
+      Item: {
+        "year": parseInt(inMovie.year),
+        "title": inMovie.title,
+        "info": {
+          "plot": inMovie.plot,
+          "rating": parseInt(inMovie.rating)
+        }
+      }
+    };
+    console.log("inMovie: " + inMovie.title);
+    docClient.put(params, function (err, data) {
+      if (err) {
+        // document.getElementById('textarea').innerHTML = "Unable to add item: " + "\n" + JSON.stringify(err, undefined, 2);
+        dynamoDBreturn = err;
+        console.log("problem inserting movie: " + params.Item.title + " " + err);
+        resolve(dynamoDBreturn);
+      } else {
+        // document.getElementById('textarea').innerHTML = "PutItem succeeded: " + "\n" + JSON.stringify(data, undefined, 2);
+        dynamoDBreturn = "inserted movie: " + params.Item.title;
+        console.log("inserted movie: " + params.Item.title);
+        resolve(dynamoDBreturn);
+      }
+    });
+  });
+}
+
 function createMovies() {
   return new Promise(function(resolve, reject) {
     var dynamoDBreturn = "what?";
@@ -156,9 +188,11 @@ function listener (changeType, fullPath, currentStat, previousStat) {
               console.log("Unable to add movie: " + count + movie.title);
               // document.getElementById('textarea').innerHTML += "Error JSON: " + JSON.stringify(err) + "\n";
               console.log("Error JSON: " + JSON.stringify(err));
+              returnStuff = "Unable to add movie: " + count + movie.title + ". Error JSON: " + JSON.stringify(err)
             } else {
               // document.getElementById('textarea').innerHTML += "PutItem succeeded: " + movie.title + "\n";
-              console.log("PutItem succeeded: " + movie.title);
+              console.log("PutItem succeeded for movie: " + movie.title);
+              returnStuff = "PutItem succeeded for movie: " + movie.title;
               // textarea.scrollTop = textarea.scrollHeight;
             }
           });
@@ -210,6 +244,16 @@ function executeCreateDynamoDBTable() {
   });
 }
 
+function addItem(inMovie) {
+  var returnStuff;
+  setUpDynamoDB();
+  insertNew(inMovie).then(function(successStuff){
+    // console.log("success stuff: " + successStuff);
+    returnStuff = successStuff;
+    return returnStuff;
+  });
+}
+
 // End DynamoDB Setup
 
 // DynamoDB simple test
@@ -233,10 +277,23 @@ router.get('/dynamoDBinitialDataLoad', (req, res) => {
   var returnStuff
   setUpDynamoDB();
   returnStuff = initialLoadMovies();
-  // console.log("result: " + returnStuff);
+  // console.log("result: " + JSON.stringify(returnStuff));
   res.status(200).send({message: "listening for *.json"});
+  // res.status(200).send(returnStuff);
 });
 // End initial data load
+
+// Add Item
+router.route('/dynamoDBaddItem')
+ .post(function(req, res) {
+    var returnStuff
+    setUpDynamoDB();
+    returnStuff = addItem(req.body);
+    //console.log("result: " + JSON.stringify(returnStuff));
+    res.status(200).send({message: "Inserted movie: ", movieTitle: req.body.title});
+    // res.status(200).send(JSON.stringify(returnStuff);
+});
+// End add item
 
 /* GET api listing. */
 router.get('/', (req, res) => {

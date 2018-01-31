@@ -1,6 +1,7 @@
 ///<reference path="../services/dynamo-dbservice.ts"/>
 import { Component, OnInit } from '@angular/core';
-import { DynamoDbserviceService} from '../services/dynamo-dbservice';
+import { DynamoDbserviceService, Movie } from '../services/dynamo-dbservice';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-movies-dynamo-dbexample',
@@ -25,12 +26,23 @@ export class MoviesDynamoDbexampleComponent implements OnInit {
   createMovies() {
     this.dynamoDBservice.createMoviesTable().subscribe(movies => {
       this.movies = JSON.stringify(movies);
+      // alert('component createMovies result before HTML display: ' + this.movies);
     });
   }
 
   initialDataLoad() {
     this.dynamoDBservice.loadInitialData().subscribe( movies => {
       this.movies = JSON.stringify(movies);
+      // alert('component initialDataLoad result before HTML display: ' + this.movies);
+    });
+  }
+
+  createItem(form: NgForm) {
+    const theMovie: Movie = form.value;
+    // alert('inMovie: ' + JSON.stringify(form.value));
+    this.dynamoDBservice.addItem(theMovie).subscribe( movies => {
+      this.movies = JSON.stringify(movies);
+      // alert('component initialDataLoad result before HTML display: ' + this.movies);
     });
   }
 
