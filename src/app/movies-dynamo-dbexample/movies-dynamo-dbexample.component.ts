@@ -2,6 +2,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DynamoDbserviceService, Movie } from '../services/dynamo-dbservice';
 import { NgForm } from '@angular/forms';
+import { OnlyNumberDirective } from '../directives/only-number.directive';
 
 @Component({
   selector: 'app-movies-dynamo-dbexample',

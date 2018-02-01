@@ -24,6 +24,7 @@ import { MoviesDynamoDbexampleComponent } from './movies-dynamo-dbexample/movies
 import { DynamoDbserviceService } from './services/dynamo-dbservice';
 import { MatFormFieldModule } from '@angular/material';
 import { MatInputModule } from '@angular/material';
+import { OnlyNumberDirective} from './directives/only-number.directive';
 
 /*import {MyMaterialModule} from '../my-material.model';*/
 
@@ -68,7 +69,7 @@ const appRoutes: Routes = [
       appRoutes,
       { enableTracing: false } // <-- debugging purposes only
     )],
-  declarations: [ AppComponent, HomeComponent, YoMoFoComponent, Material2AppAppComponent, DialogContent, PersonalInterestsComponent, DialogContent2, PageNotFoundComponent, TestComponent, MoviesDynamoDbexampleComponent],
+  declarations: [ AppComponent, HomeComponent, YoMoFoComponent, Material2AppAppComponent, DialogContent, PersonalInterestsComponent, DialogContent2, PageNotFoundComponent, TestComponent, MoviesDynamoDbexampleComponent, OnlyNumberDirective],
   entryComponents: [DialogContent, DialogContent2],
   providers:    [PostsService, DynamoDbserviceService/*,
     {provide: LocationStrategy, useClass: HashLocationStrategy}*/],

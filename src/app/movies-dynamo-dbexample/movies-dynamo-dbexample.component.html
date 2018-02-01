@@ -29,19 +29,19 @@
     <mat-card>
       <form #insertMovieForm="ngForm" (ngSubmit)="createItem(insertMovieForm)">
         <mat-form-field>
-          <input id="year" name="year" matInput placeholder="Year" ngModel>
+          <input id="year" OnlyNumberDirective="true" name="year" matInput placeholder="Year" ngModel required>
         </mat-form-field>
         <mat-form-field>
-          <input id="title" name="title" matInput placeholder="Title" ngModel>
+          <input id="title" name="title" matInput placeholder="Title" ngModel required>
         </mat-form-field>
         <mat-form-field>
-          <input id="plot" name="plot" matInput placeholder="Plot" ngModel>
+          <input id="plot" name="plot" matInput placeholder="Plot" ngModel required>
         </mat-form-field>
         <mat-form-field>
-          <input id="rating" name="rating" matInput placeholder="Rating" ngModel>
+          <input id="rating" OnlyNumberDirective="true" name="rating" matInput placeholder="Rating" ngModel required>
         </mat-form-field>
         <div class="actions">
-          <button mat-button type="submit" color="primary">SAVE</button>
+          <button mat-button type="submit" color="primary" [disabled]="!insertMovieForm.form.valid">SAVE</button>
         </div>
       </form>
     </mat-card>
