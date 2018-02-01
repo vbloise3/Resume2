@@ -46,4 +46,27 @@
       </form>
     </mat-card>
   </mat-card>
+  <br/>
+  <mat-card class="shadowCard" style="float: left;padding-top: 1em;">
+    <h1 class="h1Blue">Get A Movie</h1>
+    <mat-card>
+      <form #getMovieForm="ngForm" (ngSubmit)="getOneItem(getMovieForm)">
+        <mat-form-field>
+          <input id="getYear" OnlyNumberDirective="true" name="year" matInput placeholder="Year" ngModel required>
+        </mat-form-field>
+        <mat-form-field>
+          <input id="getTitle" name="title" matInput placeholder="Title" ngModel required>
+        </mat-form-field>
+        <mat-form-field>
+          <input id="getPlot" name="plot" matInput placeholder="Plot" ngModel value="{{plot}}">
+        </mat-form-field>
+        <mat-form-field>
+          <input id="getRating" OnlyNumberDirective="true" name="rating" matInput placeholder="Rating" ngModel value="{{rating}}">
+        </mat-form-field>
+        <div class="actions">
+          <button mat-button type="submit" color="primary" [disabled]="!getMovieForm.form.valid">Get</button>
+        </div>
+      </form>
+    </mat-card>
+  </mat-card>
 </div>

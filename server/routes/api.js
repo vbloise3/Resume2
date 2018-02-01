@@ -78,6 +78,38 @@ function setUpDynamoDB() {
   // console.log("dynamaDB: " + dynamodb);
 }
 
+function getOneMovie(inYear, inTitle) {
+  // Strip off the leading colon
+  var theYear = inYear.substr(1);
+  var theTitle = inTitle.substr(1);
+  // End strip off the leading colon
+  return new Promise(function (resolve, reject) {
+    var docClient = new AWS.DynamoDB.DocumentClient();
+    var dynamoDBreturn = "what?";
+    var params = {
+      TableName: "Movies",
+      Key: {
+        "year": parseInt(theYear),
+        "title": theTitle,
+      }
+    };
+    console.log("looking for " + params.Key.title + ' ' + params.Key.year + ' of ' + inYear);
+    docClient.get(params, function(err, data) {
+      if (err) {
+        // document.getElementById('textarea').innerHTML = "Unable to read item: " + "\n" + JSON.stringify(err, undefined, 2);
+        dynamoDBreturn = JSON.stringify(err, undefined, 2);
+        console.log("couldn't find movie: " + JSON.stringify(err, undefined, 2));
+        resolve(dynamoDBreturn);
+      } else {
+        // document.getElementById('textarea').innerHTML = "GetItem succeeded: " + "\n" + JSON.stringify(data, undefined, 2);
+        dynamoDBreturn = JSON.stringify(data, undefined, 2);
+        console.log("retrieved movie: " + JSON.stringify(data, undefined, 2));
+        resolve(dynamoDBreturn);
+      }
+    });
+  });
+}
+
 function insertNew(inMovie) {
   return new Promise(function (resolve, reject) {
     var docClient = new AWS.DynamoDB.DocumentClient();
@@ -254,6 +286,16 @@ function addItem(inMovie) {
   });
 }
 
+function getOne(inMovie) {
+  var returnStuff;
+  setUpDynamoDB();
+  getOneMovie(inMovie).then(function(successStuff){
+    console.log("success stuff: " + successStuff);
+    returnStuff = successStuff;
+    return returnStuff;
+  });
+}
+
 // End DynamoDB Setup
 
 // DynamoDB simple test
@@ -294,6 +336,23 @@ router.route('/dynamoDBaddItem')
     // res.status(200).send(JSON.stringify(returnStuff);
 });
 // End add item
+
+// Get one item
+ // get the npsclients with that id
+router.route('/movies/:movie_year/:movie_title')
+  .get(function(req, res) {
+    var returnStuff
+    setUpDynamoDB();
+    getOneMovie(req.params.movie_year, req.params.movie_title).then(function (successStuff) {
+      /*if (err)
+        res.send(err);
+        res.json(npsclient);
+      */
+      returnStuff = successStuff;
+      res.status(200).send(returnStuff);
+    });
+  });
+// End get one item
 
 /* GET api listing. */
 router.get('/', (req, res) => {

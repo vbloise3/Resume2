@@ -12,6 +12,8 @@ import { OnlyNumberDirective } from '../directives/only-number.directive';
 export class MoviesDynamoDbexampleComponent implements OnInit {
 
   movies: any = '';
+  plot: any;
+  rating: any;
 
   constructor(private dynamoDBservice: DynamoDbserviceService) {
 
@@ -47,4 +49,15 @@ export class MoviesDynamoDbexampleComponent implements OnInit {
     });
   }
 
+  getOneItem(form: NgForm) {
+    const theMovie: Movie = form.value;
+    // alert('inMovie: ' + JSON.stringify(form.value));
+    this.dynamoDBservice.getOneItem(theMovie).subscribe( movies => {
+      this.movies = JSON.stringify(movies);
+      // alert('the returned json: ' + this.movies);
+      this.rating = movies.Item.info.rating;
+      this.plot = movies.Item.info.plot;
+      // alert('component initialDataLoad result before HTML display: ' + this.movies);
+    });
+  }
 }
