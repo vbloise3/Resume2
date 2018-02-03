@@ -24,7 +24,7 @@
     </mat-card>
   </div>
   <span class="app-toolbar-filler" style="padding: 1em;"></span>
-  <mat-card class="shadowCard" style="float: right;">
+  <mat-card class="shadowCard" style="float: right;margin-bottom: 1em;">
     <h1 class="h1Blue">Create A Movie</h1>
     <mat-card>
       <form #insertMovieForm="ngForm" (ngSubmit)="createItem(insertMovieForm)">
@@ -46,8 +46,10 @@
       </form>
     </mat-card>
   </mat-card>
+  <span class="app-toolbar-filler" style="padding: 2em;"></span>
   <br/>
-  <mat-card class="shadowCard" style="float: left;padding-top: 1em;">
+  <span class="app-toolbar-filler" style="padding: 1em;"></span>
+  <mat-card class="shadowCard" style="float: left;margin-top: 1em;">
     <h1 class="h1Blue">Get A Movie</h1>
     <mat-card>
       <form #getMovieForm="ngForm" (ngSubmit)="getOneItem(getMovieForm)">

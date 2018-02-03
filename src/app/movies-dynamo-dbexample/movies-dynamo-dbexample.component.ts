@@ -55,8 +55,13 @@ export class MoviesDynamoDbexampleComponent implements OnInit {
     this.dynamoDBservice.getOneItem(theMovie).subscribe( movies => {
       this.movies = JSON.stringify(movies);
       // alert('the returned json: ' + this.movies);
-      this.rating = movies.Item.info.rating;
-      this.plot = movies.Item.info.plot;
+      if ( this.movies === '{}') {
+        this.rating = '';
+        this.plot = '';
+      } else {
+        this.rating = movies.Item.info.rating;
+        this.plot = movies.Item.info.plot;
+      }
       // alert('component initialDataLoad result before HTML display: ' + this.movies);
     });
   }
