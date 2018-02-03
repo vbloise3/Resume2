@@ -78,6 +78,107 @@ function setUpDynamoDB() {
   // console.log("dynamaDB: " + dynamodb);
 }
 
+function deleteTable(inTable) {
+  // Strip off the leading colon
+  var theTable = inTable.substr(1);
+
+  // End strip off the leading colon
+  return new Promise(function (resolve, reject) {
+    var dynamodb = new AWS.DynamoDB();
+    var dynamoDBreturn = "what?";
+    var params = {
+      TableName: theTable
+    };
+    console.log("deleting " + params.TableName + ' of ' + inTable);
+    dynamodb.deleteTable(params, function(err, data) {
+      if (err) {
+        // document.getElementById('textarea').innerHTML = "Unable to read item: " + "\n" + JSON.stringify(err, undefined, 2);
+        dynamoDBreturn = JSON.stringify(err, undefined, 2);
+        console.log("couldn't find table: " + JSON.stringify(err, undefined, 2));
+        resolve(dynamoDBreturn);
+      } else {
+        // document.getElementById('textarea').innerHTML = "GetItem succeeded: " + "\n" + JSON.stringify(data, undefined, 2);
+        dynamoDBreturn = JSON.stringify(data, undefined, 2);
+        console.log("deleted table: " + JSON.stringify(data, undefined, 2));
+        resolve(dynamoDBreturn);
+      }
+    });
+  });
+}
+
+function deleteOneMovie(inYear, inTitle) {
+  // Strip off the leading colon
+  var theYear = inYear.substr(1);
+  var theTitle = inTitle.substr(1);
+
+  // End strip off the leading colon
+  return new Promise(function (resolve, reject) {
+    var docClient = new AWS.DynamoDB.DocumentClient();
+    var dynamoDBreturn = "what?";
+    var params = {
+      TableName: "Movies",
+      Key: {
+        "year": parseInt(theYear),
+        "title": theTitle,
+      }
+    };
+    console.log("deleting " + params.Key.title + ' ' + params.Key.year + ' of ' + inYear);
+    docClient.delete(params, function(err, data) {
+      if (err) {
+        // document.getElementById('textarea').innerHTML = "Unable to read item: " + "\n" + JSON.stringify(err, undefined, 2);
+        dynamoDBreturn = JSON.stringify(err, undefined, 2);
+        console.log("couldn't find movie: " + JSON.stringify(err, undefined, 2));
+        resolve(dynamoDBreturn);
+      } else {
+        // document.getElementById('textarea').innerHTML = "GetItem succeeded: " + "\n" + JSON.stringify(data, undefined, 2);
+        dynamoDBreturn = JSON.stringify(data, undefined, 2);
+        console.log("deleted movie: " + JSON.stringify(data, undefined, 2));
+        resolve(dynamoDBreturn);
+      }
+    });
+  });
+}
+
+function updateOneMovie(inYear, inTitle, inRating, inPlot) {
+  // Strip off the leading colon
+  var theYear = inYear.substr(1);
+  var theTitle = inTitle.substr(1);
+  var theRating = inRating.substr(1);
+  var thePlot = inPlot.substr(1);
+  // End strip off the leading colon
+  return new Promise(function (resolve, reject) {
+    var docClient = new AWS.DynamoDB.DocumentClient();
+    var dynamoDBreturn = "what?";
+    var params = {
+      TableName: "Movies",
+      Key: {
+        "year": parseInt(theYear),
+        "title": theTitle,
+      },
+      UpdateExpression: "set info.rating = :r, info.plot=:p",
+      ExpressionAttributeValues:{
+        ":r":theRating,
+        ":p":thePlot
+      },
+      ReturnValues:"UPDATED_NEW"
+    };
+    console.log("updating " + params.Key.title + ' ' + params.Key.year + ' of ' + inYear);
+    docClient.update(params, function(err, data) {
+      if (err) {
+        // document.getElementById('textarea').innerHTML = "Unable to read item: " + "\n" + JSON.stringify(err, undefined, 2);
+        dynamoDBreturn = JSON.stringify(err, undefined, 2);
+        console.log("couldn't find movie: " + JSON.stringify(err, undefined, 2));
+        resolve(dynamoDBreturn);
+      } else {
+        // document.getElementById('textarea').innerHTML = "GetItem succeeded: " + "\n" + JSON.stringify(data, undefined, 2);
+        dynamoDBreturn = JSON.stringify(data, undefined, 2);
+        console.log("updated movie: " + JSON.stringify(data, undefined, 2));
+        resolve(dynamoDBreturn);
+      }
+    });
+  });
+}
+
 function getOneMovie(inYear, inTitle) {
   // Strip off the leading colon
   var theYear = inYear.substr(1);
@@ -336,6 +437,57 @@ router.route('/dynamoDBaddItem')
     // res.status(200).send(JSON.stringify(returnStuff);
 });
 // End add item
+
+// Deltet table
+// delete a table
+router.route('/deleteTable/:movie_table')
+  .delete(function(req, res) {
+    var returnStuff
+    setUpDynamoDB();
+    deleteTable(req.params.movie_table).then(function (successStuff) {
+      /*if (err)
+        res.send(err);
+        res.json(npsclient);
+      */
+      returnStuff = successStuff;
+      res.status(200).send(returnStuff);
+    });
+  });
+// End delete one item
+
+// Deltet one item
+// delete the npsclients with that id
+router.route('/deleteMovie/:movie_year/:movie_title')
+  .delete(function(req, res) {
+    var returnStuff
+    setUpDynamoDB();
+    deleteOneMovie(req.params.movie_year, req.params.movie_title).then(function (successStuff) {
+      /*if (err)
+        res.send(err);
+        res.json(npsclient);
+      */
+      returnStuff = successStuff;
+      res.status(200).send(returnStuff);
+    });
+  });
+// End delete one item
+
+// Update one item
+// update the npsclients with that id
+router.route('/updateMovie/:movie_year/:movie_title/:movie_rating/:movie_plot')
+  .put(function(req, res) {
+    var returnStuff
+    setUpDynamoDB();
+    updateOneMovie(req.params.movie_year, req.params.movie_title, req.params.movie_rating, req.params.movie_plot).then(function (successStuff) {
+      /*if (err)
+        res.send(err);
+        res.json(npsclient);
+      */
+      returnStuff = successStuff;
+      res.status(200).send(returnStuff);
+    });
+  });
+// End update one item
 
 // Get one item
  // get the npsclients with that id

@@ -10,7 +10,7 @@
                     &nbsp;<a href="mailto:vbloise3@gmail.com?Subject=Resume" target="_top" style="color: white"><i class="material-icons md-18 iconBottom">email</i>vbloise3@gmail.com</a></span-->
   </mat-toolbar>
   <div class="app-content">
-    <mat-card class="shadowCard">
+    <mat-card class="shadowCard" style="margin-top: 1em;">
       <h1 class="h1Blue">Administrative Tasks</h1>
       <mat-card>
         <!--input id="createTableButton" type="button" value="Create Table" (click)="createMovies()" /-->
@@ -24,7 +24,7 @@
     </mat-card>
   </div>
   <span class="app-toolbar-filler" style="padding: 1em;"></span>
-  <mat-card class="shadowCard" style="float: right;margin-bottom: 1em;">
+  <mat-card class="shadowCard" style="float: right;margin-bottom: 1em;margin-top: 1em;">
     <h1 class="h1Blue">Create A Movie</h1>
     <mat-card>
       <form #insertMovieForm="ngForm" (ngSubmit)="createItem(insertMovieForm)">
@@ -60,13 +60,76 @@
           <input id="getTitle" name="title" matInput placeholder="Title" ngModel required>
         </mat-form-field>
         <mat-form-field>
-          <input id="getPlot" name="plot" matInput placeholder="Plot" ngModel value="{{plot}}">
+          <input id="getPlot" name="plot" matInput placeholder="Plot" ngModel value="{{getPlot}}">
         </mat-form-field>
         <mat-form-field>
-          <input id="getRating" OnlyNumberDirective="true" name="rating" matInput placeholder="Rating" ngModel value="{{rating}}">
+          <input id="getRating" OnlyNumberDirective="true" name="rating" matInput placeholder="Rating" ngModel value="{{getRating}}">
         </mat-form-field>
         <div class="actions">
-          <button mat-button type="submit" color="primary" [disabled]="!getMovieForm.form.valid">Get</button>
+          <button mat-button type="submit" color="primary" style="margin-right: 1em;" [disabled]="!getMovieForm.form.valid">Get</button>
+        </div>
+      </form>
+    </mat-card>
+  </mat-card>
+  <mat-card class="shadowCard" style="float: left;margin-top: 1em;">
+    <h1 class="h1Blue">Update A Movie</h1>
+    <mat-card>
+      <form #updateMovieForm="ngForm" (ngSubmit)="updateOneItem(updateMovieForm)">
+        <mat-form-field>
+          <input id="updateYear" OnlyNumberDirective="true" name="year" matInput placeholder="Year" ngModel required>
+        </mat-form-field>
+        <mat-form-field>
+          <input id="updateTitle" name="title" matInput placeholder="Title" ngModel required>
+        </mat-form-field>
+        <mat-form-field>
+          <input id="updatePlot" name="plot" matInput placeholder="Plot" ngModel value="{{updatePlot}}">
+        </mat-form-field>
+        <mat-form-field>
+          <input id="updateRating" OnlyNumberDirective="true" name="rating" matInput placeholder="Rating" ngModel value="{{updateRating}}">
+        </mat-form-field>
+        <div class="actions">
+          <button mat-button type="submit" color="primary" style="margin-right: 1em;" [disabled]="!updateMovieForm.form.valid">Update</button>
+        </div>
+      </form>
+    </mat-card>
+  </mat-card>
+  <span class="app-toolbar-filler" style="padding: 2em;"></span>
+  <br/>
+  <span class="app-toolbar-filler" style="padding: 1em;"></span>
+  <mat-card class="shadowCard" style="float: left;margin-top: 1em;">
+    <h1 class="h1Blue">Delete A Movie</h1>
+    <mat-card>
+      <form #deleteMovieForm="ngForm" (ngSubmit)="deleteOneItem(deleteMovieForm)">
+        <mat-form-field>
+          <input id="deleteYear" OnlyNumberDirective="true" name="year" matInput placeholder="Year" ngModel required>
+        </mat-form-field>
+        <mat-form-field>
+          <input id="deleteTitle" name="title" matInput placeholder="Title" ngModel required>
+        </mat-form-field>
+        <mat-form-field>
+          <input id="deletePlot" name="plot" matInput placeholder="Plot" ngModel value="{{deletePlot}}">
+        </mat-form-field>
+        <mat-form-field>
+          <input id="deleteRating" OnlyNumberDirective="true" name="rating" matInput placeholder="Rating" ngModel value="{{deleteRating}}">
+        </mat-form-field>
+        <div class="actions">
+          <button mat-button type="submit" color="primary" style="margin-right: 1em;" [disabled]="!deleteMovieForm.form.valid">Delete</button>
+        </div>
+      </form>
+    </mat-card>
+  </mat-card>
+  <span class="app-toolbar-filler" style="padding: 2em;"></span>
+  <br/>
+  <span class="app-toolbar-filler" style="padding: 1em;"></span>
+  <mat-card class="shadowCard" style="float: left;margin-top: 1em;">
+    <h1 class="h1Blue">Delete A Table</h1>
+    <mat-card>
+      <form #deleteTableForm="ngForm" (ngSubmit)="deleteTable(deleteTableForm)">
+        <mat-form-field>
+          <input id="deleteTableName" name="tableName" matInput placeholder="Table Name" ngModel value="{{deletedTable}}" required>
+        </mat-form-field>
+        <div class="actions">
+          <button mat-button type="submit" color="primary" style="margin-right: 1em;" [disabled]="!deleteTableForm.form.valid">Delete Table</button>
         </div>
       </form>
     </mat-card>

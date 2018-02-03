@@ -22,5 +22,28 @@
         "Olivia Wilde"
       ]
     }
+  },
+  {
+    "year": 2013,
+    "title": "Prisoners",
+    "info": {
+      "directors": ["Denis Villeneuve"],
+      "release_date": "2013-08-30T00:00:00Z",
+      "rating": 8.2,
+      "genres": [
+        "Crime",
+        "Drama",
+        "Thriller"
+      ],
+      "image_url": "http://ia.media-imdb.com/images/M/MV5BMTg0NTIzMjQ1NV5BMl5BanBnXkFtZTcwNDc3MzM5OQ@@._V1_SX400_.jpg",
+      "plot": "When Keller Dover's daughter and her friend go missing, he takes matters into his own hands as the police pursue multiple leads and the pressure mounts. But just how far will this desperate father go to protect his family?",
+      "rank": 3,
+      "running_time_secs": 9180,
+      "actors": [
+        "Hugh Jackman",
+        "Jake Gyllenhaal",
+        "Viola Davis"
+      ]
+    }
   }
 ]
