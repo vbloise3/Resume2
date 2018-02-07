@@ -43,14 +43,14 @@ let npsclients = new Array(INpsclient);
 
 // DATABASE SETUP
 var mongoose   = require('mongoose');
-mongoose.connect('mongodb://localhost:27017/presentation'); // connect to our database
+// mongoose.connect('mongodb://localhost:27017/presentation'); // connect to our database
 // Handle the connection event
-var db = mongoose.connection;
-db.on('error', console.error.bind(console, 'connection error:'));
+// var db = mongoose.connection;
+// db.on('error', console.error.bind(console, 'connection error:'));
 
-db.once('open', function() {
-  console.log("DB connection alive");
-});
+// db.once('open', function() {
+//   console.log("DB connection alive");
+// });
 
 // Post models lives here
 var Post     = require('../../src/app/models/post');
@@ -226,12 +226,12 @@ function geS3BucketContents(inBucket) {
       if (err) {
         // document.getElementById('textarea').innerHTML = "Unable to read item: " + "\n" + JSON.stringify(err, undefined, 2);
         s3Bucketreturn = JSON.stringify(err, undefined, 2);
-        console.log("couldn't find buckets: " + JSON.stringify(err, undefined, 2));
+        console.log("couldn't find bucket contents: " + JSON.stringify(err, undefined, 2));
         resolve(s3Bucketreturn);
       } else {
         // document.getElementById('textarea').innerHTML = "GetItem succeeded: " + "\n" + JSON.stringify(data, undefined, 2);
         s3Bucketreturn = JSON.stringify(data, undefined, 2);
-        console.log("retrieved buckets: " + JSON.stringify(data, undefined, 2));
+        console.log("retrieved bucket contents: " + JSON.stringify(data, undefined, 2));
         resolve(s3Bucketreturn);
       }
     });
@@ -577,7 +577,7 @@ router.route('/listBucketContents/:bucketName')
         res.json(npsclient);
       */
       returnStuff = successStuff;
-      console.log("return stuff: " + returnStuff);
+      // console.log("return stuff: " + returnStuff);
       res.status(200).send(returnStuff);
     });
   });
