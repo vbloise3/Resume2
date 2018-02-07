@@ -41,3 +41,7 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+vincebloise.zip
+createCognitoPool.sh
+myCognitoPolicy.json
+myS3 Policy.json

@@ -12,6 +12,9 @@ import { OnlyNumberDirective } from '../directives/only-number.directive';
 export class MoviesDynamoDbexampleComponent implements OnInit {
 
   movies: any = '';
+  buckets: any = '';
+  theBucketList: any = '';
+  s3BucketName: any = '';
   getPlot: any;
   getRating: any;
   updatePlot: any;
@@ -118,6 +121,18 @@ export class MoviesDynamoDbexampleComponent implements OnInit {
         this.deletedTable = movies.TableDescription.TableName + ', ' + movies.TableDescription.TableArn;
       }
       // alert('component initialDataLoad result before HTML display: ' + this.movies);
+    });
+  }
+  listS3BucketContents(form: NgForm) {
+    const theBucket: any = form.value;
+    this.dynamoDBservice.listS3BucketContents(theBucket.s3BucketName).subscribe( buckets => {
+      // alert('bucket name: ' + JSON.stringify(theBucket));
+      this.buckets = JSON.stringify(buckets);
+      if ( this.buckets === '{}') {
+        this.theBucketList = '';
+      } else {
+        this.theBucketList = this.buckets;
+      }
     });
   }
 }

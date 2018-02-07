@@ -5,6 +5,7 @@ var interface = require('../modules/interface').interface;
 var bodyParser = require('body-parser');
 var AWS = require('aws-sdk');
 var watchr = require('watchr');
+var cognito = require('amazon-cognito-js');
 
 const url = require('url');
 const querystring = require('querystring');
@@ -61,18 +62,39 @@ var dynamodb;
 
 // END DATABASE SETUP
 
+// S3 setup
+
+// Set the region
+AWS.config.update({region: 'us-west-2'});
+AWS.config.credentials = new AWS.CognitoIdentityCredentials({
+  IdentityPoolId: 'us-west-2:76f4ffab-b530-408a-a31e-83c9041e675c',
+});
+
+function s3GetBuckets() {
+  // Create S3 service object
+  s3 = new AWS.S3({apiVersion: '2006-03-01'});
+
+// Call S3 to list current buckets
+  s3.listBuckets(function(err, data) {
+    if (err) {
+      console.log("Error", err);
+    } else {
+      console.log("Bucket List", data.Buckets);
+    }
+  });
+}
+
+//End S3 setup
+
 // DynamoDB Setup
 
 function setUpDynamoDB() {
+  AWS.config.credentials = new AWS.CognitoIdentityCredentials({
+    IdentityPoolId: "us-west-2:76f4ffab-b530-408a-a31e-83c9041e675c",
+    RoleArn: "arn:aws:iam::001178231653:role/Cognito_DynamoPoolUnauth"
+  });
   AWS.config.update({
-    region: "us-west-2",
-    endpoint: 'http://localhost:8000',
-    // accessKeyId default can be used while using the downloadable version of DynamoDB.
-    // For security reasons, do not store AWS Credentials in your files. Use Amazon Cognito instead.
-    accessKeyId: "fakeMyKeyId",
-    // secretAccessKey default can be used while using the downloadable version of DynamoDB.
-    // For security reasons, do not store AWS Credentials in your files. Use Amazon Cognito instead.
-    secretAccessKey: "fakeSecretAccessKey"
+    region: "us-west-2"
   });
   dynamodb = new AWS.DynamoDB();
   // console.log("dynamaDB: " + dynamodb);
@@ -174,6 +196,43 @@ function updateOneMovie(inYear, inTitle, inRating, inPlot) {
         dynamoDBreturn = JSON.stringify(data, undefined, 2);
         console.log("updated movie: " + JSON.stringify(data, undefined, 2));
         resolve(dynamoDBreturn);
+      }
+    });
+  });
+}
+
+function geS3BucketContents(inBucket) {
+  // Strip off the leading colon
+  var theBucket = inBucket.substr(1);
+  console.log("bucket name: " + theBucket);
+  // End strip off the leading colon
+  // Set the region
+  AWS.config.update({region: 'us-west-2'});
+  AWS.config.credentials = new AWS.CognitoIdentityCredentials({
+    IdentityPoolId: 'us-west-2:76f4ffab-b530-408a-a31e-83c9041e675c',
+    RoleArn: "arn:aws:iam::001178231653:role/Cognito_DynamoPoolUnauth"
+  });
+  return new Promise(function (resolve, reject) {
+    s3 = new AWS.S3({apiVersion: '2006-03-01'});
+    var s3Bucketreturn = "what?";
+    var bucketParams = {Bucket: theBucket}; // "awsc2ppracticevbloise3"
+    var params = {
+      Bucket: theBucket,
+      Delimiter: '/'
+    }
+    // Call S3 to list current buckets
+    s3.listObjects(params, function(err, data) {
+    // s3.getBucketAcl(bucketParams, function(err, data) {
+      if (err) {
+        // document.getElementById('textarea').innerHTML = "Unable to read item: " + "\n" + JSON.stringify(err, undefined, 2);
+        s3Bucketreturn = JSON.stringify(err, undefined, 2);
+        console.log("couldn't find buckets: " + JSON.stringify(err, undefined, 2));
+        resolve(s3Bucketreturn);
+      } else {
+        // document.getElementById('textarea').innerHTML = "GetItem succeeded: " + "\n" + JSON.stringify(data, undefined, 2);
+        s3Bucketreturn = JSON.stringify(data, undefined, 2);
+        console.log("retrieved buckets: " + JSON.stringify(data, undefined, 2));
+        resolve(s3Bucketreturn);
       }
     });
   });
@@ -505,6 +564,25 @@ router.route('/movies/:movie_year/:movie_title')
     });
   });
 // End get one item
+
+// Get S3 Bucket list
+
+router.route('/listBucketContents/:bucketName')
+  .get(function(req, res) {
+    var returnStuff;
+    setUpDynamoDB();
+    geS3BucketContents(req.params.bucketName).then(function (successStuff) {
+      /*if (err)
+        res.send(err);
+        res.json(npsclient);
+      */
+      returnStuff = successStuff;
+      console.log("return stuff: " + returnStuff);
+      res.status(200).send(returnStuff);
+    });
+  });
+
+// End S3 get bucket list
 
 /* GET api listing. */
 router.get('/', (req, res) => {

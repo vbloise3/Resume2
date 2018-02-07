@@ -134,4 +134,21 @@
       </form>
     </mat-card>
   </mat-card>
+  <span class="app-toolbar-filler" style="padding: 2em;"></span>
+  <br/>
+  <span class="app-toolbar-filler" style="padding: 1em;"></span>
+  <mat-card class="shadowCard" style="float: left;margin-top: 1em;">
+    <h1 class="h1Blue">List S3 Bucket Contents</h1>
+    <mat-card>
+      <form #listS3BucketsForm="ngForm" (ngSubmit)="listS3BucketContents(listS3BucketsForm)">
+        <mat-form-field>
+          <input id="s3BucketName" name="s3BucketName" matInput placeholder="Bucket Name" ngModel value="{{s3BucketName}}">
+        </mat-form-field>
+        <div class="actions">
+          <button mat-button type="submit" color="primary" style="margin-right: 1em;" [disabled]="!listS3BucketsForm.form.valid">S3 Bucket Contents</button>
+        </div>
+      </form>
+    </mat-card>
+    <div id="textareaBuckets" style="padding: 0.5em;font-size: x-small;width: 50%;">{{theBucketList}}</div>
+  </mat-card>
 </div>
