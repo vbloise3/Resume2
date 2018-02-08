@@ -1,0 +1,14 @@
+S3 - lambda-s3-execution-role-c2p role arn: arn:aws:iam::001178231653:role/lambda-s3-execution-role-c2p
+
+Lambda function ARN - arn:aws:lambda:us-west-2:001178231653:function:loadDataToDynamoDB
+
+
+After exporting lambda function from console and moving to ~/AWS Mgmt
+To create deployment yaml:
+aws cloudformation package --template-file loadDataToDynamoDB.yaml --output-template-file serverless-output.yaml --s3-bucket testbucketvbloise3
+
+To deploy Lambda function:
+aws cloudformation deploy --template-file serverless-output.yaml --stack-name c2pDynamoDBLoadStack --capabilities CAPABILITY_IAM
+
+Lambda function ARN:
+ARN - arn:aws:lambda:us-west-2:001178231653:function:loadDataToDynamoDB
