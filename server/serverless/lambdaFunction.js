@@ -8,12 +8,20 @@ AWS.config.credentials = new AWS.CognitoIdentityCredentials({
   IdentityPoolId: 'us-west-2:76f4ffab-b530-408a-a31e-83c9041e675c',
 });
 
+function randomString(length, chars) {
+  var result = '';
+  for (var i = length; i > 0; --i) result += chars[Math.floor(Math.random() * chars.length)];
+  return result;
+}
+
 exports.handler = (event, context, callback) => {
   // get bucket and file info
   var returnStuff;
   var docClient = new AWS.DynamoDB.DocumentClient();
   var src_bkt = event.Records[0].s3.bucket.name;
   var src_key = event.Records[0].s3.object.key;
+  // use this for every new qAndA created
+  var rString = randomString(32, '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ');
   console.log('bucket: ' + src_bkt + ', ' + 'file: ' + src_key);
   // Retrieve the object
   s3.getObject({

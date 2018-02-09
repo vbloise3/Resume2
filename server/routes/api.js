@@ -270,10 +270,18 @@ function getOneMovie(inYear, inTitle) {
   });
 }
 
+function randomString(length, chars) {
+  var result = '';
+  for (var i = length; i > 0; --i) result += chars[Math.floor(Math.random() * chars.length)];
+  return result;
+}
+
 function insertNew(inMovie) {
   return new Promise(function (resolve, reject) {
     var docClient = new AWS.DynamoDB.DocumentClient();
     var dynamoDBreturn = "what?";
+    // use this for every new qAndA created
+    var rString = randomString(32, '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ');
     var params = {
       TableName: "Movies",
       Item: {
