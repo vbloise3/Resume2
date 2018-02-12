@@ -33,29 +33,30 @@ exports.handler = (event, context, callback) => {
       callback(err);
     } else {
       console.log("Raw text:\n" + data.Body.toString('ascii'));
-      var allMovies = JSON.parse(data.Body.toString('ascii'));
+      var allQandAs = JSON.parse(data.Body.toString('ascii'));
 
-      allMovies.forEach(function (movie) {
-        // document.getElementById('textarea').innerHTML += "Processing: " + movie.title + "\n";
+      allQandAs.forEach(function (qanda) {
+        // document.getElementById('textarea').innerHTML += "Processing: " + qanda.id + "\n";
+        rString = randomString(32, '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ');
         var params = {
-          TableName: "Movies",
+          TableName: "C2PQandA",
           Item: {
-            "year": movie.year,
-            "title": movie.title,
-            "info": movie.info
+            "id": rString, // qanda.id,
+            "category": qanda.category,
+            "info": qanda.info
           }
         };
         docClient.put(params, function (err, data) {
           if (err) {
             // document.getElementById('textarea').innerHTML += "Unable to add movie: " + count + movie.title + "\n";
-            console.log("Unable to add movie: " +  movie.title);
+            console.log("Unable to add qanda: " +  qanda.id);
             // document.getElementById('textarea').innerHTML += "Error JSON: " + JSON.stringify(err) + "\n";
             console.log("Error JSON: " + JSON.stringify(err));
-            returnStuff = "Unable to add movie: "  + movie.title + ". Error JSON: " + JSON.stringify(err)
+            returnStuff = "Unable to add qanda: "  + qanda.id + ". Error JSON: " + JSON.stringify(err)
           } else {
-            // document.getElementById('textarea').innerHTML += "PutItem succeeded: " + movie.title + "\n";
-            console.log("PutItem succeeded for movie: " + movie.title);
-            returnStuff = "PutItem succeeded for movie: " + movie.title;
+            // document.getElementById('textarea').innerHTML += "PutItem succeeded: " + qanda.id + "\n";
+            console.log("PutItem succeeded for qanda: " + qanda.id);
+            returnStuff = "PutItem succeeded for qanda: " + qanda.category;
             // textarea.scrollTop = textarea.scrollHeight;
           }
         });

@@ -4,13 +4,23 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 let serviceCreate = '/api/dynamoDBcreate';
 let serviceInitialDataLoad = '/api/dynamoDBinitialDataLoad';
 let serviceAddItem = '/api/dynamoDBaddItem';
-let serviceGetOneItem = '/api/movies';
-let serviceUpdateOneItem = '/api/updateMovie';
-let serviceDeleteOneItem = '/api/deleteMovie';
+let serviceGetOneItem = '/api/c2pqandas';
+let serviceUpdateOneItem = '/api/updateQandA';
+let serviceDeleteOneItem = '/api/deleteQandA';
 let serviceDeleteTable = '/api/deleteTable';
 let serviceListBucketContents = '/api/listBucketContents';
 
-export interface Movie {
+export interface QandA {
+  id: string;
+  category: string;
+  subcategory: string;
+  questionType: string;
+  question: string;
+  answers: any;
+  correctAnswer: any;
+}
+
+export interface  Movie {
   year: string;
   title: number;
   plot: number;
@@ -22,7 +32,7 @@ export class DynamoDbserviceService {
 
   constructor(private http: HttpClient) { }
 
-  createMoviesTable() {
+  createC2PQandATable() {
     let headers = new HttpHeaders();
     headers = headers.set('If-Modified-Since', '0');
     headers = headers.append('Cache-control', 'no-cache');
@@ -45,7 +55,7 @@ export class DynamoDbserviceService {
     return resultData;
   }
 
-  addItem(inMovie) {
+  addItem(inQandA) {
     let resultData;
     let headers = new HttpHeaders();
     headers = headers.set('If-Modified-Since', '0');
@@ -53,14 +63,14 @@ export class DynamoDbserviceService {
     headers = headers.append('Cache-control', 'no-store');
     headers = headers.append('Expires', '0');
     headers = headers.append('Pragma', 'no-cache');
-    resultData = this.http.post(serviceAddItem, inMovie,{ headers: headers });
+    resultData = this.http.post(serviceAddItem, inQandA,{ headers: headers });
     // alert('loadInitialData service result: ' + JSON.stringify(resultData));
     return resultData;
   }
 
-  getOneItem(inMovie) {
+  getOneItem(inQandA) {
     let resultData;
-    const url = serviceGetOneItem + '/:' + inMovie.year + '/:' + inMovie.title;
+    const url = serviceGetOneItem + '/:' + inQandA.id + '/:' + inQandA.category;
     let headers = new HttpHeaders();
     headers = headers.set('If-Modified-Since', '0');
     headers = headers.append('Cache-control', 'no-cache');
@@ -72,9 +82,9 @@ export class DynamoDbserviceService {
     return resultData;
   }
 
-  updateOneItem(inMovie) {
+  updateOneItem(inQandA) {
     let resultData;
-    const url = serviceUpdateOneItem + '/:' + inMovie.year + '/:' + inMovie.title + '/:' + inMovie.rating + '/:' + inMovie.plot;
+    const url = serviceUpdateOneItem + '/:' + inQandA.id + '/:' + inQandA.category + '/:' + inQandA.subcategory + '/:' + inQandA.questionType + '/:' + inQandA.question;
     let headers = new HttpHeaders();
     headers = headers.set('If-Modified-Since', '0');
     headers = headers.append('Cache-control', 'no-cache');
@@ -86,9 +96,9 @@ export class DynamoDbserviceService {
     return resultData;
   }
 
-  deleteOneItem(inMovie) {
+  deleteOneItem(inQandA) {
     let resultData;
-    const url = serviceDeleteOneItem + '/:' + inMovie.year + '/:' + inMovie.title;
+    const url = serviceDeleteOneItem + '/:' + inQandA.id + '/:' + inQandA.category;
     let headers = new HttpHeaders();
     headers = headers.set('If-Modified-Since', '0');
     headers = headers.append('Cache-control', 'no-cache');
@@ -100,9 +110,9 @@ export class DynamoDbserviceService {
     return resultData;
   }
 
-  deleteTable(inMovie) {
+  deleteTable(inQandA) {
     let resultData;
-    const url = serviceDeleteTable + '/:' + inMovie.tableName;
+    const url = serviceDeleteTable + '/:' + inQandA.tableName;
     let headers = new HttpHeaders();
     headers = headers.set('If-Modified-Since', '0');
     headers = headers.append('Cache-control', 'no-cache');

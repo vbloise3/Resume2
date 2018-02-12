@@ -128,73 +128,75 @@ function deleteTable(inTable) {
   });
 }
 
-function deleteOneMovie(inYear, inTitle) {
+function deleteOneQandA(inId, inCategory) {
   // Strip off the leading colon
-  var theYear = inYear.substr(1);
-  var theTitle = inTitle.substr(1);
+  var theId = inId.substr(1);
+  var theCategory = inCategory.substr(1);
 
   // End strip off the leading colon
   return new Promise(function (resolve, reject) {
     var docClient = new AWS.DynamoDB.DocumentClient();
     var dynamoDBreturn = "what?";
     var params = {
-      TableName: "Movies",
+      TableName: "C2PQandA",
       Key: {
-        "year": parseInt(theYear),
-        "title": theTitle,
+        "id": theId,
+        "category": theCategory
       }
     };
-    console.log("deleting " + params.Key.title + ' ' + params.Key.year + ' of ' + inYear);
+    console.log("deleting " + params.Key.id + ' ' + params.Key.id + ' of ' + inId);
     docClient.delete(params, function(err, data) {
       if (err) {
         // document.getElementById('textarea').innerHTML = "Unable to read item: " + "\n" + JSON.stringify(err, undefined, 2);
         dynamoDBreturn = JSON.stringify(err, undefined, 2);
-        console.log("couldn't find movie: " + JSON.stringify(err, undefined, 2));
+        console.log("couldn't find qanda: " + JSON.stringify(err, undefined, 2));
         resolve(dynamoDBreturn);
       } else {
         // document.getElementById('textarea').innerHTML = "GetItem succeeded: " + "\n" + JSON.stringify(data, undefined, 2);
         dynamoDBreturn = JSON.stringify(data, undefined, 2);
-        console.log("deleted movie: " + JSON.stringify(data, undefined, 2));
+        console.log("deleted qanda: " + JSON.stringify(data, undefined, 2));
         resolve(dynamoDBreturn);
       }
     });
   });
 }
 
-function updateOneMovie(inYear, inTitle, inRating, inPlot) {
+function updateOneQandA(inId, inCategory, inSubcategory, inType, inQuestion) {
   // Strip off the leading colon
-  var theYear = inYear.substr(1);
-  var theTitle = inTitle.substr(1);
-  var theRating = inRating.substr(1);
-  var thePlot = inPlot.substr(1);
+  var theId = inId.substr(1);
+  var theCategory = inCategory.substr(1);
+  var theSubcategory = inSubcategory.substr(1);
+  var theType = inType.substr(1);
+  var theQuestion = inQuestion.substr(1);
   // End strip off the leading colon
   return new Promise(function (resolve, reject) {
     var docClient = new AWS.DynamoDB.DocumentClient();
     var dynamoDBreturn = "what?";
     var params = {
-      TableName: "Movies",
+      TableName: "C2PQandA",
       Key: {
-        "year": parseInt(theYear),
-        "title": theTitle,
+        "id": theId,
+        "category": theCategory
       },
-      UpdateExpression: "set info.rating = :r, info.plot=:p",
+      UpdateExpression: "set info.subcategory = :s, info.questionType = :t, info.question = :q",
       ExpressionAttributeValues:{
-        ":r":theRating,
-        ":p":thePlot
+        ":s":theSubcategory,
+        ":t":theType,
+        ":q":theQuestion
       },
       ReturnValues:"UPDATED_NEW"
     };
-    console.log("updating " + params.Key.title + ' ' + params.Key.year + ' of ' + inYear);
+    console.log("updating " + params.Key.id + ' ' + params.Key.id + ' of ' + inId);
     docClient.update(params, function(err, data) {
       if (err) {
         // document.getElementById('textarea').innerHTML = "Unable to read item: " + "\n" + JSON.stringify(err, undefined, 2);
         dynamoDBreturn = JSON.stringify(err, undefined, 2);
-        console.log("couldn't find movie: " + JSON.stringify(err, undefined, 2));
+        console.log("couldn't find qanda: " + JSON.stringify(err, undefined, 2));
         resolve(dynamoDBreturn);
       } else {
         // document.getElementById('textarea').innerHTML = "GetItem succeeded: " + "\n" + JSON.stringify(data, undefined, 2);
         dynamoDBreturn = JSON.stringify(data, undefined, 2);
-        console.log("updated movie: " + JSON.stringify(data, undefined, 2));
+        console.log("updated qanda: " + JSON.stringify(data, undefined, 2));
         resolve(dynamoDBreturn);
       }
     });
@@ -238,32 +240,32 @@ function geS3BucketContents(inBucket) {
   });
 }
 
-function getOneMovie(inYear, inTitle) {
+function getOneQandA(inId, inCategory) {
   // Strip off the leading colon
-  var theYear = inYear.substr(1);
-  var theTitle = inTitle.substr(1);
+  var theId = inId.substr(1);
+  var theCategory = inCategory.substr(1);
   // End strip off the leading colon
   return new Promise(function (resolve, reject) {
     var docClient = new AWS.DynamoDB.DocumentClient();
     var dynamoDBreturn = "what?";
     var params = {
-      TableName: "Movies",
+      TableName: "C2PQandA",
       Key: {
-        "year": parseInt(theYear),
-        "title": theTitle,
+        "id": theId,
+        "category": theCategory
       }
     };
-    console.log("looking for " + params.Key.title + ' ' + params.Key.year + ' of ' + inYear);
+    console.log("looking for " + params.Key.id + ' ' + params.Key.id + ' of ' + inId);
     docClient.get(params, function(err, data) {
       if (err) {
         // document.getElementById('textarea').innerHTML = "Unable to read item: " + "\n" + JSON.stringify(err, undefined, 2);
         dynamoDBreturn = JSON.stringify(err, undefined, 2);
-        console.log("couldn't find movie: " + JSON.stringify(err, undefined, 2));
+        console.log("couldn't find qanda: " + JSON.stringify(err, undefined, 2));
         resolve(dynamoDBreturn);
       } else {
         // document.getElementById('textarea').innerHTML = "GetItem succeeded: " + "\n" + JSON.stringify(data, undefined, 2);
         dynamoDBreturn = JSON.stringify(data, undefined, 2);
-        console.log("retrieved movie: " + JSON.stringify(data, undefined, 2));
+        console.log("retrieved qanda: " + JSON.stringify(data, undefined, 2));
         resolve(dynamoDBreturn);
       }
     });
@@ -276,52 +278,53 @@ function randomString(length, chars) {
   return result;
 }
 
-function insertNew(inMovie) {
+function insertNew(inQandA) {
   return new Promise(function (resolve, reject) {
     var docClient = new AWS.DynamoDB.DocumentClient();
     var dynamoDBreturn = "what?";
     // use this for every new qAndA created
     var rString = randomString(32, '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ');
     var params = {
-      TableName: "Movies",
+      TableName: "C2PQandA",
       Item: {
-        "year": parseInt(inMovie.year),
-        "title": inMovie.title,
+        "id": rString, // inQandA.id,
+        "category": inQandA.category,
         "info": {
-          "plot": inMovie.plot,
-          "rating": parseInt(inMovie.rating)
+          "subcategory": inQandA.subcategory,
+          "questionType": inQandA.questionType,
+          "question": inQandA.question
         }
       }
     };
-    console.log("inMovie: " + inMovie.title);
+    console.log("inQandA: " + inQandA.id);
     docClient.put(params, function (err, data) {
       if (err) {
         // document.getElementById('textarea').innerHTML = "Unable to add item: " + "\n" + JSON.stringify(err, undefined, 2);
         dynamoDBreturn = err;
-        console.log("problem inserting movie: " + params.Item.title + " " + err);
+        console.log("problem inserting qanda: " + params.Item.id + " " + err);
         resolve(dynamoDBreturn);
       } else {
         // document.getElementById('textarea').innerHTML = "PutItem succeeded: " + "\n" + JSON.stringify(data, undefined, 2);
-        dynamoDBreturn = "inserted movie: " + params.Item.title;
-        console.log("inserted movie: " + params.Item.title);
+        dynamoDBreturn = "inserted qanda: " + params.Item.id;
+        console.log("inserted qanda: " + params.Item.id);
         resolve(dynamoDBreturn);
       }
     });
   });
 }
 
-function createMovies() {
+function createQandAs() {
   return new Promise(function(resolve, reject) {
     var dynamoDBreturn = "what?";
     var params = {
-      TableName: "Movies",
+      TableName: "C2PQandA",
       KeySchema: [
-        {AttributeName: "year", KeyType: "HASH"},
-        {AttributeName: "title", KeyType: "RANGE"}
+        {AttributeName: "id", KeyType: "HASH"},
+        {AttributeName: "category", KeyType: "RANGE"}
       ],
       AttributeDefinitions: [
-        {AttributeName: "year", AttributeType: "N"},
-        {AttributeName: "title", AttributeType: "S"}
+        {AttributeName: "id", AttributeType: "S"},
+        {AttributeName: "category", AttributeType: "S"}
       ],
       ProvisionedThroughput: {
         ReadCapacityUnits: 5,
@@ -330,17 +333,17 @@ function createMovies() {
     };
 
     dynamodb.createTable(params, function (err, data) {
-      console.log("in dynamoDB.createTable");
+      console.log("in dynamoDB.createTable for " + params.TableName);
       if (err) {
         // document.getElementById('textarea').innerHTML = "Unable to create table: " + "\n" + JSON.stringify(err, undefined, 2);
         dynamoDBreturn = JSON.stringify(err, undefined, 2);
         // localdynamoDBreturn = err;
-        // console.log("dynamoDBreturn: " + dynamoDBreturn);
+        console.log("dynamoDBreturn: " + dynamoDBreturn);
         resolve(dynamoDBreturn);
       } else {
         // document.getElementById('textarea').innerHTML = "Created table: " + "\n" + JSON.stringify(data, undefined, 2);
         dynamoDBreturn = JSON.stringify(data, undefined, 2);
-        // console.log("dynamoDBreturn: " + dynamoDBreturn);
+        console.log("dynamoDBreturn: " + dynamoDBreturn);
         resolve(dynamoDBreturn);
       }
     });
@@ -370,29 +373,30 @@ function listener (changeType, fullPath, currentStat, previousStat) {
           console.log("file data: " + data);
           console.log('Error:', e.stack);
         }
-        var allMovies = JSON.parse(fileContents);
+        var allQandAs = JSON.parse(fileContents);
 
-        allMovies.forEach(function (movie) {
-          // document.getElementById('textarea').innerHTML += "Processing: " + movie.title + "\n";
+        allQandAs.forEach(function (qanda) {
+          // document.getElementById('textarea').innerHTML += "Processing: " + qanda.id + "\n";
           var params = {
-            TableName: "Movies",
+            TableName: "C2PQandA",
             Item: {
-              "year": movie.year,
-              "title": movie.title,
-              "info": movie.info
+              "id": qanda.id,
+              "category": qanda.category,
+              "subcategory": qanda.subcategory,
+              "info": qanda.info
             }
           };
           docClient.put(params, function (err, data) {
             if (err) {
-              // document.getElementById('textarea').innerHTML += "Unable to add movie: " + count + movie.title + "\n";
-              console.log("Unable to add movie: " + count + movie.title);
+              // document.getElementById('textarea').innerHTML += "Unable to add qanda: " + count + qanda.id + "\n";
+              console.log("Unable to add qanda: " + count + qanda.id);
               // document.getElementById('textarea').innerHTML += "Error JSON: " + JSON.stringify(err) + "\n";
               console.log("Error JSON: " + JSON.stringify(err));
-              returnStuff = "Unable to add movie: " + count + movie.title + ". Error JSON: " + JSON.stringify(err)
+              returnStuff = "Unable to add qanda: " + count + qanda.id + ". Error JSON: " + JSON.stringify(err)
             } else {
-              // document.getElementById('textarea').innerHTML += "PutItem succeeded: " + movie.title + "\n";
-              console.log("PutItem succeeded for movie: " + movie.title);
-              returnStuff = "PutItem succeeded for movie: " + movie.title;
+              // document.getElementById('textarea').innerHTML += "PutItem succeeded: " + qanda.id + "\n";
+              console.log("PutItem succeeded for qanda: " + qanda.id);
+              returnStuff = "PutItem succeeded for qanda: " + qanda.id;
               // textarea.scrollTop = textarea.scrollHeight;
             }
           });
@@ -422,7 +426,7 @@ function runWatcher() {
 }
 // End functions needed for watchr
 
-function initialLoadMovies() {
+function initialLoadQandAs() {
   var returnStuff;
   var dynamoDBreturn = "what?";
   returnStuff = runWatcher();
@@ -437,27 +441,27 @@ insertIt = new Promise(function(resolve, reject) {
 function executeCreateDynamoDBTable() {
     var returnStuff;
     setUpDynamoDB();
-    createMovies().then(function(successStuff){
+    createQandAs().then(function(successStuff){
     // console.log("success stuff: " + successStuff);
     returnStuff = successStuff;
     return returnStuff;
   });
 }
 
-function addItem(inMovie) {
+function addItem(inQandA) {
   var returnStuff;
   setUpDynamoDB();
-  insertNew(inMovie).then(function(successStuff){
+  insertNew(inQandA).then(function(successStuff){
     // console.log("success stuff: " + successStuff);
     returnStuff = successStuff;
     return returnStuff;
   });
 }
 
-function getOne(inMovie) {
+function getOne(inQandA) {
   var returnStuff;
   setUpDynamoDB();
-  getOneMovie(inMovie).then(function(successStuff){
+  getOneQandA(inQandA).then(function(successStuff){
     console.log("success stuff: " + successStuff);
     returnStuff = successStuff;
     return returnStuff;
@@ -473,7 +477,7 @@ router.get('/dynamoDBcreate', (req, res) => {
     var returnStuff;
     // console.log('in dynamoDBtest api route');
     setUpDynamoDB();
-    createMovies().then(function(successStuff){
+    createQandAs().then(function(successStuff){
       // console.log("success stuff: " + successStuff);
       returnStuff = successStuff;
         // console.log("result: " + returnStuff);
@@ -486,7 +490,7 @@ router.get('/dynamoDBcreate', (req, res) => {
 router.get('/dynamoDBinitialDataLoad', (req, res) => {
   var returnStuff
   setUpDynamoDB();
-  returnStuff = initialLoadMovies();
+  returnStuff = initialLoadQandAs();
   // console.log("result: " + JSON.stringify(returnStuff));
   res.status(200).send({message: "listening for *.json"});
   // res.status(200).send(returnStuff);
@@ -500,18 +504,18 @@ router.route('/dynamoDBaddItem')
     setUpDynamoDB();
     returnStuff = addItem(req.body);
     //console.log("result: " + JSON.stringify(returnStuff));
-    res.status(200).send({message: "Inserted movie: ", movieTitle: req.body.title});
+    res.status(200).send({message: "Inserted qanda: ", qandaId: req.body.id});
     // res.status(200).send(JSON.stringify(returnStuff);
 });
 // End add item
 
 // Deltet table
 // delete a table
-router.route('/deleteTable/:movie_table')
+router.route('/deleteTable/:qanda_table')
   .delete(function(req, res) {
     var returnStuff
     setUpDynamoDB();
-    deleteTable(req.params.movie_table).then(function (successStuff) {
+    deleteTable(req.params.qanda_table).then(function (successStuff) {
       /*if (err)
         res.send(err);
         res.json(npsclient);
@@ -524,11 +528,11 @@ router.route('/deleteTable/:movie_table')
 
 // Deltet one item
 // delete the npsclients with that id
-router.route('/deleteMovie/:movie_year/:movie_title')
+router.route('/deleteQandA/:qanda_id/:qanda_category')
   .delete(function(req, res) {
     var returnStuff
     setUpDynamoDB();
-    deleteOneMovie(req.params.movie_year, req.params.movie_title).then(function (successStuff) {
+    deleteOneQandA(req.params.qanda_id, req.params.qanda_category).then(function (successStuff) {
       /*if (err)
         res.send(err);
         res.json(npsclient);
@@ -541,11 +545,11 @@ router.route('/deleteMovie/:movie_year/:movie_title')
 
 // Update one item
 // update the npsclients with that id
-router.route('/updateMovie/:movie_year/:movie_title/:movie_rating/:movie_plot')
+router.route('/updateQandA/:qanda_id/:qanda_category/:qanda_subcategory/:qanda_questionType/:qanda_question')
   .put(function(req, res) {
     var returnStuff
     setUpDynamoDB();
-    updateOneMovie(req.params.movie_year, req.params.movie_title, req.params.movie_rating, req.params.movie_plot).then(function (successStuff) {
+    updateOneQandA(req.params.qanda_id, req.params.qanda_category, req.params.qanda_subcategory, req.params.qanda_questionType, req.params.qanda_question).then(function (successStuff) {
       /*if (err)
         res.send(err);
         res.json(npsclient);
@@ -558,11 +562,11 @@ router.route('/updateMovie/:movie_year/:movie_title/:movie_rating/:movie_plot')
 
 // Get one item
  // get the npsclients with that id
-router.route('/movies/:movie_year/:movie_title')
+router.route('/c2pqandas/:qanda_id/:qanda_category')
   .get(function(req, res) {
     var returnStuff
     setUpDynamoDB();
-    getOneMovie(req.params.movie_year, req.params.movie_title).then(function (successStuff) {
+    getOneQandA(req.params.qanda_id, req.params.qanda_category).then(function (successStuff) {
       /*if (err)
         res.send(err);
         res.json(npsclient);

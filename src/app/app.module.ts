@@ -20,7 +20,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { TestComponent } from './test/test.component';
 import { PostsService } from './services/posts.service';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { MoviesDynamoDbexampleComponent } from './movies-dynamo-dbexample/movies-dynamo-dbexample.component';
+import {C2pDynamoDbComponent} from './c2p-dynamo-db/c2p-dynamo-db.component';
 import { DynamoDbserviceService } from './services/dynamo-dbservice';
 import { MatFormFieldModule } from '@angular/material';
 import { MatInputModule } from '@angular/material';
@@ -35,8 +35,8 @@ const appRoutes: Routes = [
     component: TestComponent
   },
   {
-    path: 'movies',
-    component: MoviesDynamoDbexampleComponent
+    path: 'c2padmin',
+    component: C2pDynamoDbComponent
   },
   {
     path: '',
@@ -69,7 +69,7 @@ const appRoutes: Routes = [
       appRoutes,
       { enableTracing: false } // <-- debugging purposes only
     )],
-  declarations: [ AppComponent, HomeComponent, YoMoFoComponent, Material2AppAppComponent, DialogContent, PersonalInterestsComponent, DialogContent2, PageNotFoundComponent, TestComponent, MoviesDynamoDbexampleComponent, OnlyNumberDirective],
+  declarations: [ AppComponent, HomeComponent, YoMoFoComponent, Material2AppAppComponent, DialogContent, PersonalInterestsComponent, DialogContent2, PageNotFoundComponent, TestComponent, C2pDynamoDbComponent, OnlyNumberDirective],
   entryComponents: [DialogContent, DialogContent2],
   providers:    [PostsService, DynamoDbserviceService/*,
     {provide: LocationStrategy, useClass: HashLocationStrategy}*/],

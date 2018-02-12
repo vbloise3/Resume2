@@ -14,34 +14,37 @@
       <h1 class="h1Blue">Administrative Tasks</h1>
       <mat-card>
         <!--input id="createTableButton" type="button" value="Create Table" (click)="createMovies()" /-->
-        <button id="createTableButton" (click)="createMovies()"><i class="material-icons">build</i></button>
+        <button id="createTableButton" (click)="createC2pQandA()"><i class="material-icons">build</i></button>
         <!--input id="initialDataLoadButton" type="button" value="Watch for data load JSON files" (click)="initialDataLoad()" /-->
         <span class="app-toolbar-filler"></span>
         <button id="initialDataLoadButton" (click)="initialDataLoad()"><i class="material-icons">cloud_upload</i></button>
       </mat-card>
       <br><br>
-      <div id="textarea" style="padding: 0.5em;font-size: x-small;width: 50%;">{{movies}}</div>
+      <div id="textarea" style="padding: 0.5em;font-size: x-small;width: 50%;">{{qandas}}</div>
     </mat-card>
   </div>
   <span class="app-toolbar-filler" style="padding: 1em;"></span>
   <mat-card class="shadowCard" style="float: right;margin-bottom: 1em;margin-top: 1em;">
-    <h1 class="h1Blue">Create A Movie</h1>
+    <h1 class="h1Blue">Create A QandA</h1>
     <mat-card>
-      <form #insertMovieForm="ngForm" (ngSubmit)="createItem(insertMovieForm)">
+      <form #insertQandAForm="ngForm" (ngSubmit)="createItem(insertQandAForm)">
         <mat-form-field>
-          <input id="year" OnlyNumberDirective="true" name="year" matInput placeholder="Year" ngModel required>
+          <input id="id" name="id" matInput placeholder="Id" ngModel required> <!--OnlyNumberDirective="true"-->
         </mat-form-field>
         <mat-form-field>
-          <input id="title" name="title" matInput placeholder="Title" ngModel required>
+          <input id="category" name="category" matInput placeholder="Category" ngModel required>
         </mat-form-field>
         <mat-form-field>
-          <input id="plot" name="plot" matInput placeholder="Plot" ngModel required>
+          <input id="subcategory" name="subcategory" matInput placeholder="Subcategory" ngModel required>
         </mat-form-field>
         <mat-form-field>
-          <input id="rating" OnlyNumberDirective="true" name="rating" matInput placeholder="Rating" ngModel required>
+          <input id="type" name="questionType" matInput placeholder="Type" ngModel required>
+        </mat-form-field>
+        <mat-form-field>
+          <input id="question" name="question" matInput placeholder="Question" ngModel required>
         </mat-form-field>
         <div class="actions">
-          <button mat-button type="submit" color="primary" [disabled]="!insertMovieForm.form.valid">SAVE</button>
+          <button mat-button type="submit" color="primary" [disabled]="!insertQandAForm.form.valid">SAVE</button>
         </div>
       </form>
     </mat-card>
@@ -50,45 +53,51 @@
   <br/>
   <span class="app-toolbar-filler" style="padding: 1em;"></span>
   <mat-card class="shadowCard" style="float: left;margin-top: 1em;">
-    <h1 class="h1Blue">Get A Movie</h1>
+    <h1 class="h1Blue">Get A QandA</h1>
     <mat-card>
-      <form #getMovieForm="ngForm" (ngSubmit)="getOneItem(getMovieForm)">
+      <form #getQandAForm="ngForm" (ngSubmit)="getOneItem(getQandAForm)">
         <mat-form-field>
-          <input id="getYear" OnlyNumberDirective="true" name="year" matInput placeholder="Year" ngModel required>
+          <input id="getId" name="id" matInput placeholder="Id" ngModel required>
         </mat-form-field>
         <mat-form-field>
-          <input id="getTitle" name="title" matInput placeholder="Title" ngModel required>
+          <input id="getCategory" name="category" matInput placeholder="Category" ngModel required>
         </mat-form-field>
         <mat-form-field>
-          <input id="getPlot" name="plot" matInput placeholder="Plot" ngModel value="{{getPlot}}">
+          <input id="getSubcategory" name="subcategory" matInput placeholder="Subcategory" ngModel value="{{getSubcategory}}">
         </mat-form-field>
         <mat-form-field>
-          <input id="getRating" OnlyNumberDirective="true" name="rating" matInput placeholder="Rating" ngModel value="{{getRating}}">
+          <input id="getType" name="questionType" matInput placeholder="Type" ngModel value="{{getType}}">
+        </mat-form-field>
+        <mat-form-field>
+          <input id="getQuestion" name="question" matInput placeholder="Question" ngModel value="{{getQuestion}}">
         </mat-form-field>
         <div class="actions">
-          <button mat-button type="submit" color="primary" style="margin-right: 1em;" [disabled]="!getMovieForm.form.valid">Get</button>
+          <button mat-button type="submit" color="primary" style="margin-right: 1em;" [disabled]="!getQandAForm.form.valid">Get</button>
         </div>
       </form>
     </mat-card>
   </mat-card>
   <mat-card class="shadowCard" style="float: left;margin-top: 1em;">
-    <h1 class="h1Blue">Update A Movie</h1>
+    <h1 class="h1Blue">Update A QandA</h1>
     <mat-card>
-      <form #updateMovieForm="ngForm" (ngSubmit)="updateOneItem(updateMovieForm)">
+      <form #updateQandAForm="ngForm" (ngSubmit)="updateOneItem(updateQandAForm)">
         <mat-form-field>
-          <input id="updateYear" OnlyNumberDirective="true" name="year" matInput placeholder="Year" ngModel required>
+          <input id="updateId" name="id" matInput placeholder="Id" ngModel required>
         </mat-form-field>
         <mat-form-field>
-          <input id="updateTitle" name="title" matInput placeholder="Title" ngModel required>
+          <input id="updateCategory" name="category" matInput placeholder="Category" ngModel required>
         </mat-form-field>
         <mat-form-field>
-          <input id="updatePlot" name="plot" matInput placeholder="Plot" ngModel value="{{updatePlot}}">
+          <input id="updateSubcategory" name="subcategory" matInput placeholder="Subcategory" ngModel value="{{updateSubcategory}}">
         </mat-form-field>
         <mat-form-field>
-          <input id="updateRating" OnlyNumberDirective="true" name="rating" matInput placeholder="Rating" ngModel value="{{updateRating}}">
+          <input id="updateType" name="questionType" matInput placeholder="Type" ngModel value="{{updateType}}">
+        </mat-form-field>
+        <mat-form-field>
+          <input id="updateQuestion" name="question" matInput placeholder="Question" ngModel value="{{updateQuestion}}">
         </mat-form-field>
         <div class="actions">
-          <button mat-button type="submit" color="primary" style="margin-right: 1em;" [disabled]="!updateMovieForm.form.valid">Update</button>
+          <button mat-button type="submit" color="primary" style="margin-right: 1em;" [disabled]="!updateQandAForm.form.valid">Update</button>
         </div>
       </form>
     </mat-card>
@@ -97,23 +106,26 @@
   <br/>
   <span class="app-toolbar-filler" style="padding: 1em;"></span>
   <mat-card class="shadowCard" style="float: left;margin-top: 1em;">
-    <h1 class="h1Blue">Delete A Movie</h1>
+    <h1 class="h1Blue">Delete A QandA</h1>
     <mat-card>
-      <form #deleteMovieForm="ngForm" (ngSubmit)="deleteOneItem(deleteMovieForm)">
+      <form #deleteQandAForm="ngForm" (ngSubmit)="deleteOneItem(deleteQandAForm)">
         <mat-form-field>
-          <input id="deleteYear" OnlyNumberDirective="true" name="year" matInput placeholder="Year" ngModel required>
+          <input id="deleteId" name="id" matInput placeholder="Id" ngModel required>
         </mat-form-field>
         <mat-form-field>
-          <input id="deleteTitle" name="title" matInput placeholder="Title" ngModel required>
+          <input id="deleteCategory" name="category" matInput placeholder="Category" ngModel required>
         </mat-form-field>
         <mat-form-field>
-          <input id="deletePlot" name="plot" matInput placeholder="Plot" ngModel value="{{deletePlot}}">
+          <input id="deleteSubcategory" name="subcategory" matInput placeholder="Subcategory" ngModel value="{{deleteSubcategory}}">
         </mat-form-field>
         <mat-form-field>
-          <input id="deleteRating" OnlyNumberDirective="true" name="rating" matInput placeholder="Rating" ngModel value="{{deleteRating}}">
+          <input id="deleteType" name="questionType" matInput placeholder="Type" ngModel value="{{deleteType}}">
+        </mat-form-field>
+        <mat-form-field>
+          <input id="deleteQuestion" name="question" matInput placeholder="Question" ngModel value="{{deleteQuestion}}">
         </mat-form-field>
         <div class="actions">
-          <button mat-button type="submit" color="primary" style="margin-right: 1em;" [disabled]="!deleteMovieForm.form.valid">Delete</button>
+          <button mat-button type="submit" color="primary" style="margin-right: 1em;" [disabled]="!deleteQandAForm.form.valid">Delete</button>
         </div>
       </form>
     </mat-card>

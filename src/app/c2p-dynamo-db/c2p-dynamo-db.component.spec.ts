@@ -1,6 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MoviesDynamoDbexampleComponent } from './movies-dynamo-dbexample.component';
+import { MoviesDynamoDbexampleComponent } from './c2p-dynamo-db.component';
 
 describe('MoviesDynamoDbexampleComponent', () => {
   let component: MoviesDynamoDbexampleComponent;
