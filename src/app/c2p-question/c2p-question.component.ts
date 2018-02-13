@@ -37,7 +37,10 @@ export class C2pQuestionComponent implements OnInit {
       this.qandas = JSON.stringify(qandas);
       alert('the first returned Q and As: ' + qandas.Items[0].id);
       alert('the count of returned q and as: ' + qandas.Count);
-      // iterate over the qandas to load up questions array
+      // Iterate over the qandas to load up questions array.
+      // then use a counter to step through the array elements
+      // as user clicks the submit button (question answered) and the next button
+      // (move to the next question)
     });
   }
 
