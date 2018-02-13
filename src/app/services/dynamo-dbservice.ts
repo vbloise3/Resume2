@@ -1,14 +1,15 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 
-let serviceCreate = '/api/dynamoDBcreate';
-let serviceInitialDataLoad = '/api/dynamoDBinitialDataLoad';
-let serviceAddItem = '/api/dynamoDBaddItem';
-let serviceGetOneItem = '/api/c2pqandas';
-let serviceUpdateOneItem = '/api/updateQandA';
-let serviceDeleteOneItem = '/api/deleteQandA';
-let serviceDeleteTable = '/api/deleteTable';
-let serviceListBucketContents = '/api/listBucketContents';
+const serviceCreate = '/api/dynamoDBcreate';
+const serviceInitialDataLoad = '/api/dynamoDBinitialDataLoad';
+const serviceAddItem = '/api/dynamoDBaddItem';
+const serviceGetOneItem = '/api/c2pqanda';
+const serviceUpdateOneItem = '/api/updateQandA';
+const serviceDeleteOneItem = '/api/deleteQandA';
+const serviceDeleteTable = '/api/deleteTable';
+const serviceListBucketContents = '/api/listBucketContents';
+const serviceGetAllItems = '/api/c2pqandas';
 
 export interface QandA {
   id: string;
@@ -63,7 +64,7 @@ export class DynamoDbserviceService {
     headers = headers.append('Cache-control', 'no-store');
     headers = headers.append('Expires', '0');
     headers = headers.append('Pragma', 'no-cache');
-    resultData = this.http.post(serviceAddItem, inQandA,{ headers: headers });
+    resultData = this.http.post(serviceAddItem, inQandA, { headers: headers });
     // alert('loadInitialData service result: ' + JSON.stringify(resultData));
     return resultData;
   }
@@ -77,21 +78,62 @@ export class DynamoDbserviceService {
     headers = headers.append('Cache-control', 'no-store');
     headers = headers.append('Expires', '0');
     headers = headers.append('Pragma', 'no-cache');
-    resultData = this.http.get(url,{ headers: headers });
+    resultData = this.http.get(url, { headers: headers });
     // alert('loadInitialData service result: ' + JSON.stringify(resultData));
     return resultData;
   }
 
-  updateOneItem(inQandA) {
+  getAllItems() {
     let resultData;
-    const url = serviceUpdateOneItem + '/:' + inQandA.id + '/:' + inQandA.category + '/:' + inQandA.subcategory + '/:' + inQandA.questionType + '/:' + inQandA.question;
+    const url = serviceGetAllItems;
+    // alert('getting this url: ' + url);
     let headers = new HttpHeaders();
     headers = headers.set('If-Modified-Since', '0');
     headers = headers.append('Cache-control', 'no-cache');
     headers = headers.append('Cache-control', 'no-store');
     headers = headers.append('Expires', '0');
     headers = headers.append('Pragma', 'no-cache');
-    resultData = this.http.put(url,{ headers: headers });
+    resultData = this.http.get(url, { headers: headers });
+    // alert('loadInitialData service result: ' + JSON.stringify(resultData));
+    return resultData;
+  }
+
+  escapeHtml(text) {
+    return text
+      .replace(/\</g, '%3C')
+      .replace(/\>/g, '%3E')
+      .replace(/\"/g, '%22')
+      .replace(/\'/g, '%27')
+      .replace(/!/g, '%21')
+      .replace(/\./g, '%2E')
+      .replace(/\?/g, '%3F');
+      /*.replace(/\#/g, '%23')
+      .replace(/\* /g, '%2A')
+      .replace(/\%/g, '%25')
+      .replace(/\&/g, '%26')
+      .replace(/\(/g, '%28')
+      .replace(/\)/g, '%29')
+      .replace(/\+/g, '%2B')
+      .replace(/\-/g, '%2D')
+      .replace(/\:/g, '%3A')
+      .replace(/\;/g, '%3B')
+      .replace(/\=/g, '%3B')
+      .replace(/\@/g, '%40')
+      .replace(/\$/g, '%24')*/
+  }
+
+  updateOneItem(inQandA: QandA) {
+    let resultData;
+    // alert('service received: ' + inQandA.id + ' ' + inQandA.category + ' ' + inQandA.subcategory + ' ' + inQandA.questionType + ' ' + inQandA.question);
+    const url = this.escapeHtml(serviceUpdateOneItem + '/:' + inQandA.id + '/:' + inQandA.category + '/:' + inQandA.subcategory + '/:' + inQandA.questionType + '/:' + inQandA.question);
+    // alert('encoded uri: ' + url);
+    let headers = new HttpHeaders();
+    headers = headers.set('If-Modified-Since', '0');
+    headers = headers.append('Cache-control', 'no-cache');
+    headers = headers.append('Cache-control', 'no-store');
+    headers = headers.append('Expires', '0');
+    headers = headers.append('Pragma', 'no-cache');
+    resultData = this.http.put(url, { headers: headers });
     // alert('loadInitialData service result: ' + JSON.stringify(resultData));
     return resultData;
   }
@@ -105,7 +147,7 @@ export class DynamoDbserviceService {
     headers = headers.append('Cache-control', 'no-store');
     headers = headers.append('Expires', '0');
     headers = headers.append('Pragma', 'no-cache');
-    resultData = this.http.delete(url,{ headers: headers });
+    resultData = this.http.delete(url, { headers: headers });
     // alert('loadInitialData service result: ' + JSON.stringify(resultData));
     return resultData;
   }
@@ -119,7 +161,7 @@ export class DynamoDbserviceService {
     headers = headers.append('Cache-control', 'no-store');
     headers = headers.append('Expires', '0');
     headers = headers.append('Pragma', 'no-cache');
-    resultData = this.http.delete(url,{ headers: headers });
+    resultData = this.http.delete(url, { headers: headers });
     // alert('loadInitialData service result: ' + JSON.stringify(resultData));
     return resultData;
   }
@@ -133,7 +175,7 @@ export class DynamoDbserviceService {
     headers = headers.append('Cache-control', 'no-store');
     headers = headers.append('Expires', '0');
     headers = headers.append('Pragma', 'no-cache');
-    resultData = this.http.get(url,{ headers: headers });
+    resultData = this.http.get(url, { headers: headers });
     // alert('bucket contents: ' + JSON.stringify(resultData));
     return resultData;
   }

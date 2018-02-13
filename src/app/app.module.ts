@@ -25,6 +25,7 @@ import { DynamoDbserviceService } from './services/dynamo-dbservice';
 import { MatFormFieldModule } from '@angular/material';
 import { MatInputModule } from '@angular/material';
 import { OnlyNumberDirective} from './directives/only-number.directive';
+import { C2pQuestionComponent } from './c2p-question/c2p-question.component';
 
 /*import {MyMaterialModule} from '../my-material.model';*/
 
@@ -37,6 +38,10 @@ const appRoutes: Routes = [
   {
     path: 'c2padmin',
     component: C2pDynamoDbComponent
+  },
+  {
+    path: 'c2ppractice',
+    component: C2pQuestionComponent
   },
   {
     path: '',
@@ -69,7 +74,7 @@ const appRoutes: Routes = [
       appRoutes,
       { enableTracing: false } // <-- debugging purposes only
     )],
-  declarations: [ AppComponent, HomeComponent, YoMoFoComponent, Material2AppAppComponent, DialogContent, PersonalInterestsComponent, DialogContent2, PageNotFoundComponent, TestComponent, C2pDynamoDbComponent, OnlyNumberDirective],
+  declarations: [ AppComponent, HomeComponent, YoMoFoComponent, Material2AppAppComponent, DialogContent, PersonalInterestsComponent, DialogContent2, PageNotFoundComponent, TestComponent, C2pDynamoDbComponent, OnlyNumberDirective, C2pQuestionComponent],
   entryComponents: [DialogContent, DialogContent2],
   providers:    [PostsService, DynamoDbserviceService/*,
     {provide: LocationStrategy, useClass: HashLocationStrategy}*/],

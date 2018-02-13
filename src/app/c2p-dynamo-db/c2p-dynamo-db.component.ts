@@ -19,15 +19,15 @@ export class C2pDynamoDbComponent implements OnInit {
   getId: any;
   getCategory: any;
   getSubcategory: any;
-  getType: any;
+  getQuestionType: any;
   getQuestion: any;
   updateSubcategory: any;
   updateCategory: any;
-  updateType: any;
+  updateQuestionType: any;
   updateQuestion: any;
   deleteSubcategory: any;
   deleteCategory: any;
-  deleteType: any;
+  deleteQuestionType: any;
   deleteQuestion: any;
   deletedTable: any;
 
@@ -74,12 +74,12 @@ export class C2pDynamoDbComponent implements OnInit {
       if ( this.qandas === '{}') {
         this.getCategory = '';
         this.getSubcategory = '';
-        this.getType = '';
+        this.getQuestionType = '';
         this.getQuestion = '';
       } else {
         this.getCategory = qandas.Item.info.category;
         this.getSubcategory = qandas.Item.info.subcategory;
-        this.getType = qandas.Item.info.questionType;
+        this.getQuestionType = qandas.Item.info.questionType;
         this.getQuestion = qandas.Item.info.question;
       }
       // alert('component initialDataLoad result before HTML display: ' + this.qandas);
@@ -88,19 +88,19 @@ export class C2pDynamoDbComponent implements OnInit {
 
   updateOneItem(form: NgForm) {
     const theQanda: QandA = form.value;
-    // alert('inQanda: ' + JSON.stringify(form.value));
+    // alert('inQanda: ' + JSON.stringify(theQanda));
     this.dynamoDBservice.updateOneItem(theQanda).subscribe( qandas => {
       this.qandas = JSON.stringify(qandas);
       // alert('the returned json: ' + this.qandas);
       if ( this.qandas === '{}') {
         this.updateCategory = '';
         this.updateSubcategory = '';
-        this.updateType = '';
+        this.updateQuestionType = '';
         this.updateQuestion = '';
       } else {
         this.updateCategory = qandas.Attributes.info.category;
         this.updateSubcategory = qandas.Attributes.info.subcategory;
-        this.updateType = qandas.Attributes.info.questionType;
+        this.updateQuestionType = qandas.Attributes.info.questionType;
         this.updateQuestion = qandas.Attributes.info.question;
       }
       // alert('component initialDataLoad result before HTML display: ' + this.qandas);
@@ -116,12 +116,12 @@ export class C2pDynamoDbComponent implements OnInit {
       if ( this.qandas === '{}') {
         this.deleteCategory = '';
         this.deleteSubcategory = '';
-        this.deleteType = '';
+        this.deleteQuestionType = '';
         this.deleteQuestion = '';
       } else {
         this.deleteCategory = qandas.Attributes.info.category;
         this.deleteSubcategory = qandas.Attributes.info.subcategory;
-        this.deleteType = qandas.Attributes.info.questionType;
+        this.deleteQuestionType = qandas.Attributes.info.questionType;
         this.deleteQuestion = qandas.Attributes.info.question;
       }
       // alert('component initialDataLoad result before HTML display: ' + this.qandas);
@@ -137,7 +137,7 @@ export class C2pDynamoDbComponent implements OnInit {
       if ( this.qandas === '{}') {
         this.deleteCategory = '';
         this.deleteSubcategory = '';
-        this.deleteType = '';
+        this.deleteQuestionType = '';
         this.deleteQuestion = '';
       } else {
         this.deletedTable = qandas.TableDescription.TableName + ', ' + qandas.TableDescription.TableArn;

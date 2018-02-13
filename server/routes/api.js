@@ -168,6 +168,7 @@ function updateOneQandA(inId, inCategory, inSubcategory, inType, inQuestion) {
   var theSubcategory = inSubcategory.substr(1);
   var theType = inType.substr(1);
   var theQuestion = inQuestion.substr(1);
+  // console.log("updating item: " + theId + ' ' + theCategory + ' ' + theSubcategory + ' ' + theType + ' ' + theQuestion);
   // End strip off the leading colon
   return new Promise(function (resolve, reject) {
     var docClient = new AWS.DynamoDB.DocumentClient();
@@ -269,6 +270,40 @@ function getOneQandA(inId, inCategory) {
         resolve(dynamoDBreturn);
       }
     });
+  });
+}
+
+function getAllQandAs() {
+  return new Promise(function (resolve, reject) {
+    var docClient = new AWS.DynamoDB.DocumentClient();
+    var dynamoDBreturn = "what?";
+    var params = {
+      TableName: "C2PQandA"
+    };
+    console.log("looking for all Q and As");
+    docClient.scan(params, onScan);
+
+    function onScan(err, data) {
+      if (err) {
+        dynamoDBreturn = JSON.stringify(err, undefined, 2);
+        console.log("couldn't find qanda: " + JSON.stringify(err, undefined, 2));
+        resolve(dynamoDBreturn);
+      } else {
+        // Get all the qandas
+        dynamoDBreturn = JSON.stringify(data, undefined, 2);
+        console.log("retrieved qandas: " + JSON.stringify(data, undefined, 2));
+        data.Items.forEach(function(qanda) {
+          // document.getElementById('textarea').innerHTML += movie.year + ": " + movie.title + " - rating: " + movie.info.rating + "\n";
+          console.log('found a q and a: ' + JSON.stringify(qanda));
+        });
+
+        // Continue scanning if we have more qandas (per scan 1MB limitation)
+        // document.getElementById('textarea').innerHTML += "Scanning for more..." + "\n";
+        /*params.ExclusiveStartKey = data.LastEvaluatedKey;
+        docClient.scan(params, onScan);*/
+        resolve(dynamoDBreturn);
+      }
+    }
   });
 }
 
@@ -548,6 +583,7 @@ router.route('/deleteQandA/:qanda_id/:qanda_category')
 router.route('/updateQandA/:qanda_id/:qanda_category/:qanda_subcategory/:qanda_questionType/:qanda_question')
   .put(function(req, res) {
     var returnStuff
+    // console.log("rout updating item: " + req.params.qanda_id + ' ' + req.params.qanda_category + ' ' + req.params.qanda_subcategory + ' ' + req.params.qanda_questionType + ' ' + req.params.qanda_question);
     setUpDynamoDB();
     updateOneQandA(req.params.qanda_id, req.params.qanda_category, req.params.qanda_subcategory, req.params.qanda_questionType, req.params.qanda_question).then(function (successStuff) {
       /*if (err)
@@ -562,7 +598,7 @@ router.route('/updateQandA/:qanda_id/:qanda_category/:qanda_subcategory/:qanda_q
 
 // Get one item
  // get the npsclients with that id
-router.route('/c2pqandas/:qanda_id/:qanda_category')
+router.route('/c2pqanda/:qanda_id/:qanda_category')
   .get(function(req, res) {
     var returnStuff
     setUpDynamoDB();
@@ -576,6 +612,22 @@ router.route('/c2pqandas/:qanda_id/:qanda_category')
     });
   });
 // End get one item
+
+// Get all items
+router.route('/c2pqandas')
+  .get(function(req, res) {
+    var returnStuff
+    setUpDynamoDB();
+    getAllQandAs().then(function (successStuff) {
+      /*if (err)
+        res.send(err);
+        res.json(npsclient);
+      */
+      returnStuff = successStuff;
+      res.status(200).send(returnStuff);
+    });
+  });
+// End get all items
 
 // Get S3 Bucket list
 

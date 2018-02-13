@@ -38,7 +38,7 @@
           <input id="subcategory" name="subcategory" matInput placeholder="Subcategory" ngModel required>
         </mat-form-field>
         <mat-form-field>
-          <input id="type" name="questionType" matInput placeholder="Type" ngModel required>
+          <input id="questionType" name="questionType" matInput placeholder="Type" ngModel required>
         </mat-form-field>
         <mat-form-field>
           <input id="question" name="question" matInput placeholder="Question" ngModel required>
@@ -66,7 +66,7 @@
           <input id="getSubcategory" name="subcategory" matInput placeholder="Subcategory" ngModel value="{{getSubcategory}}">
         </mat-form-field>
         <mat-form-field>
-          <input id="getType" name="questionType" matInput placeholder="Type" ngModel value="{{getType}}">
+          <input id="getQuestionType" name="questionType" matInput placeholder="Type" ngModel value="{{getQuestionType}}">
         </mat-form-field>
         <mat-form-field>
           <input id="getQuestion" name="question" matInput placeholder="Question" ngModel value="{{getQuestion}}">
@@ -88,13 +88,13 @@
           <input id="updateCategory" name="category" matInput placeholder="Category" ngModel required>
         </mat-form-field>
         <mat-form-field>
-          <input id="updateSubcategory" name="subcategory" matInput placeholder="Subcategory" ngModel value="{{updateSubcategory}}">
+          <input id="updateSubcategory" name="subcategory" matInput placeholder="Subcategory" ngModel>
         </mat-form-field>
         <mat-form-field>
-          <input id="updateType" name="questionType" matInput placeholder="Type" ngModel value="{{updateType}}">
+          <input id="updateQuestionType" name="questionType" matInput placeholder="Type" ngModel>
         </mat-form-field>
         <mat-form-field>
-          <input id="updateQuestion" name="question" matInput placeholder="Question" ngModel value="{{updateQuestion}}">
+          <input id="updateQuestion" name="question" matInput placeholder="Question" ngModel>
         </mat-form-field>
         <div class="actions">
           <button mat-button type="submit" color="primary" style="margin-right: 1em;" [disabled]="!updateQandAForm.form.valid">Update</button>
@@ -116,13 +116,13 @@
           <input id="deleteCategory" name="category" matInput placeholder="Category" ngModel required>
         </mat-form-field>
         <mat-form-field>
-          <input id="deleteSubcategory" name="subcategory" matInput placeholder="Subcategory" ngModel value="{{deleteSubcategory}}">
+          <input id="deleteSubcategory" name="subcategory" matInput placeholder="Subcategory" ngModel>
         </mat-form-field>
         <mat-form-field>
-          <input id="deleteType" name="questionType" matInput placeholder="Type" ngModel value="{{deleteType}}">
+          <input id="deleteQuestionType" name="questionType" matInput placeholder="Type" ngModel>
         </mat-form-field>
         <mat-form-field>
-          <input id="deleteQuestion" name="question" matInput placeholder="Question" ngModel value="{{deleteQuestion}}">
+          <input id="deleteQuestion" name="question" matInput placeholder="Question" ngModel>
         </mat-form-field>
         <div class="actions">
           <button mat-button type="submit" color="primary" style="margin-right: 1em;" [disabled]="!deleteQandAForm.form.valid">Delete</button>
