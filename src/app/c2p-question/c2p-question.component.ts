@@ -27,6 +27,7 @@ export class C2pQuestionComponent implements OnInit {
   getAnswerCount: number;
   getCorrectAnswer: any = [];
   getCorrectAnswerCount: number;
+  currentQuestion = 0;
   updateSubcategory: any;
   updateCategory: any;
   updateQuestionType: any;
@@ -40,7 +41,7 @@ export class C2pQuestionComponent implements OnInit {
   constructor(private dynamoDBservice: DynamoDbserviceService, fb: FormBuilder) {
     this.options = fb.group({
       hideRequired: false,
-      floatLabel: 'auto',
+      selectedAnswer: 'auto',
     });
   }
 
@@ -95,12 +96,19 @@ export class C2pQuestionComponent implements OnInit {
   }
 
   submitAnswer(form: NgForm) {
-    const theQanda: QandA = form.value;
-    // alert('inQanda: ' + JSON.stringify(form.value));
+    const theQanda = form.value;
+    // alert('the selected answer: ' + theQanda.selectedAnswer);
     // add logic here to check selected answer with correct answer
+    // alert('current question: ' + this.currentQuestion);
+    if (theQanda.selectedAnswer === this.qandaArray[this.currentQuestion].info.correctAnswer[0]) {
+      alert('correct answer! ' + this.qandaArray[this.currentQuestion].info.correctAnswer[0]);
+    } else {
+      alert('wrong answer. Correct answer: ' + this.qandaArray[this.currentQuestion].info.correctAnswer[0]);
+    }
     // highlight correct answer
     // draw pie showing correct versus incorrect so far
     // also transition form button to next question
+    this.currentQuestion = this.currentQuestion + 1;
   }
 
   submitAnswerOld(form: NgForm) {

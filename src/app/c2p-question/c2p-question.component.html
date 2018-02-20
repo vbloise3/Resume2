@@ -25,7 +25,7 @@
           <mat-placeholder></mat-placeholder>
           <div>
             <label><span class="underlined">Select {{getSelectCountText}} answer{{getPlural}}</span>&nbsp;</label>
-            <mat-radio-group layout="row" formControlName="floatLabel">
+            <mat-radio-group layout="row" formControlName="selectedAnswer">
               <span class="displayOnNewLine">
                 <mat-placeholder></mat-placeholder>
                 <mat-radio-button ng-style="{'display':'inline-block'}" *ngFor="let answerValue of getAnswers" value="{{answerValue}}">
