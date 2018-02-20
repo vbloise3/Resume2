@@ -97,6 +97,15 @@ export class C2pQuestionComponent implements OnInit {
   submitAnswer(form: NgForm) {
     const theQanda: QandA = form.value;
     // alert('inQanda: ' + JSON.stringify(form.value));
+    // add logic here to check selected answer with correct answer
+    // highlight correct answer
+    // draw pie showing correct versus incorrect so far
+    // also transition form button to next question
+  }
+
+  submitAnswerOld(form: NgForm) {
+    const theQanda: QandA = form.value;
+    // alert('inQanda: ' + JSON.stringify(form.value));
     this.dynamoDBservice.getOneItem(theQanda).subscribe( qandas => {
       this.qandas = JSON.stringify(qandas);
       // alert('the returned json: ' + this.qandas);
