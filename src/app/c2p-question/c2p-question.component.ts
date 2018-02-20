@@ -60,10 +60,10 @@ export class C2pQuestionComponent implements OnInit {
         counter++;
       });
       // then use a counter to step through the array elements
-      this.getQuestion = this.qandaArray[0].info.question;
-      this.getCategory = this.qandaArray[0].category;
-      this.getId = this.qandaArray[0].id;
-      this.getQuestionType = this.qandaArray[0].info.questionType;
+      this.getQuestion = this.qandaArray[this.currentQuestion].info.question;
+      this.getCategory = this.qandaArray[this.currentQuestion].category;
+      this.getId = this.qandaArray[this.currentQuestion].id;
+      this.getQuestionType = this.qandaArray[this.currentQuestion].info.questionType;
       if (this.getQuestionType === 'multiple choice 1') {
         this.getSelectCount = 1;
         this.getPlural = '';
@@ -85,11 +85,11 @@ export class C2pQuestionComponent implements OnInit {
         this.getPlural = 's';
         this.getSelectCountText = 'five';
       }
-      this.getSubcategory = this.qandaArray[0].info.subcategory;
-      this.getAnswers = this.qandaArray[0].info.answers;
-      this.getAnswerCount = this.qandaArray[0].info.answers.length;
-      this.getCorrectAnswer = this.qandaArray[0].info.correctAnswer;
-      this.getCorrectAnswerCount = this.qandaArray[0].info.correctAnswer.length;
+      this.getSubcategory = this.qandaArray[this.currentQuestion].info.subcategory;
+      this.getAnswers = this.qandaArray[this.currentQuestion].info.answers;
+      this.getAnswerCount = this.qandaArray[this.currentQuestion].info.answers.length;
+      this.getCorrectAnswer = this.qandaArray[this.currentQuestion].info.correctAnswer;
+      this.getCorrectAnswerCount = this.qandaArray[this.currentQuestion].info.correctAnswer.length;
       // as user clicks the submit button (question answered) and the next button
       // (move to the next question)
     });
@@ -98,8 +98,8 @@ export class C2pQuestionComponent implements OnInit {
   submitAnswer(form: NgForm) {
     const theQanda = form.value;
     // alert('the selected answer: ' + theQanda.selectedAnswer);
-    // add logic here to check selected answer with correct answer
-    // alert('current question: ' + this.currentQuestion);
+    // logic to check selected answer with correct answer
+    // need to figure out how to check multiple answers
     if (theQanda.selectedAnswer === this.qandaArray[this.currentQuestion].info.correctAnswer[0]) {
       alert('correct answer! ' + this.qandaArray[this.currentQuestion].info.correctAnswer[0]);
     } else {
@@ -107,8 +107,9 @@ export class C2pQuestionComponent implements OnInit {
     }
     // highlight correct answer
     // draw pie showing correct versus incorrect so far
-    // also transition form button to next question
     this.currentQuestion = this.currentQuestion + 1;
+    // transition form button to next question
+    this.getScreenElements();
   }
 
   submitAnswerOld(form: NgForm) {
@@ -130,6 +131,39 @@ export class C2pQuestionComponent implements OnInit {
       }
       // alert('component initialDataLoad result before HTML display: ' + this.qandas);
     });
+  }
+
+  getScreenElements() {
+    this.getQuestion = this.qandaArray[this.currentQuestion].info.question;
+    this.getCategory = this.qandaArray[this.currentQuestion].category;
+    this.getId = this.qandaArray[this.currentQuestion].id;
+    this.getQuestionType = this.qandaArray[this.currentQuestion].info.questionType;
+    if (this.getQuestionType === 'multiple choice 1') {
+      this.getSelectCount = 1;
+      this.getPlural = '';
+      this.getSelectCountText = 'one';
+    } else if (this.getQuestionType === 'multiple choice 2') {
+      this.getSelectCount = 2;
+      this.getPlural = 's';
+      this.getSelectCountText = 'two';
+    } else if (this.getQuestionType === 'multiple choice 3') {
+      this.getSelectCount = 3;
+      this.getPlural = 's';
+      this.getSelectCountText = 'three';
+    } else if (this.getQuestionType === 'multiple choice 4') {
+      this.getSelectCount = 4;
+      this.getPlural = 's';
+      this.getSelectCountText = 'four';
+    } else if (this.getQuestionType === 'multiple choice 5') {
+      this.getSelectCount = 5;
+      this.getPlural = 's';
+      this.getSelectCountText = 'five';
+    }
+    this.getSubcategory = this.qandaArray[this.currentQuestion].info.subcategory;
+    this.getAnswers = this.qandaArray[this.currentQuestion].info.answers;
+    this.getAnswerCount = this.qandaArray[this.currentQuestion].info.answers.length;
+    this.getCorrectAnswer = this.qandaArray[this.currentQuestion].info.correctAnswer;
+    this.getCorrectAnswerCount = this.qandaArray[this.currentQuestion].info.correctAnswer.length;
   }
 
 }
