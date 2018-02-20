@@ -1,0 +1,13 @@
+{
+  "Item":
+  {
+    "id":"t8n9gpbvxvoGZPKgkXxsgAnE0tdCP0Dr",
+    "info":{
+      "answers":["Configuring third-party applications","Maintaining physical hardware","Securing application access and data","Managing custom Amazon Machine Images (AMIs)"],
+      "subcategory":"Define AWS Cloud",
+      "question":"Which of the following is AWS's responsibility under the AWS shared responsibility model?",
+      "correctAnswer":["Maintaining physical hardware"],
+      "questionType":"multiple choice 1"},
+    "category":"Cloud Concepts"
+  }
+}

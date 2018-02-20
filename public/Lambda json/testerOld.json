@@ -7,8 +7,8 @@
       "questionType": "multiple choice 1",
       "question": "Why is AWS more economical than traditional data centers for applications with varying compute workloads?",
       "answers": ["Amazon Elastic Compute Cloud (Amazon EC2) costs are billed on a monthly basis.", "Customers retain full administrative access to their Amazon EC2 instances.",
-      "Amazon EC2 instances can be launched on-demand when needed.", "Customers can permanently run enough instances to handle peak workloads."],
-      "correctAnswer": "Amazon EC2 instances can be launched on-demand when needed."
+        "Amazon EC2 instances can be launched on-demand when needed.", "Customers can permanently run enough instances to handle peak workloads."],
+      "correctAnswer": ["Amazon EC2 instances can be launched on-demand when needed."]
     }
   },
   {
@@ -20,7 +20,7 @@
       "question": "Which AWS service would simplify migration of a database to AWS?",
       "answers": ["AWS Storage Gateway", "AWS Database Migration Service (AWS DMS)",
         "Amazon Elastic Compute Cloud (Amazon EC2)", "Amazon AppStream 2.0"],
-      "correctAnswer": "AWS Database Migration Service (AWS DMS)"
+      "correctAnswer": ["AWS Database Migration Service (AWS DMS)"]
     }
   }
 ]

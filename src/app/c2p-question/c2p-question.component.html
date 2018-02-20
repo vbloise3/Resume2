@@ -11,25 +11,34 @@
   </mat-toolbar>
   <span class="app-toolbar-filler" style="padding: 1em;"></span>
   <mat-card class="shadowCard" style="float: right;margin-bottom: 1em;margin-top: 1em;">
-    <h1 class="h1Blue">Answer the following questions:</h1>
+    <h1 class="h1Blue">Answer the following question:</h1>
     <mat-card>
-      <form #QandAForm="ngForm" (ngSubmit)="submitAnswer(QandAForm)">
-        <mat-form-field>
-          <input id="category" name="category" matInput placeholder="Category" ngModel  value="{{getCategory}}">
-        </mat-form-field>
-        <mat-form-field>
-          <input id="subcategory" name="subcategory" matInput placeholder="Subcategory" ngModel value="{{getSubcategory}}">
-        </mat-form-field>
-        <mat-form-field>
-          <input id="questionType" name="questionType" matInput placeholder="Type" ngModel value="{{getQuestionType}}">
-        </mat-form-field>
-        <mat-form-field>
-          <input id="question" name="question" matInput placeholder="Question" ngModel value="{{getQuestion}}">
-        </mat-form-field>
-        <div class="actions">
-          <button mat-button type="submit" color="primary" [disabled]="!QandAForm.form.valid">Submit</button>
-        </div>
-      </form>
+      <div class="example-container">
+        <form #QandAForm="ngForm" class="example-container" (ngSubmit)="submitAnswer(QandAForm)" [formGroup]="options">
+          <mat-label><span class="underlined">Category:</span>&nbsp;<span class="colorBlue">{{getCategory}}</span></mat-label>
+          <mat-placeholder></mat-placeholder>
+          <mat-label><span class="underlined">Sub-category:</span>&nbsp;<span class="colorBlue">{{getSubcategory}}</span></mat-label>
+          <mat-placeholder></mat-placeholder>
+          <!--mat-label><span class="underlined">Question Type:</span>&nbsp;<span class="colorBlue">{{getQuestionType}}</span></mat-label>
+          <mat-placeholder></mat-placeholder-->
+          <mat-label><span class="underlined">Question:</span>&nbsp;<span class="colorBlue largerText"><pre>{{getQuestion}}</pre></span></mat-label>
+          <mat-placeholder></mat-placeholder>
+          <div>
+            <label><span class="underlined">Select {{getSelectCountText}} answer{{getPlural}}</span>&nbsp;</label>
+            <mat-radio-group layout="row" formControlName="floatLabel">
+              <span class="displayOnNewLine">
+                <mat-placeholder></mat-placeholder>
+                <mat-radio-button ng-style="{'display':'inline-block'}" *ngFor="let answerValue of getAnswers" value="{{answerValue}}">
+                  <pre>{{answerValue}}</pre>
+                </mat-radio-button>
+              </span>
+            </mat-radio-group>
+          </div>
+          <div class="actions">
+            <button mat-button type="submit" color="primary" [disabled]="!QandAForm.form.valid">Submit</button>
+          </div>
+        </form>
+      </div>
     </mat-card>
   </mat-card>
 </div>

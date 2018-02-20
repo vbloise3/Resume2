@@ -291,10 +291,10 @@ function getAllQandAs() {
       } else {
         // Get all the qandas
         dynamoDBreturn = JSON.stringify(data, undefined, 2);
-        console.log("retrieved qandas: " + JSON.stringify(data, undefined, 2));
+        console.log("retrieved qandas ");
         data.Items.forEach(function(qanda) {
           // document.getElementById('textarea').innerHTML += movie.year + ": " + movie.title + " - rating: " + movie.info.rating + "\n";
-          console.log('found a q and a: ' + JSON.stringify(qanda));
+          // console.log('found a q and a: ' + JSON.stringify(qanda));
         });
 
         // Continue scanning if we have more qandas (per scan 1MB limitation)

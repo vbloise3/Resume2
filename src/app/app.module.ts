@@ -10,7 +10,7 @@ import { YoMoFoComponent } from './yo-mo-fo/yo-mo-fo';
 import { AppComponent } from './appComponent/appComponent';
 import { HomeComponent } from './home/home';
 import { routing } from './app.routing';
-import {MatButtonModule, MatCardModule, MatDialogModule, MatSnackBarModule, MatIconModule} from '@angular/material';
+import {MatButtonModule, MatCardModule, MatDialogModule, MatSnackBarModule, MatIconModule, MatDividerModule, MatRadioModule} from '@angular/material';
 // import { MaterialModule } from '@angular/material';
 import { MatSidenavModule, MatToolbarModule } from '@angular/material';
 import 'hammerjs/hammer.js';
@@ -66,6 +66,8 @@ const appRoutes: Routes = [
 @NgModule({
   imports:      [ BrowserModule, ReactiveFormsModule, RouterModule,
     HttpClientModule, routing, MatSidenavModule, MatDialogModule, MatSnackBarModule, MatIconModule, MatCardModule, MatToolbarModule, BrowserAnimationsModule, MatButtonModule,
+    MatDividerModule,
+    MatRadioModule,
     FlexLayoutModule,
     MatFormFieldModule,
     MatInputModule,
