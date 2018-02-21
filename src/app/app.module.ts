@@ -23,7 +23,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import {C2pDynamoDbComponent} from './c2p-dynamo-db/c2p-dynamo-db.component';
 import { DynamoDbserviceService } from './services/dynamo-dbservice';
 import { MatFormFieldModule } from '@angular/material';
-import { MatInputModule } from '@angular/material';
+import { MatInputModule, MatCheckboxModule } from '@angular/material';
 import { OnlyNumberDirective} from './directives/only-number.directive';
 import { C2pQuestionComponent } from './c2p-question/c2p-question.component';
 
@@ -68,6 +68,7 @@ const appRoutes: Routes = [
     HttpClientModule, routing, MatSidenavModule, MatDialogModule, MatSnackBarModule, MatIconModule, MatCardModule, MatToolbarModule, BrowserAnimationsModule, MatButtonModule,
     MatDividerModule,
     MatRadioModule,
+    MatCheckboxModule,
     FlexLayoutModule,
     MatFormFieldModule,
     MatInputModule,

@@ -23,7 +23,7 @@
           <mat-placeholder></mat-placeholder-->
           <mat-label><span class="underlined">Question:</span>&nbsp;<span class="colorBlue largerText"><pre>{{getQuestion}}</pre></span></mat-label>
           <mat-placeholder></mat-placeholder>
-          <div>
+          <div *ngIf="getSelectCount == 1">
             <label><span class="underlined">Select {{getSelectCountText}} answer{{getPlural}}</span>&nbsp;</label>
             <mat-radio-group layout="row" formControlName="selectedAnswer">
               <span class="displayOnNewLine">
@@ -33,6 +33,11 @@
                 </mat-radio-button>
               </span>
             </mat-radio-group>
+          </div>
+          <div *ngIf="getSelectCount == 2">
+            <label><span class="underlined">Select {{getSelectCountText}} answer{{getPlural}}</span>&nbsp;</label>
+            <mat-checkbox name="tc" formControlName="tc" color="primary">Are you tc accepted?</mat-checkbox>
+            <br/><br/>
           </div>
           <div class="actions">
             <button mat-button type="submit" color="primary" [disabled]="!QandAForm.form.valid">Submit</button>

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DynamoDbserviceService, Movie, QandA } from '../services/dynamo-dbservice';
-import { NgForm, FormBuilder, FormGroup } from '@angular/forms';
+import { NgForm, FormBuilder, FormGroup, FormControl } from '@angular/forms';
+import { MatCheckbox } from '@angular/material';
 
 @Component({
   selector: 'app-c2p-question',
@@ -37,11 +38,13 @@ export class C2pQuestionComponent implements OnInit {
   deleteQuestionType: any;
   deleteQuestion: any;
   deletedTable: any;
+  user = new User();
 
   constructor(private dynamoDBservice: DynamoDbserviceService, fb: FormBuilder) {
     this.options = fb.group({
       hideRequired: false,
       selectedAnswer: 'auto',
+      tc: new FormControl()
     });
   }
 
@@ -59,37 +62,9 @@ export class C2pQuestionComponent implements OnInit {
         // alert(counter + ' ' + JSON.stringify(outerThis.qandaArray[counter]));
         counter++;
       });
-      // then use a counter to step through the array elements
-      this.getQuestion = this.qandaArray[this.currentQuestion].info.question;
-      this.getCategory = this.qandaArray[this.currentQuestion].category;
-      this.getId = this.qandaArray[this.currentQuestion].id;
-      this.getQuestionType = this.qandaArray[this.currentQuestion].info.questionType;
-      if (this.getQuestionType === 'multiple choice 1') {
-        this.getSelectCount = 1;
-        this.getPlural = '';
-        this.getSelectCountText = 'one';
-      } else if (this.getQuestionType === 'multiple choice 2') {
-        this.getSelectCount = 2;
-        this.getPlural = 's';
-        this.getSelectCountText = 'two';
-      } else if (this.getQuestionType === 'multiple choice 3') {
-        this.getSelectCount = 3;
-        this.getPlural = 's';
-        this.getSelectCountText = 'three';
-      } else if (this.getQuestionType === 'multiple choice 4') {
-        this.getSelectCount = 4;
-        this.getPlural = 's';
-        this.getSelectCountText = 'four';
-      } else if (this.getQuestionType === 'multiple choice 5') {
-        this.getSelectCount = 5;
-        this.getPlural = 's';
-        this.getSelectCountText = 'five';
-      }
-      this.getSubcategory = this.qandaArray[this.currentQuestion].info.subcategory;
-      this.getAnswers = this.qandaArray[this.currentQuestion].info.answers;
-      this.getAnswerCount = this.qandaArray[this.currentQuestion].info.answers.length;
-      this.getCorrectAnswer = this.qandaArray[this.currentQuestion].info.correctAnswer;
-      this.getCorrectAnswerCount = this.qandaArray[this.currentQuestion].info.correctAnswer.length;
+      // then use a counter to step through the array elements, after shuffling the array
+      this.shuffle(this.qandaArray);
+      this.getScreenElements();
       // as user clicks the submit button (question answered) and the next button
       // (move to the next question)
     });
@@ -104,6 +79,10 @@ export class C2pQuestionComponent implements OnInit {
       alert('correct answer! ' + this.qandaArray[this.currentQuestion].info.correctAnswer[0]);
     } else {
       alert('wrong answer. Correct answer: ' + this.qandaArray[this.currentQuestion].info.correctAnswer[0]);
+    }
+    // test for checkboxes, replace with real logic
+    if (this.getSelectCount === 2) {
+      this.onChkChange(form);
     }
     // highlight correct answer
     // draw pie showing correct versus incorrect so far
@@ -128,6 +107,9 @@ export class C2pQuestionComponent implements OnInit {
         this.getSubcategory = qandas.Item.info.subcategory;
         this.getQuestionType = qandas.Item.info.questionType;
         this.getQuestion = qandas.Item.info.question;
+      }
+      if (this.getSelectCount = 2) {
+        this.onChkChange(form);
       }
       // alert('component initialDataLoad result before HTML display: ' + this.qandas);
     });
@@ -164,6 +146,33 @@ export class C2pQuestionComponent implements OnInit {
     this.getAnswerCount = this.qandaArray[this.currentQuestion].info.answers.length;
     this.getCorrectAnswer = this.qandaArray[this.currentQuestion].info.correctAnswer;
     this.getCorrectAnswerCount = this.qandaArray[this.currentQuestion].info.correctAnswer.length;
+    // set the checkbox to false on load of new question
+    this.options.setValue({tc: false, hideRequired: false, selectedAnswer: 'auto'});
   }
 
+  shuffle(a) {
+    for (let i = a.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
+  }
+
+  onChkChange(form: NgForm) {
+    let message: string = '';
+    this.user.isTCAccepted = this.options.get('tc').value;
+    if ( this.user.isTCAccepted ) {
+      message = 'Accepted';
+    } else {
+      message = 'Not Accepted';
+    }
+    alert('Checked value changed: user is tc accepted? ' + message);
+  }
+
+}
+
+export class User {
+  userName: string;
+  isMarried: boolean = false;
+  isTCAccepted: boolean;
 }
