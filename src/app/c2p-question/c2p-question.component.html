@@ -36,8 +36,25 @@
           </div>
           <div *ngIf="getSelectCount == 2">
             <label><span class="underlined">Select {{getSelectCountText}} answer{{getPlural}}</span>&nbsp;</label>
-            <mat-checkbox name="tc" formControlName="tc" color="primary">Are you tc accepted?</mat-checkbox>
-            <br/><br/>
+            <span *ngFor="let answerValue of getAnswers">
+                <mat-checkbox
+                  name="{{answerValue}}"
+                  value="{{answerValue}}"
+                  (change)="change($event, answerValue)">
+                     {{answerValue}}
+                </mat-checkbox>
+            </span>
+          </div>
+          <div *ngIf="getSelectCount == 3">
+            <label><span class="underlined">Select {{getSelectCountText}} answer{{getPlural}}</span>&nbsp;</label>
+            <span *ngFor="let answerValue of getAnswers">
+                <mat-checkbox
+                  name="{{answerValue}}"
+                  value="{{answerValue}}"
+                  (change)="change($event, answerValue)">
+                     {{answerValue}}
+                </mat-checkbox>
+            </span>
           </div>
           <div class="actions">
             <button mat-button type="submit" color="primary" [disabled]="!QandAForm.form.valid">Submit</button>

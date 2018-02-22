@@ -39,6 +39,7 @@ export class C2pQuestionComponent implements OnInit {
   deleteQuestion: any;
   deletedTable: any;
   user = new User();
+  selectedValue = [];
 
   constructor(private dynamoDBservice: DynamoDbserviceService, fb: FormBuilder) {
     this.options = fb.group({
@@ -75,44 +76,60 @@ export class C2pQuestionComponent implements OnInit {
     // alert('the selected answer: ' + theQanda.selectedAnswer);
     // logic to check selected answer with correct answer
     // need to figure out how to check multiple answers
-    if (theQanda.selectedAnswer === this.qandaArray[this.currentQuestion].info.correctAnswer[0]) {
-      alert('correct answer! ' + this.qandaArray[this.currentQuestion].info.correctAnswer[0]);
-    } else {
-      alert('wrong answer. Correct answer: ' + this.qandaArray[this.currentQuestion].info.correctAnswer[0]);
-    }
-    // test for checkboxes, replace with real logic
-    if (this.getSelectCount === 2) {
-      this.onChkChange(form);
+    if (this.getSelectCount === 1) {
+      if (theQanda.selectedAnswer === this.qandaArray[this.currentQuestion].info.correctAnswer[0]) {
+        alert('correct answer! ' + this.qandaArray[this.currentQuestion].info.correctAnswer[0]);
+      } else {
+        alert('wrong answer. Correct answer: ' + this.qandaArray[this.currentQuestion].info.correctAnswer[0]);
+      }
+    } else if (this.getSelectCount === 2) {
+      if ( ( this.qandaArray[this.currentQuestion].info.correctAnswer.indexOf(this.selectedValue[0]) > -1 )
+        && ( this.qandaArray[this.currentQuestion].info.correctAnswer.indexOf(this.selectedValue[1]) > -1 ) ) {
+        alert('correct answer! ' + this.qandaArray[this.currentQuestion].info.correctAnswer[0] + '; '
+          + this.qandaArray[this.currentQuestion].info.correctAnswer[1]);
+      } else {
+        alert('wrong answer. Correct answer: ' + this.qandaArray[this.currentQuestion].info.correctAnswer[0] + '; '
+          + this.qandaArray[this.currentQuestion].info.correctAnswer[1]);
+      }
+    } else if (this.getSelectCount === 3) {
+      if ( ( this.qandaArray[this.currentQuestion].info.correctAnswer.indexOf(this.selectedValue[0]) > -1 )
+        && ( this.qandaArray[this.currentQuestion].info.correctAnswer.indexOf(this.selectedValue[1]) > -1 )
+        && ( this.qandaArray[this.currentQuestion].info.correctAnswer.indexOf(this.selectedValue[2]) > -1 ) ) {
+        alert('correct answer! ' + this.qandaArray[this.currentQuestion].info.correctAnswer[0] + '; '
+          + this.qandaArray[this.currentQuestion].info.correctAnswer[1] + '; '
+          + this.qandaArray[this.currentQuestion].info.correctAnswer[2] );
+      } else {
+        alert('wrong answer. Correct answer: ' + this.qandaArray[this.currentQuestion].info.correctAnswer[0] + '; '
+          + this.qandaArray[this.currentQuestion].info.correctAnswer[1] + '; '
+          + this.qandaArray[this.currentQuestion].info.correctAnswer[2]
+        );
+      }
     }
     // highlight correct answer
     // draw pie showing correct versus incorrect so far
     this.currentQuestion = this.currentQuestion + 1;
+    if ( this.currentQuestion === this.qandaArray.length ) {
+      // start over
+      this.currentQuestion = 0;
+    }
     // transition form button to next question
     this.getScreenElements();
   }
 
-  submitAnswerOld(form: NgForm) {
-    const theQanda: QandA = form.value;
-    // alert('inQanda: ' + JSON.stringify(form.value));
-    this.dynamoDBservice.getOneItem(theQanda).subscribe( qandas => {
-      this.qandas = JSON.stringify(qandas);
-      // alert('the returned json: ' + this.qandas);
-      if ( this.qandas === '{}') {
-        this.getCategory = '';
-        this.getSubcategory = '';
-        this.getQuestionType = '';
-        this.getQuestion = '';
-      } else {
-        this.getCategory = qandas.Item.info.category;
-        this.getSubcategory = qandas.Item.info.subcategory;
-        this.getQuestionType = qandas.Item.info.questionType;
-        this.getQuestion = qandas.Item.info.question;
-      }
-      if (this.getSelectCount = 2) {
-        this.onChkChange(form);
-      }
-      // alert('component initialDataLoad result before HTML display: ' + this.qandas);
-    });
+  change(e, type) {
+    console.log(e.checked);
+    console.log(type);
+    if (e.checked) {
+      this.selectedValue.push(type);
+    } else {
+      let updateItem = this.selectedValue.find(this.findIndexToUpdate, type);
+      let index = this.selectedValue.indexOf(updateItem);
+      this.selectedValue.splice(index, 1);
+    }
+  }
+
+  findIndexToUpdate (type) {
+    return type === this;
   }
 
   getScreenElements() {
@@ -148,6 +165,10 @@ export class C2pQuestionComponent implements OnInit {
     this.getCorrectAnswerCount = this.qandaArray[this.currentQuestion].info.correctAnswer.length;
     // set the checkbox to false on load of new question
     this.options.setValue({tc: false, hideRequired: false, selectedAnswer: 'auto'});
+    // clear the selected values
+    while (this.selectedValue.length > 0) {
+      this.selectedValue.pop();
+    }
   }
 
   shuffle(a) {
@@ -160,7 +181,7 @@ export class C2pQuestionComponent implements OnInit {
 
   onChkChange(form: NgForm) {
     let message: string = '';
-    this.user.isTCAccepted = this.options.get('tc').value;
+    this.user.isTCAccepted = this.options.get('1').value;
     if ( this.user.isTCAccepted ) {
       message = 'Accepted';
     } else {
