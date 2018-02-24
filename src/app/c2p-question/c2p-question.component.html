@@ -28,40 +28,37 @@
             <mat-radio-group layout="row" formControlName="selectedAnswer">
               <span class="displayOnNewLine">
                 <mat-placeholder></mat-placeholder>
-                <mat-radio-button ng-style="{'display':'inline-block'}" *ngFor="let answerValue of getAnswers" value="{{answerValue}}">
-                  <pre>{{answerValue}}</pre>
+                <mat-radio-button ng-style="{'display':'inline-block'}" *ngFor="let answerValue of getAnswers; let i = index" value="{{answerValue}}">
+                  <pre [ngClass]="{'correctAnswer': correctOrNot[i]}">{{answerValue}}</pre>
                 </mat-radio-button>
               </span>
             </mat-radio-group>
           </div>
-          <div *ngIf="getSelectCount == 2">
+          <div *ngIf="getSelectCount > 1">
             <label><span class="underlined">Select {{getSelectCountText}} answer{{getPlural}}</span>&nbsp;</label>
             <span class="displayOnNewLine">
                 <mat-placeholder></mat-placeholder>
-                <span *ngFor="let answerValue of getAnswers">
+                <span *ngFor="let answerValue of getAnswers; let i = index">
                   &nbsp;&nbsp;
                     <mat-checkbox
                       name="{{answerValue}}"
                       value="{{answerValue}}"
                       (change)="change($event, answerValue)">
-                      <pre>{{answerValue}}</pre>
+                      <pre [ngClass]="{'correctAnswer': correctOrNot[i]}">{{answerValue}}</pre>
                     </mat-checkbox>
+                  <!--div *ngIf="i === true">
+                    {{correctOrNot[i]}}
+                  </div-->
                 </span>
             </span>
           </div>
-          <!--div *ngIf="getSelectCount == 3">
-            <label><span class="underlined">Select {{getSelectCountText}} answer{{getPlural}}</span>&nbsp;</label>
-            <span *ngFor="let answerValue of getAnswers">
-                <mat-checkbox
-                  name="{{answerValue}}"
-                  value="{{answerValue}}"
-                  (change)="change($event, answerValue)">
-                     {{answerValue}}
-                </mat-checkbox>
-            </span>
-          </div-->
           <div class="actions">
-            <button mat-button type="submit" color="primary" [disabled]="!QandAForm.form.valid">Submit</button>
+            <div *ngIf="!nextQuestion">
+              <button mat-button type="submit" color="primary" [disabled]="!QandAForm.form.valid">Submit</button>
+            </div>
+            <div *ngIf="nextQuestion">
+              <button mat-button type="submit" color="primary" [disabled]="!QandAForm.form.valid">Next Question</button>
+            </div>
           </div>
         </form>
       </div>

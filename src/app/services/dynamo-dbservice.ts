@@ -21,6 +21,11 @@ export interface QandA {
   correctAnswer: any;
 }
 
+export interface Answer {
+  answer: string;
+  correctOrNot: boolean;
+}
+
 export interface  Movie {
   year: string;
   title: number;

@@ -36,3 +36,8 @@
   white-space: pre;
   margin: 0.5em;
 }
+
+.correctAnswer {
+  color: white;
+  background-color: green;
+}

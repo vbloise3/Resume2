@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { DynamoDbserviceService, Movie, QandA } from '../services/dynamo-dbservice';
+import { DynamoDbserviceService, Movie, QandA, Answer } from '../services/dynamo-dbservice';
 import { NgForm, FormBuilder, FormGroup, FormControl } from '@angular/forms';
 import { MatCheckbox } from '@angular/material';
+import { NgClass } from '@angular/common';
 
 @Component({
   selector: 'app-c2p-question',
@@ -40,6 +41,8 @@ export class C2pQuestionComponent implements OnInit {
   deletedTable: any;
   user = new User();
   selectedValue = [];
+  nextQuestion = false;
+  correctOrNot = [];
 
   constructor(private dynamoDBservice: DynamoDbserviceService, fb: FormBuilder) {
     this.options = fb.group({
@@ -78,42 +81,126 @@ export class C2pQuestionComponent implements OnInit {
     // need to figure out how to check multiple answers
     if (this.getSelectCount === 1) {
       if (theQanda.selectedAnswer === this.qandaArray[this.currentQuestion].info.correctAnswer[0]) {
-        alert('correct answer! ' + this.qandaArray[this.currentQuestion].info.correctAnswer[0]);
+        // alert('correct answer! ' + this.qandaArray[this.currentQuestion].info.correctAnswer[0]);
+        const currentThis = this;
+        let counter = 0;
+        this.qandaArray[this.currentQuestion].info.answers.forEach( function (answer) {
+          if ( ( currentThis.qandaArray[currentThis.currentQuestion].info.correctAnswer.indexOf(answer) > -1) ) {
+            currentThis.correctOrNot[counter] = true;
+          } else {
+            currentThis.correctOrNot[counter] = false;
+          }
+          // alert('correct? ' + currentThis.correctOrNot[counter]);
+          counter++;
+        });
+        this.getAnswers = this.qandaArray[this.currentQuestion].info.answers;
       } else {
-        alert('wrong answer. Correct answer: ' + this.qandaArray[this.currentQuestion].info.correctAnswer[0]);
+        // alert('wrong answer. Correct answer: ' + this.qandaArray[this.currentQuestion].info.correctAnswer[0]);
+        const currentThis = this;
+        let counter = 0;
+        this.qandaArray[this.currentQuestion].info.answers.forEach( function (answer) {
+          if ( ( currentThis.qandaArray[currentThis.currentQuestion].info.correctAnswer.indexOf(answer) > -1) ) {
+            currentThis.correctOrNot[counter] = true;
+          } else {
+            currentThis.correctOrNot[counter] = false;
+          }
+          // alert('correct? ' + currentThis.correctOrNot[counter]);
+          counter++;
+        });
+        this.getAnswers = this.qandaArray[this.currentQuestion].info.answers;
       }
     } else if (this.getSelectCount === 2) {
       if ( ( this.qandaArray[this.currentQuestion].info.correctAnswer.indexOf(this.selectedValue[0]) > -1 )
         && ( this.qandaArray[this.currentQuestion].info.correctAnswer.indexOf(this.selectedValue[1]) > -1 ) ) {
-        alert('correct answer! ' + this.qandaArray[this.currentQuestion].info.correctAnswer[0] + '; '
-          + this.qandaArray[this.currentQuestion].info.correctAnswer[1]);
+        // alert('correct answer! ' + this.qandaArray[this.currentQuestion].info.correctAnswer[0] + '; '
+        //  + this.qandaArray[this.currentQuestion].info.correctAnswer[1]);
+        // highlight correct answer green
+        // set the correctOrNot array
+        const currentThis = this;
+        let counter = 0;
+        this.qandaArray[this.currentQuestion].info.answers.forEach( function (answer) {
+          if ( ( currentThis.qandaArray[currentThis.currentQuestion].info.correctAnswer.indexOf(answer) > -1) ) {
+            currentThis.correctOrNot[counter] = true;
+          } else {
+            currentThis.correctOrNot[counter] = false;
+          }
+          // alert('correct? ' + currentThis.correctOrNot[counter]);
+          counter++;
+        });
+        this.getAnswers = this.qandaArray[this.currentQuestion].info.answers;
       } else {
-        alert('wrong answer. Correct answer: ' + this.qandaArray[this.currentQuestion].info.correctAnswer[0] + '; '
-          + this.qandaArray[this.currentQuestion].info.correctAnswer[1]);
+        // alert('wrong answer. Correct answer: ' + this.qandaArray[this.currentQuestion].info.correctAnswer[0] + '; '
+        //  + this.qandaArray[this.currentQuestion].info.correctAnswer[1]);
+        const currentThis = this;
+        let counter = 0;
+        this.qandaArray[this.currentQuestion].info.answers.forEach( function (answer) {
+          if ( ( currentThis.qandaArray[currentThis.currentQuestion].info.correctAnswer.indexOf(answer) > -1) ) {
+            currentThis.correctOrNot[counter] = true;
+          } else {
+            currentThis.correctOrNot[counter] = false;
+          }
+          // alert('correct? ' + currentThis.correctOrNot[counter]);
+          counter++;
+        });
+        this.getAnswers = this.qandaArray[this.currentQuestion].info.answers;
       }
     } else if (this.getSelectCount === 3) {
       if ( ( this.qandaArray[this.currentQuestion].info.correctAnswer.indexOf(this.selectedValue[0]) > -1 )
         && ( this.qandaArray[this.currentQuestion].info.correctAnswer.indexOf(this.selectedValue[1]) > -1 )
         && ( this.qandaArray[this.currentQuestion].info.correctAnswer.indexOf(this.selectedValue[2]) > -1 ) ) {
-        alert('correct answer! ' + this.qandaArray[this.currentQuestion].info.correctAnswer[0] + '; '
-          + this.qandaArray[this.currentQuestion].info.correctAnswer[1] + '; '
-          + this.qandaArray[this.currentQuestion].info.correctAnswer[2] );
+        // alert('correct answer! ' + this.qandaArray[this.currentQuestion].info.correctAnswer[0] + '; '
+        // + this.qandaArray[this.currentQuestion].info.correctAnswer[1] + '; '
+        //  + this.qandaArray[this.currentQuestion].info.correctAnswer[2] );
+        const currentThis = this;
+        let counter = 0;
+        this.qandaArray[this.currentQuestion].info.answers.forEach( function (answer) {
+          if ( ( currentThis.qandaArray[currentThis.currentQuestion].info.correctAnswer.indexOf(answer) > -1) ) {
+            currentThis.correctOrNot[counter] = true;
+          } else {
+            currentThis.correctOrNot[counter] = false;
+          }
+          // alert('correct? ' + currentThis.correctOrNot[counter]);
+          counter++;
+        });
+        this.getAnswers = this.qandaArray[this.currentQuestion].info.answers;
       } else {
-        alert('wrong answer. Correct answer: ' + this.qandaArray[this.currentQuestion].info.correctAnswer[0] + '; '
-          + this.qandaArray[this.currentQuestion].info.correctAnswer[1] + '; '
-          + this.qandaArray[this.currentQuestion].info.correctAnswer[2]
-        );
+        // alert('wrong answer. Correct answer: ' + this.qandaArray[this.currentQuestion].info.correctAnswer[0] + '; '
+        //  + this.qandaArray[this.currentQuestion].info.correctAnswer[1] + '; '
+        //  + this.qandaArray[this.currentQuestion].info.correctAnswer[2]
+        // );
+        const currentThis = this;
+        let counter = 0;
+        this.qandaArray[this.currentQuestion].info.answers.forEach( function (answer) {
+          if ( ( currentThis.qandaArray[currentThis.currentQuestion].info.correctAnswer.indexOf(answer) > -1) ) {
+            currentThis.correctOrNot[counter] = true;
+          } else {
+            currentThis.correctOrNot[counter] = false;
+          }
+          // alert('correct? ' + currentThis.correctOrNot[counter]);
+          counter++;
+        });
+        this.getAnswers = this.qandaArray[this.currentQuestion].info.answers;
       }
     }
-    // highlight correct answer
-    // draw pie showing correct versus incorrect so far
-    this.currentQuestion = this.currentQuestion + 1;
-    if ( this.currentQuestion === this.qandaArray.length ) {
-      // start over
-      this.currentQuestion = 0;
+    if (!this.nextQuestion) {
+      // draw pie showing correct versus incorrect so far
+      this.nextQuestion = true;
+    } else {
+      this.currentQuestion = this.currentQuestion + 1;
+      if (this.currentQuestion === this.qandaArray.length) {
+        // start over
+        this.currentQuestion = 0;
+      }
+      // transition form button to next question
+      this.nextQuestion = false;
+      const currentThis = this;
+      let counter = 0;
+      this.qandaArray[this.currentQuestion].info.answers.forEach( function (answer) {
+        currentThis.correctOrNot[counter] = false;
+        counter++;
+      });
+      this.getScreenElements();
     }
-    // transition form button to next question
-    this.getScreenElements();
   }
 
   change(e, type) {
