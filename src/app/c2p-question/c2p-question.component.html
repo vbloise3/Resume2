@@ -39,16 +39,13 @@
             <span class="displayOnNewLine">
                 <mat-placeholder></mat-placeholder>
                 <span *ngFor="let answerValue of getAnswers; let i = index">
-                  &nbsp;&nbsp;
                     <mat-checkbox
                       name="{{answerValue}}"
                       value="{{answerValue}}"
                       (change)="change($event, answerValue)">
                       <pre [ngClass]="{'correctAnswer': correctOrNot[i]}">{{answerValue}}</pre>
                     </mat-checkbox>
-                  <!--div *ngIf="i === true">
-                    {{correctOrNot[i]}}
-                  </div-->
+                  &nbsp;&nbsp;
                 </span>
             </span>
           </div>
