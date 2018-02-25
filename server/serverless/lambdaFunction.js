@@ -32,7 +32,7 @@ exports.handler = (event, context, callback) => {
       console.log(err, err.stack);
       callback(err);
     } else {
-      // console.log("Raw text:\n" + data.Body.toString('ascii'));
+      console.log("Raw text:\n" + data.Body.toString('ascii'));
       var allQandAs = JSON.parse(data.Body.toString('ascii'));
 
       allQandAs.forEach(function (qanda) {
@@ -46,6 +46,7 @@ exports.handler = (event, context, callback) => {
             "info": qanda.info
           }
         };
+        console.log("puting to " + params.TableName + " item " + params.Item.id + " with question type " + params.Item.info.questionType);
         docClient.put(params, function (err, data) {
           if (err) {
             // document.getElementById('textarea').innerHTML += "Unable to add movie: " + count + movie.title + "\n";

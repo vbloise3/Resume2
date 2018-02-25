@@ -29,6 +29,8 @@ export class C2pQuestionComponent implements OnInit {
   getAnswerCount: number;
   getCorrectAnswer: any = [];
   getCorrectAnswerCount: number;
+  getTextAnswer: any;
+  textAnswerCorrectOrNot: string = 'neutral';
   currentQuestion = 0;
   updateSubcategory: any;
   updateCategory: any;
@@ -48,7 +50,8 @@ export class C2pQuestionComponent implements OnInit {
     this.options = fb.group({
       hideRequired: false,
       selectedAnswer: 'auto',
-      tc: new FormControl()
+      tc: new FormControl(),
+      textAnswer: new FormControl(),
     });
   }
 
@@ -79,6 +82,19 @@ export class C2pQuestionComponent implements OnInit {
     // alert('the selected answer: ' + theQanda.selectedAnswer);
     // logic to check selected answer with correct answer
     // need to figure out how to check multiple answers
+    if (this.getSelectCount === 0) {
+      // alert('the entered answer: ' + JSON.stringify(theQanda));
+      // trim leading and trailing spaces
+      const trimedAnswer = theQanda.textAnswer.trim();
+      if (trimedAnswer === this.qandaArray[this.currentQuestion].info.correctAnswer[0]) {
+        this.textAnswerCorrectOrNot = 'true';
+        // alert('correct answer! ' + this.qandaArray[this.currentQuestion].info.correctAnswer[0]);
+      } else {
+        this.textAnswerCorrectOrNot = 'false';
+        // alert('wrong answer. Correct answer: ' + this.qandaArray[this.currentQuestion].info.correctAnswer[0]);
+      }
+      this.getTextAnswer = this.qandaArray[this.currentQuestion].info.correctAnswer[0];
+    }
     if (this.getSelectCount === 1) {
       if (theQanda.selectedAnswer === this.qandaArray[this.currentQuestion].info.correctAnswer[0]) {
         // alert('correct answer! ' + this.qandaArray[this.currentQuestion].info.correctAnswer[0]);
@@ -199,6 +215,11 @@ export class C2pQuestionComponent implements OnInit {
         currentThis.correctOrNot[counter] = false;
         counter++;
       });
+      this.options.patchValue({
+        textAnswer: ''
+      });
+      // theQanda.textAnswer = '';
+      this.textAnswerCorrectOrNot = 'neutral';
       this.getScreenElements();
     }
   }
@@ -244,6 +265,10 @@ export class C2pQuestionComponent implements OnInit {
       this.getSelectCount = 5;
       this.getPlural = 's';
       this.getSelectCountText = 'five';
+    } else if (this.getQuestionType === 'text entry') {
+      this.getSelectCount = 0;
+      this.getPlural = '';
+      this.getSelectCountText = 'one';
     }
     this.getSubcategory = this.qandaArray[this.currentQuestion].info.subcategory;
     this.getAnswers = this.qandaArray[this.currentQuestion].info.answers;
@@ -251,7 +276,7 @@ export class C2pQuestionComponent implements OnInit {
     this.getCorrectAnswer = this.qandaArray[this.currentQuestion].info.correctAnswer;
     this.getCorrectAnswerCount = this.qandaArray[this.currentQuestion].info.correctAnswer.length;
     // set the checkbox to false on load of new question
-    this.options.setValue({tc: false, hideRequired: false, selectedAnswer: 'auto'});
+    this.options.setValue({tc: false, hideRequired: false, selectedAnswer: 'auto', textAnswer: ' '});
     // clear the selected values
     while (this.selectedValue.length > 0) {
       this.selectedValue.pop();

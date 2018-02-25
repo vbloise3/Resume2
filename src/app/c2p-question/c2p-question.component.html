@@ -23,6 +23,17 @@
           <mat-placeholder></mat-placeholder-->
           <mat-label><span class="underlined">Question:</span>&nbsp;<span class="colorBlue largerText"><pre>{{getQuestion}}</pre></span></mat-label>
           <mat-placeholder></mat-placeholder>
+          <div *ngIf="getSelectCount == 0">
+            <label><span class="underlined">Your answer{{getPlural}}</span>&nbsp;</label>
+            <mat-placeholder></mat-placeholder>
+            <mat-form-field>
+              <div class="wideInput">
+                <input id="getTextAnswer" [ngClass]="{'correctAnswer': textAnswerCorrectOrNot === 'true', 'wrongAnswer': textAnswerCorrectOrNot === 'false'}"
+                       formControlName="textAnswer" matInput placeholder="Enter your answer" ngModel required>
+              </div>
+            </mat-form-field>
+            <label *ngIf="textAnswerCorrectOrNot == 'false'"><br/>Correct Answer:&nbsp;<span class="correctAnswer">{{getCorrectAnswer}}</span></label>
+          </div>
           <div *ngIf="getSelectCount == 1">
             <label><span class="underlined">Select {{getSelectCountText}} answer{{getPlural}}</span>&nbsp;</label>
             <mat-radio-group layout="row" formControlName="selectedAnswer">

@@ -41,3 +41,12 @@
   color: white;
   background-color: green;
 }
+
+.wrongAnswer {
+  color: white;
+  background-color: red;
+}
+
+.wideInput {
+  width: 500px;
+}

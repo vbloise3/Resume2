@@ -358,5 +358,192 @@
         "Launches or terminates instances based on specific conditions", "Creates new resources on demand"],
       "correctAnswer": ["Distributes incomming traffic amongst your instances"]
     }
+  },
+  {
+    "id": "31",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "text entry",
+      "question": "What AWS service does the acronym ELB represent?",
+      "answers": [" "],
+      "correctAnswer": ["Elastic Load Balancing"]
+    }
+  },
+  {
+    "id": "32",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "text entry",
+      "question": "What AWS service does the acronym IAM represent?",
+      "answers": [" "],
+      "correctAnswer": ["Identity Access Management"]
+    }
+  },
+  {
+    "id": "33",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "text entry",
+      "question": "What AWS service does the acronym EIP represent?",
+      "answers": [" "],
+      "correctAnswer": ["Elastic IP address"]
+    }
+  },
+  {
+    "id": "34",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "text entry",
+      "question": "What AWS service does the acronym ENI represent?",
+      "answers": [" "],
+      "correctAnswer": ["EC2 Elastic Network Interface"]
+    }
+  },
+  {
+    "id": "35",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "text entry",
+      "question": "What AWS service does the acronym VPC represent?",
+      "answers": [" "],
+      "correctAnswer": ["Virtual Private Cloud"]
+    }
+  },
+  {
+    "id": "36",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "text entry",
+      "question": "What AWS service does the acronym EC2 represent?",
+      "answers": [" "],
+      "correctAnswer": ["Elastic Compute Cloud"]
+    }
+  },
+  {
+    "id": "37",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "text entry",
+      "question": "What AWS service does the acronym S3 represent?",
+      "answers": [" "],
+      "correctAnswer": ["Simple Storage Service"]
+    }
+  },
+  {
+    "id": "38",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "text entry",
+      "question": "What AWS service does the acronym EBS represent?",
+      "answers": [" "],
+      "correctAnswer": ["Elastic Block Store"]
+    }
+  },
+  {
+    "id": "39",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "text entry",
+      "question": "What AWS service does the acronym RDS represent?",
+      "answers": [" "],
+      "correctAnswer": ["Relational Database Service"]
+    }
+  },
+  {
+    "id": "40",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "text entry",
+      "question": "What AWS service does the acronym SQS represent?",
+      "answers": [" "],
+      "correctAnswer": ["Simple Queue Service"]
+    }
+  },
+  {
+    "id": "41",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "text entry",
+      "question": "What is the name of an AWS deployment tool for simple applications?",
+      "answers": [" "],
+      "correctAnswer": ["Elastic Beanstalk"]
+    }
+  },
+  {
+    "id": "42",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "text entry",
+      "question": "What is the name of an AWS deployment tool for multilayer applications?",
+      "answers": [" "],
+      "correctAnswer": ["OpsWorks"]
+    }
+  },
+  {
+    "id": "43",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "text entry",
+      "question": "What is the name of an AWS infrastructure automation and deployment tool?",
+      "answers": [" "],
+      "correctAnswer": ["CloudFormation"]
+    }
+  },
+  {
+    "id": "44",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "text entry",
+      "question": "What is the name of an AWS inexpensive data archive solution?",
+      "answers": [" "],
+      "correctAnswer": ["Glacier"]
+    }
+  },
+  {
+    "id": "45",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "text entry",
+      "question": "What is the name of an AWS proprietary NoSQL key-value database with limited but powerful options for queries?",
+      "answers": [" "],
+      "correctAnswer": ["DynamoDB"]
+    }
+  },
+  {
+    "id": "46",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "text entry",
+      "question": "What AWS service observes a fleet of servers; replaces faulty servers, and increases/decreases the size of the fleet based on external triggers like CPU usage?",
+      "answers": [" "],
+      "correctAnswer": ["EC2 auto-scaling groups"]
+    }
+  },
+  {
+    "id": "47",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "text entry",
+      "question": "What AWS service keeps track of metrics and triggers alarms when a threshold is reached?",
+      "answers": [" "],
+      "correctAnswer": ["CloudWatch"]
+    }
   }
 ]
