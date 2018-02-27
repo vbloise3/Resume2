@@ -28,7 +28,7 @@
             <mat-placeholder></mat-placeholder>
             <mat-form-field>
               <div class="wideInput">
-                <input id="getTextAnswer" [ngClass]="{'correctAnswer': textAnswerCorrectOrNot === 'true', 'wrongAnswer': textAnswerCorrectOrNot === 'false'}"
+                <input id="getTextAnswer" class="wideInput" [ngClass]="{'correctAnswer': textAnswerCorrectOrNot === 'true', 'wrongAnswer': textAnswerCorrectOrNot === 'false'}"
                        formControlName="textAnswer" matInput placeholder="Enter your answer" ngModel required>
               </div>
             </mat-form-field>

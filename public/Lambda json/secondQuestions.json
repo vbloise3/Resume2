@@ -1,0 +1,453 @@
+[
+  {
+    "id": "48",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "text entry",
+      "question": "What are the 5 pillars of the AWS Well Architected Framework?",
+      "answers": [" "],
+      "correctAnswer": ["Security, Reliability, Performance Efficiency, Cost Optimization, Operational Excellence"]
+    }
+  },
+  {
+    "id": "49",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "text entry",
+      "question": "What AWS service enables templated environments and allows operations as code?",
+      "answers": [" "],
+      "correctAnswer": ["CloudFormation"]
+    }
+  },
+  {
+    "id": "50",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "text entry",
+      "question": "What AWS concept represents a physical location in the world and contains multiple AZs?",
+      "answers": [" "],
+      "correctAnswer": ["Region"]
+    }
+  },
+  {
+    "id": "51",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "text entry",
+      "question": "What AWS concept has one or more discrete data centers with redundant power, networking, and connectivity?",
+      "answers": [" "],
+      "correctAnswer": ["Availability Zone"]
+    }
+  },
+  {
+    "id": "52",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "text entry",
+      "question": "What AWS concept hosts content delivery networks?",
+      "answers": [" "],
+      "correctAnswer": ["Edge Locations"]
+    }
+  },
+  {
+    "id": "53",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "text entry",
+      "question": "What AWS service allows access to the internet from a VPC?",
+      "answers": [" "],
+      "correctAnswer": ["Internet Gateway"]
+    }
+  },
+  {
+    "id": "54",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "text entry",
+      "question": "What AWS service allows private subnets access to the internet from a VPC?",
+      "answers": [" "],
+      "correctAnswer": ["NAT Gateway"]
+    }
+  },
+  {
+    "id": "55",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "text entry",
+      "question": "Within a VPC, what controls access to subnets and is stateless?",
+      "answers": [" "],
+      "correctAnswer": ["Network Access Control Lists"]
+    }
+  },
+  {
+    "id": "55",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "text entry",
+      "question": "What acts like a built-in firewall for virtual servers?",
+      "answers": [" "],
+      "correctAnswer": ["Security Groups"]
+    }
+  },
+  {
+    "id": "56",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "text entry",
+      "question": "What AWS service allows you to build simple web and application servers?",
+      "answers": [" "],
+      "correctAnswer": ["LightSail"]
+    }
+  },
+  {
+    "id": "57",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "text entry",
+      "question": "What AWS service is a container management service that supports docker containers?",
+      "answers": [" "],
+      "correctAnswer": ["ECS"]
+    }
+  },
+  {
+    "id": "58",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "text entry",
+      "question": "What are the three types of AWS load balancers?",
+      "answers": [" "],
+      "correctAnswer": ["Classic, Application, Network"]
+    }
+  },
+  {
+    "id": "59",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "multiple choice 1",
+      "question": "Concerning Auto Scaling Groups, which configuration defines 'what' to deploy?",
+      "answers": ["Launch Configuration", "Auto Scaling Group", "Auto Scaling Policy", "Scaling out and Scaling In"],
+      "correctAnswer": ["Launch Configuration"]
+    }
+  },
+  {
+    "id": "60",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "multiple choice 1",
+      "question": "Concerning Auto Scaling Groups, which configuration defines 'where' to deploy?",
+      "answers": ["Launch Configuration", "Auto Scaling Group", "Auto Scaling Policy", "Scaling out and Scaling In"],
+      "correctAnswer": ["Auto Scaling Group"]
+    }
+  },
+  {
+    "id": "61",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "multiple choice 3",
+      "question": "Which are true about AWS Elastic Block Store (EBS)?",
+      "answers": ["Can be HDD or SDD", "Replicated across AZs", "Can be backed up using snapshots", "Can copy a snapshot to a different region for greater availability", "Is not a storage unit for EC2 instances"],
+      "correctAnswer": ["Can be HDD or SDD", "Can be backed up using snapshots", "Can copy a snapshot to a different region for greater availability"]
+    }
+  },
+  {
+    "id": "62",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "multiple choice 3",
+      "question": "Which are true about AWS Simple Storage Service (S3)?",
+      "answers": ["Managed cloud storage service", "Number of objects stored is limited by configuration", "Each object has a key which is used to access it", "Can support cross-region replication", "Can only support in-region replication"],
+      "correctAnswer": ["Managed cloud storage service", "Each object has a key which is used to access it", "Can support cross-region replication"]
+    }
+  },
+  {
+    "id": "63",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "multiple choice 2",
+      "question": "Which are true about AWS Glacier?",
+      "answers": ["Designed for storing 'old' data", "Can use lifecycle policies to archive data from S3 to Glacier", "Each object has a key which is used to access it", "Durability of 5 9s", "Can support cross-region replication"],
+      "correctAnswer": ["Designed for storing 'old' data", "Can use lifecycle policies to archive data from S3 to Glacier"]
+    }
+  },
+  {
+    "id": "64",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "multiple choice 3",
+      "question": "Which are the 3 key term regarding AWS Glacier?",
+      "answers": ["Archive: file such as a photo, document, etc.", "Block level replication", "Vault: container for storing archives", "Launch Configuration", "Access to contents controlled via access policies using IAM"],
+      "correctAnswer": ["Archive: file such as a photo, document, etc.", "Vault: container for storing archives", "Access to contents controlled via access policies using IAM"]
+    }
+  },
+  {
+    "id": "65",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "multiple choice 3",
+      "question": "Which are the 3 options for retrieval using AWS Glacier?",
+      "answers": ["Archived", "Blocked", "Bulk", "Single", "Standard", "Expedited"],
+      "correctAnswer": ["Bulk", "Standard", "Expedited"]
+    }
+  },
+  {
+    "id": "66",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "multiple choice 1",
+      "question": "What is the max size limit for objects stored in Glacier?",
+      "answers": ["20TB", "40TB", "10TB", "5MB", "5TB", "1TB"],
+      "correctAnswer": ["40TB"]
+    }
+  },
+  {
+    "id": "67",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "multiple choice 1",
+      "question": "What is the max size limit for objects stored in S3?",
+      "answers": ["20TB", "40TB", "10TB", "5MB", "5TB", "1TB"],
+      "correctAnswer": ["5TB"]
+    }
+  },
+  {
+    "id": "68",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "multiple choice 1",
+      "question": "AWS Relational Database Service (RDS) is what type of service?",
+      "answers": ["operational", "managed", "asynchronous", "leased", "on-premises"],
+      "correctAnswer": ["managed"]
+    }
+  },
+  {
+    "id": "69",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "multiple choice 3",
+      "question": "Which are the different types of classes RDS is based on?",
+      "answers": ["CPU", "managed", "memory", "leased", "type of disk"],
+      "correctAnswer": ["CPU", "memory", "type of disk"]
+    }
+  },
+  {
+    "id": "70",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "multiple choice 1",
+      "question": "Which of these is NOT a type AWS Relational Database Service (RDS)?",
+      "answers": ["MySQL", "Amazon Aurora", "PostgreSql", "MongoDB", "MariaDB"],
+      "correctAnswer": ["MongoDB"]
+    }
+  },
+  {
+    "id": "71",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "multiple choice 1",
+      "question": "Amazon RDS is Multi-AZ with ________ replication.",
+      "answers": ["asynchronous", "synchronous", "instantaneous", "delayed", "eventual"],
+      "correctAnswer": ["synchronous"]
+    }
+  },
+  {
+    "id": "72",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "multiple choice 1",
+      "question": "Amazon RDS supports ________ which can be promoted to master if needed.",
+      "answers": ["write replicas", "read replicas", "read/write replicas", "replication", "eventual replicas"],
+      "correctAnswer": ["read replicas"]
+    }
+  },
+  {
+    "id": "73",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "multiple choice 1",
+      "question": "Amazon RDS read replicas, which can be promoted to master if needed, are ________ populated.",
+      "answers": ["synchronously", "asynchronously", "eventually", "immediately", "sometimes"],
+      "correctAnswer": ["asynchronously"]
+    }
+  },
+  {
+    "id": "74",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "multiple choice 1",
+      "question": "AWS DynamoDB Database Service is what type of service?",
+      "answers": ["operational", "managed", "asynchronous", "leased", "on-premises"],
+      "correctAnswer": ["managed"]
+    }
+  },
+  {
+    "id": "75",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "multiple choice 1",
+      "question": "What is the max size limit for items stored in DynamoDB?",
+      "answers": ["5TB", "5MB", "400KB", "1MB", "100KB"],
+      "correctAnswer": ["400KB"]
+    }
+  },
+  {
+    "id": "76",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "multiple choice 1",
+      "question": "You can scale table attributes in DynamoDB to suit growth through _________.",
+      "answers": ["replication", "auto-scaling", "snapshots", "backups", "dumps"],
+      "correctAnswer": ["auto-scaling"]
+    }
+  },
+  {
+    "id": "77",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "multiple choice 1",
+      "question": "What is a fast, fully managed data warehouse in AWS?",
+      "answers": ["MariaDB", "RedShift", "DynamoDB", "Aurora", "Kinesis"],
+      "correctAnswer": ["RedShift"]
+    }
+  },
+  {
+    "id": "78",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "multiple choice 1",
+      "question": "Which of these is NOT a category used by AWS Trusted Advisor to track your resources?",
+      "answers": ["cost optimization", "reliability", "performance", "security", "fault tolerance"],
+      "correctAnswer": ["reliability"]
+    }
+  },
+  {
+    "id": "79",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "multiple choice 1",
+      "question": "AWS Trusted Advisor can work with ________ to automate implementation of advisor actions using _________ event rules that trigger lambda functions.",
+      "answers": ["CloudTrail", "CloudTemplate", "CloudWatch", "CloudFormation", "CloudMonitor"],
+      "correctAnswer": ["CloudWatch"]
+    }
+  },
+  {
+    "id": "80",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "multiple choice 3",
+      "question": "In the shared responsibility model, AWS is responsible for which of these?",
+      "answers": ["Regions", "Client Data Centers", "AZs", "Edge Locations", "VPCs"],
+      "correctAnswer": ["Regions", "AZs", "Edge Locations"]
+    }
+  },
+  {
+    "id": "81",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "multiple choice 1",
+      "question": "What can you use to centrally manage your deployed IT resources?",
+      "answers": ["AWS Trusted Advisor", "IAM", "AWS Partner Network", "AWS Service Catalog"],
+      "correctAnswer": ["AWS Service Catalog"]
+    }
+  },
+  {
+    "id": "81",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Security",
+      "questionType": "multiple choice 1",
+      "question": "What defines a firewall in an AWS customer account setup?",
+      "answers": ["Management Console", "Security Group", "IAM", "SDK", "CLI"],
+      "correctAnswer": ["Security Group"]
+    }
+  },
+  {
+    "id": "82",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "multiple choice 1",
+      "question": "On AWS EC2 and VPC instances, who is responsible for all OS related maintenance?",
+      "answers": ["AWS", "Customer"],
+      "correctAnswer": ["Customer"]
+    }
+  },
+  {
+    "id": "83",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Security",
+      "questionType": "multiple choice 1",
+      "question": "In IAM, what defines 'who' can access given resources?",
+      "answers": ["Authorization", "Authentication", "Permissions", "Roles"],
+      "correctAnswer": ["Authentication"]
+    }
+  },
+  {
+    "id": "84",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Security",
+      "questionType": "multiple choice 1",
+      "question": "In IAM, what defines 'how' a resource can access other resources?",
+      "answers": ["Authorization", "Authentication", "Permissions", "Roles"],
+      "correctAnswer": ["Authorization"]
+    }
+  },
+  {
+    "id": "85",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Security",
+      "questionType": "multiple choice 3",
+      "question": "In IAM, you can assign a policy to which of these?",
+      "answers": ["User", "Service", "Group", "Role"],
+      "correctAnswer": ["User", "Group", "Role"]
+    }
+  },
+  {
+    "id": "86",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Security",
+      "questionType": "multiple choice 1",
+      "question": "In IAM, what explicitly lists permissions?",
+      "answers": ["Policy", "Group", "Service", "Role"],
+      "correctAnswer": ["Policy"]
+    }
+  }
+]
