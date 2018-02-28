@@ -1,0 +1,109 @@
+[
+  {
+    "id": "87",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "multiple choice 1",
+      "question": "Which of the 5 pillars of the AWS Well Architected Framework uses uses risk assessments and mitigation strategies?",
+      "answers": ["Reliability", "Security", "Performance Efficience", "Operational Excellence", "Cost Optimization"],
+      "correctAnswer": ["Security"]
+    }
+  },
+  {
+    "id": "88",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "multiple choice 3",
+      "question": "Which of these represent the 5 areas of the security pillar of the AWS Well Architected Framework?",
+      "answers": ["Detective Controls", "Identity & Access Management", "Performance Efficience", "Infrastructure Protection", "Cost Optimization"],
+      "correctAnswer": ["Identity & Access Management", "Detective Controls", "Infrastructure Protection"]
+    }
+  },
+  {
+    "id": "89",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "multiple choice 1",
+      "question": "Which of the 5 areas of the security pillar of the AWS Well Architected Framework states 'only authorized and authenticated userscan access your resources in the manner you intend'?",
+      "answers": [
+        "Detective Controls",
+        "Identity & Access Management",
+        "Data Protection",
+        "Infrastructure Protection",
+        "Incident Response"
+      ],
+      "correctAnswer": [
+        "Identity & Access Management"
+      ]
+    }
+  },
+  {
+    "id": "90",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "multiple choice 1",
+      "question": "Which of the 5 areas of the security pillar of the AWS Well Architected Framework is described as 'systems and services within your architecture are protected against unintended and unauthorized access'?",
+      "answers": ["Detective Controls", "Identity & Access Management", "Data Protection", "Infrastructure Protection", "Incident Response"],
+      "correctAnswer": ["Infrastructure Protection"]
+    }
+  },
+  {
+    "id": "91",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "multiple choice 1",
+      "question": "Which of the 5 areas of the security pillar of the AWS Well Architected Framework is described as 'used to identify security incidents by using approaches such as capturing and alayzing logs'?",
+      "answers": ["Detective Controls", "Identity & Access Management", "Data Protection", "Infrastructure Protection", "Incident Response"],
+      "correctAnswer": ["Detective Controls"]
+    }
+  },
+  {
+    "id": "92",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "multiple choice 1",
+      "question": "Which of the 5 areas of the security pillar of the AWS Well Architected Framework is described as 'data classification, encryption, protecting data in trasnit and at rest'?",
+      "answers": ["Detective Controls", "Identity & Access Management", "Data Protection", "Infrastructure Protection", "Incident Response"],
+      "correctAnswer": ["Data Protection"]
+    }
+  },
+  {
+    "id": "93",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "multiple choice 1",
+      "question": "Which of the 5 areas of the security pillar of the AWS Well Architected Framework is described as 'insure architecture is updated to insure timely investigation and recovery'?",
+      "answers": ["Detective Controls", "Identity & Access Management", "Data Protection", "Infrastructure Protection", "Incident Response"],
+      "correctAnswer": ["Incident Response"]
+    }
+  },
+  {
+    "id": "94",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "multiple choice 1",
+      "question": "Which of these is NOT one of the 5 security design principles?",
+      "answers": ["Security at all layers", "Enable tracability", "Data Protection", "Implement principle of least privelege", "Automate security best practices"],
+      "correctAnswer": ["Incident Response"]
+    }
+  },
+  {
+    "id": "94",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "multiple choice 1",
+      "question": "Which of of the 5 security design principles states 'automate response to anomilies androutine security events'?",
+      "answers": ["Security at all layers", "Enable tracability", "Focus on securing you system", "Implement principle of least privelege", "Automate security best practices"],
+      "correctAnswer": ["Automate security best practices"]
+    }
+  }
+]
