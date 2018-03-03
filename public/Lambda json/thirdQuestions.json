@@ -105,5 +105,71 @@
       "answers": ["Security at all layers", "Enable tracability", "Focus on securing you system", "Implement principle of least privelege", "Automate security best practices"],
       "correctAnswer": ["Automate security best practices"]
     }
+  },
+  {
+    "id": "95",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "multiple choice 2",
+      "question": "Which AWS services can be used to store files?",
+      "answers": ["Amazon CloudWatch", "Amazon Simple Storage Service (Amazon S3)", "Amazon Elastic Block Store (Amazon EBS)", "AWS Config", "Amazon Athena"],
+      "correctAnswer": ["Amazon Simple Storage Service (Amazon S3)", "Amazon Elastic Block Store (Amazon EBS)"]
+    }
+  },
+  {
+    "id": "96",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "multiple choice 1",
+      "question": "Which of the following uses AWS edge locations?",
+      "answers": ["Amazon Virtual Private Cloud (Amazon VPC)", "Amazon CloudFront", "Amazon Elastic Compute Cloud (Amazon EC2)", "AWS Storage Gateway"],
+      "correctAnswer": ["Amazon CloudFront"]
+    }
+  },
+  {
+    "id": "97",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "multiple choice 1",
+      "question": "Which of the following ia a benefit of Amazon Elastic Compute Cloud (Amazon EC2) over physical servers?",
+      "answers": ["Automated backup", "Paying only for what you use", "The ability to choose hardware vendors", "Root/administrator access"],
+      "correctAnswer": ["Paying only for what you use"]
+    }
+  },
+  {
+    "id": "98",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "multiple choice 1",
+      "question": "Which AWS service provides infrastructure security optimization recommendations?",
+      "answers": ["AWS Price List Application Programming Interface (API)", "Reserved Instances", "AWS Trusted Advisor", "Amazon Elastic Compute Cloud (Amazon EC2) Spot Fleet"],
+      "correctAnswer": ["AWS Trusted Advisor"]
+    }
+  },
+  {
+    "id": "99",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "multiple choice 1",
+      "question": "Which service allows for the collection and tracking of metrics for AWS services?",
+      "answers": ["Amazon CloudFront", "Amazon CloudSearch", "Amazon CloudWatch", "Amazon Machine Learning (Amazon ML)"],
+      "correctAnswer": ["Amazon CloudWatch"]
+    }
+  },
+  {
+    "id": "100",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "multiple choice 1",
+      "question": "A company needs to know which user was responsible for terminating several critical Amazon Elastic Compute Cloud (Amazon EC2) Instances. Where can the customer find this information?",
+      "answers": ["AWS Trusted Advisor", "Amazon EC2 instance usage report", "Amazon CloudWatch", "Amazon CloudTrail logs"],
+      "correctAnswer": ["Amazon CloudTrail logs"]
+    }
   }
 ]
