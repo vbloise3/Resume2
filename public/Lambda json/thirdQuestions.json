@@ -143,7 +143,7 @@
     "id": "98",
     "category": "Cloud Concepts",
     "info": {
-      "subcategory": "Architecting",
+      "subcategory": "Security",
       "questionType": "multiple choice 1",
       "question": "Which AWS service provides infrastructure security optimization recommendations?",
       "answers": ["AWS Price List Application Programming Interface (API)", "Reserved Instances", "AWS Trusted Advisor", "Amazon Elastic Compute Cloud (Amazon EC2) Spot Fleet"],
@@ -165,11 +165,337 @@
     "id": "100",
     "category": "Cloud Concepts",
     "info": {
-      "subcategory": "Architecting",
+      "subcategory": "Security",
       "questionType": "multiple choice 1",
       "question": "A company needs to know which user was responsible for terminating several critical Amazon Elastic Compute Cloud (Amazon EC2) Instances. Where can the customer find this information?",
       "answers": ["AWS Trusted Advisor", "Amazon EC2 instance usage report", "Amazon CloudWatch", "Amazon CloudTrail logs"],
       "correctAnswer": ["Amazon CloudTrail logs"]
+    }
+  },
+  {
+    "id": "101",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "multiple choice 1",
+      "question": "Which service should an administrator use to register a new domain name with AWS?",
+      "answers": ["Amazon Route 53", "Amazon CloudFront", "Elastic Load Balancing", "Amazon Virtual Private Cloud (Amazon VPC)"],
+      "correctAnswer": ["Amazon Route 53"]
+    }
+  },
+  {
+    "id": "102",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "multiple choice 1",
+      "question": "What is the value of having AWS cloud services accessible through an Application Programming Interface (API)?",
+      "answers": [
+        "Cloud resources can be managed programmatically",
+        "AWS infrastructure use will always be cost-optimized",
+        "All application testing is managed by AWS",
+        "Customer-owned, on-premises infrastructure becomes programmable"
+      ],
+      "correctAnswer": [
+        "Cloud resources can be managed programmatically"
+      ]
+    }
+  },
+  {
+    "id": "103",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "multiple choice 1",
+      "question": "Which of the following examples supports the cloud design principle 'design for failure and nothing will fail'?",
+      "answers": ["Adding an elastic load balancer in front of a single Amazon Elastic Compute Cloud (Amazon EC2) instance", "Creating and deploying the most cost-effective solution", "Deploying an application in multiple Availability Zones", "Using Amazon CloudWatch alerts to monitor performance"],
+      "correctAnswer": ["Deploying an application in multiple Availability Zones"]
+    }
+  },
+  {
+    "id": "104",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Security",
+      "questionType": "multiple choice 1",
+      "question": "Which service allows an adminstrator to create and modify AWS user permissions?",
+      "answers": ["AWS Config", "AWS CloudTrail", "AWS Key Management Service (AWS KMS)", "AWS Identity and Access Management (IAM)"],
+      "correctAnswer": ["AWS Identity and Access Management (IAM)"]
+    }
+  },
+  {
+    "id": "105",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "multiple choice 1",
+      "question": "Which AWS service automates infrastructure provisioning and administartive tasks for an analytical data warehouse?",
+      "answers": ["Amazon Redshift", "Amazon DynamoDB", "Amazon ElastiCache", "Amazon Aurora"],
+      "correctAnswer": ["Amazon Redshift"]
+    }
+  },
+  {
+    "id": "106",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Security",
+      "questionType": "multiple choice 1",
+      "question": "Which of the following is the resonsibility of the AWS customer acording to the shared security model?",
+      "answers": ["Managing AWS Identity and Access Management (IAM)", "Securing edge locations", "monitoring physical device security", "Implementing service organization Control (SOC) standards"],
+      "correctAnswer": ["Managing AWS Identity and Access Management (IAM)"]
+    }
+  },
+  {
+    "id": "107",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Billing and Pricing",
+      "questionType": "multiple choice 1",
+      "question": "Where can a customer go to get more detail about Amazon Elastic Compute Cloud (Amazon EC2) billing activity that took place 3 months ago?",
+      "answers": ["Amazon EC2 dashboard", "AWS Cost and Usage reports", "AWS Trusted Advisor dashboard", "AWS CloudTrail logs stored in Amazon Simple Storage Service (Amazon S3)"],
+      "correctAnswer": ["AWS Cost and Usage reports"]
+    }
+  },
+  {
+    "id": "108",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Security",
+      "questionType": "multiple choice 1",
+      "question": "Who has control over the data in an AWS account?",
+      "answers": ["AWS Support Team", "AWS Account Owner", "AWS Security Team", "AWS Technical Account Manager (TAM)"],
+      "correctAnswer": ["AWS Account Owner"]
+    }
+  },
+  {
+    "id": "109",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "multiple choice 1",
+      "question": "The main benefit of decoupling an application is to:",
+      "answers": ["Create a tightly integrated application", "Reduce interdependencies so failures do not impact other components", "Enable data sychronization across the web application layer", "Have the ability to execute automated bootstrping actions"],
+      "correctAnswer": ["Reduce interdependencies so failures do not impact other components"]
+    }
+  },
+  {
+    "id": "110",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "multiple choice 1",
+      "question": "Which of the following is a benefit of running an application across two Availability Zones?",
+      "answers": ["Performance is improved over running in a single Availability Zone", "It is more secure than running in a single Availability Zone", "It significantly reduces the total cost of ownership versus running in a single Availability Zone", "It increases the availability of an application compared to running in a single Availability Zone"],
+      "correctAnswer": ["It increases the availability of an application compared to running in a single Availability Zone"]
+    }
+  },
+  {
+    "id": "111",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Security",
+      "questionType": "multiple choice 2",
+      "question": "Which of the following security requirements are managed by AWS customers? Select 2 answers from the options given below",
+      "answers": ["Password Policies", "User permissions", "Physical security", "Disk disposal", "Hardware patching"],
+      "correctAnswer": ["Password Policies", "User permissions"]
+    }
+  },
+  {
+    "id": "112",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "multiple choice 1",
+      "question": "Systems applying the cloud architecture principle of elasticity will",
+      "answers": ["Minimize storage requirements by reducing logging and auditing activities", "Create systems that scale to the required capacity based on changes in demand", "Enable AWS to automatically select the most cost-effective services", "Accelerate the design process becaus erecovery from failure is automated, reducing the need for testing"],
+      "correctAnswer": ["Create systems that scale to the required capacity based on changes in demand"]
+    }
+  },
+  {
+    "id": "113",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Billing and Pricing",
+      "questionType": "multiple choice 1",
+      "question": "Amazon Elastic Compute Cloud (Amazon EC2) Spot instances are appropriate for which of the following workloads?",
+      "answers": ["Workloads that are only run in the morning and stopped at night", "Workloads where the availability of the Amazon EC2 instances can be flexible", "Workloads that need to run for long periods of time without interruption", "Workloads that are critical and need Amazon EC2 instances with termination protection"],
+      "correctAnswer": ["Workloads where the availability of the Amazon EC2 instances can be flexible"]
+    }
+  },
+  {
+    "id": "114",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Technology",
+      "questionType": "multiple choice 1",
+      "question": "What AWS feature enables a user to manage services through a web-based user interface?",
+      "answers": ["AWS Management Console", "AWS Application Programming Interface (API)", "AWS Software Development Kit (SDK)", "Amazon CloudWatch"],
+      "correctAnswer": ["AWS Management Console"]
+    }
+  },
+  {
+    "id": "115",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Billing and Pricing",
+      "questionType": "multiple choice 1",
+      "question": "Which tool can display the distribution of AWS spending?",
+      "answers": ["AWS organizations", "AWS Dev Pay", "AWS Trusted Advisor", "AWS Cost Explorer"],
+      "correctAnswer": ["AWS Cost Explorer"]
+    }
+  },
+  {
+    "id": "116",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Security",
+      "questionType": "multiple choice 1",
+      "question": "How can the AWS Management Console be secured against unauthorized access?",
+      "answers": ["Apply Multi-Factor Authentication (MFA)", "Set up a secondary password", "Request root access privileges", "Disable AWS console access"],
+      "correctAnswer": ["Apply Multi-Factor Authentication (MFA)"]
+    }
+  },
+  {
+    "id": "117",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Security",
+      "questionType": "multiple choice 1",
+      "question": "Which AWS cloud service is used to turn on Multi-Factor Authentication (MFA)?",
+      "answers": ["AWS Identity and Access Management (IAM)", "Amazon Elastic Compute Cloud (Amazon EC2)", "AWS Config", "Amazon Inspector"],
+      "correctAnswer": ["AWS Identity and Access Management (IAM)"]
+    }
+  },
+  {
+    "id": "118",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "multiple choice 1",
+      "question": "A disaster recovery strategy on AWS should be based on launching infrastructure in a separate:",
+      "answers": ["Subnet", "AWS Region", "AWS edge location", "Amazon Virtual Private Cloud (Amazon VPC)"],
+      "correctAnswer": ["AWS Region"]
+    }
+  },
+  {
+    "id": "119",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Billing and Pricing",
+      "questionType": "multiple choice 1",
+      "question": "Which of the following is a factor when calculating Total Cost of Ownership (TCO) for the AWS cloud?",
+      "answers": ["The number of servers migrated to AWS", "The number of users migrated to AWS", "The number of passwords migrated to AWS", "The number of keys migrated to AWS"],
+      "correctAnswer": ["The number of servers migrated to AWS"]
+    }
+  },
+  {
+    "id": "120",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "multiple choice 1",
+      "question": "Which AWS service is used as a global content delivery network (CDN) service in AWS?",
+      "answers": ["Amazon SES", "Amazon CloudTrail", "Amazon CloudFront", "Amazon S3"],
+      "correctAnswer": ["Amazon CloudFront"]
+    }
+  },
+  {
+    "id": "121",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Technology",
+      "questionType": "multiple choice 1",
+      "question": "Which of the following is a fully managed NoSQL database service available within AWS?",
+      "answers": ["Amazon RDS", "AWS DynamoDB", "AWS Redshift", "AWS MongoDB"],
+      "correctAnswer": ["AWS DynamoDB"]
+    }
+  },
+  {
+    "id": "122",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Billing and Pricing",
+      "questionType": "multiple choice 1",
+      "question": "A company wants to store data that is not frequently accessed. What is the best cost efficient solution that should be considered?",
+      "answers": ["Amazon Storage Gateway", "Amazon Glacier", "Amazon EBS", "Amazon S3"],
+      "correctAnswer": ["Amazon Glacier"]
+    }
+  },
+  {
+    "id": "123",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Billing and Pricing",
+      "questionType": "multiple choice 1",
+      "question": "You are currently hosting an infrastructure and most of the EC2 instances are near 90 - 100% utilized. What is the type of EC2 instances you would utilize to ensure the costs are minimized?",
+      "answers": ["Reserved instances", "On-demand instances", "Spot instances", "Regular instances"],
+      "correctAnswer": ["Reserved instances"]
+    }
+  },
+  {
+    "id": "124",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Technology",
+      "questionType": "multiple choice 1",
+      "question": "What is the ability provided by AWS to enable fast, easy, and secure transfers of files over long distances between your client and your Amazon S3 bucket?",
+      "answers": ["File Transfer", "HTTP Transfer", "Transfer Acceleration", "S3 Acceleration"],
+      "correctAnswer": ["Transfer Acceleration"]
+    }
+  },
+  {
+    "id": "125",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Security",
+      "questionType": "multiple choice 1",
+      "question": "As per the AWS Accetable Use Policy, penetration testing of EC2 instances:",
+      "answers": ["May be performed by AWS, and will be performed by AWS upon customer request", "May be performed by AWS, and is periodically performed by AWS", "Are expressly prohibited under all circumstances", "May be performed by the customer on their own instances with prior authorization from AWS", "May be performed by the customer on their own instances, only if performed from EC2 instances"],
+      "correctAnswer": ["May be performed by the customer on their own instances with prior authorization from AWS"]
+    }
+  },
+  {
+    "id": "126",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Technology",
+      "questionType": "multiple choice 1",
+      "question": "The Trusted Advisor service provides insight regarding which four categories of an AWS account?",
+      "answers": ["Security, fault tolerance, high availability, and connectivity", "Security, access control, high availability, and performance", "Performance, cost optimization, security, and fault tolerance", "Performance, cost optimization, access control, and connectivity"],
+      "correctAnswer": ["Performance, cost optimization, security, and fault tolerance"]
+    }
+  },
+  {
+    "id": "127",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "multiple choice 1",
+      "question": "A company is depolying a two-tier, highly available web application to AWS. Which service provides durable storage for the static content while utilizing lower overall CPU resources for the web tier?",
+      "answers": ["Amazon EBS volume", "Amazon S3", "Amazon EC2 instance store", "Amazon RDS instance"],
+      "correctAnswer": ["Amazon S3"]
+    }
+  },
+  {
+    "id": "128",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Security",
+      "questionType": "multiple choice 1",
+      "question": "What best describes the 'Principle of Least Privilege'?",
+      "answers": ["All users should have the same baselin permissions granted to them to use basic AWS services", "Users should be granted permission to access only resources they need to do their assigned job", "Users should submit all access requests in writing so that there is a paper trail of who needs access to different AWS resources", "Users should always have a little more access granted to them than they need, just in case they end up needed in the future"],
+      "correctAnswer": ["Users should be granted permission to access only resources they need to do their assigned job"]
+    }
+  },
+  {
+    "id": "129",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Security",
+      "questionType": "multiple choice 1",
+      "question": "Which of the below mentioned services can be used to host virtual servers in the AWS cloud?",
+      "answers": ["AWS IAM", "AWS Server", "AWS EC2", "AWS Regions"],
+      "correctAnswer": ["AWS EC2"]
     }
   }
 ]
