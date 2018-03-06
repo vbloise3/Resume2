@@ -491,11 +491,341 @@
     "id": "129",
     "category": "Cloud Concepts",
     "info": {
-      "subcategory": "Security",
+      "subcategory": "Arhitecting",
       "questionType": "multiple choice 1",
       "question": "Which of the below mentioned services can be used to host virtual servers in the AWS cloud?",
       "answers": ["AWS IAM", "AWS Server", "AWS EC2", "AWS Regions"],
       "correctAnswer": ["AWS EC2"]
+    }
+  },
+  {
+    "id": "130",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Security",
+      "questionType": "multiple choice 2",
+      "question": "Which of the following can be used to protect EC2 instances hosted in AWS?",
+      "answers": ["Usage of Security Groups", "Usage of AMIs", "Usage of Network Access Control Lists", "Usage of the Internet Gateway"],
+      "correctAnswer": ["Usage of Security Groups", "Usage of Network Access Control Lists"]
+    }
+  },
+  {
+    "id": "131",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Technology",
+      "questionType": "multiple choice 1",
+      "question": "You work for a company that is planning on using the AWS EC2 service. They currently create golden images of their deployed operating system. Which of the following correspond to a golden image in AWS?",
+      "answers": ["EBS Volumes", "EBS Snapshots", "Amazon Machine Images", "EC2 Copies"],
+      "correctAnswer": ["Amazon Machine Images"]
+    }
+  },
+  {
+    "id": "132",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "multiple choice 2",
+      "question": "You devloping and planning on deploying an application onto the AWS cloud. This application needs to be PCI complianr. Which of the below steps would you carry out to ensure the compliance is met for the application?",
+      "answers": ["Choose AWS services which are PCI compliant", "Ensure the right steps are taken during application development for PCI compliance", "Ensure the AWS services are made PCI compliant", "Do an audit after the deployment of the application for PCI compliance"],
+      "correctAnswer": ["Choose AWS services which are PCI compliant", "Ensure the right steps are taken during application development for PCI compliance"]
+    }
+  },
+  {
+    "id": "133",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "multiple choice 3",
+      "question": "Which of the below can be used to get data onto Amazon Glacier?",
+      "answers": ["AWS Glacier API", "AWS Console", "AWS Glacier SDK", "AWS S3 Lifecycle policies"],
+      "correctAnswer": ["AWS Glacier API", "AWS Glacier SDK", "AWS S3 Lifecycle policies"]
+    }
+  },
+  {
+    "id": "134",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "multiple choice 1",
+      "question": "Which of the following in the AWS Support plans gives access to a Support Concierge?",
+      "answers": ["Basic", "Developer", "Business", "Enterprise"],
+      "correctAnswer": ["Enterprise"]
+    }
+  },
+  {
+    "id": "135",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Billing and Pricing",
+      "questionType": "multiple choice 1",
+      "question": "A company is planning to use AWS to host critical resources. Most of their systems are business critical and need to have response times less than 15 minutes. Which of the following support plans should they consider?",
+      "answers": ["Basic", "Developer", "Business", "Enterprise"],
+      "correctAnswer": ["Enterprise"]
+    }
+  },
+  {
+    "id": "136",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Billing and Pricing",
+      "questionType": "multiple choice 1",
+      "question": "Which of the following is NOT a feature of an edge location?",
+      "answers": ["Distribute content to users", "Cache common responses", "Distribute load across multiple resources", "Used in conjunction with CloudFront service"],
+      "correctAnswer": ["Distribute load across multiple resources"]
+    }
+  },
+  {
+    "id": "137",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "multiple choice 1",
+      "question": "There is a requirement for storage of objects. The objects should be able to be downloaded via a URL. Which storage option would you choose?",
+      "answers": ["Amazon S3", "Amazon Glacier", "Amazon Storage Gateway", "Amazon EBS"],
+      "correctAnswer": ["Amazon S3"]
+    }
+  },
+  {
+    "id": "138",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Billing and Pricing",
+      "questionType": "multiple choice 1",
+      "question": "There is a requirement to host a database server for a minimum period of one year. Which of the following would result in the least cost?",
+      "answers": ["Spot Instances", "On-Demand", "No upfront cost Reserved", "Partial upfront cost Reserved"],
+      "correctAnswer": ["Partial upfront cost Reserved"]
+    }
+  },
+  {
+    "id": "139",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Billing and Pricing",
+      "questionType": "multiple choice 1",
+      "question": "There is a requirement for a development and test environment for 3 months. Which would you use?",
+      "answers": ["Spot Instances", "On-Demand", "No upfront cost Reserved", "Partial upfront cost Reserved"],
+      "correctAnswer": ["On-Demand"]
+    }
+  },
+  {
+    "id": "140",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Security",
+      "questionType": "multiple choice 2",
+      "question": "When creating security groups, which of the following is a responsibility of the customer?",
+      "answers": ["Giving a name and description for the security group", "Defining the rules as per the customer requirements", "Ensure the rules are applied immediately", "Ensure the security groups are linked to the Elastic Network Interface"],
+      "correctAnswer": ["Giving a name and description for the security group", "Defining the rules as per the customer requirements"]
+    }
+  },
+  {
+    "id": "141",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Billing and Pricing",
+      "questionType": "multiple choice 2",
+      "question": "Which of the following are advantages of having infrastructure hosted on the AWS cloud?",
+      "answers": ["Having complete control over the physical infrastructure", "Having the pay as you go model", "No upfront costs", "Having no need to worry about security"],
+      "correctAnswer": ["Having the pay as you go model", "No upfront costs"]
+    }
+  },
+  {
+    "id": "142",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Security",
+      "questionType": "multiple choice 1",
+      "question": "There is an external audit being carried out on your company. The IT auditor needs to have a log of all access to the AWS resources in the company's account. Which of the below services can assist in providing these details?",
+      "answers": ["AWS CloudWatch", "AWS CloudTrail", "AWS EC2", "AWS SNS"],
+      "correctAnswer": ["AWS CloudTrail"]
+    }
+  },
+  {
+    "id": "143",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Technology",
+      "questionType": "multiple choice 1",
+      "question": "Which of the following features of RDS allows for data redundancy across regions?",
+      "answers": ["Cross region replication", "Creating Read Replicas", "Using snapshots", "Using Multi-AZ feature"],
+      "correctAnswer": ["Creating Read Replicas"]
+    }
+  },
+  {
+    "id": "144",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "multiple choice 1",
+      "question": "Your company has a set of EC2 instances hosted in AWS. There is a requirement to create snapshots from the EBS volumes attached to these EC2 instances in another geographic location. As per this requirement, where would you create the snapshots?",
+      "answers": ["In another Availability Zone", "In another data center", "In another Region", "In another Edge location"],
+      "correctAnswer": ["In another Region"]
+    }
+  },
+  {
+    "id": "145",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "multiple choice 1",
+      "question": "A company wants to host a self-managed database in AWS. How would you ideally implement this solution?",
+      "answers": ["Using the AWS DynamoDB service", "Using the AWS RDS service", "Hosting a database on an EC2 instance", "Using the Amazon Aurora service"],
+      "correctAnswer": ["Hosting a database on an EC2 instance"]
+    }
+  },
+  {
+    "id": "146",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "multiple choice 1",
+      "question": "Which of the following is a ccompatible MySQL database which also has the ability to grow in storage size on its own?",
+      "answers": ["Aurora", "DynamoDB", "RDS Microsoft SQL Server", "RDS MySQL"],
+      "correctAnswer": ["Aurora"]
+    }
+  },
+  {
+    "id": "147",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "multiple choice 2",
+      "question": "Which of the following statements are true when it comes to elasticity?",
+      "answers": ["Diverting traffic to instances based on demand", "Diverting traffic to instances with the least load", "Diverting traffic across multiple regions", "Diverting traffic to instances with higher capacity"],
+      "correctAnswer": ["Diverting traffic to instances based on demand", "Diverting traffic to instances with the least load"]
+    }
+  },
+  {
+    "id": "148",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "multiple choice 1",
+      "question": "Which of the following is the concept of Elastic load balancer?",
+      "answers": ["To distribute traffic to multiple EC2 instances", "To scale up EC2 instances", "To distribute traffic to AWS resources across multiple regions", "To increase the size of the EC2 instance based on demand"],
+      "correctAnswer": ["To distribute traffic to multiple EC2 instances"]
+    }
+  },
+  {
+    "id": "149",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "multiple choice 1",
+      "question": "Which of the following is the concept of Autoscaling?",
+      "answers": ["To scale up resources based on demand", "To distribute traffic to multiple EC2 instances", "To distribute traffic to AWS resources across multiple regions", "To increase the size of the EC2 instance based on demand"],
+      "correctAnswer": ["To scale up resources based on demand"]
+    }
+  },
+  {
+    "id": "150",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Billing and Pricing",
+      "questionType": "multiple choice 1",
+      "question": "Which of the following is used to derive the costs for moving artifacts from on-premise to AWS?",
+      "answers": ["AWS TCO calculator", "AWS config", "AWS Cost Explorer", "AWS Consolidated billing"],
+      "correctAnswer": ["AWS TCO calculator"]
+    }
+  },
+  {
+    "id": "151",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "multiple choice 1",
+      "question": "Which of the following is the responsibility of the customer when ensuring that data on EBS volumes is left safe?",
+      "answers": ["Deleting the data when the device is destroyed", "Creating EBS snapshots", "Attaching volumes to EC2 instances", "Creating copies of EBS volumes"],
+      "correctAnswer": ["Creating EBS snapshots"]
+    }
+  },
+  {
+    "id": "152",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Technology",
+      "questionType": "multiple choice 1",
+      "question": "Which of the following can be used to call AWS services from programming languages?",
+      "answers": ["AWS SDK", "AWS Console", "AWS CLI", "AWS IAM"],
+      "correctAnswer": ["AWS SDK"]
+    }
+  },
+  {
+    "id": "153",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Security",
+      "questionType": "multiple choice 1",
+      "question": "Which of the following is the secure way of using AWS API to call AWS services from EC2 instances?",
+      "answers": ["IAM Users", "IAM Roles", "IAM Groups", "IAM policies"],
+      "correctAnswer": ["IAM Roles"]
+    }
+  },
+  {
+    "id": "154",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Security",
+      "questionType": "multiple choice 2",
+      "question": "Which of the following are 2 ways that AWS allows to link accounts?",
+      "answers": ["Consolidated billing", "AWS Organizations", "Cost Explorer", "IAM"],
+      "correctAnswer": ["Consolidated billing", "AWS Organizations"]
+    }
+  },
+  {
+    "id": "155",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Security",
+      "questionType": "multiple choice 2",
+      "question": "Which of the following helps in DDoS protection?",
+      "answers": ["CloudFront", "AWS Shield", "AWS EC2", "AWS Config"],
+      "correctAnswer": ["CloudFront", "AWS Shield"]
+    }
+  },
+  {
+    "id": "156",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Security",
+      "questionType": "multiple choice 1",
+      "question": "Which of the following services can be used as a web application firewall in AWS?",
+      "answers": ["AWS EC2", "AWS WAF", "AWS Firewall", "AWS Protection"],
+      "correctAnswer": ["AWS WAF"]
+    }
+  },
+  {
+    "id": "157",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Security",
+      "questionType": "multiple choice 1",
+      "question": "You want to add an extra layer of protection to the current authentication mechanism of user names and passwords for AWS. Which of the following can help you in this regard?",
+      "answers": ["Using Password Policies", "Using a mix of user names", "Using AWS WAF", "Using MFA"],
+      "correctAnswer": ["Using MFA"]
+    }
+  },
+  {
+    "id": "158",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "multiple choice 1",
+      "question": "Which of the following disaster recovery deployment mechanisms that has the lowest downtime?",
+      "answers": ["Pilot light", "Warm standby", "Backup Restore", "DevOps"],
+      "correctAnswer": ["Using MFA"]
+    }
+  },
+  {
+    "id": "159",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "multiple choice 1",
+      "question": "Which of the following services in AWS allows for object level storage on the cloud?",
+      "answers": ["Amazon EBS", "Amazon Storage gateway", "Amazon S3", "Amazon SQS"],
+      "correctAnswer": ["Amazon S3"]
     }
   }
 ]
