@@ -1,0 +1,101 @@
+[
+  {
+    "id": "160",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "multiple choice 1",
+      "question": "What type of applications are recommended for Amazon EC2 instances?",
+      "answers": ["Applications that have flexible start and end times", "Applications being developed or tested for the first time", "Applications with steady state or predictable usage", "Applications that are only feasible at lower compute prices"],
+      "correctAnswer": ["Applications with steady state or predictable usage"]
+    }
+  },
+  {
+    "id": "161",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Billing and Pricing",
+      "questionType": "multiple choice 1",
+      "question": "As AWS grows, the general cost of doing business is reduced and savings are passed back to the customer in the form of lower pricing. What is this cost optimization called?",
+      "answers": ["Economies of labor", "Economies of optimization", "Economies of scope", "Economies of cost", "Economies of scale"],
+      "correctAnswer": ["Economies of scale"]
+    }
+  },
+  {
+    "id": "162",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Billing and Pricing",
+      "questionType": "multiple choice 1",
+      "question": "What is NOT a consideration when estimating the cost of Amazon S3?",
+      "answers": ["Data transfer", "Input Output Operations per Second (IOPS)", "Requests", "Storage class", "Number and size of objects"],
+      "correctAnswer": ["Input Output Operations per Second (IOPS)"]
+    }
+  },
+  {
+    "id": "163",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Billing and Pricing",
+      "questionType": "multiple choice 2",
+      "question": "When calculating the cost of Amazon EC2, what factors will impact pricing?",
+      "answers": ["Number of instances", "Number of items in your inboud data transfer", "Number of hours Elastic Load Balancer runs", "Number and size of objects stored in you Amazon S3 buckets"],
+      "correctAnswer": ["Number of instances", "Number of hours Elastic Load Balancer runs"]
+    }
+  },
+  {
+    "id": "164",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Billing and Pricing",
+      "questionType": "multiple choice 2",
+      "question": "What are the characteristics of the Developer Support Plan?",
+      "answers": ["One primary contact may open a case", "Unlimited contacts may open a case", "Business hours access to Cloud Support Associates via email", "24/7 access to Cloud Support Engineers via email, chat, and phone", "Assigned to a Technical Account Manager"],
+      "correctAnswer": ["One primary contact may open a case", "Business hours access to Cloud Support Associates via email"]
+    }
+  },
+  {
+    "id": "165",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Billing and Pricing",
+      "questionType": "multiple choice 1",
+      "question": "What AWS tool compares the cost of running your application in an on-premise data center to AWS?",
+      "answers": ["Total Cost of Ownership (TCO) calculator", "Total Cost of Application (TCA) calculator", "Total Cost of Services (TCS) calculator", "Total Cost of Products (TCP) calculator", "Total Cost of Operation (TCO) calculator"],
+      "correctAnswer": ["Total Cost of Ownership (TCO) calculator"]
+    }
+  },
+  {
+    "id": "166",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Billing and Pricing",
+      "questionType": "multiple choice 2",
+      "question": "What type of AWS data transfers are free?",
+      "answers": ["Outbound data transfer between Amazon Web Services within the same region", "Inbound data transfer across all Amazon Web Services in all regions", "Outbound data transfer from S3 only", "Outbound data transfer across all Amazon Web Services in all regions", "Inbound data transfer between Amazon Web Services within the same region"],
+      "correctAnswer": ["Inbound data transfer across all Amazon Web Services in all regions", "Outbound data transfer between Amazon Web Services within the same region"]
+    }
+  },
+  {
+    "id": "167",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Billing and Pricing",
+      "questionType": "multiple choice 1",
+      "question": "Which of the following is NOT available in the Business Support Plan?",
+      "answers": ["Access to third-party software support", "Access to Well-Architected Review delivered by AWS Solution Architects", "Access to Personal Health Dashboard and Health API", "Access to Infrastructure Event Management", "Access to Cloud Support Engineers for technical issues"],
+      "correctAnswer": ["Access to Well-Architected Review delivered by AWS Solution Architects"]
+    }
+  },
+  {
+    "id": "168",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Billing and Pricing",
+      "questionType": "multiple choice 1",
+      "question": "Which of the following is NOT included in the AWS Free Tier?",
+      "answers": ["AWS CloudFormation", "AWS Identity and Access Management (IAM)", "Amazon Virtual Private Cloud (VPC)", "AWS Web Application Firewall (WAF)", "Amazon Simple Storage Service (S3)"],
+      "correctAnswer": ["AWS Web Application Firewall (WAF)"]
+    }
+  }
+]
