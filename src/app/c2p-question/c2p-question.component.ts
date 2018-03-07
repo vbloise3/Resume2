@@ -45,6 +45,12 @@ export class C2pQuestionComponent implements OnInit {
   selectedValue = [];
   nextQuestion = false;
   correctOrNot = [];
+  correctAnswerIndicator = 'neutral';
+  correctAnswerBool = false;
+  totalAnswered = 0;
+  totalCorrect = 0;
+  totalCorrectPercent = '0';
+  passing = false;
 
   constructor(private dynamoDBservice: DynamoDbserviceService, fb: FormBuilder) {
     this.options = fb.group({
@@ -88,9 +94,14 @@ export class C2pQuestionComponent implements OnInit {
       const trimedAnswer = theQanda.textAnswer.trim();
       if (trimedAnswer === this.qandaArray[this.currentQuestion].info.correctAnswer[0]) {
         this.textAnswerCorrectOrNot = 'true';
+        this.correctAnswerIndicator = 'Correct Answer!';
+        this.correctAnswerBool = true;
+        // this.totalCorrect++;
         // alert('correct answer! ' + this.qandaArray[this.currentQuestion].info.correctAnswer[0]);
       } else {
         this.textAnswerCorrectOrNot = 'false';
+        this.correctAnswerIndicator = 'Wrong Answer';
+        this.correctAnswerBool = false;
         // alert('wrong answer. Correct answer: ' + this.qandaArray[this.currentQuestion].info.correctAnswer[0]);
       }
       this.getTextAnswer = this.qandaArray[this.currentQuestion].info.correctAnswer[0];
@@ -110,6 +121,9 @@ export class C2pQuestionComponent implements OnInit {
           counter++;
         });
         this.getAnswers = this.qandaArray[this.currentQuestion].info.answers;
+        this.correctAnswerIndicator = 'Correct Answer!';
+        this.correctAnswerBool = true;
+        // this.totalCorrect++;
       } else {
         // alert('wrong answer. Correct answer: ' + this.qandaArray[this.currentQuestion].info.correctAnswer[0]);
         const currentThis = this;
@@ -124,6 +138,8 @@ export class C2pQuestionComponent implements OnInit {
           counter++;
         });
         this.getAnswers = this.qandaArray[this.currentQuestion].info.answers;
+        this.correctAnswerIndicator = 'Wrong Answer';
+        this.correctAnswerBool = false;
       }
     } else if (this.getSelectCount === 2) {
       if ( ( this.qandaArray[this.currentQuestion].info.correctAnswer.indexOf(this.selectedValue[0]) > -1 )
@@ -144,6 +160,9 @@ export class C2pQuestionComponent implements OnInit {
           counter++;
         });
         this.getAnswers = this.qandaArray[this.currentQuestion].info.answers;
+        this.correctAnswerIndicator = 'Correct Answer!';
+        this.correctAnswerBool = true;
+        // this.totalCorrect++;
       } else {
         // alert('wrong answer. Correct answer: ' + this.qandaArray[this.currentQuestion].info.correctAnswer[0] + '; '
         //  + this.qandaArray[this.currentQuestion].info.correctAnswer[1]);
@@ -159,6 +178,8 @@ export class C2pQuestionComponent implements OnInit {
           counter++;
         });
         this.getAnswers = this.qandaArray[this.currentQuestion].info.answers;
+        this.correctAnswerIndicator = 'Wrong Answer';
+        this.correctAnswerBool = false;
       }
     } else if (this.getSelectCount === 3) {
       if ( ( this.qandaArray[this.currentQuestion].info.correctAnswer.indexOf(this.selectedValue[0]) > -1 )
@@ -179,6 +200,9 @@ export class C2pQuestionComponent implements OnInit {
           counter++;
         });
         this.getAnswers = this.qandaArray[this.currentQuestion].info.answers;
+        this.correctAnswerIndicator = 'Correct Answer!';
+        this.correctAnswerBool = true;
+        // this.totalCorrect++;
       } else {
         // alert('wrong answer. Correct answer: ' + this.qandaArray[this.currentQuestion].info.correctAnswer[0] + '; '
         //  + this.qandaArray[this.currentQuestion].info.correctAnswer[1] + '; '
@@ -196,11 +220,27 @@ export class C2pQuestionComponent implements OnInit {
           counter++;
         });
         this.getAnswers = this.qandaArray[this.currentQuestion].info.answers;
+        this.correctAnswerIndicator = 'Wrong Answer';
+        this.correctAnswerBool = false;
       }
     }
     if (!this.nextQuestion) {
       // draw pie showing correct versus incorrect so far
       this.nextQuestion = true;
+      if ( this.correctAnswerBool ) {
+        this.totalCorrect++;
+      }
+      this.totalAnswered++;
+      if ( (this.totalCorrect / this.totalAnswered) > 0.7 ) {
+        this.passing = true;
+      } else {
+        this.passing = false;
+      }
+      this.totalCorrectPercent = parseFloat((this.totalCorrect / this.totalAnswered).toLocaleString()).toFixed(2);
+      if ( this.totalCorrectPercent === '1.00') {
+        this.totalCorrectPercent = '0.100';
+      }
+      this.totalCorrectPercent = this.totalCorrectPercent.split('.')[1];
     } else {
       this.currentQuestion = this.currentQuestion + 1;
       if (this.currentQuestion === this.qandaArray.length) {
@@ -220,6 +260,8 @@ export class C2pQuestionComponent implements OnInit {
       });
       // theQanda.textAnswer = '';
       this.textAnswerCorrectOrNot = 'neutral';
+      this.correctAnswerIndicator = 'neutral';
+      this.correctAnswerBool = false;
       this.getScreenElements();
     }
   }

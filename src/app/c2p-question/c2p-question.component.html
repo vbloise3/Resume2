@@ -69,6 +69,12 @@
             </div>
           </div>
         </form>
+        <div *ngIf="correctAnswerIndicator != 'neutral'">
+          <pre [ngClass]="(correctAnswerBool)?'correctAnswer':'wrongAnswer'">{{correctAnswerIndicator}}</pre>
+        </div>
+        <div>
+          <p class="gradeText"> Grade so far: {{totalCorrect}} of {{totalAnswered}} &nbsp;&mdash;&nbsp; <span [ngClass]="(passing)?'percentPassing':'percentFailing'">{{totalCorrectPercent}}%</span></p>
+        </div>
       </div>
     </mat-card>
   </mat-card>

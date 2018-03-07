@@ -47,6 +47,18 @@
   background-color: red;
 }
 
+.gradeText {
+  font-family: Baskerville, serif;
+}
+
+.percentPassing {
+   color: green;
+ }
+
+.percentFailing {
+  color: red;
+}
+
 .wideInput {
   width: 300px;
 }

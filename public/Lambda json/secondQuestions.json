@@ -7,7 +7,7 @@
       "questionType": "text entry",
       "question": "What are the 5 pillars of the AWS Well Architected Framework?",
       "answers": [" "],
-      "correctAnswer": ["Security, Reliability, Performance Efficiency, Cost Optimization, Operational Excellence"]
+      "correctAnswer": ["Performance Efficiency, Operational Excellence, Reliability, Cost Optimization, Security"]
     }
   },
   {

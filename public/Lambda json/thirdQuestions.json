@@ -92,7 +92,7 @@
       "questionType": "multiple choice 1",
       "question": "Which of these is NOT one of the 5 security design principles?",
       "answers": ["Security at all layers", "Enable tracability", "Data Protection", "Implement principle of least privelege", "Automate security best practices"],
-      "correctAnswer": ["Incident Response"]
+      "correctAnswer": ["Data Protection"]
     }
   },
   {
@@ -101,7 +101,7 @@
     "info": {
       "subcategory": "Architecting",
       "questionType": "multiple choice 1",
-      "question": "Which of of the 5 security design principles states 'automate response to anomilies androutine security events'?",
+      "question": "Which of of the 5 security design principles states 'automate response to anomilies and routine security events'?",
       "answers": ["Security at all layers", "Enable tracability", "Focus on securing you system", "Implement principle of least privelege", "Automate security best practices"],
       "correctAnswer": ["Automate security best practices"]
     }
@@ -814,7 +814,7 @@
       "questionType": "multiple choice 1",
       "question": "Which of the following disaster recovery deployment mechanisms that has the lowest downtime?",
       "answers": ["Pilot light", "Warm standby", "Backup Restore", "DevOps"],
-      "correctAnswer": ["Using MFA"]
+      "correctAnswer": ["Warm standby"]
     }
   },
   {

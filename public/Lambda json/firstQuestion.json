@@ -222,9 +222,9 @@
       "subcategory": "Security",
       "questionType": "multiple choice 2",
       "question": "When creating an IAM policy, what are the two types of access that can be granted to a user? (Choose 2)",
-      "answers": ["Authorized Access", "Programatic Access",
+      "answers": ["Authorized Access", "Programmatic Access",
         "Administrative Root Access", "AWS Management Console Access", "Institutional Access"],
-      "correctAnswer": ["Programatic Access", "AWS Management Console Access"]
+      "correctAnswer": ["Programmatic Access", "AWS Management Console Access"]
     }
   },
   {
@@ -306,9 +306,9 @@
       "subcategory": "Architecting",
       "questionType": "multiple choice 2",
       "question": "Which design principles are recommended when considering performance efficiency? (Choose 2)",
-      "answers": ["Enabling traceability", "Democtrotize advanced technologies",
+      "answers": ["Enabling traceability", "Democratize advanced technologies",
         "Expenditure awareness", "Serverless architecture", "Matching supply with demand"],
-      "correctAnswer": ["Democtrotize advanced technologies", "Serverless architecture"]
+      "correctAnswer": ["Democratize advanced technologies", "Serverless architecture"]
     }
   },
   {
@@ -354,9 +354,9 @@
       "subcategory": "Architecting",
       "questionType": "multiple choice 1",
       "question": "Which of the following describes Elastic Load Balancers (ELB)?",
-      "answers": ["Translates domain names into IP addresses", "Distributes incomming traffic amongst your instances",
+      "answers": ["Translates domain names into IP addresses", "Distributes incoming traffic amongst your instances",
         "Launches or terminates instances based on specific conditions", "Creates new resources on demand"],
-      "correctAnswer": ["Distributes incomming traffic amongst your instances"]
+      "correctAnswer": ["Distributes incoming traffic amongst your instances"]
     }
   },
   {
@@ -366,7 +366,7 @@
       "subcategory": "Architecting",
       "questionType": "text entry",
       "question": "What AWS service does the acronym ELB represent?",
-      "answers": [""],
+      "answers": [" "],
       "correctAnswer": ["Elastic Load Balancing"]
     }
   },
@@ -377,7 +377,7 @@
       "subcategory": "Architecting",
       "questionType": "text entry",
       "question": "What AWS service does the acronym IAM represent?",
-      "answers": [""],
+      "answers": [" "],
       "correctAnswer": ["Identity Access Management"]
     }
   },
@@ -388,7 +388,7 @@
       "subcategory": "Architecting",
       "questionType": "text entry",
       "question": "What AWS service does the acronym EIP represent?",
-      "answers": [""],
+      "answers": [" "],
       "correctAnswer": ["Elastic IP address"]
     }
   },
@@ -399,7 +399,7 @@
       "subcategory": "Architecting",
       "questionType": "text entry",
       "question": "What AWS service does the acronym ENI represent?",
-      "answers": [""],
+      "answers": [" "],
       "correctAnswer": ["EC2 Elastic Network Interface"]
     }
   },
@@ -410,7 +410,7 @@
       "subcategory": "Architecting",
       "questionType": "text entry",
       "question": "What AWS service does the acronym VPC represent?",
-      "answers": [""],
+      "answers": [" "],
       "correctAnswer": ["Virtual Private Cloud"]
     }
   },
@@ -421,7 +421,7 @@
       "subcategory": "Architecting",
       "questionType": "text entry",
       "question": "What AWS service does the acronym EC2 represent?",
-      "answers": [""],
+      "answers": [" "],
       "correctAnswer": ["Elastic Compute Cloud"]
     }
   },
@@ -432,7 +432,7 @@
       "subcategory": "Architecting",
       "questionType": "text entry",
       "question": "What AWS service does the acronym S3 represent?",
-      "answers": [""],
+      "answers": [" "],
       "correctAnswer": ["Simple Storage Service"]
     }
   },
@@ -443,7 +443,7 @@
       "subcategory": "Architecting",
       "questionType": "text entry",
       "question": "What AWS service does the acronym EBS represent?",
-      "answers": [""],
+      "answers": [" "],
       "correctAnswer": ["Elastic Block Store"]
     }
   },
@@ -454,7 +454,7 @@
       "subcategory": "Architecting",
       "questionType": "text entry",
       "question": "What AWS service does the acronym RDS represent?",
-      "answers": [""],
+      "answers": [" "],
       "correctAnswer": ["Relational Database Service"]
     }
   },
@@ -465,7 +465,7 @@
       "subcategory": "Architecting",
       "questionType": "text entry",
       "question": "What AWS service does the acronym SQS represent?",
-      "answers": [""],
+      "answers": [" "],
       "correctAnswer": ["Simple Queue Service"]
     }
   },
@@ -476,7 +476,7 @@
       "subcategory": "Architecting",
       "questionType": "text entry",
       "question": "What is the name of an AWS deployment tool for simple applications?",
-      "answers": [""],
+      "answers": [" "],
       "correctAnswer": ["Elastic Beanstalk"]
     }
   },
@@ -487,7 +487,7 @@
       "subcategory": "Architecting",
       "questionType": "text entry",
       "question": "What is the name of an AWS deployment tool for multilayer applications?",
-      "answers": [""],
+      "answers": [" "],
       "correctAnswer": ["OpsWorks"]
     }
   },
@@ -498,7 +498,7 @@
       "subcategory": "Architecting",
       "questionType": "text entry",
       "question": "What is the name of an AWS infrastructure automation and deployment tool?",
-      "answers": [""],
+      "answers": [" "],
       "correctAnswer": ["CloudFormation"]
     }
   },
@@ -509,7 +509,7 @@
       "subcategory": "Architecting",
       "questionType": "text entry",
       "question": "What is the name of an AWS inexpensive data archive solution?",
-      "answers": [""],
+      "answers": [" "],
       "correctAnswer": ["Glacier"]
     }
   },
@@ -520,7 +520,7 @@
       "subcategory": "Architecting",
       "questionType": "text entry",
       "question": "What is the name of an AWS proprietary NoSQL key-value database with limited but powerful options for queries?",
-      "answers": [""],
+      "answers": [" "],
       "correctAnswer": ["DynamoDB"]
     }
   },
@@ -531,7 +531,7 @@
       "subcategory": "Architecting",
       "questionType": "text entry",
       "question": "What AWS service observes a fleet of servers; replaces faulty servers, and increases/decreases the size of the fleet based on external triggers like CPU usage?",
-      "answers": [""],
+      "answers": [" "],
       "correctAnswer": ["EC2 auto-scaling groups"]
     }
   },
@@ -542,7 +542,7 @@
       "subcategory": "Architecting",
       "questionType": "text entry",
       "question": "What AWS service keeps track of metrics and triggers alarms when a threshold is reached?",
-      "answers": [""],
+      "answers": [" "],
       "correctAnswer": ["CloudWatch"]
     }
   }
