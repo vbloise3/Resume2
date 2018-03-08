@@ -5,7 +5,7 @@
     "info": {
       "subcategory": "Architecting",
       "questionType": "multiple choice 1",
-      "question": "What type of applications are recommended for Amazon EC2 instances?",
+      "question": "What type of applications are recommended for Amazon EC2 reserved instances?",
       "answers": ["Applications that have flexible start and end times", "Applications being developed or tested for the first time", "Applications with steady state or predictable usage", "Applications that are only feasible at lower compute prices"],
       "correctAnswer": ["Applications with steady state or predictable usage"]
     }
@@ -39,7 +39,7 @@
       "subcategory": "Billing and Pricing",
       "questionType": "multiple choice 2",
       "question": "When calculating the cost of Amazon EC2, what factors will impact pricing?",
-      "answers": ["Number of instances", "Number of items in your inboud data transfer", "Number of hours Elastic Load Balancer runs", "Number and size of objects stored in you Amazon S3 buckets"],
+      "answers": ["Number of instances", "Number of items in your inboud data transfer", "Number of hours Elastic Load Balancer runs", "Number and size of objects stored in your Amazon S3 buckets"],
       "correctAnswer": ["Number of instances", "Number of hours Elastic Load Balancer runs"]
     }
   },
@@ -202,10 +202,10 @@
     "category": "Cloud Concepts",
     "info": {
       "subcategory": "Billing and Pricing",
-      "questionType": "multiple choice 7",
-      "question": "Outbound transfer is aggregated across which of the following in you monthly billing statement?",
-      "answers": ["EC2", "ELB", "S3", "RDS", "Simple DB", "SNS", "VPC", "SQS", "DynamoDB"],
-      "correctAnswer": ["EC2", "S3", "RDS", "Simple DB", "SNS", "VPC", "SQS"]
+      "questionType": "multiple choice 3",
+      "question": "Outbound transfer is aggregated across which of the following in your monthly billing statement?",
+      "answers": ["EC2", "ELB", "S3", "Simple DB", "DynamoDB"],
+      "correctAnswer": ["EC2", "S3", "Simple DB"]
     }
   },
   {
@@ -213,10 +213,10 @@
     "category": "Cloud Concepts",
     "info": {
       "subcategory": "Billing and Pricing",
-      "questionType": "multiple choice 4",
+      "questionType": "multiple choice 3",
       "question": "EC2 pricing varies with the following?",
-      "answers": ["AZ", "Region", "Memory", "Number of EBSs mounted", "Number of cores", "OS", "RDS installed"],
-      "correctAnswer": ["Region", "Memory", "Number of cores", "OS"]
+      "answers": ["AZ", "Region", "Number of EBSs mounted", "Number of cores", "OS", "RDS installed"],
+      "correctAnswer": ["Region", "Number of cores", "OS"]
     }
   },
   {
@@ -336,7 +336,7 @@
       "subcategory": "Define AWS Cloud",
       "questionType": "multiple choice 3",
       "question": "Which of the following in the support stack is AWS responsible for in the shared support model?",
-      "answers": ["User data", "Physical", "Application ", "Network", "Guest OS", "Hypervisor"],
+      "answers": ["User data", "Physical", "Application", "Network", "Guest OS", "Hypervisor"],
       "correctAnswer": ["Physical", "Network", "Hypervisor"]
     }
   },
@@ -347,7 +347,7 @@
       "subcategory": "Define AWS Cloud",
       "questionType": "multiple choice 3",
       "question": "Which of the following in the support stack is the customer responsible for in the shared support model?",
-      "answers": ["User data", "Physical", "Application ", "Network", "Guest OS", "Hypervisor"],
+      "answers": ["User data", "Physical", "Application", "Network", "Guest OS", "Hypervisor"],
       "correctAnswer": ["User data", "Application", "Guest OS"]
     }
   },
@@ -358,7 +358,7 @@
       "subcategory": "Security",
       "questionType": "multiple choice 1",
       "question": "Which of the following represents a permanent entity (person or machine/software) in the IAM service?",
-      "answers": ["User", "Group", "Role ", "Policy"],
+      "answers": ["User", "Group", "Role", "Policy"],
       "correctAnswer": ["User"]
     }
   },
@@ -369,7 +369,7 @@
       "subcategory": "Security",
       "questionType": "multiple choice 1",
       "question": "Which of the following represents a temporary entity (person or machine/software) in the IAM service?",
-      "answers": ["User", "Group", "Role ", "Policy"],
+      "answers": ["User", "Group", "Role", "Policy"],
       "correctAnswer": ["Role"]
     }
   },
@@ -380,7 +380,7 @@
       "subcategory": "Security",
       "questionType": "multiple choice 1",
       "question": "Which of the following represents users or roles in the IAM service?",
-      "answers": ["User", "Group", "Role ", "Policy"],
+      "answers": ["User", "Group", "Role", "Policy"],
       "correctAnswer": ["Group"]
     }
   },
@@ -391,7 +391,7 @@
       "subcategory": "Security",
       "questionType": "multiple choice 1",
       "question": "Which of the following represents the 'what' or authorization in the IAM service?",
-      "answers": ["User", "Group", "Role ", "Policy"],
+      "answers": ["User", "Group", "Role", "Policy"],
       "correctAnswer": ["Policy"]
     }
   },
@@ -402,7 +402,7 @@
       "subcategory": "Security",
       "questionType": "multiple choice 3",
       "question": "Which of the following represents the 'who' or authorization in the IAM service?",
-      "answers": ["User", "Group", "Role ", "Policy"],
+      "answers": ["User", "Group", "Role", "Policy"],
       "correctAnswer": ["User", "Group", "Role"]
     }
   },
@@ -456,7 +456,7 @@
     "info": {
       "subcategory": "Define AWS Cloud",
       "questionType": "multiple choice 1",
-      "question": "Which gateway is used public access to public subnets within a VPC?",
+      "question": "Which gateway is used for public access to public subnets within a VPC?",
       "answers": ["Internet Gateway (IGW)", "NAT Gateway (NGW)", "Virtual Private Gateway (VGW)", "Network Access Gateway (NGW)"],
       "correctAnswer": ["Internet Gateway (IGW)"]
     }
@@ -489,7 +489,7 @@
     "info": {
       "subcategory": "Define AWS Cloud",
       "questionType": "multiple choice 2",
-      "question": "What AWS services used to subnet access within a VPC?",
+      "question": "What AWS services are used to secure subnet access within a VPC?",
       "answers": ["Internet Gateway (IGW)", "NAT Gateway (NGW)", "Security Groups", "Bastion Host", "Virtual Private Gateway (VGW)", "Network Access Control Lists"],
       "correctAnswer": ["Security Groups", "Network Access Control Lists"]
     }
