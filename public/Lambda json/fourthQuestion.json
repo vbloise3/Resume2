@@ -97,5 +97,401 @@
       "answers": ["AWS CloudFormation", "AWS Identity and Access Management (IAM)", "Amazon Virtual Private Cloud (VPC)", "AWS Web Application Firewall (WAF)", "Amazon Simple Storage Service (S3)"],
       "correctAnswer": ["AWS Web Application Firewall (WAF)"]
     }
+  },
+  {
+    "id": "169",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Billing and Pricing",
+      "questionType": "multiple choice 1",
+      "question": "Which of the following is NOT part of the utility pricing model?",
+      "answers": ["Pay as you go", "Pay less when you reserve", "Pay more per unit as you use more", "Pay less as AWS grows", "Pay less per unit by using more"],
+      "correctAnswer": ["Pay more per unit as you use more"]
+    }
+  },
+  {
+    "id": "170",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Billing and Pricing",
+      "questionType": "multiple choice 2",
+      "question": "Which two of the following would you pay less for if you reserved?",
+      "answers": ["S3", "RDS", "EBS", "EC2", "Glacier"],
+      "correctAnswer": ["EC2", "RDS"]
+    }
+  },
+  {
+    "id": "171",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Billing and Pricing",
+      "questionType": "multiple choice 3",
+      "question": "What are the three types of reserved instance arrangements?",
+      "answers": ["All up front (AURI)", "Partial at end (PERI)", "Partial up front (PURI)", "No up front (NURI)", "All at end (AERI)"],
+      "correctAnswer": ["All up front (AURI)", "Partial up front (PURI)", "No up front (NURI)"]
+    }
+  },
+  {
+    "id": "172",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Billing and Pricing",
+      "questionType": "multiple choice 3",
+      "question": "What are the three types of reserved instance arrangements?",
+      "answers": ["All up front (AURI)", "Partial at end (PERI)", "Partial up front (PURI)", "No up front (NURI)", "All at end (AERI)"],
+      "correctAnswer": ["All up front (AURI)", "Partial up front (PURI)", "No up front (NURI)"]
+    }
+  },
+  {
+    "id": "173",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Billing and Pricing",
+      "questionType": "multiple choice 3",
+      "question": "Which of these are true?",
+      "answers": ["Larger up front payment of reserved, greater discount", "Tiered pricing for services such as S3, EC2", "You pay the same for all S3 GBs", "More you use, less you pay per GB", "Data transfer out is always free"],
+      "correctAnswer": ["Larger up front payment of reserved, greater discount", "Tiered pricing for services such as S3, EC2", "More you use, less you pay per GB"]
+    }
+  },
+  {
+    "id": "174",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Billing and Pricing",
+      "questionType": "multiple choice 1",
+      "question": "Since 2006 AWS has lowered pricing how many times?",
+      "answers": ["23", "47", "44", "12", "54"],
+      "correctAnswer": ["44"]
+    }
+  },
+  {
+    "id": "175",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Billing and Pricing",
+      "questionType": "multiple choice 1",
+      "question": "What type of pricing is available for high volume projects with unique requirements?",
+      "answers": ["Special pricing", "Concierge pricing", "Enterprise pricing", "Custom pricing"],
+      "correctAnswer": ["Custom pricing"]
+    }
+  },
+  {
+    "id": "176",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Billing and Pricing",
+      "questionType": "multiple choice 3",
+      "question": "Which of the following services are free in the Free Tier?",
+      "answers": ["VPC", "Machine Learning", "Route 53", "CloudFormation", "IAM", "LightSail"],
+      "correctAnswer": ["VPC", "CloudFormation", "IAM"]
+    }
+  },
+  {
+    "id": "177",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Billing and Pricing",
+      "questionType": "multiple choice 3",
+      "question": "The three fundamental pricing areas are:",
+      "answers": ["Compute", "Data transfer in", "Data transfer out", "Network traffic", "Storage", "Memory"],
+      "correctAnswer": ["Compute", "Data transfer out", "Storage"]
+    }
+  },
+  {
+    "id": "178",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Billing and Pricing",
+      "questionType": "multiple choice 7",
+      "question": "Outbound transfer is aggregated across which of the following in you monthly billing statement?",
+      "answers": ["EC2", "ELB", "S3", "RDS", "Simple DB", "SNS", "VPC", "SQS", "DynamoDB"],
+      "correctAnswer": ["EC2", "S3", "RDS", "Simple DB", "SNS", "VPC", "SQS"]
+    }
+  },
+  {
+    "id": "179",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Billing and Pricing",
+      "questionType": "multiple choice 4",
+      "question": "EC2 pricing varies with the following?",
+      "answers": ["AZ", "Region", "Memory", "Number of EBSs mounted", "Number of cores", "OS", "RDS installed"],
+      "correctAnswer": ["Region", "Memory", "Number of cores", "OS"]
+    }
+  },
+  {
+    "id": "180",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Billing and Pricing",
+      "questionType": "multiple choice 1",
+      "question": "Which is free of charge per EC2 instance?",
+      "answers": ["EBS volume", "NAT Gateway", "Internet Gateway", "Network Access Control List", "One Elastic IP address"],
+      "correctAnswer": ["One Elastic IP address"]
+    }
+  },
+  {
+    "id": "181",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Billing and Pricing",
+      "questionType": "multiple choice 1",
+      "question": "What is the storage service used for less frequently accessed data and is billed at a lower cost?",
+      "answers": ["EBS", "S3", "Standard Infrequent Access (SIA)", "In memory"],
+      "correctAnswer": ["Standard Infrequent Access (SIA)"]
+    }
+  },
+  {
+    "id": "182",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Billing and Pricing",
+      "questionType": "multiple choice 1",
+      "question": "Which best describes EBS volumes?",
+      "answers": ["Direct-to-instance (EC2) mounted disks", "Off-instance (EC2) storage that exist independent of EC2 instance", "Pooled disks that exist independent of EC2 instance", "Internal machine disks"],
+      "correctAnswer": ["Off-instance (EC2) storage that exist independent of EC2 instance"]
+    }
+  },
+  {
+    "id": "183",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Billing and Pricing",
+      "questionType": "multiple choice 1",
+      "question": "Which best describes EBS volumes?",
+      "answers": ["Direct-to-instance (EC2) mounted disks", "Off-instance (EC2) storage that exist independent of EC2 instance", "Pooled disks that exist independent of EC2 instance", "Internal machine disks"],
+      "correctAnswer": ["Off-instance (EC2) storage that exist independent of EC2 instance"]
+    }
+  },
+  {
+    "id": "184",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Billing and Pricing",
+      "questionType": "multiple choice 3",
+      "question": "Which are the three types of EBS volumes?",
+      "answers": ["General Purpose (SSD)", "Specific Purpose (SSD)", "Provisioned IOPS (SSD)", "Magnetic", "In-memory"],
+      "correctAnswer": ["General Purpose (SSD)", "Provisioned IOPS (SSD)", "Magnetic"]
+    }
+  },
+  {
+    "id": "185",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Billing and Pricing",
+      "questionType": "multiple choice 1",
+      "question": "Which of the following are NOT considered when estimating pricing of RDS instances?",
+      "answers": ["Clock hours of service time", "Region located", "Database characteristics", "Number of instances", "Provisioned storage"],
+      "correctAnswer": ["Region located"]
+    }
+  },
+  {
+    "id": "186",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Billing and Pricing",
+      "questionType": "multiple choice 1",
+      "question": "Which of the following is FALSE when estimating pricing of RDS instances?",
+      "answers": ["Charges vary depending on how many AZs deployed to", "Multi-AZ vs single AZ", "Inbound data transfer is free", "Outbound data transfer is fixed price", "Outbound data transfers are tiered"],
+      "correctAnswer": ["Outbound data transfer is fixed price"]
+    }
+  },
+  {
+    "id": "187",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Billing and Pricing",
+      "questionType": "multiple choice 1",
+      "question": "Which of the following is FALSE when estimating pricing of CloudFront?",
+      "answers": ["Data transfer costs vary across geographic region", "Pricing based on edge location through which content is served", "Amount of data transfered in to your edge locations", "Geographic region in which request is made", "Amount of data transfered out of your edge locations"],
+      "correctAnswer": ["Amount of data transfered in to your edge locations"]
+    }
+  },
+  {
+    "id": "188",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Billing and Pricing",
+      "questionType": "multiple choice 3",
+      "question": "Which of the following are types of AWS support?",
+      "answers": ["Technical Account Manager (TAM)", "AWS Account Executive (AE)", "AWS Trusted Advisor", "AWS Support Concierge", "AWS Regional Advisor (RA)"],
+      "correctAnswer": ["Technical Account Manager (TAM)", "AWS Trusted Advisor", "AWS Support Concierge"]
+    }
+  },
+  {
+    "id": "189",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Billing and Pricing",
+      "questionType": "multiple choice 1",
+      "question": "Which of the following are NOT types of AWS support plans?",
+      "answers": ["Basic Support plan", "Developer Support plan", "Account Support plan", "Business Support plan", "Enterprise Support plan"],
+      "correctAnswer": ["Account Support plan"]
+    }
+  },
+  {
+    "id": "190",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 3",
+      "question": "Which of the following in the support stack is AWS responsible for in the shared support model?",
+      "answers": ["User data", "Physical", "Application ", "Network", "Guest OS", "Hypervisor"],
+      "correctAnswer": ["Physical", "Network", "Hypervisor"]
+    }
+  },
+  {
+    "id": "191",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 3",
+      "question": "Which of the following in the support stack is the customer responsible for in the shared support model?",
+      "answers": ["User data", "Physical", "Application ", "Network", "Guest OS", "Hypervisor"],
+      "correctAnswer": ["User data", "Application", "Guest OS"]
+    }
+  },
+  {
+    "id": "192",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Security",
+      "questionType": "multiple choice 1",
+      "question": "Which of the following represents a permanent entity (person or machine/software) in the IAM service?",
+      "answers": ["User", "Group", "Role ", "Policy"],
+      "correctAnswer": ["User"]
+    }
+  },
+  {
+    "id": "193",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Security",
+      "questionType": "multiple choice 1",
+      "question": "Which of the following represents a temporary entity (person or machine/software) in the IAM service?",
+      "answers": ["User", "Group", "Role ", "Policy"],
+      "correctAnswer": ["Role"]
+    }
+  },
+  {
+    "id": "194",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Security",
+      "questionType": "multiple choice 1",
+      "question": "Which of the following represents users or roles in the IAM service?",
+      "answers": ["User", "Group", "Role ", "Policy"],
+      "correctAnswer": ["Group"]
+    }
+  },
+  {
+    "id": "195",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Security",
+      "questionType": "multiple choice 1",
+      "question": "Which of the following represents the 'what' or authorization in the IAM service?",
+      "answers": ["User", "Group", "Role ", "Policy"],
+      "correctAnswer": ["Policy"]
+    }
+  },
+  {
+    "id": "196",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Security",
+      "questionType": "multiple choice 3",
+      "question": "Which of the following represents the 'who' or authorization in the IAM service?",
+      "answers": ["User", "Group", "Role ", "Policy"],
+      "correctAnswer": ["User", "Group", "Role"]
+    }
+  },
+  {
+    "id": "197",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Security",
+      "questionType": "multiple choice 1",
+      "question": "Which represents the 'who' can perform an activity in the IAM service?",
+      "answers": ["Authorization", "Authentication"],
+      "correctAnswer": ["Authentication"]
+    }
+  },
+  {
+    "id": "198",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Security",
+      "questionType": "multiple choice 1",
+      "question": "Which represents 'what' a user or role can execute in the IAM service?",
+      "answers": ["Authorization", "Authentication"],
+      "correctAnswer": ["Authorization"]
+    }
+  },
+  {
+    "id": "199",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Security",
+      "questionType": "multiple choice 1",
+      "question": "What is the name of the service that manages master keys for encryption?",
+      "answers": ["Key Management Service (KMS)", "Encryption Management Service (EMS)", "Security Management Service (SMS)", "Master Key Management Service (MKM)"],
+      "correctAnswer": ["Key Management Service (KMS)"]
+    }
+  },
+  {
+    "id": "200",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "Which gateway is used by VPN logged in users to gain access to subnets within a VPC?",
+      "answers": ["Internet Gateway (IGW)", "NAT Gateway (NGW)", "Virtual Private Gateway (VGW)", "Network Access Gateway (NGW)"],
+      "correctAnswer": ["Virtual Private Gateway (VGW)"]
+    }
+  },
+  {
+    "id": "201",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "Which gateway is used public access to public subnets within a VPC?",
+      "answers": ["Internet Gateway (IGW)", "NAT Gateway (NGW)", "Virtual Private Gateway (VGW)", "Network Access Gateway (NGW)"],
+      "correctAnswer": ["Internet Gateway (IGW)"]
+    }
+  },
+  {
+    "id": "202",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What type of public EC2 instance is used to allow public access to private subnets and instances in a VPC?",
+      "answers": ["Internet Gateway (IGW)", "NAT Gateway (NGW)", "Bastion Host", "Virtual Private Gateway (VGW)", "Network Access Translation Server"],
+      "correctAnswer": ["Bastion Host"]
+    }
+  },
+  {
+    "id": "203",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What type of public EC2 instance is used to allow public access from private subnets and instances in a VPC?",
+      "answers": ["Internet Gateway (IGW)", "NAT Gateway (NGW)", "Bastion Host", "Virtual Private Gateway (VGW)", "Network Access Translation Server"],
+      "correctAnswer": ["Network Access Translation Server"]
+    }
+  },
+  {
+    "id": "204",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 2",
+      "question": "What AWS services used to subnet access within a VPC?",
+      "answers": ["Internet Gateway (IGW)", "NAT Gateway (NGW)", "Security Groups", "Bastion Host", "Virtual Private Gateway (VGW)", "Network Access Control Lists"],
+      "correctAnswer": ["Security Groups", "Network Access Control Lists"]
+    }
   }
 ]
