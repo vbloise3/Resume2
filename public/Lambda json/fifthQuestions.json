@@ -1,0 +1,724 @@
+[
+  {
+    "id": "205",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Technology",
+      "questionType": "multiple choice 1",
+      "question": "Which of the following can be attached to EC2 instances to store data?",
+      "answers": ["Amazon Glacier", "Amazon EBS Volumes", "Amazon EBS Snapshots", "Amazon SQS"],
+      "correctAnswer": ["Amazon EBS Volumes"]
+    }
+  },
+  {
+    "id": "206",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Technology",
+      "questionType": "multiple choice 1",
+      "question": "Which of the following networking components can be used to host EC2 resources in the AWS cloud?",
+      "answers": ["AWS Trusted Advisor", "AWS VPC", "AWS Elastic Load Balancer", "AWS Autoscaling"],
+      "correctAnswer": ["AWS VPC"]
+    }
+  },
+  {
+    "id": "207",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "multiple choice 1",
+      "question": "Your company is planning to host resources in the AWS cloud. They want to use services which can be used to decouple resources hosted on the cloud. Which of the following services can help fulfill this requirement?",
+      "answers": ["AWS EBS Volumes", "AWS EBS Snapshots", "AWS Glacier", "AWS SQS"],
+      "correctAnswer": ["AWS SQS"]
+    }
+  },
+  {
+    "id": "208",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "multiple choice 1",
+      "question": "Which of the following components of the CloudFront service can be used to distribute contents to users across the globe?",
+      "answers": ["AWS VPC", "Amazon Regions", "Amazon Availability Zones", "Amazon Edge Locations"],
+      "correctAnswer": ["Amazon Edge Locations"]
+    }
+  },
+  {
+    "id": "209",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Billing and Pricing",
+      "questionType": "multiple choice 1",
+      "question": "Your company is planning to move to the AWS cloud. You need to give a presentation on the cost perspective when moving existing resources to the AWS cloud. When it comes to Amazon EC2, which of the following is an advantage when it comes to the cost perspective?",
+      "answers": ["Having the ability of automated backups of the EC2 instance, so that you don't need to worry about the maintenance costs", "The ability to choose low cost AMIs to prepare the EC2 instances", "The ability to only pay for what you use", "Ability to tag instances to reduce the overall cost"],
+      "correctAnswer": ["The ability to only pay for what you use"]
+    }
+  },
+  {
+    "id": "210",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Security",
+      "questionType": "multiple choice 2",
+      "question": "Your company is planning to move to the AWS cloud. Once the movement to the cloud is complete, they want to ensure that the right security settings are put in place. Which of the below tools can assists from a security compliance?",
+      "answers": ["AWS Inspector", "AWS Trusted Advisor", "AWS Support", "AWS Kinesis"],
+      "correctAnswer": ["AWS Inspector", "AWS Trusted Advisor"]
+    }
+  },
+  {
+    "id": "211",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "There is a requirement to collect important metrics from AWS RDS and EC2 instances. Which of the following services can help fulfill this requirement?",
+      "answers": ["Amazon CloudFront", "Amazon CloudSearch", "Amazon CloudWatch", "Amazon Config"],
+      "correctAnswer": ["Amazon CloudWatch"]
+    }
+  },
+  {
+    "id": "212",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "Which of the following services can provide audit trail of all AWS services used within an account?",
+      "answers": ["AWS Trusted Advisor", "Amazon EC2 instance usage report", "Amazon CloudWatch", "AWS Cloud Trail logs"],
+      "correctAnswer": ["AWS Cloud Trail logs"]
+    }
+  },
+  {
+    "id": "213",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "Which of the following services is most useful when a Disaster Recovery method is triggered in AWS?",
+      "answers": ["Amazon Route 53", "Amazon SNS", "Amazon SQS", "Amazon Inspector"],
+      "correctAnswer": ["Amazon Route 53"]
+    }
+  },
+  {
+    "id": "214",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "Which of the following can be used to work with AWS services in a programmatic manner?",
+      "answers": ["AWS Powershell", "AWS Bash", "AWS CLI", "AWS Console"],
+      "correctAnswer": ["AWS CLI"]
+    }
+  },
+  {
+    "id": "215",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 3",
+      "question": "When designing a system, you use the principles of 'design for fasilure and nothing will fail.' Which of the following services/features of AWS can assist in supporting this design principle?",
+      "answers": ["Availability Zones", "Regions", "Elastic Load Balancer", "Pay as you go"],
+      "correctAnswer": ["Availability Zones", "Regions", "Elastic Load Balancer"]
+    }
+  },
+  {
+    "id": "216",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Security",
+      "questionType": "multiple choice 1",
+      "question": "Currently your organization has an operational team that takes care of ID management in their on-premise data center. They now also need to manage users and groups created in AWS. Which of the following AWS tools would they need to use for performing this management function?",
+      "answers": ["AWS Config", "AWS Cloud Trail", "AWS Key Management Service (AWS KMS)", "AWS Identity and Access Management (IAM)"],
+      "correctAnswer": ["AWS Identity and Access Management (IAM)"]
+    }
+  },
+  {
+    "id": "217",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "You have a devops team in your current organization structure. They are keen to know if there is any service available in AWS which can be used to manage infrastructure as code. Which of the following can be met with such a requirement?",
+      "answers": ["Using AWS CloudFormation", "Using AWS Config", "Using AWS Inspector", "Using AWS Trusted Advisor"],
+      "correctAnswer": ["Using AWS CloudFormation"]
+    }
+  },
+  {
+    "id": "218",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "Which of the following services is a fully managed, petabyte-scale data warehouse service in the AWS cloud?",
+      "answers": ["Amazon Redshift", "Amazon DynamoDB", "Amazon ElastiCache", "Amazon Aurora"],
+      "correctAnswer": ["Amazon Redshift"]
+    }
+  },
+  {
+    "id": "219",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 3",
+      "question": "Which of the following is the responsibility of AWS according to the Shared Responsibility Model?",
+      "answers": ["Managing AWS Identity and Access Management (IAM)", "Securing edge locations", "Monitoring physical device security", "Implementing Service Organization Control (SOC) standards"],
+      "correctAnswer": ["Securing edge locations", "Monitoring physical device security", "Implementing Service Organization Control (SOC) standards"]
+    }
+  },
+  {
+    "id": "220",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "Your company has just started using the resources on the AWS cloud. They want to get an idea of the costs being incurred so far for the resources being used. How can this be achieved?",
+      "answers": ["By going to the Amazon EC2 dashboard. Here you can see the costs of running EC2 resources", "By using the AWS Cost and Usage reports Explorer. Here you can see the running and forecast costs", "By using the AWS Trusted Advisor dashboard. This dashboard will give you all the costs", "By seeing the AWS Cloud Trail logs"],
+      "correctAnswer": ["By using the AWS Cost and Usage reports Explorer. Here you can see the running and forecast costs"]
+    }
+  },
+  {
+    "id": "221",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "By default who from the below roles has complete administartive control over all resources in the respective AWS account?",
+      "answers": ["AWS Support Team", "AWS Account Owner", "AWS Security Team", "AWS Technical Account Manager (TAM)"],
+      "correctAnswer": ["AWS Account Owner"]
+    }
+  },
+  {
+    "id": "222",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "multiple choice 1",
+      "question": "Your design team is planning to design an application that will be hosted on the AWS cloud. One of their main non-sunctional requirements is 'Reduce inter-dependencies so failures do not impact other components.' Which of the following concepts does this requirement relate to?",
+      "answers": ["Integration", "Decoupling", "Aggregation", "Segregation"],
+      "correctAnswer": ["Decoupling"]
+    }
+  },
+  {
+    "id": "223",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "multiple choice 1",
+      "question": "Which of the following can be used to increase the fault tolerance of an application?",
+      "answers": ["Deploying resources across multiple edge locations", "Deploying resources across multiple VPCs", "Deploying resources across multiple Availability Zones", "Deploying resources across multipls AWS accounts"],
+      "correctAnswer": ["Deploying resources across multiple Availability Zones"]
+    }
+  },
+  {
+    "id": "224",
+    "category": "Security",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "multiple choice 3",
+      "question": "Which of the following security requirements are managed by AWS?",
+      "answers": ["Password Policies", "User permissions", "Physical security", "Disk disposal", "Hardware patching"],
+      "correctAnswer": ["Physical security", "Disk disposal", "Hardware patching"]
+    }
+  },
+  {
+    "id": "225",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "multiple choice 1",
+      "question": "Which of the following terms relate to 'Creating systems that scale to the required capacity basec on changes in demand?",
+      "answers": ["Disaster Recovery", "Elasticity", "Decoupling", "Aggregation"],
+      "correctAnswer": ["Elasticity"]
+    }
+  },
+  {
+    "id": "226",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Billing and Pricing",
+      "questionType": "multiple choice 1",
+      "question": "Your company is planning to offload some of the batch processing workloads on AWS. These jobs can be interrupted and resumed at any time. Which of the following instance types would be the most cost effective to use for this purpose?",
+      "answers": ["On-demand", "Spot", "Full Upfront Reserved", "Partial Upfront Reserved"],
+      "correctAnswer": ["Spot"]
+    }
+  },
+  {
+    "id": "227",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Security",
+      "questionType": "multiple choice 1",
+      "question": "Which of the following needs a user name and password to access AWS resources?",
+      "answers": ["AWS management Console", "AWS Application Programming Interface (API)", "AWS Software Development Kit (SDK)", "AWS CLI"],
+      "correctAnswer": ["AWS management Console"]
+    }
+  },
+  {
+    "id": "228",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Billing and Pricing",
+      "questionType": "multiple choice 1",
+      "question": "Your company is planning to use AWS cloud. But there is a management decision that resources need to split department wise. And the decision is tending towards managing multiple AWS accounts. Which of the following would help in effective management and also provide efficient costing model?",
+      "answers": ["AWS organizations", "AWS Dev Pay", "AWS Trusted Advisor", "AWS Cost Explorer"],
+      "correctAnswer": ["AWS organizations"]
+    }
+  },
+  {
+    "id": "229",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Security",
+      "questionType": "multiple choice 1",
+      "question": "Which of the following can be used as an additional layer of security to using a user name and password when logging into the AWS Console?",
+      "answers": ["Multi-Factor Authentication (MFA)", "Secondary password", "Root access privileges", "Secondary user name"],
+      "correctAnswer": ["Multi-Factor Authentication (MFA)"]
+    }
+  },
+  {
+    "id": "230",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Technology",
+      "questionType": "multiple choice 1",
+      "question": "Which AWS cloud service helps in quick deployment of resources which can make use of different programming languages such as .Net and Java?",
+      "answers": ["AWS Elastic Beanstalk", "AWS Elastic Compute Cloud (EC2)", "AWS VPC", "AWS SQS"],
+      "correctAnswer": ["AWS Elastic Beanstalk"]
+    }
+  },
+  {
+    "id": "231",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "multiple choice 1",
+      "question": "Your company handles a crusial ecommerce application. This application needs to have an uptime at least 99.5%. There is a decision to move the application to the AWS cloud. Which of the following deployment strategies can help build a robust achitecture for such an application?",
+      "answers": ["Deploying the application across multiple VPCs", "Deploying the application across multiple Regions", "Deploying the application across multiple edge locations", "Deploying the application across multiple subnets"],
+      "correctAnswer": ["Deploying the application across multiple Regions"]
+    }
+  },
+  {
+    "id": "232",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Billing and Pricing",
+      "questionType": "multiple choice 1",
+      "question": "Which of the following initiatives from AWS helps organizations reduce the overall expenditure for IT companies when they host resources on the AWS cloud?",
+      "answers": ["They decommission older hardware", "They continually reduce the cost of cloud computing", "They use better security mechanisms so you don't need to think about security at all", "They allow deployment of multiple resources"],
+      "correctAnswer": ["They continually reduce the cost of cloud computing"]
+    }
+  },
+  {
+    "id": "233",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "multiple choice 1",
+      "question": "You are planning on deploying a video based application onto the AWS cloud. These videos will be accessed by users across the world. Whcih of the below services can help stream the content in an efficient manner to the users across the globe?",
+      "answers": ["Amazon SES", "Amazon Cloudtrail", "Amazon CloudFront", "Amazon S3"],
+      "correctAnswer": ["Amazon CloudFront"]
+    }
+  },
+  {
+    "id": "234",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Technology",
+      "questionType": "multiple choice 1",
+      "question": "Which of the following is a fully managed NoSQL database service available with AWS?",
+      "answers": [
+        "Amazon RDS",
+        "AWS DynamoDB",
+        "AWS Redshift",
+        "AWS MongoDB"
+      ],
+      "correctAnswer": [
+        "AWS DynamoDB"
+      ]
+    }
+  },
+  {
+    "id": "235",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "multiple choice 1",
+      "question": "Which of the following storage options is best when you want to store archive data?",
+      "answers": ["Amazon Storage Gateway", "Amazon Glacier", "Amazon EBS", "Amazon S3"],
+      "correctAnswer": ["Amazon Glacier"]
+    }
+  },
+  {
+    "id": "236",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Billing and Pricing",
+      "questionType": "multiple choice 1",
+      "question": "If there is a requirement to host EC2 instances in the AWS cloud wherein the utilization is guaranteed to be consistent for a long period of time, which of the following would you utilize to ensure costs are minimized?",
+      "answers": ["Reserved instances", "On-demand instances", "Spot instances", "Regular instances"],
+      "correctAnswer": ["Reserved instances"]
+    }
+  },
+  {
+    "id": "237",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Billing and Pricing",
+      "questionType": "multiple choice 1",
+      "question": "Which of the following services helps provide a dedicated connection from on-premise infrastructure to resources hosted in the AWS cloud?",
+      "answers": ["AWS VPC", "AWS VPN", "AWS Direct Connect", "AWS Subnets"],
+      "correctAnswer": ["AWS Direct Connect"]
+    }
+  },
+  {
+    "id": "238",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Technology",
+      "questionType": "multiple choice 1",
+      "question": "Which of the following is NOT a category recommendation given by the Trusted Advisor?",
+      "answers": ["Security", "High Availability", "Cost Optimization", "Performance", "Fault Tolerance"],
+      "correctAnswer": ["High Availability"]
+    }
+  },
+  {
+    "id": "239",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Technology",
+      "questionType": "multiple choice 1",
+      "question": "A company is deploying a two-tier, highly available web application to AWS. The application needs a storage layer to store artifacts such as photos and videos. Which of the following services can be used as the underlying storage mechanism?",
+      "answers": ["Amazon EBS volume", "Amazon S3", "Amazon EC2 instance store", "Amazon RDS instance"],
+      "correctAnswer": ["Amazon S3"]
+    }
+  },
+  {
+    "id": "240",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Security",
+      "questionType": "multiple choice 1",
+      "question": "When giving permission to users via the AWS Indentity and Access Management tool, which of the following principles should be applied when granting permissions?",
+      "answers": ["Principle of least privilege", "Principle of greatest privilege", "Principle of most privilege", "Principle of lower privilege"],
+      "correctAnswer": ["Principle of least privilege"]
+    }
+  },
+  {
+    "id": "241",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "multiple choice 1",
+      "question": "Which of the following mentioned services is equivalent to hosting virtual servers on an on-premise location?",
+      "answers": ["AWS IAM", "AWS Server", "AWS EC2", "AWS Regions"],
+      "correctAnswer": ["AWS EC2"]
+    }
+  },
+  {
+    "id": "242",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "multiple choice 2",
+      "question": "You have a set of EC2 instances hosted on the AWS cloud. The EC2 instances are hosting a web application. If you get a DDoS attack from the internet which of the following can help in reducing the overall threat to your EC2 instances?",
+      "answers": ["Usage of Security Groups", "Usage of AWS Config", "Usage of Network Access Control Lists", "Usage of the Internet Gateway"],
+      "correctAnswer": ["Usage of Security Groups", "Usage of Network Access Control Lists"]
+    }
+  },
+  {
+    "id": "243",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "multiple choice 1",
+      "question": "Your company currently uses VM Templates to spin up virtual machines on their on-premise infrastructure. Which of the following can be used in a similar way to spin up EC2 instances on the AWS cloud?",
+      "answers": ["EBS Volumes", "EBS Snapshots", "Amazon Machine Images", "Amazon VMware"],
+      "correctAnswer": ["Amazon Machine Images"]
+    }
+  },
+  {
+    "id": "244",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecting",
+      "questionType": "multiple choice 1",
+      "question": "Which of the below cannot be used to get data onto Amazon Glacier?",
+      "answers": ["AWS Glacier API", "AWS Console", "Amazon Glacier SDK", "AWS S3 Lifecycle policies"],
+      "correctAnswer": ["AWS Console"]
+    }
+  },
+  {
+    "id": "245",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Billing and Pricing",
+      "questionType": "multiple choice 1",
+      "question": "Your company is planning to pay for an AWS Support plan. They have the following requirements as far as the support plan goes: '24x7 access to Cloud Support Engineers via email, chat, and phone' and 'A response time of less than 1 hour for any critical faults.' Which of the following plans will suffice keeping in mind the cost factor?",
+      "answers": ["Basic", "Developer", "Business", "Enterprise"],
+      "correctAnswer": ["Business"]
+    }
+  },
+  {
+    "id": "246",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Technology",
+      "questionType": "multiple choice 3",
+      "question": "Which of the following are features of an edge location?",
+      "answers": ["Distribute content to users", "Cache common responses", "Distribute load across multiple resources", "Used in conjunction with the CloudFront service"],
+      "correctAnswer": ["Distribute content to users", "Cache common responses", "Used in conjunction with the CloudFront service"]
+    }
+  },
+  {
+    "id": "247",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Technology",
+      "questionType": "multiple choice 1",
+      "question": "Which of the following storage options provides the option of Lifecycle policies that can be used to move objects to archive storage?",
+      "answers": ["Amazon S3", "Amazon Glacier", "Amazon Storage Gateway", "Amazon EBS"],
+      "correctAnswer": ["Amazon S3"]
+    }
+  },
+  {
+    "id": "248",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Technology",
+      "questionType": "multiple choice 2",
+      "question": "Which of the following features of Amazon RDS allows for better availability of databases?",
+      "answers": ["VPC Peering", "Multi-AZ", "Read Replicas", "Multi-Region"],
+      "correctAnswer": ["Multi-AZ", "Read Replicas"]
+    }
+  },
+  {
+    "id": "249",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Billing and Pricing",
+      "questionType": "multiple choice 1",
+      "question": "There is a requirement for hosting a set of servers in the cloud for a short period of 3 months. Which of the following types of instances should be chosen to be cost effective?",
+      "answers": ["Spot Instances", "On-Demand", "No Upfront costs Reserved", "Partial Upfront costs Reserved"],
+      "correctAnswer": ["On-Demand"]
+    }
+  },
+  {
+    "id": "250",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Technology",
+      "questionType": "multiple choice 1",
+      "question": "Which of the following from AWS can be used to transfer petabytes of data from on-premise locations to the AWS cloud?",
+      "answers": ["AWS Import/Export", "AWS EC2", "AWS Snowball", "AWS Transfer"],
+      "correctAnswer": ["AWS Snowball"]
+    }
+  },
+  {
+    "id": "251",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Billing and Pricing",
+      "questionType": "multiple choice 2",
+      "question": "When working with the AWS cloud which of the following are headaches you don't need to worry about?",
+      "answers": ["Having complete control over the physical infrastructure, so you don't need to worry about wat AWS is doing", "Having the pay as you go model, so you don't need to worry if you are burning costs for non-running resources", "No Upfront costs", "Having no need to worry about security"],
+      "correctAnswer": ["Having the pay as you go model, so you don't need to worry if you are burning costs for non-running resources", "No Upfront costs"]
+    }
+  },
+  {
+    "id": "252",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Technology",
+      "questionType": "multiple choice 1",
+      "question": "Your company wants to move an existing Oracle database to the AWS cloud. Which of the following services can help facilitate this move?",
+      "answers": ["AWS Database Migration Service", "AWS VM Migration Service", "AWS Inspector", "AWS Trusted Advisor"],
+      "correctAnswer": ["AWS Database Migration Service"]
+    }
+  },
+  {
+    "id": "253",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Technology",
+      "questionType": "multiple choice 1",
+      "question": "Which of the following features of AWS RDS allows for offloading reads of the database?",
+      "answers": ["Cross region replication", "Creating Read Replicas", "Using snapshots", "Using Multi-AZ feature"],
+      "correctAnswer": ["Creating Read Replica"]
+    }
+  },
+  {
+    "id": "254",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "Which of the following terms refers to another geographic location in AWS?",
+      "answers": ["Availability Zone", "Data center", "Region", "Edge location"],
+      "correctAnswer": ["Region"]
+    }
+  },
+  {
+    "id": "255",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "A company wants to have a database hosted on AWS. As much as possible they want to have control over the database itself. Which of the following would be an ideal option for this?",
+      "answers": ["Using the AWS DynamoDB service", "Using the AWS RDS service", "Hosting the database on an EC2 instance", "Using the Amazon Aurora service"],
+      "correctAnswer": ["Hosting the database on an EC2 instance"]
+    }
+  },
+  {
+    "id": "256",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Technology",
+      "questionType": "multiple choice 1",
+      "question": "A company currently has an application which consists of a .Net layer which connects to a MySQL database. They now want to move this application onto AWS. They want to make use of all AWS features such as high availability and automated backups. Which of the following would be an ideal database in AWS to migrate to for this requirement?",
+      "answers": ["Aurora", "DynamoDB", "An EC2 instance with MySQL installed", "An EC2 instance with Aurora installed"],
+      "correctAnswer": ["Aurora"]
+    }
+  },
+  {
+    "id": "257",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Technology",
+      "questionType": "multiple choice 2",
+      "question": "Which of the following statements are FALSE when it comes to elasticity?",
+      "answers": ["Diverting traffic to instances based on the demand", "Diverting traffic to instances with the least load", "Diverting traffic across multiple regions", "Diverting traffic to instances with higher capacity"],
+      "correctAnswer": ["Diverting traffic across multiple regions", "Diverting traffic to instances with higher capacity"]
+    }
+  },
+  {
+    "id": "258",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Technology",
+      "questionType": "multiple choice 1",
+      "question": "Which of the following services relates the concept of 'Distributing traffic to multiple EC2 instances'?",
+      "answers": ["AutoScaling", "Elastic Load Balancer", "VPC", "Subnets"],
+      "correctAnswer": ["Elastic Load Balancer"]
+    }
+  },
+  {
+    "id": "259",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Technology",
+      "questionType": "multiple choice 1",
+      "question": "Which of the following services relates the concept of 'Scaling up resources based on demand'?",
+      "answers": ["AutoScaling", "Elastic Load Balancer", "VPC", "Subnet"],
+      "correctAnswer": ["AutoScaling"]
+    }
+  },
+  {
+    "id": "260",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Billing and Pricing",
+      "questionType": "multiple choice 1",
+      "question": "A company is planning to migrate their existing AWS services to the cloud. Which of the following would help them do a cost benefit analysis of moving to the AWS cloud?",
+      "answers": ["AWS TCO calculator", "AWS Config", "AWS Cost Explorer", "AWS Consolidated billing"],
+      "correctAnswer": ["AWS TCO calculator"]
+    }
+  },
+  {
+    "id": "261",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Technology",
+      "questionType": "multiple choice 1",
+      "question": "Which of the following does AWS perform on its behalf for EBS volumes to make it less prone to failure?",
+      "answers": ["Replication of the volume across Availability Zones", "Replication of the volume in the same Availability Zone", "Replication of the volume across Regions", "Replication of the volume Edge locations"],
+      "correctAnswer": ["Replication of the volume in the same Availability Zone"]
+    }
+  },
+  {
+    "id": "262",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Technology",
+      "questionType": "multiple choice 1",
+      "question": "You have a set of developers that need to use .Net to call AWS services. Which of the following tools can be used to achieve this purpose?",
+      "answers": ["AWS SDK", "AWS Console", "AWS CLI", "AWS IAM"],
+      "correctAnswer": ["AWS SDK"]
+    }
+  },
+  {
+    "id": "263",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Security",
+      "questionType": "multiple choice 1",
+      "question": "You have an EC2 instance in development that interacts with the Simple Storage Service. The EC2 instance is going to be promoted to the production environment. Whcih of the following features should be used for secure communication between the EC2 instance and the Simple Storage Service?",
+      "answers": ["IAM Users", "IAM Roles", "IAM Groups", "IAM Policies"],
+      "correctAnswer": ["IAM Roles"]
+    }
+  },
+  {
+    "id": "264",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Billing and Pricing",
+      "questionType": "multiple choice 1",
+      "question": "Which of the following can be used to view one bill when you have multiple AWS accounts?",
+      "answers": ["Consolidated billing", "Combined billing", "Cost Explorer", "IAM"],
+      "correctAnswer": ["Consolidated billing"]
+    }
+  },
+  {
+    "id": "265",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Security",
+      "questionType": "multiple choice 2",
+      "question": "Your company is planning to host a large ecommerce application on the AWS cloud. One of their major concerns is internet attacks such as DDoS attacks. Which of the following services can help mitigate this concern?",
+      "answers": ["CloudFront", "AWS Shield", "AWS EC2", "AWS Config"],
+      "correctAnswer": ["CloudFront", "AWS Shield"]
+    }
+  },
+  {
+    "id": "266",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Technology",
+      "questionType": "multiple choice 1",
+      "question": "Which of the following services is a serverless compute service in AWS?",
+      "answers": ["AWS EC2", "AWS Config", "AWS Lambda", "AWS OpsWork"],
+      "correctAnswer": ["AWS Lambda"]
+    }
+  },
+  {
+    "id": "267",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Technology",
+      "questionType": "multiple choice 2",
+      "question": "Which of the following are services where you don't need to manage the underlying infrastructure?",
+      "answers": ["DynamoDB", "EC2", "Simple Storage Service", "AWS AutoScaling"],
+      "correctAnswer": ["DynamoDB", "Simple Storage Service"]
+    }
+  },
+  {
+    "id": "268",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Technology",
+      "questionType": "multiple choice 1",
+      "question": "Which of the following is the disaster recovery deployment mechanism that has the highest downtime?",
+      "answers": ["Pilot Light", "Warm Standby", "Multi Site", "Backup and Restore"],
+      "correctAnswer": ["Backup and Restore"]
+    }
+  },
+  {
+    "id": "269",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Security",
+      "questionType": "multiple choice 1",
+      "question": "Which of the following services allows you to analyze EC2 instances against pre-defined security templates to check for vulnerabilities?",
+      "answers": ["AWS Trusted Advisor", "AWS Inspector", "AWS WAF", "AWS Shield"],
+      "correctAnswer": ["AWS Inspector"]
+    }
+  }
+]
