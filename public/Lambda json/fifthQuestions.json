@@ -192,7 +192,7 @@
     "info": {
       "subcategory": "Architecting",
       "questionType": "multiple choice 1",
-      "question": "Your design team is planning to design an application that will be hosted on the AWS cloud. One of their main non-sunctional requirements is 'Reduce inter-dependencies so failures do not impact other components.' Which of the following concepts does this requirement relate to?",
+      "question": "Your design team is planning to design an application that will be hosted on the AWS cloud. One of their main non-functional requirements is 'Reduce inter-dependencies so failures do not impact other components.' Which of the following concepts does this requirement relate to?",
       "answers": ["Integration", "Decoupling", "Aggregation", "Segregation"],
       "correctAnswer": ["Decoupling"]
     }
@@ -291,7 +291,7 @@
     "info": {
       "subcategory": "Architecting",
       "questionType": "multiple choice 1",
-      "question": "Your company handles a crusial ecommerce application. This application needs to have an uptime at least 99.5%. There is a decision to move the application to the AWS cloud. Which of the following deployment strategies can help build a robust achitecture for such an application?",
+      "question": "Your company handles a crucial ecommerce application. This application needs to have an uptime at least 99.5%. There is a decision to move the application to the AWS cloud. Which of the following deployment strategies can help build a robust achitecture for such an application?",
       "answers": ["Deploying the application across multiple VPCs", "Deploying the application across multiple Regions", "Deploying the application across multiple edge locations", "Deploying the application across multiple subnets"],
       "correctAnswer": ["Deploying the application across multiple Regions"]
     }
@@ -542,7 +542,7 @@
       "questionType": "multiple choice 1",
       "question": "Which of the following features of AWS RDS allows for offloading reads of the database?",
       "answers": ["Cross region replication", "Creating Read Replicas", "Using snapshots", "Using Multi-AZ feature"],
-      "correctAnswer": ["Creating Read Replica"]
+      "correctAnswer": ["Creating Read Replicas"]
     }
   },
   {
