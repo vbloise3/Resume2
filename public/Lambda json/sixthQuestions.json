@@ -583,6 +583,17 @@
     }
   },
   {
+    "id": "322",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Billing and Pricing",
+      "questionType": "multiple choice 1",
+      "question": "What service from AWS can help manage the costs for all resources in AWS?",
+      "answers": ["Cost Explorer", "Cost Allocation Tags", "AWS Consolidated billing", "Payment history"],
+      "correctAnswer": ["Cost Explorer"]
+    }
+  },
+  {
     "id": "323",
     "category": "Cloud Concepts",
     "info": {
