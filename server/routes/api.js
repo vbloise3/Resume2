@@ -307,6 +307,40 @@ function getAllQandAs() {
   });
 }
 
+function getAllQandAsArch() {
+  return new Promise(function (resolve, reject) {
+    var docClient = new AWS.DynamoDB.DocumentClient();
+    var dynamoDBreturn = "what?";
+    var params = {
+      TableName: "CA2QandA"
+    };
+    console.log("looking for all arch Q and As");
+    docClient.scan(params, onScan);
+
+    function onScan(err, data) {
+      if (err) {
+        dynamoDBreturn = JSON.stringify(err, undefined, 2);
+        console.log("couldn't find qanda: " + JSON.stringify(err, undefined, 2));
+        resolve(dynamoDBreturn);
+      } else {
+        // Get all the qandas
+        dynamoDBreturn = JSON.stringify(data, undefined, 2);
+        console.log("retrieved qandas ");
+        data.Items.forEach(function(qanda) {
+          // document.getElementById('textarea').innerHTML += movie.year + ": " + movie.title + " - rating: " + movie.info.rating + "\n";
+          // console.log('found a q and a: ' + JSON.stringify(qanda));
+        });
+
+        // Continue scanning if we have more qandas (per scan 1MB limitation)
+        // document.getElementById('textarea').innerHTML += "Scanning for more..." + "\n";
+        /*params.ExclusiveStartKey = data.LastEvaluatedKey;
+        docClient.scan(params, onScan);*/
+        resolve(dynamoDBreturn);
+      }
+    }
+  });
+}
+
 function randomString(length, chars) {
   var result = '';
   for (var i = length; i > 0; --i) result += chars[Math.floor(Math.random() * chars.length)];
@@ -628,6 +662,22 @@ router.route('/c2pqandas')
     });
   });
 // End get all items
+
+// Get all arch items
+router.route('/cA2qandas')
+  .get(function(req, res) {
+    var returnStuff
+    setUpDynamoDB();
+    getAllQandAsArch().then(function (successStuff) {
+      /*if (err)
+        res.send(err);
+        res.json(npsclient);
+      */
+      returnStuff = successStuff;
+      res.status(200).send(returnStuff);
+    });
+  });
+// End get all arch items
 
 // Get S3 Bucket list
 

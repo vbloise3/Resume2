@@ -10,6 +10,7 @@ const serviceDeleteOneItem = '/api/deleteQandA';
 const serviceDeleteTable = '/api/deleteTable';
 const serviceListBucketContents = '/api/listBucketContents';
 const serviceGetAllItems = '/api/c2pqandas';
+const serviceGetAllArchItems = '/api/cA2qandas';
 
 export interface QandA {
   id: string;
@@ -91,6 +92,21 @@ export class DynamoDbserviceService {
   getAllItems() {
     let resultData;
     const url = serviceGetAllItems;
+    // alert('getting this url: ' + url);
+    let headers = new HttpHeaders();
+    headers = headers.set('If-Modified-Since', '0');
+    headers = headers.append('Cache-control', 'no-cache');
+    headers = headers.append('Cache-control', 'no-store');
+    headers = headers.append('Expires', '0');
+    headers = headers.append('Pragma', 'no-cache');
+    resultData = this.http.get(url, { headers: headers });
+    // alert('loadInitialData service result: ' + JSON.stringify(resultData));
+    return resultData;
+  }
+
+  getAllArchItems() {
+    let resultData;
+    const url = serviceGetAllArchItems;
     // alert('getting this url: ' + url);
     let headers = new HttpHeaders();
     headers = headers.set('If-Modified-Since', '0');

@@ -1,0 +1,64 @@
+.example-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.example-container > * {
+  width: 100%;
+}
+
+.example-container form {
+  margin-bottom: 20px;
+}
+
+.example-container form > * {
+  margin: 5px 0;
+}
+
+.example-container .mat-radio-button {
+  margin: 0 5px;
+}
+
+.colorBlue {
+  color: blue;
+}
+
+.largerText {
+  font-size: larger;
+}
+
+.underlined {
+  text-decoration: underline;
+}
+
+.displayOnNewLine::before {
+  content: "\A";
+  white-space: pre;
+  margin: 0.5em;
+}
+
+.correctAnswer {
+  color: white;
+  background-color: green;
+}
+
+.wrongAnswer {
+  color: white;
+  background-color: red;
+}
+
+.gradeText {
+  font-family: Baskerville, serif;
+}
+
+.percentPassing {
+  color: green;
+}
+
+.percentFailing {
+  color: red;
+}
+
+.wideInput {
+  width: 300px;
+}

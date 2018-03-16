@@ -1,0 +1,81 @@
+<div fxLayout="row wrap">
+  <mat-toolbar color="primary" style="height: 4em;">
+
+    <img class="mdCardImg md-card-sm-image transparentProfilePic">
+
+    <span class="textBottom xxLargerFont">Pratice</span>
+
+    <span class="app-toolbar-filler"></span>
+    <!--span class="smallTextBottom"><i class="material-icons md-18 iconBottom">home</i>&nbsp;261 Swedesford Rd., Malvern, PA 19355&nbsp;<a href="tel:484-433-3269" style="color: white"><i class="material-icons md-18 iconBottom">phone_iphone</i>484-433-3269</a>
+                    &nbsp;<a href="mailto:vbloise3@gmail.com?Subject=Resume" target="_top" style="color: white"><i class="material-icons md-18 iconBottom">email</i>vbloise3@gmail.com</a></span-->
+  </mat-toolbar>
+  <span class="app-toolbar-filler" style="padding: 1em;"></span>
+  <mat-card class="shadowCard" style="float: right;margin-bottom: 1em;margin-top: 1em;">
+    <h1 class="h1Blue">Answer the following question:</h1>
+    <mat-card>
+      <div class="example-container">
+        <form #QandAForm="ngForm" class="example-container" (ngSubmit)="submitAnswer(QandAForm)" [formGroup]="options">
+          <mat-label><span class="underlined">Category:</span>&nbsp;<span class="colorBlue">{{getCategory}}</span></mat-label>
+          <mat-placeholder></mat-placeholder>
+          <mat-label><span class="underlined">Sub-category:</span>&nbsp;<span class="colorBlue">{{getSubcategory}}</span></mat-label>
+          <mat-placeholder></mat-placeholder>
+          <!--mat-label><span class="underlined">Question Type:</span>&nbsp;<span class="colorBlue">{{getQuestionType}}</span></mat-label>
+          <mat-placeholder></mat-placeholder-->
+          <mat-label><span class="underlined">Question:</span>&nbsp;<span class="colorBlue largerText"><pre>{{getQuestion}}</pre></span></mat-label>
+          <mat-placeholder></mat-placeholder>
+          <div *ngIf="getSelectCount == 0">
+            <label><span class="underlined">Your answer{{getPlural}}</span>&nbsp;</label>
+            <mat-placeholder></mat-placeholder>
+            <mat-form-field>
+              <div class="wideInput">
+                <input id="getTextAnswer" class="wideInput" [ngClass]="{'correctAnswer': textAnswerCorrectOrNot === 'true', 'wrongAnswer': textAnswerCorrectOrNot === 'false'}"
+                       formControlName="textAnswer" matInput placeholder="Enter your answer" ngModel required>
+              </div>
+            </mat-form-field>
+            <label *ngIf="textAnswerCorrectOrNot == 'false'"><br/>Correct Answer:&nbsp;<span class="correctAnswer">{{getCorrectAnswer}}</span></label>
+          </div>
+          <div *ngIf="getSelectCount == 1">
+            <label><span class="underlined">Select {{getSelectCountText}} answer{{getPlural}}</span>&nbsp;</label>
+            <mat-radio-group layout="row" formControlName="selectedAnswer">
+              <span class="displayOnNewLine">
+                <mat-placeholder></mat-placeholder>
+                <mat-radio-button ng-style="{'display':'inline-block'}" *ngFor="let answerValue of getAnswers; let i = index" value="{{answerValue}}">
+                  <pre [ngClass]="{'correctAnswer': correctOrNot[i]}">{{answerValue}}</pre>
+                </mat-radio-button>
+              </span>
+            </mat-radio-group>
+          </div>
+          <div *ngIf="getSelectCount > 1">
+            <label><span class="underlined">Select {{getSelectCountText}} answer{{getPlural}}</span>&nbsp;</label>
+            <span class="displayOnNewLine">
+                <mat-placeholder></mat-placeholder>
+                <span *ngFor="let answerValue of getAnswers; let i = index">
+                    <mat-checkbox
+                      name="{{answerValue}}"
+                      value="{{answerValue}}"
+                      (change)="change($event, answerValue)">
+                      <pre [ngClass]="{'correctAnswer': correctOrNot[i]}">{{answerValue}}</pre>
+                    </mat-checkbox>
+                  &nbsp;&nbsp;
+                </span>
+            </span>
+          </div>
+          <div class="actions">
+            <div *ngIf="!nextQuestion">
+              <button mat-button type="submit" color="primary" [disabled]="!QandAForm.form.valid">Submit</button>
+            </div>
+            <div *ngIf="nextQuestion">
+              <button mat-button type="submit" color="primary" [disabled]="!QandAForm.form.valid">Next Question</button>
+            </div>
+          </div>
+        </form>
+        <div *ngIf="correctAnswerIndicator != 'neutral'">
+          <pre [ngClass]="(correctAnswerBool)?'correctAnswer':'wrongAnswer'">{{correctAnswerIndicator}}</pre>
+        </div>
+        <div>
+          <p class="gradeText"> Grade so far: {{totalCorrect}} of {{totalAnswered}} &nbsp;&mdash;&nbsp; <span [ngClass]="(passing)?'percentPassing':'percentFailing'">{{totalCorrectPercent}}%</span></p>
+        </div>
+      </div>
+    </mat-card>
+  </mat-card>
+</div>
