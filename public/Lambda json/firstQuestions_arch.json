@@ -1,0 +1,25 @@
+[
+  {
+    "id": "1",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS compute service is defined as 'virtual machines inside AWS'?",
+      "answers": ["Elastic Beanstalk", "LightSail",
+        "EC2", "EC2 Container Service"],
+      "correctAnswer": ["EC2"]
+    }
+  },
+  {
+    "id": "2",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS compute service allows you to run and manage docker containers at scale?",
+      "answers": ["Elastic Beanstalk", "LightSail", "EC2", "EC2 Container Service"],
+      "correctAnswer": ["EC2 Container Service"]
+    }
+  }
+]

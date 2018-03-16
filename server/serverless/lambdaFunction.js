@@ -17,6 +17,7 @@ function randomString(length, chars) {
 exports.handler = (event, context, callback) => {
   // get bucket and file info
   var returnStuff;
+  var tableName;
   var docClient = new AWS.DynamoDB.DocumentClient();
   var src_bkt = event.Records[0].s3.bucket.name;
   var src_key = event.Records[0].s3.object.key;
@@ -32,14 +33,19 @@ exports.handler = (event, context, callback) => {
       console.log(err, err.stack);
       callback(err);
     } else {
-      console.log("Raw text:\n" + data.Body.toString('ascii'));
+      // console.log("Raw text:\n" + data.Body.toString('ascii'));
       var allQandAs = JSON.parse(data.Body.toString('ascii'));
+      if ( src_key.indexOf("arch") === -1 ) {
+        tableName = "C2PQandA";
+      } else {
+        tableName = "CA2QandA";
+      }
 
       allQandAs.forEach(function (qanda) {
         // document.getElementById('textarea').innerHTML += "Processing: " + qanda.id + "\n";
         rString = randomString(32, '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ');
         var params = {
-          TableName: "C2PQandA",
+          TableName: tableName,
           Item: {
             "id": rString, // qanda.id,
             "category": qanda.category,
