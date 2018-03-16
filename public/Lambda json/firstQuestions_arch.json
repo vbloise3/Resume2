@@ -21,5 +21,401 @@
       "answers": ["Elastic Beanstalk", "LightSail", "EC2", "EC2 Container Service"],
       "correctAnswer": ["EC2 Container Service"]
     }
+  },
+  {
+    "id": "3",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS compute service provides autoscaling groups, load balancers, EC2 instances, and allows developer to only have to focus on their code?",
+      "answers": ["Elastic Beanstalk", "LightSail", "EC2", "EC2 Container Service"],
+      "correctAnswer": ["Elastic Beanstalk"]
+    }
+  },
+  {
+    "id": "4",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS compute service allows you to upload your code to the cloud and control when it executes, not worrying about underlying physical or virtual machines or OSs?",
+      "answers": ["Elastic Beanstalk", "Lambda", "EC2", "EC2 Container Service"],
+      "correctAnswer": ["Lambda"]
+    }
+  },
+  {
+    "id": "5",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS compute service allows you to use a Virtual Private Server (VPS)?",
+      "answers": ["Elastic Beanstalk", "LightSail", "EC2", "EC2 Container Service"],
+      "correctAnswer": ["LightSail"]
+    }
+  },
+  {
+    "id": "6",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS compute service provisions a server, gives you a fixed ip address, rdp (windows) or ssh (linux) login shell access, and has its own management console?",
+      "answers": ["Elastic Beanstalk", "LightSail", "EC2", "EC2 Container Service"],
+      "correctAnswer": ["LightSail"]
+    }
+  },
+  {
+    "id": "7",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS compute service is thought of as 'a watered down version of EC2?",
+      "answers": ["Elastic Beanstalk", "LightSail", "EC2", "EC2 Container Service"],
+      "correctAnswer": ["LightSail"]
+    }
+  },
+  {
+    "id": "8",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS compute service gives you batch computing in the cloud?",
+      "answers": ["Elastic Beanstalk", "Batch", "EC2", "EC2 Container Service"],
+      "correctAnswer": ["Batch"]
+    }
+  },
+  {
+    "id": "9",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS storage service gives you object based storage in the cloud based on 'buckets'?",
+      "answers": ["S3", "Elastic File System (EFS)", "Glacier", "Snowball", "Storage Gateway"],
+      "correctAnswer": ["S3"]
+    }
+  },
+  {
+    "id": "10",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS storage service gives you network attached storage and can mount these to multiple EC2 instances?",
+      "answers": ["S3", "Elastic File System (EFS)", "Glacier", "Snowball", "Storage Gateway"],
+      "correctAnswer": ["Elastic File System (EFS)"]
+    }
+  },
+  {
+    "id": "11",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS storage service gives you data archival?",
+      "answers": ["S3", "Elastic File System (EFS)", "Glacier", "Snowball", "Storage Gateway"],
+      "correctAnswer": ["Glacier"]
+    }
+  },
+  {
+    "id": "12",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS storage service gives you a way to bring large amounts of data into AWS and is used for TB sized transfers instead of using broadband or wireless?",
+      "answers": ["S3", "Elastic File System (EFS)", "Glacier", "Snowball", "Storage Gateway"],
+      "correctAnswer": ["Snowball"]
+    }
+  },
+  {
+    "id": "13",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS storage service is a virtual appliance/machine that you install in your data center that replicates data into S3?",
+      "answers": ["S3", "Elastic File System (EFS)", "Glacier", "Snowball", "Storage Gateway"],
+      "correctAnswer": ["Storage Gateway"]
+    }
+  },
+  {
+    "id": "14",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS database service gives you MySQL, Microsoft SQL Server, PostgreSQL, Aurora, and Oracle databases as a managed service?",
+      "answers": ["Elasticache", "RDS", "Red Shift", "DynamoDB", "Storage Gateway"],
+      "correctAnswer": ["RDS"]
+    }
+  },
+  {
+    "id": "15",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS database service gives you a NoSQL database as a managed service?",
+      "answers": ["Elasticache", "RDS", "Red Shift", "DynamoDB", "Storage Gateway"],
+      "correctAnswer": ["DynamoDB"]
+    }
+  },
+  {
+    "id": "16",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS database service gives you a way of caching commonly queried data from your database?",
+      "answers": ["Elasticache", "RDS", "Red Shift", "DynamoDB", "Storage Gateway"],
+      "correctAnswer": ["Elasticache"]
+    }
+  },
+  {
+    "id": "17",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS database service gives you data warehousing or business intelligence?",
+      "answers": ["Elasticache", "RDS", "Red Shift", "DynamoDB", "Storage Gateway"],
+      "correctAnswer": ["Red Shift"]
+    }
+  },
+  {
+    "id": "18",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS migration service gives you tracking service allowing you to track your applications as you migrate them to AWS?",
+      "answers": ["Database Migration Service", "Server Migration Service", "Snowball", "AWS Migration Hub", "Application Discovery Service"],
+      "correctAnswer": ["AWS Migration Hub"]
+    }
+  },
+  {
+    "id": "19",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS migration service integrates with other services within the migration framework to help you keep track of application and database migration activity and also has a visualization of all migration activity?",
+      "answers": ["Database Migration Service", "Server Migration Service", "Snowball", "AWS Migration Hub", "Application Discovery Service"],
+      "correctAnswer": ["AWS Migration Hub"]
+    }
+  },
+  {
+    "id": "20",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS migration service gives you an automated set of tools which detect what applications you have and what their dependencies are?",
+      "answers": ["Database Migration Service", "Server Migration Service", "Snowball", "AWS Migration Hub", "Application Discovery Service"],
+      "correctAnswer": ["Application Discovery Service"]
+    }
+  },
+  {
+    "id": "21",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS migration service gives you a way of tracking application dependencies?",
+      "answers": ["Database Migration Service", "Server Migration Service", "Snowball", "AWS Migration Hub", "Application Discovery Service"],
+      "correctAnswer": ["Application Discovery Service"]
+    }
+  },
+  {
+    "id": "22",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS migration service gives you an easy way to migrate your databases from on-premise to AWS?",
+      "answers": ["Database Migration Service", "Server Migration Service", "Snowball", "AWS Migration Hub", "Application Discovery Service"],
+      "correctAnswer": ["Database Migration Service"]
+    }
+  },
+  {
+    "id": "23",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS migration service gives you a way to migrate virtual and physical servers from on-premise to AWS?",
+      "answers": ["Database Migration Service", "Server Migration Service", "Snowball", "AWS Migration Hub", "Application Discovery Service"],
+      "correctAnswer": ["Server Migration Service"]
+    }
+  },
+  {
+    "id": "24",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS migration service is used for migrating large amounts of data to AWS?",
+      "answers": ["Database Migration Service", "Server Migration Service", "Snowball", "AWS Migration Hub", "Application Discovery Service"],
+      "correctAnswer": ["Snowball"]
+    }
+  },
+  {
+    "id": "25",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS network and content delivery service gives you a virtual data center?",
+      "answers": ["Route 53", "CloudFront", "VPC", "API Gateway", "Direct Connect"],
+      "correctAnswer": ["VPC"]
+    }
+  },
+  {
+    "id": "26",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS network and content delivery service is Amazons Content Delivery Network (CDN)?",
+      "answers": ["Route 53", "CloudFront", "VPC", "API Gateway", "Direct Connect"],
+      "correctAnswer": ["CloudFront"]
+    }
+  },
+  {
+    "id": "27",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS network and content delivery service allows you to store content closer to users around the globe using Edge Locations?",
+      "answers": ["Route 53", "CloudFront", "VPC", "API Gateway", "Direct Connect"],
+      "correctAnswer": ["CloudFront"]
+    }
+  },
+  {
+    "id": "28",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS network and content delivery service Amazon's DNS service?",
+      "answers": ["Route 53", "CloudFront", "VPC", "API Gateway", "Direct Connect"],
+      "correctAnswer": ["Route 53"]
+    }
+  },
+  {
+    "id": "29",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS network and content delivery service gives you a way of creating APIs for other services to talk to?",
+      "answers": ["Route 53", "CloudFront", "VPC", "API Gateway", "Direct Connect"],
+      "correctAnswer": ["API Gateway"]
+    }
+  },
+  {
+    "id": "30",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS network and content delivery service gives you a way of running a dedicated line from your on-premise data center to your AWS VPC?",
+      "answers": ["Route 53", "CloudFront", "VPC", "API Gateway", "Direct Connect"],
+      "correctAnswer": ["Direct Connect"]
+    }
+  },
+  {
+    "id": "31",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS developer tool gives you a way of getting a group of developers working together to 'project manage' their code?",
+      "answers": ["X-Ray", "Cloud9", "Code Pipeline", "Code Deploy", "Code Build", "Code Commit", "Code Star"],
+      "correctAnswer": ["Code Star"]
+    }
+  },
+  {
+    "id": "32",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS developer tool contains a delivery tool chain?",
+      "answers": ["X-Ray", "Cloud9", "Code Pipeline", "Code Deploy", "Code Build", "Code Commit", "Code Star"],
+      "correctAnswer": ["Code Star"]
+    }
+  },
+  {
+    "id": "33",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS developer tool provides a source control service where you can store your private git repositories?",
+      "answers": ["X-Ray", "Cloud9", "Code Pipeline", "Code Deploy", "Code Build", "Code Commit", "Code Star"],
+      "correctAnswer": ["Code Commit"]
+    }
+  },
+  {
+    "id": "34",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS developer tool allows you to compile your code, run tests, and produce software packages that are ready to deploy?",
+      "answers": ["X-Ray", "Cloud9", "Code Pipeline", "Code Deploy", "Code Build", "Code Commit", "Code Star"],
+      "correctAnswer": ["Code Build"]
+    }
+  },
+  {
+    "id": "35",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS developer tool automates application code deployment to you EC2 instances or on-premise instances, as well as to your lambda functions?",
+      "answers": ["X-Ray", "Cloud9", "Code Pipeline", "Code Deploy", "Code Build", "Code Commit", "Code Star"],
+      "correctAnswer": ["Code Deploy"]
+    }
+  },
+  {
+    "id": "36",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS developer tool provides a continuous delivery service, where you can model, visualize, and automate the steps required to release your software?",
+      "answers": ["X-Ray", "Cloud9", "Code Pipeline", "Code Deploy", "Code Build", "Code Commit", "Code Star"],
+      "correctAnswer": ["Code Pipeline"]
+    }
+  },
+  {
+    "id": "37",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS developer tool is used to deploy and analyze your serverless application code and has request tracing to help find issues and performance bottlenecks?",
+      "answers": ["X-Ray", "Cloud9", "Code Pipeline", "Code Deploy", "Code Build", "Code Commit", "Code Star"],
+      "correctAnswer": ["X-Ray"]
+    }
+  },
+  {
+    "id": "38",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS developer tool gives you an IDE to develop code within the AWS console?",
+      "answers": ["X-Ray", "Cloud9", "Code Pipeline", "Code Deploy", "Code Build", "Code Commit", "Code Star"],
+      "correctAnswer": ["Cloud9"]
+    }
   }
 ]
