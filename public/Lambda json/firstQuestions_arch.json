@@ -281,7 +281,7 @@
     "info": {
       "subcategory": "Define AWS Cloud",
       "questionType": "multiple choice 1",
-      "question": "What AWS network and content delivery service is Amazons Content Delivery Network (CDN)?",
+      "question": "What AWS network and content delivery service is Amazon's Content Delivery Network (CDN)?",
       "answers": ["Route 53", "CloudFront", "VPC", "API Gateway", "Direct Connect"],
       "correctAnswer": ["CloudFront"]
     }
@@ -303,7 +303,7 @@
     "info": {
       "subcategory": "Define AWS Cloud",
       "questionType": "multiple choice 1",
-      "question": "What AWS network and content delivery service Amazon's DNS service?",
+      "question": "What AWS network and content delivery service is Amazon's DNS service?",
       "answers": ["Route 53", "CloudFront", "VPC", "API Gateway", "Direct Connect"],
       "correctAnswer": ["Route 53"]
     }
@@ -380,7 +380,7 @@
     "info": {
       "subcategory": "Define AWS Cloud",
       "questionType": "multiple choice 1",
-      "question": "What AWS developer tool automates application code deployment to you EC2 instances or on-premise instances, as well as to your lambda functions?",
+      "question": "What AWS developer tool automates application code deployment to your EC2 instances or on-premise instances, as well as to your lambda functions?",
       "answers": ["X-Ray", "Cloud9", "Code Pipeline", "Code Deploy", "Code Build", "Code Commit", "Code Star"],
       "correctAnswer": ["Code Deploy"]
     }

@@ -14,6 +14,7 @@ export class Ca2QuestionComponent implements OnInit {
 
   qandas: any = '';
   qandaArray: any = [];
+  qandaAnswers: any = [];
   buckets: any = '';
   theBucketList: any = '';
   s3BucketName: any = '';
@@ -68,7 +69,7 @@ export class Ca2QuestionComponent implements OnInit {
       // alert('the first returned Q and As: ' + qandas.Items[0].id);
       // alert('the count of returned q and as: ' + qandas.Count);
       // Iterate over the qandas to load up questions array.
-      let counter = 0;
+      let counter = 0, answerCounter = 0;
       const outerThis = this;
       qandas.Items.forEach(function (qandaItem) {
         outerThis.qandaArray[counter] = qandaItem;
@@ -77,6 +78,24 @@ export class Ca2QuestionComponent implements OnInit {
       });
       // then use a counter to step through the array elements, after shuffling the array
       this.shuffle(this.qandaArray);
+      // shuffle answer array for each question
+      this.qandaArray.forEach(function (qandaItem) {
+        answerCounter = 0;
+        // clear out the answers holder array
+        while (outerThis.qandaAnswers.length > 0) {
+          outerThis.qandaAnswers.pop();
+        }
+        // done clearing out answers holder array
+        qandaItem.info.answers.forEach(function (theAnswer) {
+          outerThis.qandaAnswers[answerCounter] = theAnswer;
+          answerCounter++;
+        });
+        // alert('the answers: ' + outerThis.qandaAnswers);
+        outerThis.shuffle(outerThis.qandaAnswers);
+        // alert('the answers: ' + outerThis.qandaAnswers);
+        qandaItem.info.answers = outerThis.qandaAnswers.slice();
+      });
+      // end shuffle answer arrays
       this.getScreenElements();
       // as user clicks the submit button (question answered) and the next button
       // (move to the next question)

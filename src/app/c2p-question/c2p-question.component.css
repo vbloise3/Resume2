@@ -62,3 +62,12 @@
 .wideInput {
   width: 300px;
 }
+
+.questionWidth {
+  display: block;
+  /*width: 300px;*/
+}
+
+.question-card {
+  /*max-width: 400px;*/
+}

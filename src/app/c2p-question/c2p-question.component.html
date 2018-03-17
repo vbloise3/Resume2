@@ -12,7 +12,7 @@
   <span class="app-toolbar-filler" style="padding: 1em;"></span>
   <mat-card class="shadowCard" style="float: right;margin-bottom: 1em;margin-top: 1em;">
     <h1 class="h1Blue">Answer the following question:</h1>
-    <mat-card>
+    <mat-card class="question-card">
       <div class="example-container">
         <form #QandAForm="ngForm" class="example-container" (ngSubmit)="submitAnswer(QandAForm)" [formGroup]="options">
           <mat-label><span class="underlined">Category:</span>&nbsp;<span class="colorBlue">{{getCategory}}</span></mat-label>
@@ -21,7 +21,7 @@
           <mat-placeholder></mat-placeholder>
           <!--mat-label><span class="underlined">Question Type:</span>&nbsp;<span class="colorBlue">{{getQuestionType}}</span></mat-label>
           <mat-placeholder></mat-placeholder-->
-          <mat-label><span class="underlined">Question:</span>&nbsp;<span class="colorBlue largerText"><pre>{{getQuestion}}</pre></span></mat-label>
+          <mat-label><span class="underlined">Question:</span>&nbsp;<span class="colorBlue largerText"><pre class="questionWidth">{{getQuestion}}</pre></span></mat-label>
           <mat-placeholder></mat-placeholder>
           <div *ngIf="getSelectCount == 0">
             <label><span class="underlined">Your answer{{getPlural}}</span>&nbsp;</label>
