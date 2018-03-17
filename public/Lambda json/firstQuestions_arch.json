@@ -417,5 +417,445 @@
       "answers": ["X-Ray", "Cloud9", "Code Pipeline", "Code Deploy", "Code Build", "Code Commit", "Code Star"],
       "correctAnswer": ["Cloud9"]
     }
+  },
+  {
+    "id": "39",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS management tool provides you with a monitoring service for your AWS resources?",
+      "answers": ["CloudWatch", "CloudFormation", "CloudTrail", "Config", "OpsWorks", "Service Catalog", "Systems Manager", "Trusted Advisor", "Managed Services"],
+      "correctAnswer": ["CloudWatch"]
+    }
+  },
+  {
+    "id": "40",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS management tool gives you a way of scripting infrastructure and deployment of infrastructure?",
+      "answers": ["CloudWatch", "CloudFormation", "CloudTrail", "Config", "OpsWorks", "Service Catalog", "Systems Manager", "Trusted Advisor", "Managed Services"],
+      "correctAnswer": ["CloudFormation"]
+    }
+  },
+  {
+    "id": "41",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS management tool gives you a way to turn infrastructure into code?",
+      "answers": ["CloudWatch", "CloudFormation", "CloudTrail", "Config", "OpsWorks", "Service Catalog", "Systems Manager", "Trusted Advisor", "Managed Services"],
+      "correctAnswer": ["CloudFormation"]
+    }
+  },
+  {
+    "id": "42",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS management tool is used to log changes to you AWS environment and stores its records for one week?",
+      "answers": ["CloudWatch", "CloudFormation", "CloudTrail", "Config", "OpsWorks", "Service Catalog", "Systems Manager", "Trusted Advisor", "Managed Services"],
+      "correctAnswer": ["CloudTrail"]
+    }
+  },
+  {
+    "id": "43",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS management tool monitors the configuration of your entire AWS environment?",
+      "answers": ["CloudWatch", "CloudFormation", "CloudTrail", "Config", "OpsWorks", "Service Catalog", "Systems Manager", "Trusted Advisor", "Managed Services"],
+      "correctAnswer": ["Config"]
+    }
+  },
+  {
+    "id": "44",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS management tool has point-in-time snapshots of your AWS environment and visualizes your AWS environment over time past through present?",
+      "answers": ["CloudWatch", "CloudFormation", "CloudTrail", "Config", "OpsWorks", "Service Catalog", "Systems Manager", "Trusted Advisor", "Managed Services"],
+      "correctAnswer": ["Config"]
+    }
+  },
+  {
+    "id": "45",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS management tool uses both Chef and Puppet to automate your environments and the configuration of your environments?",
+      "answers": ["CloudWatch", "CloudFormation", "CloudTrail", "Config", "OpsWorks", "Service Catalog", "Systems Manager", "Trusted Advisor", "Managed Services"],
+      "correctAnswer": ["OpsWorks"]
+    }
+  },
+  {
+    "id": "46",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS management tool manages a catelog of your account resources that are approved for use in your AWS account?",
+      "answers": ["CloudWatch", "CloudFormation", "CloudTrail", "Config", "OpsWorks", "Service Catalog", "Systems Manager", "Trusted Advisor", "Managed Services"],
+      "correctAnswer": ["Service Catalog"]
+    }
+  },
+  {
+    "id": "47",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS management tool is used for governance and compliance requirements for your AQS account?",
+      "answers": ["CloudWatch", "CloudFormation", "CloudTrail", "Config", "OpsWorks", "Service Catalog", "Systems Manager", "Trusted Advisor", "Managed Services"],
+      "correctAnswer": ["Service Catalog"]
+    }
+  },
+  {
+    "id": "48",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS management tool gives you an interface for managing your AWS resources?",
+      "answers": ["CloudWatch", "CloudFormation", "CloudTrail", "Config", "OpsWorks", "Service Catalog", "Systems Manager", "Trusted Advisor", "Managed Services"],
+      "correctAnswer": ["Systems Manager"]
+    }
+  },
+  {
+    "id": "49",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS management tool is used for EC2 for things like patch maintenance?",
+      "answers": ["CloudWatch", "CloudFormation", "CloudTrail", "Config", "OpsWorks", "Service Catalog", "Systems Manager", "Trusted Advisor", "Managed Services"],
+      "correctAnswer": ["Systems Manager"]
+    }
+  },
+  {
+    "id": "50",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS management tool would you use to install a patch across thousands of EC2 instances all at once?",
+      "answers": ["CloudWatch", "CloudFormation", "CloudTrail", "Config", "OpsWorks", "Service Catalog", "Systems Manager", "Trusted Advisor", "Managed Services"],
+      "correctAnswer": ["Systems Manager"]
+    }
+  },
+  {
+    "id": "51",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS management tool gives you advice around security, cost optimization, performance, and fault tolerance?",
+      "answers": ["CloudWatch", "CloudFormation", "CloudTrail", "Config", "OpsWorks", "Service Catalog", "Systems Manager", "Trusted Advisor", "Managed Services"],
+      "correctAnswer": ["Trusted Advisor"]
+    }
+  },
+  {
+    "id": "52",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS management tool lets AWS manage your EC2 instances, auto-scaling, load balancers, etc?",
+      "answers": ["CloudWatch", "CloudFormation", "CloudTrail", "Config", "OpsWorks", "Service Catalog", "Systems Manager", "Trusted Advisor", "Managed Services"],
+      "correctAnswer": ["Managed Services"]
+    }
+  },
+  {
+    "id": "53",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS media service transcodes videos so they appear correctly across all device types?",
+      "answers": ["Elastic Transcoder", "MediaConvert", "MediaLive", "MediaPackage", "MediaStore", "MediaTailor"],
+      "correctAnswer": ["Elastic Transcoder"]
+    }
+  },
+  {
+    "id": "54",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS media service is a file based video transcoding service?",
+      "answers": ["Elastic Transcoder", "MediaConvert", "MediaLive", "MediaPackage", "MediaStore", "MediaTailor"],
+      "correctAnswer": ["MediaConvert"]
+    }
+  },
+  {
+    "id": "55",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS media service is live video processing service?",
+      "answers": ["Elastic Transcoder", "MediaConvert", "MediaLive", "MediaPackage", "MediaStore", "MediaTailor"],
+      "correctAnswer": ["MediaLive"]
+    }
+  },
+  {
+    "id": "56",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS media service prepares and protects videos for transfer over the internet?",
+      "answers": ["Elastic Transcoder", "MediaConvert", "MediaLive", "MediaPackage", "MediaStore", "MediaTailor"],
+      "correctAnswer": ["MediaPackage"]
+    }
+  },
+  {
+    "id": "57",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS media service is a storage service that's optimized for video?",
+      "answers": ["Elastic Transcoder", "MediaConvert", "MediaLive", "MediaPackage", "MediaStore", "MediaTailor"],
+      "correctAnswer": ["MediaStore"]
+    }
+  },
+  {
+    "id": "58",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS media service allows targeted advertising in video streams?",
+      "answers": ["Elastic Transcoder", "MediaConvert", "MediaLive", "MediaPackage", "MediaStore", "MediaTailor"],
+      "correctAnswer": ["MediaTailor"]
+    }
+  },
+  {
+    "id": "59",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS machine learning service makes it easy for developers to use deep learning (neaural networks) when coding their applications?",
+      "answers": ["SageMaker", "Comprehend", "DeepLens", "Lex", "Machine Learning", "Polly", "Rekognition", "Amazon Translate", "Amazon Transcribe"],
+      "correctAnswer": ["SageMaker"]
+    }
+  },
+  {
+    "id": "60",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS machine learning service does sentiment analysis of your data?",
+      "answers": ["SageMaker", "Comprehend", "DeepLens", "Lex", "Machine Learning", "Polly", "Rekognition", "Amazon Translate", "Amazon Transcribe"],
+      "correctAnswer": ["Comprehend"]
+    }
+  },
+  {
+    "id": "61",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS machine learning service is an artificially aware camera that can figure out what it's looking at using deep learning?",
+      "answers": ["SageMaker", "Comprehend", "DeepLens", "Lex", "Machine Learning", "Polly", "Rekognition", "Amazon Translate", "Amazon Transcribe"],
+      "correctAnswer": ["DeepLens"]
+    }
+  },
+  {
+    "id": "62",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS machine learning service is service that powers Alexa?",
+      "answers": ["SageMaker", "Comprehend", "DeepLens", "Lex", "Machine Learning", "Polly", "Rekognition", "Amazon Translate", "Amazon Transcribe"],
+      "correctAnswer": ["Lex"]
+    }
+  },
+  {
+    "id": "63",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS machine learning service provides an artificially intelligent chat capability?",
+      "answers": ["SageMaker", "Comprehend", "DeepLens", "Lex", "Machine Learning", "Polly", "Rekognition", "Amazon Translate", "Amazon Transcribe"],
+      "correctAnswer": ["Lex"]
+    }
+  },
+  {
+    "id": "64",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS machine learning service is a less sophisticated 'learning' tool than deep learning that uses data set analysis to predict outcome when new data sets are applied to it?",
+      "answers": ["SageMaker", "Comprehend", "DeepLens", "Lex", "Machine Learning", "Polly", "Rekognition", "Amazon Translate", "Amazon Transcribe"],
+      "correctAnswer": ["Machine Learning"]
+    }
+  },
+  {
+    "id": "65",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS machine learning service is the service that Amazon uses to recommend new products to its users?",
+      "answers": ["SageMaker", "Comprehend", "DeepLens", "Lex", "Machine Learning", "Polly", "Rekognition", "Amazon Translate", "Amazon Transcribe"],
+      "correctAnswer": ["Machine Learning"]
+    }
+  },
+  {
+    "id": "66",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS machine learning service takes text and turns it into speech?",
+      "answers": ["SageMaker", "Comprehend", "DeepLens", "Lex", "Machine Learning", "Polly", "Rekognition", "Amazon Translate", "Amazon Transcribe"],
+      "correctAnswer": ["Polly"]
+    }
+  },
+  {
+    "id": "67",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS machine learning service provides video and image contect recognition?",
+      "answers": ["SageMaker", "Comprehend", "DeepLens", "Lex", "Machine Learning", "Polly", "Rekognition", "Amazon Translate", "Amazon Transcribe"],
+      "correctAnswer": ["Rekognition"]
+    }
+  },
+  {
+    "id": "68",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS machine learning service is Amazon's machine translation service which translates one language into another?",
+      "answers": ["SageMaker", "Comprehend", "DeepLens", "Lex", "Machine Learning", "Polly", "Rekognition", "Amazon Translate", "Amazon Transcribe"],
+      "correctAnswer": ["Amazon Translate"]
+    }
+  },
+  {
+    "id": "69",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS machine learning service automates speech recognition to produce transcription of video audio?",
+      "answers": ["SageMaker", "Comprehend", "DeepLens", "Lex", "Machine Learning", "Polly", "Rekognition", "Amazon Translate", "Amazon Transcribe"],
+      "correctAnswer": ["Amazon Transcribe"]
+    }
+  },
+  {
+    "id": "70",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS analytics service allows you to run SQL queries against data in your S3 buckets?",
+      "answers": ["Athena", "EMR", "CloudSearch", "Elasticsearch", "Kinesis", "Kinesis Video Streams", "QuickSight", "Data Pipeline", "Glue"],
+      "correctAnswer": ["Athena"]
+    }
+  },
+  {
+    "id": "71",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS analytics service is used for processing large anounts of data for big data solutions that uses many servers (running hadoop) to chop up your data for analysis?",
+      "answers": ["Athena", "EMR", "CloudSearch", "Elasticsearch", "Kinesis", "Kinesis Video Streams", "QuickSight", "Data Pipeline", "Glue"],
+      "correctAnswer": ["EMR"]
+    }
+  },
+  {
+    "id": "72",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS analytics service manages all the server resources needed to build and deploy search indexes. All you have to do is upload your data to a search domain and start submitting requests?",
+      "answers": ["Athena", "EMR", "CloudSearch", "Elasticsearch", "Kinesis", "Kinesis Video Streams", "QuickSight", "Data Pipeline", "Glue"],
+      "correctAnswer": ["CloudSearch"]
+    }
+  },
+  {
+    "id": "73",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS analytics service is a popular open-source search and analytics engine for use cases such as log analytics, real-time application monitoring, and clickstream analytics?",
+      "answers": ["Athena", "EMR", "CloudSearch", "Elasticsearch", "Kinesis", "Kinesis Video Streams", "QuickSight", "Data Pipeline", "Glue"],
+      "correctAnswer": ["Elasticsearch"]
+    }
+  },
+  {
+    "id": "74",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS analytics service is a way of ingesting large amounts of data into AWS , like social media feeds or tweets?",
+      "answers": ["Athena", "EMR", "CloudSearch", "Elasticsearch", "Kinesis", "Kinesis Video Streams", "QuickSight", "Data Pipeline", "Glue"],
+      "correctAnswer": ["Kinesis"]
+    }
+  },
+  {
+    "id": "75",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS analytics service is a way of ingesting video streams and do processing on the data?",
+      "answers": ["Athena", "EMR", "CloudSearch", "Elasticsearch", "Kinesis", "Kinesis Video Streams", "QuickSight", "Data Pipeline", "Glue"],
+      "correctAnswer": ["Kinesis Video Streams"]
+    }
+  },
+  {
+    "id": "76",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS analytics service is Amazon's business intelligence tool, similar to Tableau?",
+      "answers": ["Athena", "EMR", "CloudSearch", "Elasticsearch", "Kinesis", "Kinesis Video Streams", "QuickSight", "Data Pipeline", "Glue"],
+      "correctAnswer": ["QuickSight"]
+    }
+  },
+  {
+    "id": "77",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS analytics service gives you a way of moving your data between different AWS services?",
+      "answers": ["Athena", "EMR", "CloudSearch", "Elasticsearch", "Kinesis", "Kinesis Video Streams", "QuickSight", "Data Pipeline", "Glue"],
+      "correctAnswer": ["Data Pipeline"]
+    }
+  },
+  {
+    "id": "78",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS analytics service is used for Extract/Transform/Load types of analytics processing?",
+      "answers": ["Athena", "EMR", "CloudSearch", "Elasticsearch", "Kinesis", "Kinesis Video Streams", "QuickSight", "Data Pipeline", "Glue"],
+      "correctAnswer": ["Glue"]
+    }
   }
 ]
