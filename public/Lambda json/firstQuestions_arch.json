@@ -1013,7 +1013,7 @@
     }
   },
   {
-    "id": "92",
+    "id": "93",
     "category": "Cloud Concepts",
     "info": {
       "subcategory": "Define AWS Cloud",
@@ -1024,7 +1024,7 @@
     }
   },
   {
-    "id": "93",
+    "id": "94",
     "category": "Cloud Concepts",
     "info": {
       "subcategory": "Define AWS Cloud",
@@ -1035,7 +1035,7 @@
     }
   },
   {
-    "id": "94",
+    "id": "95",
     "category": "Cloud Concepts",
     "info": {
       "subcategory": "Define AWS Cloud",
@@ -1046,7 +1046,7 @@
     }
   },
   {
-    "id": "95",
+    "id": "96",
     "category": "Cloud Concepts",
     "info": {
       "subcategory": "Define AWS Cloud",
@@ -1054,6 +1054,270 @@
       "question": "What AWS security service can be used to manage compliance agreements and you can use it to download SOC controls reports or Payment Card Industry reports?",
       "answers": ["IAM", "Cognito", "GuardDuty", "Inspector", "Macie", "Certificate Manager", "CloudHSM", "Directory Service", "WAF", "Shield", "Advanced Shield", "Artifact"],
       "correctAnswer": ["Artifact"]
+    }
+  },
+  {
+    "id": "97",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS mobile service is a mobile management console that helps you use the AWS SDK to connect your mobile apps to your AWS back-end?",
+      "answers": ["Mobile Hub", "Pinpoint", "AWS AppSync", "Device Farm", "Mobile Analytics"],
+      "correctAnswer": ["Mobile Hub"]
+    }
+  },
+  {
+    "id": "98",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS mobile service is a way of using targeted push notifications to drive mobile engagement?",
+      "answers": ["Mobile Hub", "Pinpoint", "AWS AppSync", "Device Farm", "Mobile Analytics"],
+      "correctAnswer": ["Pinpoint"]
+    }
+  },
+  {
+    "id": "99",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS mobile service updates data in web and mobile applications in real time and updates data for offline users as soon as they reconnect?",
+      "answers": ["Mobile Hub", "Pinpoint", "AWS AppSync", "Device Farm", "Mobile Analytics"],
+      "correctAnswer": ["AWS AppSync"]
+    }
+  },
+  {
+    "id": "100",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS mobile service gives you a way of testing your apps on real live devices?",
+      "answers": ["Mobile Hub", "Pinpoint", "AWS AppSync", "Device Farm", "Mobile Analytics"],
+      "correctAnswer": ["Device Farm"]
+    }
+  },
+  {
+    "id": "101",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS mobile service gives you an analytics service for mobile?",
+      "answers": ["Mobile Hub", "Pinpoint", "AWS AppSync", "Device Farm", "Mobile Analytics"],
+      "correctAnswer": ["Mobile Analytics"]
+    }
+  },
+  {
+    "id": "102",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS AR/VR service is used for AR and VR application design and allows you to use a common set of tools to create these environments?",
+      "answers": ["Mobile Hub", "Sumerian", "Pinpoint", "AWS AppSync", "Device Farm", "Mobile Analytics"],
+      "correctAnswer": ["Sumerian"]
+    }
+  },
+  {
+    "id": "103",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS application integration service gives you a way of managing your Lambda functions by using steps to move through them?",
+      "answers": ["Step Functions", "Amazon MQ", "SNS", "SQS", "SWF"],
+      "correctAnswer": ["Step Functions"]
+    }
+  },
+  {
+    "id": "104",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS application integration service gives you a way of passing data through message queues?",
+      "answers": ["Step Functions", "Amazon MQ", "SNS", "SQS", "SWF"],
+      "correctAnswer": ["Amazon MQ"]
+    }
+  },
+  {
+    "id": "105",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS application integration service is a notification service used with alarms to send notification of alarm trigger?",
+      "answers": ["Step Functions", "Amazon MQ", "SNS", "SQS", "SWF"],
+      "correctAnswer": ["SNS"]
+    }
+  },
+  {
+    "id": "106",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS application integration service is a way of decoupling your infrastructure through queues?",
+      "answers": ["Step Functions", "Amazon MQ", "SNS", "SQS", "SWF"],
+      "correctAnswer": ["SQS"]
+    }
+  },
+  {
+    "id": "107",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS application integration service is a way of managing a workflow such as package order processing in a warehouse?",
+      "answers": ["Step Functions", "Amazon MQ", "SNS", "SQS", "SWF"],
+      "correctAnswer": ["SWF"]
+    }
+  },
+  {
+    "id": "108",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS customer engagement service is a contact center as a service which can have dynamic, periodic, and natural customer engagement at any scale?",
+      "answers": ["Alexa for Business", "Connect", "Simple Email Service", "SWF"],
+      "correctAnswer": ["Connect"]
+    }
+  },
+  {
+    "id": "109",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS customer engagement service is a way of sending large amounts of email?",
+      "answers": ["Alexa for Business", "Connect", "Simple Email Service", "SWF"],
+      "correctAnswer": ["Simple Email Service"]
+    }
+  },
+  {
+    "id": "110",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS business productivity service can be used to start your meeting by dialing into a meeting room?",
+      "answers": ["Alexa for Business", "Chime", "Work Docs", "Work Mail"],
+      "correctAnswer": ["Alexa for Business"]
+    }
+  },
+  {
+    "id": "111",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS business productivity service is a video conferencing service?",
+      "answers": ["Alexa for Business", "Chime", "Work Docs", "Work Mail"],
+      "correctAnswer": ["Chime"]
+    }
+  },
+  {
+    "id": "112",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS business productivity service is like a dropbox service for AWS that gives you a way of securely ?storing your work related documents",
+      "answers": ["Alexa for Business", "Chime", "Work Docs", "Work Mail"],
+      "correctAnswer": ["Work Docs"]
+    }
+  },
+  {
+    "id": "113",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS business productivity service is Amazon's version of Office 365 and gives you a way of using your email through Amazon similar to gmail",
+      "answers": ["Alexa for Business", "Chime", "Work Docs", "Work Mail"],
+      "correctAnswer": ["Work Mail"]
+    }
+  },
+  {
+    "id": "114",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS desktop and app streaming service is a VDI solution that gives you a way of running the desktop OS in the AWS cloud",
+      "answers": ["Alexa for Business", "Workspaces", "AppStream 2.0", "Work Mail"],
+      "correctAnswer": ["Workspaces"]
+    }
+  },
+  {
+    "id": "115",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS desktop and app streaming service gives you a way of running desktop apps in the cloud and streaming its visuals to your user device, similar to Citrix",
+      "answers": ["Alexa for Business", "Workspaces", "AppStream 2.0", "Work Mail"],
+      "correctAnswer": ["AppStream 2.0"]
+    }
+  },
+  {
+    "id": "116",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS internet of things service gives you a way for devices to send sensor information to AWS resources",
+      "answers": ["IoT", "IoT Device Management", "Amazon FreeRTOS", "Greengrass"],
+      "correctAnswer": ["IoT"]
+    }
+  },
+  {
+    "id": "117",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS internet of things service gives you a way to manage iOT devices at scale",
+      "answers": ["IoT", "IoT Device Management", "Amazon FreeRTOS", "Greengrass"],
+      "correctAnswer": ["IoT Device Management"]
+    }
+  },
+  {
+    "id": "118",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS internet of things service gives you an operating system for your microcontrollers",
+      "answers": ["IoT", "IoT Device Management", "Amazon FreeRTOS", "Greengrass"],
+      "correctAnswer": ["Amazon FreeRTOS"]
+    }
+  },
+  {
+    "id": "119",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS internet of things service is software that lets you run local compute messaging, data caching, sync, and machine learning interface capabilities for connected devices",
+      "answers": ["IoT", "IoT Device Management", "Amazon FreeRTOS", "Greengrass"],
+      "correctAnswer": ["Greengrass"]
+    }
+  },
+  {
+    "id": "120",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS game development service is a service to help you build games in the AWS cloud",
+      "answers": ["IoT", "IoT Device Management", "Amazon FreeRTOS", "Greengrass", "GameLift"],
+      "correctAnswer": ["GameLift"]
     }
   }
 ]
