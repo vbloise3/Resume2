@@ -857,5 +857,203 @@
       "answers": ["Athena", "EMR", "CloudSearch", "Elasticsearch", "Kinesis", "Kinesis Video Streams", "QuickSight", "Data Pipeline", "Glue"],
       "correctAnswer": ["Glue"]
     }
+  },
+  {
+    "id": "79",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS security service enables you to manage access to AWS services and resources securely?",
+      "answers": ["IAM", "Cognito", "GuardDuty", "Inspector", "Macie", "Certificate Manager", "CloudHSM", "Directory Service", "WAF", "Shield", "Advanced Shield", "Artifact"],
+      "correctAnswer": ["IAM"]
+    }
+  },
+  {
+    "id": "80",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "Once authenticated you can use this AWS security service to request temporary access to AWS resources like DynamoDB tables?",
+      "answers": ["IAM", "Cognito", "GuardDuty", "Inspector", "Macie", "Certificate Manager", "CloudHSM", "Directory Service", "WAF", "Shield", "Advanced Shield", "Artifact"],
+      "correctAnswer": ["Cognito"]
+    }
+  },
+  {
+    "id": "81",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS security service is an authentication service that gives temporary access to applications such as mobile apps and web apps?",
+      "answers": ["IAM", "Cognito", "GuardDuty", "Inspector", "Macie", "Certificate Manager", "CloudHSM", "Directory Service", "WAF", "Shield", "Advanced Shield", "Artifact"],
+      "correctAnswer": ["Cognito"]
+    }
+  },
+  {
+    "id": "82",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS security service monitors for malicious activity on your AWS account?",
+      "answers": ["IAM", "Cognito", "GuardDuty", "Inspector", "Macie", "Certificate Manager", "CloudHSM", "Directory Service", "WAF", "Shield", "Advanced Shield", "Artifact"],
+      "correctAnswer": ["GuardDuty"]
+    }
+  },
+  {
+    "id": "83",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS security service is an agent you install on your virtual machines or EC2 instances and then run tests on the instances such as security vulnerability tests; these tests can be scheduled?",
+      "answers": ["IAM", "Cognito", "GuardDuty", "Inspector", "Macie", "Certificate Manager", "CloudHSM", "Directory Service", "WAF", "Shield", "Advanced Shield", "Artifact"],
+      "correctAnswer": ["Inspector"]
+    }
+  },
+  {
+    "id": "84",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS security service generates reports giving severity list of vulnerabilities in your EC2 instances?",
+      "answers": ["IAM", "Cognito", "GuardDuty", "Inspector", "Macie", "Certificate Manager", "CloudHSM", "Directory Service", "WAF", "Shield", "Advanced Shield", "Artifact"],
+      "correctAnswer": ["Inspector"]
+    }
+  },
+  {
+    "id": "85",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS security service scans your S3 buckets and looks for personal identifiable information (PII)?",
+      "answers": ["IAM", "Cognito", "GuardDuty", "Inspector", "Macie", "Certificate Manager", "CloudHSM", "Directory Service", "WAF", "Shield", "Advanced Shield", "Artifact"],
+      "correctAnswer": ["Macie"]
+    }
+  },
+  {
+    "id": "86",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS security service gives you a way to manage your SSL certificates?",
+      "answers": ["IAM", "Cognito", "GuardDuty", "Inspector", "Macie", "Certificate Manager", "CloudHSM", "Directory Service", "WAF", "Shield", "Advanced Shield", "Artifact"],
+      "correctAnswer": ["Certificate Manager"]
+    }
+  },
+  {
+    "id": "87",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS security service gives you your SSL certificates for free if you register your domain through Route 53?",
+      "answers": ["IAM", "Cognito", "GuardDuty", "Inspector", "Macie", "Certificate Manager", "CloudHSM", "Directory Service", "WAF", "Shield", "Advanced Shield", "Artifact"],
+      "correctAnswer": ["Certificate Manager"]
+    }
+  },
+  {
+    "id": "88",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS security service is a hardware security module (HSM) or dedicated hardware used to store your keys?",
+      "answers": ["IAM", "Cognito", "GuardDuty", "Inspector", "Macie", "Certificate Manager", "CloudHSM", "Directory Service", "WAF", "Shield", "Advanced Shield", "Artifact"],
+      "correctAnswer": ["CloudHSM"]
+    }
+  },
+  {
+    "id": "89",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS security service gives you a way of integrating your Microsoft Active Directory services with your AWS services?",
+      "answers": ["IAM", "Cognito", "GuardDuty", "Inspector", "Macie", "Certificate Manager", "CloudHSM", "Directory Service", "WAF", "Shield", "Advanced Shield", "Artifact"],
+      "correctAnswer": ["Directory Service"]
+    }
+  },
+  {
+    "id": "90",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS security service is like a layer 7 firewall which stops cross-site scripting, sql injection and looks at the application layer to detect malicious user behavior?",
+      "answers": ["IAM", "Cognito", "GuardDuty", "Inspector", "Macie", "Certificate Manager", "CloudHSM", "Directory Service", "WAF", "Shield", "Advanced Shield", "Artifact"],
+      "correctAnswer": ["WAF"]
+    }
+  },
+  {
+    "id": "91",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS security service do you get by default when using CloudFront, load balancers, and Route 53?",
+      "answers": ["IAM", "Cognito", "GuardDuty", "Inspector", "Macie", "Certificate Manager", "CloudHSM", "Directory Service", "WAF", "Shield", "Advanced Shield", "Artifact"],
+      "correctAnswer": ["Shield"]
+    }
+  },
+  {
+    "id": "92",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 2",
+      "question": "What AWS security services give you DDoS mitigation?",
+      "answers": ["IAM", "Cognito", "GuardDuty", "Inspector", "Macie", "Certificate Manager", "CloudHSM", "Directory Service", "WAF", "Shield", "Advanced Shield", "Artifact"],
+      "correctAnswer": ["Shield", "Advanced Shield"]
+    }
+  },
+  {
+    "id": "92",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS security service gives you a dedicated 24x7 team to help you prevent DDoS attacks?",
+      "answers": ["IAM", "Cognito", "GuardDuty", "Inspector", "Macie", "Certificate Manager", "CloudHSM", "Directory Service", "WAF", "Shield", "Advanced Shield", "Artifact"],
+      "correctAnswer": ["Advanced Shield"]
+    }
+  },
+  {
+    "id": "93",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "If you are attacked by a DDoS attack and you are using which AWS security service will Amazon then not charge you for your account activity related to the DDoS attack?",
+      "answers": ["IAM", "Cognito", "GuardDuty", "Inspector", "Macie", "Certificate Manager", "CloudHSM", "Directory Service", "WAF", "Shield", "Advanced Shield", "Artifact"],
+      "correctAnswer": ["Advanced Shield"]
+    }
+  },
+  {
+    "id": "94",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS security service is used for audit and compliance; is a portal to download and access AWS compliance reports?",
+      "answers": ["IAM", "Cognito", "GuardDuty", "Inspector", "Macie", "Certificate Manager", "CloudHSM", "Directory Service", "WAF", "Shield", "Advanced Shield", "Artifact"],
+      "correctAnswer": ["Artifact"]
+    }
+  },
+  {
+    "id": "95",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What AWS security service can be used to manage compliance agreements and you can use it to download SOC controls reports or Payment Card Industry reports?",
+      "answers": ["IAM", "Cognito", "GuardDuty", "Inspector", "Macie", "Certificate Manager", "CloudHSM", "Directory Service", "WAF", "Shield", "Advanced Shield", "Artifact"],
+      "correctAnswer": ["Artifact"]
+    }
   }
 ]
