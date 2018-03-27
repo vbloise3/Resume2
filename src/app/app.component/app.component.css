@@ -88,6 +88,14 @@ mat-sidenav-container.m2app-dark {
   margin: 1em;
   margin-top: 0.75em;
 }
+
+.mdCertImg {
+  width: 286px;
+  height: 42px;
+  margin: 0.5em;
+  margin-top: 1.75em;
+}
+
 .mdCardImgInline {
   width: 100px;
   height: 62px;
@@ -264,6 +272,10 @@ ul {
 
 .transparentProfilePic {
   content: url("../../../public/images/VinceBloiseTransparent.png");
+}
+
+.certPic {
+  content: url("../../../public/images/AWS_Certified_Logo_294x230_Color.png");
 }
 
 /* ------------------fxLayout Example Styles----------------------- */
