@@ -1605,5 +1605,280 @@
       "answers": ["AWS CloudTrail", "AWS Config", "Amazon CloudWatch", "Amazon GuardDuty", "VPC Flow Logs", "Amazon Macie"],
       "correctAnswer": ["Amazon Macie"]
     }
+  },
+  {
+    "id": "147",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "IAM",
+      "questionType": "multiple choice 1",
+      "question": "What is IAM?",
+      "answers": ["Allows you to manage users and their level of access to the AWS console", "Defines EC2 storage types", "Gives you control of billing alarms", "Gives you authority over combined billing"],
+      "correctAnswer": ["Allows you to manage users and their level of access to the AWS console"]
+    }
+  },
+  {
+    "id": "148",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "IAM",
+      "questionType": "multiple choice 4",
+      "question": "IAM gives you which of the following?",
+      "answers": ["Centralized control of your AWS account", "Granular permissions", "Identity federation (including Active Directory, Facebook, Linkedin, etc.)", "Use of Multifactor Authentication", "Billing alarms"],
+      "correctAnswer": ["Centralized control of your AWS account", "Granular permissions", "Identity federation (including Active Directory, Facebook, Linkedin, etc.)", "Use of Multifactor Authentication"]
+    }
+  },
+  {
+    "id": "149",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "IAM",
+      "questionType": "multiple choice 4",
+      "question": "IAM gives you which of the following?",
+      "answers": ["Shared access to your AWS account", "Provide temporary access for users/devices and services", "Setup password rotation policy", "Supports PCI DSS compliance", "Resource monitoring"],
+      "correctAnswer": ["Shared access to your AWS account", "Provide temporary access for users/devices and services", "Setup password rotation policy", "Supports PCI DSS compliance"]
+    }
+  },
+  {
+    "id": "150",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "IAM",
+      "questionType": "multiple choice 1",
+      "question": "In IAM what is a user?",
+      "answers": ["Permanent resource that access AWS resources", "A collection of users under one set of permissions", "A temporary entity (person or machine/software) in the IAM service", "A document that defines one or more permissions"],
+      "correctAnswer": ["Permanent resource that access AWS resources"]
+    }
+  },
+  {
+    "id": "151",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "IAM",
+      "questionType": "multiple choice 1",
+      "question": "In IAM what is a group?",
+      "answers": ["Permanent resource that access AWS resources", "A collection of users under one set of permissions", "A temporary entity (person or machine/software) in the IAM service", "A document that defines one or more permissions"],
+      "correctAnswer": ["A collection of users under one set of permissions"]
+    }
+  },
+  {
+    "id": "152",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "IAM",
+      "questionType": "multiple choice 1",
+      "question": "In IAM what is a role?",
+      "answers": ["Permanent resource that access AWS resources", "A collection of users under one set of permissions", "A temporary entity (person or machine/software) in the IAM service", "A document that defines one or more permissions"],
+      "correctAnswer": ["A temporary entity (person or machine/software) in the IAM service"]
+    }
+  },
+  {
+    "id": "153",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "IAM",
+      "questionType": "multiple choice 1",
+      "question": "In IAM what is a policy?",
+      "answers": ["Permanent resource that access AWS resources", "A collection of users under one set of permissions", "A temporary entity (person or machine/software) in the IAM service", "A document that defines one or more permissions"],
+      "correctAnswer": ["A document that defines one or more permissions"]
+    }
+  },
+  {
+    "id": "154",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "IAM",
+      "questionType": "multiple choice 1",
+      "question": "IAM is a _____ resource, not associated with any particular region?",
+      "answers": ["global", "regional", "local", "specific"],
+      "correctAnswer": ["global"]
+    }
+  },
+  {
+    "id": "155",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "IAM",
+      "questionType": "multiple choice 1",
+      "question": "Your account number is embedded in what IAM property, which you can customize to an account alias?",
+      "answers": ["IAM user sign-in link", "IAM root role", "IAM admin group", "Account owners policy document"],
+      "correctAnswer": ["IAM user sign-in link"]
+    }
+  },
+  {
+    "id": "156",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "IAM",
+      "questionType": "multiple choice 2",
+      "question": "Which apps can you use as an MFA tool with IAM for iOS and Windows phones?",
+      "answers": ["Google Authenticator", "Authenticator", "MFA App", "MFA Man"],
+      "correctAnswer": ["Google Authenticator", "Authenticator"]
+    }
+  },
+  {
+    "id": "157",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "IAM",
+      "questionType": "multiple choice 2",
+      "question": "Which keys do you use to programatically use AWS services through the CLI and APIs?",
+      "answers": ["Access Key ID", "Secret Access Key", "Root Access Key", "Admin Access Key"],
+      "correctAnswer": ["Access Key ID", "Secret Access Key"]
+    }
+  },
+  {
+    "id": "158",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "IAM",
+      "questionType": "multiple choice 1",
+      "question": "You can use the Access Key ID and Secret Access Key to login to the AWS console?",
+      "answers": ["true", "false"],
+      "correctAnswer": ["false"]
+    }
+  },
+  {
+    "id": "159",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "IAM",
+      "questionType": "multiple choice 1",
+      "question": "You can use the Access Key ID and Secret Access Key for programatic access to AWS resources?",
+      "answers": ["true", "false"],
+      "correctAnswer": ["true"]
+    }
+  },
+  {
+    "id": "160",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "IAM",
+      "questionType": "multiple choice 1",
+      "question": "In IAM you use which feature to manage passwords?",
+      "answers": ["Apply an IAM password policy", "Manage IAM resources", "Manage IAM users", "Manage IAM roles"],
+      "correctAnswer": ["Apply an IAM password policy"]
+    }
+  },
+  {
+    "id": "161",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "IAM",
+      "questionType": "multiple choice 5",
+      "question": "The IAM dashboard Security Tasks are which of these?",
+      "answers": ["Activate MFA on your Root account", "Create individual IAM users", "Use groups to assign permissions", "Apply an IAM password policy", "Rotate your access keys", "Delete your access keys"],
+      "correctAnswer": ["Activate MFA on your Root account", "Create individual IAM users", "Use groups to assign permissions", "Apply an IAM password policy", "Rotate your access keys"]
+    }
+  },
+  {
+    "id": "162",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "IAM",
+      "questionType": "multiple choice 1",
+      "question": "In IAM, _____ are a way to grant permissions to entities you trust?",
+      "answers": ["Roles", "Policies", "Users", "Groups"],
+      "correctAnswer": ["Roles"]
+    }
+  },
+  {
+    "id": "163",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "IAM",
+      "questionType": "multiple choice 4",
+      "question": "In IAM you can use roles to do which of these?",
+      "answers": ["Allow an IAM user from another account to access resources in this account", "Allow application code running in an EC2 instance that needs to perform actions on AWS resources (like S3)", "Allow an AWS service that needs to act on resources in your account to provide its features", "Allow users from a corporate directory who use identity federation with SAML", "Allow users to create billing alarms"],
+      "correctAnswer": ["Allow an IAM user from another account to access resources in this account", "Allow application code running in an EC2 instance that needs to perform actions on AWS resources (like S3)", "Allow an AWS service that needs to act on resources in your account to provide its features", "Allow users from a corporate directory who use identity federation with SAML"]
+    }
+  },
+  {
+    "id": "164",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "IAM",
+      "questionType": "multiple choice 1",
+      "question": "In IAM roles issue keys that are _____, making them a more secure way to grant access?",
+      "answers": ["valid for short durations", "valid for extended durations", "valid for indefinite duration", "invalid for short durations"],
+      "correctAnswer": ["valid for short durations"]
+    }
+  },
+  {
+    "id": "165",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Cloud Foundation",
+      "questionType": "multiple choice 1",
+      "question": "Which AWS service do you use to monitor billing through Billing Alarms using Billing Alerts?",
+      "answers": ["CloudWatch", "IAM", "CloudFormation", "CloudTrail"],
+      "correctAnswer": ["CloudWatch"]
+    }
+  },
+  {
+    "id": "166",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "IAM",
+      "questionType": "multiple choice 4",
+      "question": "IAM consists of the following?",
+      "answers": ["CloudWatch", "Users", "Roles", "Groups", "Policy Documents"],
+      "correctAnswer": ["Users", "Roles", "Groups", "Policy Documents"]
+    }
+  },
+  {
+    "id": "167",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "IAM",
+      "questionType": "multiple choice 1",
+      "question": "In IAM you can apply ______ to users, groups, and roles?",
+      "answers": ["CloudWatch", "Keys", "Passwords", "Policy Documents"],
+      "correctAnswer": ["Policy Documents"]
+    }
+  },
+  {
+    "id": "168",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "IAM",
+      "questionType": "multiple choice 1",
+      "question": "In IAM policy documents are made up of ______ containing key: value pairs?",
+      "answers": ["JSON", "JavaScript", "XML", "CSV"],
+      "correctAnswer": ["JSON"]
+    }
+  },
+  {
+    "id": "169",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "IAM",
+      "questionType": "multiple choice 1",
+      "question": "In IAM new users have what level of permissions when they are first created?",
+      "answers": ["no permissions", "admin permissions", "power user permissions", "root permissions"],
+      "correctAnswer": ["no permissions"]
+    }
+  },
+  {
+    "id": "170",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "IAM",
+      "questionType": "multiple choice 2",
+      "question": "In IAM new users are assigned what when they are first created?",
+      "answers": ["Access Key ID", "Secret Access Key", "Admin Access Key", "Permissions Key"],
+      "correctAnswer": ["Access Key ID", "Secret Access Key"]
+    }
+  },
+  {
+    "id": "171",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "IAM",
+      "questionType": "multiple choice 1",
+      "question": "In IAM you can create and customize your own what?",
+      "answers": ["Password rotation policy", "Secret Access Key", "Admin Access Key", "Permissions Key"],
+      "correctAnswer": ["Password rotation policy"]
+    }
   }
 ]

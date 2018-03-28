@@ -285,6 +285,50 @@ export class Ca2QuestionComponent implements OnInit {
         this.correctAnswerIndicator = 'Wrong Answer';
         this.correctAnswerBool = false;
       }
+    } else if (this.getSelectCount === 5) {
+      if ( ( this.qandaArray[this.currentQuestion].info.correctAnswer.indexOf(this.selectedValue[0]) > -1 )
+        && ( this.qandaArray[this.currentQuestion].info.correctAnswer.indexOf(this.selectedValue[1]) > -1 )
+        && ( this.qandaArray[this.currentQuestion].info.correctAnswer.indexOf(this.selectedValue[2]) > -1 )
+        && ( this.qandaArray[this.currentQuestion].info.correctAnswer.indexOf(this.selectedValue[3]) > -1 )
+        && ( this.qandaArray[this.currentQuestion].info.correctAnswer.indexOf(this.selectedValue[4]) > -1 ) ) {
+        // alert('correct answer! ' + this.qandaArray[this.currentQuestion].info.correctAnswer[0] + '; '
+        // + this.qandaArray[this.currentQuestion].info.correctAnswer[1] + '; '
+        //  + this.qandaArray[this.currentQuestion].info.correctAnswer[2] );
+        const currentThis = this;
+        let counter = 0;
+        this.qandaArray[this.currentQuestion].info.answers.forEach( function (answer) {
+          if ( ( currentThis.qandaArray[currentThis.currentQuestion].info.correctAnswer.indexOf(answer) > -1) ) {
+            currentThis.correctOrNot[counter] = true;
+          } else {
+            currentThis.correctOrNot[counter] = false;
+          }
+          // alert('correct? ' + currentThis.correctOrNot[counter]);
+          counter++;
+        });
+        this.getAnswers = this.qandaArray[this.currentQuestion].info.answers;
+        this.correctAnswerIndicator = 'Correct Answer!';
+        this.correctAnswerBool = true;
+        // this.totalCorrect++;
+      } else {
+        // alert('wrong answer. Correct answer: ' + this.qandaArray[this.currentQuestion].info.correctAnswer[0] + '; '
+        //  + this.qandaArray[this.currentQuestion].info.correctAnswer[1] + '; '
+        //  + this.qandaArray[this.currentQuestion].info.correctAnswer[2]
+        // );
+        const currentThis = this;
+        let counter = 0;
+        this.qandaArray[this.currentQuestion].info.answers.forEach( function (answer) {
+          if ( ( currentThis.qandaArray[currentThis.currentQuestion].info.correctAnswer.indexOf(answer) > -1) ) {
+            currentThis.correctOrNot[counter] = true;
+          } else {
+            currentThis.correctOrNot[counter] = false;
+          }
+          // alert('correct? ' + currentThis.correctOrNot[counter]);
+          counter++;
+        });
+        this.getAnswers = this.qandaArray[this.currentQuestion].info.answers;
+        this.correctAnswerIndicator = 'Wrong Answer';
+        this.correctAnswerBool = false;
+      }
     }
     if (!this.nextQuestion) {
       // draw pie showing correct versus incorrect so far
