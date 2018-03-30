@@ -1880,5 +1880,483 @@
       "answers": ["Password rotation policy", "Secret Access Key", "Admin Access Key", "Permissions Key"],
       "correctAnswer": ["Password rotation policy"]
     }
+  },
+  {
+    "id": "172",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What is an AWS region?",
+      "answers": ["A region is an independent data center, located in different countries around the globe.", "A region is a geographical area that consists of different availability zones. Each region at least two Availability Zones.", "A region is a collection of Edge Locations available in specific countries.", "A region consists of different subsets of AWS technologies. For example the compute region consists of EC2, ECS, Lambda, etc."],
+      "correctAnswer": ["A region is a geographical area that consists of different availability zones. Each region at least two Availability Zones."]
+    }
+  },
+  {
+    "id": "173",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What does an AWS Region consist of?",
+      "answers": [
+        "A console that gives you quick, global picture of your cloud computing environment.",
+        "A collection of databases that can only be accessed from a specific geographic region.",
+        "An independent collection of AWS computing resources in a defined geography.",
+        "A distinct location within a geographic area designed to provide high availability to a specific geography.",
+        "A content distribution network, which is used to distribute content to users."
+      ],
+      "correctAnswer": ["An independent collection of AWS computing resources in a defined geography."]
+    }
+  },
+  {
+    "id": "174",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "Which statement best describes Availability Zones?",
+      "answers": [
+        "Availability Zones are Content Distribution Networks.",
+        "A restricted area designed specifically for creating Virtual Private Clouds.",
+        "Two zones containing compute resources that are designed to automatically maintain synchronized copies of each other's&nbsp;data.",
+        "Distinct locations from within an AWS region that are engineered to be isolated from failures."
+      ],
+      "correctAnswer": ["Distinct locations from within an AWS region that are engineered to be isolated from failures."]
+    }
+  },
+  {
+    "id": "175",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "An AWS VPC is a component of which AWS service?",
+      "answers": [
+        "Global Infrastructure",
+        "Databases Service",
+        "Networking Service",
+        "Compute Service"
+      ],
+      "correctAnswer": ["Networking Service"]
+    }
+  },
+  {
+    "id": "176",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What is a VPC?",
+      "answers": [
+        "Virtual Public Cloud",
+        "Virtual Private Compute",
+        "Virtual Private Cloud",
+        "Virtual Private Compute"
+      ],
+      "correctAnswer": ["Virtual Private Cloud"]
+    }
+  },
+  {
+    "id": "177",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "Which AWS service is specifically designed to run a developer's code on an infrastructure that is automatically provisioned to host that code?",
+      "answers": [
+        "Elastic Beanstalk",
+        "CloudFormation",
+        "CloudTrail",
+        "CloudFormer"
+      ],
+      "correctAnswer": ["Elastic Beanstalk"]
+    }
+  },
+  {
+    "id": "178",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "Which AWS service allows you to run code without having to worry about provisioning any underlying resources (such as virtual machines, databases, etc.)",
+      "answers": [
+        "EC2",
+        "EC2 Container Service",
+        "DynamoDB",
+        "Lambda"
+      ],
+      "correctAnswer": ["Lambda"]
+    }
+  },
+  {
+    "id": "179",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "Amazon's highly scaleable DNS service is known as ________.",
+      "answers": [
+        "CloudTrail",
+        "Directory Service",
+        "Elastic Map Reduce",
+        "Route 53"
+      ],
+      "correctAnswer": ["Route 53"]
+    }
+  },
+  {
+    "id": "179",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "Which AWS compute service is specifically designed to assist you in processing large data sets?",
+      "answers": [
+        "Big Data Processing",
+        "Elasticache",
+        "EC2",
+        "Elastic Map Reduce"
+      ],
+      "correctAnswer": ["Elastic Map Reduce"]
+    }
+  },
+  {
+    "id": "180",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "What is the difference between Elastic Beanstalk & CloudFormation?",
+      "answers": [
+        "Elastic Beanstalk is a monitoring tool to view the performance of your AWS resources, where as CloudFormation is an automated provisioning engine designed to deploy entire cloud environments via a JSON script.",
+        "Elastic Beanstalk automatically handles the deployment, from capacity provisioning, load balancing, auto-scaling to application health monitoring based on the code you upload to it, where as CloudFormation is a security service designed to harden your cloud against an attack such as a DDOS",
+        "Elastic Beanstalk automatically handles the deployment, from capacity provisioning, load balancing, auto-scaling to application health monitoring based on the code you upload to it, where as CloudFormation is an automated provisioning engine designed to deploy entire cloud environments via a JSON script.",
+        "There is no difference between the two. Elastic Beanstalk was simply the code name used internally for CloudFormation, prior to the product being released."
+      ],
+      "correctAnswer": ["Elastic Beanstalk automatically handles the deployment, from capacity provisioning, load balancing, auto-scaling to application health monitoring based on the code you upload to it, where as CloudFormation is an automated provisioning engine designed to deploy entire cloud environments via a JSON script."]
+    }
+  },
+  {
+    "id": "181",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "Which AWS service is used as a CDN to distribute content around the world?",
+      "answers": [
+        "CloudFormation",
+        "CloudStream",
+        "CloudFront",
+        "CloudPush"
+      ],
+      "correctAnswer": ["CloudFront"]
+    }
+  },
+  {
+    "id": "182",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "Which of the following AWS solutions offers durable, available storage for flat files?",
+      "answers": [
+        "Kinesis",
+        "CloudFront Edge Locations",
+        "SQS",
+        "S3"
+      ],
+      "correctAnswer": ["S3"]
+    }
+  },
+  {
+    "id": "183",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "Which of the following AWS services would be the best choice for long term data archival?",
+      "answers": [
+        "S3",
+        "CloudFront",
+        "EFS",
+        "Glacier"
+      ],
+      "correctAnswer": ["Glacier"]
+    }
+  },
+  {
+    "id": "184",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "Which AWS service offers the following database engines: SQL, MySQL, MariaDB, PostgreSQL, Aurora, and Oracle?",
+      "answers": [
+        "Redshift",
+        "DynamoDB",
+        "Relational Database Service (RDS)",
+        "Kinesis"
+      ],
+      "correctAnswer": ["Relational Database Service (RDS)"]
+    }
+  },
+  {
+    "id": "185",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "Which of the following AWS services is used primarily for data warehousing?",
+      "answers": [
+        "Redshift",
+        "RDS",
+        "DynamoDB",
+        "DMS"
+      ],
+      "correctAnswer": ["Redshift"]
+    }
+  },
+  {
+    "id": "186",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "Which AWS service is used for collating large amounts of data streamed from multiple sources?",
+      "answers": [
+        "Kinesis",
+        "SQS",
+        "CloudFront",
+        "CloudCapture"
+      ],
+      "correctAnswer": ["Kinesis"]
+    }
+  },
+  {
+    "id": "187",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "You need to add users to your AWS account and set password rotation policies for these new users. Which AWS service would best fit your requirements?",
+      "answers": [
+        "Directory Services",
+        "Identity Access Management (IAM)",
+        "Inspector",
+        "Key Management Service"
+      ],
+      "correctAnswer": ["Identity Access Management (IAM)"]
+    }
+  },
+  {
+    "id": "188",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "You need to supply auditors with logs detailing the individual users that provision specific resources on your AWS platform. Which service would best meet this need?",
+      "answers": [
+        "CloudWatch",
+        "CloudFormation",
+        "CloudTrail",
+        "CloudTrailOpsWorks"
+      ],
+      "correctAnswer": ["CloudTrail"]
+    }
+  },
+  {
+    "id": "189",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "You need a configuration management service that enables your system administrators to configure and operate your web applications using Chef. Which AWS service would best suit your needs?",
+      "answers": [
+        "OpsWorks",
+        "CloudWatch",
+        "CloudFormation",
+        "CloudTrail"
+      ],
+      "correctAnswer": ["OpsWorks"]
+    }
+  },
+  {
+    "id": "190",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Define AWS Cloud",
+      "questionType": "multiple choice 1",
+      "question": "Your digital media agency needs to convert their media files in to different formats to suit different devices. Which AWS service should you consider using to meet these needs?",
+      "answers": [
+        "AppStream",
+        "SQS",
+        "SWF",
+        "Elastic Transcoder"
+      ],
+      "correctAnswer": ["Elastic Transcoder"]
+    }
+  },
+  {
+    "id": "191",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "IAM",
+      "questionType": "multiple choice 1",
+      "question": "Which statement best describes IAM",
+      "answers": [
+        "IAM allows you to manage users, groups, roles, and their corresponding level of access to the AWS Platform.",
+        "IAM allows you to manage users passwords only. AWS staff must create new users for your organisation. This is done by raising a ticket.",
+        "IAM allows you to manage permissions for AWS resources only.",
+        "IAM stands for Improvised Application Management and it allows you to deploy and manage applications in the AWS Cloud."
+      ],
+      "correctAnswer": ["IAM allows you to manage users, groups, roles, and their corresponding level of access to the AWS Platform."]
+    }
+  },
+  {
+    "id": "192",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "IAM",
+      "questionType": "multiple choice 1",
+      "question": "Which of the following is not a feature of IAM?",
+      "answers": [
+        "Centralised control of your AWS account",
+        "Integrates with existing active directory account allowing single sign on",
+        "Fine-grained access control to AWS resources",
+        "The ability to create User/Group/Roles",
+        "Allows you to set up your own password rotation policy",
+        "Allows you to setup biometric authentication, so that no passwords are required"
+      ],
+      "correctAnswer": ["Allows you to setup biometric authentication, so that no passwords are required"]
+    }
+  },
+  {
+    "id": "193",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "IAM",
+      "questionType": "multiple choice 1",
+      "question": "Power User Access allows ________.",
+      "answers": [
+        "Full Access to all AWS services and resources",
+        "Read Only access to all AWS services and resources",
+        "Access to all AWS services except for management of groups and users within IAM",
+        "Users to inspect the source code of the AWS platform"
+      ],
+      "correctAnswer": ["Access to all AWS services except for management of groups and users within IAM"]
+    }
+  },
+  {
+    "id": "194",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "IAM",
+      "questionType": "multiple choice 1",
+      "question": "What level of access does the 'root' account have?",
+      "answers": [
+        "Read Only Access",
+        "Power User Access",
+        "Administrator Access",
+        "No Access"
+      ],
+      "correctAnswer": ["Administrator Access"]
+    }
+  },
+  {
+    "id": "195",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "IAM",
+      "questionType": "multiple choice 1",
+      "question": "You are a solutions architect working for a large engineering company who are moving their existing legacy hardware to AWS. You have configured their first AWS account and you have set up IAM. Your company will be primarily based out of West Germany, however they will have a small subsidiary operating out of South Korea and you will need an AWS environment configured there as well. Which of the following statements is true?",
+      "answers": [
+        "You will then need to configure Users and Policy Documents for each region respectively.",
+        "You will need to configure Users and Policy Documents only once, as these are applied globally.",
+        "You will need to configure your users regionally, however your policy documents are global.",
+        "You will need to configure your policy documents regionally, however your users are global."
+      ],
+      "correctAnswer": ["You will need to configure Users and Policy Documents only once, as these are applied globally."]
+    }
+  },
+  {
+    "id": "196",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "IAM",
+      "questionType": "multiple choice 1",
+      "question": "You have a client who is considering moving to AWS services and do not yet have an account. What is the first thing the company should do to set up an AWS Account?",
+      "answers": [
+        "Set up an account using Cloud Search.",
+        "Set up an account using their company email address.",
+        "Set up an account via SQS (Simple Queue Service)",
+        "Set up an account via SNS (Simple Notification Service)"
+      ],
+      "correctAnswer": ["Set up an account using their company email address."]
+    }
+  },
+  {
+    "id": "197",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "IAM",
+      "questionType": "multiple choice 1",
+      "question": "You are a security administrator working for a hotel chain. You have a new member of staff who has started as a systems administrator and they will need full access to the AWS console. You have created the user account and generated the access key id and the secret access key. You have moved this user into the group where the other administrators are and you have provided the new user with their secret access key and their access key id. However when they go to log in to the AWS console, they cannot sign in. What could be the cause of this?",
+      "answers": [
+        "You have not applied the 'log in from console' policy document to the user. You must apply this first so that they can log in.",
+        "Your user is trying to log in from the AWS console from outside the corporate network. This is not possible.",
+        "You have not yet activated multi-factor authentication for the user, so by default they will not be able to log in.",
+        "You cannot log in to the AWS console using the Access Key ID and Secret Access Key, instead you must generate a password for the user and supply the user with this password, as well as the unique link to sign in to the AWS console."
+      ],
+      "correctAnswer": ["You cannot log in to the AWS console using the Access Key ID and Secret Access Key, instead you must generate a password for the user and supply the user with this password, as well as the unique link to sign in to the AWS console."]
+    }
+  },
+  {
+    "id": "198",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "IAM",
+      "questionType": "multiple choice 1",
+      "question": "What is an additional way to secure IAM for both the root login and new users alike?",
+      "answers": [
+        "Implement multi-factor Authentication for all accounts.",
+        "Store the access key id and secret access key of all users in a publically accessible plain text document on S3 of which only you and members of your organisation know the address to.",
+        "Configure the AWS console so that you can only log in to it from a specific IP Address range",
+        "Configure the AWS console so that you can only log in to it from your internal network IP address range."
+      ],
+      "correctAnswer": ["Implement multi-factor Authentication for all accounts."]
+    }
+  },
+  {
+    "id": "199",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "IAM",
+      "questionType": "multiple choice 1",
+      "question": "By default when you create a new user in the IAM console, what level of access do they have?",
+      "answers": [
+        "Read only access to all AWS services.",
+        "No access to all AWS services.",
+        "Administrator access to all AWS services.",
+        "Power user access to all AWS services"
+      ],
+      "correctAnswer": ["No access to all AWS services."]
+    }
+  },
+  {
+    "id": "200",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "IAM",
+      "questionType": "multiple choice 1",
+      "question": "In what language are policy documents written?",
+      "answers": [
+        "Node.js",
+        "Java",
+        "JSON",
+        "Python"
+      ],
+      "correctAnswer": ["JSON"]
+    }
   }
 ]
