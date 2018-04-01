@@ -1,0 +1,66 @@
+[
+  {
+    "id": "202",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "What about the design of S3 gives it it's 11 9s durability and 4 9s availability?",
+      "answers": [
+        "Your S3 data is spread across multiple devices and facilities",
+        "Amazon links its data centers with high speed connections",
+        "S3 is completely stored on solid state devices",
+        "S3 is built on RAID devices"
+      ],
+      "correctAnswer": ["Your S3 data is spread across multiple devices and facilities"]
+    }
+  },
+  {
+    "id": "203",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "How are S3 names unique across the AWS infrastructure?",
+      "answers": [
+        "S3 is a universal namespace; names must be unique globally",
+        "S3 allows you complete freedom in naming your objects",
+        "S3 uses IAM policies to make your namespace unique",
+        "S3 uses proprietary name creation logic to make your names unique"
+      ],
+      "correctAnswer": ["S3 is a universal namespace; names must be unique globally"]
+    }
+  },
+  {
+    "id": "204",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 2",
+      "question": "What are the elements of the S3 url pattern: s3-_____.amazonaws.com/_______?",
+      "answers": [
+        "region name, as in us-east-2",
+        "bucket name, as in acloudguru",
+        "account name, as in administrator",
+        "access key id"
+      ],
+      "correctAnswer": ["region name, as in us-east-2", "bucket name, as in acloudguru"]
+    }
+  },
+  {
+    "id": "205",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "When you upload a file to S3 you will receive an HTTP return code of what if the upload was successful?",
+      "answers": [
+        "200",
+        "400",
+        "500",
+        "202"
+      ],
+      "correctAnswer": ["200"]
+    }
+  }
+]
