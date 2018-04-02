@@ -62,5 +62,399 @@
       ],
       "correctAnswer": ["200"]
     }
+  },
+  {
+    "id": "206",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 3",
+      "question": "Concerning the S3 data consistency model, which of the following are true?",
+      "answers": [
+        "Read after write consistency for PUTS of new objects",
+        "Eventual consistency for overwrite PUTS and DELETES (can take some time to propagate)",
+        "Updates are atomic: you either get the new object or you get the unaltered old object",
+        "Read and write are consistent instantaneously",
+        "Immediate consistency for overwrite PUTS and DELETES (propagate immediately)"
+      ],
+      "correctAnswer": ["Read after write consistency for PUTS of new objects", "Eventual consistency for overwrite PUTS and DELETES (can take some time to propagate)", "Updates are atomic: you either get the new object or you get the unaltered old object"]
+    }
+  },
+  {
+    "id": "207",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 5",
+      "question": "S3 objects consist of the following?",
+      "answers": [
+        "Key (the name of the object)",
+        "Value (the data which is made up of a sequence of bytes)",
+        "Version ID (important for versioning)",
+        "Metadata (data about the data you are storing)",
+        "Subresources (ACL - access control lists, torrent - the bit torrent protocol)",
+        "Access Key ID (the ID used to store the object)"
+      ],
+      "correctAnswer": ["Key (the name of the object)", "Value (the data which is made up of a sequence of bytes)", "Version ID (important for versioning)", "Metadata (data about the data you are storing)", "Subresources (ACL - access control lists, torrent - the bit torrent protocol)"]
+    }
+  },
+  {
+    "id": "208",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "To make sure objects are not bunched together in storage based on their name, like in log file names, what should you do to make sure the objects are stored evenly?",
+      "answers": [
+        "Add a 'salt' to the beginning of the file name",
+        "Add a 'salt' to the end of the file name",
+        "Use the S3 API to spread the files across storage",
+        "Use an algorithm to spread the files across storage"
+      ],
+      "correctAnswer": ["Add a 'salt' to the beginning of the file name"]
+    }
+  },
+  {
+    "id": "209",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "What level of availability is S3 designed for?",
+      "answers": [
+        "99.99%",
+        "99.9%",
+        "99.999999999% - 11 9s",
+        "99.999%"
+      ],
+      "correctAnswer": ["99.99%"]
+    }
+  },
+  {
+    "id": "210",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "What level of durability is S3 designed for?",
+      "answers": [
+        "99.99%",
+        "99.9%",
+        "99.999999999% - 11 9s",
+        "99.999%"
+      ],
+      "correctAnswer": ["99.999999999% - 11 9s"]
+    }
+  },
+  {
+    "id": "211",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 2",
+      "question": "What are the techniques used to secure your S3 buckets?",
+      "answers": [
+        "Access Control Lists",
+        "Bucket Policies",
+        "Network Access Control List Groups",
+        "Security Groups",
+        "Bastion Hosts"
+      ],
+      "correctAnswer": ["Access Control Lists", "Bucket Policies"]
+    }
+  },
+  {
+    "id": "212",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "S3 has tiered availability?",
+      "answers": [
+        "True",
+        "False"
+      ],
+      "correctAnswer": ["True"]
+    }
+  },
+  {
+    "id": "213",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "S3 has Life cycle management?",
+      "answers": [
+        "True",
+        "False"
+      ],
+      "correctAnswer": ["True"]
+    }
+  },
+  {
+    "id": "214",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "S3 does NOT support versioning?",
+      "answers": [
+        "True",
+        "False"
+      ],
+      "correctAnswer": ["False"]
+    }
+  },
+  {
+    "id": "215",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "S3 does NOT support encryption?",
+      "answers": [
+        "True",
+        "False"
+      ],
+      "correctAnswer": ["False"]
+    }
+  },
+  {
+    "id": "216",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "The S3 service is designed to sustain the loss of _____ facilities concurrently?",
+      "answers": [
+        "2",
+        "1",
+        "3",
+        "4"
+      ],
+      "correctAnswer": ["2"]
+    }
+  },
+  {
+    "id": "217",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "Which tier of S3 service is for data that is accessed less frequently, but requires rapid access when needed?",
+      "answers": [
+        "S3-IA",
+        "S3",
+        "Reduced Redundancy Storage (RRS)",
+        "Glacier"
+      ],
+      "correctAnswer": ["S3-IA"]
+    }
+  },
+  {
+    "id": "218",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "Which tier of S3 service is less expensive than S3 but you are charged a retrieval fee when you access objects stored at this tier?",
+      "answers": [
+        "S3-IA",
+        "S3",
+        "Reduced Redundancy Storage (RRS)",
+        "Glacier"
+      ],
+      "correctAnswer": ["S3-IA"]
+    }
+  },
+  {
+    "id": "219",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "Which tier of S3 service is designed for 99.99% durability and 99.99% availability of objects over a given year?",
+      "answers": [
+        "S3-IA",
+        "S3",
+        "Reduced Redundancy Storage (RRS)",
+        "Glacier"
+      ],
+      "correctAnswer": ["Reduced Redundancy Storage (RRS)"]
+    }
+  },
+  {
+    "id": "220",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "Which tier of S3 service is less expensive and is used for data you can regenerate, like thumb nails of images?",
+      "answers": [
+        "S3-IA",
+        "S3",
+        "Reduced Redundancy Storage (RRS)",
+        "Glacier"
+      ],
+      "correctAnswer": ["Reduced Redundancy Storage (RRS)"]
+    }
+  },
+  {
+    "id": "221",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "Which tier of S3 service is very inexpensive but used for archival only (it takes 3 to 5 hours to restore form this tier of S3 service)?",
+      "answers": [
+        "S3-IA",
+        "S3",
+        "Reduced Redundancy Storage (RRS)",
+        "Glacier"
+      ],
+      "correctAnswer": ["Glacier"]
+    }
+  },
+  {
+    "id": "222",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 4",
+      "question": "On S3 you are charged for which of the following?",
+      "answers": [
+        "Storage",
+        "Requests (number of requests)",
+        "Data Transfer Out",
+        "Transfer Acceleration",
+        "Data Transfer In"
+      ],
+      "correctAnswer": ["Storage", "Requests (number of requests)", "Data Transfer Out", "Transfer Acceleration"]
+    }
+  },
+  {
+    "id": "223",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "How do you configure S3 to allow for allocation of costs by department or group?",
+      "answers": [
+        "Use Storage Management Pricing - using tags to identify groups or departments",
+        "Use IAM groups",
+        "Use IAM roles",
+        "Use IAM users"
+      ],
+      "correctAnswer": ["Use Storage Management Pricing - using tags to identify groups or departments"]
+    }
+  },
+  {
+    "id": "224",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "Is S3 block based or object based storage?",
+      "answers": [
+        "Object based storage",
+        "Block based storage",
+        "Neither"
+      ],
+      "correctAnswer": ["Object based storage"]
+    }
+  },
+  {
+    "id": "225",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "You should use S3 to install an OS or a database?",
+      "answers": [
+        "True",
+        "False"
+      ],
+      "correctAnswer": ["False"]
+    }
+  },
+  {
+    "id": "226",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "S3 files can be withing which range in size?",
+      "answers": [
+        "0 to 5TB",
+        "0 to 5GB",
+        "0 to 10TB",
+        "0 to 100GB"
+      ],
+      "correctAnswer": ["0 to 5TB"]
+    }
+  },
+  {
+    "id": "227",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "S3s file storage limit is which?",
+      "answers": [
+        "5TB",
+        "100TB",
+        "Unlimited",
+        "100PB"
+      ],
+      "correctAnswer": ["Unlimited"]
+    }
+  },
+  {
+    "id": "228",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "What type of namespace does S3 use?",
+      "answers": [
+        "universal/global",
+        "local",
+        "user defined",
+        "regional"
+      ],
+      "correctAnswer": ["universal/global"]
+    }
+  },
+  {
+    "id": "229",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "In S3 bucket and file names must be _______?",
+      "answers": [
+        "unique globally",
+        "unique locally",
+        "unique regionally",
+        "ubiquitous"
+      ],
+      "correctAnswer": ["unique globally"]
+    }
+  },
+  {
+    "id": "230",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "In S3 bucket and file names must be _______?",
+      "answers": [
+        "unique globally",
+        "unique locally",
+        "unique regionally",
+        "ubiquitous"
+      ],
+      "correctAnswer": ["unique globally"]
+    }
   }
 ]
