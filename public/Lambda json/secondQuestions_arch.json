@@ -456,5 +456,322 @@
       ],
       "correctAnswer": ["unique globally"]
     }
+  },
+  {
+    "id": "231",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "In S3 versioning keeps multiple versions of an object in the _______?",
+      "answers": [
+        "same bucket",
+        "global bucket",
+        "version bucket",
+        "common namespace"
+      ],
+      "correctAnswer": ["same bucket"]
+    }
+  },
+  {
+    "id": "232",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "In S3 what feature do you set up to get access log records that provide details about S3 access requests?",
+      "answers": [
+        "S3 versioning",
+        "S3 logging",
+        "S3 tags",
+        "S3 security"
+      ],
+      "correctAnswer": ["S3 logging"]
+    }
+  },
+  {
+    "id": "233",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "In S3 what feature do you set up to keep multiple versions of an object in the same bucket?",
+      "answers": [
+        "S3 versioning",
+        "S3 logging",
+        "S3 tags",
+        "S3 security"
+      ],
+      "correctAnswer": ["S3 versioning"]
+    }
+  },
+  {
+    "id": "234",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "In S3 what feature do you set up to track your costs against projects or other criteria?",
+      "answers": [
+        "S3 versioning",
+        "S3 logging",
+        "S3 tags",
+        "S3 security"
+      ],
+      "correctAnswer": ["S3 tags"]
+    }
+  },
+  {
+    "id": "235",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "In S3 what feature do you set up to record object-level API activity using the CloudTrail data events feature (at additional cost)?",
+      "answers": [
+        "S3 object-level logging",
+        "S3 default encryption",
+        "S3 tags",
+        "S3 security"
+      ],
+      "correctAnswer": ["S3 object-level logging"]
+    }
+  },
+  {
+    "id": "236",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "In S3 what feature do you set up to automatically encrypt objects when stored in S3?",
+      "answers": [
+        "S3 object-level logging",
+        "S3 default encryption",
+        "S3 tags",
+        "S3 security"
+      ],
+      "correctAnswer": ["S3 default encryption"]
+    }
+  },
+  {
+    "id": "237",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "In S3 you can give access to another AWS account to S3 buckets when creating the bucket?",
+      "answers": [
+        "true",
+        "false"
+      ],
+      "correctAnswer": ["true"]
+    }
+  },
+  {
+    "id": "238",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "In S3 by default all buckets are created __________?",
+      "answers": [
+        "private",
+        "equal",
+        "public",
+        "null"
+      ],
+      "correctAnswer": ["private"]
+    }
+  },
+  {
+    "id": "239",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "In S3 the minimum size of an object is ___?",
+      "answers": [
+        "0 bytes",
+        "1 byte",
+        "null",
+        "unknown"
+      ],
+      "correctAnswer": ["0 bytes"]
+    }
+  },
+  {
+    "id": "240",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "In S3 objects in a bucket do NOT inherit the bucket's tags?",
+      "answers": [
+        "true",
+        "false"
+      ],
+      "correctAnswer": ["true"]
+    }
+  },
+  {
+    "id": "241",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 2",
+      "question": "In S3 which are the two ways to control access to S3 buckets?",
+      "answers": [
+        "Access Control Lists (ACLs)",
+        "Bucket Policies",
+        "IAM roles",
+        "IAM policies",
+        "Network Access Control Lists (NACLs)"
+      ],
+      "correctAnswer": ["Access Control Lists (ACLs)", "Bucket Policies"]
+    }
+  },
+  {
+    "id": "242",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 2",
+      "question": "In S3 what are the types of encryption you can use?",
+      "answers": [
+        "Client-side encryption",
+        "Server-side encryption",
+        "Encryption in flight",
+        "Encryption at rest",
+        "Encryption at option"
+      ],
+      "correctAnswer": ["Client-side encryption", "Server-side encryption"]
+    }
+  },
+  {
+    "id": "243",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 3",
+      "question": "In S3 what are the types of server-side encryption you can use?",
+      "answers": [
+        "server-side encryption with Amazon S3 Management Keys (SSE-S3)",
+        "server-side encryption with KMS (SSE-KMS)",
+        "server-side encryption with customer provided keys (SSE-C)",
+        "server-side encryption with Kerberos Management Keys (SSE-K)",
+        "server-side encryption with Salt Management Keys (SSE-SLT)"
+      ],
+      "correctAnswer": ["server-side encryption with Amazon S3 Management Keys (SSE-S3)", "server-side encryption with KMS (SSE-KMS)", "server-side encryption with customer provided keys (SSE-C)"]
+    }
+  },
+  {
+    "id": "244",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "In S3 once versioning is enabled you can disable it?",
+      "answers": [
+        "true",
+        "false"
+      ],
+      "correctAnswer": ["false"]
+    }
+  },
+  {
+    "id": "245",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "In S3 once versioning is enabled you can only suspend it, you cannot disable it?",
+      "answers": [
+        "true",
+        "false"
+      ],
+      "correctAnswer": ["true"]
+    }
+  },
+  {
+    "id": "246",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "In S3 what is an another layer of security you can add to a bucket?",
+      "answers": [
+        "MFA Delete",
+        "MFA Enabled",
+        "MFA Managed",
+        "MFA Update"
+      ],
+      "correctAnswer": ["MFA Delete"]
+    }
+  },
+  {
+    "id": "247",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 2",
+      "question": "In S3 MFA Delete requires MFA authentication for which of the following?",
+      "answers": [
+        "change the versioning state",
+        "permanently delete an object version",
+        "overwrite an object",
+        "copy an object",
+        "move an object"
+      ],
+      "correctAnswer": ["change the versioning state","permanently delete an object version"]
+    }
+  },
+  {
+    "id": "248",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 2",
+      "question": "In S3 MFA Delete requires which two forms of authentication?",
+      "answers": [
+        "your security credentials",
+        "the concatenation of a valid serial number, a space, and the six digit MFA code",
+        "your Access Key ID",
+        "your Secret Key",
+        "Bucket Name"
+      ],
+      "correctAnswer": ["your security credentials","the concatenation of a valid serial number, a space, and the six digit MFA code"]
+    }
+  },
+  {
+    "id": "249",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "In S3 versioning integrates with ______?",
+      "answers": [
+        "lifecycle rules",
+        "IAM policies",
+        "IAM rules",
+        "CloudTrail"
+      ],
+      "correctAnswer": ["lifecycle rules"]
+    }
+  },
+  {
+    "id": "250",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "In S3 what provides an additional layer of security for deletes?",
+      "answers": [
+        "MFA Delete",
+        "IAM policies",
+        "IAM rules",
+        "CloudTrail"
+      ],
+      "correctAnswer": ["MFA Delete"]
+    }
   }
 ]
