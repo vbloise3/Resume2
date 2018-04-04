@@ -1,0 +1,117 @@
+[
+  {
+    "id": "251",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 2",
+      "question": "S3 cross-region replication requires ______?",
+      "answers": [
+        "MFA Delete",
+        "versioning on source bucket",
+        "an IAM group",
+        "versioning on destination bucket",
+        "MFA Update"
+      ],
+      "correctAnswer": ["versioning on source bucket", "versioning on destination bucket"]
+    }
+  },
+  {
+    "id": "252",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "When using S3 cross-region replication the regions must be unique?",
+      "answers": [
+        "true",
+        "false"
+      ],
+      "correctAnswer": ["true"]
+    }
+  },
+  {
+    "id": "253",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "When S3 cross-region replication is turned on for an existing bucket it replicates existing files to the destination bucket?",
+      "answers": [
+        "true",
+        "false"
+      ],
+      "correctAnswer": ["false"]
+    }
+  },
+  {
+    "id": "254",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "When S3 cross-region replication is turned on for an existing bucket all subsequent updated or new files will be replicated automatically to the destination bucket?",
+      "answers": [
+        "true",
+        "false"
+      ],
+      "correctAnswer": ["true"]
+    }
+  },
+  {
+    "id": "255",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "When using S3 cross-region replication you can replicate to multiple destination buckets?",
+      "answers": [
+        "true",
+        "false"
+      ],
+      "correctAnswer": ["false"]
+    }
+  },
+  {
+    "id": "256",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "When using S3 cross-region replication you can replicate to daisy chained destination buckets?",
+      "answers": [
+        "true",
+        "false"
+      ],
+      "correctAnswer": ["false"]
+    }
+  },
+  {
+    "id": "257",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "When using S3 cross-region replication delete markers are NOT replicated?",
+      "answers": [
+        "true",
+        "false"
+      ],
+      "correctAnswer": ["false"]
+    }
+  },
+  {
+    "id": "258",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "When using S3 cross-region replication the deletion of individual versions or delete markers are NOT replicated?",
+      "answers": [
+        "true",
+        "false"
+      ],
+      "correctAnswer": ["true"]
+    }
+  }
+]
