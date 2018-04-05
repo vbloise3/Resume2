@@ -1,0 +1,352 @@
+[
+  {
+    "id": "259",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "Which S3 service automatically checks the replication status of S3 objects across different regions, providing near real-time metrics as well as failure notifications?",
+      "answers": [
+        "Cross-Region Replication Monitor",
+        "MFA Delete",
+        "CloudTrail",
+        "Bucket Policies",
+        "S3 object-level logging"
+      ],
+      "correctAnswer": ["Cross-Region Replication Monitor"]
+    }
+  },
+  {
+    "id": "260",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "S3 Lifecycle Management can be used in conjunction with versioning?",
+      "answers": [
+        "true",
+        "false"
+      ],
+      "correctAnswer": ["true"]
+    }
+  },
+  {
+    "id": "261",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "S3 Lifecycle Management can be applied to current versions but not previous versions?",
+      "answers": [
+        "true",
+        "false, it can be applied to both current versions and previous versions",
+        "false, it cannot be applied to either"
+      ],
+      "correctAnswer": ["false, it can be applied to both current versions and previous versions"]
+    }
+  },
+  {
+    "id": "262",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 4",
+      "question": "With S3 Lifecycle Management rules you can do which of these?",
+      "answers": [
+        "Transition to the Standard Infrequent Access storage class",
+        "Archive to the Glacier storage class",
+        "Transition to the One Zone Infrequent Access storage class",
+        "Transition to the Reduced Redundancy storage class",
+        "Permanently delete"
+      ],
+      "correctAnswer": ["Transition to the Standard Infrequent Access storage class", "Archive to the Glacier storage class", "Transition to the One Zone Infrequent Access storage class", "Permanently delete"]
+    }
+  },
+  {
+    "id": "263",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "With S3 Lifecycle Management rules when you transition to the Standard Infrequent Access storage class the object must be _________?",
+      "answers": [
+        "at least 128kb in size and 30 days after creation date",
+        "at least 64kb in size and 30 days after creation date",
+        "30 days after creation date",
+        "at least 128kb in size",
+        "at least 128kb in size and 60 days after creation date"
+      ],
+      "correctAnswer": ["at least 128kb in size and 30 days after creation date"]
+    }
+  },
+  {
+    "id": "264",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "With S3 Lifecycle Management rules when you transition to the Glacier storage class the object must be _________?",
+      "answers": [
+        "30 days after transitioning to the Infrequent Access storage class or 60 days after creation date",
+        "60 days after transitioning to the Infrequent Access storage class or 90 days after creation date",
+        "30 days after creation date",
+        "at least 128kb in size",
+        "at least 128kb in size and 60 days after creation date"
+      ],
+      "correctAnswer": ["30 days after transitioning to the Infrequent Access storage class or 60 days after creation date"]
+    }
+  },
+  {
+    "id": "265",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "CloudFront",
+      "questionType": "multiple choice 1",
+      "question": "________ is a system of distributed servers (network) that deliver webpages and other web content to a user based on the geographic locations of the user, the origin of the web page, and the content delivery server?",
+      "answers": [
+        "Content Delivery Network (CDN)",
+        "CloudFront",
+        "CloudTrail",
+        "Route 53"
+      ],
+      "correctAnswer": ["Content Delivery Network (CDN)"]
+    }
+  },
+  {
+    "id": "266",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "CloudFront",
+      "questionType": "multiple choice 1",
+      "question": "________ is a the location where content will be cached, which is separate to an AWS Region or AZ?",
+      "answers": [
+        "Content Delivery Network (CDN)",
+        "Edge Location",
+        "Origin",
+        "Distribution"
+      ],
+      "correctAnswer": ["Edge Location"]
+    }
+  },
+  {
+    "id": "267",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "CloudFront",
+      "questionType": "multiple choice 1",
+      "question": "________ is a the origin of all the files that the CDN will distribute?",
+      "answers": [
+        "Content Delivery Network (CDN)",
+        "Edge Location",
+        "Origin",
+        "Distribution"
+      ],
+      "correctAnswer": ["Origin"]
+    }
+  },
+  {
+    "id": "268",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "CloudFront",
+      "questionType": "multiple choice 4",
+      "question": "The origin of the files that the CDN will distribute can be which of these?",
+      "answers": [
+        "S3 Bucket",
+        "EC2 Instance",
+        "an ELB",
+        "Route 53",
+        "CloudTrail",
+        "Auto-scaling Group"
+      ],
+      "correctAnswer": ["S3 Bucket", "EC2 Instance", "an ELB", "Route 53"]
+    }
+  },
+  {
+    "id": "269",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "CloudFront",
+      "questionType": "multiple choice 1",
+      "question": "________ is a the name given to the CDN which consists of a colection of Edge Locations?",
+      "answers": [
+        "Content Delivery Network (CDN)",
+        "Edge Location",
+        "Origin",
+        "Distribution"
+      ],
+      "correctAnswer": ["Distribution"]
+    }
+  },
+  {
+    "id": "270",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "CloudFront",
+      "questionType": "multiple choice 1",
+      "question": "With CloudFront, requests for your content are automatically routed to the ________, so content is delivered with the best possible performance?",
+      "answers": [
+        "nearest Edge Location",
+        "an ELB",
+        "an Auto-scaling Group",
+        "a Distribution"
+      ],
+      "correctAnswer": ["nearest Edge Location"]
+    }
+  },
+  {
+    "id": "271",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "CloudFront",
+      "questionType": "multiple choice 1",
+      "question": "CloudFront is NOT used to deliver which of the following?",
+      "answers": [
+        "dynamic content",
+        "static content",
+        "streaming content",
+        "interactive content",
+        "database PUT or DELETE results"
+      ],
+      "correctAnswer": ["database PUT or DELETE results"]
+    }
+  },
+  {
+    "id": "272",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "CloudFront",
+      "questionType": "multiple choice 4",
+      "question": "CloudFront is optimized to work with which of these?",
+      "answers": [
+        "S3",
+        "EC2",
+        "ELB",
+        "Route 53",
+        "RDS",
+        "DynamoDB"
+      ],
+      "correctAnswer": ["S3", "EC2", "ELB", "Route 53"]
+    }
+  },
+  {
+    "id": "273",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "CloudFront",
+      "questionType": "multiple choice 1",
+      "question": "CloudFront works seamlessly with Non-AWS origin servers?",
+      "answers": [
+        "true",
+        "false"
+      ],
+      "correctAnswer": ["true"]
+    }
+  },
+  {
+    "id": "274",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "CloudFront",
+      "questionType": "multiple choice 1",
+      "question": "This type of CloudFront distribution is typically used for websites?",
+      "answers": [
+        "Web Distribution",
+        "RTMP",
+        "Streaming",
+        "Static"
+      ],
+      "correctAnswer": ["Web Distribution"]
+    }
+  },
+  {
+    "id": "275",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "CloudFront",
+      "questionType": "multiple choice 1",
+      "question": "This type of CloudFront distribution is typically used for media streaming?",
+      "answers": [
+        "Web Distribution",
+        "RTMP",
+        "Streaming",
+        "Static"
+      ],
+      "correctAnswer": ["RTMP"]
+    }
+  },
+  {
+    "id": "276",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "CloudFront",
+      "questionType": "multiple choice 1",
+      "question": "There are over _____ Edge Locations around the world?",
+      "answers": [
+        "100",
+        "50",
+        "75",
+        "1,000"
+      ],
+      "correctAnswer": ["50"]
+    }
+  },
+  {
+    "id": "277",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "CloudFront",
+      "questionType": "multiple choice 1",
+      "question": "Edge Locations are not just read only; you can write to them as well (ie. put an object on them)?",
+      "answers": [
+        "true",
+        "false"
+      ],
+      "correctAnswer": ["true"]
+    }
+  },
+  {
+    "id": "278",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "CloudFront",
+      "questionType": "multiple choice 1",
+      "question": "Objects are cached in Edge Locations for the life of the _____?",
+      "answers": [
+        "TTL (Time to Live)",
+        "TLR (Time to Rotate)",
+        "TCP (Time Content Passed)",
+        "TTD (Time to Die)"
+      ],
+      "correctAnswer": ["TTL (Time to Live)"]
+    }
+  },
+  {
+    "id": "279",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "CloudFront",
+      "questionType": "multiple choice 1",
+      "question": "You can clear objects out of the Edge Locations?",
+      "answers": [
+        "true",
+        "false"
+      ],
+      "correctAnswer": ["true"]
+    }
+  },
+  {
+    "id": "280",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "CloudFront",
+      "questionType": "multiple choice 1",
+      "question": "If you explicitly clear objects from your Edge Locations cache you will NOT be charged by AWS?",
+      "answers": [
+        "true",
+        "false"
+      ],
+      "correctAnswer": ["false"]
+    }
+  }
+]
