@@ -1,0 +1,193 @@
+[
+  {
+    "id": "281",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "CloudFront",
+      "questionType": "multiple choice 1",
+      "question": "In CloudFront you can have multiple origins in the same distribution?",
+      "answers": [
+        "true",
+        "false"
+      ],
+      "correctAnswer": ["true"]
+    }
+  },
+  {
+    "id": "282",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "CloudFront",
+      "questionType": "multiple choice 2",
+      "question": "To restrict access to CloudFront distributions you can use which of these?",
+      "answers": [
+        "signed urls",
+        "cookies",
+        "restricted urls",
+        "encrypted cookies",
+        "IAM roles"
+      ],
+      "correctAnswer": ["signed urls", "cookies"]
+    }
+  },
+  {
+    "id": "283",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "CloudFront",
+      "questionType": "multiple choice 1",
+      "question": "To secure CloudFront distributions you can use which of these?",
+      "answers": [
+        "WAF",
+        "Guard Duty",
+        "Inspector",
+        "NACLS"
+      ],
+      "correctAnswer": ["WAF"]
+    }
+  },
+  {
+    "id": "284",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "By default, all newly created S3 buckets are _______?",
+      "answers": [
+        "public",
+        "private",
+        "undefined",
+        "null"
+      ],
+      "correctAnswer": ["private"]
+    }
+  },
+  {
+    "id": "285",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 2",
+      "question": "You can setup access control to your S3 buckets using which of these?",
+      "answers": [
+        "Bucket policies",
+        "Access Control Lists",
+        "IAM Rules",
+        "IAM Policies",
+        "WAF"
+      ],
+      "correctAnswer": ["Bucket policies", "Access Control Lists"]
+    }
+  },
+  {
+    "id": "286",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "When you setup access control to your S3 buckets using bucket policies they are applied ________?",
+      "answers": [
+        "bucket wide",
+        "granularly at the object level",
+        "across all buckets"
+      ],
+      "correctAnswer": ["bucket wide"]
+    }
+  },
+  {
+    "id": "287",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "When you setup access control to your S3 buckets using Access Control Lists they can be applied ________?",
+      "answers": [
+        "granularly at the object level",
+        "across all buckets"
+      ],
+      "correctAnswer": ["granularly at the object level"]
+    }
+  },
+  {
+    "id": "288",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 2",
+      "question": "S3 buckets can be configured to create access logs which log all requests to _______ or to _________?",
+      "answers": [
+        "the bucket",
+        "another bucket",
+        "CloudTrail",
+        "CloudWatch",
+        "SNS"
+      ],
+      "correctAnswer": ["the bucket", "another bucket"]
+    }
+  },
+  {
+    "id": "289",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "S3 buckets can be encrypted in which way?",
+      "answers": [
+        "in transit",
+        "at rest",
+        "both"
+      ],
+      "correctAnswer": ["both"]
+    }
+  },
+  {
+    "id": "290",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "When S3 objects are secured in transit they are secured using which protocol?",
+      "answers": [
+        "SSL/TLS",
+        "HTTP",
+        "HTTPS",
+        "KMS",
+        "they can't be encrypted in transit"
+      ],
+      "correctAnswer": ["SSL/TLS"]
+    }
+  },
+  {
+    "id": "291",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 3",
+      "question": "What are the three ways S3 objects can be encrypted server-side?",
+      "answers": [
+        "S3 Managed Keys - SSE-S3",
+        "AWS Key Management Service managed keys - SSE-KMS",
+        "Encryption with customer provided keys - SSE-C",
+        "SSL/TLS",
+        "HTTPS"
+      ],
+      "correctAnswer": ["S3 Managed Keys - SSE-S3", "AWS Key Management Service managed keys - SSE-KMS", "Encryption with customer provided keys - SSE-C"]
+    }
+  },
+  {
+    "id": "292",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 2",
+      "question": "What are the two ways S3 objects can be encrypted at rest?",
+      "answers": [
+        "server-side",
+        "client-side",
+        "customer provided encryption",
+        "HTTPS"
+      ],
+      "correctAnswer": ["server-side", "client-side"]
+    }
+  }
+]
