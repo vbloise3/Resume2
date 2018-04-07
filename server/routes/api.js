@@ -313,7 +313,7 @@ function getAllQandAsArch(parameters) {
     var dynamoDBreturn = "what?";
 
     // setting up dynamic select
-    var subcategoryValues = ["S3", "CloudFront", "Define AWS Cloud"];
+    var subcategoryValues; // = ["S3", "CloudFront", "Define AWS Cloud"];
     var tempParams = [];
     parameters.forEach(function (parameterItem) {
       tempParams.push(decodeURI(parameterItem));

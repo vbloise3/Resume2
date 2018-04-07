@@ -73,6 +73,7 @@ export class Ca2QuestionComponent implements OnInit {
     const theQandaSubcategories = form.value;
     // alert('number checked ' + this.checked.length);
     let theReturnedJSON: any;
+    this.qandaArray = [];
     theReturnedJSON = this.dynamoDBservice.getAllArchItems(this.checked).subscribe( qandas => {
       this.qandas = JSON.stringify(qandas);
       // alert('the first returned Q and As: ' + qandas.Items[0].id);
