@@ -11,6 +11,53 @@
   </mat-toolbar>
   <span class="app-toolbar-filler" style="padding: 1em;"></span>
   <mat-card class="shadowCard" style="float: right;margin-bottom: 1em;margin-top: 1em;">
+    <form #QandACategoriesForm="ngForm" class="example-container" (ngSubmit)="submitSubcategories(QandACategoriesForm)" [formGroup]="options">
+      <div style="display: inline-block">
+        <mat-checkbox
+          name="S3"
+          value="S3"
+          (change)="updateSubcategoriesChecked($event, 'S3')">
+        </mat-checkbox>
+        <mat-label>S3</mat-label>
+        &nbsp;&nbsp;
+        <mat-checkbox
+          name="CloudFront"
+          value="CloudFront"
+          (change)="updateSubcategoriesChecked($event, 'CloudFront')">
+        </mat-checkbox>
+        <mat-label>CloudFront</mat-label>
+        &nbsp;&nbsp;
+        <mat-checkbox
+          name="IAM"
+          value="IAM"
+          (change)="updateSubcategoriesChecked($event, 'IAM')">
+        </mat-checkbox>
+        <mat-label>IAM</mat-label>
+        &nbsp;&nbsp;
+        <mat-checkbox
+          name="Cloud Foundation"
+          value="Cloud Foundation"
+          (change)="updateSubcategoriesChecked($event, 'Cloud Foundation')">
+        </mat-checkbox>
+        <mat-label>Cloud Foundation</mat-label>
+        &nbsp;&nbsp;
+        <mat-checkbox
+          name="Define AWS Cloud"
+          value="Define AWS Cloud"
+          (change)="updateSubcategoriesChecked($event, 'Define AWS Cloud')">
+        </mat-checkbox>
+        <mat-label>Define AWS Cloud</mat-label>
+        &nbsp;&nbsp;
+        <mat-checkbox
+          name="Security"
+          value="Security"
+          (change)="updateSubcategoriesChecked($event, 'Security')">
+        </mat-checkbox>
+        <mat-label>Security</mat-label>
+        &nbsp;&nbsp;
+        <button mat-button type="submit" color="primary">Submit</button>
+      </div>
+    </form>
     <h1 class="h1Blue">Answer the following question:</h1>
     <mat-card class="question-card">
       <div class="example-container">
@@ -74,6 +121,10 @@
         </div>
         <div>
           <p class="gradeText"> Grade so far: {{totalCorrect}} of {{totalAnswered}} &nbsp;&mdash;&nbsp; <span [ngClass]="(passing)?'percentPassing':'percentFailing'">{{totalCorrectPercent}}%</span></p>
+        </div>
+        <hr/>
+        <div>
+          <p class="gradeText"> Questions: {{totalAnswered}} of {{numberOfQuestions}} &nbsp;&mdash;&nbsp; <span>{{totalTakenPercent}}%</span></p>
         </div>
       </div>
     </mat-card>

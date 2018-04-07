@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { DynamoDbserviceService, Movie, QandA, Answer } from '../services/dynamo-dbservice';
 import { NgForm, FormBuilder, FormGroup, FormControl } from '@angular/forms';
 import { MatCheckbox } from '@angular/material';
@@ -51,7 +51,10 @@ export class Ca2QuestionComponent implements OnInit {
   totalAnswered = 0;
   totalCorrect = 0;
   totalCorrectPercent = '0';
+  totalTakenPercent = '0';
   passing = false;
+  checked: boolean[] = [];
+  numberOfQuestions = 0;
 
   constructor(private dynamoDBservice: DynamoDbserviceService, fb: FormBuilder) {
     this.options = fb.group({
@@ -63,8 +66,14 @@ export class Ca2QuestionComponent implements OnInit {
   }
 
   ngOnInit() {
+
+  }
+
+  submitSubcategories(form: NgForm) {
+    const theQandaSubcategories = form.value;
+    // alert('number checked ' + this.checked.length);
     let theReturnedJSON: any;
-    theReturnedJSON = this.dynamoDBservice.getAllArchItems().subscribe( qandas => {
+    theReturnedJSON = this.dynamoDBservice.getAllArchItems(this.checked).subscribe( qandas => {
       this.qandas = JSON.stringify(qandas);
       // alert('the first returned Q and As: ' + qandas.Items[0].id);
       // alert('the count of returned q and as: ' + qandas.Count);
@@ -96,11 +105,27 @@ export class Ca2QuestionComponent implements OnInit {
         qandaItem.info.answers = outerThis.qandaAnswers.slice();
       });
       // end shuffle answer arrays
+      this.numberOfQuestions = this.qandaArray.length;
       this.getScreenElements();
       // as user clicks the submit button (question answered) and the next button
       // (move to the next question)
     });
   }
+
+  // for selected subcategories
+  updateSubcategoriesChecked(event, value) {
+    // this.checked = [];
+    if ( event.checked ) {
+      this.checked.push(value);
+    } else {
+      const index = this.checked.indexOf(value);
+      if (index !== -1) {
+        this.checked.splice(index, 1);
+      }
+    }
+    // alert('the check subcategory ' + this.checked[event]);
+  }
+  // end for selected subcategories
 
   submitAnswer(form: NgForm) {
     const theQanda = form.value;
@@ -370,6 +395,11 @@ export class Ca2QuestionComponent implements OnInit {
       this.correctAnswerBool = false;
       this.getScreenElements();
     }
+    this.totalTakenPercent = parseFloat((this.totalAnswered / this.numberOfQuestions).toLocaleString()).toFixed(2);
+    if ( this.totalTakenPercent === '1.00') {
+      this.totalTakenPercent = '0.100';
+    }
+    this.totalTakenPercent = this.totalTakenPercent.split('.')[1];
   }
 
   change(e, type) {

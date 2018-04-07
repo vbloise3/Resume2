@@ -307,15 +307,39 @@ function getAllQandAs() {
   });
 }
 
-function getAllQandAsArch() {
+function getAllQandAsArch(parameters) {
   return new Promise(function (resolve, reject) {
     var docClient = new AWS.DynamoDB.DocumentClient();
     var dynamoDBreturn = "what?";
+
+    // setting up dynamic select
+    var subcategoryValues = ["S3", "CloudFront", "Define AWS Cloud"];
+    var tempParams = [];
+    parameters.forEach(function (parameterItem) {
+      tempParams.push(decodeURI(parameterItem));
+    });
+    subcategoryValues = tempParams.slice();
+    var subcategoryObject = {};
+    var index = 0;
+    subcategoryValues.forEach(function(value) {
+      index++;
+      var subcategoryKey = ":subcategoryvalue"+index;
+      subcategoryObject[subcategoryKey.toString()] = value;
+    });
+    // finished setting up dynamic select
+    // filtered select params
+    var paramsFiltered = {
+      TableName : "CA2QandA",
+      FilterExpression : "info.subcategory IN ("+Object.keys(subcategoryObject).toString()+ ")",
+      ExpressionAttributeValues : subcategoryObject
+    };
+    // end filtered params
+
     var params = {
       TableName: "CA2QandA"
     };
     console.log("looking for all arch Q and As");
-    docClient.scan(params, onScan);
+    docClient.scan(paramsFiltered, onScan);
 
     function onScan(err, data) {
       if (err) {
@@ -664,11 +688,12 @@ router.route('/c2pqandas')
 // End get all items
 
 // Get all arch items
-router.route('/cA2qandas')
+router.route('/cA2qandas/*')
   .get(function(req, res) {
-    var returnStuff
+    var returnStuff;
+    var parameters = req.params[0].split('/');
     setUpDynamoDB();
-    getAllQandAsArch().then(function (successStuff) {
+    getAllQandAsArch(parameters).then(function (successStuff) {
       /*if (err)
         res.send(err);
         res.json(npsclient);

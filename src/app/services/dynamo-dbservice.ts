@@ -104,9 +104,14 @@ export class DynamoDbserviceService {
     return resultData;
   }
 
-  getAllArchItems() {
+  getAllArchItems(subcategories) {
     let resultData;
-    const url = serviceGetAllArchItems;
+    let url = serviceGetAllArchItems;
+    // add parameters to url
+    // url = url + '/S3/CloudFront/IAM';
+    subcategories.forEach(function (subcategoryItem) {
+      url = url + '/' + encodeURI(subcategoryItem);
+    });
     // alert('getting this url: ' + url);
     let headers = new HttpHeaders();
     headers = headers.set('If-Modified-Since', '0');
