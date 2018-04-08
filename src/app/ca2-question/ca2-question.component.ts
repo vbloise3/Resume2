@@ -69,9 +69,56 @@ export class Ca2QuestionComponent implements OnInit {
 
   }
 
+  resetEverything() {
+    this.qandas = '';
+    this.qandaArray = [];
+    this.qandaAnswers = [];
+    this.buckets = '';
+    this.theBucketList = '';
+    this.s3BucketName = '';
+    this.getId = '';
+    this.getCategory = '';
+    this.getSubcategory = '';
+    this.getQuestionType = '';
+    this.getSelectCount = 0;
+    this.getSelectCountText = '';
+    this.getPlural = '';
+    this.getQuestion = '';
+    this.getAnswers = [];
+    this.getAnswerCount = 0;
+    this.getCorrectAnswer = [];
+    this.getCorrectAnswerCount = 0;
+    this.getTextAnswer = '';
+    this.textAnswerCorrectOrNot = 'neutral';
+    this.currentQuestion = 0;
+    this.updateSubcategory = '';
+    this.updateCategory = '';
+    this.updateQuestionType = '';
+    this.updateQuestion = '';
+    this.deleteSubcategory = '';
+    this.deleteCategory = '';
+    this.deleteQuestionType = '';
+    this.deleteQuestion = '';
+    this.deletedTable = '';
+    this.user = new User();
+    this.selectedValue = [];
+    this.nextQuestion = false;
+    this.correctOrNot = [];
+    this.correctAnswerIndicator = 'neutral';
+    this.correctAnswerBool = false;
+    this.totalAnswered = 0;
+    this.totalCorrect = 0;
+    this.totalCorrectPercent = '0';
+    this.totalTakenPercent = '0';
+    this.passing = false;
+    // this.checked = [];
+    this.numberOfQuestions = 0;
+  }
+
   submitSubcategories(form: NgForm) {
     const theQandaSubcategories = form.value;
     // alert('number checked ' + this.checked.length);
+    this.resetEverything();
     let theReturnedJSON: any;
     this.qandaArray = [];
     theReturnedJSON = this.dynamoDBservice.getAllArchItems(this.checked).subscribe( qandas => {
@@ -399,8 +446,14 @@ export class Ca2QuestionComponent implements OnInit {
     this.totalTakenPercent = parseFloat((this.totalAnswered / this.numberOfQuestions).toLocaleString()).toFixed(2);
     if ( this.totalTakenPercent === '1.00') {
       this.totalTakenPercent = '0.100';
+    } else if ( (this.totalAnswered / this.numberOfQuestions) > 1 ) {
+      this.totalTakenPercent = parseFloat(( (this.totalAnswered / this.numberOfQuestions) * 100).toLocaleString()).toFixed(2);
     }
-    this.totalTakenPercent = this.totalTakenPercent.split('.')[1];
+    if ( (this.totalAnswered / this.numberOfQuestions) <= 1 ) {
+      this.totalTakenPercent = this.totalTakenPercent.split('.')[1];
+    } else if ( (this.totalAnswered / this.numberOfQuestions) > 1 ) {
+      this.totalTakenPercent = this.totalTakenPercent.split('.')[0];
+    }
   }
 
   change(e, type) {
