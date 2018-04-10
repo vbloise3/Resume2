@@ -1,0 +1,202 @@
+[
+  {
+    "id": "293",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "What type of storage gateway is used for archiving of flat files only?",
+      "answers": [
+        "File Gateway",
+        "Volume Gateway Stored Volumes",
+        "Volume Gateway Cached Volumes",
+        "Gateway Virtual Tape Library (VTL)"
+      ],
+      "correctAnswer": ["File Gateway"]
+    }
+  },
+  {
+    "id": "294",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "What type of storage gateway stores the entire dataset on site and is asychronously backed up to S3?",
+      "answers": [
+        "File Gateway",
+        "Volume Gateway Stored Volumes",
+        "Volume Gateway Cached Volumes",
+        "Gateway Virtual Tape Library (VTL)"
+      ],
+      "correctAnswer": ["Volume Gateway Stored Volumes"]
+    }
+  },
+  {
+    "id": "295",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "What type of storage gateway stores the entire dataset on S3 and the most frequently accessed data is cached on site?",
+      "answers": [
+        "File Gateway",
+        "Volume Gateway Stored Volumes",
+        "Volume Gateway Cached Volumes",
+        "Gateway Virtual Tape Library (VTL)"
+      ],
+      "correctAnswer": ["Volume Gateway Cached Volumes"]
+    }
+  },
+  {
+    "id": "296",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "What type of storage gateway is used for back up and uses popular back up applications like NetBackup, Backup Exec, Veem, etc?",
+      "answers": [
+        "File Gateway",
+        "Volume Gateway Stored Volumes",
+        "Volume Gateway Cached Volumes",
+        "Gateway Virtual Tape Library (VTL)"
+      ],
+      "correctAnswer": ["Gateway Virtual Tape Library (VTL)"]
+    }
+  },
+  {
+    "id": "297",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "Which type of storage gateway is used for block-based storage, like for storing OSs or databases?",
+      "answers": [
+        "File Gateway",
+        "Volume Gateway"
+      ],
+      "correctAnswer": ["Volume Gateway"]
+    }
+  },
+  {
+    "id": "298",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "Which type of storage gateway is used for object-based storage, like for storing flat files?",
+      "answers": [
+        "File Gateway",
+        "Volume Gateway"
+      ],
+      "correctAnswer": ["File Gateway"]
+    }
+  },
+  {
+    "id": "299",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "Which type of storage gateway lets you use S3 as your primary storage while retaining frequently accessed data locally?",
+      "answers": [
+        "File Gateway",
+        "Volume Gateway Stored Volumes",
+        "Volume Gateway Cached Volumes",
+        "Gateway Virtual Tape Library (VTL)"
+      ],
+      "correctAnswer": ["Volume Gateway Cached Volumes"]
+    }
+  },
+  {
+    "id": "300",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "Which type of storage gateway offers a durable, cost-effective solution to archive your data in the AWS cloud, leveraging your existing tape backup application?",
+      "answers": [
+        "File Gateway",
+        "Volume Gateway Stored Volumes",
+        "Volume Gateway Cached Volumes",
+        "Gateway Virtual Tape Library (VTL)"
+      ],
+      "correctAnswer": ["Gateway Virtual Tape Library (VTL)"]
+    }
+  },
+  {
+    "id": "301",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "Which type of storage gateway lets you store your primary data locally, while asynchronously backing up that data to AWS?",
+      "answers": [
+        "File Gateway",
+        "Volume Gateway Stored Volumes",
+        "Volume Gateway Cached Volumes",
+        "Gateway Virtual Tape Library (VTL)"
+      ],
+      "correctAnswer": ["Volume Gateway Stored Volumes"]
+    }
+  },
+  {
+    "id": "302",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "Which type of storage gateway presents your applications with disk volumes using the iSCSI block protocol?",
+      "answers": [
+        "File Gateway",
+        "Volume Gateway"
+      ],
+      "correctAnswer": ["Volume Gateway"]
+    }
+  },
+  {
+    "id": "303",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 3",
+      "question": "Storage Gateway can connect to AWS via which of these?",
+      "answers": [
+        "Direct Connect",
+        "the internet",
+        "via your VPC",
+        "Snowball"
+      ],
+      "correctAnswer": ["Direct Connect", "the internet", "via your VPC"]
+    }
+  },
+  {
+    "id": "304",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "Which type of Storage Gateway stores your files as objects in your S3 buckets, which are accessed through a Networked File System (NFS) mount point?",
+      "answers": [
+        "File Gateway",
+        "Volume Gateway Stored Volumes",
+        "Volume Gateway Cached Volumes",
+        "Gateway Virtual Tape Library (VTL)"
+      ],
+      "correctAnswer": ["File Gateway"]
+    }
+  },
+  {
+    "id": "305",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "Storage Gateway appliance is available for download as a virtual machine image that you install in your datacenter on a hypervisor?",
+      "answers": [
+        "true",
+        "false"
+      ],
+      "correctAnswer": ["true"]
+    }
+  }
+]
