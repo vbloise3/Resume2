@@ -1,0 +1,247 @@
+[
+  {
+    "id": "306",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "What is AWS Import/Export Disk?",
+      "answers": [
+        "A way of transferring your data into and out of AWS cloud using your own disk that you send to Amazon; the predecessor to Snowball",
+        "A way of using Snowball to transfer data to AWS",
+        "A type of Snowball Edge",
+        "A type of Snowmobile"
+      ],
+      "correctAnswer": ["A way of transferring your data into and out of AWS cloud using your own disk that you send to Amazon; the predecessor to Snowball"]
+    }
+  },
+  {
+    "id": "307",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 3",
+      "question": "What are the three different types of Snowball?",
+      "answers": [
+        "Snowball",
+        "Snowball Edge",
+        "Snowmobile",
+        "Import/Export Disk",
+        "Snowman"
+      ],
+      "correctAnswer": ["Snowball", "Snowball Edge", "Snowmobile"]
+    }
+  },
+  {
+    "id": "308",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "Which type of Snowball is a petabyte-scale data transport solution that uses a secure appliance to transfer large amounts of data into and out of AWS?",
+      "answers": [
+        "Snowball",
+        "Snowball Edge",
+        "Snowmobile",
+        "Import/Export Disk",
+        "Snowman"
+      ],
+      "correctAnswer": ["Snowball"]
+    }
+  },
+  {
+    "id": "309",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "Which type of Snowball has an 80TB size and 256-bit encryption?",
+      "answers": [
+        "Snowball",
+        "Snowball Edge",
+        "Snowmobile",
+        "Import/Export Disk",
+        "Snowman"
+      ],
+      "correctAnswer": ["Snowball"]
+    }
+  },
+  {
+    "id": "310",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "Which type of Snowball is a 100TB data transfer device with on-board storage and compute capabilities?",
+      "answers": [
+        "Snowball",
+        "Snowball Edge",
+        "Snowmobile",
+        "Import/Export Disk",
+        "Snowman"
+      ],
+      "correctAnswer": ["Snowball Edge"]
+    }
+  },
+  {
+    "id": "311",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 4",
+      "question": "Which of these are true about Snowball Edge?",
+      "answers": [
+        "Can be used as a temporary storage tier for large local datasets",
+        "Can be used to support local workloads in remote or off-line locations",
+        "Can be clustered together with other Snowball Edge devices to form a local storage tier and process your data on premises, letting your applications run even when that can't access the cloud",
+        "Is a little AWS data center you can run on-premises which can run lambda functions",
+        "Comes on a semi-trailer and in a shipping container"
+      ],
+      "correctAnswer": ["Can be used as a temporary storage tier for large local datasets", "Can be used to support local workloads in remote or off-line locations", "Can be clustered together with other Snowball Edge devices to form a local storage tier and process your data on premises, letting your applications run even when that can't access the cloud", "Is a little AWS data center you can run on-premises which can run lambda functions"]
+    }
+  },
+  {
+    "id": "312",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "Which type of Snowball is for peta-byte or even exa-byte levels of data?",
+      "answers": [
+        "Snowball",
+        "Snowball Edge",
+        "Snowmobile",
+        "Import/Export Disk",
+        "Snowman"
+      ],
+      "correctAnswer": ["Snowmobile"]
+    }
+  },
+  {
+    "id": "313",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "Which type of Snowball arrives in a shipping container and is hauled by a semi?",
+      "answers": [
+        "Snowball",
+        "Snowball Edge",
+        "Snowmobile",
+        "Import/Export Disk",
+        "Snowman"
+      ],
+      "correctAnswer": ["Snowmobile"]
+    }
+  },
+  {
+    "id": "314",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "Which Snowball can transfer 100PB per?",
+      "answers": [
+        "Snowball",
+        "Snowball Edge",
+        "Snowmobile",
+        "Import/Export Disk",
+        "Snowman"
+      ],
+      "correctAnswer": ["Snowmobile"]
+    }
+  },
+  {
+    "id": "315",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "Which Snowball can be used to transfer a complete data center migration to AWS?",
+      "answers": [
+        "Snowball",
+        "Snowball Edge",
+        "Snowmobile",
+        "Import/Export Disk",
+        "Snowman"
+      ],
+      "correctAnswer": ["Snowmobile"]
+    }
+  },
+  {
+    "id": "316",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "Snowball has a client that you use to interface with it?",
+      "answers": [
+        "true",
+        "false"
+      ],
+      "correctAnswer": ["true"]
+    }
+  },
+  {
+    "id": "317",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "Snowball comes with a kindle that you use to interface with it?",
+      "answers": [
+        "true",
+        "false"
+      ],
+      "correctAnswer": ["true"]
+    }
+  },
+  {
+    "id": "318",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 2",
+      "question": "What are the Snowball credentials?",
+      "answers": [
+        "unlock code",
+        "Secret Key",
+        "Access Key",
+        "manifest file"
+      ],
+      "correctAnswer": ["unlock code", "manifest file"]
+    }
+  },
+  {
+    "id": "319",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "What does transfer acceleration use to speed up transfers to S3?",
+      "answers": [
+        "CloudFront Edge Network",
+        "Dedicated Connection",
+        "Direct Connect",
+        "Fiber Optic Lines"
+      ],
+      "correctAnswer": ["CloudFront Edge Network"]
+    }
+  },
+  {
+    "id": "320",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "S3 Transfer Acceleration uses a _______ to upload directly to an Edge Location which will then transfer that file to S3?",
+      "answers": [
+        "CloudFront Edge Network",
+        "Dedicated Connection",
+        "Direct Connect",
+        "distinct URL"
+      ],
+      "correctAnswer": ["distinct URL"]
+    }
+  }
+]
