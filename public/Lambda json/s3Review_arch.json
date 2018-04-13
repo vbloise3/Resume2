@@ -1,0 +1,510 @@
+[
+  {
+    "id": "321",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "S3 has what consistency model for PUTS of new objects?",
+      "answers": [
+        "Read After Write Consistency",
+        "Write After Read Consistency",
+        "Eventual Consistency",
+        "Usual Consistency"
+      ],
+      "correctAnswer": ["Read After Write Consistency"]
+    }
+  },
+  {
+    "id": "322",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "What is AWS Storage Gateway?",
+      "answers": [
+        "It's an on-premise virtual appliance that can be used to cache S3 locally at a customers site.",
+        "It allows large scale import/exports in to the AWS cloud without the use of an internet connection.",
+        "It allows a direct MPLS connection in to AWS.",
+        "None of the above."
+      ],
+      "correctAnswer": ["It's an on-premise virtual appliance that can be used to cache S3 locally at a customers site."]
+    }
+  },
+  {
+    "id": "323",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "One of your users is trying to upload a 7.5GB file to S3 however they keep getting the following error message - 'Your proposed upload exceeds the maximum allowed object size.'. What is a possible solution for this?",
+      "answers": [
+        "Design your application to use the multi-part upload API for all objects",
+        "Design your application to use large object upload API for this object",
+        "Raise a ticket with AWS to increase your maximum object size",
+        "Log in to the S3 console, click on the bucket and then click properties. You can then increase your maximum object size to 1TB"
+      ],
+      "correctAnswer": ["Design your application to use the multi-part upload API for all objects"]
+    }
+  },
+  {
+    "id": "324",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "What does RRS stand for when talking about S3?",
+      "answers": [
+        "Relational Reaction Storage",
+        "Reduced Redundancy Storage",
+        "Regional Rights Storage",
+        "Redundancy Reduced System"
+      ],
+      "correctAnswer": ["Reduced Redundancy Storage"]
+    }
+  },
+  {
+    "id": "325",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "You have been asked by your company to create an S3 bucket with the name 'acloudguru1234' in the EU West region. What would be the URL for this bucket?",
+      "answers": [
+        "https://s3-eu-west-1.amazonaws.com/acloudguru1234",
+        "https://s3-us-east-1.amazonaws.com/acloudguru1234",
+        "https://s3.acloudguru1234.amazonaws.com/eu-west-1",
+        "https://s3-acloudguru1234.amazonaws.com/"
+      ],
+      "correctAnswer": ["https://s3-eu-west-1.amazonaws.com/acloudguru1234"]
+    }
+  },
+  {
+    "id": "326",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "What is Amazon Glacier?",
+      "answers": [
+        "A tool that allows to 'freeze' an EBS volume.",
+        "An AWS service designed for long term data archival.",
+        "A highly secure firewall designed to keep everything out.",
+        "It is a tool used to resurrect deleted EC2 snapshots"
+      ],
+      "correctAnswer": ["An AWS service designed for long term data archival."]
+    }
+  },
+  {
+    "id": "327",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "What does S3 stand for?",
+      "answers": [
+        "Simple SQL Service",
+        "Simple Storage Service",
+        "Simplified Serial Sequence",
+        "Straight Storage Service"
+      ],
+      "correctAnswer": ["Simple Storage Service"]
+    }
+  },
+  {
+    "id": "328",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "You are a solutions architect who works with a large digital media company. The company has decided that they want to operate within the Japanese region and they need a bucket called 'testbucket' set up immediately to test their web application on. You log in to the AWS console and try to create this bucket in the Japanese region however you are told that the bucket name is already taken. What should you do to resolve this?",
+      "answers": [
+        "Change your region to Korea and then create the bucket 'testbucket'.",
+        "Raise a ticket with AWS and ask them to release the name 'testbucket' to you.",
+        "Bucketnames are global, not regional. This is a popular bucket name and is already taken. You should choose another bucket name.",
+        "Run a WHO IS request on the bucket name and get the registered owners email address. Contact the owner and ask if you can purchase the rights to the bucket."
+      ],
+      "correctAnswer": ["Bucketnames are global, not regional. This is a popular bucket name and is already taken. You should choose another bucket name."]
+    }
+  },
+  {
+    "id": "329",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "What is the availability on RRS?",
+      "answers": [
+        "99.9%",
+        "99%",
+        "99.99%",
+        "99.999999999%"
+      ],
+      "correctAnswer": ["99.99%"]
+    }
+  },
+  {
+    "id": "330",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "What is the durability on RRS?",
+      "answers": [
+        "99.9%",
+        "99%",
+        "99.99%",
+        "99.999999999%"
+      ],
+      "correctAnswer": ["99.99%"]
+    }
+  },
+  {
+    "id": "331",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "What is the durability on S3?",
+      "answers": [
+        "99%",
+        "99.99%",
+        "99.9%",
+        "99.999999999%"
+      ],
+      "correctAnswer": ["99.999999999%"]
+    }
+  },
+  {
+    "id": "332",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "What is the availability on S3?",
+      "answers": [
+        "99%",
+        "99.9%",
+        "99.99%",
+        "99.999999999%"
+      ],
+      "correctAnswer": ["99.99%"]
+    }
+  },
+  {
+    "id": "333",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "What is the minimum file size that I can store on S3?",
+      "answers": [
+        "1 Kb",
+        "1 Mb",
+        "1 Gb",
+        "1 byte"
+      ],
+      "correctAnswer": ["1 byte"]
+    }
+  },
+  {
+    "id": "334",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "The difference between S3 and EBS is that EBS is object based where as S3 is block based.",
+      "answers": [
+        "true",
+        "false"
+      ],
+      "correctAnswer": ["false"]
+    }
+  },
+  {
+    "id": "335",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "S3 has eventual consistency for which HTTP Methods?",
+      "answers": [
+        "PUTS of new Objects and DELETES",
+        "overwrite PUTS and DELETES",
+        "PUTS of new objects and UPDATES",
+        "UPDATES and DELETES"
+      ],
+      "correctAnswer": ["overwrite PUTS and DELETES"]
+    }
+  },
+  {
+    "id": "336",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "You work for a busy digital marketing company who currently store their data on premise. They are looking to migrate to AWS S3 and to store their data in buckets. Each bucket will be named after their individual customers, followed by a random series of letters and numbers. Once written to S3 the data is rarely changed, as it has already been sent to the end customer for them to use as they see fit. However on some occasions, customers may need certain files updated quickly, and this may be for work that has been done months or even years ago. You would need to be able to access this data immediately to make changes in that case, but you must also keep your storage costs extremely low. The data is not easily reproducible if lost. Which S3 storage class should you choose to minimise costs and to maximise retrieval times?",
+      "answers": [
+        "S3",
+        "S3-IA",
+        "S3-RRS",
+        "Glacier"
+      ],
+      "correctAnswer": ["S3-IA"]
+    }
+  },
+  {
+    "id": "337",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "You need to use an Object based storage solution to store your critical, non replaceable data in a cost effective way. This data will be frequently updated and will need some form of version control enabled on it. Which S3 storage solution should you use?",
+      "answers": [
+        "S3",
+        "S3-IA",
+        "S3-RRS",
+        "Glacier"
+      ],
+      "correctAnswer": ["S3"]
+    }
+  },
+  {
+    "id": "338",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "You work for a health insurance company who collects large amounts of documents regarding patients health records. This data will be used usually only once when assessing a customer and will then need to be securely stored for a period of 7 years. In some rare cases you may need to retrieve this data within 24 hours of a claim being lodged. Which storage solution would best suit this scenario? You need to keep your costs as low as possible.",
+      "answers": [
+        "S3",
+        "S3-IA",
+        "S3-RRS",
+        "Glacier"
+      ],
+      "correctAnswer": ["Glacier"]
+    }
+  },
+  {
+    "id": "339",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "You run a meme creation website that frequently generates meme images. The original images are stored in S3 and the meta data about the memes are stored in DynamoDB. You need to store the memes themselves in a low cost storage solution. If an object is lost, you have created a Lambda function that will automatically recreate this meme using the original file in S3 and the metadata in Dynamodb. Which storage solution should you consider to store this non-critical, easily reproducible data on in the most cost effective solution as possible?",
+      "answers": [
+        "S3",
+        "S3-IA",
+        "S3-RRS",
+        "Glacier"
+      ],
+      "correctAnswer": ["S3-RRS"]
+    }
+  },
+  {
+    "id": "340",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "You run a popular photo sharing website that is based off S3. You generate revenue from your website via paid for adverts, however you have discovered that other websites are linking directly to the images on your site, and not to the HTML pages that serve the content. This means that people are not seeing your adverts and every time a request is made to S3 to serve an image it is costing your business money. How could you resolve this issue?",
+      "answers": [
+        "Use CloudFront to serve the static content.",
+        "Remove the ability for images to be served publicly to the site and then used signed URL's with expiry dates.",
+        "Use security groups to blacklist the IP addresses of the sites that do this.",
+        "Use EBS rather than S3 to store the content."
+      ],
+      "correctAnswer": ["Remove the ability for images to be served publicly to the site and then used signed URL's with expiry dates."]
+    }
+  },
+  {
+    "id": "341",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "When using S3 to host a static website, the URL generated for your site follows which pattern?",
+      "answers": [
+        "bucketname.s3-website.regionname.amazonaws.com",
+        "bucketname.s3-website.regionname.aws.amazon.com",
+        "bucketname.s3-website.regionname.awsamazon.com",
+        "regionname.s3-website.bucketname.amazonaws.com"
+      ],
+      "correctAnswer": ["bucketname.s3-website.regionname.amazonaws.com"]
+    }
+  },
+  {
+    "id": "342",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "When using S3 to host a static website, how do you make sure your website can scale?",
+      "answers": [
+        "S3 scales automatically for static websites, no need for load balancers or autoscaling",
+        "Place a load balancer in front of your static S3 website bucket",
+        "Use S3 cross-site replication to ensure there are enough origins for the content",
+        "You cannot scale S3 static websites"
+      ],
+      "correctAnswer": ["S3 scales automatically for static websites, no need for load balancers or autoscaling"]
+    }
+  },
+  {
+    "id": "343",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "Which is true about an S3 static website?",
+      "answers": [
+        "S3 static websites are serverless",
+        "S3 static websites can host .net and PHP code",
+        "S3 static websites need an Elastic IP address and Hosted Zone",
+        "S3 static websites are for small websites"
+      ],
+      "correctAnswer": ["S3 static websites are serverless"]
+    }
+  },
+  {
+    "id": "344",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "S3 is what kind of storage?",
+      "answers": [
+        "S3 is a key/value store",
+        "S3 is a block store",
+        "S3 is a relational store",
+        "S3 is a static store"
+      ],
+      "correctAnswer": ["S3 is a key/value store"]
+    }
+  },
+  {
+    "id": "345",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "With S3 versioning, you pay for each version of an object?",
+      "answers": [
+        "true",
+        "false"
+      ],
+      "correctAnswer": ["true"]
+    }
+  },
+  {
+    "id": "346",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "What is the only way to remove S3 versioning from a bucket?",
+      "answers": [
+        "Delete the bucket and recreate it without versioning",
+        "Disable versioning on the S3 bucket",
+        "Make the bucket private",
+        "Remove all objects from the bucket and then disable versioning"
+      ],
+      "correctAnswer": ["Delete the bucket and recreate it without versioning"]
+    }
+  },
+  {
+    "id": "347",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "CloudFront",
+      "questionType": "multiple choice 1",
+      "question": "With CloudFront how many origins can you have per distribution?",
+      "answers": [
+        "multiple",
+        "one",
+        "two",
+        "it depends on the region"
+      ],
+      "correctAnswer": ["multiple"]
+    }
+  },
+  {
+    "id": "348",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "When securing your buckets in S3, Bucket Policies apply at which level?",
+      "answers": [
+        "bucket",
+        "all the way to the individual object",
+        "region",
+        "edge location"
+      ],
+      "correctAnswer": ["bucket"]
+    }
+  },
+  {
+    "id": "349",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "When securing your buckets in S3, Access Control Lists apply at which level?",
+      "answers": [
+        "bucket",
+        "all the way to the individual object",
+        "region",
+        "edge location"
+      ],
+      "correctAnswer": ["all the way to the individual object"]
+    }
+  },
+  {
+    "id": "350",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 3",
+      "question": "When creating S3 access logs, you can write the log entries to which?",
+      "answers": [
+        "the same bucket",
+        "another bucket",
+        "a bucket in another account",
+        "an edge location"
+      ],
+      "correctAnswer": ["the same bucket", "another bucket", "a bucket in another account"]
+    }
+  },
+  {
+    "id": "351",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 2",
+      "question": "Snowball can do which of these?",
+      "answers": [
+        "import to S3",
+        "export from S3",
+        "export to Snowmobile",
+        "import from Snowmobile"
+      ],
+      "correctAnswer": ["import to S3", "export from S3"]
+    }
+  },
+  {
+    "id": "352",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "S3",
+      "questionType": "multiple choice 1",
+      "question": "You can load files to S3 much faster by enabling which of these?",
+      "answers": [
+        "multi-part upload",
+        "cross-site replication",
+        "logging",
+        "multi-factor authentication"
+      ],
+      "correctAnswer": ["multi-part upload"]
+    }
+  }
+]
