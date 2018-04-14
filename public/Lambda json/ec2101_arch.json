@@ -1,0 +1,511 @@
+[
+  {
+    "id": "353",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 4",
+      "question": "What are the four EC2 options on AWS?",
+      "answers": [
+        "On demand instances",
+        "Reserved instances",
+        "Spot instances",
+        "Dedicated host instances",
+        "Physical instances"
+      ],
+      "correctAnswer": ["On demand instances", "Reserved instances", "Spot instances", "Dedicated host instances"]
+    }
+  },
+  {
+    "id": "354",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "Which EC2 type of instance allows you to pay a fixed rate by the hour (or second for linux only) with no commitment?",
+      "answers": [
+        "On demand instances",
+        "Reserved instances",
+        "Spot instances",
+        "Dedicated host instances"
+      ],
+      "correctAnswer": ["On demand instances"]
+    }
+  },
+  {
+    "id": "355",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "Which EC2 type of instance provides you with a capacity reservation, and offers a significant discount on the hourly charge for an instance (has 1 and 3 year terms)?",
+      "answers": [
+        "On demand instances",
+        "Reserved instances",
+        "Spot instances",
+        "Dedicated host instances"
+      ],
+      "correctAnswer": ["Reserved instances"]
+    }
+  },
+  {
+    "id": "356",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "Which EC2 type of instance enables you to bid whatever price you want for instance capacity, providing for even greater savings if your applications have flexible start and end times?",
+      "answers": [
+        "On demand instances",
+        "Reserved instances",
+        "Spot instances",
+        "Dedicated host instances"
+      ],
+      "correctAnswer": ["Spot instances"]
+    }
+  },
+  {
+    "id": "357",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "Which EC2 type of instance are physical EC2 servers dedicated for your use, allowing you to use your existing server-bound software licenses (such as Oracle, VMWare, etc.)?",
+      "answers": [
+        "On demand instances",
+        "Reserved instances",
+        "Spot instances",
+        "Dedicated host instances"
+      ],
+      "correctAnswer": ["Dedicated host instances"]
+    }
+  },
+  {
+    "id": "358",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "Which EC2 type of instance is for applications with short-term, spiky, or unpredictable workloads taht cannot be interrupted?",
+      "answers": [
+        "On demand instances",
+        "Reserved instances",
+        "Spot instances",
+        "Dedicated host instances"
+      ],
+      "correctAnswer": ["On demand instances"]
+    }
+  },
+  {
+    "id": "359",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "Which EC2 type of instance is for applications being deployed or tested for the first time?",
+      "answers": [
+        "On demand instances",
+        "Reserved instances",
+        "Spot instances",
+        "Dedicated host instances"
+      ],
+      "correctAnswer": ["On demand instances"]
+    }
+  },
+  {
+    "id": "360",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "Which EC2 type of instance is for applications that have a steady state or predictable usage?",
+      "answers": [
+        "On demand instances",
+        "Reserved instances",
+        "Spot instances",
+        "Dedicated host instances"
+      ],
+      "correctAnswer": ["Reserved instances"]
+    }
+  },
+  {
+    "id": "361",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "Which EC2 type of instance is for applications that require reserved capacity?",
+      "answers": [
+        "On demand instances",
+        "Reserved instances",
+        "Spot instances",
+        "Dedicated host instances"
+      ],
+      "correctAnswer": ["Reserved instances"]
+    }
+  },
+  {
+    "id": "362",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "Which EC2 type of instance gives the account owner the ability to make up-front payments to reduce the total computing cost of the EC2 instance?",
+      "answers": [
+        "On demand instances",
+        "Reserved instances",
+        "Spot instances",
+        "Dedicated host instances"
+      ],
+      "correctAnswer": ["Reserved instances"]
+    }
+  },
+  {
+    "id": "363",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 3",
+      "question": "What are the three types of EC2 reserved instances?",
+      "answers": [
+        "Standard Reserved Instances",
+        "Convertible Reserved Instances",
+        "Scheduled Reserved Instances",
+        "Special Reserved Instances"
+      ],
+      "correctAnswer": ["Standard Reserved Instances", "Convertible Reserved Instances", "Scheduled Reserved Instances"]
+    }
+  },
+  {
+    "id": "364",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "Which type of reserved instance gives you up to 75% off when compared to on-demand?",
+      "answers": [
+        "Standard Reserved Instances",
+        "Convertible Reserved Instances",
+        "Scheduled Reserved Instances",
+        "Special Reserved Instances"
+      ],
+      "correctAnswer": ["Standard Reserved Instances"]
+    }
+  },
+  {
+    "id": "365",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "Which type of reserved instance gives you up to 45% off when compared to on-demand and the capability to change the attributes of the RI as long as the exchange results in the creation of RIs of equal or greater value?",
+      "answers": [
+        "Standard Reserved Instances",
+        "Convertible Reserved Instances",
+        "Scheduled Reserved Instances",
+        "Special Reserved Instances"
+      ],
+      "correctAnswer": ["Convertible Reserved Instances"]
+    }
+  },
+  {
+    "id": "366",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "Which type of reserved instance are available to launch within the time windows you reserve?",
+      "answers": [
+        "Standard Reserved Instances",
+        "Convertible Reserved Instances",
+        "Scheduled Reserved Instances",
+        "Special Reserved Instances"
+      ],
+      "correctAnswer": ["Scheduled Reserved Instances"]
+    }
+  },
+  {
+    "id": "367",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "Which type of reserved instance allows you to match your capacity reservation to a predictable recurring schedule that only requires a fraction of a day, week, or month?",
+      "answers": [
+        "Standard Reserved Instances",
+        "Convertible Reserved Instances",
+        "Scheduled Reserved Instances",
+        "Special Reserved Instances"
+      ],
+      "correctAnswer": ["Scheduled Reserved Instances"]
+    }
+  },
+  {
+    "id": "368",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "Which type of EC2 instance is useful for regulatory requirements that may not support multi-tenant virtualization?",
+      "answers": [
+        "On demand instances",
+        "Reserved instances",
+        "Spot instances",
+        "Dedicated host instances"
+      ],
+      "correctAnswer": ["Dedicated host instances"]
+    }
+  },
+  {
+    "id": "369",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "Which type of EC2 instance is useful for software licensing that does not support multi-tenancy or cloud deployments?",
+      "answers": [
+        "On demand instances",
+        "Reserved instances",
+        "Spot instances",
+        "Dedicated host instances"
+      ],
+      "correctAnswer": ["Dedicated host instances"]
+    }
+  },
+  {
+    "id": "370",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 2",
+      "question": "Which are true about EC2 Dedicated Host instances?",
+      "answers": [
+        "Can be purchased on-demand (hourly)",
+        "Can be purchased as a reservation for up to 75% off the on-demand price",
+        "Can be purchased for an indefinite period",
+        "Can be purchased with the account owner as complete owner"
+      ],
+      "correctAnswer": ["Can be purchased on-demand (hourly)", "Can be purchased as a reservation for up to 75% off the on-demand price"]
+    }
+  },
+  {
+    "id": "371",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "Which of the EC2 instance types is for dense storage, for example file servers or Data Warehousing, or Hadoop?",
+      "answers": [
+        "D2",
+        "R4",
+        "M4",
+        "C4",
+        "G2",
+        "I2",
+        "F1",
+        "T2",
+        "P2",
+        "X1"
+      ],
+      "correctAnswer": ["D2"]
+    }
+  },
+  {
+    "id": "372",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "Which of the EC2 instance types is for memory optimized workloads, for example memory intensive apps or Databases?",
+      "answers": [
+        "D2",
+        "R4",
+        "M4",
+        "C4",
+        "G2",
+        "I2",
+        "F1",
+        "T2",
+        "P2",
+        "X1"
+      ],
+      "correctAnswer": ["R4"]
+    }
+  },
+  {
+    "id": "373",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "Which of the EC2 instance types is for general purpose workloads, for example application servers?",
+      "answers": [
+        "D2",
+        "R4",
+        "M4",
+        "C4",
+        "G2",
+        "I2",
+        "F1",
+        "T2",
+        "P2",
+        "X1"
+      ],
+      "correctAnswer": ["M4"]
+    }
+  },
+  {
+    "id": "374",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "Which of the EC2 instance types is for compute optimized workloads, for example cpu intensive applications servers or Databases?",
+      "answers": [
+        "D2",
+        "R4",
+        "M4",
+        "C4",
+        "G2",
+        "I2",
+        "F1",
+        "T2",
+        "P2",
+        "X1"
+      ],
+      "correctAnswer": ["C4"]
+    }
+  },
+  {
+    "id": "375",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "Which of the EC2 instance types is for graphics intensive workloads, for example video encoding, 3D app streaming?",
+      "answers": [
+        "D2",
+        "R4",
+        "M4",
+        "C4",
+        "G2",
+        "I2",
+        "F1",
+        "T2",
+        "P2",
+        "X1"
+      ],
+      "correctAnswer": ["G2"]
+    }
+  },
+  {
+    "id": "376",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "Which of the EC2 instance types is for high speed storage workloads, for example NoSQL databases, data warehousing?",
+      "answers": [
+        "D2",
+        "R4",
+        "M4",
+        "C4",
+        "G2",
+        "I2",
+        "F1",
+        "T2",
+        "P2",
+        "X1"
+      ],
+      "correctAnswer": ["I2"]
+    }
+  },
+  {
+    "id": "377",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "Which of the EC2 instance types is for field programmable gate array workloads, for example hardware acceleration for your code?",
+      "answers": [
+        "D2",
+        "R4",
+        "M4",
+        "C4",
+        "G2",
+        "I2",
+        "F1",
+        "T2",
+        "P2",
+        "X1"
+      ],
+      "correctAnswer": ["F1"]
+    }
+  },
+  {
+    "id": "378",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "Which of the EC2 instance types is for lowest cost general purpose workloads, for example web servers, small databases?",
+      "answers": [
+        "D2",
+        "R4",
+        "M4",
+        "C4",
+        "G2",
+        "I2",
+        "F1",
+        "T2",
+        "P2",
+        "X1"
+      ],
+      "correctAnswer": ["T2"]
+    }
+  },
+  {
+    "id": "379",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "Which of the EC2 instance types is for graphics/general purpose GPU workloads, for example machine learning, bit coin mining?",
+      "answers": [
+        "D2",
+        "R4",
+        "M4",
+        "C4",
+        "G2",
+        "I2",
+        "F1",
+        "T2",
+        "P2",
+        "X1"
+      ],
+      "correctAnswer": ["P2"]
+    }
+  },
+  {
+    "id": "380",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "Which of the EC2 instance types is for memory optimized workloads, for SAP HANA, Apache Spark?",
+      "answers": [
+        "D2",
+        "R4",
+        "M4",
+        "C4",
+        "G2",
+        "I2",
+        "F1",
+        "T2",
+        "P2",
+        "X1"
+      ],
+      "correctAnswer": ["X1"]
+    }
+  }
+]

@@ -55,6 +55,13 @@
         </mat-checkbox>
         <mat-label>Security</mat-label>
         &nbsp;&nbsp;
+        <mat-checkbox
+          name="EC2"
+          value="EC2"
+          (change)="updateSubcategoriesChecked($event, 'EC2')">
+        </mat-checkbox>
+        <mat-label>Security</mat-label>
+        &nbsp;&nbsp;
         <button mat-button type="submit" color="primary">Submit</button>
       </div>
     </form>
