@@ -1,0 +1,411 @@
+[
+  {
+    "id": "381",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "EBS allows you to create storage volumes and attach them to _____?",
+      "answers": [
+        "EC2 instances",
+        "S3",
+        "Route 53",
+        "Elastic Load Balancers"
+      ],
+      "correctAnswer": ["EC2 instances"]
+    }
+  },
+  {
+    "id": "382",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 3",
+      "question": "Once EBS volumes are attached to an EC2 instance, you can do which of these?",
+      "answers": [
+        "create a file system ontop of the EBS volumes",
+        "run a database ontop of the EBS volumes",
+        "use them in any way you would use block storage",
+        "use them in any way you would use object storage"
+      ],
+      "correctAnswer": ["create a file system ontop of the EBS volumes", "run a database ontop of the EBS volumes", "use them in any way you would use block storage"]
+    }
+  },
+  {
+    "id": "383",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "Which are true about EBS volumes?",
+      "answers": [
+        "they are placed within a specific AZ where they are automatically replicated within that AZ",
+        "they are placed within a specific AZ where they are automatically replicated to a different AZ",
+        "they are placed within a specific AZ but not replicated",
+        "they are dirrecty attached to your EC2 instance and not replicated"
+      ],
+      "correctAnswer": ["they are placed within a specific AZ where they are automatically replicated within that AZ"]
+    }
+  },
+  {
+    "id": "384",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "EBS is which type of storage?",
+      "answers": [
+        "block based",
+        "object based"
+      ],
+      "correctAnswer": ["block based"]
+    }
+  },
+  {
+    "id": "385",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 5",
+      "question": "Which are the types of EBS volumes?",
+      "answers": [
+        "General Purpose SSD (GP2)",
+        "Provisioned IOPS SSD (IO1)",
+        "Throughput Optimized HDD (ST1)",
+        "Cold HDD (SC1)",
+        "Magnetic Standard",
+        "Optical Standard"
+      ],
+      "correctAnswer": ["General Purpose SSD (GP2)", "Provisioned IOPS SSD (IO1)", "Throughput Optimized HDD (ST1)", "Cold HDD (SC1)", "Magnetic Standard"]
+    }
+  },
+  {
+    "id": "386",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "Which EBS volume type balances both price and performance?",
+      "answers": [
+        "General Purpose SSD (GP2)",
+        "Provisioned IOPS SSD (IO1)",
+        "Throughput Optimized HDD (ST1)",
+        "Cold HDD (SC1)",
+        "Magnetic Standard",
+        "Optical Standard"
+      ],
+      "correctAnswer": ["General Purpose SSD (GP2)"]
+    }
+  },
+  {
+    "id": "387",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "Which EBS volume type has a ratio of 3 IOPS per GB with up to 10,000 IOPS?",
+      "answers": [
+        "General Purpose SSD (GP2)",
+        "Provisioned IOPS SSD (IO1)",
+        "Throughput Optimized HDD (ST1)",
+        "Cold HDD (SC1)",
+        "Magnetic Standard",
+        "Optical Standard"
+      ],
+      "correctAnswer": ["General Purpose SSD (GP2)"]
+    }
+  },
+  {
+    "id": "388",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "Which EBS volume type can burst up to 3,000 IOPS for extended periods of time for volumes at 3,334 GB and above?",
+      "answers": [
+        "General Purpose SSD (GP2)",
+        "Provisioned IOPS SSD (IO1)",
+        "Throughput Optimized HDD (ST1)",
+        "Cold HDD (SC1)",
+        "Magnetic Standard",
+        "Optical Standard"
+      ],
+      "correctAnswer": ["General Purpose SSD (GP2)"]
+    }
+  },
+  {
+    "id": "389",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "Which EBS volume type is designed for I/O intensive applications such as large relational databases or NoSQL databases?",
+      "answers": [
+        "General Purpose SSD (GP2)",
+        "Provisioned IOPS SSD (IO1)",
+        "Throughput Optimized HDD (ST1)",
+        "Cold HDD (SC1)",
+        "Magnetic Standard",
+        "Optical Standard"
+      ],
+      "correctAnswer": ["Provisioned IOPS SSD (IO1)"]
+    }
+  },
+  {
+    "id": "390",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "Which EBS volume type would you use if you need more than 10,000 IOPS?",
+      "answers": [
+        "General Purpose SSD (GP2)",
+        "Provisioned IOPS SSD (IO1)",
+        "Throughput Optimized HDD (ST1)",
+        "Cold HDD (SC1)",
+        "Magnetic Standard",
+        "Optical Standard"
+      ],
+      "correctAnswer": ["Provisioned IOPS SSD (IO1)"]
+    }
+  },
+  {
+    "id": "391",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "Which EBS volume type allows you to provision up to 20,000 IOPS per volume?",
+      "answers": [
+        "General Purpose SSD (GP2)",
+        "Provisioned IOPS SSD (IO1)",
+        "Throughput Optimized HDD (ST1)",
+        "Cold HDD (SC1)",
+        "Magnetic Standard",
+        "Optical Standard"
+      ],
+      "correctAnswer": ["Provisioned IOPS SSD (IO1)"]
+    }
+  },
+  {
+    "id": "392",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "Which EBS volume type would you use for big data storage?",
+      "answers": [
+        "General Purpose SSD (GP2)",
+        "Provisioned IOPS SSD (IO1)",
+        "Throughput Optimized HDD (ST1)",
+        "Cold HDD (SC1)",
+        "Magnetic Standard",
+        "Optical Standard"
+      ],
+      "correctAnswer": ["Throughput Optimized HDD (ST1)"]
+    }
+  },
+  {
+    "id": "393",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "Which EBS volume type would you use for data warehouse storage?",
+      "answers": [
+        "General Purpose SSD (GP2)",
+        "Provisioned IOPS SSD (IO1)",
+        "Throughput Optimized HDD (ST1)",
+        "Cold HDD (SC1)",
+        "Magnetic Standard",
+        "Optical Standard"
+      ],
+      "correctAnswer": ["Throughput Optimized HDD (ST1)"]
+    }
+  },
+  {
+    "id": "394",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "Which EBS volume type would you use for log processing?",
+      "answers": [
+        "General Purpose SSD (GP2)",
+        "Provisioned IOPS SSD (IO1)",
+        "Throughput Optimized HDD (ST1)",
+        "Cold HDD (SC1)",
+        "Magnetic Standard",
+        "Optical Standard"
+      ],
+      "correctAnswer": ["Throughput Optimized HDD (ST1)"]
+    }
+  },
+  {
+    "id": "395",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 2",
+      "question": "Which EBS volume types cannot be boot volumes?",
+      "answers": [
+        "General Purpose SSD (GP2)",
+        "Provisioned IOPS SSD (IO1)",
+        "Throughput Optimized HDD (ST1)",
+        "Cold HDD (SC1)",
+        "Magnetic Standard",
+        "Optical Standard"
+      ],
+      "correctAnswer": ["Throughput Optimized HDD (ST1)", "Cold HDD (SC1)"]
+    }
+  },
+  {
+    "id": "396",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "Which EBS volume type is the lowest cost for infrequently accessed workloads?",
+      "answers": [
+        "General Purpose SSD (GP2)",
+        "Provisioned IOPS SSD (IO1)",
+        "Throughput Optimized HDD (ST1)",
+        "Cold HDD (SC1)",
+        "Magnetic Standard",
+        "Optical Standard"
+      ],
+      "correctAnswer": ["Cold HDD (SC1)"]
+    }
+  },
+  {
+    "id": "397",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "Which EBS volume type would you use for file servers?",
+      "answers": [
+        "General Purpose SSD (GP2)",
+        "Provisioned IOPS SSD (IO1)",
+        "Throughput Optimized HDD (ST1)",
+        "Cold HDD (SC1)",
+        "Magnetic Standard",
+        "Optical Standard"
+      ],
+      "correctAnswer": ["Cold HDD (SC1)"]
+    }
+  },
+  {
+    "id": "398",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "Which EBS volume is the lowest cost per gigabyte of all EBS volumes that is bootable?",
+      "answers": [
+        "General Purpose SSD (GP2)",
+        "Provisioned IOPS SSD (IO1)",
+        "Throughput Optimized HDD (ST1)",
+        "Cold HDD (SC1)",
+        "Magnetic Standard",
+        "Optical Standard"
+      ],
+      "correctAnswer": ["Magnetic Standard"]
+    }
+  },
+  {
+    "id": "399",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "Which EBS volume type is ideal for workloads where data is accessed infrequently, and applications where the lowest cost is important?",
+      "answers": [
+        "General Purpose SSD (GP2)",
+        "Provisioned IOPS SSD (IO1)",
+        "Throughput Optimized HDD (ST1)",
+        "Cold HDD (SC1)",
+        "Magnetic Standard",
+        "Optical Standard"
+      ],
+      "correctAnswer": ["Magnetic Standard"]
+    }
+  },
+  {
+    "id": "400",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "With Spot EC2 instances, if YOU terminate the instance ___________?",
+      "answers": [
+        "you pay for the hour in which it was terminated",
+        "AWS gives the hour in which it was terminated for free",
+        "you pay for the fraction of the hour in which you ran the instance"
+      ],
+      "correctAnswer": ["you pay for the hour in which it was terminated"]
+    }
+  },
+  {
+    "id": "401",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "With Spot EC2 instances, if AWS terminates the instance ___________?",
+      "answers": [
+        "you pay for the hour in which it was terminated",
+        "AWS gives the hour in which it was terminated for free",
+        "you pay for the fraction of the hour in which you ran the instance"
+      ],
+      "correctAnswer": ["AWS gives the hour in which it was terminated for free"]
+    }
+  },
+  {
+    "id": "402",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "Which EBS volume type is good for sequentially written data, like log files?",
+      "answers": [
+        "General Purpose SSD (GP2)",
+        "Provisioned IOPS SSD (IO1)",
+        "Throughput Optimized HDD (ST1)",
+        "Cold HDD (SC1)",
+        "Magnetic Standard",
+        "Optical Standard"
+      ],
+      "correctAnswer": ["Throughput Optimized HDD (ST1)"]
+    }
+  },
+  {
+    "id": "403",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "You cannot mount 1 EBS volume to multiple EC2 instances?",
+      "answers": [
+        "true",
+        "false"
+      ],
+      "correctAnswer": ["true"]
+    }
+  },
+  {
+    "id": "404",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "If you wish to mount a volume to multiple EC2 instances you should use which type of disk service?",
+      "answers": [
+        "EBS",
+        "EFS",
+        "ECS"
+      ],
+      "correctAnswer": ["EFS"]
+    }
+  }
+]
