@@ -1,0 +1,428 @@
+[
+  {
+    "id": "405",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "A subnet maps to how many AZs?",
+      "answers": [
+        "one",
+        "two",
+        "many"
+      ],
+      "correctAnswer": ["one"]
+    }
+  },
+  {
+    "id": "406",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "When you terminate an EC2 instance, its attached root EBS volume will be deleted by default?",
+      "answers": [
+        "true",
+        "false"
+      ],
+      "correctAnswer": ["true"]
+    }
+  },
+  {
+    "id": "407",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "If you don't want the root EBS volume to be deleted when you terminate its EC2 instance, you can do which of these?",
+      "answers": [
+        "uncheck the Delete on Termination checkbox in the console",
+        "use the cli to change the delete on termination status for the volume",
+        "you can't make the root volume continue to exist if you terminate its EC2 instance"
+      ],
+      "correctAnswer": ["uncheck the Delete on Termination checkbox in the console"]
+    }
+  },
+  {
+    "id": "408",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "Which EC2 status check verifies that your EC2 instance is reachable?",
+      "answers": [
+        "System Status Check",
+        "Instance Status Check"
+      ],
+      "correctAnswer": ["System Status Check"]
+    }
+  },
+  {
+    "id": "409",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "Which EC2 status check verifies that you can get network packets to your instance?",
+      "answers": [
+        "System Status Check",
+        "Instance Status Check"
+      ],
+      "correctAnswer": ["System Status Check"]
+    }
+  },
+  {
+    "id": "410",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "If this status check fails there may be an issue with the infrastructure of the EC2 instanec, such as power, OS, or networking?",
+      "answers": [
+        "System Status Check",
+        "Instance Status Check"
+      ],
+      "correctAnswer": ["System Status Check"]
+    }
+  },
+  {
+    "id": "411",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "Which EC2 status check verifies that your instance is accepting traffic?",
+      "answers": [
+        "System Status Check",
+        "Instance Status Check"
+      ],
+      "correctAnswer": ["Instance Status Check"]
+    }
+  },
+  {
+    "id": "412",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "Basic monitoring of an EC2 instance occurs every _____ minutes?",
+      "answers": [
+        "one",
+        "five",
+        "ten"
+      ],
+      "correctAnswer": ["five"]
+    }
+  },
+  {
+    "id": "413",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "Detailed monitoring of an EC2 instance occurs every _____ minutes, and costs extra?",
+      "answers": [
+        "one",
+        "five",
+        "ten"
+      ],
+      "correctAnswer": ["one"]
+    }
+  },
+  {
+    "id": "414",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "EC2 termination protection is _________ by default?",
+      "answers": [
+        "turned off",
+        "turned on",
+        "undefined"
+      ],
+      "correctAnswer": ["turned off"]
+    }
+  },
+  {
+    "id": "415",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "You must do what to get termination protection for your EC2 instance?",
+      "answers": [
+        "explicitly turn it on for that instance",
+        "accept the defaults when creating the instance"
+      ],
+      "correctAnswer": ["explicitly turn it on for that instance"]
+    }
+  },
+  {
+    "id": "416",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "On an EBS-backed EC2 instance, the default action to take when the EC2 instance is terminated is what?",
+      "answers": [
+        "the EBS root volume is deleted when the EC2 instance is terminated",
+        "the EBS root volume remains active when the EC2 instance is terminated",
+        "the EBS root volume is inactive but still exists when the EC2 instance is terminated"
+      ],
+      "correctAnswer": ["the EBS root volume is deleted when the EC2 instance is terminated"]
+    }
+  },
+  {
+    "id": "417",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "EBS root volumes of the AMIs created by AWS (or the DEFAULT AMIs) _______?",
+      "answers": [
+        "cannot be encrypted",
+        "can be encrypted"
+      ],
+      "correctAnswer": ["cannot be encrypted"]
+    }
+  },
+  {
+    "id": "418",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "You can use a third party tool (such as bit locker) to encrypt an AWS created AMI?",
+      "answers": [
+        "true",
+        "false"
+      ],
+      "correctAnswer": ["true"]
+    }
+  },
+  {
+    "id": "419",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 2",
+      "question": "You can create your own AMI copy of the AWS default AMI and encrypt the root EBS volume using which of these?",
+      "answers": [
+        "AWS console",
+        "AWS API",
+        "you can't encrypt the root EBS volume when creating your own AMI copy"
+      ],
+      "correctAnswer": ["AWS console", "AWS API"]
+    }
+  },
+  {
+    "id": "420",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "Additional EBS volumes added to your EC2 instance can be encrypted?",
+      "answers": [
+        "true",
+        "false"
+      ],
+      "correctAnswer": ["true"]
+    }
+  },
+  {
+    "id": "421",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "A security group is what?",
+      "answers": [
+        "virtual firewall controlling traffic to your instances",
+        "a physical firewall controlling traffic to your instances",
+        "an IAM security role",
+        "an IAM security group"
+      ],
+      "correctAnswer": ["virtual firewall controlling traffic to your instances"]
+    }
+  },
+  {
+    "id": "422",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "An EC2 instance can have how many security groups?",
+      "answers": [
+        "one",
+        "two",
+        "multiple"
+      ],
+      "correctAnswer": ["multiple"]
+    }
+  },
+  {
+    "id": "423",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "Any change applied to a security group is applied when?",
+      "answers": [
+        "immediately",
+        "after the time to live (TTL) expires",
+        "when the security groups for you instance are refreshed",
+        "within several minutes"
+      ],
+      "correctAnswer": ["immediately"]
+    }
+  },
+  {
+    "id": "424",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "Security groups are ______?",
+      "answers": [
+        "stateful",
+        "stateless",
+        "without state",
+        "of indeterminate state"
+      ],
+      "correctAnswer": ["stateful"]
+    }
+  },
+  {
+    "id": "425",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "Since security groups are stateful, any traffic allowed in is __________?",
+      "answers": [
+        "allowed back out",
+        "only allowed back out if an outbound rule is defined for that type of traffic"
+      ],
+      "correctAnswer": ["allowed back out"]
+    }
+  },
+  {
+    "id": "426",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "When you create an inbound security group rule a corresponding outbound rule is also added so that type of traffic is allowed back out again?",
+      "answers": [
+        "true",
+        "false"
+      ],
+      "correctAnswer": ["true"]
+    }
+  },
+  {
+    "id": "427",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "With security groups _________?",
+      "answers": [
+        "all traffic is denied by default",
+        "all traffic is allowed by default",
+        "there is no default defined"
+      ],
+      "correctAnswer": ["all traffic is denied by default"]
+    }
+  },
+  {
+    "id": "428",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "How do you allow traffic for a specific type of traffic using a security group?",
+      "answers": [
+        "you add a rule for that type of traffic on a specific port using a specific CIDR",
+        "you define an IAM role and associate it with the security group",
+        "you define an IAM policy and associate it with the security group"
+      ],
+      "correctAnswer": ["you add a rule for that type of traffic on a specific port using a specific CIDR"]
+    }
+  },
+  {
+    "id": "429",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "With security groups all outbound traffic is ________ by default?",
+      "answers": [
+        "allowed",
+        "denied",
+        "undefined"
+      ],
+      "correctAnswer": ["allowed"]
+    }
+  },
+  {
+    "id": "430",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "You can have how many EC2 instances within a security group?",
+      "answers": [
+        "one",
+        "two",
+        "multiple"
+      ],
+      "correctAnswer": ["multiple"]
+    }
+  },
+  {
+    "id": "431",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "Which do you use to block specific IP addresses access to your EC2 instance?",
+      "answers": [
+        "Security Group",
+        "Network Access Control List",
+        "IAM Role",
+        "IAM Policy"
+      ],
+      "correctAnswer": ["Network Access Control List"]
+    }
+  },
+  {
+    "id": "432",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "You cannot block specific IP addresses using security groups?",
+      "answers": [
+        "true",
+        "false"
+      ],
+      "correctAnswer": ["true"]
+    }
+  },
+  {
+    "id": "433",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "Using security groups you can specify which types of rules?",
+      "answers": [
+        "allow rules",
+        "deny rules"
+      ],
+      "correctAnswer": ["allow rules"]
+    }
+  }
+]
