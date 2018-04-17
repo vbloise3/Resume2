@@ -1,0 +1,455 @@
+[
+  {
+    "id": "434",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "An EC2 instance and its mounted EBS volumes must be what?",
+      "answers": [
+        "in the same AZ",
+        "in any AZ in the same region",
+        "in any region"
+      ],
+      "correctAnswer": ["in the same AZ"]
+    }
+  },
+  {
+    "id": "435",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 2",
+      "question": "You can upgrade an EBS volume by changing which of these?",
+      "answers": [
+        "change its type",
+        "change its size",
+        "change its location",
+        "change its volume id"
+      ],
+      "correctAnswer": ["change its type", "change its size"]
+    }
+  },
+  {
+    "id": "436",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "You can upgrade an EBS volume with no downtime?",
+      "answers": [
+        "true",
+        "false"
+      ],
+      "correctAnswer": ["true"]
+    }
+  },
+  {
+    "id": "437",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 4",
+      "question": "Which EBS volume types can you modify?",
+      "answers": [
+        "Throughput Optimized HDD (ST1)",
+        "Cold HDD (SC1)",
+        "Provisioned IOPS SSD (IO1)",
+        "General Purpose SSD (GP2)",
+        "Magnetic"
+      ],
+      "correctAnswer": ["Throughput Optimized HDD (ST1)", "Cold HDD (SC1)", "Provisioned IOPS SSD (IO1)", "General Purpose SSD (GP2)"]
+    }
+  },
+  {
+    "id": "438",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "Which EBS volume type cannot be modified?",
+      "answers": [
+        "Throughput Optimized HDD (ST1)",
+        "Cold HDD (SC1)",
+        "Provisioned IOPS SSD (IO1)",
+        "General Purpose SSD (GP2)",
+        "Magnetic"
+      ],
+      "correctAnswer": ["Magnetic"]
+    }
+  },
+  {
+    "id": "439",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "You can only modify a General Purpose SSD (GP2) to which other type of EBS volume?",
+      "answers": [
+        "Throughput Optimized HDD (ST1)",
+        "Cold HDD (SC1)",
+        "Provisioned IOPS SSD (IO1)",
+        "General Purpose SSD (GP2)",
+        "Magnetic"
+      ],
+      "correctAnswer": ["Provisioned IOPS SSD (IO1)"]
+    }
+  },
+  {
+    "id": "440",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "From your existing volume, how do you create a new volume in another AZ in the same region?",
+      "answers": [
+        "take a snapshot of the volume, then select the snapshot and create a new volume from it in a new AZ in the same region",
+        "take a snapshot of the volume, then copy the snapshot to the new AZ in the same region",
+        "select the volume and move it to the new AZ in the same region",
+        "you can't move a volume to a new AZ"
+      ],
+      "correctAnswer": ["take a snapshot of the volume, then select the snapshot and create a new volume from it in a new AZ in the same region"]
+    }
+  },
+  {
+    "id": "441",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "From your existing volume, how do you create a new volume in another AZ in any region in the world?",
+      "answers": [
+        "take a snapshot of the volume, then select the snapshot and copy it to a new AZ in any region in the world",
+        "take a snapshot of the volume, then select the snapshot and create a new volume from it in a new AZ in any region in the world",
+        "select the volume and move it to the new AZ in any region in the world",
+        "you can't move a volume to a new AZ"
+      ],
+      "correctAnswer": ["take a snapshot of the volume, then select the snapshot and copy it to a new AZ in any region in the world"]
+    }
+  },
+  {
+    "id": "442",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "How do you move an EC2 instance to a new AZ or region?",
+      "answers": [
+        "take a snapshot of the root volume, create an image (AMI) of the snapshot, then copy the AMI to the region/AZ to which you wish to move the EC2 instance",
+        "take a snapshot of the volume, then select the snapshot and create a new volume from it in a new AZ in any region in the world",
+        "select the volume and move it to the new AZ in any region in the world",
+        "you can't move an EC2 instance to a new AZ",
+        "select the EC2 instance, then create an image (AMI) of the EC2 instance, then select the AMI and launch it in a new AZ in any region in the world"
+      ],
+      "correctAnswer": ["take a snapshot of the root volume, create an image (AMI) of the snapshot, then copy the AMI to the region/AZ to which you wish to move the EC2 instance"]
+    }
+  },
+  {
+    "id": "443",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "How do you move an EC2 instance to a new AZ within its region?",
+      "answers": [
+        "take a snapshot of the volume, then select the snapshot and create a new volume from it in a new AZ in any region in the world",
+        "select the volume and move it to the new AZ in any region in the world",
+        "you can't move an EC2 instance to a new AZ",
+        "select the EC2 instance, then create an image (AMI) of the EC2 instance, then select the AMI and launch it in the new AZ by selecting a new subnet"
+      ],
+      "correctAnswer": ["select the EC2 instance, then create an image (AMI) of the EC2 instance, then select the AMI and launch it in the new AZ by selecting a new subnet"]
+    }
+  },
+  {
+    "id": "444",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "Which of these are for creating backups?",
+      "answers": [
+        "EBS volume snapshots",
+        "EBS volume sourced images (AMIs)",
+        "EC2 instance sourced images (AMIs)",
+        "EBS volume copies"
+      ],
+      "correctAnswer": ["EBS volume snapshots"]
+    }
+  },
+  {
+    "id": "445",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "Which of these are for creating new EC2 instances?",
+      "answers": [
+        "EBS volume snapshots",
+        "images (AMIs)",
+        "EBS volume copies"
+      ],
+      "correctAnswer": ["images (AMIs)"]
+    }
+  },
+  {
+    "id": "446",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "When you launch your new EC2 instance from an AMI, how do you choose the AZ in which to run it?",
+      "answers": [
+        "select the AZ from the subnet selection list on the console launch page",
+        "you can't select a new AZ, it has to run in the same AZ as its source",
+        "you select the AZ after it has launched"
+      ],
+      "correctAnswer": ["select the AZ from the subnet selection list on the console launch page"]
+    }
+  },
+  {
+    "id": "447",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "How do you move your EC2 instance to another region?",
+      "answers": [
+        "create an AMI from it, then copy the AMI to the region in which you wish to launch the EC2 instance",
+        "create a snapshot of the root volume, then launch the EC2 image from the snapshot in the region in which you wish to run the EC2 instance",
+        "you can't move an EC2 instance to another region"
+      ],
+      "correctAnswer": ["create an AMI from it, then copy the AMI to the region in which you wish to launch the EC2 instance"]
+    }
+  },
+  {
+    "id": "448",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "An EBS volume is a _____?",
+      "answers": [
+        "a virtual hard disk",
+        "a physical hard disk",
+        "an array of physical hard disks",
+        "a hard disk directly connected to your EC2 instance"
+      ],
+      "correctAnswer": ["a virtual hard disk"]
+    }
+  },
+  {
+    "id": "449",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "EBS snapshots are stored where?",
+      "answers": [
+        "on S3",
+        "on physical disks attached to your EC2 instance",
+        "on tape backup",
+        "in cache memory"
+      ],
+      "correctAnswer": ["on S3"]
+    }
+  },
+  {
+    "id": "450",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "EBS snapshots are ________?",
+      "answers": [
+        "point in time copies of EBS volumes",
+        "exact copies of the full EBS volume",
+        "always a full copy of all of the EBS volume",
+        "pointers to the EBS volume"
+      ],
+      "correctAnswer": ["point in time copies of EBS volumes"]
+    }
+  },
+  {
+    "id": "451",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "Snapshots are stored incrementally, only the blocks that have changed since the last snapshot are moved to S3?",
+      "answers": [
+        "true",
+        "false"
+      ],
+      "correctAnswer": ["true"]
+    }
+  },
+  {
+    "id": "452",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "You MUST stop your EC2 instance before taking a snapshot of its root EBS volume?",
+      "answers": [
+        "true",
+        "false"
+      ],
+      "correctAnswer": ["false"]
+    }
+  },
+  {
+    "id": "453",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "You SHOULD stop your EC2 instance before taking a snapshot of its root EBS volume?",
+      "answers": [
+        "true",
+        "false"
+      ],
+      "correctAnswer": ["true"]
+    }
+  },
+  {
+    "id": "454",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "You CAN take a snapshot of an EC2 instance's root EBS volume while the instance is running?",
+      "answers": [
+        "true",
+        "false"
+      ],
+      "correctAnswer": ["true"]
+    }
+  },
+  {
+    "id": "455",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 2",
+      "question": "You can create AMIs from which?",
+      "answers": [
+        "EC2 instances",
+        "EBS snapshots",
+        "EBS volumes"
+      ],
+      "correctAnswer": ["EC2 instances", "EBS snapshots"]
+    }
+  },
+  {
+    "id": "456",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "You CANNOT change EBS volumes on the fly?",
+      "answers": [
+        "true",
+        "false"
+      ],
+      "correctAnswer": ["false"]
+    }
+  },
+  {
+    "id": "457",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "EBS volumes can be in a different AZ than their EC2 instance?",
+      "answers": [
+        "true",
+        "false"
+      ],
+      "correctAnswer": ["false"]
+    }
+  },
+  {
+    "id": "458",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "Snapshots of encrypted volumes are encrypted automatically?",
+      "answers": [
+        "true",
+        "false"
+      ],
+      "correctAnswer": ["true"]
+    }
+  },
+  {
+    "id": "459",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "EBS volumes restored from encrypted snapshots are not encrypted automatically?",
+      "answers": [
+        "true",
+        "false"
+      ],
+      "correctAnswer": ["false"]
+    }
+  },
+  {
+    "id": "460",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "You can share encrypted EBS snapshots?",
+      "answers": [
+        "true",
+        "false"
+      ],
+      "correctAnswer": ["false"]
+    }
+  },
+  {
+    "id": "461",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "You can make an encrypted EBS snapshot public?",
+      "answers": [
+        "true",
+        "false"
+      ],
+      "correctAnswer": ["false"]
+    }
+  },
+  {
+    "id": "462",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "You cannot share unencrypted EBS snapshots with other AWS accounts?",
+      "answers": [
+        "true",
+        "false"
+      ],
+      "correctAnswer": ["false"]
+    }
+  },
+  {
+    "id": "463",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "You can make unencrypted EBS snapshots public?",
+      "answers": [
+        "true",
+        "false"
+      ],
+      "correctAnswer": ["true"]
+    }
+  }
+]
