@@ -77,7 +77,7 @@
     "info": {
       "subcategory": "EC2",
       "questionType": "multiple choice 1",
-      "question": "If this status check fails there may be an issue with the infrastructure of the EC2 instanec, such as power, OS, or networking?",
+      "question": "If this status check fails there may be an issue with the infrastructure of the EC2 instance, such as power, OS, or networking?",
       "answers": [
         "System Status Check",
         "Instance Status Check"

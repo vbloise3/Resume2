@@ -1,0 +1,130 @@
+[
+  {
+    "id": "464",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "RAID stands for which?",
+      "answers": [
+        "Redundant Array of Independent Disks",
+        "Rapid Array of Independent Disks",
+        "Redundant Array of Interconnected Disks",
+        "Redundant Area of Independent Disks"
+      ],
+      "correctAnswer": ["Redundant Array of Independent Disks"]
+    }
+  },
+  {
+    "id": "465",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "Which of the following RAID types are striped with no redundancy, and have good performance?",
+      "answers": [
+        "RAID 0",
+        "RAID 1",
+        "RAID 5",
+        "RAID 10"
+      ],
+      "correctAnswer": ["RAID 0"]
+    }
+  },
+  {
+    "id": "466",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "Which of the following RAID types are mirrored and redundant?",
+      "answers": [
+        "RAID 0",
+        "RAID 1",
+        "RAID 5",
+        "RAID 10"
+      ],
+      "correctAnswer": ["RAID 1"]
+    }
+  },
+  {
+    "id": "467",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "Which of the following RAID types are good for reads, bad for writes, AWS does not recommend ever putting this type of RAID on EBS volumes?",
+      "answers": [
+        "RAID 0",
+        "RAID 1",
+        "RAID 5",
+        "RAID 10"
+      ],
+      "correctAnswer": ["RAID 5"]
+    }
+  },
+  {
+    "id": "468",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "Which of the following RAID types are striped and mirrored, have good redundancy, and good performance?",
+      "answers": [
+        "RAID 0",
+        "RAID 1",
+        "RAID 5",
+        "RAID 10"
+      ],
+      "correctAnswer": ["RAID 10"]
+    }
+  },
+  {
+    "id": "469",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "How do you get even better performance from EBS volumes?",
+      "answers": [
+        "attach multiple EBS volumes to your EC2 instance, then configure them as a RAID array",
+        "attach more EBS volumes to your EC2 instance",
+        "attach larger EBS volumes to your EC2 instance",
+        "attach more, smaller EBS volumes to your EC2 instance"
+      ],
+      "correctAnswer": ["attach multiple EBS volumes to your EC2 instance, then configure them as a RAID array"]
+    }
+  },
+  {
+    "id": "470",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "If you have an EC2 instance running a Casandra database on your attached EBS volume, where your performance is suffering because of disk I/O, how do you improve the performance?",
+      "answers": [
+        "attach multiple EBS volumes to your EC2 instance, then configure them as a RAID array and run your Casandra database on the RAID array",
+        "attach more EBS volumes to your EC2 instance and run the Casandra database across the additional disks",
+        "attach larger EBS volumes to your EC2 instance and run the Casandra database across the larger disks",
+        "attach more, smaller EBS volumes to your EC2 instance and run the Casandra database across the smaller disks"
+      ],
+      "correctAnswer": ["attach multiple EBS volumes to your EC2 instance, then configure them as a RAID array and run your Casandra database on the RAID array"]
+    }
+  },
+  {
+    "id": "471",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 2",
+      "question": "Which of these methods can you use to create a snapshot from a RAID array?",
+      "answers": [
+        "take an application consistent snapshot by freezing the file system, then unmounting the RAID array, then take a snapshot ",
+        "take an application consistent snapshot by shutting down the EC2 instance, then take a snapshot, then restart the EC2 instance",
+        "take an application consistent snapshot by terminating the EC2 instance, then taking a snapshot of the RAID array, then recreate the EC2 instance",
+        "take an application consistent snapshot by taking a snapshot of the RAID array while the EC2 instance is running"
+      ],
+      "correctAnswer": ["take an application consistent snapshot by freezing the file system, then unmounting the RAID array, then take a snapshot ", "take an application consistent snapshot by shutting down the EC2 instance, then take a snapshot, then restart the EC2 instance"]
+    }
+  }
+]

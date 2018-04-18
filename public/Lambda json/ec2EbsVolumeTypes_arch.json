@@ -152,8 +152,8 @@
       "questionType": "multiple choice 1",
       "question": "How do you move an EC2 instance to a new AZ within its region?",
       "answers": [
-        "take a snapshot of the volume, then select the snapshot and create a new volume from it in a new AZ in any region in the world",
-        "select the volume and move it to the new AZ in any region in the world",
+        "take a snapshot of the volume, then select the snapshot and create a new volume from it in a new AZ",
+        "select the volume and move it to the new AZ",
         "you can't move an EC2 instance to a new AZ",
         "select the EC2 instance, then create an image (AMI) of the EC2 instance, then select the AMI and launch it in the new AZ by selecting a new subnet"
       ],
@@ -346,7 +346,7 @@
     "info": {
       "subcategory": "EC2",
       "questionType": "multiple choice 1",
-      "question": "You CANNOT change EBS volumes on the fly?",
+      "question": "You cannot change EBS volumes on the fly?",
       "answers": [
         "true",
         "false"
