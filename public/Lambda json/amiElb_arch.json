@@ -1,0 +1,328 @@
+[
+  {
+    "id": "472",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 2",
+      "question": "What are the two types of volume stores for EC2 instances?",
+      "answers": [
+        "EBS backed volumes",
+        "Instance Store backed volumes",
+        "RAID backed volumes",
+        "EFS backed volumes",
+        "Local Store backed volumes"
+      ],
+      "correctAnswer": ["EBS backed volumes", "Instance Store backed volumes"]
+    }
+  },
+  {
+    "id": "473",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "Instance store volumes are somtimes called what?",
+      "answers": [
+        "ephemeral storage",
+        "temporary storage",
+        "solid state storage",
+        "permanent storage"
+      ],
+      "correctAnswer": ["ephemeral storage"]
+    }
+  },
+  {
+    "id": "474",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "Instance store volumes can be _____?",
+      "answers": [
+        "stopped",
+        "started",
+        "copied",
+        "replicated"
+      ],
+      "correctAnswer": ["stopped"]
+    }
+  },
+  {
+    "id": "475",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "If the underlying host fails, you will _____ when using Instance store backed volumes?",
+      "answers": [
+        "lose your data",
+        "retain your data",
+        "not be impacted"
+      ],
+      "correctAnswer": ["lose your data"]
+    }
+  },
+  {
+    "id": "476",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "_____ backed volumes can be stopped?",
+      "answers": [
+        "EBS",
+        "Instance Store"
+      ],
+      "correctAnswer": ["EBS"]
+    }
+  },
+  {
+    "id": "477",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "If the EC2 instance is stopped, you will _____ when using EBS backed volumes?",
+      "answers": [
+        "lose your data",
+        "not lose your data"
+      ],
+      "correctAnswer": ["not lose your data"]
+    }
+  },
+  {
+    "id": "478",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "If you reboot your EC2 instance you will not lose your data for which type of volumes?",
+      "answers": [
+        "EBS backed",
+        "Instance Store backed",
+        "you won't lose data for either"
+      ],
+      "correctAnswer": ["you won't lose data for either"]
+    }
+  },
+  {
+    "id": "479",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "By default, if you terminate your EC2 instance your root volumes will be deleted for which types?",
+      "answers": [
+        "EBS backed",
+        "Instance Store backed",
+        "both types will be deleted"
+      ],
+      "correctAnswer": ["both types will be deleted"]
+    }
+  },
+  {
+    "id": "480",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "For this type, you can tell AWS to keep the root volume (through the console) if you terminate your EC2 instance?",
+      "answers": [
+        "EBS backed",
+        "Instance Store backed",
+        "both types will be deleted"
+      ],
+      "correctAnswer": ["EBS backed"]
+    }
+  },
+  {
+    "id": "481",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 3",
+      "question": "What are the three types of Elastic Load Balancers?",
+      "answers": [
+        "Classic",
+        "Application",
+        "Network",
+        "Ephemeral"
+      ],
+      "correctAnswer": ["Classic", "Application", "Network"]
+    }
+  },
+  {
+    "id": "482",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "Which type of load balancer operates at layer 7?",
+      "answers": [
+        "Classic",
+        "Application",
+        "Network",
+        "Ephemeral"
+      ],
+      "correctAnswer": ["Application"]
+    }
+  },
+  {
+    "id": "483",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "Which type of load balancer operates at layer 4?",
+      "answers": [
+        "Classic",
+        "Application",
+        "Network",
+        "Ephemeral"
+      ],
+      "correctAnswer": ["Classic"]
+    }
+  },
+  {
+    "id": "484",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "Which type of load balancer makes routing decisions at the application layer (HTTP/HTTPS)?",
+      "answers": [
+        "Classic",
+        "Application",
+        "Network",
+        "Ephemeral"
+      ],
+      "correctAnswer": ["Application"]
+    }
+  },
+  {
+    "id": "485",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "Which type of load balancer supports path-based routing?",
+      "answers": [
+        "Classic",
+        "Application",
+        "Network",
+        "Ephemeral"
+      ],
+      "correctAnswer": ["Application"]
+    }
+  },
+  {
+    "id": "486",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "Which type of load balancer can route requests to one or more ports on each EC2 instance or container instance in your VPC?",
+      "answers": [
+        "Classic",
+        "Application",
+        "Network",
+        "Ephemeral"
+      ],
+      "correctAnswer": ["Application"]
+    }
+  },
+  {
+    "id": "487",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "Which type of load balancer makes routing decisions at either the transport layer (TCP/SSL) or the application layer (HTTP/HTTPS)?",
+      "answers": [
+        "Classic",
+        "Application",
+        "Network",
+        "Ephemeral"
+      ],
+      "correctAnswer": ["Classic"]
+    }
+  },
+  {
+    "id": "488",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "Which type of load balancer supports either EC2-Classic or VPC?",
+      "answers": [
+        "Classic",
+        "Application",
+        "Network",
+        "Ephemeral"
+      ],
+      "correctAnswer": ["Classic"]
+    }
+  },
+  {
+    "id": "489",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "You get a public IP address for your load balancer?",
+      "answers": [
+        "true",
+        "false"
+      ],
+      "correctAnswer": ["false"]
+    }
+  },
+  {
+    "id": "490",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "What do you get when you create an ELB that allows you to point traffic to your EC2 instances behind the ELB?",
+      "answers": [
+        "a DNS name",
+        "the public IP address",
+        "an elastic IP address"
+      ],
+      "correctAnswer": ["a DNS name"]
+    }
+  },
+  {
+    "id": "491",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 2",
+      "question": "What are the two statuses reported for EC2 instances monitored by ELB?",
+      "answers": [
+        "InService",
+        "OutofService",
+        "OffLine",
+        "OnLine"
+      ],
+      "correctAnswer": ["InService", "OutofService"]
+    }
+  },
+  {
+    "id": "492",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "ELB health checks check the health of the EC2 instances they front by 'talking to the EC2 instances' over __________?",
+      "answers": [
+        "HTTP or HTTPS",
+        "TCP",
+        "SSL",
+        "HTML"
+      ],
+      "correctAnswer": ["HTTP or HTTPS"]
+    }
+  }
+]
