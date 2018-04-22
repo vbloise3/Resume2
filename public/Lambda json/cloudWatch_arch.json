@@ -1,0 +1,252 @@
+[
+  {
+    "id": "493",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 3",
+      "question": "Which of these CPU related metrics are available by default in CloudWatch?",
+      "answers": [
+        "CPUCreditBalance",
+        "CPUCreditUsage",
+        "CPUUtilization",
+        "CPUOutageTime"
+      ],
+      "correctAnswer": ["CPUCreditBalance", "CPUCreditUsage", "CPUUtilization"]
+    }
+  },
+  {
+    "id": "494",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 4",
+      "question": "Which of these Disk Usage related metrics are available by default in CloudWatch?",
+      "answers": [
+        "DiskReadBytes",
+        "DiskReadOps",
+        "DiskWriteBytes",
+        "DiskWriteOps",
+        "DiskReadErrors",
+        "DiskWriteErrors"
+      ],
+      "correctAnswer": ["DiskReadBytes", "DiskReadOps", "DiskWriteBytes", "DiskWriteOps"]
+    }
+  },
+  {
+    "id": "495",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 4",
+      "question": "Which of these Network Usage related metrics are available by default in CloudWatch?",
+      "answers": [
+        "NetworkIn",
+        "NetwordOut",
+        "NetworkPacketsIn",
+        "NetworkPacketsOut",
+        "NetworkPacketsError"
+      ],
+      "correctAnswer": ["NetworkIn", "NetwordOut", "NetworkPacketsIn", "NetworkPacketsOut"]
+    }
+  },
+  {
+    "id": "496",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 3",
+      "question": "Which of these Status related metrics are available by default in CloudWatch?",
+      "answers": [
+        "StatusCheckFailed",
+        "StatusCheckFailed_Instance",
+        "StatusCheckFailed_System",
+        "StatusCheckFailed_All",
+        "StatusCheckFailed_Default"
+      ],
+      "correctAnswer": ["StatusCheckFailed", "StatusCheckFailed_Instance", "StatusCheckFailed_System"]
+    }
+  },
+  {
+    "id": "497",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "Any metric you try to add to a CloudWatch dashboard that is not on the default list has to be added via a ___________?",
+      "answers": [
+        "Custom Metric",
+        "Detailed Metric",
+        "Status Metric",
+        "Analysis Metric"
+      ],
+      "correctAnswer": ["Custom Metric"]
+    }
+  },
+  {
+    "id": "498",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "CloudWatch standard monitoring checks and logs metrics every ______ metrics?",
+      "answers": [
+        "5 minutes",
+        "1 minute",
+        "10 minutes",
+        "2 minutes"
+      ],
+      "correctAnswer": ["5 minutes"]
+    }
+  },
+  {
+    "id": "499",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "CloudWatch detailed monitoring checks and logs metrics every ______ metrics?",
+      "answers": [
+        "5 minutes",
+        "1 minute",
+        "10 minutes",
+        "2 minutes"
+      ],
+      "correctAnswer": ["1 minute"]
+    }
+  },
+  {
+    "id": "500",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 4",
+      "question": "Which of these can you create with CloudWatch?",
+      "answers": [
+        "Dashboards",
+        "Alarms",
+        "Events",
+        "Logs",
+        "Queries",
+        "Audit Trail"
+      ],
+      "correctAnswer": ["Dashboards", "Alarms", "Events", "Logs"]
+    }
+  },
+  {
+    "id": "501",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "Which of the CloudWatch features help you see everything that is happening within your AWS account?",
+      "answers": [
+        "Dashboards",
+        "Alarms",
+        "Events",
+        "Logs",
+        "Queries",
+        "Audit Trail"
+      ],
+      "correctAnswer": ["Dashboards"]
+    }
+  },
+  {
+    "id": "502",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "Which of the CloudWatch features allows you to send notifications when particular thresholds are hit?",
+      "answers": [
+        "Dashboards",
+        "Alarms",
+        "Events",
+        "Logs",
+        "Queries",
+        "Audit Trail"
+      ],
+      "correctAnswer": ["Alarms"]
+    }
+  },
+  {
+    "id": "503",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "Which of the CloudWatch features allows you to respond to state changes in your AWS resources?",
+      "answers": [
+        "Dashboards",
+        "Alarms",
+        "Events",
+        "Logs",
+        "Queries",
+        "Audit Trail"
+      ],
+      "correctAnswer": ["Events"]
+    }
+  },
+  {
+    "id": "504",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "Which of the CloudWatch features allows you to aggregate, monitor, and store logs?",
+      "answers": [
+        "Dashboards",
+        "Alarms",
+        "Events",
+        "Logs",
+        "Queries",
+        "Audit Trail"
+      ],
+      "correctAnswer": ["Logs"]
+    }
+  },
+  {
+    "id": "505",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "Which of these is for logging and monitoring?",
+      "answers": [
+        "CloudWatch",
+        "CloudTrail"
+      ],
+      "correctAnswer": ["Logs"]
+    }
+  },
+  {
+    "id": "506",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "Which of these is for creating an audit trail?",
+      "answers": [
+        "CloudWatch",
+        "CloudTrail"
+      ],
+      "correctAnswer": ["CloudTrail"]
+    }
+  },
+  {
+    "id": "507",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "Which AWS service monitors your entire AWS account environment and creates an audit trail for your environment?",
+      "answers": [
+        "CloudWatch",
+        "CloudTrail",
+        "CloudFormation",
+        "CloudFront"
+      ],
+      "correctAnswer": ["CloudTrail"]
+    }
+  }
+]
