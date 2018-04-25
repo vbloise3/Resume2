@@ -1,0 +1,256 @@
+[
+  {
+    "id": "508",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "IAM",
+      "questionType": "multiple choice 1",
+      "question": "IAM roles are global, not associated with any region?",
+      "answers": [
+        "true",
+        "false"
+      ],
+      "correctAnswer": ["true"]
+    }
+  },
+  {
+    "id": "509",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "IAM",
+      "questionType": "multiple choice 1",
+      "question": "You can't attach an IAM roles to a running EC2 instance?",
+      "answers": [
+        "true",
+        "false"
+      ],
+      "correctAnswer": ["false"]
+    }
+  },
+  {
+    "id": "510",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "IAM",
+      "questionType": "multiple choice 2",
+      "question": "You can attach an IAM roles to a running EC2 instance using which?",
+      "answers": [
+        "cli",
+        "console",
+        "CloudWatch",
+        "CloudFormation",
+        "Auto Scaling Groups"
+      ],
+      "correctAnswer": ["cli", "console"]
+    }
+  },
+  {
+    "id": "511",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "The url to get meta-data for an EC2 instance is used as such: as such http://___.___.___.___/_____/________?",
+      "answers": [
+        "169.254.169.254/latest/meta-data/",
+        "254.169.254.169/latest/meta-data/",
+        "169.254.169.254/meta-data/latest/",
+        "254.169.254.169/meta-data/latest/",
+        "169.254.169.254/meta-data/"
+      ],
+      "correctAnswer": ["169.254.169.254/latest/meta-data/"]
+    }
+  },
+  {
+    "id": "512",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "An EC2 placement group is which?",
+      "answers": [
+        "a logical grouping of instances within a single AZ",
+        "a logical grouping of instances spread across multiple AZs",
+        "a physical group of instances within a single AZ",
+        "a physical group of instances spread across multiple AZs",
+        "a logical group of instances behind a load balancer and an auto-scaling group"
+      ],
+      "correctAnswer": ["a logical grouping of instances within a single AZ"]
+    }
+  },
+  {
+    "id": "513",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "Using EC2 placement groups enables _______?",
+      "answers": [
+        "applications to participate in a low latency, 10 Gbps network",
+        "applications to spread their workload across multiple AZs using a load balancer",
+        "application to place specific components on selected EC2 instances",
+        "applications to run in multiple regions"
+      ],
+      "correctAnswer": ["applications to participate in a low latency, 10 Gbps network"]
+    }
+  },
+  {
+    "id": "514",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "EC2 placement groups are recommended for _______?",
+      "answers": [
+        "applications that benefit from low network latency",
+        "applications that benefit from high network throughput",
+        "applications that benefit from both low network latency and high network throughput",
+        "applications that benefit from speed covering great distances"
+      ],
+      "correctAnswer": ["applications that benefit from both low network latency and high network throughput"]
+    }
+  },
+  {
+    "id": "515",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 2",
+      "question": "Use cases for EC2 placement groups include _______?",
+      "answers": [
+        "Hadoop clusters",
+        "Casandra back-end databases",
+        "DynamoDB database tables",
+        "Aurora database instances",
+        "Kubernetes clusters"
+      ],
+      "correctAnswer": ["Hadoop clusters", "Casandra back-end databases"]
+    }
+  },
+  {
+    "id": "516",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "An EC2 placement group can span multiple AZs?",
+      "answers": [
+        "true",
+        "false"
+      ],
+      "correctAnswer": ["false"]
+    }
+  },
+  {
+    "id": "517",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "The name you specify for your EC2 placement group must be unique within ________?",
+      "answers": [
+        "your AWS account",
+        "its region",
+        "the global namespace",
+        "its AZ"
+      ],
+      "correctAnswer": ["your AWS account"]
+    }
+  },
+  {
+    "id": "518",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 4",
+      "question": "Only these types of EC2 instances can be launched with an EC2 placement group?",
+      "answers": [
+        "Compute Optimized",
+        "GPU (P2)",
+        "Memory Optimized",
+        "Storage Optimized",
+        "Graphics Intensive",
+        "General Purpose",
+        "Dense Storage",
+        "Field Programmable"
+      ],
+      "correctAnswer": ["Compute Optimized", "GPU", "Memory Optimized", "Storage Optimized"]
+    }
+  },
+  {
+    "id": "519",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "AWS recommends _________ EC2 instances within placement groups?",
+      "answers": [
+        "homogeneous",
+        "heterogeneous",
+        "large",
+        "contemporaneous"
+      ],
+      "correctAnswer": ["homogeneous"]
+    }
+  },
+  {
+    "id": "520",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "AWS recommends homogeneous EC2 instances within placement groups, meaning _________?",
+      "answers": [
+        "same size and same family",
+        "same family",
+        "same size",
+        "same configuration"
+      ],
+      "correctAnswer": ["same size and same family"]
+    }
+  },
+  {
+    "id": "521",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "You can merge EC2 placement groups?",
+      "answers": [
+        "true",
+        "false"
+      ],
+      "correctAnswer": ["false"]
+    }
+  },
+  {
+    "id": "522",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "You can move an existing EC2 instance into a placement group?",
+      "answers": [
+        "true",
+        "false"
+      ],
+      "correctAnswer": ["false"]
+    }
+  },
+  {
+    "id": "523",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "To move an existing EC2 instance into a placement group you can do which?",
+      "answers": [
+        "create an AMI from the existing EC2 instance, then launch a new instance from the AMI into a placement group",
+        "launch the existing instance into a plcaement group",
+        "create a snapshot of the existing EC2 instance's root volume, then launch the instace from the snapshot into the placement group",
+        "you can't move an existing EC2 instance into a placement group using any of these techniques"
+      ],
+      "correctAnswer": ["create an AMI from the existing EC2 instance, then launch a new instance from the AMI into a placement group"]
+    }
+  }
+]
