@@ -1,0 +1,612 @@
+[
+  {
+    "id": "524",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "EFS is a file storage service for ________?",
+      "answers": [
+        "EC2 instances",
+        "EBS volumes",
+        "Edge Locations",
+        "CloudFront"
+      ],
+      "correctAnswer": ["EC2 instances"]
+    }
+  },
+  {
+    "id": "525",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "With EFS, storage capacity is __________?",
+      "answers": [
+        "elastic",
+        "fixed"
+      ],
+      "correctAnswer": ["elastic"]
+    }
+  },
+  {
+    "id": "526",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "With EFS, storage can grow and shrink in which way, so your applications have the storage they need?",
+      "answers": [
+        "automatically",
+        "through scripted action",
+        "through manual action"
+      ],
+      "correctAnswer": ["automatically"]
+    }
+  },
+  {
+    "id": "527",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "EFS supports the Network File System version ____ protocol?",
+      "answers": [
+        "NSFv4",
+        "NSFv5",
+        "NSFv3",
+        "NSFv2"
+      ],
+      "correctAnswer": ["NSFv4"]
+    }
+  },
+  {
+    "id": "528",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "With EFS, you pay in which way?",
+      "answers": [
+        "you pay for the storage you use",
+        "you pay in Gb blocks",
+        "you pay for reserved amounts"
+      ],
+      "correctAnswer": ["you pay for the storage you use"]
+    }
+  },
+  {
+    "id": "529",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "EFS can scale up to ________?",
+      "answers": [
+        "terabytes",
+        "petabytes",
+        "gigabytes",
+        "megabytes"
+      ],
+      "correctAnswer": ["petabytes"]
+    }
+  },
+  {
+    "id": "530",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "EFS can support ______ of concurrent VFS connections?",
+      "answers": [
+        "thousands",
+        "hundreds",
+        "millions",
+        "trillions"
+      ],
+      "correctAnswer": ["thousands"]
+    }
+  },
+  {
+    "id": "531",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "EFS data is stored across __________?",
+      "answers": [
+        "multiple AZs within a region",
+        "multiple AZs across multiple regions",
+        "multiple regions",
+        "within one AZ"
+      ],
+      "correctAnswer": ["multiple AZs within a region"]
+    }
+  },
+  {
+    "id": "532",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "EFS which type of storage?",
+      "answers": [
+        "block based",
+        "object based",
+        "file based",
+        "optical based"
+      ],
+      "correctAnswer": ["block based"]
+    }
+  },
+  {
+    "id": "533",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "EFS has which type of consistency?",
+      "answers": [
+        "read after write",
+        "write after read",
+        "eventual consistency"
+      ],
+      "correctAnswer": ["read after write"]
+    }
+  },
+  {
+    "id": "534",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "EFS volumes need to be within __________ as the EC2 instances they are attached to?",
+      "answers": [
+        "security group",
+        "IAM policy",
+        "access policy",
+        "VPC"
+      ],
+      "correctAnswer": ["security group"]
+    }
+  },
+  {
+    "id": "535",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "Several EC2 instances can access the same files on EFS (acting as a ___________)?",
+      "answers": [
+        "file server",
+        "RAID array"
+      ],
+      "correctAnswer": ["file server"]
+    }
+  },
+  {
+    "id": "536",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 3",
+      "question": "You can apply which types of permissions on your EFS mounted volumes?",
+      "answers": [
+        "user level",
+        "file level",
+        "directory level",
+        "EC2 level",
+        "ELB level",
+        "Target Group level"
+      ],
+      "correctAnswer": ["user level", "file level", "directory level"]
+    }
+  },
+  {
+    "id": "537",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "When you apply permissions to your EFS volumes, the permissions are applied across _________?",
+      "answers": [
+        "all EC2 instances that mount the volumes",
+        "only the EC2 instances that apply the permissions",
+        "all EC2 instances in the security goup of the EFS mounted volumes",
+        "all EC2 instances in the AZ"
+      ],
+      "correctAnswer": ["all EC2 instances that mount the volumes"]
+    }
+  },
+  {
+    "id": "538",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Lambda",
+      "questionType": "multiple choice 1",
+      "question": "Lambda takes care of provisioning and managing the servers that you use to run your code?",
+      "answers": [
+        "true",
+        "false"
+      ],
+      "correctAnswer": ["true"]
+    }
+  },
+  {
+    "id": "539",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Lambda",
+      "questionType": "multiple choice 3",
+      "question": "With Lambda, you don't have to manage which of these?",
+      "answers": [
+        "operating systems",
+        "patching",
+        "scaling",
+        "cost",
+        "APIs"
+      ],
+      "correctAnswer": ["operating systems", "patching", "scaling"]
+    }
+  },
+  {
+    "id": "540",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Lambda",
+      "questionType": "multiple choice 2",
+      "question": "You can use Lambda in which of these ways?",
+      "answers": [
+        "As an event-driven compute service where Lambda runs your code in response to events",
+        "As a compute service to run your code in response to HTTP requests using the API Gateway or API calls made using the AWS SDK",
+        "As a file system that you can mout to multiple EC2 instances",
+        "As a load balancer that you can point to multiple EC2 instances running in multiple AZs",
+        "As a database that you can use to store key/value pair JSON data"
+      ],
+      "correctAnswer": ["As an event-driven compute service where Lambda runs your code in response to events", "As a compute service to run your code in response to HTTP requests using the API Gateway or API calls made using the AWS SDK"]
+    }
+  },
+  {
+    "id": "541",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Lambda",
+      "questionType": "multiple choice 1",
+      "question": "You can use Lambda to respond to events initiated from an S3 bucket or a DynamoDB table?",
+      "answers": [
+        "true",
+        "false"
+      ],
+      "correctAnswer": ["true"]
+    }
+  },
+  {
+    "id": "542",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Lambda",
+      "questionType": "multiple choice 1",
+      "question": "Lambda _______ automatically?",
+      "answers": [
+        "scales",
+        "queues",
+        "starts"
+      ],
+      "correctAnswer": ["scales"]
+    }
+  },
+  {
+    "id": "543",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Lambda",
+      "questionType": "multiple choice 1",
+      "question": "Each Lambda invocation causes ___________?",
+      "answers": [
+        "a new instance of the function to run",
+        "the request to queue up in the functions buffer"
+      ],
+      "correctAnswer": ["a new instance of the function to run"]
+    }
+  },
+  {
+    "id": "544",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Lambda",
+      "questionType": "multiple choice 5",
+      "question": "In which languages can you write Lambda functions?",
+      "answers": [
+        "C#",
+        "Go",
+        "Java",
+        "Node.js",
+        "Python",
+        "C",
+        "Scala",
+        "Ruby",
+        "Pascal",
+        "Fortran",
+        "COBOL"
+      ],
+      "correctAnswer": ["C#", "Go", "Java", "Node.js", "Python"]
+    }
+  },
+  {
+    "id": "545",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Lambda",
+      "questionType": "multiple choice 4",
+      "question": "Which of these can trigger Lambda functions?",
+      "answers": [
+        "API Gateway",
+        "AWS IoT",
+        "Alexa Skills Set",
+        "Alexa Smart Home",
+        "ELB",
+        "Auto-scaling Group"
+      ],
+      "correctAnswer": ["API Gateway", "AWS IoT", "Alexa Skills Set", "Alexa Smart Home"]
+    }
+  },
+  {
+    "id": "546",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Lambda",
+      "questionType": "multiple choice 4",
+      "question": "Which of these can trigger Lambda functions?",
+      "answers": [
+        "CloudFront",
+        "CloudWatch events",
+        "CloudWatch logs",
+        "Code Commit",
+        "EBS",
+        "Target groups"
+      ],
+      "correctAnswer": ["CloudFront", "CloudWatch events", "CloudWatch logs", "Code Commit"]
+    }
+  },
+  {
+    "id": "547",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Lambda",
+      "questionType": "multiple choice 5",
+      "question": "Which of these can trigger Lambda functions?",
+      "answers": [
+        "Cognito Synch Trigger",
+        "DynamoDB",
+        "Kinesis",
+        "S3",
+        "SNS",
+        "EC2",
+        "Snowball"
+      ],
+      "correctAnswer": ["Cognito Synch Trigger", "DynamoDB", "Kinesis", "S3", "SNS"]
+    }
+  },
+  {
+    "id": "548",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Lambda",
+      "questionType": "multiple choice 1",
+      "question": "With the API Gateway ____________?",
+      "answers": [
+        "each HTTP request causes a separate Lambda function instance to run, in parallel",
+        "each HTTP request queues up at the one Lambda function, where they are processed sequentially"
+      ],
+      "correctAnswer": ["each HTTP request causes a separate Lambda function instance to run, in parallel"]
+    }
+  },
+  {
+    "id": "549",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Lambda",
+      "questionType": "multiple choice 3",
+      "question": "Lambda is priced based on which of these?",
+      "answers": [
+        "the number of requests",
+        "the duration of the function's runtime",
+        "the amount of memory you allocate to your function",
+        "the copies of the function that are spawned",
+        "the disk space taken up by your code"
+      ],
+      "correctAnswer": ["the number of requests", "the duration of the function's runtime", "the amount of memory you allocate to your function"]
+    }
+  },
+  {
+    "id": "550",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Lambda",
+      "questionType": "multiple choice 1",
+      "question": "Lambda runtime has a max threshold of __________?",
+      "answers": [
+        "5 minutes",
+        "1 minute",
+        "10 minutes",
+        "90 seconds"
+      ],
+      "correctAnswer": ["5 minutes"]
+    }
+  },
+  {
+    "id": "551",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Lambda",
+      "questionType": "multiple choice 1",
+      "question": "You are charged for the duration your Lambda function runs ________?",
+      "answers": [
+        "from the time your code begins executing until it returns or otherwise terminates",
+        "from the time your code begins executing to the 5 minute max",
+        "from the time from when the system loads your code until the system terminates your code",
+        "in 5 minute intervals"
+      ],
+      "correctAnswer": ["from the time your code begins executing until it returns or otherwise terminates"]
+    }
+  },
+  {
+    "id": "552",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Lambda",
+      "questionType": "multiple choice 1",
+      "question": "You are charged for the duration your Lambda function runs rounded up to the nearest ______?",
+      "answers": [
+        "100 ms",
+        "10 ms",
+        "second",
+        "5 seconds"
+      ],
+      "correctAnswer": ["100 ms"]
+    }
+  },
+  {
+    "id": "553",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Lambda",
+      "questionType": "multiple choice 1",
+      "question": "Lambda scales _________?",
+      "answers": [
+        "within 100 ms",
+        "within 10 ms",
+        "instantly",
+        "at the interval you configure"
+      ],
+      "correctAnswer": ["instantly"]
+    }
+  },
+  {
+    "id": "554",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Lambda",
+      "questionType": "multiple choice 1",
+      "question": "Lambda scales _________?",
+      "answers": [
+        "out, not up, automatically",
+        "up or out according to the parameters you set",
+        "out, not up, at a preconfigured interval",
+        "when programmed to do so",
+        "up, not out, automatically"
+      ],
+      "correctAnswer": ["out, not up, automatically"]
+    }
+  },
+  {
+    "id": "555",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Lambda",
+      "questionType": "multiple choice 1",
+      "question": "Lambda functions are _________?",
+      "answers": [
+        "independent, 1 event = 1 function",
+        "dependent, 1 event queues at your 1 function",
+        "preconfigured, 1 event = your predefined number of functions",
+        "interdependent, 1 event = any number of functions"
+      ],
+      "correctAnswer": ["independent, 1 event = 1 function"]
+    }
+  },
+  {
+    "id": "556",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Lambda",
+      "questionType": "multiple choice 1",
+      "question": "Lambda is _________?",
+      "answers": [
+        "serverless",
+        "server bound"
+      ],
+      "correctAnswer": ["serverless"]
+    }
+  },
+  {
+    "id": "557",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Lambda",
+      "questionType": "multiple choice 4",
+      "question": "Which of these AWS services are serverless?",
+      "answers": [
+        "Lambda",
+        "S3",
+        "API Gateway",
+        "DynamoDB",
+        "EC2",
+        "Elastic Beanstalk",
+        "Lightsail"
+      ],
+      "correctAnswer": ["Lambda", "S3", "API Gateway", "DynamoDB"]
+    }
+  },
+  {
+    "id": "558",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Lambda",
+      "questionType": "multiple choice 1",
+      "question": "Lambda functions ____________?",
+      "answers": [
+        "can trigger other Lambda functions",
+        "can't trigger other Lambda functions",
+        "can have EFS volumes mounted to them",
+        "can run in an infinite loop"
+      ],
+      "correctAnswer": ["can trigger other Lambda functions"]
+    }
+  },
+  {
+    "id": "559",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Lambda",
+      "questionType": "multiple choice 1",
+      "question": "1 event can trigger multiple Lambda functions if you program your Lambda functions to call other Lambda functions?",
+      "answers": [
+        "true",
+        "false"
+      ],
+      "correctAnswer": ["true"]
+    }
+  },
+  {
+    "id": "560",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Lambda",
+      "questionType": "multiple choice 1",
+      "question": "Architectures using Lambda can get extremely complicated, you can use _________ to debug what is happening?",
+      "answers": [
+        "X-Ray",
+        "CloudWatch",
+        "CloudFront",
+        "CodeCommit",
+        "CodeDeploy"
+      ],
+      "correctAnswer": ["X-Ray"]
+    }
+  },
+  {
+    "id": "561",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Lambda",
+      "questionType": "multiple choice 1",
+      "question": "Lambda can do things globally, such as back up S3 buckets to other S3 buckets in other regions?",
+      "answers": [
+        "true",
+        "false"
+      ],
+      "correctAnswer": ["true"]
+    }
+  }
+]
