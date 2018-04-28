@@ -1,0 +1,522 @@
+[
+  {
+    "id": "572",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Route 53",
+      "questionType": "multiple choice 1",
+      "question": "Does Route 53 support MX Records?",
+      "answers": [
+        "yes",
+        "no",
+        "Only in Us-West-1",
+        "Only if they have an SPF record"
+      ],
+      "correctAnswer": ["yes"]
+    }
+  },
+  {
+    "id": "573",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Route 53",
+      "questionType": "multiple choice 1",
+      "question": "Route53 is named so because?",
+      "answers": [
+        "It was invented in 1953",
+        "Route 66 was already registered with Microsoft",
+        "The DNS Port is on Port 53 and Route53 is a DNS Service",
+        "Only people in marketing can tell you the reason behind its name"
+      ],
+      "correctAnswer": ["The DNS Port is on Port 53 and Route53 is a DNS Service"]
+    }
+  },
+  {
+    "id": "574",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Route 53",
+      "questionType": "multiple choice 1",
+      "question": "Route53 does not support zone apex records (or naked domain names)",
+      "answers": [
+        "Correct",
+        "Incorrect",
+        "Depends on the circumstances",
+        "Only in Us-East-1"
+      ],
+      "correctAnswer": ["Incorrect"]
+    }
+  },
+  {
+    "id": "574",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Route 53",
+      "questionType": "multiple choice 1",
+      "question": "Route53 is Amazon's DNS Service",
+      "answers": [
+        "true",
+        "false"
+      ],
+      "correctAnswer": ["true"]
+    }
+  },
+  {
+    "id": "575",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Route 53",
+      "questionType": "multiple choice 1",
+      "question": "There is a limit to the number of domain names that you can manage using Route 53",
+      "answers": [
+        "True. There is a hard limit of 10 domain names. You cannot go above this number.",
+        "True and False. There is a limit of 50 domain names however this limit can be raised by contacting AWS support.",
+        "False. You can support as many domain names on Route53 as you want, by default."
+      ],
+      "correctAnswer": ["True and False. There is a limit of 50 domain names however this limit can be raised by contacting AWS support."]
+    }
+  },
+  {
+    "id": "576",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Route 53",
+      "questionType": "multiple choice 1",
+      "question": "A DNS converts ip addresses into _______",
+      "answers": [
+        "Human readable names",
+        "CIDR addresses",
+        "IPv4 addresses",
+        "IPv6 addresses"
+      ],
+      "correctAnswer": ["Human readable names"]
+    }
+  },
+  {
+    "id": "577",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Route 53",
+      "questionType": "multiple choice 2",
+      "question": "The two forms of ip addresses are which?",
+      "answers": [
+        "IPv4",
+        "IPv6",
+        "IPv16",
+        "IPv32"
+      ],
+      "correctAnswer": ["IPv4", "IPv6"]
+    }
+  },
+  {
+    "id": "578",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Route 53",
+      "questionType": "multiple choice 1",
+      "question": "This type of ip address is a 32 bit field, which has over 4 billion different addresses?",
+      "answers": [
+        "IPv4",
+        "IPv6",
+        "IPv16",
+        "IPv32"
+      ],
+      "correctAnswer": ["IPv4"]
+    }
+  },
+  {
+    "id": "579",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Route 53",
+      "questionType": "multiple choice 1",
+      "question": "This type of ip address is a 128 bit field, which has over 340 undecillion different addresses?",
+      "answers": [
+        "IPv4",
+        "IPv6",
+        "IPv16",
+        "IPv32"
+      ],
+      "correctAnswer": ["IPv6"]
+    }
+  },
+  {
+    "id": "580",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Route 53",
+      "questionType": "multiple choice 1",
+      "question": "AWS VPCs are IPv6 compatible?",
+      "answers": [
+        "true",
+        "false"
+      ],
+      "correctAnswer": ["true"]
+    }
+  },
+  {
+    "id": "581",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Route 53",
+      "questionType": "multiple choice 1",
+      "question": "Top level domain names are which?",
+      "answers": [
+        "the last word in the domain name",
+        "the second to last word in the domain name",
+        "the first word in the domain name"
+      ],
+      "correctAnswer": ["the last word in the domain name"]
+    }
+  },
+  {
+    "id": "582",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Route 53",
+      "questionType": "multiple choice 1",
+      "question": "Second level domain names are which?",
+      "answers": [
+        "the last word in the domain name",
+        "the second to last word in the domain name",
+        "the first word in the domain name"
+      ],
+      "correctAnswer": ["the second to last word in the domain name"]
+    }
+  },
+  {
+    "id": "583",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Route 53",
+      "questionType": "multiple choice 1",
+      "question": "Which type of record stores info about the name of the server that that supplied the data for the zone and the administrator of the zone?",
+      "answers": [
+        "SOA Record",
+        "NS Record",
+        "A Record",
+        "CNAME Record",
+        "Alias Record"
+      ],
+      "correctAnswer": ["SOA Record"]
+    }
+  },
+  {
+    "id": "584",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Route 53",
+      "questionType": "multiple choice 1",
+      "question": "Which type of record is used by top-level domain servers to direct traffic to the content DNS server which contains the authoritative DNS records?",
+      "answers": [
+        "SOA Record",
+        "NS Record",
+        "A Record",
+        "CNAME Record",
+        "Alias Record"
+      ],
+      "correctAnswer": ["NS Record"]
+    }
+  },
+  {
+    "id": "585",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Route 53",
+      "questionType": "multiple choice 1",
+      "question": "Which type of record is used to translate the name of the domain to the ip address?",
+      "answers": [
+        "SOA Record",
+        "NS Record",
+        "A Record",
+        "CNAME Record",
+        "Alias Record"
+      ],
+      "correctAnswer": ["A Record"]
+    }
+  },
+  {
+    "id": "586",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Route 53",
+      "questionType": "multiple choice 1",
+      "question": "Which type of record is a canonical name which can be used to resolve one domain name to another?",
+      "answers": [
+        "SOA Record",
+        "NS Record",
+        "A Record",
+        "CNAME Record",
+        "Alias Record"
+      ],
+      "correctAnswer": ["CNAME Record"]
+    }
+  },
+  {
+    "id": "587",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Route 53",
+      "questionType": "multiple choice 1",
+      "question": "Which type of record is used to map resource record sets in your hosted zone to ELBs, CloudFront distributions, or S3 buckets?",
+      "answers": [
+        "SOA Record",
+        "NS Record",
+        "A Record",
+        "CNAME Record",
+        "Alias Record"
+      ],
+      "correctAnswer": ["Alias Record"]
+    }
+  },
+  {
+    "id": "588",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Route 53",
+      "questionType": "multiple choice 1",
+      "question": "ELBs do not have pre-defined IPv4 addresses, you resolve them using a _________?",
+      "answers": [
+        "DNS name",
+        "IPv4 address",
+        "IPv6 address",
+        "Auto-scaling group"
+      ],
+      "correctAnswer": ["DNS name"]
+    }
+  },
+  {
+    "id": "589",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Route 53",
+      "questionType": "multiple choice 1",
+      "question": "Which of these is not a Route 53 routing policy type?",
+      "answers": [
+        "Simple",
+        "Weighted",
+        "Latency",
+        "Failover",
+        "Geolocation",
+        "Standard"
+      ],
+      "correctAnswer": ["Standard"]
+    }
+  },
+  {
+    "id": "590",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Route 53",
+      "questionType": "multiple choice 1",
+      "question": "Which of the Route 53 routing policy types is the most commonly used for a single source?",
+      "answers": [
+        "Simple",
+        "Weighted",
+        "Latency",
+        "Failover",
+        "Geolocation",
+        "Standard"
+      ],
+      "correctAnswer": ["Simple"]
+    }
+  },
+  {
+    "id": "591",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Route 53",
+      "questionType": "multiple choice 1",
+      "question": "Which of the Route 53 routing policy types is used for A/B tests, where you route a percentage of your traffic to one ELB or EC2 instance, and the remaining percent to another ELB or EC2 instance?",
+      "answers": [
+        "Simple",
+        "Weighted",
+        "Latency",
+        "Failover",
+        "Geolocation",
+        "Standard"
+      ],
+      "correctAnswer": ["Weighted"]
+    }
+  },
+  {
+    "id": "592",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Route 53",
+      "questionType": "multiple choice 1",
+      "question": "Which of the Route 53 routing policy types lets you split your rtaffic based on weights assigned?",
+      "answers": [
+        "Simple",
+        "Weighted",
+        "Latency",
+        "Failover",
+        "Geolocation",
+        "Standard"
+      ],
+      "correctAnswer": ["Weighted"]
+    }
+  },
+  {
+    "id": "593",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Route 53",
+      "questionType": "multiple choice 1",
+      "question": "Which of the Route 53 routing policy types lets you route your traffic based on the lowest network latency for your end user (i.e. which region will give them the fastest response time)?",
+      "answers": [
+        "Simple",
+        "Weighted",
+        "Latency",
+        "Failover",
+        "Geolocation",
+        "Standard"
+      ],
+      "correctAnswer": ["Latency"]
+    }
+  },
+  {
+    "id": "594",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Route 53",
+      "questionType": "multiple choice 1",
+      "question": "Which of the Route 53 routing policy types is used when you want to create an active/passive setup?",
+      "answers": [
+        "Simple",
+        "Weighted",
+        "Latency",
+        "Failover",
+        "Geolocation",
+        "Standard"
+      ],
+      "correctAnswer": ["Failover"]
+    }
+  },
+  {
+    "id": "595",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Route 53",
+      "questionType": "multiple choice 1",
+      "question": "Which of the Route 53 routing policy types has Route 53 monitor the healthcheck of your primary site using a healthcheck defined in Route 53?",
+      "answers": [
+        "Simple",
+        "Weighted",
+        "Latency",
+        "Failover",
+        "Geolocation",
+        "Standard"
+      ],
+      "correctAnswer": ["Failover"]
+    }
+  },
+  {
+    "id": "596",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Route 53",
+      "questionType": "multiple choice 1",
+      "question": "Which of the Route 53 routing policy types lets you choose where your traffic will be sent based on the geographic location of your users?",
+      "answers": [
+        "Simple",
+        "Weighted",
+        "Latency",
+        "Failover",
+        "Geolocation",
+        "Standard"
+      ],
+      "correctAnswer": ["Geolocation"]
+    }
+  },
+  {
+    "id": "597",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Route 53",
+      "questionType": "multiple choice 1",
+      "question": "Which of the Route 53 routing policy types gives you a simple round robin between your ELBs or EC2 instances defined in your Route 53 Hosted Zone?",
+      "answers": [
+        "Simple",
+        "Weighted",
+        "Latency",
+        "Failover",
+        "Geolocation",
+        "Standard"
+      ],
+      "correctAnswer": ["Simple"]
+    }
+  },
+  {
+    "id": "598",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Route 53",
+      "questionType": "multiple choice 1",
+      "question": "Which of the Route 53 routing policy types gives you an A/B testing routing configuration based on percentages?",
+      "answers": [
+        "Simple",
+        "Weighted",
+        "Latency",
+        "Failover",
+        "Geolocation",
+        "Standard"
+      ],
+      "correctAnswer": ["Weighted"]
+    }
+  },
+  {
+    "id": "599",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Route 53",
+      "questionType": "multiple choice 1",
+      "question": "Which of the Route 53 routing policy types allows you to route your users to the lowest network latency route?",
+      "answers": [
+        "Simple",
+        "Weighted",
+        "Latency",
+        "Failover",
+        "Geolocation",
+        "Standard"
+      ],
+      "correctAnswer": ["Latency"]
+    }
+  },
+  {
+    "id": "600",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Route 53",
+      "questionType": "multiple choice 1",
+      "question": "Which of the Route 53 routing policy types gives you a DR route capability?",
+      "answers": [
+        "Simple",
+        "Weighted",
+        "Latency",
+        "Failover",
+        "Geolocation",
+        "Standard"
+      ],
+      "correctAnswer": ["Failover"]
+    }
+  },
+  {
+    "id": "601",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Route 53",
+      "questionType": "multiple choice 1",
+      "question": "Which of the Route 53 routing policy types allows you to route based on location so you can present location specific content or services?",
+      "answers": [
+        "Simple",
+        "Weighted",
+        "Latency",
+        "Failover",
+        "Geolocation",
+        "Standard"
+      ],
+      "correctAnswer": ["Geolocation"]
+    }
+  }
+]

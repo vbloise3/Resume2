@@ -1,0 +1,156 @@
+[
+  {
+    "id": "562",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "EBS Snapshots are backed up to S3 in what manner?",
+      "answers": [
+        "Incrementally",
+        "Exponentially",
+        "Decreasingly",
+        "EBS snapshots are not stored on S3"
+      ],
+      "correctAnswer": ["Incrementally"]
+    }
+  },
+  {
+    "id": "563",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "Do Amazon EBS volumes persist independently from the life of an Amazon EC2 instance, for example, if I terminated an EC2 instance, would that EBS volume remain?",
+      "answers": [
+        "yes",
+        "no",
+        "Only if instructed to when created",
+        "Depends on the region"
+      ],
+      "correctAnswer": ["Only if instructed to when created"]
+    }
+  },
+  {
+    "id": "564",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "Can I delete a snapshot of an EBS Volume that is used as the root device of a registered AMI?",
+      "answers": [
+        "yes",
+        "no",
+        "Only via the Command Line",
+        "Only via the API"
+      ],
+      "correctAnswer": ["no"]
+    }
+  },
+  {
+    "id": "565",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "What must you do before you can delete a snapshot of an EBS Volume that is used as the root device of a registered AMI?",
+      "answers": [
+        "deregister the AMI",
+        "delete the AMI",
+        "you can't delete a snapshot of the root device of a registered AMI",
+        "copy the AMI to another region"
+      ],
+      "correctAnswer": ["deregister the AMI"]
+    }
+  },
+  {
+    "id": "566",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "A placement group can be deployed across multiple Availability Zones.",
+      "answers": [
+        "true",
+        "false"
+      ],
+      "correctAnswer": ["false"]
+    }
+  },
+  {
+    "id": "567",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "While creating the snapshots using the command line tools, which command should I be using?",
+      "answers": [
+        "ec2-create-snapshot",
+        "ec2-fresh-snapshot",
+        "ec2-deploy-snapshot",
+        "ec2-new-snapshot"
+      ],
+      "correctAnswer": ["ec2-create-snapshot"]
+    }
+  },
+  {
+    "id": "568",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "Can you attach an EBS volume to more than one EC2 instance at the same time?",
+      "answers": [
+        "yes",
+        "no",
+        "If that EC2 volume is part of an AMI",
+        "Depends on the region"
+      ],
+      "correctAnswer": ["no"]
+    }
+  },
+  {
+    "id": "569",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "A placement group is ideal for",
+      "answers": [
+        "Distributing content on a CDN network",
+        "EC2 instances that require high disk IO",
+        "EC2 Instances that require low latency and high network throughput across multiple availability zones.",
+        "EC2 instances that require high network throughput and low latency across a single availability zone."
+      ],
+      "correctAnswer": ["EC2 instances that require high network throughput and low latency across a single availability zone."]
+    }
+  },
+  {
+    "id": "570",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "Using the console, I can add a role to an EC2 instance, after that instance has been created and powered up.",
+      "answers": [
+        "true",
+        "false"
+      ],
+      "correctAnswer": ["false"]
+    }
+  },
+  {
+    "id": "571",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "EC2",
+      "questionType": "multiple choice 1",
+      "question": "I can change the permissions to a role, even if that role is already assigned to an existing EC2 instance, and these changes will take effect immediately.",
+      "answers": [
+        "true",
+        "false"
+      ],
+      "correctAnswer": ["true"]
+    }
+  }
+]
