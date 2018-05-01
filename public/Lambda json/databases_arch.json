@@ -1,0 +1,993 @@
+[
+	{
+    	"id": "602",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "Databases",
+      	"questionType": "multiple choice 1",
+      	"question": "Which of these are not offered as RDS OLTP database types?",
+      	"answers": [
+        	"SQL Server",
+        	"Oracle",
+        	"My SQL",
+        	"PostgreSQL",
+        	"Aurora",
+        	"MariaDB",
+        	"DB2"
+      	],
+      	"correctAnswer": ["DB2"]
+    	}
+  	},
+  	{
+    	"id": "603",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "Databases",
+      	"questionType": "multiple choice 1",
+      	"question": "What is AWS's RDS OLAP Data Warehouse offering?",
+      	"answers": [
+        	"SQL Server",
+        	"Oracle",
+        	"My SQL",
+        	"PostgreSQL",
+        	"Aurora",
+        	"MariaDB",
+        	"Red Shift"
+      	],
+      	"correctAnswer": ["Red Shift"]
+    	}
+  	},
+  	{
+    	"id": "604",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "Databases",
+      	"questionType": "multiple choice 1",
+      	"question": "In a NoSQL database like DynamoDB, what is the equivalent to a table in an RDS?",
+      	"answers": [
+        	"collection",
+        	"document",
+        	"key/value pair",
+        	"row",
+        	"element"
+      	],
+      	"correctAnswer": ["collection"]
+    	}
+  	},
+  	{
+    	"id": "605",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "Databases",
+      	"questionType": "multiple choice 1",
+      	"question": "In a NoSQL database like DynamoDB, what is the equivalent to a row in an RDS?",
+      	"answers": [
+        	"collection",
+        	"document",
+        	"key/value pair",
+        	"table",
+        	"element"
+      	],
+      	"correctAnswer": ["document"]
+    	}
+  	},
+  	{
+    	"id": "606",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "Databases",
+      	"questionType": "multiple choice 1",
+      	"question": "In a NoSQL database like DynamoDB, what is the equivalent to a field in an RDS?",
+      	"answers": [
+        	"collection",
+        	"document",
+        	"key/value pair",
+        	"table",
+        	"element"
+      	],
+      	"correctAnswer": ["key/value pair"]
+    	}
+  	},
+  	{
+    	"id": "607",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "Databases",
+      	"questionType": "multiple choice 1",
+      	"question": "Which type of AWS database is primarily used for business intelligence?",
+      	"answers": [
+        	"SQL Server",
+        	"Oracle",
+        	"My SQL",
+        	"PostgreSQL",
+        	"Aurora",
+        	"MariaDB",
+        	"Red Shift"
+      	],
+      	"correctAnswer": ["Red Shift"]
+    	}
+  	},
+  	{
+    	"id": "608",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "Databases",
+      	"questionType": "multiple choice 1",
+      	"question": "Which type of AWS database is used to pull in very large and complex data sets?",
+      	"answers": [
+        	"SQL Server",
+        	"Oracle",
+        	"My SQL",
+        	"PostgreSQL",
+        	"Aurora",
+        	"MariaDB",
+        	"Red Shift"
+      	],
+      	"correctAnswer": ["Red Shift"]
+    	}
+  	},
+  	{
+    	"id": "609",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "Databases",
+      	"questionType": "multiple choice 1",
+      	"question": "Which of these is not an OLAP type of database?",
+      	"answers": [
+        	"SQL Server Reporting Services",
+        	"Cognos",
+        	"Jaspersoft",
+        	"Oracle Hyperion",
+        	"SAP NetWeaver",
+        	"MariaDB"
+      	],
+      	"correctAnswer": ["MariaDB"]
+    	}
+  	},
+  	{
+    	"id": "610",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "Databases",
+      	"questionType": "multiple choice 1",
+      	"question": "Which of these is an example of an OLTP query?",
+      	"answers": [
+        	"Query order number 1234, returns a row of data",
+        	"Query net profit for EMEA and Pacific for digital radio product; returns large number of records"
+      	],
+      	"correctAnswer": ["Query order number 1234, returns a row of data"]
+    	}
+  	},
+  	{
+    	"id": "611",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "Databases",
+      	"questionType": "multiple choice 1",
+      	"question": "Which of these is an example of an OLAP query?",
+      	"answers": [
+        	"Query order number 1234, returns a row of data",
+        	"Query net profit for EMEA and Pacific for digital radio product; returns large number of records"
+      	],
+      	"correctAnswer": ["Query net profit for EMEA and Pacific for digital radio product; returns large number of records"]
+    	}
+  	},
+  	{
+    	"id": "612",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "Databases",
+      	"questionType": "multiple choice 1",
+      	"question": "Which of these is not a type of Elasticache open-source in-memory caching engine?",
+      	"answers": [
+        	"Memcached",
+        	"Redis",
+        	"Hana"
+      	],
+      	"correctAnswer": ["Hana"]
+    	}
+  	},
+  	{
+    	"id": "613",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "Databases",
+      	"questionType": "multiple choice 1",
+      	"question": "Which port does MySQL listen on?",
+      	"answers": [
+        	"3306",
+        	"3603",
+        	"3300"
+      	],
+      	"correctAnswer": ["3306"]
+    	}
+  	},
+  	{
+    	"id": "614",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "Databases",
+      	"questionType": "multiple choice 1",
+      	"question": "To have an EC2 instance access an RDS instance that is internal facing, the EC2 instance and the RDS instance must be in the same _________?",
+      	"answers": [
+        	"Security Group",
+        	"ACL",
+        	"WAF",
+        	"AZ"
+      	],
+      	"correctAnswer": ["Security Group"]
+    	}
+  	},
+  	{
+    	"id": "615",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "Databases",
+      	"questionType": "multiple choice 1",
+      	"question": "Which of these is not a type of backup for RDS?",
+      	"answers": [
+        	"Automated backups",
+        	"Database snapshots",
+        	"Storage gateway"
+      	],
+      	"correctAnswer": ["Storage gateway"]
+    	}
+  	},
+  	{
+    	"id": "616",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "Databases",
+      	"questionType": "multiple choice 1",
+      	"question": "RDS automated backups allow you to recover your database to any point in time within a ____________?",
+      	"answers": [
+        	"Retention period",
+        	"Backup window",
+        	"Region",
+        	"AZ"
+      	],
+      	"correctAnswer": ["Retention period"]
+    	}
+  	},
+  	{
+    	"id": "617",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "Databases",
+      	"questionType": "multiple choice 1",
+      	"question": "RDS automated backups will take a full daily snapshot and will also store __________ throughout the day?",
+      	"answers": [
+        	"Transaction logs",
+        	"Recovery volumes",
+        	"Database logs",
+        	"Access logs"
+      	],
+      	"correctAnswer": ["Transaction logs"]
+    	}
+  	},
+  	{
+    	"id": "618",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "Databases",
+      	"questionType": "multiple choice 1",
+      	"question": "When you do an RDS recovery, AWS will first choose the most recent daily backup, and then apply __________ relevant to that day?",
+      	"answers": [
+        	"Transaction logs",
+        	"Recovery volumes",
+        	"Database logs",
+        	"Access logs"
+      	],
+      	"correctAnswer": ["Transaction logs"]
+    	}
+  	},
+  	{
+    	"id": "619",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "Databases",
+      	"questionType": "multiple choice 1",
+      	"question": "When you do an RDS recovery, you can do a point-in-time recovery down to the __________, within the ____________?",
+      	"answers": [
+        	"second, retention period",
+        	"minute, retention period",
+        	"second, business day",
+        	"minute, business day"
+      	],
+      	"correctAnswer": ["second, retention period"]
+    	}
+  	},
+  	{
+    	"id": "620",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "Databases",
+      	"questionType": "multiple choice 1",
+      	"question": "RDS automated backups are not enabled by default?",
+      	"answers": [
+        	"true",
+        	"false"
+      	],
+      	"correctAnswer": ["false"]
+    	}
+  	},
+  	{
+    	"id": "621",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "Databases",
+      	"questionType": "multiple choice 1",
+      	"question": "RDS backups are taken within a __________?",
+      	"answers": [
+        	"Defined window",
+        	"random window",
+        	"specific timeframe",
+        	"AWS defined timeframe"
+      	],
+      	"correctAnswer": ["Defined window"]
+    	}
+  	},
+  	{
+    	"id": "622",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "Databases",
+      	"questionType": "multiple choice 1",
+      	"question": "During the RDS backup window, storage IO may be ________ while your data is being backed up and you may experience ____________?",
+      	"answers": [
+        	"suspended, elevated latency",
+        	"halted, elevated latency",
+        	"disabled, an outage",
+        	"accelerated, performance improvement"
+      	],
+      	"correctAnswer": ["suspended, elevated latency"]
+    	}
+  	},
+  	{
+    	"id": "623",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "Databases",
+      	"questionType": "multiple choice 1",
+      	"question": "RDS database snapshots are ________?",
+      	"answers": [
+        	"done manually, i.e. user initiated",
+        	"done automatically",
+        	"done randomly",
+        	"not done at all"
+      	],
+      	"correctAnswer": ["done manually, i.e. user initiated"]
+    	}
+  	},
+  	{
+    	"id": "624",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "Databases",
+      	"questionType": "multiple choice 1",
+      	"question": "RDS database snapshots are ________?",
+      	"answers": [
+        	"stored even after you delete the original RDS instance, unlike automated backups",
+        	"deleted along with the original RDS instance, as are automated backups",
+        	"never deleted",
+        	"stored forever"
+      	],
+      	"correctAnswer": ["stored even after you delete the original RDS instance, unlike automated backups"]
+    	}
+  	},
+  	{
+    	"id": "625",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "Databases",
+      	"questionType": "multiple choice 1",
+      	"question": "Whenever you restore either an automated backup or a manual snapshot, the restored version of the database will ___________?",
+      	"answers": [
+        	"be a new RDS instance",
+        	"be the same RDS instance"
+      	],
+      	"correctAnswer": ["be a new RDS instance"]
+    	}
+  	},
+  	{
+    	"id": "626",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "Databases",
+      	"questionType": "multiple choice 1",
+      	"question": "Whenever you restore either an automated backup or a manual snapshot, the restored version of the database will be a new RDS instance with ___________?",
+      	"answers": [
+        	"a new DNS endpoint",
+        	"the same DNS endpoint"
+      	],
+      	"correctAnswer": ["a new DNS endpoint"]
+    	}
+  	},
+  	{
+    	"id": "627",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "Databases",
+      	"questionType": "multiple choice 1",
+      	"question": "RDS encryption at rest is supported for all of these but which?",
+      	"answers": [
+        	"MySQL",
+        	"Oracle",
+        	"SQL Server",
+        	"PostgreSQL",
+        	"MariaDB",
+        	"Aurora",
+        	"DB2"
+      	],
+      	"correctAnswer": ["DB2"]
+    	}
+  	},
+  	{
+    	"id": "628",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "Databases",
+      	"questionType": "multiple choice 1",
+      	"question": "RDS encryption is done using the __________?",
+      	"answers": [
+        	"AWS Key Management Service (KMS)",
+        	"Customer Provided Key Management Service (CMS)"
+      	],
+      	"correctAnswer": ["AWS Key Management Service (KMS)"]
+    	}
+  	},
+  	{
+    	"id": "629",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "Databases",
+      	"questionType": "multiple choice 1",
+      	"question": "Once your RDS instance is encrypted, the data stored at rest in the underlying storage is encrypted, as are its automated backups, read replicas, and snapshots?",
+      	"answers": [
+        	"true",
+        	"false"
+      	],
+      	"correctAnswer": ["true"]
+    	}
+  	},
+  	{
+    	"id": "630",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "Databases",
+      	"questionType": "multiple choice 1",
+      	"question": "You can encrypt an existing RDS database?",
+      	"answers": [
+        	"true",
+        	"false"
+      	],
+      	"correctAnswer": ["false"]
+    	}
+  	},
+  	{
+    	"id": "631",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "Databases",
+      	"questionType": "multiple choice 1",
+      	"question": "In order to use encryption for an existing RDS database, you must first create a ________, make a copy of that ________, and then _______ the copy?",
+      	"answers": [
+        	"snapshot, snapshot, encrypt",
+        	"backup, backup, encrypt",
+        	"snapshot, snapshot, restore"
+      	],
+      	"correctAnswer": ["snapshot, snapshot, encrypt"]
+    	}
+  	},
+  	{
+    	"id": "632",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "Databases",
+      	"questionType": "multiple choice 1",
+      	"question": "When working with RDS you never deal with ip addresses, you use the _________?",
+      	"answers": [
+        	"RDS endpoint, which is a DNS endpoint",
+        	"RDS database name",
+        	"the VPC endpoint where the RDS is located",
+        	"the DNS name of its EC2 instance"
+      	],
+      	"correctAnswer": ["RDS endpoint, which is a DNS endpoint"]
+    	}
+  	},
+  	{
+    	"id": "633",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "Databases",
+      	"questionType": "multiple choice 1",
+      	"question": "RDS multi-AZ allows you to have an exact copy of your production database in another AZ?",
+      	"answers": [
+        	"true",
+        	"false"
+      	],
+      	"correctAnswer": ["true"]
+    	}
+  	},
+  	{
+    	"id": "634",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "Databases",
+      	"questionType": "multiple choice 1",
+      	"question": "AWS does not handle the replication for you in Multi-AZ mode?",
+      	"answers": [
+        	"true",
+        	"false"
+      	],
+      	"correctAnswer": ["false"]
+    	}
+  	},
+  	{
+    	"id": "635",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "Databases",
+      	"questionType": "multiple choice 1",
+      	"question": "RDS multi-AZ replication is done ___________?",
+      	"answers": [
+        	"synchronously",
+        	"asynchronously"
+      	],
+      	"correctAnswer": ["synchronously"]
+    	}
+  	},
+  	{
+    	"id": "636",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "Databases",
+      	"questionType": "multiple choice 1",
+      	"question": "In the event of planned database maintenance, DB instance failure, or an AZ failure, RDS will automatically to the standby so that database operations can resume quickly without admin intervention?",
+      	"answers": [
+        	"true",
+        	"false"
+      	],
+      	"correctAnswer": ["true"]
+    	}
+  	},
+  	{
+    	"id": "637",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "Databases",
+      	"questionType": "multiple choice 1",
+      	"question": "Which of these RDS features is used for disaster recovery?",
+      	"answers": [
+        	"multi-AZ",
+        	"read replicas"
+      	],
+      	"correctAnswer": ["multi-AZ"]
+    	}
+  	},
+  	{
+    	"id": "638",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "Databases",
+      	"questionType": "multiple choice 1",
+      	"question": "Which of these RDS features is used for performance improvement?",
+      	"answers": [
+        	"multi-AZ",
+        	"read replicas"
+      	],
+      	"correctAnswer": ["read replicas"]
+    	}
+  	},
+  	{
+    	"id": "639",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "Databases",
+      	"questionType": "multiple choice 1",
+      	"question": "Which of these RDS databases does not use mutlti-AZ?",
+      	"answers": [
+        	"SQL Server",
+        	"Oracle",
+        	"MySQL",
+        	"PostgreSQL",
+        	"MariaDB",
+        	"Aurora"
+      	],
+      	"correctAnswer": ["Aurora"]
+    	}
+  	},
+  	{
+    	"id": "640",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "Databases",
+      	"questionType": "multiple choice 1",
+      	"question": "Aurora does not need mutlti-AZ because ________?",
+      	"answers": [
+        	"is spread across multiple AZ by default",
+        	"it's serverless",
+        	"it's a NoSQL database"
+      	],
+      	"correctAnswer": ["is spread across multiple AZ by default"]
+    	}
+  	},
+  	{
+    	"id": "641",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "Databases",
+      	"questionType": "multiple choice 1",
+      	"question": "Read replicas are populated by using _________ replication from the primary RDS database?",
+      	"answers": [
+        	"asynchronous",
+        	"synchronous"
+      	],
+      	"correctAnswer": ["asynchronous"]
+    	}
+  	},
+  	{
+    	"id": "642",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "Databases",
+      	"questionType": "multiple choice 1",
+      	"question": "Read replicas are used for primarily _________ workloads?",
+      	"answers": [
+        	"read-heavy",
+        	"write-heavy",
+        	"high latency"
+      	],
+      	"correctAnswer": ["read-heavy"]
+    	}
+  	},
+  	{
+    	"id": "643",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "Databases",
+      	"questionType": "multiple choice 1",
+      	"question": "Which of these does not support read replicas?",
+      	"answers": [
+        	"MySQL",
+        	"PostgreSQL",
+        	"MariaDB",
+        	"Aurora",
+        	"SQL Server"
+      	],
+      	"correctAnswer": ["SQL Server"]
+    	}
+  	},
+  	{
+    	"id": "644",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "Databases",
+      	"questionType": "multiple choice 1",
+      	"question": "RDS read replicas are used for ________?",
+      	"answers": [
+        	"scaling",
+        	"DR"
+      	],
+      	"correctAnswer": ["scaling"]
+    	}
+  	},
+  	{
+    	"id": "645",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "Databases",
+      	"questionType": "multiple choice 1",
+      	"question": "To deploy a read replica you must have ________ turned on?",
+      	"answers": [
+        	"automatic backups",
+        	"multi-AZ",
+        	"snapshots"
+      	],
+      	"correctAnswer": ["automatic backups"]
+    	}
+  	},
+  	{
+    	"id": "646",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "Databases",
+      	"questionType": "multiple choice 1",
+      	"question": "There is a limit of how many read replica copies (5) you can have of an RDS database?",
+      	"answers": [
+        	"true",
+        	"false"
+      	],
+      	"correctAnswer": ["true"]
+    	}
+  	},
+  	{
+    	"id": "647",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "Databases",
+      	"questionType": "multiple choice 1",
+      	"question": "You can't have read replicas of read replicas?",
+      	"answers": [
+        	"true",
+        	"false"
+      	],
+      	"correctAnswer": ["false"]
+    	}
+  	},
+  	{
+    	"id": "648",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "Databases",
+      	"questionType": "multiple choice 1",
+      	"question": "When you have read replicas of read replicas you have to watch out for ___________?",
+      	"answers": [
+        	"latency",
+        	"contention"
+      	],
+      	"correctAnswer": ["latency"]
+    	}
+  	},
+  	{
+    	"id": "649",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "Databases",
+      	"questionType": "multiple choice 1",
+      	"question": "Each read replica will have its own ___________?",
+      	"answers": [
+        	"DNS endpoint",
+        	"ip address"
+      	],
+      	"correctAnswer": ["DNS endpoint"]
+    	}
+  	},
+  	{
+    	"id": "650",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "Databases",
+      	"questionType": "multiple choice 1",
+      	"question": "You can't have read replicas that have multi-AZ enabled?",
+      	"answers": [
+        	"true",
+        	"false"
+      	],
+      	"correctAnswer": ["false"]
+    	}
+  	},
+  	{
+    	"id": "651",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "Databases",
+      	"questionType": "multiple choice 1",
+      	"question": "You can't create read replicas of multi-AZ source databases?",
+      	"answers": [
+        	"true",
+        	"false"
+      	],
+      	"correctAnswer": ["false"]
+    	}
+  	},
+  	{
+    	"id": "652",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "Databases",
+      	"questionType": "multiple choice 1",
+      	"question": "When you promote a read replica to be its own database you break its what?",
+      	"answers": [
+        	"replication",
+        	"multi-AZ"
+      	],
+      	"correctAnswer": ["replication"]
+    	}
+  	},
+  	{
+    	"id": "653",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "Databases",
+      	"questionType": "multiple choice 1",
+      	"question": "Can you have a read replica in a second region?",
+      	"answers": [
+        	"yes",
+        	"no"
+      	],
+      	"correctAnswer": ["yes"]
+    	}
+  	},
+  	{
+    	"id": "654",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "Databases",
+      	"questionType": "multiple choice 1",
+      	"question": "DynamoDB supports both ______ and ________ data models?",
+      	"answers": [
+        	"document and key/value",
+        	"document and relational",
+        	"key/value. and relational"
+      	],
+      	"correctAnswer": ["document and key/value"]
+    	}
+  	},
+  	{
+    	"id": "655",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "Databases",
+      	"questionType": "multiple choice 1",
+      	"question": "DynamoDB is stored on ______ storage?",
+      	"answers": [
+        	"SSD",
+        	"HDD",
+        	"Magnetic"
+      	],
+      	"correctAnswer": ["SSD"]
+    	}
+  	},
+  	{
+    	"id": "656",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "Databases",
+      	"questionType": "multiple choice 1",
+      	"question": "DynamoDB is spread across ___________?",
+      	"answers": [
+        	"3 geographically distinct datacenters",
+        	"3 AZs",
+        	"3 regions"
+      	],
+      	"correctAnswer": ["3 geographically distinct datacenters"]
+    	}
+  	},
+  	{
+    	"id": "657",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "Databases",
+      	"questionType": "multiple choice 2",
+      	"question": "DynamoDB has which types of reads?",
+      	"answers": [
+        	"eventually consistent",
+        	"strongly consistent",
+        	"immediately consistent",
+        	"instantaneously consistent"
+      	],
+      	"correctAnswer": ["eventually consistent", "strongly consistent"]
+    	}
+  	},
+  	{
+    	"id": "658",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "Databases",
+      	"questionType": "multiple choice 1",
+      	"question": "Which type of DynamoDB read is the default?",
+      	"answers": [
+        	"eventually consistent",
+        	"strongly consistent"
+      	],
+      	"correctAnswer": ["eventually consistent"]
+    	}
+  	},
+  	{
+    	"id": "659",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "Databases",
+      	"questionType": "multiple choice 1",
+      	"question": "Which type of DynamoDB read is faster?",
+      	"answers": [
+        	"eventually consistent",
+        	"strongly consistent"
+      	],
+      	"correctAnswer": ["eventually consistent"]
+    	}
+  	},
+  	{
+    	"id": "660",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "Databases",
+      	"questionType": "multiple choice 1",
+      	"question": "Which type of DynamoDB read returns a result that reflects all writes that received a successful response prior to the read?",
+      	"answers": [
+        	"eventually consistent",
+        	"strongly consistent"
+      	],
+      	"correctAnswer": ["strongly consistent"]
+    	}
+  	},
+  	{
+    	"id": "661",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "Databases",
+      	"questionType": "multiple choice 1",
+      	"question": "Why is DynamoDB considered better for read-heavy applications versus write-heavy applications?",
+      	"answers": [
+        	"it performs faster with reads",
+        	"writes are eventually consistent",
+        	"reads are far less expensive (price) than writes"
+      	],
+      	"correctAnswer": ["reads are far less expensive (price) than writes"]
+    	}
+  	},
+  	{
+    	"id": "662",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "Databases",
+      	"questionType": "multiple choice 1",
+      	"question": "What other purchase option is available for DynamoDB?",
+      	"answers": [
+        	"reserved capacity",
+        	"spot capacity"
+      	],
+      	"correctAnswer": ["reserved capacity"]
+    	}
+  	},
+  	{
+    	"id": "663",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "Databases",
+      	"questionType": "multiple choice 1",
+      	"question": "With DynamoDB, what can you change on the fly through the console?",
+      	"answers": [
+        	"read write capacity",
+        	"allocated memory",
+        	"provisioned throughput"
+      	],
+      	"correctAnswer": ["read write capacity"]
+    	}
+  	},
+  	{
+    	"id": "664",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "Databases",
+      	"questionType": "multiple choice 1",
+      	"question": "You can use push button scaling with which type of AWS database?",
+      	"answers": [
+        	"DynamoDB",
+        	"RDS"
+      	],
+      	"correctAnswer": ["DynamoDB"]
+    	}
+  	},
+  	{
+    	"id": "665",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "Databases",
+      	"questionType": "multiple choice 1",
+      	"question": "When you use push button scaling with DynamoDB you have _________?",
+      	"answers": [
+        	"no downtime",
+        	"marginal downtime",
+        	"downtime"
+      	],
+      	"correctAnswer": ["no downtime"]
+    	}
+  	},
+  	{
+    	"id": "666",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "Databases",
+      	"questionType": "multiple choice 1",
+      	"question": "When you scale RDS you have _________?",
+      	"answers": [
+        	"no downtime",
+        	"marginal downtime",
+        	"downtime"
+      	],
+      	"correctAnswer": ["downtime"]
+    	}
+  	}
+ ]
