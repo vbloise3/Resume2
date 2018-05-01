@@ -1,0 +1,514 @@
+[
+	{
+    	"id": "667",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "Databases",
+      	"questionType": "multiple choice 1",
+      	"question": "Which database is a fully managed, petabyte scale data warehouse service in the cloud?",
+      	"answers": [
+        	"RedShift",
+        	"Aurora",
+        	"Cassandra",
+        	"DynamoDB"
+      	],
+      	"correctAnswer": ["RedShift"]
+    	}
+  	},
+  	{
+    	"id": "668",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "Databases",
+      	"questionType": "multiple choice 2",
+      	"question": "When you start out using RedShift you can take advantage of which?",
+      	"answers": [
+        	"No commitments",
+        	"No up-front costs",
+        	"A variable rate per GB",
+        	"A fixed rate per GB"
+      	],
+      	"correctAnswer": ["No commitments", "No up-front costs"]
+    	}
+  	},
+  	{
+    	"id": "669",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "Databases",
+      	"questionType": "multiple choice 1",
+      	"question": "With RedShift, customers can scale up to _________ or more for $1,000 per ___________?",
+      	"answers": [
+        	"a petabyte, terabyte per year",
+        	"a terabyte, megabyte per year",
+        	"a terabyte, terabyte per year",
+        	"a petabyte, gigabyte per year"
+      	],
+      	"correctAnswer": ["a petabyte, terabyte per year"]
+    	}
+  	},
+  	{
+    	"id": "670",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "Databases",
+      	"questionType": "multiple choice 2",
+      	"question": "With RedShift, you can configure your database as which two options?",
+      	"answers": [
+        	"multi-node",
+        	"single node",
+        	"multi-terabyte",
+        	"multi-region",
+        	"multi-AZ"
+      	],
+      	"correctAnswer": ["multi-node", "single node"]
+    	}
+  	},
+  	{
+    	"id": "671",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "Databases",
+      	"questionType": "multiple choice 2",
+      	"question": "With RedShift, when you operate in the multi-node configuration, what are the two types of node you'll have?",
+      	"answers": [
+        	"leader node",
+        	"compute node",
+        	"slave node",
+        	"passive node",
+        	"analytics node"
+      	],
+      	"correctAnswer": ["leader node", "compute node"]
+    	}
+  	},
+  	{
+    	"id": "672",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "Databases",
+      	"questionType": "multiple choice 1",
+      	"question": "With RedShift, the leader node does which?",
+      	"answers": [
+        	"manages client connections and receives queries",
+        	"stores data and performs queries and computations"
+      	],
+      	"correctAnswer": ["manages client connections and receives queries"]
+    	}
+  	},
+  	{
+    	"id": "673",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "Databases",
+      	"questionType": "multiple choice 1",
+      	"question": "With RedShift, the compute node does which?",
+      	"answers": [
+        	"manages client connections and receives queries",
+        	"stores data and performs queries and computations"
+      	],
+      	"correctAnswer": ["stores data and performs queries and computations"]
+    	}
+  	},
+  	{
+    	"id": "674",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "Databases",
+      	"questionType": "multiple choice 1",
+      	"question": "With RedShift, when using multi-node, the configuration can have up to _______ compute nodes?",
+      	"answers": [
+        	"32",
+        	"128",
+        	"256",
+        	"512"
+      	],
+      	"correctAnswer": ["128"]
+    	}
+  	},
+  	{
+    	"id": "675",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "Databases",
+      	"questionType": "multiple choice 1",
+      	"question": "Instead of storing data as a series of rows, RedShift organizes the data by _________?",
+      	"answers": [
+        	"columns",
+        	"documents",
+        	"fields",
+        	"tables"
+      	],
+      	"correctAnswer": ["columns"]
+    	}
+  	},
+  	{
+    	"id": "676",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "Databases",
+      	"questionType": "multiple choice 1",
+      	"question": "Row-based database systems are ideal for ___________?",
+      	"answers": [
+        	"transaction processing",
+        	"data warehousing and analytics",
+        	"social network applications",
+        	"gaming applications"
+      	],
+      	"correctAnswer": ["transaction processing"]
+    	}
+  	},
+  	{
+    	"id": "677",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "Databases",
+      	"questionType": "multiple choice 1",
+      	"question": "Column-based database systems are ideal for ___________?",
+      	"answers": [
+        	"transaction processing",
+        	"data warehousing and analytics",
+        	"social network applications",
+        	"gaming applications"
+      	],
+      	"correctAnswer": ["data warehousing and analytics"]
+    	}
+  	},
+  	{
+    	"id": "678",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "Databases",
+      	"questionType": "multiple choice 1",
+      	"question": "Which type of database systems are ideal for queries that involve aggregates performed over large data sets?",
+      	"answers": [
+        	"column-based databases",
+        	"row-based databases"
+      	],
+      	"correctAnswer": ["column-based databases"]
+    	}
+  	},
+  	{
+    	"id": "679",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "Databases",
+      	"questionType": "multiple choice 1",
+      	"question": "Why do column-based databases require far fewer I/Os than row-based databases?",
+      	"answers": [
+        	"columnar data is stored sequentially over the storage media, thereby greatly improving the query performance",
+        	"columnar data takes up less space on the underlying storage media",
+        	"columnar data is indexed in a more efficient way than row based data",
+        	"row based data is usually stored on magnetic storage, while colmnar data is usually stored on SSD"
+      	],
+      	"correctAnswer": ["columnar data is stored sequentially over the storage media, thereby greatly improving the query performance"]
+    	}
+  	},
+  	{
+    	"id": "680",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "Databases",
+      	"questionType": "multiple choice 1",
+      	"question": "Why can columnar data stores be compressed much more than row-based data stores?",
+      	"answers": [
+        	"because similar data is stored sequentially on disk for column-based data",
+        	"because row-based data indexing is less efficient than column- based data indexing",
+        	"because row-based data is typically built upon older technology",
+        	"row based data is usually stored on magnetic storage, while colmnar data is usually stored on SSD"
+      	],
+      	"correctAnswer": ["because similar data is stored sequentially on disk for column-based data"]
+    	}
+  	},
+  	{
+    	"id": "681",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "Databases",
+      	"questionType": "multiple choice 1",
+      	"question": "RedShift employs __________ and achieves significant compression compared to traditional data stores?",
+      	"answers": [
+        	"multiple compression techniques",
+        	"multiple indexing techniques",
+        	"multi-AZ",
+        	"direct compression"
+      	],
+      	"correctAnswer": ["multiple compression techniques"]
+    	}
+  	},
+  	{
+    	"id": "682",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "Databases",
+      	"questionType": "multiple choice 1",
+      	"question": "RedShift doesn't require _________ or __________ and therefore uses less space?",
+      	"answers": [
+        	"indexes, materialized views",
+        	"indexes, stored procedures",
+        	"stored procedures, materialized views",
+        	"indexes, shadow tables"
+      	],
+      	"correctAnswer": ["indexes, materialized views"]
+    	}
+  	},
+  	{
+    	"id": "683",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "Databases",
+      	"questionType": "multiple choice 1",
+      	"question": "When loading your data into empty tables, RedShift samples your data and selects the most appropriate _________?",
+      	"answers": [
+        	"indexes",
+        	"stored procedures",
+        	"materialized views",
+        	"compression scheme"
+      	],
+      	"correctAnswer": ["compression scheme"]
+    	}
+  	},
+  	{
+    	"id": "684",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "Databases",
+      	"questionType": "multiple choice 1",
+      	"question": "RedShift does Massively Parallel Processing by automatically distributing data and query load across __________?",
+      	"answers": [
+        	"all nodes",
+        	"the appropriate nodes",
+        	"the leader node",
+        	"all tables"
+      	],
+      	"correctAnswer": ["all nodes"]
+    	}
+  	},
+  	{
+    	"id": "685",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "Databases",
+      	"questionType": "multiple choice 3",
+      	"question": "RedShift is priced via which?",
+      	"answers": [
+        	"compute node hours",
+        	"backup charges",
+        	"data transfer charges",
+        	"leader node hours"
+      	],
+      	"correctAnswer": ["compute node hours", "backup charges", "data transfer charges"]
+    	}
+  	},
+  	{
+    	"id": "686",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "Databases",
+      	"questionType": "multiple choice 1",
+      	"question": "With RedShift pricing, you are charged for which?",
+      	"answers": [
+        	"compute nodes",
+        	"leader node"
+      	],
+      	"correctAnswer": ["compute nodes"]
+    	}
+  	},
+  	{
+    	"id": "687",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "Databases",
+      	"questionType": "multiple choice 1",
+      	"question": "With RedShift pricing, you are charged for data transfer charges where?",
+      	"answers": [
+        	"inside your VPC",
+        	"outside your VPC"
+      	],
+      	"correctAnswer": ["inside your VPC"]
+    	}
+  	},
+  	{
+    	"id": "688",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "Databases",
+      	"questionType": "multiple choice 1",
+      	"question": "RedShift is encrypted in transit via ________?",
+      	"answers": [
+        	"SSL",
+        	"AES-256"
+      	],
+      	"correctAnswer": ["SSL"]
+    	}
+  	},
+  	{
+    	"id": "688",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "Databases",
+      	"questionType": "multiple choice 1",
+      	"question": "RedShift is encrypted at rest via ________?",
+      	"answers": [
+        	"SSL",
+        	"AES-256"
+      	],
+      	"correctAnswer": ["AES-256"]
+    	}
+  	},
+  	{
+    	"id": "689",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "Databases",
+      	"questionType": "multiple choice 1",
+      	"question": "By default, RedShift takes care of key management?",
+      	"answers": [
+        	"true",
+        	"false"
+      	],
+      	"correctAnswer": ["true"]
+    	}
+  	},
+  	{
+    	"id": "690",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "Databases",
+      	"questionType": "multiple choice 2",
+      	"question": "With RedShift manage your own keys via which?",
+      	"answers": [
+        	"HSM",
+        	"AWS Key Management Service",
+        	"Customer provided Key Management",
+        	"Kerberos Key Management"
+      	],
+      	"correctAnswer": ["HSM", "AWS Key Management Service"]
+    	}
+  	},
+  	{
+    	"id": "691",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "Databases",
+      	"questionType": "multiple choice 1",
+      	"question": "Which types of workloads does Elasticache not help with?",
+      	"answers": [
+        	"Media Sharing",
+        	"Social Networks",
+        	"Gaming",
+        	"Q&A Portals",
+        	"Bitcoin Mining"
+      	],
+      	"correctAnswer": ["Bitcoin Mining"]
+    	}
+  	},
+  	{
+    	"id": "692",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "Databases",
+      	"questionType": "multiple choice 1",
+      	"question": "Elasticache can significantly improve latency and throughput for which type of workload?",
+      	"answers": [
+        	"Read-heavy",
+        	"Write-heavy"
+      	],
+      	"correctAnswer": ["Read-heavy"]
+    	}
+  	},
+  	{
+    	"id": "693",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "Databases",
+      	"questionType": "multiple choice 2",
+      	"question": "With Elasticache, cached information can include which?",
+      	"answers": [
+        	"results of I/O intensive DB queries",
+        	"results of copmputationally-intensive calculations",
+        	"results of I/O intensive DB writes",
+        	"results of distributed application data retrievals"
+      	],
+      	"correctAnswer": ["results of I/O intensive DB queries", "results of copmputationally-intensive calculations"]
+    	}
+  	},
+  	{
+    	"id": "694",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "Databases",
+      	"questionType": "multiple choice 2",
+      	"question": "What are the two types of caching engines supported by Elasticache?",
+      	"answers": [
+        	"Memcached",
+        	"Redis",
+        	"Cassandra",
+        	"Hadoop"
+      	],
+      	"correctAnswer": ["Memcached", "Redis"]
+    	}
+  	},
+  	{
+    	"id": "695",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "Databases",
+      	"questionType": "multiple choice 1",
+      	"question": "Which of the types of caching engines supported by Elasticache is an open source in-memory key/value store?",
+      	"answers": [
+        	"Memcached",
+        	"Redis",
+        	"Cassandra",
+        	"Hadoop"
+      	],
+      	"correctAnswer": ["Redis"]
+    	}
+  	},
+  	{
+    	"id": "696",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "Databases",
+      	"questionType": "multiple choice 1",
+      	"question": "Which of the types of caching engines supported by Elasticache supprts master/slave replication and multi-AZ which can be used to achieve cross-AZ redundancy?",
+      	"answers": [
+        	"Memcached",
+        	"Redis",
+        	"Cassandra",
+        	"Hadoop"
+      	],
+      	"correctAnswer": ["Redis"]
+    	}
+  	},
+  	{
+    	"id": "697",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "Databases",
+      	"questionType": "multiple choice 1",
+      	"question": "Which type of database service is best if your database is particularly read-heavy nd not prone to frequent changes?",
+      	"answers": [
+        	"Elasticache",
+        	"RedShift",
+        	"RDS"
+      	],
+      	"correctAnswer": ["Elasticache"]
+    	}
+  	},
+  	{
+    	"id": "698",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "Databases",
+      	"questionType": "multiple choice 1",
+      	"question": "Which type of database service is best if management keeps running OLAP transactions against it, making the database performance stressed?",
+      	"answers": [
+        	"Elasticache",
+        	"RedShift",
+        	"RDS"
+      	],
+      	"correctAnswer": ["RedShift"]
+    	}
+  	}
+]
+
