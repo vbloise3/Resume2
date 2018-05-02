@@ -1,0 +1,397 @@
+[
+  {
+    "id": "699",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Databases",
+      "questionType": "multiple choice 1",
+      "question": "Which database service is a MySQL compatible relational database engine that combines the speed and availability of high-end comercial databases with the simplicity and cost effectiveness of open source databases?",
+      "answers": [
+        "Elasticache",
+        "RedShift",
+        "Aurora",
+        "MariaDB",
+        "PostgeSQL",
+        "MySql",
+        "SQL Server",
+        "Oracle"
+      ],
+      "correctAnswer": ["Aurora"]
+    }
+  },
+  {
+    "id": "700",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Databases",
+      "questionType": "multiple choice 1",
+      "question": "With Aurora, you start with a ______ database and scale by _______ increments up to ______ in size?",
+      "answers": [
+        "10Gb, 10Gb, 64Tb",
+        "10Gb, 5Gb, 64Tb",
+        "10Gb, 5Gb, 32Tb",
+        "5Gb, 5Gb, 16Tb",
+        "10Gb, 10Gb, 128Tb"
+      ],
+      "correctAnswer": ["10Gb, 10Gb, 64Tb"]
+    }
+  },
+  {
+    "id": "701",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Databases",
+      "questionType": "multiple choice 1",
+      "question": "With Aurora, you your storage _______?",
+      "answers": [
+        "auto-scales",
+        "scales through manual intervention"
+      ],
+      "correctAnswer": ["auto-scales"]
+    }
+  },
+  {
+    "id": "702",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Databases",
+      "questionType": "multiple choice 1",
+      "question": "With Aurora, compute resources can scale up to _______?",
+      "answers": [
+        "32vCPUs and 244Gb of storage",
+        "16vCPUs and 256Gb of storage",
+        "16vCPUs and 244Gb of storage",
+        "64vCPUs and 128Gb of storage"
+      ],
+      "correctAnswer": ["32vCPUs and 244Gb of storage"]
+    }
+  },
+  {
+    "id": "703",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Databases",
+      "questionType": "multiple choice 1",
+      "question": "With Aurora, you can scale with no downtime?",
+      "answers": [
+        "true",
+        "false"
+      ],
+      "correctAnswer": ["false"]
+    }
+  },
+  {
+    "id": "704",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Databases",
+      "questionType": "multiple choice 1",
+      "question": "With Aurora, you can have _______ copies of your database in each AZ?",
+      "answers": [
+        "2",
+        "3",
+        "4",
+        "1"
+      ],
+      "correctAnswer": ["2"]
+    }
+  },
+  {
+    "id": "705",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Databases",
+      "questionType": "multiple choice 1",
+      "question": "With Aurora, you can 2 copies of your database in each AZ, with a minimum of ______ AZs?",
+      "answers": [
+        "2",
+        "3",
+        "4",
+        "1"
+      ],
+      "correctAnswer": ["3"]
+    }
+  },
+  {
+    "id": "706",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Databases",
+      "questionType": "multiple choice 1",
+      "question": "Aurora is designed to transparently handle the loss of up to _______ copies of your database without affecting write availability?",
+      "answers": [
+        "2",
+        "3",
+        "4",
+        "1"
+      ],
+      "correctAnswer": ["2"]
+    }
+  },
+  {
+    "id": "706",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Databases",
+      "questionType": "multiple choice 1",
+      "question": "Aurora is designed to transparently handle the loss of up to _______ copies of your database without affecting read availability?",
+      "answers": [
+        "2",
+        "3",
+        "4",
+        "1"
+      ],
+      "correctAnswer": ["3"]
+    }
+  },
+  {
+    "id": "707",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Databases",
+      "questionType": "multiple choice 1",
+      "question": "Aurora storage is ________?",
+      "answers": [
+        "self-healing",
+        "self-deprecating",
+        "self-promoting",
+        "auto-scaling"
+      ],
+      "correctAnswer": ["self-healing"]
+    }
+  },
+  {
+    "id": "708",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Databases",
+      "questionType": "multiple choice 1",
+      "question": "Aurora storage is self-healing by _________?",
+      "answers": [
+        "continuously scanning data blocks and disks for errors and then repairing them automatically",
+        "continuously scanning data blocks and disks for errors and then removing failed devices",
+        "continuously scanning data blocks and disks for errors and then promoting healthy devices",
+        "continuously scanning data blocks and disks for errors and then alerting AWS to repair the failed devices"
+      ],
+      "correctAnswer": ["continuously scanning data blocks and disks for errors and then repairing them automatically"]
+    }
+  },
+  {
+    "id": "709",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Databases",
+      "questionType": "multiple choice 2",
+      "question": "Which of these are the two types of Aurora replicas?",
+      "answers": [
+        "Aurora Replicas",
+        "MySQL Read Replicas",
+        "Multi-AZ Read Replicas",
+        "Multi-Zone Read Replicas"
+      ],
+      "correctAnswer": ["Aurora Replicas", "MySQL Read Replicas"]
+    }
+  },
+  {
+    "id": "710",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Databases",
+      "questionType": "multiple choice 1",
+      "question": "Up to how many Aurora Read Replicas can you have?",
+      "answers": [
+        "15",
+        "5",
+        "10",
+        "3"
+      ],
+      "correctAnswer": ["15"]
+    }
+  },
+  {
+    "id": "711",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Databases",
+      "questionType": "multiple choice 1",
+      "question": "Up to how many MySQL Read Replicas can you have?",
+      "answers": [
+        "15",
+        "5",
+        "10",
+        "3"
+      ],
+      "correctAnswer": ["5"]
+    }
+  },
+  {
+    "id": "712",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Databases",
+      "questionType": "multiple choice 1",
+      "question": "Which type of Aurora read replica can you auto failover to?",
+      "answers": [
+        "Aurora Read Replicas",
+        "MySQL Read Replicas"
+      ],
+      "correctAnswer": ["Aurora Read Replicas"]
+    }
+  },
+  {
+    "id": "713",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Databases",
+      "questionType": "multiple choice 1",
+      "question": "What AWS DB platform is most suitable for OLTP?",
+      "answers": [
+        "Elasticache",
+        "RDS/DynamoDB",
+        "Redshift"
+      ],
+      "correctAnswer": ["RDS/DynamoDB"]
+    }
+  },
+  {
+    "id": "714",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Databases",
+      "questionType": "multiple choice 1",
+      "question": "When replicating data from your primary RDS instance to your secondary RDS instance, what is the charge?",
+      "answers": [
+        "Double the standard data transfer charge",
+        "Same as the standard data transfer charge",
+        "No Charge, Its free",
+        "Half of the standard data transfer charge"
+      ],
+      "correctAnswer": ["No Charge, Its free"]
+    }
+  },
+  {
+    "id": "715",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Databases",
+      "questionType": "multiple choice 1",
+      "question": "What AWS service is best suited for non relational databases?",
+      "answers": [
+        "RDS",
+        "RedShift",
+        "DynamoDB",
+        "Elasticache"
+      ],
+      "correctAnswer": ["DynamoDB"]
+    }
+  },
+  {
+    "id": "716",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Databases",
+      "questionType": "multiple choice 1",
+      "question": "When you add a rule to an RDS security group you do not need to specify a port number or protocol?",
+      "answers": [
+        "true",
+        "false"
+      ],
+      "correctAnswer": ["false"]
+    }
+  },
+  {
+    "id": "717",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Databases",
+      "questionType": "multiple choice 1",
+      "question": "If you are using Amazon RDS Provisioned IOPS storage with MySQL and Oracle database engines what is the maximum size RDS volume you can have by default?",
+      "answers": [
+        "500GB",
+        "1TB",
+        "3TB",
+        "6TB",
+        "5TB"
+      ],
+      "correctAnswer": ["6TB"]
+    }
+  },
+  {
+    "id": "718",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Databases",
+      "questionType": "multiple choice 1",
+      "question": "What happens to the I/O operations while you take a database snapshot?",
+      "answers": [
+        "I/O operations to the database are suspended for the duration of the snapshot",
+        "Nothing",
+        "I/O operations to the database are sent to a Replica (if available) for the duration of the snapshot",
+        "I/O operations will be functioning normally"
+      ],
+      "correctAnswer": ["I/O operations to the database are suspended for the duration of the snapshot"]
+    }
+  },
+  {
+    "id": "719",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Databases",
+      "questionType": "multiple choice 1",
+      "question": "What AWS service is best used for Business Intelligence Tools/Data Warehousing?",
+      "answers": [
+        "Elastic Beanstalk",
+        "Elasticache",
+        "DynamoDB",
+        "RedShift"
+      ],
+      "correctAnswer": ["RedShift"]
+    }
+  },
+  {
+    "id": "720",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Databases",
+      "questionType": "multiple choice 1",
+      "question": "In RDS when using multiple availability zones, can you use the secondary database as an independent read node?",
+      "answers": [
+        "No",
+        "Only in US-West-1",
+        "Depends on how you set it up",
+        "Yes"
+      ],
+      "correctAnswer": ["No"]
+    }
+  },
+  {
+    "id": "721",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Databases",
+      "questionType": "multiple choice 1",
+      "question": "Amazon's Elasticache uses which two engines?",
+      "answers": [
+        "Redis & Memory",
+        "Reddit & Memcrush",
+        "Redis & Memcached",
+        "MyISAM & InnoDB"
+      ],
+      "correctAnswer": ["Redis & Memcached"]
+    }
+  },
+  {
+    "id": "722",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Databases",
+      "questionType": "multiple choice 1",
+      "question": "By default, the maximum provisioned IOPS capacity on an Oracle and MySQL RDS instance (using provisioned IOPS) is 30,000 IOPS.",
+      "answers": [
+        "true",
+        "false"
+      ],
+      "correctAnswer": ["true"]
+    }
+  }
+]

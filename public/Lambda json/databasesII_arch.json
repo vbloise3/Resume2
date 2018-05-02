@@ -375,7 +375,7 @@
     	"info": {
       	"subcategory": "Databases",
       	"questionType": "multiple choice 2",
-      	"question": "With RedShift manage your own keys via which?",
+      	"question": "With RedShift you can manage your own keys via which?",
       	"answers": [
         	"HSM",
         	"AWS Key Management Service",
@@ -425,11 +425,11 @@
       	"question": "With Elasticache, cached information can include which?",
       	"answers": [
         	"results of I/O intensive DB queries",
-        	"results of copmputationally-intensive calculations",
+        	"results of computationally-intensive calculations",
         	"results of I/O intensive DB writes",
         	"results of distributed application data retrievals"
       	],
-      	"correctAnswer": ["results of I/O intensive DB queries", "results of copmputationally-intensive calculations"]
+      	"correctAnswer": ["results of I/O intensive DB queries", "results of computationally-intensive calculations"]
     	}
   	},
   	{
