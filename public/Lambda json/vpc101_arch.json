@@ -1,0 +1,477 @@
+[
+	{
+    	"id": "723",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "VPC",
+      	"questionType": "multiple choice 1",
+      	"question": "Which best describes an AWS VPC?",
+      	"answers": [
+        	"VPC is a virtual data center in the cloud",
+        	"VPC is a logical link from your on premises data center to the AWS cloud",
+        	"VPC is a network configuration that allows you to have high speed, low latency connectivity to the AWS cloud"
+      	],
+      	"correctAnswer": ["VPC is a virtual data center in the cloud"]
+    	}
+  	},
+  	{
+    	"id": "724",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "VPC",
+      	"questionType": "multiple choice 1",
+      	"question": "The best description of an AWS VPC: lets you provision __________?",
+      	"answers": [
+        	"a logically isolated section of the AWS cloud where you can launch AWS resources that you define",
+        	"a network of highly available virtual machines",
+        	"a physical section of the AWS cloud where you can launch AWS resources that you define"
+      	],
+      	"correctAnswer": ["a logically isolated section of the AWS cloud where you can launch AWS resources that you define"]
+    	}
+  	},
+  	{
+    	"id": "725",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "VPC",
+      	"questionType": "multiple choice 3",
+      	"question": "In your AWS VPC you have control ovwer which of these?",
+      	"answers": [
+        	"selection of your own ip address range",
+        	"creation of subnets",
+        	"configuration of route tables and network gateways",
+        	"selection of your own data center"
+      	],
+      	"correctAnswer": ["selection of your own ip address range",
+        	"creation of subnets",
+        	"configuration of route tables and network gateways"]
+    	}
+  	},
+  	{
+    	"id": "726",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "VPC",
+      	"questionType": "multiple choice 1",
+      	"question": "IN your VPC, you should place your web servers in which?",
+      	"answers": [
+        	"public facing subnet that has access to the internet",
+        	"private facing subnet with no internet access"
+      	],
+      	"correctAnswer": ["public facing subnet that has access to the internet"]
+    	}
+  	},
+  	{
+    	"id": "727",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "VPC",
+      	"questionType": "multiple choice 1",
+      	"question": "IN your VPC, you should place your database and application servers in which?",
+      	"answers": [
+        	"public facing subnet that has access to the internet",
+        	"private facing subnet with no internet access"
+      	],
+      	"correctAnswer": ["private facing subnet with no internet access"]
+    	}
+  	},
+  	{
+    	"id": "728",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "VPC",
+      	"questionType": "multiple choice 2",
+      	"question": "In your VPC, which of these can you use to control access to the EC2 instances in your VPC?",
+      	"answers": [
+        	"Security Groups",
+        	"Network Access Control Lists",
+        	"Bucket Policies",
+        	"IAM Policy Groups"
+      	],
+      	"correctAnswer": ["Security Groups",
+        	"Network Access Control Lists"]
+    	}
+  	},
+  	{
+    	"id": "729",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "VPC",
+      	"questionType": "multiple choice 1",
+      	"question": "How can you use VPC to create an extension of your corporate data center?",
+      	"answers": [
+        	"create a hardware VPN connection between your data center and your VPC",
+        	"use a snowball edge to establish a connection between your VPC and your data center",
+        	"create a direct connct line between your VPC and your data center",
+        	"use VPC peering between your VPC and your corporatew data center"
+      	],
+      	"correctAnswer": ["create a hardware VPN connection between your data center and your VPC"]
+    	}
+  	},
+  	{
+    	"id": "730",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "VPC",
+      	"questionType": "multiple choice 1",
+      	"question": "What do you use to connect your internet users to your public facing subnet in your VPC?",
+      	"answers": [
+        	"Internet Gateway",
+        	"Virtual Private Gateway",
+        	"Bastion Host",
+        	"Network Address Translation Gateway"
+      	],
+      	"correctAnswer": ["Internet Gateway"]
+    	}
+  	},
+  	{
+    	"id": "731",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "VPC",
+      	"questionType": "multiple choice 1",
+      	"question": "What do you use to connect your VPN users to your public facing subnet in your VPC?",
+      	"answers": [
+        	"Internet Gateway",
+        	"Virtual Private Gateway",
+        	"Bastion Host",
+        	"Network Address Translation Gateway"
+      	],
+      	"correctAnswer": ["Virtual Private Gateway"]
+    	}
+  	},
+  	{
+    	"id": "732",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "VPC",
+      	"questionType": "multiple choice 1",
+      	"question": "In a VPC, security groups can't span subnets?",
+      	"answers": [
+        	"true",
+        	"false"
+      	],
+      	"correctAnswer": ["false"]
+    	}
+  	},
+  	{
+    	"id": "733",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "VPC",
+      	"questionType": "multiple choice 1",
+      	"question": "In a VPC, a subnet can live in more than one AZ?",
+      	"answers": [
+        	"true",
+        	"false"
+      	],
+      	"correctAnswer": ["false"]
+    	}
+  	},
+  	{
+    	"id": "734",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "VPC",
+      	"questionType": "multiple choice 1",
+      	"question": "Which of these is not a valid VPC subnet range?",
+      	"answers": [
+        	"10.0.0.0 - 10.255.255.255 (10/8 prefix)",
+        	"172.16.0.0 - 172.31.255.255 (172.16/12 prefix)",
+        	"192.168.0.0 - 192.168.255.255 (192.168/16 prefix)",
+        	"164.168.0.0 - 164.168.255.255 (164.168/16 prefix)"
+      	],
+      	"correctAnswer": ["164.168.0.0 - 164.168.255.255 (164.168/16 prefix)"]
+    	}
+  	},
+  	{
+    	"id": "735",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "VPC",
+      	"questionType": "multiple choice 1",
+      	"question": "In a VPC, what does the router use to decide which Network ACL to rout to?",
+      	"answers": [
+        	"the route table",
+        	"the subnet group",
+        	"the security group",
+        	"the public subnet",
+        	"the private subnet"
+      	],
+      	"correctAnswer": ["the route table"]
+    	}
+  	},
+  	{
+    	"id": "736",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "VPC",
+      	"questionType": "multiple choice 1",
+      	"question": "There is a limit (5) of the number of VPCs you can create in a region?",
+      	"answers": [
+        	"true",
+        	"false",
+        	"true, but it's a soft limit (you can have AWS increase the limit)"
+      	],
+      	"correctAnswer": ["true, but it's a soft limit (you can have AWS increase the limit)"]
+    	}
+  	},
+  	{
+    	"id": "737",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "VPC",
+      	"questionType": "multiple choice 1",
+      	"question": "Within your VPC you can launch instances into a subnet of your own choosing?",
+      	"answers": [
+        	"true",
+        	"false"
+      	],
+      	"correctAnswer": ["true"]
+    	}
+  	},
+  	{
+    	"id": "738",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "VPC",
+      	"questionType": "multiple choice 1",
+      	"question": "Within your VPC you can't assign custom ip address ranges in each subnet?",
+      	"answers": [
+        	"true",
+        	"false"
+      	],
+      	"correctAnswer": ["false"]
+    	}
+  	},
+  	{
+    	"id": "739",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "VPC",
+      	"questionType": "multiple choice 1",
+      	"question": "Within your VPC you can't configure route tables between subnets?",
+      	"answers": [
+        	"true",
+        	"false"
+      	],
+      	"correctAnswer": ["false"]
+    	}
+  	},
+  	{
+    	"id": "740",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "VPC",
+      	"questionType": "multiple choice 1",
+      	"question": "How many Internet Gateways can you connect to you VPC?",
+      	"answers": [
+        	"1",
+        	"2",
+        	"multiple"
+      	],
+      	"correctAnswer": ["1"]
+    	}
+  	},
+  	{
+    	"id": "741",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "VPC",
+      	"questionType": "multiple choice 1",
+      	"question": "How are Internet Gateways made highly available?",
+      	"answers": [
+        	"they are spread across all AZs in your VPC's region",
+        	"they aren't highly avaiulable",
+        	"they are replicated to another region"
+      	],
+      	"correctAnswer": ["they are spread across all AZs in your VPC's region"]
+    	}
+  	},
+  	{
+    	"id": "742",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "VPC",
+      	"questionType": "multiple choice 1",
+      	"question": "How can you create and deploy EC2 instances quickly within your account?",
+      	"answers": [
+        	"use the default VPC",
+        	"you have to create a VPC before you can delpoy EC2 instances",
+        	"deploy your EC2 instances in your on premises data center"
+      	],
+      	"correctAnswer": ["use the default VPC"]
+    	}
+  	},
+  	{
+    	"id": "743",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "VPC",
+      	"questionType": "multiple choice 1",
+      	"question": "All subnets in the default VPC have ________?",
+      	"answers": [
+        	"a route to the internet",
+        	"a option to be made private",
+        	"unencrypted EBS volumes as the root volumes to their EC2 instances"
+      	],
+      	"correctAnswer": ["a route to the internet"]
+    	}
+  	},
+  	{
+    	"id": "744",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "VPC",
+      	"questionType": "multiple choice 1",
+      	"question": "The default VPC can have private subnets?",
+      	"answers": [
+        	"true",
+        	"false"
+      	],
+      	"correctAnswer": ["false"]
+    	}
+  	},
+  	{
+    	"id": "745",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "VPC",
+      	"questionType": "multiple choice 1",
+      	"question": "In the default VPC, each EC2 instance has ___________?",
+      	"answers": [
+        	"both a public and a private ip address",
+        	"only a public ip address",
+        	"only a private ip address"
+      	],
+      	"correctAnswer": ["both a public and a private ip address"]
+    	}
+  	},
+  	{
+    	"id": "746",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "VPC",
+      	"questionType": "multiple choice 1",
+      	"question": "What allows you to connect one VPC with another via a direct network route using private ip addresses?",
+      	"answers": [
+        	"VPC Peering",
+        	"VPC Routing",
+        	"VPC mirroring",
+        	"VPC Replication"
+      	],
+      	"correctAnswer": ["VPC Peering"]
+    	}
+  	},
+  	{
+    	"id": "747",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "VPC",
+      	"questionType": "multiple choice 1",
+      	"question": "Whith VPC Peering, EC2 instances ___________?",
+      	"answers": [
+        	"behave as if they are on the same private network",
+        	"behave as if they are on the same public network",
+        	"behave as if they are on different private networks",
+        	"behave as if they are on the different public networks"
+      	],
+      	"correctAnswer": ["behave as if they are on the same private network"]
+    	}
+  	},
+  	{
+    	"id": "748",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "VPC",
+      	"questionType": "multiple choice 2",
+      	"question": "Whith VPC Peering, you can peer VPCs with __________?",
+      	"answers": [
+        	"other VPCs in other AWS accounts",
+        	"other VPCs in the same accoppunt",
+        	"other VPCs in your corporate data center",
+        	"other VPCs that are in a transitive configuration"
+      	],
+      	"correctAnswer": ["other VPCs in other AWS accounts",
+        	"other VPCs in the same accoppunt"]
+    	}
+  	},
+  	{
+    	"id": "749",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "VPC",
+      	"questionType": "multiple choice 1",
+      	"question": "VPC peering uses __________ or ___________?",
+      	"answers": [
+        	"a star configuration, a hub and spoke model",
+        	"a transitive configuration, a daisy chanined model",
+        	"a bus configuration, a push/pull model",
+        	"a shotgun configuration, a radius model"
+      	],
+      	"correctAnswer": ["a star configuration, a hub and spoke model"]
+    	}
+  	},
+  	{
+    	"id": "750",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "VPC",
+      	"questionType": "multiple choice 1",
+      	"question": "Which of these are not part of a VPC configuration?",
+      	"answers": [
+        	"Internet Gateways",
+        	"Virtual Private Gateways",
+        	"Route Tables",
+        	"Network Access Control Lists",
+        	"Subnets",
+        	"Security Groups",
+        	"Virtual Private Networks"
+      	],
+      	"correctAnswer": ["Virtual Private Networks"]
+    	}
+  	},
+  	{
+    	"id": "752",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "VPC",
+      	"questionType": "multiple choice 1",
+      	"question": "NACLs are _________?",
+      	"answers": [
+        	"stateful",
+        	"stateless"
+      	],
+      	"correctAnswer": ["stateless"]
+    	}
+  	},
+  	{
+    	"id": "753",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "VPC",
+      	"questionType": "multiple choice 1",
+      	"question": "Security Groups are _________?",
+      	"answers": [
+        	"stateful",
+        	"stateless"
+      	],
+      	"correctAnswer": ["stateful"]
+    	}
+  	},
+  	{
+    	"id": "754",
+    	"category": "Cloud Concepts",
+    	"info": {
+      	"subcategory": "VPC",
+      	"questionType": "multiple choice 1",
+      	"question": "VPC Peering can be used in a transitive way (ie. if VPC-a peers with VPC-b and VPC-b peers with VPC-c, then VPC-a can peer with VPC-c?",
+      	"answers": [
+        	"true",
+        	"false"
+      	],
+      	"correctAnswer": ["false"]
+    	}
+  	}
+]
+

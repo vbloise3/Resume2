@@ -3,7 +3,7 @@
 
     <img class="mdCardImg md-card-sm-image transparentProfilePic">
 
-    <span class="textBottom xxLargerFont">Pratice</span>
+    <span class="textBottom xxLargerFont">Practice</span>
 
     <span class="app-toolbar-filler"></span>
     <!--span class="smallTextBottom"><i class="material-icons md-18 iconBottom">home</i>&nbsp;261 Swedesford Rd., Malvern, PA 19355&nbsp;<a href="tel:484-433-3269" style="color: white"><i class="material-icons md-18 iconBottom">phone_iphone</i>484-433-3269</a>
@@ -82,6 +82,13 @@
           (change)="updateSubcategoriesChecked($event, 'Databases')">
         </mat-checkbox>
         <mat-label>Databases</mat-label>
+        &nbsp;&nbsp;
+        <mat-checkbox
+          name="VPC"
+          value="VPC"
+          (change)="updateSubcategoriesChecked($event, 'VPC')">
+        </mat-checkbox>
+        <mat-label>VPC</mat-label>
         &nbsp;&nbsp;
         <button mat-button type="submit" color="primary">Submit</button>
       </div>
