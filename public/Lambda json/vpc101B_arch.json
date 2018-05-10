@@ -1,0 +1,719 @@
+[
+  {
+    "id": "755",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "VPC",
+      "questionType": "multiple choice 1",
+      "question": "When you create a subnet in your VPC you lose how many ip addresses to AWS reserve allocation?",
+      "answers": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "correctAnswer": ["5"]
+    }
+  },
+  {
+    "id": "756",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "VPC",
+      "questionType": "multiple choice 1",
+      "question": "When you create a subnet in your VPC which address do you lose to AWS reservation for broadcast (even though AWS doesn't support broadcast)?",
+      "answers": [
+        "the last address",
+        "the first address",
+        "the second address",
+        "the third address",
+        "the fourth address"
+      ],
+      "correctAnswer": ["the last address"]
+    }
+  },
+  {
+    "id": "757",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "VPC",
+      "questionType": "multiple choice 1",
+      "question": "When you create a subnet in your VPC which address do you lose to AWS reservation for the network address?",
+      "answers": [
+        "the last address",
+        "the first address",
+        "the second address",
+        "the third address",
+        "the fourth address"
+      ],
+      "correctAnswer": ["the first address"]
+    }
+  },
+  {
+    "id": "758",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "VPC",
+      "questionType": "multiple choice 1",
+      "question": "When you create a subnet in your VPC which address do you lose to AWS reservation for the VPC router?",
+      "answers": [
+        "the last address",
+        "the first address",
+        "the second address",
+        "the third address",
+        "the fourth address"
+      ],
+      "correctAnswer": ["the second address"]
+    }
+  },
+  {
+    "id": "759",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "VPC",
+      "questionType": "multiple choice 1",
+      "question": "When you create a subnet in your VPC which address do you lose to AWS reservation for the DNS server?",
+      "answers": [
+        "the last address",
+        "the first address",
+        "the second address",
+        "the third address",
+        "the fourth address"
+      ],
+      "correctAnswer": ["the third address"]
+    }
+  },
+  {
+    "id": "760",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "VPC",
+      "questionType": "multiple choice 1",
+      "question": "When you create a subnet in your VPC which address do you lose to AWS reservation for future use?",
+      "answers": [
+        "the last address",
+        "the first address",
+        "the second address",
+        "the third address",
+        "the fourth address"
+      ],
+      "correctAnswer": ["the fourth address"]
+    }
+  },
+  {
+    "id": "761",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "VPC",
+      "questionType": "multiple choice 1",
+      "question": "What type of gateway do you use to allow private EC2 instances to access 0.0.0.0/0?",
+      "answers": [
+        "NAT Gateway",
+        "Internet Gateway",
+        "Public Gateway",
+        "Private Gateway"
+      ],
+      "correctAnswer": ["NAT Gateway"]
+    }
+  },
+  {
+    "id": "762",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "VPC",
+      "questionType": "multiple choice 1",
+      "question": "In which subnet do you place your NAT Gateway?",
+      "answers": [
+        "Public subnet",
+        "Private subnet"
+      ],
+      "correctAnswer": ["Public subnet"]
+    }
+  },
+  {
+    "id": "763",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "VPC",
+      "questionType": "multiple choice 1",
+      "question": "What do you need to create for your NAT Gateway in order for it to be reachable?",
+      "answers": [
+        "an Elastic ip Address",
+        "a DNS Name"
+      ],
+      "correctAnswer": ["an Elastic ip Address"]
+    }
+  },
+  {
+    "id": "764",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "VPC",
+      "questionType": "multiple choice 1",
+      "question": "What type of route do you need to create in your VPC public route table in order for your NAT Gateway to be reachable?",
+      "answers": [
+        "a route to 0.0.0.0/0 with a target of the NAT Gateway",
+        "a route to 0.0.0.0/0 with a target of the Internet Gateway",
+        "a route to 0.0.0.0/0 with a target of the NAT Instance"
+      ],
+      "correctAnswer": ["a route to 0.0.0.0/0 with a target of the NAT Gateway"]
+    }
+  },
+  {
+    "id": "765",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "VPC",
+      "questionType": "multiple choice 1",
+      "question": "How do you ensure your NAT Gateway can be fault tolerant?",
+      "answers": [
+        "create a NAT Gateway in each of your AZs",
+        "create a NAT Gateway in another region",
+        "create a NAT Instance in each of your AZs",
+        "create a NAT Instance in another region"
+      ],
+      "correctAnswer": ["create a NAT Gateway in each of your AZs"]
+    }
+  },
+  {
+    "id": "766",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "VPC",
+      "questionType": "multiple choice 1",
+      "question": "NAT Gateways fail-over _________ if you have them configured with one in each of your AZs?",
+      "answers": [
+        "automatically",
+        "using ENS",
+        "using EQS",
+        "using CloudWatch Events"
+      ],
+      "correctAnswer": ["automatically"]
+    }
+  },
+  {
+    "id": "767",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "VPC",
+      "questionType": "multiple choice 1",
+      "question": "NAT Gateways are in a Security Group?",
+      "answers": [
+        "true",
+        "false"
+      ],
+      "correctAnswer": ["false"]
+    }
+  },
+  {
+    "id": "768",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "VPC",
+      "questionType": "multiple choice 1",
+      "question": "With a NAT Instance you need to disable the ________ on the instance?",
+      "answers": [
+        "Source/Destination check",
+        "Inbound/Outbound check",
+        "Public/Private check"
+      ],
+      "correctAnswer": ["Source/Destination check"]
+    }
+  },
+  {
+    "id": "769",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "VPC",
+      "questionType": "multiple choice 1",
+      "question": "NAT Instances are behind a ________?",
+      "answers": [
+        "Security Group",
+        "NACL",
+        "NAT Gateway"
+      ],
+      "correctAnswer": ["Security Group"]
+    }
+  },
+  {
+    "id": "770",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "VPC",
+      "questionType": "multiple choice 1",
+      "question": "NAT Instances must be in a ________?",
+      "answers": [
+        "public subnet",
+        "private subnet",
+        "Security Group"
+      ],
+      "correctAnswer": ["public subnet"]
+    }
+  },
+  {
+    "id": "771",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "VPC",
+      "questionType": "multiple choice 1",
+      "question": "NAT Gateways scale automatically up to _____?",
+      "answers": [
+        "10Gbps",
+        "10Mbps",
+        "5Gbps"
+      ],
+      "correctAnswer": ["10Gbps"]
+    }
+  },
+  {
+    "id": "772",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "VPC",
+      "questionType": "multiple choice 1",
+      "question": "Do you need to patch NAT Gateways?",
+      "answers": [
+        "yes",
+        "no",
+        "sometimes"
+      ],
+      "correctAnswer": ["no"]
+    }
+  },
+  {
+    "id": "773",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "VPC",
+      "questionType": "multiple choice 1",
+      "question": "Are NAT Gateways associated with a Security Group?",
+      "answers": [
+        "yes",
+        "no",
+        "sometimes"
+      ],
+      "correctAnswer": ["no"]
+    }
+  },
+  {
+    "id": "774",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "VPC",
+      "questionType": "multiple choice 1",
+      "question": "NAT Gateways are automatically assigned _______?",
+      "answers": [
+        "a public ip address",
+        "a private ip address",
+        "a security group"
+      ],
+      "correctAnswer": ["a public ip address"]
+    }
+  },
+  {
+    "id": "775",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "VPC",
+      "questionType": "multiple choice 1",
+      "question": "You need to update your public route tables to point ________ to your NAT Gateways?",
+      "answers": [
+        "0.0.0.0/0",
+        "your Security Groups",
+        "your EC2 instances"
+      ],
+      "correctAnswer": ["0.0.0.0/0"]
+    }
+  },
+  {
+    "id": "776",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "VPC",
+      "questionType": "multiple choice 1",
+      "question": "Which are more secure, NAT Gateways or NAT Instances?",
+      "answers": [
+        "NAT Gateways",
+        "NAT Instances"
+      ],
+      "correctAnswer": ["NAT Gateways"]
+    }
+  },
+  {
+    "id": "777",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "VPC",
+      "questionType": "multiple choice 1",
+      "question": "You can associate a subnet to how many NACLs?",
+      "answers": [
+        "1",
+        "2",
+        "many"
+      ],
+      "correctAnswer": ["1"]
+    }
+  },
+  {
+    "id": "778",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "VPC",
+      "questionType": "multiple choice 1",
+      "question": "You can associate a NACL to how many subnets?",
+      "answers": [
+        "1",
+        "2",
+        "many"
+      ],
+      "correctAnswer": ["many"]
+    }
+  },
+  {
+    "id": "779",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "VPC",
+      "questionType": "multiple choice 1",
+      "question": "You can deploy a NACL to how many VPCs?",
+      "answers": [
+        "1",
+        "2",
+        "many"
+      ],
+      "correctAnswer": ["1"]
+    }
+  },
+  {
+    "id": "780",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "VPC",
+      "questionType": "multiple choice 1",
+      "question": "NACLs can be associated with many VPCs?",
+      "answers": [
+        "true",
+        "false"
+      ],
+      "correctAnswer": ["false"]
+    }
+  },
+  {
+    "id": "781",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "VPC",
+      "questionType": "multiple choice 1",
+      "question": "When you create a new public NACL, all inbound and outbound routes is ________ by default?",
+      "answers": [
+        "allowed",
+        "denied"
+      ],
+      "correctAnswer": ["denied"]
+    }
+  },
+  {
+    "id": "782",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "VPC",
+      "questionType": "multiple choice 2",
+      "question": "Using NACL inbound rules you can deny __________?",
+      "answers": [
+        "a specific ip address",
+        "an ip address range",
+        "a specific DNS name",
+        "a top level DNS name"
+      ],
+      "correctAnswer": ["a specific ip address",
+        "an ip address range"]
+    }
+  },
+  {
+    "id": "783",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "VPC",
+      "questionType": "multiple choice 1",
+      "question": "NACL rules are evaluated in _________?",
+      "answers": [
+        "numeric order",
+        "alphabetic order",
+        "in order by creation time"
+      ],
+      "correctAnswer": ["numeric order"]
+    }
+  },
+  {
+    "id": "784",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "VPC",
+      "questionType": "multiple choice 1",
+      "question": "When NACL rules are evaluated, a rule in the order first takes precidence over following rules?",
+      "answers": [
+        "true",
+        "false"
+      ],
+      "correctAnswer": ["true"]
+    }
+  },
+  {
+    "id": "785",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "VPC",
+      "questionType": "multiple choice 1",
+      "question": "NACL rule changes take effect _________?",
+      "answers": [
+        "eventually",
+        "immediately",
+        "at intervals configured through the console"
+      ],
+      "correctAnswer": ["immediately"]
+    }
+  },
+  {
+    "id": "786",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "VPC",
+      "questionType": "multiple choice 1",
+      "question": "Which are assessed first, NACLs or Security Groups?",
+      "answers": [
+        "NACLs",
+        "Security Groups",
+        "neither"
+      ],
+      "correctAnswer": ["NACLs"]
+    }
+  },
+  {
+    "id": "787",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "VPC",
+      "questionType": "multiple choice 1",
+      "question": "The default VPC automatically has a default ___________?",
+      "answers": [
+        "NACL",
+        "Network Instance"
+      ],
+      "correctAnswer": ["NACL"]
+    }
+  },
+  {
+    "id": "788",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "VPC",
+      "questionType": "multiple choice 1",
+      "question": "The default VPC default NACL which _________?",
+      "answers": [
+        "allows all inbound and outbound traffic",
+        "denies all inbound and outbound traffic",
+        "allows all inbound traffic",
+        "allows all outbound traffic"
+      ],
+      "correctAnswer": ["allows all inbound and outbound traffic"]
+    }
+  },
+  {
+    "id": "789",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "VPC",
+      "questionType": "multiple choice 1",
+      "question": "All new custom NACLs _________ by default?",
+      "answers": [
+        "allow all inbound and outbound traffic",
+        "deny all inbound and outbound traffic",
+        "deny all inbound traffic",
+        "allow all outbound traffic"
+      ],
+      "correctAnswer": ["deny all inbound and outbound traffic"]
+    }
+  },
+  {
+    "id": "790",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "VPC",
+      "questionType": "multiple choice 1",
+      "question": "To allow traffic to new custom NACLs you _________?",
+      "answers": [
+        "add rules",
+        "add ports",
+        "add port ranges",
+        "add subnets"
+      ],
+      "correctAnswer": ["add rules"]
+    }
+  },
+  {
+    "id": "791",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "VPC",
+      "questionType": "multiple choice 1",
+      "question": "Each ______ in your VPC must be associated with a NACL?",
+      "answers": [
+        "subnet",
+        "EC2 instance",
+        "Security Group"
+      ],
+      "correctAnswer": ["subnet"]
+    }
+  },
+  {
+    "id": "792",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "VPC",
+      "questionType": "multiple choice 1",
+      "question": "If you don't explicitly associate a with a NACL, it will automatically be ________?",
+      "answers": [
+        "associated with the default NACL",
+        "associated with the default Security Group",
+        "associated with the default Network Instance",
+        "denied all inbound and outbound routes"
+      ],
+      "correctAnswer": ["associated with the default NACL"]
+    }
+  },
+  {
+    "id": "793",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "VPC",
+      "questionType": "multiple choice 1",
+      "question": "When you associate a NACL with a subnet, the previous subnet-NACL relationship is _______?",
+      "answers": [
+        "removed",
+        "subordinated",
+        "promoted"
+      ],
+      "correctAnswer": ["removed"]
+    }
+  },
+  {
+    "id": "794",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "VPC",
+      "questionType": "multiple choice 1",
+      "question": "NACLs can't span AZs?",
+      "answers": [
+        "true",
+        "false"
+      ],
+      "correctAnswer": ["false"]
+    }
+  },
+  {
+    "id": "795",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "VPC",
+      "questionType": "multiple choice 1",
+      "question": "NACLs contain a numbered list of rules that is evaluated _______, starting with ________?",
+      "answers": [
+        "in ascending order, the lowest numbered rule",
+        "in descending order, the highest numbered rule",
+        "randomly, a randomly selected rule"
+      ],
+      "correctAnswer": ["in ascending order, the lowest numbered rule"]
+    }
+  },
+  {
+    "id": "796",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "VPC",
+      "questionType": "multiple choice 1",
+      "question": "NACLs have separate inbound and outbound rules, where each rule ___________?",
+      "answers": [
+        "either allows or denies traffic",
+        "allows traffic",
+        "denies traffic"
+      ],
+      "correctAnswer": ["either allows or denies traffic"]
+    }
+  },
+  {
+    "id": "797",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "VPC",
+      "questionType": "multiple choice 1",
+      "question": "NACLs are ___________?",
+      "answers": [
+        "stateful",
+        "stateless"
+      ],
+      "correctAnswer": ["stateless"]
+    }
+  },
+  {
+    "id": "798",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "VPC",
+      "questionType": "multiple choice 1",
+      "question": "You should allow ephemeral ports on the _______ rules only?",
+      "answers": [
+        "outbound",
+        "inbound"
+      ],
+      "correctAnswer": ["outbound"]
+    }
+  },
+  {
+    "id": "799",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "VPC",
+      "questionType": "multiple choice 1",
+      "question": "Ephemeral ports are used to ______ the outbound port?",
+      "answers": [
+        "randomize",
+        "block",
+        "allow"
+      ],
+      "correctAnswer": ["randomize"]
+    }
+  },
+  {
+    "id": "800",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "VPC",
+      "questionType": "multiple choice 1",
+      "question": "An Application ELB must be associated with ______?",
+      "answers": [
+        "at least 2 subnets",
+        "a subnet",
+        "a Security Group",
+        "at least 2 Security Groups"
+      ],
+      "correctAnswer": ["at least 2 subnets"]
+    }
+  },
+  {
+    "id": "801",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "VPC",
+      "questionType": "multiple choice 1",
+      "question": "With a VPC using an Application ELB, each subnet connected to the Application ELB must be ______?",
+      "answers": [
+        "public facing",
+        "internal facing",
+        "in a NACL (i.e. be public facing)",
+        "in a Network Instance  (i.e. be public facing)"
+      ],
+      "correctAnswer": ["public facing"]
+    }
+  }
+]
