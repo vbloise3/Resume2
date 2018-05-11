@@ -1,0 +1,630 @@
+[
+  {
+    "id": "802",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "VPC",
+      "questionType": "multiple choice 1",
+      "question": "Security groups act like a firewall at the instance level whereas ___ are an additional layer of security that act at the subnet level?",
+      "answers": [
+        "Network ACLs",
+        "DB Security Groups",
+        "VPC Security Groups",
+        "Route Tables"
+      ],
+      "correctAnswer": ["Network ACLs"]
+    }
+  },
+  {
+    "id": "803",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "VPC",
+      "questionType": "multiple choice 1",
+      "question": "How many VPC's am I allowed in each AWS Region by default?",
+      "answers": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "10"
+      ],
+      "correctAnswer": ["5"]
+    }
+  },
+  {
+    "id": "804",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "VPC",
+      "questionType": "multiple choice 1",
+      "question": "VPC stands for?",
+      "answers": [
+        "Very Private Cloud",
+        "Virtual Public Cloud",
+        "Virtual Private Cloud",
+        "Very Public Cloud"
+      ],
+      "correctAnswer": ["Virtual Private Cloud"]
+    }
+  },
+  {
+    "id": "805",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "VPC",
+      "questionType": "multiple choice 1",
+      "question": "How many internet gateways can I attach to my custom VPC?",
+      "answers": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "10"
+      ],
+      "correctAnswer": ["1"]
+    }
+  },
+  {
+    "id": "806",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "VPC",
+      "questionType": "multiple choice 1",
+      "question": "You have a VPC with both public and private subnets. You have 3 EC2 instances that have been deployed in to the public subnet and each has internet access. You deploy a 4th instance using the same AMI and this instance does not have internet access. What could be the cause of this?",
+      "answers": [
+        "The instance needs a private route out to the internet.",
+        "The instance needs either an Elastic IP address/Public IP address assigned to it.",
+        "The instance's security group is preventing it from connecting to the internet.",
+        "The ACL of the subnet is preventing access to the internet."
+      ],
+      "correctAnswer": ["The instance needs either an Elastic IP address/Public IP address assigned to it."]
+    }
+  },
+  {
+    "id": "807",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "VPC",
+      "questionType": "multiple choice 1",
+      "question": "A VPC Flow Log allows you to do which?",
+      "answers": [
+        "capture information about the eip traffic going to and from network interfaces in your VPC",
+        "capture information about the messages going to and from your applications in your EC2 instances in your VPC",
+        "capture log information about your VPC",
+        "capture log information about the EC2 instances in your VPC"
+      ],
+      "correctAnswer": ["capture information about the eip traffic going to and from network interfaces in your VPC"]
+    }
+  },
+  {
+    "id": "808",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "VPC",
+      "questionType": "multiple choice 1",
+      "question": "VPC Flow log data is stored _____?",
+      "answers": [
+        "using CloudWatch logs",
+        "in S3",
+        "using CloudTrail logs",
+        "on the EC2 instance EBS volumes"
+      ],
+      "correctAnswer": ["using CloudWatch logs"]
+    }
+  },
+  {
+    "id": "809",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "VPC",
+      "questionType": "multiple choice 1",
+      "question": "After you've created a VPC Flow log, you can retrieve its data from the ________?",
+      "answers": [
+        "CloudWatch logs",
+        "S3 bucket in which they're stored",
+        "CloudTrail logs",
+        "from the EC2 instance EBS volumes"
+      ],
+      "correctAnswer": ["CloudWatch logs"]
+    }
+  },
+  {
+    "id": "810",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "VPC",
+      "questionType": "multiple choice 3",
+      "question": "VPC Flow logs can be created at three levels?",
+      "answers": [
+        "VPC",
+        "Subnet",
+        "Network Interface level",
+        "EC2 level"
+      ],
+      "correctAnswer": ["VPC",
+        "Subnet",
+        "Network Interface level"]
+    }
+  },
+  {
+    "id": "811",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "VPC",
+      "questionType": "multiple choice 2",
+      "question": "You can stream your VPC Flow logs to which of these?",
+      "answers": [
+        "Lambda functions",
+        "ElasticSearch",
+        "Kinesis",
+        "Glue"
+      ],
+      "correctAnswer": ["Lambda functions",
+        "ElasticSearch"]
+    }
+  },
+  {
+    "id": "812",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "VPC",
+      "questionType": "multiple choice 1",
+      "question": "You can _________ from your VPC Flow logs streamed to Lambda or ElasticSearch?",
+      "answers": [
+        "programmatically react to log events",
+        "store you log events",
+        "build a data lake",
+        "drive analytics"
+      ],
+      "correctAnswer": ["programmatically react to log events"]
+    }
+  },
+  {
+    "id": "813",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "VPC",
+      "questionType": "multiple choice 1",
+      "question": "You can _________ from your VPC Flow logs streamed to Lambda or ElasticSearch?",
+      "answers": [
+        "programmatically react to log events",
+        "store you log events",
+        "build a data lake",
+        "drive analytics"
+      ],
+      "correctAnswer": ["programmatically react to log events"]
+    }
+  },
+  {
+    "id": "814",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "VPC",
+      "questionType": "multiple choice 1",
+      "question": "You can't enable flow logs for VPCs that are peered with your VPC unless the peer VPC _______?",
+      "answers": [
+        "is in your account",
+        "is peered directly",
+        "is in another account"
+      ],
+      "correctAnswer": ["is in your account"]
+    }
+  },
+  {
+    "id": "815",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "VPC",
+      "questionType": "multiple choice 1",
+      "question": "You can tag a VPC Flow Log?",
+      "answers": [
+        "true",
+        "false"
+      ],
+      "correctAnswer": ["false"]
+    }
+  },
+  {
+    "id": "816",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "VPC",
+      "questionType": "multiple choice 1",
+      "question": "After you've created a VPC Flow Log, you can change its configuration?",
+      "answers": [
+        "true",
+        "false"
+      ],
+      "correctAnswer": ["false"]
+    }
+  },
+  {
+    "id": "817",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "VPC",
+      "questionType": "multiple choice 1",
+      "question": "All ip traffic is monitored in a VPC Flow Log?",
+      "answers": [
+        "true",
+        "false"
+      ],
+      "correctAnswer": ["false"]
+    }
+  },
+  {
+    "id": "818",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "VPC",
+      "questionType": "multiple choice 1",
+      "question": "IP traffic generated by instances when they contact the Amazon DNS server is captured by your VPC Flow Log?",
+      "answers": [
+        "true",
+        "false"
+      ],
+      "correctAnswer": ["false"]
+    }
+  },
+  {
+    "id": "819",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "VPC",
+      "questionType": "multiple choice 1",
+      "question": "IP traffic generated by instances when they contact your own (created by you) DNS server is captured by your VPC Flow Log?",
+      "answers": [
+        "true",
+        "false"
+      ],
+      "correctAnswer": ["true"]
+    }
+  },
+  {
+    "id": "820",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "VPC",
+      "questionType": "multiple choice 1",
+      "question": "IP traffic generated by a Windows instance for an Amazon Windows license activation is captured by your VPC Flow Log?",
+      "answers": [
+        "true",
+        "false"
+      ],
+      "correctAnswer": ["false"]
+    }
+  },
+  {
+    "id": "821",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "VPC",
+      "questionType": "multiple choice 1",
+      "question": "IP traffic to and from 169.254.169.254 for instance meta data is captured by your VPC Flow Log?",
+      "answers": [
+        "true",
+        "false"
+      ],
+      "correctAnswer": ["false"]
+    }
+  },
+  {
+    "id": "822",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "VPC",
+      "questionType": "multiple choice 1",
+      "question": "DHCP traffic is captured by your VPC Flow Log?",
+      "answers": [
+        "true",
+        "false"
+      ],
+      "correctAnswer": ["false"]
+    }
+  },
+  {
+    "id": "823",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "VPC",
+      "questionType": "multiple choice 1",
+      "question": "Traffic to the reserved ip address for the default VPC router is captured by your VPC Flow Log?",
+      "answers": [
+        "true",
+        "false"
+      ],
+      "correctAnswer": ["false"]
+    }
+  },
+  {
+    "id": "824",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "VPC",
+      "questionType": "multiple choice 1",
+      "question": "A NAT Instance is used to provide internet traffic to EC2 instances in ________?",
+      "answers": [
+        "private subnets",
+        "public subnets",
+        "NACLS",
+        "Security Groups"
+      ],
+      "correctAnswer": ["private subnets"]
+    }
+  },
+  {
+    "id": "825",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "VPC",
+      "questionType": "multiple choice 1",
+      "question": "A NAT Instance is used to provide internet traffic to EC2 instances in a private subnet for things like __________?",
+      "answers": [
+        "downloading software updates (yum install ...)",
+        "sending traffic to your database EC2 instance",
+        "sending traffic to your application server EC2 instance",
+        "sending traffic to your web server EC2 instance"
+      ],
+      "correctAnswer": ["downloading software updates (yum install ...)"]
+    }
+  },
+  {
+    "id": "826",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "VPC",
+      "questionType": "multiple choice 1",
+      "question": "A Bastion Host is used to ________ EC2 instances in private subnets?",
+      "answers": [
+        "securely administer (via SSH or RDP)",
+        "allow outbound traffic from"
+      ],
+      "correctAnswer": ["securely administer (via SSH or RDP)"]
+    }
+  },
+  {
+    "id": "827",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "VPC",
+      "questionType": "multiple choice 2",
+      "question": "There are two different types of VPC endpoints?",
+      "answers": [
+        "Interface Endpoints",
+        "Gateway Endpoints",
+        "Public Endpoints",
+        "Private Endpoints",
+        "Bastion Endpoints"
+      ],
+      "correctAnswer": ["Interface Endpoints",
+        "Gateway Endpoints"]
+    }
+  },
+  {
+    "id": "828",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "VPC",
+      "questionType": "multiple choice 1",
+      "question": "Interface VPC endpoints _______?",
+      "answers": [
+        "are an ENI attached to your EC2 instances which serves as a point of entry for traffic to your private subnet EC2 instances",
+        "serve as a target for a route in your route table for traffic destined for your EC2 instances"
+      ],
+      "correctAnswer": ["are an ENI attached to your EC2 instances which serves as a point of entry for traffic to your private subnet EC2 instances"]
+    }
+  },
+  {
+    "id": "829",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "VPC",
+      "questionType": "multiple choice 1",
+      "question": "Gateway VPC endpoints _______?",
+      "answers": [
+        "are an ENI attached to your EC2 instances which serves as a point of entry for traffic to your private subnet EC2 instances",
+        "serve as a target for a route in your route table for traffic destined for your EC2 instances"
+      ],
+      "correctAnswer": ["serve as a target for a route in your route table for traffic destined for your EC2 instances"]
+    }
+  },
+  {
+    "id": "830",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "VPC",
+      "questionType": "multiple choice 1",
+      "question": "Gateway VPC endpoints _______?",
+      "answers": [
+        "are an ENI attached to your EC2 instances which serves as a point of entry for traffic to your private subnet EC2 instances",
+        "serve as a target for a route in your route table for traffic destined for your EC2 instances"
+      ],
+      "correctAnswer": ["serve as a target for a route in your route table for traffic destined for your EC2 instances"]
+    }
+  },
+  {
+    "id": "831",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "VPC",
+      "questionType": "multiple choice 1",
+      "question": "When creating a NAT Instance, you need to ______?",
+      "answers": [
+        "disable the Source/Destination check on the instance",
+        "assign a DNS name to the NAT Instance",
+        "assign an ip address to the NAT Instance"
+      ],
+      "correctAnswer": ["disable the Source/Destination check on the instance"]
+    }
+  },
+  {
+    "id": "832",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "VPC",
+      "questionType": "multiple choice 1",
+      "question": "With a NAT Instance, you need to ______?",
+      "answers": [
+        "place the NAT Instance in a public subnet",
+        "place the NAT Instance in a private subnet",
+        "assign an ip address to the NAT Instance"
+      ],
+      "correctAnswer": ["place the NAT Instance in a public subnet"]
+    }
+  },
+  {
+    "id": "833",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "VPC",
+      "questionType": "multiple choice 1",
+      "question": "With a NAT Instance, there must be a route out of the private subnet to the NAT Instance?",
+      "answers": [
+        "true",
+        "false"
+      ],
+      "correctAnswer": ["true"]
+    }
+  },
+  {
+    "id": "834",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "VPC",
+      "questionType": "multiple choice 1",
+      "question": "If you are experiencing bottlenecking with your NAT Instance, ________?",
+      "answers": [
+        "increase the size of the NAT Instance",
+        "add more EBS volumes to the NAT Instance",
+        "switch the NAT Instance to a Bastion Host"
+      ],
+      "correctAnswer": ["increase the size of the NAT Instance"]
+    }
+  },
+  {
+    "id": "835",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "VPC",
+      "questionType": "multiple choice 3",
+      "question": "To make your NAT Instance highly available you can do which?",
+      "answers": [
+        "use Auto-scaling Groups",
+        "use multiple subnets in different AZs",
+        "write a fail-over script",
+        "use an Application ELB"
+      ],
+      "correctAnswer": ["use Auto-scaling Groups",
+        "use multiple subnets in different AZs",
+        "write a fail-over script"]
+    }
+  },
+  {
+    "id": "836",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "VPC",
+      "questionType": "multiple choice 1",
+      "question": "NAT Instances are _________?",
+      "answers": [
+        "behind a Security Group",
+        "behind a NACL",
+        "behind a Bastion Host",
+        "behind a Network Gateway"
+      ],
+      "correctAnswer": ["behind a Security Group"]
+    }
+  },
+  {
+    "id": "837",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "VPC",
+      "questionType": "multiple choice 1",
+      "question": "Which is the preferred solution these days?",
+      "answers": [
+        "NAT Instance",
+        "NAT Gateway"
+      ],
+      "correctAnswer": ["NAT Gateway"]
+    }
+  },
+  {
+    "id": "838",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "VPC",
+      "questionType": "multiple choice 1",
+      "question": "NAT Gateways scale __________?",
+      "answers": [
+        "Automatically",
+        "Incrementally",
+        "through configuration"
+      ],
+      "correctAnswer": ["Automatically"]
+    }
+  },
+  {
+    "id": "839",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "VPC",
+      "questionType": "multiple choice 1",
+      "question": "NAT Gateways are associated with Security Groups?",
+      "answers": [
+        "true",
+        "false"
+      ],
+      "correctAnswer": ["false"]
+    }
+  },
+  {
+    "id": "840",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "VPC",
+      "questionType": "multiple choice 1",
+      "question": "NAT Gateways are automatically assigned a _________?",
+      "answers": [
+        "public ip address",
+        "private ip address",
+        "DNS name",
+        "route table entry"
+      ],
+      "correctAnswer": ["public ip address"]
+    }
+  },
+  {
+    "id": "841",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "VPC",
+      "questionType": "multiple choice 1",
+      "question": "After you create a NAT Gateway you need to _________?",
+      "answers": [
+        "update your route table entries",
+        "remove your route tables",
+        "associate it with an EC2 instance",
+        "associate it with a Security Group"
+      ],
+      "correctAnswer": ["update your route table entries"]
+    }
+  },
+  {
+    "id": "842",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "VPC",
+      "questionType": "multiple choice 1",
+      "question": "Which is more secure?",
+      "answers": [
+        "NAT Instance",
+        "NAT Gateway"
+      ],
+      "correctAnswer": ["NAT Gateway"]
+    }
+  }
+]
