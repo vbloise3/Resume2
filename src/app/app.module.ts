@@ -5,7 +5,7 @@ import {HttpClientModule} from '@angular/common/http';
 import {RouterModule, Routes} from '@angular/router';
 import { FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {NgClass, LocationStrategy, HashLocationStrategy} from '@angular/common';
-import 'rxjs/add/operator/map';
+// import 'rxjs/add/operator/map';
 import { YoMoFoComponent } from './yo-mo-fo/yo-mo-fo';
 import { AppComponent } from './appComponent/appComponent';
 import { HomeComponent } from './home/home';
