@@ -1,0 +1,1506 @@
+[
+  {
+    "id": "843",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Application Services",
+      "questionType": "multiple choice 1",
+      "question": "What does Amazon SWF stand for?",
+      "answers": [
+        "Simple Wireless Forms",
+        "Simple Web Form",
+        "Simple Work Flow",
+        "Simple Web Flow"
+      ],
+      "correctAnswer": ["Simple Work Flow"]
+    }
+  },
+  {
+    "id": "844",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Application Services",
+      "questionType": "multiple choice 1",
+      "question": "What does Amazon SES stand for?",
+      "answers": [
+        "Software Enabled Server",
+        "Simple Email Service",
+        "Simple Elastic Server",
+        "Software Email Solution"
+      ],
+      "correctAnswer": ["Simple Email Service"]
+    }
+  },
+  {
+    "id": "845",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Application Services",
+      "questionType": "multiple choice 1",
+      "question": "What happens when you create a topic on Amazon SNS?",
+      "answers": [
+        "The topic will terminate your EC2 instances without a tag.",
+        "You can create a topic on Amazon SQS not on SNS.",
+        "You cannot create a topic on SNS.",
+        "An Amazon Resource Name is created"
+      ],
+      "correctAnswer": ["An Amazon Resource Name is created"]
+    }
+  },
+  {
+    "id": "846",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Application Services",
+      "questionType": "multiple choice 1",
+      "question": "What is the difference between SNS and SQS?",
+      "answers": [
+        "SQS sends messages to people on topics, where as SNS manages tasks",
+        "SNS pulls (polls) where as SQS is push based message service",
+        "SQS and SNS are basically the same service",
+        "SNS is push notification service, where as SQS is message system that requires worker nodes to poll the queue."
+      ],
+      "correctAnswer": ["SNS is push notification service, where as SQS is message system that requires worker nodes to poll the queue."]
+    }
+  },
+  {
+    "id": "847",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Application Services",
+      "questionType": "multiple choice 1",
+      "question": "What application service allows you to decouple your infrastructure using messaged based queues?",
+      "answers": [
+        "SNS",
+        "SWF",
+        "SQS",
+        "SES"
+      ],
+      "correctAnswer": ["SQS"]
+    }
+  },
+  {
+    "id": "848",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Application Services",
+      "questionType": "multiple choice 1",
+      "question": "What does a 'domain' refer to in Amazon SWF?",
+      "answers": [
+        "A security group in which only tasks inside can initiate",
+        "A special type of worker",
+        "The DNS record for the Amazon SWF service",
+        "A collection of related workflows"
+      ],
+      "correctAnswer": ["A collection of related workflows"]
+    }
+  },
+  {
+    "id": "849",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Application Services",
+      "questionType": "multiple choice 1",
+      "question": "By default, EC2 instances pull SQS messages from an SQS queue on a FIFO (First In First out) basis.",
+      "answers": [
+        "true",
+        "false"
+      ],
+      "correctAnswer": ["false"]
+    }
+  },
+  {
+    "id": "850",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Application Services",
+      "questionType": "multiple choice 1",
+      "question": "Amazon's SQS service guarantees a message will be delivered at least once.",
+      "answers": [
+        "true",
+        "false"
+      ],
+      "correctAnswer": ["true"]
+    }
+  },
+  {
+    "id": "851",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Application Services",
+      "questionType": "multiple choice 1",
+      "question": "Amazon SWF ensures that a task is assigned only once and is never duplicated.",
+      "answers": [
+        "true",
+        "false"
+      ],
+      "correctAnswer": ["true"]
+    }
+  },
+  {
+    "id": "852",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Application Services",
+      "questionType": "multiple choice 1",
+      "question": "Amazon SWF restrict me to use specific programming languages.",
+      "answers": [
+        "true",
+        "false"
+      ],
+      "correctAnswer": ["false"]
+    }
+  },
+  {
+    "id": "853",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Application Services",
+      "questionType": "multiple choice 1",
+      "question": "SQS is a ________ based system component",
+      "answers": [
+        "pull",
+        "push"
+      ],
+      "correctAnswer": ["pull"]
+    }
+  },
+  {
+    "id": "854",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Application Services",
+      "questionType": "multiple choice 1",
+      "question": "SNS is a ________ based system component",
+      "answers": [
+        "pull",
+        "push"
+      ],
+      "correctAnswer": ["push"]
+    }
+  },
+  {
+    "id": "855",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Application Services",
+      "questionType": "multiple choice 1",
+      "question": "Which AWS service allows you to decouple the components of your application?",
+      "answers": [
+        "SQS",
+        "SNS",
+        "SES",
+        "SMS"
+      ],
+      "correctAnswer": ["SQS"]
+    }
+  },
+  {
+    "id": "856",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Application Services",
+      "questionType": "multiple choice 1",
+      "question": "Which type of distributed application components can store a message in an SQS queue?",
+      "answers": [
+        "any component",
+        "none",
+        "node.js components",
+        "custom components"
+      ],
+      "correctAnswer": ["any component"]
+    }
+  },
+  {
+    "id": "857",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Application Services",
+      "questionType": "multiple choice 1",
+      "question": "SQS messages can contain up to _____ of text in ________ format?",
+      "answers": [
+        "256KB, any",
+        "256KB, XML",
+        "256KB, JSON",
+        "128KB, any"
+      ],
+      "correctAnswer": ["256KB, any"]
+    }
+  },
+  {
+    "id": "858",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Application Services",
+      "questionType": "multiple choice 1",
+      "question": "Any distributed application component can retrieve messages programatically from the queue using _________?",
+      "answers": [
+        "the SQS API",
+        "the AWS console",
+        "the SNS API",
+        "the S3 API"
+      ],
+      "correctAnswer": ["the SQS API"]
+    }
+  },
+  {
+    "id": "859",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Application Services",
+      "questionType": "multiple choice 3",
+      "question": "How does SQS help in your distributed system design?",
+      "answers": [
+        "it allows for the situation when the message producing component is producing work faster than the message consuming component can process the messages",
+        "when your message producing component and/or your message consuming component are intermittently available (when you're using spot instances, for example)",
+        "it allows you to push messages to many receiving components through topics",
+        "it allows you to create workflows with directors and workers",
+        "you can use auto-scaling groups to monitor messages in your queue, and scale up or down your processing app EC2 instances if the queue gets too full or drains down to very low"
+      ],
+      "correctAnswer": ["it allows for the situation when the message producing component is producing work faster than the message consuming component can process the messages",
+        "when your message producing component and/or your message consuming component are intermittently available (when you're using spot instances, for example)",
+        "you can use auto-scaling groups to monitor messages in your queue, and scale up or down your processing app EC2 instances if the queue gets too full or drains down to very low"]
+    }
+  },
+  {
+    "id": "860",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Application Services",
+      "questionType": "multiple choice 2",
+      "question": "What are the two types of SQS queues?",
+      "answers": [
+        "Standard Queues",
+        "FIFO Queues",
+        "Simple Queues",
+        "Distributed Queues",
+        "Restricted Queues"
+      ],
+      "correctAnswer": ["Standard Queues",
+        "FIFO Queues"]
+    }
+  },
+  {
+    "id": "861",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Application Services",
+      "questionType": "multiple choice 1",
+      "question": "Which SQS queue type is the default type?",
+      "answers": [
+        "Standard Queues",
+        "FIFO Queues",
+        "Simple Queues",
+        "Distributed Queues",
+        "Restricted Queues"
+      ],
+      "correctAnswer": ["Standard Queues"]
+    }
+  },
+  {
+    "id": "862",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Application Services",
+      "questionType": "multiple choice 1",
+      "question": "How many transactions per second can the SQS standard queue handle?",
+      "answers": [
+        "nearly unlimited",
+        "1,000",
+        "100,000",
+        "1,000,000",
+        "100"
+      ],
+      "correctAnswer": ["nearly unlimited"]
+    }
+  },
+  {
+    "id": "863",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Application Services",
+      "questionType": "multiple choice 1",
+      "question": "SQS standard queues guarantee that _________?",
+      "answers": [
+        "a message is delivered at least once",
+        "a message is delivered",
+        "a message is processed",
+        "a message is deleted"
+      ],
+      "correctAnswer": ["a message is delivered at least once"]
+    }
+  },
+  {
+    "id": "864",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Application Services",
+      "questionType": "multiple choice 1",
+      "question": "SQS standard queues offer _________?",
+      "answers": [
+        "best-effort ordering",
+        "exact ordering",
+        "random ordering",
+        "descending sequence ordering"
+      ],
+      "correctAnswer": ["best-effort ordering"]
+    }
+  },
+  {
+    "id": "865",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Application Services",
+      "questionType": "multiple choice 1",
+      "question": "SQS standard queue best-effort ordering ensures __________?",
+      "answers": [
+        "that messages are generally delivered in the same order they are sent",
+        "that messages are in the same order they are sent",
+        "that messages are in the random order",
+        "that messages are not dropped"
+      ],
+      "correctAnswer": ["that messages are generally delivered in the same order they are sent"]
+    }
+  },
+  {
+    "id": "866",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Application Services",
+      "questionType": "multiple choice 1",
+      "question": "SQS FIFO queues offer __________?",
+      "answers": [
+        "first-in-first-out delivery and exactly once processing",
+        "first-in-first-out delivery and usually once processing",
+        "first-in-first-out delivery with duplicate processing",
+        "first-out-first-in delivery and exactly once processing"
+      ],
+      "correctAnswer": ["first-in-first-out delivery and exactly once processing"]
+    }
+  },
+  {
+    "id": "867",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Application Services",
+      "questionType": "multiple choice 1",
+      "question": "With SQS FIFO queues, the order in which ____________ is strictly preserved?",
+      "answers": [
+        "the messages are sent and received",
+        "the messages are sent",
+        "the messages are received",
+        "the messages are processed"
+      ],
+      "correctAnswer": ["the messages are sent and received"]
+    }
+  },
+  {
+    "id": "868",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Application Services",
+      "questionType": "multiple choice 1",
+      "question": "With SQS FIFO queues, the message is delivered ________?",
+      "answers": [
+        "once",
+        "occasionally multiple times"
+      ],
+      "correctAnswer": ["once"]
+    }
+  },
+  {
+    "id": "869",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Application Services",
+      "questionType": "multiple choice 1",
+      "question": "With SQS FIFO queues, the message remains available until ________?",
+      "answers": [
+        "a consumer processes and deletes it",
+        "a consumer processes it",
+        "its TTL (Time To Live) expires"
+      ],
+      "correctAnswer": ["a consumer processes and deletes it"]
+    }
+  },
+  {
+    "id": "870",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Application Services",
+      "questionType": "multiple choice 1",
+      "question": "With SQS FIFO queues ________?",
+      "answers": [
+        "duplicates are not introduced into the queue",
+        "duplicates are allows into the queue",
+        "multiples are allowed into the queue"
+      ],
+      "correctAnswer": ["duplicates are not introduced into the queue"]
+    }
+  },
+  {
+    "id": "871",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Application Services",
+      "questionType": "multiple choice 1",
+      "question": "Which SQS queue type offers message groups?",
+      "answers": [
+        "Standard Queues",
+        "FIFO Queues"
+      ],
+      "correctAnswer": ["FIFO Queues"]
+    }
+  },
+  {
+    "id": "872",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Application Services",
+      "questionType": "multiple choice 1",
+      "question": "SQS message groups allow ________?",
+      "answers": [
+        "multiple ordered message groups within a single queue",
+        "multiple ordered message groups within multiple queues",
+        "a single ordered message group within a single queue",
+        "a single ordered message group within multiple queues"
+      ],
+      "correctAnswer": ["multiple ordered message groups within a single queue"]
+    }
+  },
+  {
+    "id": "873",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Application Services",
+      "questionType": "multiple choice 1",
+      "question": "SQS FIFO queues are limited to how many transactions per second?",
+      "answers": [
+        "nearly unlimited",
+        "1,000",
+        "100,000",
+        "1,000,000",
+        "300"
+      ],
+      "correctAnswer": ["300"]
+    }
+  },
+  {
+    "id": "874",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Application Services",
+      "questionType": "multiple choice 1",
+      "question": "With SQS, messages can be kept in the queue for how long?",
+      "answers": [
+        "from 1 minute to 14 days",
+        "from 1 day to 14 days",
+        "from 1 hour to 14 days",
+        "from 1 minute to 7 days",
+        "from 1 minute to 1 day"
+      ],
+      "correctAnswer": ["from 1 minute to 14 days"]
+    }
+  },
+  {
+    "id": "875",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Application Services",
+      "questionType": "multiple choice 1",
+      "question": "With SQS, the default time a message can be kept in the queue is _________?",
+      "answers": [
+        "4 days",
+        "1 day",
+        "30 minutes",
+        "1 hour",
+        "7 days"
+      ],
+      "correctAnswer": ["4 days"]
+    }
+  },
+  {
+    "id": "876",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Application Services",
+      "questionType": "multiple choice 1",
+      "question": "With SQS, the visibility timeout is _______?",
+      "answers": [
+        "the amount of time that the message is invisible in the SQS queue after a consumer picks up that message",
+        "the amount of time that the message is visible in the queue",
+        "the amount of time before the message is visible",
+        "the amount of time the message is visible"
+      ],
+      "correctAnswer": ["the amount of time that the message is invisible in the SQS queue after a consumer picks up that message"]
+    }
+  },
+  {
+    "id": "877",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Application Services",
+      "questionType": "multiple choice 1",
+      "question": "With the SQS visibility timeout, provided that the job is processed before the visibility timeout expires, the message will then be ________?",
+      "answers": [
+        "deleted from the queue",
+        "moved to the dead letter queue",
+        "moved to the fron of the queue",
+        "moved to the end of the queue",
+        "visible again"
+      ],
+      "correctAnswer": ["deleted from the queue"]
+    }
+  },
+  {
+    "id": "878",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Application Services",
+      "questionType": "multiple choice 1",
+      "question": "With the SQS visibility timeout, if the job is not processed before the visibility timeout expires, the message will then ________?",
+      "answers": [
+        "deleted from the queue",
+        "moved to the dead letter queue",
+        "moved to the fron of the queue",
+        "moved to the end of the queue",
+        "become visible again"
+      ],
+      "correctAnswer": ["become visible again"]
+    }
+  },
+  {
+    "id": "879",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Application Services",
+      "questionType": "multiple choice 1",
+      "question": "With the SQS visibility timeout, if the job is not processed before the visibility timeout expires, the message will then become visible again. This could result in ________?",
+      "answers": [
+        "the same message being delivered twice",
+        "the message being moved to the dead letter queue",
+        "the message beingmoved to the fron of the queue",
+        "the message beingmoved to the end of the queue"
+      ],
+      "correctAnswer": ["the same message being delivered twice"]
+    }
+  },
+  {
+    "id": "880",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Application Services",
+      "questionType": "multiple choice 1",
+      "question": "The SQS visibility timeout maximum is ______",
+      "answers": [
+        "12 hours",
+        "1 day",
+        "1 hour",
+        "60 seconds"
+      ],
+      "correctAnswer": ["12 hours"]
+    }
+  },
+  {
+    "id": "881",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Application Services",
+      "questionType": "multiple choice 1",
+      "question": "SQS guarantees that _________",
+      "answers": [
+        "your messages will be delivered at least once",
+        "your messages will be delivered",
+        "your messages will be consumed",
+        "your messages will be queued"
+      ],
+      "correctAnswer": ["your messages will be delivered at least once"]
+    }
+  },
+  {
+    "id": "882",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Application Services",
+      "questionType": "multiple choice 2",
+      "question": "What are the two types of SQS polling?",
+      "answers": [
+        "long polling",
+        "short polling",
+        "fast polling",
+        "delayed polling",
+        "synchronous polling"
+      ],
+      "correctAnswer": ["long polling",
+        "short polling"]
+    }
+  },
+  {
+    "id": "883",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Application Services",
+      "questionType": "multiple choice 2",
+      "question": "With SQS long polling, your polling call doesn't return until ________?",
+      "answers": [
+        "a message arrives in the queue",
+        "the long poll call times out",
+        "the queue closes",
+        "the long poll call is interrupted",
+        "the polling function terminates"
+      ],
+      "correctAnswer": ["a message arrives in the queue",
+        "the long poll call times out"]
+    }
+  },
+  {
+    "id": "884",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Application Services",
+      "questionType": "multiple choice 1",
+      "question": "With SQS short polling, your polling call _________?",
+      "answers": [
+        "returns immediately, even if the queue being polled is empty",
+        "returns after a set timeout, even if the queue being polled is empty",
+        "returns immediately, and gives a warning if the queue is empty"
+      ],
+      "correctAnswer": ["returns immediately, even if the queue being polled is empty"]
+    }
+  },
+  {
+    "id": "885",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Application Services",
+      "questionType": "multiple choice 1",
+      "question": "SWF is __________?",
+      "answers": [
+        "a web service that coordinates work across distributed application components and even manual tasks",
+        "a web service that coordinates work across distributed application components but not manual tasks",
+        "a web service that queues work across distributed application components"
+      ],
+      "correctAnswer": ["a web service that coordinates work across distributed application components and even manual tasks"]
+    }
+  },
+  {
+    "id": "886",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Application Services",
+      "questionType": "multiple choice 4",
+      "question": "What are some of the use cases for SWF?",
+      "answers": [
+        "media processing",
+        "web application back-ends",
+        "business process workflows",
+        "analytics pipelines",
+        "financial transactions",
+        "social networks"
+      ],
+      "correctAnswer": ["media processing",
+        "web application back-ends",
+        "business process workflows",
+        "analytics pipelines"]
+    }
+  },
+  {
+    "id": "887",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Application Services",
+      "questionType": "multiple choice 1",
+      "question": "SWF use cases are designed as _________?",
+      "answers": [
+        "a coordination of tasks",
+        "a set of sequential steps",
+        "a set of random steps",
+        "highly parallel sets of tasks"
+      ],
+      "correctAnswer": ["a coordination of tasks"]
+    }
+  },
+  {
+    "id": "887",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Application Services",
+      "questionType": "multiple choice 4",
+      "question": "SWF tasks represent invocations of various processing steps in an application which can be performed by _________?",
+      "answers": [
+        "executable code",
+        "web service calls",
+        "human actions",
+        "scripts",
+        "message queues"
+      ],
+      "correctAnswer": ["executable code",
+        "web service calls",
+        "human actions",
+        "scripts"]
+    }
+  },
+  {
+    "id": "888",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Application Services",
+      "questionType": "multiple choice 1",
+      "question": "SWF workers are ________?",
+      "answers": [
+        "programs that interact with SWF",
+        "programs that run SWF tasks",
+        "humans that interact with SWF"
+      ],
+      "correctAnswer": ["programs that interact with SWF"]
+    }
+  },
+  {
+    "id": "889",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Application Services",
+      "questionType": "multiple choice 3",
+      "question": "SWF workers do which of these?",
+      "answers": [
+        "get tasks",
+        "process received tasks",
+        "return the results of a processed task",
+        "start the SWF process"
+      ],
+      "correctAnswer": ["get tasks",
+        "process received tasks",
+        "return the results of a processed task"]
+    }
+  },
+  {
+    "id": "890",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Application Services",
+      "questionType": "multiple choice 1",
+      "question": "SWF deciders are ________?",
+      "answers": [
+        "a program that controls the coordination of tasks",
+        "a program that schedules the tasks",
+        "a human worker that controls the coordination of tasks",
+        "a human worker that schedules the tasks"
+      ],
+      "correctAnswer": ["a program that controls the coordination of tasks"]
+    }
+  },
+  {
+    "id": "891",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Application Services",
+      "questionType": "multiple choice 1",
+      "question": "In SWF which of these is an application that can initiate a workflow?",
+      "answers": [
+        "decider",
+        "worker",
+        "workflow starter",
+        "workflow decider"
+      ],
+      "correctAnswer": ["workflow starter"]
+    }
+  },
+  {
+    "id": "892",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Application Services",
+      "questionType": "multiple choice 2",
+      "question": "In SWF, which of these are examples of workflow starters?",
+      "answers": [
+        "web application",
+        "mobile app",
+        "human",
+        "natural event"
+      ],
+      "correctAnswer": ["web application",
+        "mobile app"]
+    }
+  },
+  {
+    "id": "893",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Application Services",
+      "questionType": "multiple choice 2",
+      "question": "In SWF, workers and the decider can run on cloud infrastrucute such as _________?",
+      "answers": [
+        "EC2 instances",
+        "machines behind firewalls",
+        "CloudFront",
+        "Snowball"
+      ],
+      "correctAnswer": ["EC2 instances",
+        "machines behind firewalls"]
+    }
+  },
+  {
+    "id": "894",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Application Services",
+      "questionType": "multiple choice 1",
+      "question": "SWF _______ between workers and the decider?",
+      "answers": [
+        "brokers the interactions",
+        "distributes workload",
+        "schedules tasks"
+      ],
+      "correctAnswer": ["brokers the interactions"]
+    }
+  },
+  {
+    "id": "895",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Application Services",
+      "questionType": "multiple choice 1",
+      "question": "SWF ensures that a task is ___________?",
+      "answers": [
+        "assigned only once and is never duplicated",
+        "assigned and sometimes can be duplicated",
+        "assigned",
+        "executed"
+      ],
+      "correctAnswer": ["assigned only once and is never duplicated"]
+    }
+  },
+  {
+    "id": "896",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Application Services",
+      "questionType": "multiple choice 1",
+      "question": "What is the key difference between SQS and SWF?",
+      "answers": [
+        "SQS can have duplicated tasks but SWF will never duplicate a task",
+        "SWF can have duplicated tasks but SQS will never duplicate a task",
+        "SWF is queue based and SQS is workflow based",
+        "SWF is fault tolerant but SQS is not"
+      ],
+      "correctAnswer": ["SQS can have duplicated tasks but SWF will never duplicate a task"]
+    }
+  },
+  {
+    "id": "897",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Application Services",
+      "questionType": "multiple choice 1",
+      "question": "SWF can scale quickly because _________?",
+      "answers": [
+        "SWF maintains the application's state durably, so workers and deciders don't have to keep track of execution state",
+        "SWF is a managed service",
+        "SWF is distributed across all of your AZs",
+        "SWF is fault tolerant"
+      ],
+      "correctAnswer": ["SWF maintains the application's state durably, so workers and deciders don't have to keep track of execution state"]
+    }
+  },
+  {
+    "id": "898",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Application Services",
+      "questionType": "multiple choice 1",
+      "question": "SWF workflows, activity types, and the workflow execution itself are scoped to a _______?",
+      "answers": [
+        "domain",
+        "region",
+        "set of AZs",
+        "fleet of EC2 instances"
+      ],
+      "correctAnswer": ["domain"]
+    }
+  },
+  {
+    "id": "899",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Application Services",
+      "questionType": "multiple choice 1",
+      "question": "SWF workflow domains isolate a set of types, executions, and task lists from  others within the same _______?",
+      "answers": [
+        "account",
+        "region",
+        "set of AZs",
+        "organization"
+      ],
+      "correctAnswer": ["account"]
+    }
+  },
+  {
+    "id": "900",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Application Services",
+      "questionType": "multiple choice 2",
+      "question": "You can register an SWF domain by ________?",
+      "answers": [
+        "using the AWS console",
+        "using the RegisterDomain action in the SWF API",
+        "using the RegisterAction SWF API",
+        "using the cli"
+      ],
+      "correctAnswer": ["using the AWS console",
+        "using the RegisterDomain action in the SWF API"]
+    }
+  },
+  {
+    "id": "901",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Application Services",
+      "questionType": "multiple choice 1",
+      "question": "SWF domain parameters are specified in _______ format?",
+      "answers": [
+        "JSON",
+        "XML",
+        "plain text",
+        "AJAX"
+      ],
+      "correctAnswer": ["JSON"]
+    }
+  },
+  {
+    "id": "902",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Application Services",
+      "questionType": "multiple choice 1",
+      "question": "The maximum an SWF workflow can run is _________?",
+      "answers": [
+        "1 year",
+        "1 hour",
+        "1 month",
+        "1 day"
+      ],
+      "correctAnswer": ["1 year"]
+    }
+  },
+  {
+    "id": "903",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Application Services",
+      "questionType": "multiple choice 1",
+      "question": "SWF workflows are measured in _________?",
+      "answers": [
+        "seconds",
+        "milliseconds",
+        "minutes",
+        "hours"
+      ],
+      "correctAnswer": ["seconds"]
+    }
+  },
+  {
+    "id": "904",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Application Services",
+      "questionType": "multiple choice 1",
+      "question": "Which of these offers a task-oriented API?",
+      "answers": [
+        "SWF",
+        "SQS",
+        "SES",
+        "SNS"
+      ],
+      "correctAnswer": ["SWF"]
+    }
+  },
+  {
+    "id": "905",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Application Services",
+      "questionType": "multiple choice 1",
+      "question": "Which of these offers a message-oriented API?",
+      "answers": [
+        "SWF",
+        "SQS",
+        "SES",
+        "SNS"
+      ],
+      "correctAnswer": ["SQS"]
+    }
+  },
+  {
+    "id": "906",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Application Services",
+      "questionType": "multiple choice 1",
+      "question": "With which of these do you not need to keep track of all tasks and events in an application because the service does it for you?",
+      "answers": [
+        "SWF",
+        "SQS",
+        "SES",
+        "SNS"
+      ],
+      "correctAnswer": ["SWF"]
+    }
+  },
+  {
+    "id": "907",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Application Services",
+      "questionType": "multiple choice 1",
+      "question": "With which of these do you need to implement your own application-level tracking especially if your application uses multiple queues?",
+      "answers": [
+        "SWF",
+        "SQS",
+        "SES",
+        "SNS"
+      ],
+      "correctAnswer": ["SQS"]
+    }
+  },
+  {
+    "id": "908",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Application Services",
+      "questionType": "multiple choice 1",
+      "question": "With which of these is a web service that allows you to set up, operate, and send notifications from the cloud?",
+      "answers": [
+        "SWF",
+        "SQS",
+        "SES",
+        "SNS"
+      ],
+      "correctAnswer": ["SNS"]
+    }
+  },
+  {
+    "id": "909",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Application Services",
+      "questionType": "multiple choice 1",
+      "question": "Which of these provides developers with a highly scalable, flexible, and cost effective capability to push messages from an application and immediately deliver them to subscribers or other applications?",
+      "answers": [
+        "SWF",
+        "SQS",
+        "SES",
+        "SNS"
+      ],
+      "correctAnswer": ["SNS"]
+    }
+  },
+  {
+    "id": "910",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Application Services",
+      "questionType": "multiple choice 2",
+      "question": "Besides pushing notifications directly to mobile devices, SNS can also deliver notifications via SMS text message or email to which of these?",
+      "answers": [
+        "SQS queues",
+        "any HTTP endpoint",
+        "CloudWatch",
+        "CloudFront"
+      ],
+      "correctAnswer": ["SQS queues",
+        "any HTTP endpoint"]
+    }
+  },
+  {
+    "id": "911",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Application Services",
+      "questionType": "multiple choice 1",
+      "question": "SNS notifications can trigger lambda functions?",
+      "answers": [
+        "true",
+        "false"
+      ],
+      "correctAnswer": ["true"]
+    }
+  },
+  {
+    "id": "912",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Application Services",
+      "questionType": "multiple choice 1",
+      "question": "When a message is published to an SNS topic that has a lambda function subscribed to it, the lambda function in invoked with the payload of _______?",
+      "answers": [
+        "the published message",
+        "the message topic",
+        "the message meta-data",
+        "the message pointer"
+      ],
+      "correctAnswer": ["the published message"]
+    }
+  },
+  {
+    "id": "913",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Application Services",
+      "questionType": "multiple choice 1",
+      "question": "SNS allows you to group multiple recipients using ______?",
+      "answers": [
+        "topics",
+        "domains",
+        "meta-data",
+        "subjects"
+      ],
+      "correctAnswer": ["topics"]
+    }
+  },
+  {
+    "id": "914",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Application Services",
+      "questionType": "multiple choice 1",
+      "question": "With SNS, one topic can support deliveries to __________?",
+      "answers": [
+        "multiple end-point types",
+        "one end-point type",
+        "defined end-point types",
+        "SQS queues"
+      ],
+      "correctAnswer": ["multiple end-point types"]
+    }
+  },
+  {
+    "id": "915",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Application Services",
+      "questionType": "multiple choice 1",
+      "question": "To prevent messages from being loast, all messages published to SNS are stored redundantly across ________?",
+      "answers": [
+        "multiple AZs",
+        "multiple regions",
+        "multiple EFS mount-points",
+        "multiple EC2 instances"
+      ],
+      "correctAnswer": ["multiple AZs"]
+    }
+  },
+  {
+    "id": "915",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Application Services",
+      "questionType": "multiple choice 1",
+      "question": "With SNS you have no up-front costs and a pay-as-you-go pricing model?",
+      "answers": [
+        "true",
+        "false"
+      ],
+      "correctAnswer": ["true"]
+    }
+  },
+  {
+    "id": "916",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Application Services",
+      "questionType": "multiple choice 1",
+      "question": "Which service is a media transcoder in the cloud",
+      "answers": [
+        "Elastic Transcoder",
+        "ElasticSearch",
+        "Elastic Translator",
+        "Media Transcoder"
+      ],
+      "correctAnswer": ["Elastic Transcoder"]
+    }
+  },
+  {
+    "id": "917",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Application Services",
+      "questionType": "multiple choice 1",
+      "question": "Which service is a fully managed service that makes it easy for developers to publish, maintain, monitor, and secure APIs at any scale",
+      "answers": [
+        "API Gateway",
+        "Lambda",
+        "API Manager",
+        "SQS"
+      ],
+      "correctAnswer": ["API Gateway"]
+    }
+  },
+  {
+    "id": "918",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Application Services",
+      "questionType": "multiple choice 1",
+      "question": "You can enable _____ in API Gateway to cache your endpoint's response",
+      "answers": [
+        "API caching",
+        "Lambda caching",
+        "API management",
+        "API redundancy"
+      ],
+      "correctAnswer": ["API caching"]
+    }
+  },
+  {
+    "id": "919",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Application Services",
+      "questionType": "multiple choice 1",
+      "question": "When you enable API caching, API Gateway caches responses from your end-point for a specified _______ period in _______",
+      "answers": [
+        "TTL, seconds",
+        "TTL, in milliseconds",
+        "TTD, in seconds",
+        "TTD, in milliseconds"
+      ],
+      "correctAnswer": ["TTL, seconds"]
+    }
+  },
+  {
+    "id": "920",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Application Services",
+      "questionType": "multiple choice 3",
+      "question": "With API Gateway you can _______",
+      "answers": [
+        "scale your end-points effortlessly",
+        "throttle requests to prevent DDoS attacks",
+        "connect to CloudWatch to log all requests",
+        "have human tasks as steps in your process"
+      ],
+      "correctAnswer": ["scale your end-points effortlessly",
+        "throttle requests to prevent DDoS attacks",
+        "connect to CloudWatch to log all requests"]
+    }
+  },
+  {
+    "id": "921",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Application Services",
+      "questionType": "multiple choice 1",
+      "question": "Under this policy, a web browser permits scripts contained in a first web page to access data in a second web page, but only if they both have the same origin, meaning they have the same domain name",
+      "answers": [
+        "same origin policy",
+        "multiple origin policy",
+        "domain name policy",
+        "AWS domain policy"
+      ],
+      "correctAnswer": ["same origin policy"]
+    }
+  },
+  {
+    "id": "922",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Application Services",
+      "questionType": "multiple choice 1",
+      "question": "______ is a way the server at the other end can relax the same origin policy",
+      "answers": [
+        "CORS, cross-origin resource sharing",
+        "ORS, origin resource sharing",
+        "DORS, domain-origin resource sharing",
+        "AWS domain policy"
+      ],
+      "correctAnswer": ["CORS, cross-origin resource sharing"]
+    }
+  },
+  {
+    "id": "923",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Application Services",
+      "questionType": "multiple choice 1",
+      "question": "When you see 'Error - 'Origin policy cannont be read at the remote resource', you need to _________",
+      "answers": [
+        "enable CORS on API Gateway",
+        "disable CORS on API Gateway",
+        "Recreate your API Gateway",
+        "Switch to something other than API Gateway"
+      ],
+      "correctAnswer": ["enable CORS on API Gateway"]
+    }
+  },
+  {
+    "id": "924",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Application Services",
+      "questionType": "multiple choice 1",
+      "question": "What is the AWS service to which you can send your streaming data?",
+      "answers": [
+        "Kinesis",
+        "EC2",
+        "SQS",
+        "SWF"
+      ],
+      "correctAnswer": ["Kinesis"]
+    }
+  },
+  {
+    "id": "925",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Application Services",
+      "questionType": "multiple choice 3",
+      "question": "What are the three Kinesis services?",
+      "answers": [
+        "Kinesis Streams",
+        "Kinesis Firehose",
+        "Kinesis Analytics",
+        "Kinesis Warehouse"
+      ],
+      "correctAnswer": ["Kinesis Streams",
+        "Kinesis Firehose",
+        "Kinesis Analytics"]
+    }
+  },
+  {
+    "id": "926",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Application Services",
+      "questionType": "multiple choice 1",
+      "question": "Which of the three Kinesis services stores data in shards?",
+      "answers": [
+        "Kinesis Streams",
+        "Kinesis Firehose",
+        "Kinesis Analytics",
+        "Kinesis Warehouse"
+      ],
+      "correctAnswer": ["Kinesis Streams"]
+    }
+  },
+  {
+    "id": "927",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Application Services",
+      "questionType": "multiple choice 1",
+      "question": "Which of the three Kinesis services allows you to analyze the data sent through it using lambda functions in real-time?",
+      "answers": [
+        "Kinesis Streams",
+        "Kinesis Firehose",
+        "Kinesis Analytics",
+        "Kinesis Warehouse"
+      ],
+      "correctAnswer": ["Kinesis Firehose"]
+    }
+  },
+  {
+    "id": "928",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Application Services",
+      "questionType": "multiple choice 1",
+      "question": "Which of the three Kinesis services allows you to analyze the data sent through it using lambda functions in real-time and then send the analyzed data to S3 or ElasticSearch clusters. After the data goes to S3 or ElasticSearch it can then be copied to Redshift?",
+      "answers": [
+        "Kinesis Streams",
+        "Kinesis Firehose",
+        "Kinesis Analytics",
+        "Kinesis Warehouse"
+      ],
+      "correctAnswer": ["Kinesis Firehose"]
+    }
+  },
+  {
+    "id": "929",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Application Services",
+      "questionType": "multiple choice 1",
+      "question": "If your job runs for greater than 12 hours, which service should you not use because its visibility timeout maximum is 12 hours?",
+      "answers": [
+        "Kinesis Streams",
+        "SQS",
+        "SNS",
+        "SWF"
+      ],
+      "correctAnswer": ["SQS"]
+    }
+  },
+  {
+    "id": "930",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Application Services",
+      "questionType": "multiple choice 5",
+      "question": "Which of these are SNS subscriber types?",
+      "answers": [
+        "Kinesis Streams",
+        "SQS",
+        "HTTP/S",
+        "email",
+        "email-JSON",
+        "lambda",
+        "CloudWatch"
+      ],
+      "correctAnswer": ["SQS",
+        "HTTP/S",
+        "email",
+        "email-JSON",
+        "lambda"]
+    }
+  },
+  {
+    "id": "931",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "VPC",
+      "questionType": "multiple choice 1",
+      "question": "When using CloudFront, how can you guard your content from being served without your application serving it up?",
+      "answers": [
+        "use url rewrite rules",
+        "use restricted urls via ip blocking in Security Groups",
+        "use restricted urls via ip blocking in your NACLs",
+        "use GuardDuty"
+      ],
+      "correctAnswer": ["use url rewrite rules"]
+    }
+  },
+  {
+    "id": "932",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "VPC",
+      "questionType": "multiple choice 1",
+      "question": "When using Auto-Scaling Groups, you must first create a _________ to describe the instances to launch?",
+      "answers": [
+        "launch configuration",
+        "target group",
+        "placement group",
+        "elastic ip"
+      ],
+      "correctAnswer": ["launch configuration"]
+    }
+  },
+  {
+    "id": "933",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "VPC",
+      "questionType": "multiple choice 1",
+      "question": "When using Auto-Scaling Groups, you _______ to launch your instances?",
+      "answers": [
+        "use AMIs",
+        "use target groups",
+        "use placement groups",
+        "use elastic ips"
+      ],
+      "correctAnswer": ["use AMIs"]
+    }
+  }
+]

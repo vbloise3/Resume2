@@ -90,6 +90,13 @@
         </mat-checkbox>
         <mat-label>VPC</mat-label>
         &nbsp;&nbsp;
+        <mat-checkbox
+          name="Application Services"
+          value="Application Services"
+          (change)="updateSubcategoriesChecked($event, 'Application Services')">
+        </mat-checkbox>
+        <mat-label>Application Services</mat-label>
+        &nbsp;&nbsp;
         <button mat-button type="submit" color="primary">Submit</button>
       </div>
     </form>
