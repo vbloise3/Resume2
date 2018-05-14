@@ -1,0 +1,1128 @@
+[
+  {
+    "id": "934",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "Amazon SWF is designed to help users?",
+      "answers": [
+        "Manage user identification and authorisation",
+        "Coordinate synchronous and asynchronous tasks",
+        "Secure their VPCs",
+        "Help users store file based objects"
+      ],
+      "correctAnswer": ["Coordinate synchronous and asynchronous tasks"]
+    }
+  },
+  {
+    "id": "935",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "In RDS, what is the maximum value I can set for my backup retention period?",
+      "answers": [
+        "15 days",
+        "30 days",
+        "35 days",
+        "45 days"
+      ],
+      "correctAnswer": ["35 days"]
+    }
+  },
+  {
+    "id": "936",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "Automated backups are enabled by default for a new DB Instance?",
+      "answers": [
+        "true",
+        "false"
+      ],
+      "correctAnswer": ["true"]
+    }
+  },
+  {
+    "id": "937",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "Amazon RDS does not currently support increasing storage on a ____ Db instance",
+      "answers": [
+        "MySQL",
+        "Aurora",
+        "Oracle",
+        "SQL Server"
+      ],
+      "correctAnswer": ["SQL Server"]
+    }
+  },
+  {
+    "id": "938",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "In what circumstances would I choose provisioned IOPS in RDS over standard storage?",
+      "answers": [
+        "If you use production online transaction processing",
+        "If you have workloads that are not sensitive to latency/lag",
+        "If your business was trying to save money",
+        "If this was a test DB"
+      ],
+      "correctAnswer": ["If you use production online transaction processing"]
+    }
+  },
+  {
+    "id": "939",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "Amazon's S3 is",
+      "answers": [
+        "Object Based Storage",
+        "Block Based Storage",
+        "A Data Warehouse Solution",
+        "suitable for data archival, not frequently used files."
+      ],
+      "correctAnswer": ["Object Based Storage"]
+    }
+  },
+  {
+    "id": "940",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "In S3 with RRS the AVAILABILITY is",
+      "answers": [
+        "99.999999999%",
+        "100%",
+        "99%",
+        "99.99%"
+      ],
+      "correctAnswer": ["99.99%"]
+    }
+  },
+  {
+    "id": "941",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "Amazon's EBS volumes are",
+      "answers": [
+        "Object Based Storage",
+        "Block Based Storage",
+        "Encrypted by default",
+        "not suitable for databases"
+      ],
+      "correctAnswer": ["Block Based Storage"]
+    }
+  },
+  {
+    "id": "942",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "If I want to run a database on an EC2 instance, which is the most recommended Amazon storage option?",
+      "answers": [
+        "RDS",
+        "S3",
+        "Glacier",
+        "EBS"
+      ],
+      "correctAnswer": ["EBS"]
+    }
+  },
+  {
+    "id": "943",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "In S3 the durability of my files is",
+      "answers": [
+        "99.99%",
+        "99.999999999%",
+        "99%",
+        "100%"
+      ],
+      "correctAnswer": ["99.999999999%"]
+    }
+  },
+  {
+    "id": "944",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "Can you access Amazon EBS Snapshots?",
+      "answers": [
+        "Yes through the AWS APIs/CLI & AWS Console",
+        "no",
+        "Depends on the region",
+        "EBS does not have snapshot functionality"
+      ],
+      "correctAnswer": ["Yes through the AWS APIs/CLI & AWS Console"]
+    }
+  },
+  {
+    "id": "945",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "A __________ is a document that provides a formal statement of one or more permissions.",
+      "answers": [
+        "Policy",
+        "User",
+        "Group",
+        "Role"
+      ],
+      "correctAnswer": ["Policy"]
+    }
+  },
+  {
+    "id": "946",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "In a default VPC, all Amazon EC2 instances are assigned 2 IP addresses at launch, what are these?",
+      "answers": [
+        "Private IP Address & Public IP Address",
+        "Public IP Address & Secret IP Address",
+        "Elastic IP Address & Public IP Address",
+        "IPv6 Address and Elastic IP Address"
+      ],
+      "correctAnswer": ["Private IP Address & Public IP Address"]
+    }
+  },
+  {
+    "id": "947",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "If an Amazon EBS volume is the root device of an instance, can I detach it without stopping the instance?",
+      "answers": [
+        "Yes",
+        "No"
+      ],
+      "correctAnswer": ["No"]
+    }
+  },
+  {
+    "id": "948",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "If you want your application to check whether a request generated an error then you look for an ______ node in the response from the Amazon RDS API",
+      "answers": [
+        "Incorrect",
+        "Error",
+        "False",
+        "True"
+      ],
+      "correctAnswer": ["Error"]
+    }
+  },
+  {
+    "id": "949",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "EC2 instances can have credentials stored on them so that the instances can access other resources (such as S3 buckets) and AWS recommends that you do this instead of assigning roles.",
+      "answers": [
+        "True",
+        "False"
+      ],
+      "correctAnswer": ["False"]
+    }
+  },
+  {
+    "id": "950",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "Can I move a reserved instance from one region to another?",
+      "answers": [
+        "Yes",
+        "Only in the US",
+        "No",
+        "Depends on the region"
+      ],
+      "correctAnswer": ["No"]
+    }
+  },
+  {
+    "id": "951",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "In S3 RRS the durability of my files is",
+      "answers": [
+        "99.99%",
+        "99.999999999%",
+        "99%",
+        "100%"
+      ],
+      "correctAnswer": ["99.99%"]
+    }
+  },
+  {
+    "id": "952",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "In RDS, changes to the backup window take effect",
+      "answers": [
+        "After 30 minutes",
+        "The next day",
+        "Immediately",
+        "You cannot back up in RDS"
+      ],
+      "correctAnswer": ["Immediately"]
+    }
+  },
+  {
+    "id": "953",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "In RDS what is the maximum size for a Microsoft SQL Server DB Instance with SQL Server Express edition?",
+      "answers": [
+        "10GB per database",
+        "100GB per database",
+        "1TB per database",
+        "2TB per database"
+      ],
+      "correctAnswer": ["10GB per database"]
+    }
+  },
+  {
+    "id": "954",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "In S3 what does RRS stand for?",
+      "answers": [
+        "Relational Reduced Storage",
+        "Reactive Replication Storage",
+        "Reduced Replication Storage",
+        "Reduced Redundancy Storage"
+      ],
+      "correctAnswer": ["Reduced Redundancy Storage"]
+    }
+  },
+  {
+    "id": "955",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "Can I 'force' a failover for any RDS instance that has Multi-AZ configured?",
+      "answers": [
+        "Yes",
+        "No",
+        "Only for Oracle RDS instances"
+      ],
+      "correctAnswer": ["Yes"]
+    }
+  },
+  {
+    "id": "956",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "What does EBS stand for?",
+      "answers": [
+        "Energetic Block Storage",
+        "Elastic Based Storage",
+        "Equal Block Storage",
+        "Elastic Block Storage"
+      ],
+      "correctAnswer": ["Elastic Block Storage"]
+    }
+  },
+  {
+    "id": "957",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "You can conduct your own vulnerability scans within your own VPC without alerting AWS first?",
+      "answers": [
+        "True",
+        "False"
+      ],
+      "correctAnswer": ["False"]
+    }
+  },
+  {
+    "id": "958",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "Reserved instances are available for multi-AZ deployments.",
+      "answers": [
+        "True",
+        "False"
+      ],
+      "correctAnswer": ["True"]
+    }
+  },
+  {
+    "id": "959",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "Amazon's Glacier service is a Content Distribution Network which integrates with S3.",
+      "answers": [
+        "True",
+        "False"
+      ],
+      "correctAnswer": ["False"]
+    }
+  },
+  {
+    "id": "960",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "MySQL installations default to port number",
+      "answers": [
+        "1433",
+        "3306",
+        "3389",
+        "80"
+      ],
+      "correctAnswer": ["3306"]
+    }
+  },
+  {
+    "id": "961",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "If an Amazon EBS volume is an additional partition (ie not the root volume) , can I detach it without stopping the instance?",
+      "answers": [
+        "Yes, although it may take some time.",
+        "No, you will need to stop the instance"
+      ],
+      "correctAnswer": ["Yes, although it may take some time."]
+    }
+  },
+  {
+    "id": "962",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "Every user you create in the IAM systems starts with _____",
+      "answers": [
+        "Full Permissions",
+        "Partial Permissions",
+        "No Permissions"
+      ],
+      "correctAnswer": ["No Permissions"]
+    }
+  },
+  {
+    "id": "963",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "You can RDP or SSH in to an RDS instance to see what is going on with the operating system.",
+      "answers": [
+        "True",
+        "False"
+      ],
+      "correctAnswer": ["False"]
+    }
+  },
+  {
+    "id": "964",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "When creating a new security group, all in bound traffic is allowed by default.",
+      "answers": [
+        "True",
+        "False"
+      ],
+      "correctAnswer": ["False"]
+    }
+  },
+  {
+    "id": "965",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "To save administration headaches, Amazon recommend that you leave all security groups in web facing subnets open on port 22 to 0.0.0.0/0 CIDR, that way you can connect where ever you are in the world.",
+      "answers": [
+        "Correct",
+        "Incorrect"
+      ],
+      "correctAnswer": ["Incorrect"]
+    }
+  },
+  {
+    "id": "966",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "What are the four levels of AWS premium support?",
+      "answers": [
+        "It's an IAAS platform, there is no support.",
+        "Free, Bronze, Silver, Gold",
+        "Basic, Startup, Business, Enterprise",
+        "Basic, Developer, Business, Enterprise"
+      ],
+      "correctAnswer": ["Basic, Developer, Business, Enterprise"]
+    }
+  },
+  {
+    "id": "967",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "As the AWS platform is PCI DSS 1.0 compliant, I can immediately deploy a website to it that can take and store credit card details. I do not need to get any kind of delta accredditaion from a QSA.",
+      "answers": [
+        "True",
+        "False"
+      ],
+      "correctAnswer": ["False"]
+    }
+  },
+  {
+    "id": "968",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "To help you manage your Amazon EC2 instances you can assign your own metadata in the form of",
+      "answers": [
+        "Wildcards",
+        "Certificates",
+        "Tags",
+        "Notes"
+      ],
+      "correctAnswer": ["Tags"]
+    }
+  },
+  {
+    "id": "969",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "Which statement best describes Availability Zones?",
+      "answers": [
+        "Content distribution network which is used to distribute content to users.",
+        "A restricted area designed specifically for creating virtual private clouds.",
+        "Two zones containing compute resources that are designed to maintained synchronized copies of data with each other.",
+        "Distinct locations from within an AWS region that are engineered to be isolated from failures."
+      ],
+      "correctAnswer": ["Distinct locations from within an AWS region that are engineered to be isolated from failures."]
+    }
+  },
+  {
+    "id": "970",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "The service to allow Big Data Processing on the AWS platform is known as AWS 'Elastic Big Data'.",
+      "answers": [
+        "True",
+        "False"
+      ],
+      "correctAnswer": ["False"]
+    }
+  },
+  {
+    "id": "971",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "Individual instances are provisioned in",
+      "answers": [
+        "Regions only, you cannot chose anything below this",
+        "Availability Zones",
+        "Global"
+      ],
+      "correctAnswer": ["Availability Zones"]
+    }
+  },
+  {
+    "id": "972",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "When using a custom VPC and placing an EC2 instance in to a public subnet, it will be automatically internet accessible (ie you do not need to apply an elastic IP address or ELB to the instance).",
+      "answers": [
+        "True",
+        "False"
+      ],
+      "correctAnswer": ["False"]
+    }
+  },
+  {
+    "id": "973",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "What is the underlying Hypervisor for EC2?",
+      "answers": [
+        "Hyper-V",
+        "Esx",
+        "Xen",
+        "OVM"
+      ],
+      "correctAnswer": ["Xen"]
+    }
+  },
+  {
+    "id": "974",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "The AWS platform is certified PCI DSS 1.0 compliant",
+      "answers": [
+        "True",
+        "False"
+      ],
+      "correctAnswer": ["True"]
+    }
+  },
+  {
+    "id": "975",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "The AWS platform consists of how many regions currently?",
+      "answers": [
+        "5",
+        "10",
+        "11",
+        "14"
+      ],
+      "correctAnswer": ["14"]
+    }
+  },
+  {
+    "id": "976",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "How many copies of my data does RDS - Aurora store by default?",
+      "answers": [
+        "3",
+        "6",
+        "2",
+        "1"
+      ],
+      "correctAnswer": ["6"]
+    }
+  },
+  {
+    "id": "977",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "Amazon's product debut conference is held in Las Vegas each year and is known as",
+      "answers": [
+        "CES",
+        "Revolutionize",
+        "Re-Invent",
+        "Cloud Show"
+      ],
+      "correctAnswer": ["Re-Invent"]
+    }
+  },
+  {
+    "id": "978",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "What is the difference between Elastic Beanstalk & CloudFormation?",
+      "answers": [
+        "Elastic Beanstalk is a monitoring tool to view the performance of your AWS resources, where as CloudFormation is an automated provisioning engine designed to deploy entire cloud environments via a JSON script.",
+        "Elastic Beanstalk automatically handles the deployment, from capacity provisioning, load balancing, auto-scaling to application health monitoring based on the code you upload to it, where as CloudFormation is an automated provisioning engine designed to deploy entire cloud environments via a JSON script.",
+        "There is no difference between the two. Elastic Beanstalk was simply the code name used internally for CloudFormation, prior to the product being released.",
+        "Elastic Beanstalk automatically handles the deployment, from capacity provisioning, load balancing, auto-scaling to application health monitoring based on the code you upload to it, where as CloudFormation is a security service designed to harden your cloud against an attack such as a DDOS."
+      ],
+      "correctAnswer": ["Elastic Beanstalk automatically handles the deployment, from capacity provisioning, load balancing, auto-scaling to application health monitoring based on the code you upload to it, where as CloudFormation is an automated provisioning engine designed to deploy entire cloud environments via a JSON script."]
+    }
+  },
+  {
+    "id": "979",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "In RDS, you are responsibly for maintaining OS & Application security patching, antivirus etc.",
+      "answers": [
+        "True",
+        "False"
+      ],
+      "correctAnswer": ["False"]
+    }
+  },
+  {
+    "id": "980",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "What is the maximum response time for a Business Level Premium Support Case?",
+      "answers": [
+        "1 day",
+        "12 hours",
+        "15 minutes",
+        "1 hour"
+      ],
+      "correctAnswer": ["1 hour"]
+    }
+  },
+  {
+    "id": "981",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "When I create a new security group, all outbound traffic is allowed by default.",
+      "answers": [
+        "True",
+        "False"
+      ],
+      "correctAnswer": ["True"]
+    }
+  },
+  {
+    "id": "982",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "What types of RDS databases are currently available?",
+      "answers": [
+        "Aurora, MySQL, SQL, Cassandra",
+        "PostGres, Cassandra, MongoDB, Aurora",
+        "Oracle, SQL, MySQL, Cassandra",
+        "Oracle, SQL, MySQL, Postgres"
+      ],
+      "correctAnswer": ["Oracle, SQL, MySQL, Postgres"]
+    }
+  },
+  {
+    "id": "983",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "I can enable multifactor authentication by using",
+      "answers": [
+        "RDS",
+        "IAM",
+        "DynamoDB",
+        "Account Settings"
+      ],
+      "correctAnswer": ["IAM"]
+    }
+  },
+  {
+    "id": "984",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "When deploying databases on your own EC2 instances, it is recommended that you deploy these on magnetic storage rather than SSD storage as you get better performance.",
+      "answers": [
+        "True",
+        "False"
+      ],
+      "correctAnswer": ["False"]
+    }
+  },
+  {
+    "id": "985",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "AWS DNS service is known as",
+      "answers": [
+        "CloudDNS",
+        "CloudFront",
+        "CloudTrail",
+        "Route53"
+      ],
+      "correctAnswer": ["Route53"]
+    }
+  },
+  {
+    "id": "986",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "Auditing user access/API calls etc across the entire AWS estate can be achieved by using;",
+      "answers": [
+        "CloudFront",
+        "CloudWatch",
+        "CloudFlair",
+        "CloudTrail"
+      ],
+      "correctAnswer": ["CloudTrail"]
+    }
+  },
+  {
+    "id": "987",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 4",
+      "question": "Which of these are compliance standards supported by AWS",
+      "answers": [
+        "PCI DSS Level 1",
+        "ISO 27001",
+        "SOC 1/2/3",
+        "ISO 9001",
+        "SWIFT",
+        "EMIR",
+        "CMM"
+      ],
+      "correctAnswer": ["PCI DSS Level 1",
+        "ISO 27001",
+        "SOC 1/2/3",
+        "ISO 9001"]
+    }
+  },
+  {
+    "id": "988",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "What can you use to provide an encrypted tunnel between your AWS VPC and your data center",
+      "answers": [
+        "IPsec Virtual Private Network (VPN) device",
+        "Direct Connect",
+        "Storage Gateway",
+        "Snowball Edge"
+      ],
+      "correctAnswer": ["IPsec Virtual Private Network (VPN) device"]
+    }
+  },
+  {
+    "id": "989",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "What is the protocol you use to communicate over HTTPS",
+      "answers": [
+        "Secure Socket Layer (SSL)",
+        "IPv6",
+        "IPv4",
+        "TCP/IP"
+      ],
+      "correctAnswer": ["Secure Socket Layer (SSL)"]
+    }
+  },
+  {
+    "id": "990",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "The AWS production network is sefregated from the Amazon corporate network",
+      "answers": [
+        "True",
+        "False"
+      ],
+      "correctAnswer": ["True"]
+    }
+  },
+  {
+    "id": "991",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 5",
+      "question": "AWS network monitoring provides protection against which",
+      "answers": [
+        "DDoS",
+        "Man In The Middle (MITM)",
+        "IP Spoofing",
+        "Port Scanning",
+        "Packet Sniffing by other tenants",
+        "IP Scanning"
+      ],
+      "correctAnswer": ["DDoS",
+        "Man In The Middle (MITM)",
+        "IP Spoofing",
+        "Port Scanning",
+        "Packet Sniffing by other tenants"]
+    }
+  },
+  {
+    "id": "992",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "If you want to do vulnerability port scan tests on your EC2 instances, you must request permission from AWS in advance",
+      "answers": [
+        "True",
+        "False"
+      ],
+      "correctAnswer": ["True"]
+    }
+  },
+  {
+    "id": "993",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "How do you secure content on CloudFront",
+      "answers": [
+        "using X.509 certificates",
+        "using private certificates",
+        "using public certificates",
+        "using security groups",
+        "using NACLs"
+      ],
+      "correctAnswer": ["using X.509 certificates"]
+    }
+  },
+  {
+    "id": "994",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "EC2 instances running on the same physical server are separated from each other by the ______",
+      "answers": [
+        "Xen hypervisor",
+        "WAF",
+        "firewall",
+        "TCP/IP protocol"
+      ],
+      "correctAnswer": ["Xen hypervisor"]
+    }
+  },
+  {
+    "id": "995",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "EC2 instances running on the same host cannot be treated as if they are on separate physical hosts",
+      "answers": [
+        "True",
+        "False"
+      ],
+      "correctAnswer": ["False"]
+    }
+  },
+  {
+    "id": "996",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "EC2 instances have no access to raw disks, they use _________",
+      "answers": [
+        "Virtualized disks",
+        "EBS volumes",
+        "EFS volumes",
+        "RAID Arrays"
+      ],
+      "correctAnswer": ["Virtualized disks"]
+    }
+  },
+  {
+    "id": "997",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "What ensures disk blocks used by one account's EC2 instances can never be unitentionally exposed to other accounts?",
+      "answers": [
+        "Disk zeroing",
+        "Memory zeroing",
+        "Disk destruction",
+        "Xen hypervisor firewall"
+      ],
+      "correctAnswer": ["Disk zeroing"]
+    }
+  },
+  {
+    "id": "998",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "What happens when memory is unallocated by an AWS account?",
+      "answers": [
+        "the memory is scrubbed, set to zero, by the hypervisor",
+        "the memory is reallocated to another account",
+        "the memory is realloced to the next program",
+        "the memory is uninstalled"
+      ],
+      "correctAnswer": ["the memory is scrubbed, set to zero, by the hypervisor"]
+    }
+  },
+  {
+    "id": "999",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 4",
+      "question": "On which types of EC2 instances can you encrypt the EBS volumes?",
+      "answers": [
+        "M3",
+        "C3",
+        "R3",
+        "G2",
+        "T2",
+        "I2"
+      ],
+      "correctAnswer": ["M3",
+        "C3",
+        "R3",
+        "G2"]
+    }
+  },
+  {
+    "id": "1000",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "How can you enable unencryption on you Load Balancer, so your EC2 instances don't have to do the unencrypting?",
+      "answers": [
+        "use SSL Termination on you Load Balancer",
+        "use Encryption on your Load Balancer",
+        "use Unencryption on your Load Balancer"
+      ],
+      "correctAnswer": ["use SSL Termination on you Load Balancer"]
+    }
+  },
+  {
+    "id": "1001",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "How can you identify the originating ip address of a client connecting to your servers?",
+      "answers": [
+        "use SSL Termination on you Load Balancer",
+        "use Encryption on your Load Balancer",
+        "use Unencryption on your Load Balancer"
+      ],
+      "correctAnswer": ["use SSL Termination on you Load Balancer"]
+    }
+  },
+  {
+    "id": "1002",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "How can you extend the ip range of your data center by directly connecting (not using the internet) your data center to you AWS VPC?",
+      "answers": [
+        "use Direct Connect cross-connect",
+        "use Snowball Edge",
+        "use VPC Endpoints"
+      ],
+      "correctAnswer": ["use Direct Connect cross-connect"]
+    }
+  },
+  {
+    "id": "1003",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "How often does AWS conduct risk management audits?",
+      "answers": [
+        "biannually",
+        "annually",
+        "quarterly",
+        "monthly"
+      ],
+      "correctAnswer": ["biannually"]
+    }
+  },
+  {
+    "id": "1004",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "What accelerates moving large amounts of data into and out of AWS using portable storage devices for transport, bypassing the internet?",
+      "answers": [
+        "AWS Import/Export",
+        "AWS Database Migration Service",
+        "AWS Direct Connect",
+        "AWS Snowball"
+      ],
+      "correctAnswer": ["AWS Import/Export"]
+    }
+  },
+  {
+    "id": "1005",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 3",
+      "question": "What are the three ways to implement elasticity?",
+      "answers": [
+        "Proactive cyclic scaling",
+        "Proactive event-based scaling",
+        "Auto-scaling based on demand",
+        "Manual scaling"
+      ],
+      "correctAnswer": ["Proactive cyclic scaling",
+        "Proactive event-based scaling",
+        "Auto-scaling based on demand"]
+    }
+  }
+]
