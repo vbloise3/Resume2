@@ -1,0 +1,1236 @@
+[
+  {
+    "id": "1006",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "You are a solutions architect working for a company that specialises in ingesting large data feeds (using Kinesis) and then analysing these feeds using Elastic Map Reduce (EMR). The results are then stored on a custom MySQL database which is hosted on an EC2 instance which has 3 volumes, the root/boot volume, and then 2 additional volumes which are striped in to a RAID 1. Your company recently had an outage and lost some key data and have since decided that they will need to run nightly back ups. Your application is only used during office hours, so you can afford to have some down time in the middle of the night if required. You decide to take a snapshot of all three volumes every 24 hours. In what manner should you do this?",
+      "answers": [
+        "Take a snapshot of each volume independently, while the EC2 instance is running.",
+        "Stop the EC2 instance and take a snapshot of each EC2 instance independently. Once the snapshots are complete, start the EC2 instance and ensure that all relevant volumes are remounted.",
+        "Add two additional volumes to the existing RAID 0 volume and mirror these volumes creating a RAID 10. Take a snap of only the two new volumes.",
+        "Create a read replica of the existing EC2 instance and then take your snapshots from the read replica and not the live EC2 instance."
+      ],
+      "correctAnswer": ["Stop the EC2 instance and take a snapshot of each EC2 instance independently. Once the snapshots are complete, start the EC2 instance and ensure that all relevant volumes are remounted."]
+    }
+  },
+  {
+    "id": "1007",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "What are the valid methodologies for encrypting data on S3?",
+      "answers": [
+        "Server Side Encryption (SSE)-S3, SSE-C, SSE-KMS or a client library such as Amazon S3 Encryption Client.",
+        "Server Side Encryption (SSE)-S3, SSE-A, SSE-KMS or a client library such as Amazon S3 Encryption Client.",
+        "Server Side Encryption (SSE)-S3, SSE-C, SSE-SSL or a client library such as Amazon S3 Encryption Client.",
+        "Server Side Encryption (SSE)-S3, SSE-C, SSE-SSL or a server library such as Amazon S3 Encryption Client."
+      ],
+      "correctAnswer": ["Server Side Encryption (SSE)-S3, SSE-C, SSE-KMS or a client library such as Amazon S3 Encryption Client."]
+    }
+  },
+  {
+    "id": "1008",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "In Identity and Access Management, when you first create a new user, certain security credentials are automatically generated. Which of the below are valid security credentials?",
+      "answers": [
+        "Access Key ID, Authorized Key",
+        "Private Key, Secret Access Key",
+        "Private Key, Authorized Key",
+        "Access Key ID, Secret Access Key"
+      ],
+      "correctAnswer": ["Access Key ID, Secret Access Key"]
+    }
+  },
+  {
+    "id": "1009",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "Amazon Web Services offer 3 different levels of support, which of the below are valid support levels.",
+      "answers": [
+        "Corporate, Business, Developer",
+        "Enterprise, Business, Developer",
+        "Enterprise, Business, Free Tier",
+        "Enterprise, Company, Free Tier"
+      ],
+      "correctAnswer": ["Enterprise, Business, Developer"]
+    }
+  },
+  {
+    "id": "1010",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "You are a solutions architect working for a large digital media company. Your company is migrating their production estate to AWS and you are in the process of setting up access to the AWS console using Identity Access Management (IAM). You have created 5 users for your system administrators. What further steps do you need to take to enable your system administrators to get access to the AWS console?",
+      "answers": [
+        "Generate an Access Key ID &amp; Secret Access Key, and give these to your system administrators.",
+        "Enable multifactor authentication on their accounts and define a password policy.",
+        "Generate a password for each user created and give these passwords to your system administrators.",
+        "Give the system administrators the secret access key and access key id, and tell them to use these credentials to log in to the AWS console."
+      ],
+      "correctAnswer": ["Generate a password for each user created and give these passwords to your system administrators."]
+    }
+  },
+  {
+    "id": "1011",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "Amazon S3 buckets in all Regions provide which of the following?",
+      "answers": [
+        "Read-after-write consistency for PUTS of new objects AND Strongly consistent for POST &amp; DELETES",
+        "Read-after-write consistency for POST of new objects AND Eventually consistent for overwrite PUTS &amp; DELETES",
+        "Read-after-write consistency for PUTS of new objects AND Eventually consistent for overwrite PUTS &amp; DELETES",
+        "Read-after-write consistency for POST of new objects AND Strongly consistent for POST &amp; DELETES"
+      ],
+      "correctAnswer": ["Read-after-write consistency for PUTS of new objects AND Eventually consistent for overwrite PUTS &amp; DELETES"]
+    }
+  },
+  {
+    "id": "1012",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "What function of an AWS VPC is stateless?",
+      "answers": [
+        "Security Groups",
+        "Elastic Load Balancers",
+        "Network Access Control Lists",
+        "EC2"
+      ],
+      "correctAnswer": ["Network Access Control Lists"]
+    }
+  },
+  {
+    "id": "1013",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "Which of the following services allows you root access (ie you can login using SSH)?",
+      "answers": [
+        "Elastic Load Balancer",
+        "Elastic Map Reduce",
+        "Elasticache",
+        "RDS"
+      ],
+      "correctAnswer": ["Elastic Map Reduce"]
+    }
+  },
+  {
+    "id": "1014",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "When trying to grant an amazon account access to S3 using access control lists what method of identification should you use to identify that account with?",
+      "answers": [
+        "The email address of the account or the canonical user ID",
+        "The AWS account number",
+        "The ARN",
+        "An email address with a 2FA token"
+      ],
+      "correctAnswer": ["The email address of the account or the canonical user ID"]
+    }
+  },
+  {
+    "id": "1015",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "You are a solutions architect working for a large oil and gas company. Your company runs their production environment on AWS and has a custom VPC. The VPC contains 3 subnets, 1 of which is public and the other 2 are private. Inside the public subnet is a fleet of EC2 instances which are the result of an autoscaling group. All EC2 instances are in the same security group. Your company has created a new custom application which connects to mobile devices using a custom port. This application has been rolled out to production and you need to open this port globally to the internet. What steps should you take to do this, and how quickly will the change occur?",
+      "answers": [
+        "Open the port on the existing network Access Control List. Your EC2 instances will be able to communicate on this port after a reboot.",
+        "Open the port on the existing network Access Control List. Your EC2 instances will be able to communicate over this port immediately.",
+        "Open the port on the existing security group. Your EC2 instances will be able to communicate over this port immediately.",
+        "Open the port on the existing security group. Your EC2 instances will be able to communicate over this port as soon as the relevant Time To Live (TTL) expires."
+      ],
+      "correctAnswer": ["Open the port on the existing security group. Your EC2 instances will be able to communicate over this port immediately."]
+    }
+  },
+  {
+    "id": "1016",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "Which of the following is not supported by AWS Import/Export?",
+      "answers": [
+        "Import to Amazon S3",
+        "Export from Amazon S3",
+        "Import to Amazon EBS",
+        "Import to Amazon Glacier",
+        "Export to Amazon Glacier"
+      ],
+      "correctAnswer": ["Export to Amazon Glacier"]
+    }
+  },
+  {
+    "id": "1017",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "Which of the following is not a service of the security category of the AWS trusted adviser service?",
+      "answers": [
+        "Security Groups - Specific Ports Unrestricted",
+        "MFA on Root Account",
+        "IAM Use",
+        "Vulnerability scans on existing VPCs."
+      ],
+      "correctAnswer": ["Vulnerability scans on existing VPCs."]
+    }
+  },
+  {
+    "id": "1018",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "You work for a market analysis firm who are designing a new environment. They will ingest large amounts of market data via Kinesis and then analyse this data using Elastic Map Reduce. The data is then imported in to a high performance NoSQL Cassandra database which will run on EC2 and then be accessed by traders from around the world. The database volume itself will sit on 2 EBS volumes that will be grouped into a RAID 0 volume. They are expecting very high demand during peak times, with an IOPS performance level of approximately 15,000. Which EBS volume should you recommend?",
+      "answers": [
+        "Magnetic",
+        "General Purpose SSD",
+        "Provisioned IOPS (PIOPS)",
+        "Turbo IOPS (TIOPS)"
+      ],
+      "correctAnswer": ["Provisioned IOPS (PIOPS)"]
+    }
+  },
+  {
+    "id": "1019",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "What are the different types of virtualization available on EC2?",
+      "answers": [
+        "Psudeo-Virtual (PV) & Hardware Virtual Module (HSM)",
+        "Para-Virtual (PV) & Hardware Virtual Machine (HVM)",
+        "Psudeo-Virtual (PV) & Hardware Virtual Machine (HVM)",
+        "Para-Virtual (PV) & Hardware Virtual Module (HSM)"
+      ],
+      "correctAnswer": ["Para-Virtual (PV) & Hardware Virtual Machine (HVM)"]
+    }
+  },
+  {
+    "id": "1020",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "Which of the following is not a valid configuration type for AWS Storage gateway.",
+      "answers": [
+        "Gateway-accessed volumes",
+        "Gateway-cached volumes",
+        "Gateway-stored volumes",
+        "Gateway-Virtual Tape Library"
+      ],
+      "correctAnswer": ["Gateway-accessed volumes"]
+    }
+  },
+  {
+    "id": "1021",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "You have started a new role as a solutions architect for an architectural firm that designs large sky scrapers in the Middle East. Your company hosts large volumes of data and has about 250Tb of data on internal servers. They have decided to store this data on S3 due to the redundancy offered by it. The company currently has a telecoms line of 2Mbps connecting their head office to the internet. What method should they use to import this data on to S3 in the fastest manner possible.",
+      "answers": [
+        "Upload it directly to S3",
+        "Purchase and AWS Direct connect and transfer the data over that once it is installed.",
+        "AWS Datapipe line",
+        "AWS Import/Export"
+      ],
+      "correctAnswer": ["AWS Import/Export"]
+    }
+  },
+  {
+    "id": "1022",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "You are designing a site for a new start up which generates cartoon images for people automatically. Customers will log on to the site, upload an image which is stored in S3. The application then passes a job to AWS SQS and a fleet of EC2 instances poll the queue to receive new processing jobs. These EC2 instances will then turn the picture in to a cartoon and will then need to store the processed job somewhere. Users will typically download the image once (immediately), and then never download the image again. What is the most commercially feasible method to store the processed images?",
+      "answers": [
+        "Rather than use S3, store the images inside a BLOB on RDS with Multi-AZ configured for redundancy.",
+        "Store the images on S3 RRS, and create a lifecycle policy to delete the image after 24 hours.",
+        "Store the images on glacier instead of S3.",
+        "Use elastic block storage volumes to store the images."
+      ],
+      "correctAnswer": ["Store the images on S3 RRS, and create a lifecycle policy to delete the image after 24 hours."]
+    }
+  },
+  {
+    "id": "1023",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "You are hosting a website in Ireland called aloud.guru and you decide to have a static DR site available on S3 in the event that your primary site would go down. Your bucket name is also called “acloudguru”. What would be the S3 URL of the static website?",
+      "answers": [
+        "https://acloudguru.s3-website-eu-west-1.amazonaws.com",
+        "https://s3-eu-east-1.amazonaws.com/acloudguru",
+        "https://acloudguru.s3-website-us-east-1.amazonaws.com",
+        "https://s3-eu-central-1.amazonaws.com/acloudguru"
+      ],
+      "correctAnswer": ["https://acloudguru.s3-website-eu-west-1.amazonaws.com"]
+    }
+  },
+  {
+    "id": "1024",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "Which of the following is NOT a valid SNS subscribers?",
+      "answers": [
+        "Lambda",
+        "SWF",
+        "SQS",
+        "Email",
+        "HTTPS",
+        "SMS"
+      ],
+      "correctAnswer": ["SWF"]
+    }
+  },
+  {
+    "id": "1025",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "You are appointed as your company's Chief Security Officer and you want to be able to track all changes made to your AWS environment, by all users and at all times, in all regions. What AWS service should you use to achieve this?",
+      "answers": [
+        "CloudAudit",
+        "CloudWatch",
+        "CloudTrail",
+        "CloudDetective"
+      ],
+      "correctAnswer": ["CloudTrail"]
+    }
+  },
+  {
+    "id": "1026",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "Which of these act as a firewall for associated EC2 instances, controlling both inbound and outbound traffic at the instance level?",
+      "answers": [
+        "Security Groups",
+        "NACLs",
+        "Load Balancers",
+        "NAT Gateways",
+        "Internet Gateways"
+      ],
+      "correctAnswer": ["Security Groups"]
+    }
+  },
+  {
+    "id": "1027",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "Which of these act as a firewall for associated subnets, controlling both inbound and outbound traffic at the subnet level?",
+      "answers": [
+        "Security Groups",
+        "NACLs",
+        "Load Balancers",
+        "NAT Gateways",
+        "Internet Gateways"
+      ],
+      "correctAnswer": ["NACLs"]
+    }
+  },
+  {
+    "id": "1028",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 4",
+      "question": "Within the Well Architected Framework security pillar, what are the 4 areas?",
+      "answers": [
+        "Data Protection",
+        "Privilege Management",
+        "Infrastructure Protection",
+        "Detective Controls",
+        "Access Controls"
+      ],
+      "correctAnswer": ["Data Protection",
+        "Privilege Management",
+        "Infrastructure Protection",
+        "Detective Controls"]
+    }
+  },
+  {
+    "id": "1029",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 3",
+      "question": "Within the Well Architected Framework reliability pillar, what are the 3 areas?",
+      "answers": [
+        "Foundations: IAM, VPC",
+        "Change Management",
+        "Failure Management",
+        "Disaster Management",
+        "Access Management"
+      ],
+      "correctAnswer": ["Foundations: IAM, VPC",
+        "Change Management",
+        "Failure Management"]
+    }
+  },
+  {
+    "id": "1030",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 4",
+      "question": "Within the Well Architected Framework reliability pillar, what are the 4 best practices?",
+      "answers": [
+        "test recovery procedures",
+        "automate recovery from failure",
+        "scale horizontally to increase aggregate system availability",
+        "stop guessing capacity",
+        "scale through container management"
+      ],
+      "correctAnswer": ["test recovery procedures",
+        "automate recovery from failure",
+        "scale horizontally to increase aggregate system availability",
+        "stop guessing capacity"]
+    }
+  },
+  {
+    "id": "1031",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 4",
+      "question": "Within the Well Architected Framework performance efficiency pillar, what are the 4 areas?",
+      "answers": [
+        "compute",
+        "storage",
+        "database",
+        "space-time trade-off",
+        "network"
+      ],
+      "correctAnswer": ["compute",
+        "storage",
+        "database",
+        "space-time trade-off"]
+    }
+  },
+  {
+    "id": "1032",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 4",
+      "question": "Within the Well Architected Framework cost optimization pillar, what are the 4 areas?",
+      "answers": [
+        "matched supply and demand",
+        "cost-effective resources",
+        "expenditure awareness",
+        "optimizing over time",
+        "cross-account billing",
+        "consolidated billing"
+      ],
+      "correctAnswer": ["matched supply and demand",
+        "cost-effective resources",
+        "expenditure awareness",
+        "optimizing over time"]
+    }
+  },
+  {
+    "id": "1033",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 3",
+      "question": "Within the Well Architected Framework operational excellence pillar, what are the 3 areas?",
+      "answers": [
+        "preparation: runbooks",
+        "operation: small, frequent changes with no downtime",
+        "response: should be automated",
+        "deployment: should be automated",
+        "version control: code management"
+      ],
+      "correctAnswer": ["preparation: runbooks",
+        "operation: small, frequent changes with no downtime",
+        "response: should be automated"]
+    }
+  },
+  {
+    "id": "1034",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "When you see 'consume big data' or 'consume social media feeds' think ________?",
+      "answers": [
+        "kinesis",
+        "EMR",
+        "Athena",
+        "Glue",
+        "Redshift"
+      ],
+      "correctAnswer": ["kinesis"]
+    }
+  },
+  {
+    "id": "1035",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "When you see 'process big data for business intelligence' think ________?",
+      "answers": [
+        "kinesis",
+        "EMR",
+        "Athena",
+        "Glue",
+        "Redshift"
+      ],
+      "correctAnswer": ["Redshift"]
+    }
+  },
+  {
+    "id": "1036",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "When you see 'process big data' think ________?",
+      "answers": [
+        "kinesis",
+        "EMR",
+        "Athena",
+        "Glue",
+        "Redshift"
+      ],
+      "correctAnswer": ["EMR"]
+    }
+  },
+  {
+    "id": "1037",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "Which of these are persistent, can live on past their EC2 instance life?",
+      "answers": [
+        "EBS backed volumes",
+        "Instance store backed volumes",
+        "EFS backed volumes",
+        "S3 backed volumes"
+      ],
+      "correctAnswer": ["EBS backed volumes"]
+    }
+  },
+  {
+    "id": "1038",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "Which of these are not persistent (ephemeral), won't live on past their EC2 instance life?",
+      "answers": [
+        "EBS backed volumes",
+        "Instance store backed volumes",
+        "EFS backed volumes",
+        "S3 backed volumes"
+      ],
+      "correctAnswer": ["Instance store backed volumes"]
+    }
+  },
+  {
+    "id": "1039",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "Which of these can be detached from their EC2 instance and attached to another EC2 instance?",
+      "answers": [
+        "EBS backed volumes",
+        "Instance store backed volumes",
+        "EFS backed volumes",
+        "S3 backed volumes"
+      ],
+      "correctAnswer": ["EBS backed volumes"]
+    }
+  },
+  {
+    "id": "1040",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "Which of these can not be detached from their EC2 instance and attached to another EC2 instance - they exist only for the life of their EC2 instance?",
+      "answers": [
+        "EBS backed volumes",
+        "Instance store backed volumes",
+        "EFS backed volumes",
+        "S3 backed volumes"
+      ],
+      "correctAnswer": ["Instance store backed volumes"]
+    }
+  },
+  {
+    "id": "1041",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "Which of these can have their EC2 instance stopped and their data will persist?",
+      "answers": [
+        "EBS backed volumes",
+        "Instance store backed volumes",
+        "EFS backed volumes",
+        "S3 backed volumes"
+      ],
+      "correctAnswer": ["EBS backed volumes"]
+    }
+  },
+  {
+    "id": "1042",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "Which of these can't have their EC2 instance stopped; their data will be wiped?",
+      "answers": [
+        "EBS backed volumes",
+        "Instance store backed volumes",
+        "EFS backed volumes",
+        "S3 backed volumes"
+      ],
+      "correctAnswer": ["Instance store backed volumes"]
+    }
+  },
+  {
+    "id": "1043",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "Which of these = long term storage?",
+      "answers": [
+        "EBS backed volumes",
+        "Instance store backed volumes",
+        "EFS backed volumes",
+        "S3 backed volumes"
+      ],
+      "correctAnswer": ["EBS backed volumes"]
+    }
+  },
+  {
+    "id": "1044",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "Which of these != long term storage?",
+      "answers": [
+        "EBS backed volumes",
+        "Instance store backed volumes",
+        "EFS backed volumes",
+        "S3 backed volumes"
+      ],
+      "correctAnswer": ["Instance store backed volumes"]
+    }
+  },
+  {
+    "id": "1045",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "When you see 'Chef', 'Recipies', or 'Cook Books' think ________?",
+      "answers": [
+        "OpsWorks",
+        "LightSail",
+        "CloudFormation",
+        "Elastic Beanstalk"
+      ],
+      "correctAnswer": ["OpsWorks"]
+    }
+  },
+  {
+    "id": "1046",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "Which of the SWF actors is an application that can initiate a workflow?",
+      "answers": [
+        "Workflow Starter",
+        "Activity Worker",
+        "Decider",
+        "Worker"
+      ],
+      "correctAnswer": ["Workflow Starter"]
+    }
+  },
+  {
+    "id": "1047",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "Which of the SWF actors control the flow of activity tasks in workflow execution?",
+      "answers": [
+        "Workflow Starter",
+        "Activity Worker",
+        "Decider",
+        "Worker"
+      ],
+      "correctAnswer": ["Decider"]
+    }
+  },
+  {
+    "id": "1048",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "Which of the SWF actors carry out the activity tasks?",
+      "answers": [
+        "Workflow Starter",
+        "Activity Worker",
+        "Decider",
+        "Worker"
+      ],
+      "correctAnswer": ["Activity Worker"]
+    }
+  },
+  {
+    "id": "1049",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "How can you get the public ip address of an EC2 instance?",
+      "answers": [
+        "curl or wget http://169.254.169.254/latest/meta-data",
+        "curl or wget http://169.254.169.254/meta-data/latest",
+        "curl or wget http://254.169.254.169/meta-data/latest",
+        "curl or wget http://254.169.254.169/latest/meta-data"
+      ],
+      "correctAnswer": ["curl or wget http://169.254.169.254/latest/meta-data"]
+    }
+  },
+  {
+    "id": "1050",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "Within the AWS set of services, what gives you consolidated billing?",
+      "answers": [
+        "AWS Organizations",
+        "Billing",
+        "Systems Manager",
+        "Managed Services"
+      ],
+      "correctAnswer": ["AWS Organizations"]
+    }
+  },
+  {
+    "id": "1051",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 2",
+      "question": "What are the two types of AWS Organizations?",
+      "answers": [
+        "All Features",
+        "Consolidated Billing",
+        "Systems Manager",
+        "Managed Services",
+        "Trusted Advisor"
+      ],
+      "correctAnswer": ["All Features",
+        "Consolidated Billing"]
+    }
+  },
+  {
+    "id": "1052",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "What is the main type of account in Organizations Consolidated Billing?",
+      "answers": [
+        "paying account",
+        "organizational unit",
+        "linked account"
+      ],
+      "correctAnswer": ["paying account"]
+    }
+  },
+  {
+    "id": "1053",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "With Organizations Consolidated Billing you can have policies?",
+      "answers": [
+        "true",
+        "false"
+      ],
+      "correctAnswer": ["true"]
+    }
+  },
+  {
+    "id": "1054",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "With Organizations Consolidated Billing you should deploy resources to the paying account?",
+      "answers": [
+        "true",
+        "false"
+      ],
+      "correctAnswer": ["false"]
+    }
+  },
+  {
+    "id": "1055",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "With Organizations Consolidated Billing you can only have up to ______ linked accounts?",
+      "answers": [
+        "10",
+        "20",
+        "30",
+        "50"
+      ],
+      "correctAnswer": ["20"]
+    }
+  },
+  {
+    "id": "1056",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "CloudTrail is per account and per region, but you can consolidate all CloudTrail logs into an S3 bucket in _________?",
+      "answers": [
+        "the paying account",
+        "a linked account",
+        "the master account"
+      ],
+      "correctAnswer": ["the paying account"]
+    }
+  },
+  {
+    "id": "1057",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "What is it called when you can have one user can access more than one account?",
+      "answers": [
+        "cross-account access",
+        "linked-account access",
+        "master-account access"
+      ],
+      "correctAnswer": ["cross-account access"]
+    }
+  },
+  {
+    "id": "1058",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "What is it called when you can have one user swithc between accounts without having to log out and log back in?",
+      "answers": [
+        "cross-account access",
+        "linked-account access",
+        "master-account access"
+      ],
+      "correctAnswer": ["cross-account access"]
+    }
+  },
+  {
+    "id": "1059",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "What service allows you to route traffic between VPCs via private ip addresses?",
+      "answers": [
+        "VPC Peering",
+        "VPC Routing",
+        "VPC Networking"
+      ],
+      "correctAnswer": ["VPC Peering"]
+    }
+  },
+  {
+    "id": "1060",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "You can't create VPC Peering between VPCs with _________?",
+      "answers": [
+        "Overlapping CIDR blocks",
+        "Adjacent CIDR blocks",
+        "the same Security Group"
+      ],
+      "correctAnswer": ["Overlapping CIDR blocks"]
+    }
+  },
+  {
+    "id": "1061",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "What AWS service gives you a dedicated line from your data center to AWS?",
+      "answers": [
+        "Direct Connect",
+        "Data Import/Export",
+        "Snowball Edge",
+        "VPN"
+      ],
+      "correctAnswer": ["Direct Connect"]
+    }
+  },
+  {
+    "id": "1062",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "What is the key difference between VPN and Direct Connect?",
+      "answers": [
+        "VPN is for quick setup, internet based transfer, and low to moderate bandwidth; Direct Connect doesn't use the internet, uses a dedicated private line, requires aphysical line to run and takes a long time to set-up",
+        "Direct Connect is for quick setup, internet based transfer, and low to moderate bandwidth; VPN doesn't use the internet, uses a dedicated private line, requires aphysical line to run and takes a long time to set-up"
+      ],
+      "correctAnswer": ["VPN is for quick setup, internet based transfer, and low to moderate bandwidth; Direct Connect doesn't use the internet, uses a dedicated private line, requires aphysical line to run and takes a long time to set-up"]
+    }
+  },
+  {
+    "id": "1063",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "What security service grants users limited and temporary access to AWS resources?",
+      "answers": [
+        "Security Token Service (STS)",
+        "Federated Access",
+        "Active Directory"
+      ],
+      "correctAnswer": ["Security Token Service (STS)"]
+    }
+  },
+  {
+    "id": "1064",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "Within the STS service, ______ combines a list of users in one domain with a list of users in another domain?",
+      "answers": [
+        "Federation",
+        "Identity Broker",
+        "Identity Store",
+        "Identity"
+      ],
+      "correctAnswer": ["Federation"]
+    }
+  },
+  {
+    "id": "1065",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "Within the STS service, ______ joins an identity from one point and federates it with another?",
+      "answers": [
+        "Federation",
+        "Identity Broker",
+        "Identity Store",
+        "Identity"
+      ],
+      "correctAnswer": ["Identity Broker"]
+    }
+  },
+  {
+    "id": "1066",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "Within the STS service, ______ are services like Active Directory, Facebook, Google?",
+      "answers": [
+        "Federation",
+        "Identity Broker",
+        "Identity Store",
+        "Identity"
+      ],
+      "correctAnswer": ["Identity Store"]
+    }
+  },
+  {
+    "id": "1067",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "Within the STS service, ______ is a user of a service like Active Directory, Facebook, Google?",
+      "answers": [
+        "Federation",
+        "Identity Broker",
+        "Identity Store",
+        "Identity"
+      ],
+      "correctAnswer": ["Identity"]
+    }
+  },
+  {
+    "id": "1068",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "The STS service returns which 4 items?",
+      "answers": [
+        "Access Key, Secret Access Key, token, duration",
+        "Master Key, Secret Access Key, token, duration",
+        "Access Key, Secret Access Key, token, TTL",
+        "Access Key, certificate, token, duration"
+      ],
+      "correctAnswer": ["Access Key, Secret Access Key, token, duration"]
+    }
+  },
+  {
+    "id": "1069",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "The 4 steps of the STS authentication?",
+      "answers": [
+        "enter user name/pw; Identity Broker; LDAP; GetFederation Token",
+        "enter user name/pw; LDAP; Identity Broker; GetFederation Token",
+        "enter user name/pw; Identity Broker; GetFederation Token; LDAP"
+      ],
+      "correctAnswer": ["enter user name/pw; Identity Broker; LDAP; GetFederation Token"]
+    }
+  },
+  {
+    "id": "1070",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "The 5 steps of the STS authentication?",
+      "answers": [
+        "enter user name/pw; Identity Broker; LDAP; GetFederation Token; STS confirms and returns",
+        "enter user name/pw; LDAP; Identity Broker; GetFederation Token; STS confirms and returns",
+        "enter user name/pw; Identity Broker; GetFederation Token; LDAP; STS confirms and returns"
+      ],
+      "correctAnswer": ["enter user name/pw; Identity Broker; LDAP; GetFederation Token; STS confirms and returns"]
+    }
+  },
+  {
+    "id": "1071",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "What are the three steps followed for STS?",
+      "answers": [
+        "develop an identity broker to communicate with LDAP and STS; identity broker authenticates with LDAP first then STS; application then gets temporary access to AWS resources",
+        "develop an identity broker to communicate with LDAP and STS; identity broker authenticates with STS first then LDAP; application then gets temporary access to AWS resources"
+      ],
+      "correctAnswer": ["develop an identity broker to communicate with LDAP and STS; identity broker authenticates with LDAP first then STS; application then gets temporary access to AWS resources"]
+    }
+  },
+  {
+    "id": "1072",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "AWS Workspaces is _____ in the cloud?",
+      "answers": [
+        "VDI",
+        "VPN",
+        "VPC",
+        "Remote Access"
+      ],
+      "correctAnswer": ["VDI"]
+    }
+  },
+  {
+    "id": "1073",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "AWS Workspaces is a _____?",
+      "answers": [
+        "cloud-based replacement for your desktop",
+        "cloud-based replacement for your office suite",
+        "cloud-based replacement for your browser"
+      ],
+      "correctAnswer": ["cloud-based replacement for your desktop"]
+    }
+  },
+  {
+    "id": "1074",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "AWS Workspaces are persistent?",
+      "answers": [
+        "true",
+        "false"
+      ],
+      "correctAnswer": ["true"]
+    }
+  },
+  {
+    "id": "1075",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "AWS Workspaces D drives are backed up every ____?",
+      "answers": [
+        "12 hours",
+        "day",
+        "hour",
+        "minute"
+      ],
+      "correctAnswer": ["12 hours"]
+    }
+  },
+  {
+    "id": "1076",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "You need an AWS account to login to AWS Workspaces?",
+      "answers": [
+        "true",
+        "false"
+      ],
+      "correctAnswer": ["false"]
+    }
+  },
+  {
+    "id": "1077",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "AWS ECS uses ______?",
+      "answers": [
+        "docker",
+        "kubernetes"
+      ],
+      "correctAnswer": ["docker"]
+    }
+  },
+  {
+    "id": "1078",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "A use case for AWS ECS is ______?",
+      "answers": [
+        "microservices",
+        "workflow",
+        "batch"
+      ],
+      "correctAnswer": ["microservices"]
+    }
+  },
+  {
+    "id": "1079",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "With AWS ECS, you run docker containers on  ______?",
+      "answers": [
+        "a fleet of EC2 instances",
+        "VPCs",
+        "a managed service",
+        "your virtual servers in your data center"
+      ],
+      "correctAnswer": ["a fleet of EC2 instances"]
+    }
+  },
+  {
+    "id": "1080",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "With AWS ECS, you can run it in one or more AZs across a VPC?",
+      "answers": [
+        "true",
+        "false"
+      ],
+      "correctAnswer": ["true"]
+    }
+  },
+  {
+    "id": "1081",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "ECS is a regional service?",
+      "answers": [
+        "true",
+        "false"
+      ],
+      "correctAnswer": ["true"]
+    }
+  },
+  {
+    "id": "1082",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Architecture",
+      "questionType": "multiple choice 1",
+      "question": "What is the ECS container registry called?",
+      "answers": [
+        "ECR - EC2 Container Registry",
+        "Docker Managed Registry"
+      ],
+      "correctAnswer": ["ECR - EC2 Container Registry"]
+    }
+  }
+]
