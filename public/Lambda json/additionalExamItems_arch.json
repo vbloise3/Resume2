@@ -278,7 +278,7 @@
     "info": {
       "subcategory": "Architecture",
       "questionType": "multiple choice 1",
-      "question": "You are hosting a website in Ireland called aloud.guru and you decide to have a static DR site available on S3 in the event that your primary site would go down. Your bucket name is also called “acloudguru”. What would be the S3 URL of the static website?",
+      "question": "You are hosting a website in Ireland called aloud.guru and you decide to have a static DR site available on S3 in the event that your primary site would go down. Your bucket name is also called 'acloudguru'. What would be the S3 URL of the static website?",
       "answers": [
         "https://acloudguru.s3-website-eu-west-1.amazonaws.com",
         "https://s3-eu-east-1.amazonaws.com/acloudguru",
@@ -1234,4 +1234,3 @@
     }
   }
 ]
-
