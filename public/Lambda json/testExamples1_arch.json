@@ -271,7 +271,7 @@
     "info": {
       "subcategory": "Test Example Questions",
       "questionType": "multiple choice 1",
-      "question": "Amazon's Redshift uses which block size for its columnar storage?",
+      "question": "Amazons Redshift uses which block size for its columnar storage?",
       "answers": [
         "2KB",
         "8KB",
@@ -353,12 +353,12 @@
       "questionType": "multiple choice 1",
       "question": "You work for a cosmetic company which has their production website on AWS. The site itself is in a two-tier configuration with web servers in the front end and database servers at the back end. The site uses using Elastic Load Balancing and Auto Scaling. The databases maintain consistency by replicating changes to each other as and when they occur. This requires the databases to have extremely low latency. Your website needs to be highly redundant and must be designed so that if one availability zone goes offline and Auto Scaling cannot launch new instances in the remaining Availability Zones the site will not go offline. How can the current architecture be enhanced to ensure this?",
       "answers": [
-        "Deploy your site in three different AZ's within the same region. Configure the Auto Scaling minimum to handle 50 percent of  the peak load per zone.",
+        "Deploy your site in three different AZs within the same region. Configure the Auto Scaling minimum to handle 50 percent of  the peak load per zone.",
         "Deploy your website in 2 different regions. Configure Route53 with a failover routing policy and set up health checks on the primary site.",
-        "Deploy your site in three different AZ's within the same region. Configure the Auto Scaling minimum to handle 33 percent of  the peak load per zone.",
+        "Deploy your site in three different AZs within the same region. Configure the Auto Scaling minimum to handle 33 percent of  the peak load per zone.",
         "Deploy your website in 2 different regions. Configure Route53 with Weighted Routing. Assign a weight of 25% to region 1 and a weight of 75% to region 2."
       ],
-      "correctAnswer": ["Deploy your site in three different AZ's within the same region. Configure the Auto Scaling minimum to handle 50 percent of  the peak load per zone."]
+      "correctAnswer": ["Deploy your site in three different AZs within the same region. Configure the Auto Scaling minimum to handle 50 percent of  the peak load per zone."]
     }
   },
   {
@@ -419,7 +419,7 @@
       "questionType": "multiple choice 1",
       "question": "You are a student currently learning about the different AWS services. Your employer asks you to tell him a bit about Amazon's glacier service. Which of the following best describes the use cases for Glacier?",
       "answers": [
-        "Infrequently accessed data &amp; data archives",
+        "Infrequently accessed data & data archives",
         "Hosting active databases",
         "Replicating Files across multiple availability zones and regions",
         "Frequently Accessed Data"
@@ -628,13 +628,13 @@
       "questionType": "multiple choice 1",
       "question": "You need to add a route to your routing table in order to allow connections to the internet from your subnet. What route should you add?",
       "answers": [
-        "Destination: 192.168.1.258/0 --&gt; Target: your Internet gateway",
-        "Destination: 0.0.0.0/33 --&gt; Target: your virtual private gateway",
-        "Destination: 0.0.0.0/0 --&gt; Target: 0.0.0.0/24",
-        "Destination: 10.0.0.0/32 --&gt; Target: your virtual private gateway",
-        "Destination: 0.0.0.0/0 --&gt; Target: your Internet gateway"
+        "Destination: 192.168.1.258/0 -> Target: your Internet gateway",
+        "Destination: 0.0.0.0/33 -> Target: your virtual private gateway",
+        "Destination: 0.0.0.0/0 -> Target: 0.0.0.0/24",
+        "Destination: 10.0.0.0/32 -> Target: your virtual private gateway",
+        "Destination: 0.0.0.0/0 -> Target: your Internet gateway"
       ],
-      "correctAnswer": ["Destination: 0.0.0.0/0 --&gt; Target: your Internet gateway"]
+      "correctAnswer": ["Destination: 0.0.0.0/0 -> Target: your Internet gateway"]
     }
   },
   {
@@ -755,9 +755,9 @@
     "info": {
       "subcategory": "Test Example Questions",
       "questionType": "multiple choice 1",
-      "question": "Which of the following is not a responsibility of Amazon’s under the shared responsibility model?",
+      "question": "Which of the following is not a responsibility of AWS under the shared responsibility model?",
       "answers": [
-        "Data centre security",
+        "Data center security",
         "Hypervisor patching",
         "OS level patching for RDS",
         "OS level patching for EC2"
@@ -790,7 +790,7 @@
       "question": "Which of the following is true when writing to S3?",
       "answers": [
         "All regions provide read-after-write consistency for PUTS of new objects in your Amazon S3 bucket and eventual consistency for overwrite PUTS and DELETES.",
-        "All regions provide&nbsp;write-after-read consistency for PUTS of new objects in your Amazon S3 bucket and eventual consistency for overwrite PUTS and DELETES.",
+        "All regions provide write-after-read consistency for PUTS of new objects in your Amazon S3 bucket and eventual consistency for overwrite PUTS and DELETES.",
         "All regions provide write-after-read consistency for PUTS of new objects in your Amazon S3 bucket and immediate consistency for overwrite PUTS and DELETES.",
         "All regions provide read-after-write consistency for PUTS of new objects in your Amazon S3 bucket and immediate consistency for overwrite PUTS and DELETES."
       ],
@@ -853,9 +853,9 @@
       "questionType": "multiple choice 1",
       "question": "You are designing a new VPC for a customer and you need to deploy your EC2 instances in to multiple availability zones. What is the minimum number of subnets that you require to achieve this objective?",
       "answers": [
-        "1 Subnet stretched across 2 AZ’s",
+        "1 Subnet stretched across 2 AZs",
         "2 Subnets with each subnet in an independent AZ.",
-        "2 Subnets stretched across 3 AZ’s",
+        "2 Subnets stretched across 3 AZs",
         "3 subnets with each subnet in and independent AZ."
       ],
       "correctAnswer": ["2 Subnets with each subnet in an independent AZ."]
