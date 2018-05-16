@@ -1,0 +1,1024 @@
+[
+  {
+    "id": "1083",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "You have a high performance compute application and you need to minimize network latency between EC2 instances as much as possible. What can you do to achieve this?",
+      "answers": [
+        "Use Elastic Load Balancing to load balance traffic between availability zones",
+        "Create a CloudFront distribution and to cache objects from an S3 bucket at Edge Locations.",
+        "Create a placement group within an Availability Zone and place the EC2 instances within that placement group.",
+        "Deploy your EC2 instances within the same region, but in different subnets and different availability zones so as to maximise redundancy."
+      ],
+      "correctAnswer": ["Create a placement group within an Availability Zone and place the EC2 instances within that placement group."]
+    }
+  },
+  {
+    "id": "1084",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "True or False? Amazon S3 buckets in all Regions provide read-after-write consistency for PUTS of new objects and eventual consistency for overwrite PUTS and DELETES. ",
+      "answers": [
+        "True",
+        "False"
+      ],
+      "correctAnswer": ["True"]
+    }
+  },
+  {
+    "id": "1085",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "Placement Groups can be created across 2 or more Availability Zones.",
+      "answers": [
+        "True",
+        "False"
+      ],
+      "correctAnswer": ["False"]
+    }
+  },
+  {
+    "id": "1086",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "You can add multiple volumes to an EC2 instance and then create your own RAID 5/RAID 10/RAID 0 configurations using those volumes.",
+      "answers": [
+        "True",
+        "False"
+      ],
+      "correctAnswer": ["True"]
+    }
+  },
+  {
+    "id": "1087",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "You are creating your own relational database on an EC2 instance and you need to maximise IOPS performance. What can you do to achieve this goal?",
+      "answers": [
+        "Add a single additional volume to the EC2 instance with provisioned IOPS.",
+        "Create the database on an S3 bucket.",
+        "Add multiple additional volumes with provisioned IOPS and then create a RAID 0 stripe across those volumes.",
+        "Attach the single volume to multiple EC2 instances so as to maximise performance."
+      ],
+      "correctAnswer": ["Add multiple additional volumes with provisioned IOPS and then create a RAID 0 stripe across those volumes."]
+    }
+  },
+  {
+    "id": "1088",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "Which of the services below do you get root access to?",
+      "answers": [
+        "Elasticache & Elastic MapReduce",
+        "RDS & DynamoDB",
+        "EC2 & Elastic MapReduce",
+        "Elasticache & DynamoDB"
+      ],
+      "correctAnswer": ["EC2 & Elastic MapReduce"]
+    }
+  },
+  {
+    "id": "1089",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "Using SAML (Security Assertion Markup Language 2.0) you can give your federated users single sign-on (SSO) access to the AWS Management Console.",
+      "answers": [
+        "True",
+        "False"
+      ],
+      "correctAnswer": ["True"]
+    }
+  },
+  {
+    "id": "1090",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "You can have 1 subnet stretched across multiple availability zones.",
+      "answers": [
+        "True",
+        "False"
+      ],
+      "correctAnswer": ["False"]
+    }
+  },
+  {
+    "id": "1091",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "When you create new subnets within a custom VPC, by default they can communicate with each other, across availability zones.",
+      "answers": [
+        "True",
+        "False"
+      ],
+      "correctAnswer": ["True"]
+    }
+  },
+  {
+    "id": "1092",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "It is possible to transfer a reserved instance from one Availability Zone to another.",
+      "answers": [
+        "True",
+        "False"
+      ],
+      "correctAnswer": ["True"]
+    }
+  },
+  {
+    "id": "1093",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "You have an EC2 instance which needs to find out both its private IP address and its public IP address. To do this you need to;",
+      "answers": [
+        "Run IPCONFIG (Windows) or IFCONFIG (Linux)",
+        "Retrieve the instance Metadata from http://169.254.169.254/latest/meta-data/",
+        "Retrieve the instance Userdata from http://169.254.169.254/latest/meta-data/",
+        "Use the following command; AWS EC2 displayIP"
+      ],
+      "correctAnswer": ["Retrieve the instance Metadata from http://169.254.169.254/latest/meta-data/"]
+    }
+  },
+  {
+    "id": "1094",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "To retrieve instance metadata or userdata you will need to use the following IP Address;",
+      "answers": [
+        "http://127.0.0.1",
+        "http://192.168.0.254",
+        "http://10.0.0.1",
+        "http://169.254.169.254"
+      ],
+      "correctAnswer": ["http://169.254.169.254"]
+    }
+  },
+  {
+    "id": "1095",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "Amazon S3 buckets in all regions provide read-after-write consistency for PUTS of new objects",
+      "answers": [
+        "True",
+        "False"
+      ],
+      "correctAnswer": ["True"]
+    }
+  },
+  {
+    "id": "1096",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "Amazon S3 buckets in all regions do not provide eventual consistency for overwrite PUTS and DELETES.",
+      "answers": [
+        "True",
+        "False"
+      ],
+      "correctAnswer": ["False"]
+    }
+  },
+  {
+    "id": "1097",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "Amazon S3 provides;",
+      "answers": [
+        "Unlimited File Size for Objects",
+        "Unlimited Storage",
+        "A great place to run a No SQL database from",
+        "The ability to act as a web server for dynamic content (i.e. can query a database)"
+      ],
+      "correctAnswer": ["Unlimited Storage"]
+    }
+  },
+  {
+    "id": "1098",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "In order to enable encryption at rest using EC2 and Elastic Block Store you need to",
+      "answers": [
+        "Configure encryption when creating the EBS volume",
+        "Configure encryption using the appropriate Operating Systems file system",
+        "Configure encryption using X.509 certificates",
+        "Mount the EBS volume in to S3 and then encrypt the bucket using a bucket policy."
+      ],
+      "correctAnswer": ["Configure encryption when creating the EBS volume"]
+    }
+  },
+  {
+    "id": "1099",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "You can select a specific Availability Zone in which to place your DynamoDB Table",
+      "answers": [
+        "True",
+        "False"
+      ],
+      "correctAnswer": ["False"]
+    }
+  },
+  {
+    "id": "1100",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "When creating an RDS instance you can select which availability zone in which to deploy your instance.",
+      "answers": [
+        "True",
+        "False"
+      ],
+      "correctAnswer": ["True"]
+    }
+  },
+  {
+    "id": "1101",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "Amazon's Redshift uses which block size for its columnar storage?",
+      "answers": [
+        "2KB",
+        "8KB",
+        "16KB",
+        "32KB",
+        "1024KB/1MB"
+      ],
+      "correctAnswer": ["1024KB/1MB"]
+    }
+  },
+  {
+    "id": "1102",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "You run a website which hosts videos and you have two types of members, premium fee paying members and free members. All videos uploaded by both your premium members and free members are processed by a fleet of EC2 instances which will poll SQS as videos are uploaded. However you need to ensure that your premium fee paying members videos have a higher priority than your free members. How do you design SQS?",
+      "answers": [
+        "SQS allows you to set priorities on individual items within the queue, so simply set the fee paying members at a higher priority than your free members.",
+        "Create two SQS queues, one for premium members and one for free members. Program your EC2 fleet to poll the premium queue first and if empty, to then poll your free members SQS queue.",
+        "SQS would not be suitable for this scenario. It would be much better to use SNS to encode the videos."
+      ],
+      "correctAnswer": ["Create two SQS queues, one for premium members and one for free members. Program your EC2 fleet to poll the premium queue first and if empty, to then poll your free members SQS queue."]
+    }
+  },
+  {
+    "id": "1103",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "You have uploaded a file to S3. What HTTP code would indicate that the upload was successful?",
+      "answers": [
+        "HTTP 404",
+        "HTTP 501",
+        "HTTP 200",
+        "HTTP 307"
+      ],
+      "correctAnswer": ["HTTP 200"]
+    }
+  },
+  {
+    "id": "1104",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "You are hosting a MySQL database on the root volume of an EC2 instance. The database is using a large amount of IOPs and you need to increase the IOPs available to it. What should you do?",
+      "answers": [
+        "Migrate the database to an S3 bucket.",
+        "Migrate the database to Glacier.",
+        "Add 4 additional EBS SSD volumes and create a RAID 10 using these volumes.",
+        "Use Cloud Front to cache the database."
+      ],
+      "correctAnswer": ["Add 4 additional EBS SSD volumes and create a RAID 10 using these volumes."]
+    }
+  },
+  {
+    "id": "1105",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "You have been asked to create VPC for your company. The VPC must support both Internet-facing web applications (ie they need to be publicly accessible) and internal private applications (i.e. they are not publicly accessible and can be accessed only over VPN). The internal private applications must be inside a private subnet. Both the internet-facing and private applications must be able to leverage at least three Availability Zones for high availability. At a minimum, how many subnets must you create within your VPC to achieve this?",
+      "answers": [
+        "5",
+        "3",
+        "4",
+        "6"
+      ],
+      "correctAnswer": ["6"]
+    }
+  },
+  {
+    "id": "1106",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "You work for a cosmetic company which has their production website on AWS. The site itself is in a two-tier configuration with web servers in the front end and database servers at the back end. The site uses using Elastic Load Balancing and Auto Scaling. The databases maintain consistency by replicating changes to each other as and when they occur. This requires the databases to have extremely low latency. Your website needs to be highly redundant and must be designed so that if one availability zone goes offline and Auto Scaling cannot launch new instances in the remaining Availability Zones the site will not go offline. How can the current architecture be enhanced to ensure this?",
+      "answers": [
+        "Deploy your site in three different AZ's within the same region. Configure the Auto Scaling minimum to handle 50 percent of  the peak load per zone.",
+        "Deploy your website in 2 different regions. Configure Route53 with a failover routing policy and set up health checks on the primary site.",
+        "Deploy your site in three different AZ's within the same region. Configure the Auto Scaling minimum to handle 33 percent of  the peak load per zone.",
+        "Deploy your website in 2 different regions. Configure Route53 with Weighted Routing. Assign a weight of 25% to region 1 and a weight of 75% to region 2."
+      ],
+      "correctAnswer": ["Deploy your site in three different AZ's within the same region. Configure the Auto Scaling minimum to handle 50 percent of  the peak load per zone."]
+    }
+  },
+  {
+    "id": "1107",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "You are working in the media industry and you have created a web application where users will be able to upload photos they create to your website. This web application must be able to call the S3 API in order to be able to function. Where should you store your API credentials whilst maintaining the maximum level of security.",
+      "answers": [
+        "Save the API credentials to your php files.",
+        "Don't save your API credentials. Instead create a role in IAM and assign this role to an EC2 instance when you first create it.",
+        "Save your API credentials in a public github repository.",
+        "Pass API credentials to the instance using instance userdata."
+      ],
+      "correctAnswer": ["Don't save your API credentials. Instead create a role in IAM and assign this role to an EC2 instance when you first create it."]
+    }
+  },
+  {
+    "id": "1108",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "You are a systems administrator and you need to monitor the health of your production environment. You decide to do this using Cloud Watch, however you notice that you cannot see the health of every important metric in the default dash board. Which of the following metrics do you need to design a custom cloud watch metric for, when monitoring the health of your EC2 instances?",
+      "answers": [
+        "CPU Usage",
+        "Memory usage",
+        "Disk read operations",
+        "Network in",
+        "Estimated charges"
+      ],
+      "correctAnswer": ["Memory usage"]
+    }
+  },
+  {
+    "id": "1108",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "You are a systems administrator and you need to monitor the health of your production environment. You decide to do this using Cloud Watch, however you notice that you cannot see the health of every important metric in the default dash board. Which of the following metrics do you need to design a custom cloud watch metric for, when monitoring the health of your EC2 instances?",
+      "answers": [
+        "CPU Usage",
+        "Memory usage",
+        "Disk read operations",
+        "Network in",
+        "Estimated charges"
+      ],
+      "correctAnswer": ["Memory usage"]
+    }
+  },
+  {
+    "id": "1109",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "You are a student currently learning about the different AWS services. Your employer asks you to tell him a bit about Amazon's glacier service. Which of the following best describes the use cases for Glacier?",
+      "answers": [
+        "Infrequently accessed data &amp; data archives",
+        "Hosting active databases",
+        "Replicating Files across multiple availability zones and regions",
+        "Frequently Accessed Data"
+      ],
+      "correctAnswer": ["Infrequently accessed data &amp; data archives"]
+    }
+  },
+  {
+    "id": "1110",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "You work for a toy company that has a busy online store. As you are approaching Christmas, you find that your store is getting more and more traffic. Your web tier is behind an Auto Scaling group, but you notice that is is frequently scaling, sometimes multiple times in an hour, only to scale back down after peak usage. You need to keep Auto Scaling from scaling up and down so rapidly. Which of the following options would help you to achieve this?",
+      "answers": [
+        "Configure Auto Scaling to terminate your oldest instances first, then adjust your CloudWatch alarm.",
+        "Configure Auto Scaling to terminate your newest instances first, then adjust your CloudWatch alarm.",
+        "Change your Auto Scaling so that it only scales at scheduled times.",
+        "Modify the Auto Scaling group cool-down timers & modify the Amazon CloudWatch alarm period that triggers your Auto Scaling scale down policy."
+      ],
+      "correctAnswer": ["Modify the Auto Scaling group cool-down timers & modify the Amazon CloudWatch alarm period that triggers your Auto Scaling scale down policy."]
+    }
+  },
+  {
+    "id": "1111",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "You work in the genomics industry and you process large amounts of genomic data using a nightly Elastic Map Reduce (EMR) job. This job processes a single 3 Tb file which is stored on S3. The EMR job runs on 3 on-demand core nodes and four on-demand task nodes. The EMR job is now taking longer than anticipated and you have been asked to advise how to reduced the completion time?",
+      "answers": [
+        "Use four Spot Instances for the task nodes rather than four On-Demand instances.",
+        "You should reduce the input split size in the MapReduce job configuration and then adjust the number of simultaneous mapper tasks so that more tasks can be processed at once.",
+        "Store the file on Elastic File Service instead of S3 and then mount EFS as an independent volume for your core nodes.",
+        "Configure an independent VPC in which to run the EMR jobs and then mount EFS as an independent volume for your core nodes.",
+        "Enable termination protection for the job flow."
+      ],
+      "correctAnswer": ["You should reduce the input split size in the MapReduce job configuration and then adjust the number of simultaneous mapper tasks so that more tasks can be processed at once."]
+    }
+  },
+    {
+    "id": "1112",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "By definition a public subnet within a VPC is one that;",
+      "answers": [
+        "In it's routing table it has at least one route that uses an Internet Gateway (IGW).",
+        "Has at least one route in it's routing table that routes via a Network Address Translation (NAT) instance.",
+        "Where the the Network Access Control List (NACL) permitting outbound traffic to 0.0.0.0/0.",
+        "Has had the public subnet check box ticked when setting up this subnet in the VPC console."
+      ],
+      "correctAnswer": ["In it's routing table it has at least one route that uses an Internet Gateway (IGW)."]
+    }
+  },
+  {
+    "id": "1113",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "You have been asked to identify a service on AWS that is a durable key value store. Which of the services below meets this definition?",
+      "answers": [
+        "Mobile Hub",
+        "Kinesis",
+        "Simple Storage Service (S3)",
+        "Elastic File Service (EFS)"
+      ],
+      "correctAnswer": ["Simple Storage Service (S3)"]
+    }
+  },
+  {
+    "id": "1114",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "You are a security architect working for a large antivirus company. The production environment has recently been moved to AWS and is in a public subnet. You are able to view the production environment over HTTP however when your customers try to update their virus definition files over a custom port, that port is blocked. You log in to the console and you allow traffic in over the custom port. How long will this take to take effect?",
+      "answers": [
+        "Straight away but to the new instances only.",
+        "Immediately.",
+        "After a few minutes this should take effect.",
+        "Straight away to the new instances, but old instances must be stopped and restarted before the new rules apply."
+      ],
+      "correctAnswer": ["Immediately."]
+    }
+  },
+  {
+    "id": "1115",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "You are a solutions architect working for a biotech company who is pioneering research in immunotherapy. They have developed a new cancer treatment that may be able to cure up to 94% of cancers. They store their research data on S3, however recently an intern accidentally deleted some critical files. You've been asked to prevent this from happening in the future. What options below can prevent this?",
+      "answers": [
+        "Make sure the interns can only access data on S3 using signed URLs.",
+        "Enable S3 versioning on the bucket & enable Enable Multifactor Authentication (MFA) on the bucket.",
+        "Use S3 Infrequently Accessed storage to store the data on.",
+        "Create an IAM bucket policy that disables deletes."
+      ],
+      "correctAnswer": ["Enable S3 versioning on the bucket & enable Enable Multifactor Authentication (MFA) on the bucket."]
+    }
+  },
+  {
+    "id": "1116",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "You run an automobile reselling company that has a popular online store on AWS. The application sits behind an Auto Scaling group and requires new instances of the Auto Scaling group to identify their public and private IP addresses. How can you achieve this?",
+      "answers": [
+        "By using Ipconfig for windows or Ifconfig for Linux.",
+        "By using a cloud watch metric.",
+        "Using a Curl or Get Command to get the latest meta-data from http://169.254.169.254/latest/meta-data/",
+        "Using a Curl or Get Command to get the latest user-data from http://169.254.169.254/latest/user-data/"
+      ],
+      "correctAnswer": ["Using a Curl or Get Command to get the latest meta-data from http://169.254.169.254/latest/meta-data/"]
+    }
+  },
+  {
+    "id": "1117",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "You are a solutions architect who has been asked to do some consulting for a US company that produces re-useable rocket parts. They have a new web application that needs to be built and this application must be stateless. Which three services could you use to achieve this?",
+      "answers": [
+        "AWS Storage Gateway, Elasticache & ELB",
+        "ELB, Elasticache & RDS",
+        "Cloudwatch, RDS & DynamoDb",
+        "RDS, DynamoDB & Elasticache."
+      ],
+      "correctAnswer": ["RDS, DynamoDB & Elasticache."]
+    }
+  },
+  {
+    "id": "1118",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "Your company has decided to set up a new AWS account for test and dev purposes. They already use AWS for production, but would like a new account dedicated for test and dev so as to not accidentally break the production environment. You launch an exact replica of your production environment using a cloudformation template that your company uses in production. However cloudformation fails. You use the exact same CloudFormation template in production so the failure is something to do with your new AWS account. The CloudFormation template is trying to launch 60 new EC2 instances in a single availability zone. After some research you discover that the problem is;",
+      "answers": [
+        "For all new AWS accounts there is a soft limit of 20 EC2 instances per region. You should submit the limit increase form and retry the template after your limit has been increased.",
+        "For all new AWS accounts there is a soft limit of 20 EC2 instances per availability zone. You should submit the limit increase form and retry the template after your limit has been increased.",
+        "You cannot launch more than 20 instances in your default VPC, instead reconfigure the CloudFormation template to provision the instances in a custom VPC.",
+        "Your CloudFormation template is configured to use the parent account and not the new account. Change the account number in the CloudFormation template and relaunch the template."
+      ],
+      "correctAnswer": ["For all new AWS accounts there is a soft limit of 20 EC2 instances per region. You should submit the limit increase form and retry the template after your limit has been increased."]
+    }
+  },
+  {
+    "id": "1119",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "You work for a famous bakery who are deploying a hybrid cloud approach. Their legacy IBM AS400 servers will remain on premise within their own datacenter however they will need to be able to communicate to the AWS environment over a site to site VPN connection. What do you need to do to establish the VPN connection?",
+      "answers": [
+        "Connect to the environment using AWS Direct Connect.",
+        "Assign a public IP address to your Amazon VPC Gateway.",
+        "Create a dedicated NAT and deploy this to the public subnet.",
+        "Update your route table to add a route for the NAT to 0.0.0.0/0."
+      ],
+      "correctAnswer": ["Assign a public IP address to your Amazon VPC Gateway."]
+    }
+  },
+  {
+    "id": "1120",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "You work for a major news network in Europe. They have just released a new app which allows users to report on events as and when they happen using their mobile phone. Users are able to upload pictures from the app and then other users will be able to view these pics. Your organisation expects this app to grow very quickly, essentially doubling it's user base every month. The app uses S3 to store the media and you are expecting sudden and large increases in traffic to S3 when a major news event takes place (as people will be uploading content in huge numbers). You need to keep your storage costs to a minimum however and it does not matter if some objects are lost. Which storage media should you use to keep costs as low as possible?",
+      "answers": [
+        "S3 - Infrequently Accessed Storage.",
+        "S3 - Reduced Redundancy Storage (RRS).",
+        "Glacier.",
+        "S3 - Provisioned IOPS."
+      ],
+      "correctAnswer": ["S3 - Reduced Redundancy Storage (RRS)."]
+    }
+  },
+  {
+    "id": "1121",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "You have developed a new web application in us-west-2 that requires six Amazon Elastic Compute Cloud (EC2) instances running at all times. You have three availability zones available in that region (us-west-2a, us-west-2b, and us-west-2c). You need 100 percent fault tolerance if any single Availability Zone in us-west-2 becomes unavailable. How would you do this, each answer has 2 answers, select the answer with BOTH correct answers.",
+      "answers": [
+        "Answer 1 - Us-west-2a with two EC2 instances, us-west-2b with two EC2 instances, and us-west-2c with two EC2 instances. Answer 2 - Us-west-2a with six EC2 instances, us-west-2b with six EC2 instances, and us-west-2c with no EC2 instances",
+        "Answer 1 - Us-west-2a with six EC2 instances, us-west-2b with six EC2 instances, and us-west-2c with no EC2 instances. Answer 2 - Us-west-2a with three EC2 instances, us-west-2b with three EC2 instances, and us-west-2c with three EC2 instances.",
+        "Answer 1 - Us-west-2a with three EC2 instances, us-west-2b with three EC2 instances, and us-west-2c with no EC2 instances. Answer 2 - Us-west-2a with three EC2 instances, us-west-2b with three EC2 instances, and us-west-2c with three EC2 instances.",
+        "Answer 1 - Us-west-2a with three EC2 instances, us-west-2b with three EC2 instances, and us-west-2c with three EC2 instances. Answer 2 - Us-west-2a with four EC2 instances, us-west-2b with two EC2 instances, and us-west-2c with two EC2 instances."
+      ],
+      "correctAnswer": ["Answer 1 - Us-west-2a with six EC2 instances, us-west-2b with six EC2 instances, and us-west-2c with no EC2 instances. Answer 2 - Us-west-2a with three EC2 instances, us-west-2b with three EC2 instances, and us-west-2c with three EC2 instances."]
+    }
+  },
+  {
+    "id": "1122",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "You need to add a route to your routing table in order to allow connections to the internet from your subnet. What route should you add?",
+      "answers": [
+        "Destination: 192.168.1.258/0 --&gt; Target: your Internet gateway",
+        "Destination: 0.0.0.0/33 --&gt; Target: your virtual private gateway",
+        "Destination: 0.0.0.0/0 --&gt; Target: 0.0.0.0/24",
+        "Destination: 10.0.0.0/32 --&gt; Target: your virtual private gateway",
+        "Destination: 0.0.0.0/0 --&gt; Target: your Internet gateway"
+      ],
+      "correctAnswer": ["Destination: 0.0.0.0/0 --&gt; Target: your Internet gateway"]
+    }
+  },
+  {
+    "id": "1123",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "You work for a construction company that has their production environment in AWS. The production environment consists of 3 identical web servers that are launched from a standard Amazon linux AMI using Auto Scaling. The web servers are launched in to the same public subnet and belong to the same security group. They also sit behind the same ELB. You decide to do some test and dev and you launch a 4th EC2 instance in to the same subnet and same security group. Annoyingly your 4th instance does not appear to have internet connectivity. What could be the cause of this?",
+      "answers": [
+        "You need to update your routing table so as to provide a route out for this instance.",
+        "Assign an elastic IP address to the fourth instance.",
+        "You have not configured a NAT in the public subnet.",
+        "You have not configured a routable IP address in the host OS of the fourth instance."
+      ],
+      "correctAnswer": ["Assign an elastic IP address to the fourth instance."]
+    }
+  },
+  {
+    "id": "1124",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "With which AWS orchestration service can you implement Chef recipes?",
+      "answers": [
+        "CloudFormation",
+        "Elastic Beanstalk",
+        "OpsWorks",
+        "Lambda"
+      ],
+      "correctAnswer": ["OpsWorks"]
+    }
+  },
+  {
+    "id": "1125",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "You are a solutions architect working for a large pharmaceutical company who are involved in high performance computing to develop new drugs to treat arthritis. You are helping them to design a new application which will need to keep network traffic the lowest latency possible while leveraging very high CPU performance. They would like to place this solution on to the AWS platform and are looking for your recommendations. Which of the following do you suggest?",
+      "answers": [
+        "CPU optimized EC2 instances deployed into placement groups",
+        "Elastic High Performance Compute Services (EHPCS).",
+        "Leverage Redshift to perform business intelligence analysis on your dataset.",
+        "CPU optimized EC2 instances deployed across multiple availability zones for redundancy."
+      ],
+      "correctAnswer": ["CPU optimized EC2 instances deployed into placement groups"]
+    }
+  },
+  {
+    "id": "1126",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "You work for a automotive company which is migrating their production environment in to AWS. The company has 4 separate segments, Dev, Test, UAT & Production. They require each segment to be logically isolated from each other. What VPC configuration should you recommend?",
+      "answers": [
+        "A separate subnet for each segment. Then create DENY routes to stop each subnet from being able to communicate to each other.",
+        "A separate VPC for each segment. Then create VPN tunnels from your HQ to each VPC so the appropriate teams can each speak to their dedicated VPC.",
+        "Deploy the EC2 instances for each segment in to separate security groups inside the same subnet.",
+        "Use 1 VPC and 2 subnets. Separate each segment using a combination of security groups and ACLs."
+      ],
+      "correctAnswer": ["A separate VPC for each segment. Then create VPN tunnels from your HQ to each VPC so the appropriate teams can each speak to their dedicated VPC."]
+    }
+  },
+  {
+    "id": "1127",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "By default how many VPCs can you have per region in your AWS account?",
+      "answers": [
+        "1",
+        "2",
+        "5",
+        "10"
+      ],
+      "correctAnswer": ["5"]
+    }
+  },
+  {
+    "id": "1128",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "Which of the following is not associated with Identity Access Management Service",
+      "answers": [
+        "Users",
+        "Roles",
+        "Groups",
+        "Workspaces"
+      ],
+      "correctAnswer": ["Workspaces"]
+    }
+  },
+  {
+    "id": "1129",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "You are designing a new application for a financial company that will utilize spot EC2 instances as and when they meet a certain price point. These EC2 instances will analyse data and the output their analysis to the root volume. You need to store this data in a persistent form of storage so that if the spot instances are terminated by Amazon, you will not use your data. You need to choose the lowest cost service. Where should you store your data?",
+      "answers": [
+        "S3",
+        "DynamoDB",
+        "Oracle RDS with Multi-AZ",
+        "Elasticache"
+      ],
+      "correctAnswer": ["S3"]
+    }
+  },
+  {
+    "id": "1130",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "Which of the following is not a responsibility of Amazon’s under the shared responsibility model?",
+      "answers": [
+        "Data centre security",
+        "Hypervisor patching",
+        "OS level patching for RDS",
+        "OS level patching for EC2"
+      ],
+      "correctAnswer": ["OS level patching for EC2"]
+    }
+  },
+  {
+    "id": "1131",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "In regards to EC2 which of the following is not a customers responsibility under the shared responsibility model?",
+      "answers": [
+        "Antivirus",
+        "Decommissioning and destruction of storage media",
+        "OS level patches",
+        "Application level patches"
+      ],
+      "correctAnswer": ["Decommissioning and destruction of storage media"]
+    }
+  },
+  {
+    "id": "1132",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "Which of the following is true when writing to S3?",
+      "answers": [
+        "All regions provide read-after-write consistency for PUTS of new objects in your Amazon S3 bucket and eventual consistency for overwrite PUTS and DELETES.",
+        "All regions provide&nbsp;write-after-read consistency for PUTS of new objects in your Amazon S3 bucket and eventual consistency for overwrite PUTS and DELETES.",
+        "All regions provide write-after-read consistency for PUTS of new objects in your Amazon S3 bucket and immediate consistency for overwrite PUTS and DELETES.",
+        "All regions provide read-after-write consistency for PUTS of new objects in your Amazon S3 bucket and immediate consistency for overwrite PUTS and DELETES."
+      ],
+      "correctAnswer": ["All regions provide read-after-write consistency for PUTS of new objects in your Amazon S3 bucket and eventual consistency for overwrite PUTS and DELETES."]
+    }
+  },
+  {
+    "id": "1133",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "You are solutions architect working for a busy ecommerce store. Due to your organisations unique security requirements, you decide to utilize EC2 running a MySQL database, rather than using RDS. You need to architect this EC2 instance to maximise your disk IO. Which of the following would give you the best disk performance?",
+      "answers": [
+        "Install your MySQL instance on your root device volume on your EC2 instance.",
+        "Add 2 x additional General Purpose SSD volumes to your EC2 instance, create a RAID 1 and then install MySQL to the newly created RAID 1 partition.",
+        "Add 3 x additional PIOPS SSD volumes and create a RAID 5. Install MySQL to this RAID 5 partition.",
+        "Add 2 x additional PIOPS SSD volumes and create a RAID 0. Install MySQL to this RAID 0 partition."
+      ],
+      "correctAnswer": ["Add 2 x additional PIOPS SSD volumes and create a RAID 0. Install MySQL to this RAID 0 partition."]
+    }
+  },
+  {
+    "id": "1134",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "Which of the following services do you get OS level access to?",
+      "answers": [
+        "RDS & EC2",
+        "DynamoDb & RDS",
+        "EC2 & Elastic Map Reduce (EMR)",
+        "EC2 & RedShift"
+      ],
+      "correctAnswer": ["EC2 & Elastic Map Reduce (EMR)"]
+    }
+  },
+  {
+    "id": "1135",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "You are designing an AWS solution for a new customer and they want to use their active directory credentials in order to sign in to the AWS management console. What kind of authentication response is required in order for users to authenticate with the AWS security token service (STS).",
+      "answers": [
+        "Security Assertion Markup Language 2.0 (SAML 2.0)",
+        "OAuth",
+        "HTTPS",
+        "DB2"
+      ],
+      "correctAnswer": ["Security Assertion Markup Language 2.0 (SAML 2.0)"]
+    }
+  },
+  {
+    "id": "1136",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "You are designing a new VPC for a customer and you need to deploy your EC2 instances in to multiple availability zones. What is the minimum number of subnets that you require to achieve this objective?",
+      "answers": [
+        "1 Subnet stretched across 2 AZ’s",
+        "2 Subnets with each subnet in an independent AZ.",
+        "2 Subnets stretched across 3 AZ’s",
+        "3 subnets with each subnet in and independent AZ."
+      ],
+      "correctAnswer": ["2 Subnets with each subnet in an independent AZ."]
+    }
+  },
+  {
+    "id": "1137",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "You are creating a new VPC with 3 subnets in 3 separate availability zones. You require instances in each subnet to be able to communicate to each other by default. What additional steps should you take in order to achieve this objective.",
+      "answers": [
+        "Create a route between each subnets in a new route table and then associate this with each subnet.",
+        "You do not need to do anything, by default all subnets can communicate with each other using the main route table",
+        "Create a route between each subnet in the main route table and then associate this main route table with each subnet.",
+        "ensure that each subnet is associated with a security group that will contain your EC2 instances."
+      ],
+      "correctAnswer": ["You do not need to do anything, by default all subnets can communicate with each other using the main route table"]
+    }
+  },
+  {
+    "id": "1138",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "You have an EC2 instance which needs to find out both its private IP address and its public IP address using a script. Which of the below should you include in the script to discover this information.",
+      "answers": [
+        "Run IPCONFIG (Windows) or IFCONFIG (Linux)",
+        "Retrieve the instance Metadata from http://169.254.169.254/latest/meta-data/",
+        "Retrieve the instance Userdata from http://169.254.169.254/latest/user-data/",
+        "Use the following command; AWS EC2 displayIP"
+      ],
+      "correctAnswer": ["Retrieve the instance Metadata from http://169.254.169.254/latest/meta-data/"]
+    }
+  },
+  {
+    "id": "1139",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "You are an AWS architect and you require encryption at rest for additional volumes attached to your EC2 instance. What is the quickest and most efficient way to achieve this?",
+      "answers": [
+        "Configure encryption when creating the EBS volume",
+        "Configure encryption using the appropriate Operating Systems file system",
+        "Configure encryption using X.509 certificates",
+        "Mount the EBS volume in to S3 and then encrypt the bucket using a bucket policy."
+      ],
+      "correctAnswer": ["Configure encryption when creating the EBS volume"]
+    }
+  },
+  {
+    "id": "1140",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "You are designing a web application for a new social media start up and have recommended using DynamoDB for the database due to its superior performance. You need to ensure that your database has redundancy. What additional steps should you do?",
+      "answers": [
+        "Nothing, DynamoDB all data is automatically replicated across multiple availability zones.",
+        "Enable Multi-AZ when creating your Dynamodb instance",
+        "Enable Read Replicas when creating your DynamoDB instance",
+        "Enable snapshotting of DynamoDB and save these snapshots to S3"
+      ],
+      "correctAnswer": ["Nothing, DynamoDB all data is automatically replicated across multiple availability zones."]
+    }
+  },
+  {
+    "id": "1141",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "What blocksize does Redshift use when storing it’s data in columnar storage?",
+      "answers": [
+        "2KB",
+        "4KB",
+        "32KB",
+        "1024KB"
+      ],
+      "correctAnswer": ["1024KB"]
+    }
+  },
+  {
+    "id": "1142",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "You are designing an application for a furniture retailer. A component of the application takes pictures of the furniture for sale and generates thumb nail images which then need to be stored persistently. The business can tolerate it if some images are lost as they can be regenerated. The thumbnails will need to be retrieved immediately when the application requests them. What is the cheapest option to do this?",
+      "answers": [
+        "Using S3",
+        "Using S3 RRS",
+        "Using RDS",
+        "Using Glacier"
+      ],
+      "correctAnswer": ["Using S3 RRS"]
+    }
+  },
+  {
+    "id": "1143",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "You run a website which hosts videos and you have two types of members, premium fee paying members and free members. All videos uploaded by both your premium members and free members are processed by a fleet of EC2 instances which will poll SQS as videos are uploaded. However you need to ensure that your premium fee paying members videos have a higher priority than your free members. How should you design your application.",
+      "answers": [
+        "SQS allows you to set priorities on individual items within the queue, so simply set the fee paying members at a higher priority than your free members.",
+        "Create two SQS queues, one for premium members and one for free members. Program your EC2 fleet to poll the premium queue first and if empty, to then poll your free members SQS queue.",
+        "SQS would not be suitable for this scenario. It would be much better to use SNS to encode the videos.",
+        "SQS operates on a First In, First Out process. Design your application so that premium members are sent to the SQS queue first."
+      ],
+      "correctAnswer": ["Create two SQS queues, one for premium members and one for free members. Program your EC2 fleet to poll the premium queue first and if empty, to then poll your free members SQS queue."]
+    }
+  },
+  {
+    "id": "1144",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "You are designing an image sharing website that will distribute images across the world. You need maximise performance so that your end users can download frequently accessed images as fast as possible. What AWS technology should you implement?",
+      "answers": [
+        "Glacier",
+        "Global Load Balancing (GLB)",
+        "CloudFront",
+        "Autoscaling"
+      ],
+      "correctAnswer": ["CloudFront"]
+    }
+  },
+  {
+    "id": "1145",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "You are putting together a wordpress site for a local charity and you are using a combination of Route53, Elastic Load Balancers, EC2 & RDS. You launch your EC2 instance, download wordpress and setup the configuration files connection string so that it can communicate to RDS. When you browse to your URL however, nothing happens. Which of the following could NOT be the cause of this.",
+      "answers": [
+        "You have forgotten to open port 80/443 on your security group in which the EC2 instance is placed",
+        "Your elastic load balancer has a health check which is checking a webpage that does not exist, therefore your EC2 instance is not in service.",
+        "You have not configured an ALIAS for your A record to point to your elastic load balancer",
+        "You have locked port 22 down to your specific IP address therefore users cannot access your site using HTTP/HTTPS."
+      ],
+      "correctAnswer": ["You have locked port 22 down to your specific IP address therefore users cannot access your site using HTTP/HTTPS."]
+    }
+  },
+  {
+    "id": "1146",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "You have uploaded a file to S3, what HTTP code would indicate that the upload was successful?",
+      "answers": [
+        "HTTP 404",
+        "HTTP 500",
+        "HTTP 200",
+        "HTTP 301"
+      ],
+      "correctAnswer": ["HTTP 200"]
+    }
+  }
+]

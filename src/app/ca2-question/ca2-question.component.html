@@ -102,7 +102,13 @@
           value="Architecture"
           (change)="updateSubcategoriesChecked($event, 'Architecture')">
         </mat-checkbox>
-        <mat-label style="padding: 0.5em;">Architecture</mat-label>
+        <mat-label style="padding: 0.5em;">Architecture</mat-label>&nbsp;&nbsp;
+        <mat-checkbox
+          name="Test Example Questions"
+          value="Test Example Questions"
+          (change)="updateSubcategoriesChecked($event, 'Test Example Questions')">
+        </mat-checkbox>
+        <mat-label style="padding: 0.5em;">Test Example Questions</mat-label>
         &nbsp;&nbsp;
         <button mat-button type="submit" color="primary">Submit</button>
       </div>
@@ -136,7 +142,7 @@
               <span class="displayOnNewLine">
                 <mat-placeholder></mat-placeholder>
                 <mat-radio-button ng-style="{'display':'inline-block'}" *ngFor="let answerValue of getAnswers; let i = index" value="{{answerValue}}">
-                  <pre [ngClass]="{'correctAnswer': correctOrNot[i]}">{{answerValue}}</pre>
+                  <p [ngClass]="{'correctAnswer': correctOrNot[i]}">{{answerValue}}</p>
                 </mat-radio-button>
               </span>
             </mat-radio-group>
@@ -150,7 +156,7 @@
                       name="{{answerValue}}"
                       value="{{answerValue}}"
                       (change)="change($event, answerValue)">
-                      <pre [ngClass]="{'correctAnswer': correctOrNot[i]}">{{answerValue}}</pre>
+                      <p [ngClass]="{'correctAnswer': correctOrNot[i]}">{{answerValue}}</p>
                     </mat-checkbox>
                   &nbsp;&nbsp;
                 </span>
@@ -166,7 +172,7 @@
           </div>
         </form>
         <div *ngIf="correctAnswerIndicator != 'neutral'">
-          <pre [ngClass]="(correctAnswerBool)?'correctAnswer':'wrongAnswer'">{{correctAnswerIndicator}}</pre>
+          <p [ngClass]="(correctAnswerBool)?'correctAnswer':'wrongAnswer'">{{correctAnswerIndicator}}</p>
         </div>
         <div>
           <p class="gradeText"> Grade so far: {{totalCorrect}} of {{totalAnswered}} &nbsp;&mdash;&nbsp; <span [ngClass]="(passing)?'percentPassing':'percentFailing'">{{totalCorrectPercent}}%</span></p>
