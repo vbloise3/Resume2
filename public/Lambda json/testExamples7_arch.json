@@ -1,0 +1,83 @@
+[
+  {
+    "id": "1172",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "Following advice from your consultant, you have&nbsp;configured your VPC to use Dedicated&nbsp;hosting tenancy. A subsequent change to your application has rendered the performance gains from dedicated tenancy superfluous, and you would now like to recoup some of these greater costs. How do you revert to Default hosting tenancy?",
+      "answers": [
+        "Create AMIs of all your instances and use them to create new instances using Default hosting.",
+        "Stop each instance and change the hosting attribute and restart.",
+        "Create AMIs of all your instances. Create a new VPC with Default as the hosting tenancy attribute, and use them to create new instances using Default tenancy.",
+        "Change the hosting attribute and then restart the instance."
+      ],
+      "correctAnswer": ["Create AMIs of all your instances. Create a new VPC with Default as the hosting tenancy attribute, and use them to create new instances using Default tenancy."]
+    }
+  },
+  {
+    "id": "1173",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "Which URL format does S3 support in pointing to bucket 'mynewbucket'?",
+      "answers": [
+        "http://mynewbucket.s3-aws-region.amazonaws.com",
+        "http://mynewbucket.s3-aws-region.amazon.com",
+        "http://mynewbucket.s3-aws-region.aws.com",
+        "http://mynewbucket.s3.aws-region.amazonaws.com"
+      ],
+      "correctAnswer": ["http://mynewbucket.s3-aws-region.amazonaws.com"]
+    }
+  },
+  {
+    "id": "1174",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "You are developing a web application, and you are maintaining separate sets of resources for your alpha, beta, and release environments. Each version runs on Amazon EC2 with an EBS&nbsp;volume. You use Elastic Load Balancing to manage traffic and Amazon Route 53 to manage your domain. What's the best way to check the health and status of all three groups of services simultaneously?",
+      "answers": [
+        "Access CloudTrail audits for each set or resources.",
+        "Maintain an open console for each set of resources.",
+        "Create a resource group containing each set of resources and view all three environments from a single, group dashboard.",
+        "Use CLoudWatch to proactively monitor each environment."
+      ],
+      "correctAnswer": ["Create a resource group containing each set of resources and view all three environments from a single, group dashboard."]
+    }
+  },
+  {
+    "id": "1175",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "Your company has just purchased another company. As part of the merger, your team has been instructed to cross connect the corporate networks. You run all your confidential corporate services and Internal DNS in a VPC. The merged company has all their confidential corporate services and Internal DNS on-premises. After establishing a Direct-Connect service between your VPC and their on-premise network, and confirming all the routing, firewalls, and authentication, you find that while you can resolve names against their DNS, the other company services is unable to resolve names against your DNS servers. Why might this be?",
+      "answers": [
+        "AWS Route53 is an Internet service, and the other company needs to do lookups and zone transfers via the Internet, not the Direct-Connect link.",
+        "You cannot use DNS in this way. You need to merge the zones under a parent zone registered with ICANN.",
+        "By design, AWS DNS does not respond to requests originating from outside the VPC.",
+        "Route53 is not an industry standard DNS service, and zone transfers and name resolution must be done via a proprietary API.",
+        "The computers are not configured properly. You need to add the IP address of the AWS DNS servers into the DNS options of the IP stack."
+      ],
+      "correctAnswer": ["By design, AWS DNS does not respond to requests originating from outside the VPC."]
+    }
+  },
+  {
+    "id": "1176",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "How is the Public IP address managed in an instance session via the instance GUI/RDP or Terminal/SSH session?",
+      "answers": [
+        "The Public IP&nbsp;address can be managed via the instance MetaData at http://169.254.169.254/latest/meta-data/local-ipv4.",
+        "The Public IP&nbsp;address can be managed via the instance MetaData at http://169.254.169.254/latest/meta-data/public-ipv4.",
+        "The Public IP address is not managed on the instance: It is, instead, an alias applied as a network address translation of the Private IP address.",
+        "For security reasons, the Public IP address is a hidden value."
+      ],
+      "correctAnswer": ["The Public IP address is not managed on the instance: It is, instead, an alias applied as a network address translation of the Private IP address."]
+    }
+  }
+]

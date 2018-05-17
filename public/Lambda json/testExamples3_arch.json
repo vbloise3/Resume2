@@ -1,0 +1,83 @@
+[
+  {
+    "id": "1152",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "You are a Solutions Architect working for a major European oil company. You are designing a new web application which will need to access data stored in DynamoDB. You need to do this as securely as possible, without storing any credentials on a long term basis. How would you achieve this?",
+      "answers": [
+        "Store the Access Key ID &amp; Secret Access Key on an encrypted S3 bucket.",
+        "Create a new group in AWS Identity and Access Management and assign the EC2 instance to the group.",
+        "Use AWS Identity and Access Management roles for the EC2 Instances that need to make the API calls.",
+        "Store the Access Key Id &amp; Secret Access Key in a PHP file in the application."
+      ],
+      "correctAnswer": ["Use AWS Identity and Access Management roles for the EC2 Instances that need to make the API calls."]
+    }
+  },
+  {
+    "id": "1153",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "You are a solutions architect working for a large cell phone company in the US.  Your CSO has engaged a third party security company to conduct a security audit of your company to make sure it is not liable to hacking. The third party security company would like to conduct a penetration test on your AWS estate. Would this be allowed by AWS?",
+      "answers": [
+        "Yes. They can do this straight away with no prior permission necessary.",
+        "Only in the default VPC.",
+        "Not under any circumstances.",
+        "Yes, however you need to get permission from Amazon first by raising a ticket."
+      ],
+      "correctAnswer": ["Yes, however you need to get permission from Amazon first by raising a ticket."]
+    }
+  },
+  {
+    "id": "1154",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "AWS help provide protection against some forms of traditional network attacks. Which of the following is not protected against by AWS?",
+      "answers": [
+        "Social Engineering.",
+        "Port Scanning.",
+        "IP Spoofing.",
+        "Man in The Middle Attack."
+      ],
+      "correctAnswer": [
+        "Social Engineering."
+      ]
+    }
+  },
+  {
+    "id": "1155",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "Placement Groups can be created across 2 or more Availability Zones.",
+      "answers": [
+        "True",
+        "False"
+      ],
+      "correctAnswer": ["False"]
+    }
+  },
+  {
+    "id": "1156",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "You have three AWS accounts (A, B &amp; C) which share data. &nbsp;In an attempt to maximize performance between the accounts, you deploy the instances owned by these three accounts in 'eu-west-1b'. &During testing, you find inconsistent results in transfer latency between the instances. Transfer between accounts A and B is excellent, but transfers between accounts B and C, and C and A, are slower. &nbsp;What could be the problem?",
+      "answers": [
+        "The names of the AZs are randomly applied, so 'eu-west-1b' is not necessarily the same physical location for all three accounts",
+        "You have incorrectly configured the cross-account authentication policies in Account C, adding latency to those instances.",
+        "Account C has been allocated to an older section of the Data Hall with slower networking.",
+        "The instances for Account C are on an overloaded Host. &nbsp;Stop all the Account C instances &nbsp;and then start them together so that they run an a new host.",
+        "You have accidentally set up Account C in 'us-west-1b'."
+      ],
+      "correctAnswer": ["The names of the AZs are randomly applied, so 'eu-west-1b' is not necessarily the same physical location for all three accounts"]
+    }
+  }
+]

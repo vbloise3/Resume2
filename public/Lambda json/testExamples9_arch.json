@@ -1,0 +1,67 @@
+[
+  {
+    "id": "1182",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "You're building out a single-region application in us-west-2. However, disaster recovery is a strong consideration, and you need to build the application so that if us-west-2 becomes unavailable, you can fail-over to us-west-1. Your application relies exclusively on pre-built AMI's. In order to share those AMI's with the region you're using as a backup, which process would you follow?",
+      "answers": [
+        "Create a new instance in us-west-1, making certain the instance in the failover region shares a security group with the instance in the default region.",
+        "Copy the AMI from us-west-2, manually apply launch permissions, user-defined tags, and Amazon S3 bucket permissions of the default AMI to the new instance, and launch the instance.",
+        "Copy the AMI from us-west-2 to us-west-1 and launch as-is.",
+        "Nothing: AMIs are specific to an account, and they can be used anywhere."
+      ],
+      "correctAnswer": ["Copy the AMI from us-west-2, manually apply launch permissions, user-defined tags, and Amazon S3 bucket permissions of the default AMI to the new instance, and launch the instance."]
+    }
+  },
+  {
+    "id": "1183",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "At the monthly product meeting, one of the Product Owners proposes an idea to address an immediate shortcoming of the product system: storing a copy of the customer price schedule in the customer record in the database. You know that you can store large text or binary objects in DynamoDB. You give a tentative OK to do a&nbsp;Minimal Viable Product test, but stipulate that it must comply with the size limitation on the Attribute Name &amp; Value. Which is the correct limitation?",
+      "answers": [
+        "The Name must not exceed 64 KB and the Value must not exceed 500 KB.",
+        "The Name must not exceed 64 KB and the Value must not exceed 400 KB.",
+        "The combined Value and Name combined must not exceed 400 KB.",
+        "The Name must not exceed 64 KB and the Value must not exceed 255 KB.",
+        "The combined Value and Name combined must not exceed 255 KB."
+      ],
+      "correctAnswer": ["The combined Value and Name combined must not exceed 400 KB."]
+    }
+  },
+  {
+    "id": "1184",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "To save money, you quickly stored some data on the root volume of an EC2 instance and shut it down for the weekend. When you returned on Monday and restarted your instance, you discovered that your data was gone. Why might that be?",
+      "answers": [
+        "The root volume was ephemeral, block-level storage. Data on an instance store volume is lost if an instance terminates.",
+        "The elastic block-level storage service failed over the weekend.",
+        "The instance failed to connect to the root volume on Monday.",
+        "The EBS volume was not large enough to store your data."
+      ],
+      "correctAnswer": ["The root volume was ephemeral, block-level storage. Data on an instance store volume is lost if an instance terminates."]
+    }
+  },
+  {
+    "id": "1185",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "To save money, you quickly stored some data on the root volume of an EC2 instance and shut it down for the weekend. When you returned on Monday and restarted your instance, you discovered that your data was gone. Why might that be?",
+      "answers": [
+        "The root volume was ephemeral, block-level storage. Data on an instance store volume is lost if an instance terminates.",
+        "The elastic block-level storage service failed over the weekend.",
+        "The instance failed to connect to the root volume on Monday.",
+        "The EBS volume was not large enough to store your data."
+      ],
+      "correctAnswer": ["The root volume was ephemeral, block-level storage. Data on an instance store volume is lost if an instance terminates."]
+    }
+  }
+]

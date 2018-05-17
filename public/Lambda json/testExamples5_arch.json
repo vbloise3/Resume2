@@ -1,0 +1,81 @@
+[
+  {
+    "id": "1162",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "A client who is using EC2 believes that someone other than approved administrators is trying to gain access to her Linux web app instances, and she asks what sort of network access logging can be added to the system. Which of the following might you recommend?",
+      "answers": [
+        "Set up a traffic logging rule on the network firewall and direct the log to CloudWatch or S3.",
+        "Set up a Flow Log for the group of instances and forward them to CloudWatch.",
+        "Make use of an OS level logging tools such as iptables and log events to CloudWatch or S3.",
+        "Use Event Log filters to trigger alerts that are forwarded to CloudWatch.",
+        "Set up a Flow Log for the group of instances and forward them to S3."
+      ],
+      "correctAnswer": ["Make use of an OS level logging tools such as iptables and log events to CloudWatch or S3."]
+    }
+  },
+  {
+    "id": "1163",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "Your company likes the idea of storing files on AWS. However, low-latency service of the last few days of files is important to customer service. Which Storage Gateway configuration would you use to achieve both of these ends?",
+      "answers": [
+        "Gateway-VTL",
+        "Gateway-Snapshot",
+        "Gateway-Cached",
+        "Gateway-Stored"
+      ],
+      "correctAnswer": ["Gateway-Cached"]
+    }
+  },
+  {
+    "id": "1164",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "You have a MySQl database running on an EC2 instance in a private subnet. You can connect via SSH, but you are unable to apply updates to the database server via the NAT instance. What might you do to remedy this problem?",
+      "answers": [
+        "Ensure that 'Source/Destination Checks' is disabled on the NAT instance.",
+        "Ensure that the Security Group allows HTTP traffic.",
+        "Replace the NAT instance.",
+        "Modify the Security Group to allow SSH traffic from anywhere."
+      ],
+      "correctAnswer": ["Ensure that 'Source/Destination Checks' is disabled on the NAT instance."]
+    }
+  },
+  {
+    "id": "1165",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "Amazon SQS keeps track of all tasks and events in an application.",
+      "answers": [
+        "True",
+        "False"
+      ],
+      "correctAnswer": ["False"]
+    }
+  },
+  {
+    "id": "1166",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "When editing permissions (policies and ACLs), to whom does the concept of the 'Owner' refer?",
+      "answers": [
+        "The Owner is the IAM user who created the object via the GUI, CLI, or API.",
+        "The Owner is IAM Role used to create the object via the GUI, CLI, or API.",
+        "The 'Owner' refers to the identity and email address used to create the AWS account.",
+        "There is no special concept of 'Owner' in AWS."
+      ],
+      "correctAnswer": ["The 'Owner' refers to the identity and email address used to create the AWS account."]
+    }
+  }
+]

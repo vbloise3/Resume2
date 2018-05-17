@@ -1,0 +1,81 @@
+[
+  {
+    "id": "1157",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "Your company has hired a young and enthusiastic accountant. After reviewing the AWS documentation and usage graphs, he announces that you are wasting vast amounts of money running servers for a full hour instead of spinning them up only when they are needed and down again as soon as they are idle for 1 minute. He cites the AWS claim that you only pay for what you use, and that as a senior engineer, you should be more conscious of wasting company money. &nbsp;How do you respond?",
+      "answers": [
+        "You leap across the meeting table and slap him for insulting you in front of your peers.",
+        "Acknowledge the problem and propose that you could downsize the instances so that the workload over the hour consumes the full instance capacity for the full hour. You might also propose closer monitoring and automation to allow you to up-size and down-size the instance each hour over the day to match the instance performance to the anticipated workload.",
+        "You thank him for his concern, and advise him that he has misinterpreted the pricing document: Instances are billed by the full hour, and partial hours are billed as such. Additionally, storage charges are incurred even if the Db instance sits idle. Taking into account productivity losses, stopping and restarting Db instances may actually result in additional costs. As such, your solution is fine as it now stands.",
+        "You grudgingly acknowledge his point and change your scheduling and tuning settings."
+      ],
+      "correctAnswer": ["You thank him for his concern, and advise him that he has misinterpreted the pricing document: Instances are billed by the full hour, and partial hours are billed as such. Additionally, storage charges are incurred even if the Db instance sits idle. Taking into account productivity losses, stopping and restarting Db instances may actually result in additional costs. As such, your solution is fine as it now stands."]
+    }
+  },
+  {
+    "id": "1158",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "Your company is moving their 10TB data warehouse to the cloud. Taking into account your company's 100Mbps connection, which service would most quickly get your data into AWS?",
+      "answers": [
+        "Amazon Import/Export Disk",
+        "Amazon S3 Multi-part Upload",
+        "Amazon RedShift Import",
+        "Amazon Snowball"
+      ],
+      "correctAnswer": ["Amazon Snowball"]
+    }
+  },
+  {
+    "id": "1159",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "You have been monitoring a sensitive autoscaling group, and you expect it to scale-in as you enter a period of holiday downtime.&nbsp;The auto scaling group is distributed over three AZs ( AZ - A & -B have two instances each, and AZ -C has three instances). All instances have different CPU and Memory utilization, and all instances have been running for a different number of days.&nbsp;All instances come from different versions of a root AMI, and all instances have different numbers of sessions connected. Which instance will be the 1st to shut down?",
+      "answers": [
+        "The Instance with the fewest current sessions will terminate first.",
+        "The instance that has been running longest will terminate first.",
+        "The instance in AZ -C that has the oldest launch configuration will terminate first.",
+        "The instance in AZ -C that has been running the longest will terminate first.",
+        "The instance in AZ -C that has the least number of sessions will terminate first."
+      ],
+      "correctAnswer": ["The instance in AZ -C that has been running the longest will terminate first."]
+    }
+  },
+  {
+    "id": "1160",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "Auto Scaling is a tool used to create fault-tolerant and cost-effective architectures.",
+      "answers": [
+        "True",
+        "False"
+      ],
+      "correctAnswer": ["True"]
+    }
+  },
+  {
+    "id": "1161",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "What is the maximum VisibilityTimeout of an SQS message in a FIFO queue?",
+      "answers": [
+        "14 days",
+        "1 day",
+        "1 hour",
+        "12 hours"
+      ],
+      "correctAnswer": ["12 hours"]
+    }
+  }
+]

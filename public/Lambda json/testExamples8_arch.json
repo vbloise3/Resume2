@@ -1,0 +1,85 @@
+[
+  {
+    "id": "1177",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "You have been engaged by a company to design and lead a migration to an AWS environment. The team is concerned about the capabilities of the new environment, especially when it comes to avoiding bottlenecks. The design calls for about 20 instances (C3.2xLarge) pulling jobs/messages from SQS. Network traffic per instance is estimated to be around 500 Mbps at the beginning and end of each job. Which network configuration should you plan on deploying?",
+      "answers": [
+        "Deploy as a Placement Group as the aggregated burst traffic could be around 10 Gbps.",
+        "Activate EBS-Optimization on the instance to maximize network throughput.",
+        "Use a 2nd Network Interface to separate the SQS traffic for the storage traffic.",
+        "Spread the Instances over multiple AZs to minimize the traffic concentration and maximise the fault tolerance.",
+        "Choose a different instance type that better matched the traffic demand."
+      ],
+      "correctAnswer": ["Spread the Instances over multiple AZs to minimize the traffic concentration and maximise the fault tolerance."]
+    }
+  },
+  {
+    "id": "1178",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "You are a consultant planning to deploy DynamoDB across three AZs. Your lead DBA is concerned about data consistency. Which of the following do you advise the lead DBA to do?",
+      "answers": [
+        "To ask the development team to implement a checksum algorithm to confirm that the data is consistent across all the AZs.",
+        "To ask the development team to code for strongly consistent reads. As the consultant, you will advise the CTO of the increased cost.",
+        "To ask the development team to code a Lambda function to check data consistency after each write.",
+        "To ask the development team to code to check for a successful completion code (200) at the completion of every write.",
+        "To ask the development team to code an maintenance task to run on a schedule to check consistency."
+      ],
+      "correctAnswer": ["To ask the development team to code for strongly consistent reads. As the consultant, you will advise the CTO of the increased cost."]
+    }
+  },
+  {
+    "id": "1179",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "You successfully configure VPC Peering between VPC-A &nbsp;and VPC-B. You then establish an IGW and a Direct-Connect connection in VPC-B. Can instances in VPC-A connect to your corporate office via the Direct-Connect service, and connect to the Internet via the IGW?",
+      "answers": [
+        "Yes: VPC Peering is designed to route traffic between the VPCs.",
+        "Instances in VPC-A will be able to access the Internet, but not the corporate office.",
+        "VPC peering does not support edge to edge routing.",
+        "Instances in VPC-A will be able to access the corporate office, but not the Internet."
+      ],
+      "correctAnswer": ["VPC peering does not support edge to edge routing."]
+    }
+  },
+  {
+    "id": "1180",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "You are reviewing Change Control requests, and you note that there is a change designed to reduce wasted CPU cycles by increasing the value of VisibilityTimeout&nbsp;attribute. What does this mean?",
+      "answers": [
+        "When the consumer instance polls for new work the SQS service will allow it to wait a certain time for a message to be available before closing the connection.",
+        "When a new message is added to the SQS queue, it will be hidden from consumer instances for a fixed period.",
+        "When the consumer instance polls for new work, the consumer instance will wait a certain time until it has a full workload before closing the connection.",
+        "While processing a message, a consumer instance can reset the message visibility by restarting the preset timeout counter.",
+        "When a consumer instance retrieves a message, that message will be hidden from other consumer instances for a fixed period."
+      ],
+      "correctAnswer": ["When a consumer instance retrieves a message, that message will be hidden from other consumer instances for a fixed period."]
+    }
+  },
+  {
+    "id": "1181",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "You manage a Ruby on Rails application that lives on a cluster of EC2 instances. Your website occasionally experiences brief, strong, and entirely unpredictable spikes in traffic that overwhelm your EC2 instances' resources and freeze the application. As a result, you're losing recently submitted requests from end users. You use Auto Scaling to deploy additional resources to handle the load during spikes, but the new instances don't spin-up fast enough to prevent the existing application servers from freezing. Which of the following will provide the most cost-effective solution in preventing the loss of recently submitted requests?",
+      "answers": [
+        "Ask AWS support to pre-warm the Elastic Load Balancer.",
+        "Use Amazon SQS to decouple the application components and keep the requests in queue until the extra Auto-Scaling instances are available.",
+        "Increase the size of your existing EC2 instances.",
+        "Keep a large EC2 instance on standby."
+      ],
+      "correctAnswer": ["Use Amazon SQS to decouple the application components and keep the requests in queue until the extra Auto-Scaling instances are available."]
+    }
+  }
+]

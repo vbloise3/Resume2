@@ -1,0 +1,83 @@
+[
+  {
+    "id": "1167",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "Your company provides an online image recognition service and uses SQS to decouple system components. Your EC2 instances poll the image queue as often as possible to keep end-to-end throughput as high as possible, but you realize that all this polling is resulting in both a large number of CPU cycles and skyrocketing costs. How can you reduce cost without compromising service?",
+      "answers": [
+        "Enable long polling by setting the ReceiveMessageWaitTimeSeconds to a number > 0.",
+        "Enable short polling by setting the ReceiveMessageWaitTimeMinutes to a number > 0.",
+        "Enable short polling by setting the ReceiveMessageWaitTimeSeconds to a number > 0.",
+        "Enable long polling by setting the ReceiveMessageWaitTimeMinutes to a number > 0."
+      ],
+      "correctAnswer": ["Enable long polling by setting the ReceiveMessageWaitTimeSeconds to a number > 0."]
+    }
+  },
+  {
+    "id": "1168",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "You need to store some easily-replaceable objects on S3. With quick retrieval times and and cost effectiveness in mind, which S3 storage class should you consider.",
+      "answers": [
+        "S3",
+        "S3-RRS",
+        "Glacier",
+        "Snowball",
+        "S3 - Provisioned IOPS"
+      ],
+      "correctAnswer": ["S3-RRS"]
+    }
+  },
+  {
+    "id": "1169",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "You are a solutions architect working for a busy media company with offices in Japan and the United States. Your production environment is hosted both in US-EAST-1 and AP-NORTHEAST-1. Your European users have been connecting to the production environment in Japan, and are seeing the site in Japanese rather than in English. You need to ensure that they view the English language version. Which of the routing policies below could help you achieve this?",
+      "answers": [
+        "Weighted Routing",
+        "Simple Routing",
+        "Geolocation",
+        "Failover Routing"
+      ],
+      "correctAnswer": ["Geolocation"]
+    }
+  },
+  {
+    "id": "1170",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "Although your application customarily runs at 30% usage, you have identified a recurring usage spike (>90%) between 8pm and midnight daily. What is the most cost effective way to scale your application to meet this increased need?",
+      "answers": [
+        "Manually deploy Reactive Event-based Scaling each night at 7:45.",
+        "Use Proactive Cyclic Scaling to boost your capacity at a fixed interval.",
+        "Deploy additional EC2 instances to meet the demand.",
+        "Increase the size of the Resource Group to meet demand."
+      ],
+      "correctAnswer": ["Use Proactive Cyclic Scaling to boost your capacity at a fixed interval."]
+    }
+  },
+  {
+    "id": "1171",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "You work for a popular media outlet about to release a story that is expected to go viral. During load testing on the website, you discover that there is read contention on the database tier of your application. Your RDS instance consists of a MySQL database on an extra large instance. Which two of the following approaches would be best to further scale this instance to meet the anticipated increase in traffic your viral story will generate?",
+      "answers": [
+        "Use Elasticache to cache the frequently read, static data.",
+        "Shard the MySQL database into multiple copies.",
+        "Provision a larger instance size with provisioned IOPS.",
+        "Add an RDS Multi-AZ for increased read performance."
+      ],
+      "correctAnswer": ["Use Elasticache to cache the frequently read, static data."]
+    }
+  }
+]

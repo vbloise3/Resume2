@@ -1,0 +1,82 @@
+[
+  {
+    "id": "1147",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "You have created a custom VPC with 3 subnets, 2 private, 1 public. You deploy 3 EC2 instances in to your public subnet and attach Elastic IP addresses to these instances. You then deploy an EC2 instance in to your private subnet and then attempt to apply security patches to this instance, however it has no internet connectivity. What can you do to give this instance internet access?",
+      "answers": [
+        "Deploy a NAT to the public subnet and then update the main route table to send traffic via the NAT to the private subnet.",
+        "Deploy your instance to a public subnet instead",
+        "Attach a public IP address to your EC2 instance in the private subnet.",
+        "Attach an additional internet gateway to your EC2 instance in the private subnet."
+      ],
+      "correctAnswer": ["Deploy a NAT to the public subnet and then update the main route table to send traffic via the NAT to the private subnet."]
+    }
+  },
+  {
+    "id": "1148",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "Amazon SWF is designed to help users to do which of the following?",
+      "answers": [
+        "Manage user identification and authorisation",
+        "Coordinate synchronous and asynchronous tasks",
+        "Store files securely in the cloud",
+        "Replicate an organizations email from one region to another."
+      ],
+      "correctAnswer": ["Coordinate synchronous and asynchronous tasks"]
+    }
+  },
+  {
+    "id": "1149",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "What service can you use to audit user access & API calls across your AWS environment?",
+      "answers": [
+        "CloudWatch",
+        "CloudTrail",
+        "CloudAudit",
+        "CloudPolice"
+      ],
+      "correctAnswer": ["CloudTrail"]
+    }
+  },
+  {
+    "id": "1150",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "Under the shared responsibility model for S3 which of the following is NOT a responsibility of Amazons.",
+      "answers": [
+        "Maintaining video surveillance of the data halls",
+        "Destruction of end of life magnetic disks.",
+        "Restricting access to the datacenter",
+        "Configuration of individual bucket policies"
+      ],
+      "correctAnswer": ["Configuration of individual bucket policies"]
+    }
+  },
+  {
+    "id": "1151",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "Under the shared responsibility model for DynamoDB which of the following is NOT a responsibility of Amazons.",
+      "answers": [
+        "Patching the Xen Hypervisor.",
+        "Destruction of magnetic storage media on decommissioning of disks.",
+        "Patching the underlying DynamoDB operating system.",
+        "Restricting access of DynamoDB so that only the customers web application in EC2 can write data to it."
+      ],
+      "correctAnswer": ["Restricting access of DynamoDB so that only the customers web application in EC2 can write data to it."]
+    }
+  }
+]
