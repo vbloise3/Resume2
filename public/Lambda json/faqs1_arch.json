@@ -1,0 +1,785 @@
+[
+  {
+    "id": "1186",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "How do you leverage the AWS cloud as an extension of your datacenter?",
+      "answers": [
+        "Create a hardware Virtual Private Network (VPN) connection between your datacenter and your VPC",
+        "Use a Direct Connect line to connect your datacenter to your VPC",
+        "Use a Storage Gateway between your datacenter to your VPC",
+        "Use a VPN between your datacenter to your VPC"
+      ],
+      "correctAnswer": ["Create a hardware Virtual Private Network (VPN) connection between your datacenter and your VPC"]
+    }
+  },
+  {
+    "id": "1187",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "What is the Amazon VPC side of a VPN connection?",
+      "answers": [
+        "Virtual Private Gateway",
+        "Internet Gateway",
+        "Network Address Translation Gateway",
+        "Customer Gateway"
+      ],
+      "correctAnswer": ["Virtual Private Gateway"]
+    }
+  },
+  {
+    "id": "1188",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "What is your side of a VPN connection with Amazon?",
+      "answers": [
+        "Virtual Private Gateway",
+        "Internet Gateway",
+        "Network Address Translation Gateway",
+        "Customer Gateway"
+      ],
+      "correctAnswer": ["Customer Gateway"]
+    }
+  },
+  {
+    "id": "1189",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "What enables private connectivity to services hosted in AWS, from within your VPC without using an Internet Gateway, VPN, Network Address Translation (NAT) devices, or firewall proxies?",
+      "answers": [
+        "Virtual Private Gateway",
+        "VPC Endpoint",
+        "Network Address Translation Gateway",
+        "Customer Gateway"
+      ],
+      "correctAnswer": ["VPC Endpoint"]
+    }
+  },
+  {
+    "id": "1190",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "What is a stateful gateway to provide egress only access for IPv6 traffic from the VPC to the internet?",
+      "answers": [
+        "Virtual Private Gateway",
+        "VPC Endpoint",
+        "Network Address Translation Gateway",
+        "Egress-only Internet Gateway"
+      ],
+      "correctAnswer": ["Egress-only Internet Gateway"]
+    }
+  },
+  {
+    "id": "1191",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 2",
+      "question": "Which AWS services do Gateway Type endpoints allow you to route traffic to through Amazon's private network by adding an entry to your route table?",
+      "answers": [
+        "DynamoDB",
+        "S3",
+        "CloudFront",
+        "Snowball Edge",
+        "Storage Gateway"
+      ],
+      "correctAnswer": ["DynamoDB",
+        "S3"]
+    }
+  },
+  {
+    "id": "1192",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "Which services do Interface Type endpoints provide private connectivity to by connecting over Direct Connect?",
+      "answers": [
+        "Services Powered by PrivateLink",
+        "S3",
+        "DynamoDB",
+        "Snowball Edge",
+        "Storage Gateway"
+      ],
+      "correctAnswer": ["Services Powered by PrivateLink"]
+    }
+  },
+  {
+    "id": "1193",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "Are data transfer charges incurred when accessing AWS services, such as S3, via your VPC's Internet Gateway?",
+      "answers": [
+        "No",
+        "Yes"
+      ],
+      "correctAnswer": ["No"]
+    }
+  },
+  {
+    "id": "1194",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "Are data transfer charges incurred when accessing AWS resources via your VPN connection?",
+      "answers": [
+        "No",
+        "Yes"
+      ],
+      "correctAnswer": ["Yes"]
+    }
+  },
+  {
+    "id": "1195",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "What type of hardware VPN connection does AWS support to connect your datacenter to you AWS VPC?",
+      "answers": [
+        "Internet Protocol security (IPsec) VPN connections",
+        "Regular VPN connections",
+        "Custom VPN connections",
+        "IPv6 VPN connections",
+        "IPv4 VPN connections"
+      ],
+      "correctAnswer": ["Internet Protocol security (IPsec) VPN connections"]
+    }
+  },
+  {
+    "id": "1196",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "What tools are available to help you troubleshoot your Hardware VPN configuration?",
+      "answers": [
+        "use the DescribeVPNConnection API",
+        "use the ListVPNConnection API",
+        "use VPN tunnel scope",
+        "use the AWS Management Console"
+      ],
+      "correctAnswer": ["use the DescribeVPNConnection API"]
+    }
+  },
+  {
+    "id": "1197",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "What does the DescribeVPNConnection API do for you?",
+      "answers": [
+        "displays the status of the VPN connection, including the state ('up/down') of each VPN tunnel and corresponding error messages if either tunnel is down",
+        "displays the status of your VPN, including the state ('active/inactive')",
+        "displays the status of your Hardware VPN configuration"
+      ],
+      "correctAnswer": ["displays the status of the VPN connection, including the state ('up/down') of each VPN tunnel and corresponding error messages if either tunnel is down"]
+    }
+  },
+  {
+    "id": "1198",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "What CIDR range are default VPCs assigned?",
+      "answers": [
+        "172.31.0.0/16",
+        "172.31.0.0/0",
+        "169.254.169.254/16"
+      ],
+      "correctAnswer": ["172.31.0.0/16"]
+    }
+  },
+  {
+    "id": "1199",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "What CIDR range are default VPCs assigned?",
+      "answers": [
+        "172.31.0.0/16",
+        "172.31.0.0/0",
+        "169.254.169.254/16"
+      ],
+      "correctAnswer": ["172.31.0.0/16"]
+    }
+  },
+  {
+    "id": "1199",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "How many IP address ranges for IPv4?",
+      "answers": [
+        "5 - 1 primary and 4 secondary",
+        "10 - 5 primary and 5 secondary",
+        "5 - 4 primary and 1 secondary",
+        "10"
+      ],
+      "correctAnswer": ["5 - 1 primary and 4 secondary"]
+    }
+  },
+  {
+    "id": "1199",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "How many subnets can your create per VPC (if you need more you can open a ticket with AWS)?",
+      "answers": [
+        "200",
+        "500",
+        "100",
+        "10"
+      ],
+      "correctAnswer": ["200"]
+    }
+  },
+  {
+    "id": "1200",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "What is the minimum size of a subnet for IPv4?",
+      "answers": [
+        "/28 (or 14 IP addresses)",
+        "/24 (or 254 IP addresses)",
+        "/32 (or 1 IP address)",
+        "/16 (or 65,536 IP addresses)"
+      ],
+      "correctAnswer": ["/28 (or 14 IP addresses)"]
+    }
+  },
+  {
+    "id": "1201",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "Elastic IP addresses should only be used on EC2 instances in subnets configured to route their traffic directly to the Internet Gateway?",
+      "answers": [
+        "True",
+        "False"
+      ],
+      "correctAnswer": ["True"]
+    }
+  },
+  {
+    "id": "1202",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "Elastic IP can be used on EC2 instances in subnets configured to use NAT Gateway or NAT Instance to access the internet?",
+      "answers": [
+        "True",
+        "False"
+      ],
+      "correctAnswer": ["False"]
+    }
+  },
+  {
+    "id": "1203",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "AWS VPCs support Elastic IPs for IPv6?",
+      "answers": [
+        "True",
+        "False"
+      ],
+      "correctAnswer": ["False"]
+    }
+  },
+  {
+    "id": "1204",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 3",
+      "question": "You can create a default route for each subnet in your VPC. The default route can direct traffic to egress the VPC via which of these?",
+      "answers": [
+        "Internet Gateway",
+        "Virtual Private Gateway",
+        "NAT Gateway",
+        "NAT Instance"
+      ],
+      "correctAnswer": ["Internet Gateway",
+        "Virtual Private Gateway",
+        "NAT Gateway"]
+    }
+  },
+  {
+    "id": "1204",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "Does AWS VPC support multicast or broadcast?",
+      "answers": [
+        "Yes",
+        "No"
+      ],
+      "correctAnswer": ["No"]
+    }
+  },
+  {
+    "id": "1205",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "What is the maximum VPC size you to which you are initially limited?",
+      "answers": [
+        "/16 (65,536 IPs)",
+        "/24 (or 254 IPs)",
+        "/14 (or 262,144 IPs)"
+      ],
+      "correctAnswer": ["/16 (65,536 IPs)"]
+    }
+  },
+  {
+    "id": "1206",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "You can use AMIs in a VPC that are registered whithin ________?",
+      "answers": [
+        "the same region as your VPC",
+        "any region",
+        "your account"
+      ],
+      "correctAnswer": ["the same region as your VPC"]
+    }
+  },
+  {
+    "id": "1206",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "Can you attach or detach one or more network interfaces to an EC2 instance while it is running?",
+      "answers": [
+        "Yes",
+        "No"
+      ],
+      "correctAnswer": ["Yes"]
+    }
+  },
+  {
+    "id": "1207",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "Can peering connections be created with VPCs in different regions?",
+      "answers": [
+        "Yes",
+        "No"
+      ],
+      "correctAnswer": ["Yes"]
+    }
+  },
+  {
+    "id": "1208",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "Can you peer your VPC with a VPC belonging to another AWS account?",
+      "answers": [
+        "Yes",
+        "No"
+      ],
+      "correctAnswer": ["Yes"]
+    }
+  },
+  {
+    "id": "1209",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "Can you use AWS Direct Connect or hardware VPN connections to access VPCs you are peered with?",
+      "answers": [
+        "Yes",
+        "No, 'Edge to Edge routing' is not supported in AWS VPCs"
+      ],
+      "correctAnswer": ["No, 'Edge to Edge routing' is not supported in AWS VPCs"]
+    }
+  },
+  {
+    "id": "1210",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "Do VPC peering connections require an Internet Gateway?",
+      "answers": [
+        "Yes",
+        "No"
+      ],
+      "correctAnswer": ["No"]
+    }
+  },
+  {
+    "id": "1211",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "Should you encrypt traffic between peered VPCs?",
+      "answers": [
+        "Yes",
+        "No, traffic between EC2 instances in peered VPC remains private and isolated - similar to how traffic between two EC2 instances in the same VPC is private and isolated"
+      ],
+      "correctAnswer": ["No, traffic between EC2 instances in peered VPC remains private and isolated - similar to how traffic between two EC2 instances in the same VPC is private and isolated"]
+    }
+  },
+  {
+    "id": "1212",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "What is AWS PrivateLink?",
+      "answers": [
+        "it enables customers to access services hosted on AWS in a highly available and scalable manner, while keeping all the network traffic within the AWS network",
+        "it enables customers to access services hosted on AWS in a highly available and scalable manner, while keeping all the network traffic within the customer's VPN network"
+      ],
+      "correctAnswer": ["it enables customers to access services hosted on AWS in a highly available and scalable manner, while keeping all the network traffic within the AWS network"]
+    }
+  },
+  {
+    "id": "1213",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "How many VPCs per AWS account per region can you have?",
+      "answers": [
+        "5",
+        "10",
+        "3",
+        "4"
+      ],
+      "correctAnswer": ["5"]
+    }
+  },
+  {
+    "id": "1214",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "How many subnets per VPC can you have?",
+      "answers": [
+        "200",
+        "100",
+        "150",
+        "400"
+      ],
+      "correctAnswer": ["200"]
+    }
+  },
+  {
+    "id": "1215",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "How many VPC Elastic IP addresses per AWS account per region can you have?",
+      "answers": [
+        "5",
+        "10",
+        "3",
+        "4"
+      ],
+      "correctAnswer": ["5"]
+    }
+  },
+  {
+    "id": "1216",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "How many Internet Gateways per VPC can you have?",
+      "answers": [
+        "5",
+        "10",
+        "1",
+        "4"
+      ],
+      "correctAnswer": ["1"]
+    }
+  },
+  {
+    "id": "1217",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "How many Virtual Private Gateways per AWS account per region can you have?",
+      "answers": [
+        "5",
+        "10",
+        "1",
+        "4"
+      ],
+      "correctAnswer": ["5"]
+    }
+  },
+  {
+    "id": "1218",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "How many IPsec VPN Connections per Virtual Private Gateway can you have?",
+      "answers": [
+        "50",
+        "10",
+        "100",
+        "4"
+      ],
+      "correctAnswer": ["10"]
+    }
+  },
+  {
+    "id": "1219",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "When you configure Auto Scaling automatic scale in, you must ____________ and set up a _________ policy?",
+      "answers": [
+        "decide which EC2 instances should terminate first, termination",
+        "decide which EC2 instances should startup first, initiation"
+      ],
+      "correctAnswer": ["decide which EC2 instances should terminate first, termination"]
+    }
+  },
+  {
+    "id": "1220",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "With Auto Scaling, what do you use to prevent specific instances from being terminated during automatic scale in?",
+      "answers": [
+        "instance protection",
+        "instance locking",
+        "instance persistence"
+      ],
+      "correctAnswer": ["instance protection"]
+    }
+  },
+  {
+    "id": "1221",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "With the default Auto Scaling termination policy, the behavior of the Auto Scaling Group has which of these as the first step?",
+      "answers": [
+        "If there are instances in multiple AZs, select the AZ with the most instances and at least one instance that is not protected from scale in. If there is more than one AZ with this number of instances, select the AZ with the instances that use the oldest launch configuration",
+        "If there are instances in multiple AZs, select the AZ with the least instances and at least one instance that is not protected from scale in. If there is more than one AZ with this number of instances, select the AZ with the instances that use the oldest launch configuration",
+        "If there are instances in multiple AZs, select the AZ with the most instances and at least one instance that is not protected from scale in. If there is more than one AZ with this number of instances, select the AZ with the instances that use the newest launch configuration"
+      ],
+      "correctAnswer": ["If there are instances in multiple AZs, select the AZ with the most instances and at least one instance that is not protected from scale in. If there is more than one AZ with this number of instances, select the AZ with the instances that use the oldest launch configuration"]
+    }
+  },
+  {
+    "id": "1222",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "With the default Auto Scaling termination policy, the behavior of the Auto Scaling Group has which of these as the second step?",
+      "answers": [
+        "Determine which unprotected instances in the selected AZ use the oldest launch configuration. If there is one such instance, terminate it",
+        "Determine which unprotected instances in the selected AZ use the newest launch configuration. If there is one such instance, terminate it",
+        "Determine which unprotected instances in the selected AZ use the oldest launch configuration. If there is one such instance, suspend it"
+      ],
+      "correctAnswer": ["Determine which unprotected instances in the selected AZ use the oldest launch configuration. If there is one such instance, terminate it"]
+    }
+  },
+  {
+    "id": "1223",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "With the default Auto Scaling termination policy, the behavior of the Auto Scaling Group has which of these as the third step?",
+      "answers": [
+        "If there are multiple instances that use the oldest launch configuration, determine which unprotected instances are closest to the next billing hour. If there is one such instance, terminate it",
+        "If there are multiple instances that use the newest launch configuration, determine which unprotected instances are closest to the next billing hour. If there is one such instance, terminate it",
+        "If there are multiple instances that use the oldest launch configuration, determine which unprotected instances are closest to the previous billing hour. If there is one such instance, terminate it"
+      ],
+      "correctAnswer": ["If there are multiple instances that use the oldest launch configuration, determine which unprotected instances are closest to the next billing hour. If there is one such instance, terminate it"]
+    }
+  },
+  {
+    "id": "1224",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "With the default Auto Scaling termination policy, the behavior of the Auto Scaling Group has which of these as the fourth (last) step?",
+      "answers": [
+        "If there is more than one unprotected instance closest to the next billing hour, select one of these instances at random and terminate it",
+        "If there is more than one unprotected instance closest to the next billing hour, select the one of these instances that is first in the list and terminate it",
+        "If there is more than one unprotected instance closest to the next billing hour, select the one of these instances that is last in the list and terminate it"
+      ],
+      "correctAnswer": ["If there is more than one unprotected instance closest to the next billing hour, select one of these instances at random and terminate it"]
+    }
+  },
+  {
+    "id": "1225",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 5",
+      "question": "AWS EC2 Auto Scaling supports which of these as custom termination policies?",
+      "answers": [
+        "OldestInstance",
+        "NewestInstance",
+        "OldestLaunchConfiguration",
+        "ClosestToNextInstanceHour",
+        "Default",
+        "NewestLaunchConfiguration"
+      ],
+      "correctAnswer": ["OldestInstance",
+        "NewestInstance",
+        "OldestLaunchConfiguration",
+        "ClosestToNextInstanceHour",
+        "Default"]
+    }
+  },
+  {
+    "id": "1225",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "Which AWS EC2 Auto Scaling custom termination policy is useful when you are upgrading the EC2 instances in the Auto Scaling Group to a new EC2 instance type. You can gradually replace instances of the old type with instances of the new type?",
+      "answers": [
+        "OldestInstance",
+        "NewestInstance",
+        "OldestLaunchConfiguration",
+        "ClosestToNextInstanceHour",
+        "Default",
+        "NewestLaunchConfiguration"
+      ],
+      "correctAnswer": ["OldestInstance"]
+    }
+  },
+  {
+    "id": "1226",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "Which AWS EC2 Auto Scaling custom termination policy is useful when you are testing a new launch configuration but don't want to keep it in production?",
+      "answers": [
+        "OldestInstance",
+        "NewestInstance",
+        "OldestLaunchConfiguration",
+        "ClosestToNextInstanceHour",
+        "Default",
+        "NewestLaunchConfiguration"
+      ],
+      "correctAnswer": ["NewestInstance"]
+    }
+  },
+  {
+    "id": "1227",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "Which AWS EC2 Auto Scaling custom termination policy is useful when you are updating a group and phasing out the instances from a previous configuration?",
+      "answers": [
+        "OldestInstance",
+        "NewestInstance",
+        "OldestLaunchConfiguration",
+        "ClosestToNextInstanceHour",
+        "Default",
+        "NewestLaunchConfiguration"
+      ],
+      "correctAnswer": ["OldestLaunchConfiguration"]
+    }
+  },
+  {
+    "id": "1228",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "Which AWS EC2 Auto Scaling custom termination policy helps you maximize the use of your instances and manage your EC2 usage costs?",
+      "answers": [
+        "OldestInstance",
+        "NewestInstance",
+        "OldestLaunchConfiguration",
+        "ClosestToNextInstanceHour",
+        "Default",
+        "NewestLaunchConfiguration"
+      ],
+      "correctAnswer": ["ClosestToNextInstanceHour"]
+    }
+  },
+  {
+    "id": "1229",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "Which AWS EC2 Auto Scaling custom termination policy is useful when you have more than one scaling policy for the group?",
+      "answers": [
+        "OldestInstance",
+        "NewestInstance",
+        "OldestLaunchConfiguration",
+        "ClosestToNextInstanceHour",
+        "Default",
+        "NewestLaunchConfiguration"
+      ],
+      "correctAnswer": ["Default"]
+    }
+  },
+  {
+    "id": "1230",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "What do you use to control whether an Auto Scaling Group can terminate a particular instance when scaling in?",
+      "answers": [
+        "instance protection",
+        "instance locking",
+        "instance persistence"
+      ],
+      "correctAnswer": ["instance protection"]
+    }
+  }
+]
