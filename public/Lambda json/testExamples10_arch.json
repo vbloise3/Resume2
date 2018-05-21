@@ -1,0 +1,438 @@
+[
+  {
+    "id": "1231",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "What are lifecycle hooks used for in AutoScaling?",
+      "answers": [
+        "They are used to do health checks on instances",
+        "They are used to put an additional wait time to a scale in or scale out event.",
+        "They are used to shorten the wait time to a scale in or scale out event",
+        "None of these"
+      ],
+      "correctAnswer": ["They are used to put an additional wait time to a scale in or scale out event."]
+    }
+  },
+  {
+    "id": "1232",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "If I launch a standby RDS instance, will it be in the same Availability Zone as my primary?",
+      "answers": [
+        "Only for Oracle RDS types",
+        "Yes",
+        "Only if it is configured at launch",
+        "No"
+      ],
+      "correctAnswer": ["No"]
+    }
+  },
+  {
+    "id": "1233",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "If I am running my DB Instance as a Multi-AZ deployment, can I use the standby DB Instance for read or write operations along with primary DB instance?",
+      "answers": [
+        "Yes",
+        "Only with MySQL based RDS",
+        "Only for Oracle RDS instances",
+        "No"
+      ],
+      "correctAnswer": ["No"]
+    }
+  },
+  {
+    "id": "1234",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "I created a key in Oregon region to encrypt my data in North Virginia region for security purposes. I added two users to the key and an external AWS account. I wanted to encrypt an object in S3, so when I tried, the key that I just created was not listed. &nbsp;What could be the reason?",
+      "answers": [
+        "External aws accounts are not supported.",
+        "AWS S3 cannot be integrated KMS",
+        "The Key should be in the same region.",
+        "New keys take some time to reflect in the list."
+      ],
+      "correctAnswer": ["The Key should be in the same region."]
+    }
+  },
+  {
+    "id": "1235",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "When an instance is unhealthy, it is terminated and replaced with a new one, which of the following services does that?",
+      "answers": [
+        "Sticky Sessions",
+        "Fault Tolerance",
+        "Connection Draining",
+        "Monitoring"
+      ],
+      "correctAnswer": ["Fault Tolerance"]
+    }
+  },
+  {
+    "id": "1236",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "If you want to launch Amazon Elastic Compute Cloud (EC2) instances and assign each instance a predetermined private IP address you should:",
+      "answers": [
+        "Launch the instance from a private Amazon Machine Image (AMI).",
+        "Assign a group of sequential Elastic IP address to the instances.",
+        "Launch the instances in the Amazon Virtual Private Cloud (VPC).",
+        "Launch the instances in a Placement Group."
+      ],
+      "correctAnswer": ["Launch the instances in the Amazon Virtual Private Cloud (VPC)."]
+    }
+  },
+  {
+    "id": "1237",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 2",
+      "question": "To create a mirror image of your environment in another region for disaster recovery, which of the following AWS resources do not need to be recreated in the second region? ( Choose 2 answers )",
+      "answers": [
+        "Route 53 Record Sets",
+        "Elastic IP Addresses (EIP)",
+        "EC2 Key Pairs",
+        "Launch configurations",
+        "Security Groups"
+      ],
+      "correctAnswer": ["Route 53 Record Sets",
+        "Elastic IP Addresses (EIP)"]
+    }
+  },
+  {
+    "id": "1237",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "A startup is running a pilot deployment of around 100 sensors to measure street noise and air quality in urban areas for 3 months. It was noted that every month around 4GB of sensor data is generated. The company uses a load balanced auto scaled layer of EC2 instances and a RDS database with 500 GB standard storage. The pilot was a success and now they want to deploy at least &nbsp;100K sensors which need to be supported by the backend. You need to store the data for at least 2 years to analyze it. Which setup of the following would you prefer?",
+      "answers": [
+        "Add an SQS queue to the ingestion layer to buffer writes to the RDS instance",
+        "Ingest data into a DynamoDB table and move old data to a Redshift cluster",
+        "Replace the RDS instance with a 6 node Redshift cluster with 96TB of storage",
+        "Keep the current architecture but upgrade RDS storage to 3TB and 10K provisioned IOPS"
+      ],
+      "correctAnswer": ["Replace the RDS instance with a 6 node Redshift cluster with 96TB of storage"]
+    }
+  },
+  {
+    "id": "1238",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "I have some private servers on my premises, also I have distributed some of my workload on the public cloud, what is this architecture called?",
+      "answers": [
+        "Virtual Private Network",
+        "Private Cloud",
+        "Virtual Private Cloud",
+        "Hybrid Cloud"
+      ],
+      "correctAnswer": ["Hybrid Cloud"]
+    }
+  },
+  {
+    "id": "1239",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "Your company’s branch offices are all over the world, they use a software with a multi-regional deployment on AWS, they use MySQL 5.6 for data persistence.The task is to run an hourly batch process and read data from every region to compute cross-regional reports which will be distributed to all the branches. This should be done in the shortest time possible. How will you build the DB architecture in order to meet the requirements?",
+      "answers": [
+        "For each regional deployment, use RDS MySQL with a master in the region and a read replica in the HQ region",
+        "For each regional deployment, use MySQL on EC2 with a master in the region and send hourly EBS snapshots to the HQ region",
+        "For each regional deployment, use RDS MySQL with a master in the region and send hourly RDS snapshots to the HQ region",
+        "For each regional deployment, use MySQL on EC2 with a master in the region and use S3 to copy data files hourly to the HQ region"
+      ],
+      "correctAnswer": ["For each regional deployment, use RDS MySQL with a master in the region and a read replica in the HQ region"]
+    }
+  },
+  {
+    "id": "1240",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "A customer wants to track access to their Amazon Simple Storage Service (S3) buckets and also use this information for their internal security and access audits. Which of the following will meet the Customer requirement?",
+      "answers": [
+        "Enable AWS CloudTrail to audit all Amazon S3 bucket access.",
+        "Enable server access logging for all required Amazon S3 buckets.",
+        "Enable the Requester Pays option to track access via AWS Billing",
+        "Enable Amazon S3 event notifications for Put and Post."
+      ],
+      "correctAnswer": ["Enable AWS CloudTrail to audit all Amazon S3 bucket access."]
+    }
+  },
+  {
+    "id": "1241",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "A customer wants to track access to their Amazon Simple Storage Service (S3) buckets and also use this information for their internal security and access audits. Which of the following will meet the Customer requirement?",
+      "answers": [
+        "Enable AWS CloudTrail to audit all Amazon S3 bucket access.",
+        "Enable server access logging for all required Amazon S3 buckets.",
+        "Enable the Requester Pays option to track access via AWS Billing",
+        "Enable Amazon S3 event notifications for Put and Post."
+      ],
+      "correctAnswer": ["Enable AWS CloudTrail to audit all Amazon S3 bucket access."]
+    }
+  },
+  {
+    "id": "1242",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "A customer wants to capture all client connection information from his load balancer at an interval of 5 minutes, which of the following options should he choose for his application?",
+      "answers": [
+        "Enable AWS CloudTrail for the loadbalancer.",
+        "Enable access logs on the load balancer.",
+        "Install the Amazon CloudWatch Logs agent on the load balancer.",
+        "Enable Amazon CloudWatch metrics on the load balancer."
+      ],
+      "correctAnswer": ["Enable AWS CloudTrail for the loadbalancer."]
+    }
+  },
+  {
+    "id": "1243",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "What does Connection draining do?",
+      "answers": [
+        "Terminates instances which are not in use.",
+        "Re-routes traffic from instances which are to be updated or failed a health check.",
+        "Re-routes traffic from instances which have more workload to instances which have less workload.",
+        "Drains all the connections from an instance, with one click."
+      ],
+      "correctAnswer": ["Re-routes traffic from instances which are to be updated or failed a health check."]
+    }
+  },
+  {
+    "id": "1244",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "What does the following command do with respect to the Amazon EC2 security groups?  ec2-create-group CreateSecurityGroup",
+      "answers": [
+        "Groups the user created security groups into a new group for easy access.",
+        "Creates a new security group for use with your account.",
+        "Creates a new group inside the security group.",
+        "Creates a new rule inside the security group."
+      ],
+      "correctAnswer": ["Creates a new security group for use with your account."]
+    }
+  },
+  {
+    "id": "1245",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "A customer implemented AWS Storage Gateway with a gateway-cached volume at their main office. An event takes the link between the main and branch office offline. Which methods will enable the branch office to access their data?",
+      "answers": [
+        "Restore by implementing a lifecycle policy on the Amazon S3 bucket.",
+        "Make an Amazon Glacier Restore API call to load the files into another Amazon S3 bucket within four to six hours.",
+        "Launch a new AWS Storage Gateway instance AMI in Amazon EC2, and restore from a gateway snapshot.",
+        "Create an Amazon EBS volume from a gateway snapshot, and mount it to an Amazon EC2 instance."
+      ],
+      "correctAnswer": ["Launch a new AWS Storage Gateway instance AMI in Amazon EC2, and restore from a gateway snapshot."]
+    }
+  },
+  {
+    "id": "1246",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "You have a content management system running on an Amazon EC2 instance that is approaching 100% CPU utilization. Which option will reduce load on the Amazon EC2 instance?",
+      "answers": [
+        "Create a load balancer, and register the Amazon EC2 instance with it",
+        "Create a CloudFront distribution, and configure the Amazon EC2 instance as the origin",
+        "Create an Auto Scaling group from the instance using the CreateAutoScalingGroup action",
+        "Create a launch configuration from the instance using the CreateLaunchConfigurationAction"
+      ],
+      "correctAnswer": ["Create a load balancer, and register the Amazon EC2 instance with it"]
+    }
+  },
+  {
+    "id": "1247",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "When will you incur costs with an Elastic IP address (EIP)?",
+      "answers": [
+        "When an EIP is allocated.",
+        "When it is allocated and associated with a running instance.",
+        "When it is allocated and associated with a stopped instance.",
+        "Costs are incurred regardless of whether the EIP is associated with a running instance."
+      ],
+      "correctAnswer": ["When it is allocated and associated with a stopped instance."]
+    }
+  },
+  {
+    "id": "1248",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 2",
+      "question": "Which of the following are true regarding AWS CloudTrail? (Choose 2 answers)?",
+      "answers": [
+        "CloudTrail is enabled globally",
+        "CloudTrail is enabled on a per-region and service basis",
+        "Logs can be delivered to a single Amazon S3 bucket for aggregation.",
+        "CloudTrail is enabled for all available services within a region."
+      ],
+      "correctAnswer": ["CloudTrail is enabled on a per-region and service basis",
+        "Logs can be delivered to a single Amazon S3 bucket for aggregation."]
+    }
+  },
+  {
+    "id": "1248",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "Which of the following services you would not use to deploy an app?",
+      "answers": [
+        "Elastic Beanstalk",
+        "Lambda",
+        "OpsWorks",
+        "CloudFormation"
+      ],
+      "correctAnswer": ["Lambda"]
+    }
+  },
+  {
+    "id": "1249",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "How will you change the instance type for instances which are running in your application tier and are using Auto Scaling. Where will you change it from the following areas?",
+      "answers": [
+        "Auto Scaling policy configuration",
+        "Auto Scaling group",
+        "Auto Scaling tags configuration",
+        "Auto Scaling launch configuration"
+      ],
+      "correctAnswer": ["Auto Scaling launch configuration"]
+    }
+  },
+  {
+    "id": "1250",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "When you need to move data over long distances using the internet, for instance across countries or continents to your Amazon S3 bucket, which method or service will you use?",
+      "answers": [
+        "Amazon Glacier",
+        "Amazon CloudFront",
+        "Amazon Transfer Acceleration",
+        "Amazon Snowball"
+      ],
+      "correctAnswer": ["Amazon Transfer Acceleration"]
+    }
+  },
+  {
+    "id": "1251",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "You need to configure an Amazon S3 bucket to serve static assets for your public-facing web application. Which method will ensure that all objects uploaded to the bucket are set to public read?",
+      "answers": [
+        "Set permissions on the object to public read during upload.",
+        "Configure the bucket policy to set all objects to public read.",
+        "Use AWS Identity and Access Management roles to set the bucket to public read.",
+        "Amazon S3 objects default to public read, so no action is needed."
+      ],
+      "correctAnswer": ["Configure the bucket policy to set all objects to public read."]
+    }
+  },
+  {
+    "id": "1252",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "A company needs to monitor the read and write IOPS for their AWS MySQL RDS instance and send real-time alerts to their operations team. Which AWS services can accomplish this?",
+      "answers": [
+        "Amazon Simple Email Service",
+        "Amazon CloudWatch",
+        "Amazon Simple Queue Service",
+        "Amazon Route 53"
+      ],
+      "correctAnswer": ["Amazon CloudWatch"]
+    }
+  },
+  {
+    "id": "1253",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 2",
+      "question": "Which AWS services will you use to collect and process e-commerce data for near real-time analysis?",
+      "answers": [
+        "Amazon ElastiCach",
+        "Amazon DynamoDB",
+        "Amazon RedShift",
+        "Amazon Elastic Map Reduce"
+      ],
+      "correctAnswer": ["Amazon DynamoDB",
+        "Amazon RedShift"]
+    }
+  },
+  {
+    "id": "1254",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "When would I prefer Provisioned IOPS over Standard RDS storage?",
+      "answers": [
+        "If you have batch-oriented workloads",
+        "If you use production online transaction processing (OLTP) workloads.",
+        "If you have workloads that are not sensitive to consistent performance",
+        "All of the above"
+      ],
+      "correctAnswer": ["If you have batch-oriented workloads"]
+    }
+  },
+  {
+    "id": "1255",
+    "category": "Cloud Concepts",
+    "info": {
+      "subcategory": "Test Example Questions",
+      "questionType": "multiple choice 1",
+      "question": "You have assigned one Elastic IP to your EC2 instance. Now we need to restart the VM without EIP changed. Which of below you should not do?",
+      "answers": [
+        "Reboot and stop/start both works.",
+        "Reboot the instance.",
+        "When the instance is in VPC private subnet, stop/start works.",
+        "When the instance is in VPC public subnets, stop/start works."
+      ],
+      "correctAnswer": ["Reboot and stop/start both works."]
+    }
+  }
+]
